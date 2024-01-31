@@ -1,0 +1,28 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl lg:text-3xl font-semibold;
+  }
+
+  h2 {
+    @apply text-xl font-medium;
+  }
+
+  h3 {
+    @apply text-lg lg:text-xl font-medium;
+  }
+
+  h4 {
+    @apply text-base lg:text-lg font-medium;;
+  }
+
+  h1, h2, h3, h4, p {
+    @apply mb-2;
+  }
+}

@@ -1,0 +1,5 @@
+{% for item in site.data.navigation %}
+  <a href="{{ item.link }}" class="h-8 px-2 {% if page.url == item.link %}text-green-600 border-b-4 border-green-500 dark:border-green-600{% else %} text-charcoal-600 dark:text-charcoal-300{% endif %} hover:text-green-600">
+    {{ item.name }}
+  </a>
+{% endfor %}
