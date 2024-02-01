@@ -1,4 +1,7 @@
 # Technology-Carbon-Standard
+This is the repository for the Technology Carbon Standard Website available at: (URL) created by Scott Logic Ltd.
+A proposed Technology Carbon Standard that aims to provide a unified standard for understanding, quantifying, and reducing carbon emissions from an organisation's technology landscape. A component of a holistic Technology Sustainability Framework (that covers more sustainability considerations).
+
 
 ## Running a Local Environment
 To run a local environment use:
