@@ -1,3 +1,24 @@
+<!-- Carbon Standard Title and Legend -->
+<header class="flex flex-col lg:flex-row justify-between lg:items-center py-4 px-4 gap-2 lg:gap-0 bg-white dark:bg-black/30">
+  <h1 class="text-2xl font-medium m-0">Technology Carbon Standard</h1>
+  <div class="flex flex-col gap-1">
+    <div class="flex gap-2">
+      <div class="relative w-24 flex border border-white rounded overflow-hidden">
+        <div class="bg-blue size-6"></div>
+        <div class="bg-purple size-6"></div>
+        <div class="bg-purple-800 size-6"></div>
+        <div class="bg-orange size-6"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 text-white">Category</div>
+      </div>
+      <div>Carbon Standard Category</div>
+    </div>
+    <div class="flex gap-2">
+      <div class="w-24 bg-charcoal-50 h-6 rounded border border-white font-medium text-sm text-center dark:text-charcoal"> 1/2/3</div>
+      <div>GHG Protocol Scope</div>
+    </div>
+  </div>
+</header>
+
 <div class="flex flex-col lg:flex-row">
 
   <!-- UPSTREAM EMISSIONS -->
@@ -42,6 +63,8 @@
       <p>Operational emissions are associated to the running of business IT functions and systems. Each operational function may have a hybrid of IT infrastructure across direct and/or indirect emissions.</p>
 
       <div class="flex flex-col lg:flex-row gap-4 mt-4">
+
+        <!-- DIRECT (Category O) -->
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
           <h3>Direct</h3>
           <div class="absolute right-2 -top-2">
@@ -52,15 +75,17 @@
           {% include categoryItem.html bgColor="bg-purple dark:bg-purple-800" icon="./assets/images/icons.svg#router" description="Networking Devices" %}
           {% include categoryItem.html bgColor="bg-purple dark:bg-purple-800" icon="./assets/images/icons.svg#devices" description="Employee Devices" %}
 
+          <!-- DIRECT (Category G) -->
           <div class="relative">
             <hr class="border-white mb-2" />
             <div class="absolute right-2 -top-2">
               {% include categoryLabel.html label="Category G" bgColor="bg-purple" scope="1" %}
             </div>
-            {% include categoryItem.html bgColor="bg-purple dark:bg-purple-800" icon="./assets/images/icons.svg#devices" description="Generators" %}
+            {% include categoryItem.html bgColor="bg-charcoal-600 dark:bg-charcoal-900" icon="./assets/images/icons.svg#bolt" description="Generators" %}
           </div>
         </div>
 
+        <!-- INDIRECT (Category C) -->
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
           <h3>Indirect</h3>
           <div class="absolute right-2 -top-2">
