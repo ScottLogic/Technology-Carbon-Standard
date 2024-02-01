@@ -6,12 +6,12 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="./assets/css/main.css">
   </head>
-  <body class="bg-charcoal-50 text-charcoal dark:bg-charcoal-950 dark:text-charcoal-100">
-    <div class="bg-charcoal-100 dark:bg-black/50">
-      <nav class="container lg:mx-auto flex gap-4 px-2 pt-3">
+  <body class="bg-neutral-50 text-charcoal dark:bg-charcoal-950 dark:text-charcoal-100">
+    <div class="bg-neutral-100 dark:bg-black/50">
+      <nav class="container max-w-7xl mx-auto w-full flex gap-4 px-2 pt-6">
         {% include navigation.html %}
       </nav>
     </div>
-    <main class="lg:container px-2 py-4 lg:mx-auto">{{ content }}</main>
+    <main class="container max-w-7xl w-full px-2 py-4 mx-auto font-light">{{ content }}</main>
   </body>
 </html>

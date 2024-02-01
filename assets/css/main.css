@@ -6,6 +6,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 16px;
+  }
+
   h1 {
     @apply text-2xl lg:text-3xl font-semibold;
   }
@@ -15,14 +19,14 @@
   }
 
   h3 {
-    @apply text-lg lg:text-xl font-medium;
+    @apply text-lg font-medium;
   }
 
   h4 {
     @apply text-base lg:text-lg font-medium;;
   }
 
-  h1, h2, h3, h4, p {
+  h1, h2, h3, h4, p, ul, li {
     @apply mb-2;
   }
 }
