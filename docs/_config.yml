@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A proposed Technology Carbon Standard that aims to provide a unified standard for understanding, quantifying, and reducing carbon emissions from an organisation's technology landscape.
 baseurl: "" # the subpath of your site, e.g. /blog
 # baseurl: ""
-url: "https://techcarbonstandard.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://techcarbonstandard.org/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 # theme: minima
