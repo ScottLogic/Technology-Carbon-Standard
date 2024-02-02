@@ -1,5 +1,5 @@
 {% for item in site.data.navigation %}
-  <a href="{{ item.link }}" class="h-8 px-2 {% if page.url == item.link %}text-green-600 border-b-4 border-green-500 dark:border-green-600{% else %} text-charcoal-600 dark:text-charcoal-300{% endif %} hover:text-green-600 focus:outline-none focus-visible:ring focus:ring-blue">
+  <a href="{{ item.link }}" class="no-underline h-8 px-2 {% if page.url == item.link %}text-cambridge-100 border-b-4 border-cambridge dark:border-cambridge-600 dark:text-cambridge-300{% else %} text-cambridge dark:text-cambridge-400{% endif %} hover:text-cambridge-100 focus:outline-none focus-visible:ring focus:ring-blue">
   {{ item.name }}
   </a>
 {% endfor %}

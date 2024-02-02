@@ -7,7 +7,7 @@
         <div class="bg-blue size-6"></div>
         <div class="bg-purple size-6"></div>
         <div class="bg-purple-800 size-6"></div>
-        <div class="bg-orange size-6"></div>
+        <div class="bg-orange-400 size-6"></div>
         <div class="absolute left-1/2 transform -translate-x-1/2 text-white">Category</div>
       </div>
       <div>Carbon Standard Category</div>
@@ -28,7 +28,7 @@
         <div class="relative">
           <h2 class="pl-2 mb-0 text-white">Upstream Emissions</h1>
           <div class="absolute right-0 top-8">
-            {% include categoryLabel.html label="Category U" bgColor="bg-blue" scope="3" %}
+            {% include categoryLabel.html label="Category U" bgColor="bg-blue dark:bg-blue-700" scope="3" %}
           </div>
         </div>
       </div>
@@ -53,13 +53,13 @@
   <!-- OPERATIONAL EMISSIONS -->
   <div class="flex flex-col lg:w-2/4">
     <div class="flex">
-      <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 bg-purple dark:bg-purple-800">
+      <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 bg-purple-600 dark:bg-purple-800">
         <h2 class="lg:pl-[3rem] mb-0 text-white">Operational Emissions</h1>
       </div>
       <!-- ARROW RIGHT: hidden on smaller screens -->
-      <div class="hidden lg:block w-0 h-0 z-10 border-t-[2rem] border-l-[2rem] border-b-[2rem] border-transparent border-l-purple dark:border-l-purple-800"></div>
+      <div class="hidden lg:block w-0 h-0 z-10 border-t-[2rem] border-l-[2rem] border-b-[2rem] border-transparent border-l-purple-600 dark:border-l-purple-800"></div>
     </div>
-    <div class="h-full lg:-ml-[2rem] lg:mr-[2rem] px-4 pt-4 pb-2 bg-purple-200 dark:bg-purple-700">
+    <div class="h-full lg:-ml-[2rem] lg:mr-[2rem] px-4 pt-4 pb-2 bg-purple-300 dark:bg-purple-700">
       <p>Operational emissions are associated to the running of business IT functions and systems. Each operational function may have a hybrid of IT infrastructure across direct and/or indirect emissions.</p>
 
       <div class="flex flex-col lg:flex-row gap-4 mt-4">
@@ -68,20 +68,20 @@
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
           <h3>Direct</h3>
           <div class="absolute right-2 -top-2">
-            {% include categoryLabel.html label="Category O" bgColor="bg-purple" scope="2" %}
+            {% include categoryLabel.html label="Category O" bgColor="bg-purple-600 dark:bg-purple-800" scope="2" %}
           </div>
           <p>Direct running costs that are attributed to the electricity powering servers, networks and devices.</p>
-          {% include categoryItem.html bgColor="bg-purple dark:bg-purple-800" icon="./assets/images/icons.svg#storage" description="Servers and Storage" %}
-          {% include categoryItem.html bgColor="bg-purple dark:bg-purple-800" icon="./assets/images/icons.svg#router" description="Networking Devices" %}
-          {% include categoryItem.html bgColor="bg-purple dark:bg-purple-800" icon="./assets/images/icons.svg#devices" description="Employee Devices" %}
+          {% include categoryItem.html bgColor="bg-purple-600 dark:bg-purple-800" icon="./assets/images/icons.svg#storage" description="Servers and Storage" %}
+          {% include categoryItem.html bgColor="bg-purple-600 dark:bg-purple-800" icon="./assets/images/icons.svg#router" description="Networking Devices" %}
+          {% include categoryItem.html bgColor="bg-purple-600 dark:bg-purple-800" icon="./assets/images/icons.svg#devices" description="Employee Devices" %}
 
           <!-- DIRECT (Category G) -->
           <div class="relative">
             <hr class="border-white mb-2" />
             <div class="absolute right-2 -top-2">
-              {% include categoryLabel.html label="Category G" bgColor="bg-purple" scope="1" %}
+              {% include categoryLabel.html label="Category G" bgColor="bg-charcoal-800 dark:bg-charcoal-900" scope="1" %}
             </div>
-            {% include categoryItem.html bgColor="bg-charcoal-600 dark:bg-charcoal-900" icon="./assets/images/icons.svg#bolt" description="Generators" %}
+            {% include categoryItem.html bgColor="bg-charcoal-800 dark:bg-charcoal-900" icon="./assets/images/icons.svg#bolt" description="Generators" %}
           </div>
         </div>
 
@@ -89,7 +89,7 @@
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
           <h3>Indirect</h3>
           <div class="absolute right-2 -top-2">
-            {% include categoryLabel.html label="Category C" bgColor="bg-purple-800" scope="3" %}
+            {% include categoryLabel.html label="Category C" bgColor="bg-purple-800 dark:bg-purple-950" scope="3" %}
           </div>
           <p>Indirect running carbon costs that are attributed to external hardware and service solutions.</p>
           {% include categoryItem.html bgColor="bg-purple-800 dark:bg-purple-950" icon="./assets/images/icons.svg#cloud" description="Cloud Services" %}
@@ -100,17 +100,17 @@
     </div>
 
     <!-- ARROW DOWN: visible on smaller screens -->
-    <div class="w-full lg:hidden h-0 border-t-[2rem] border-l-[6rem] border-r-[6rem] border-transparent border-t-purple dark:border-t-purple-800"></div>
+    <div class="w-full lg:hidden h-0 border-t-[2rem] border-l-[6rem] border-r-[6rem] border-transparent border-t-purple-600 dark:border-t-purple-800"></div>
   </div>
 
   <!-- DOWNSTREAM EMISSIONS -->
   <div class="flex flex-col lg:w-1/4">
     <div class="flex">
-      <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 bg-orange dark:bg-orange-700">
+      <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 bg-orange-400 dark:bg-orange-800">
         <div class="relative">
           <h2 class="lg:pl-[3rem] mb-0 text-white">Downstream Emissions</h1>
           <div class="absolute right-0 top-8">
-            {% include categoryLabel.html label="Category D" bgColor="bg-orange" scope="3" %}
+            {% include categoryLabel.html label="Category D" bgColor="bg-orange-400 dark:bg-orange-800" scope="3" %}
           </div>
         </div>
       </div>
@@ -119,24 +119,24 @@
       <p>Carbon associated with the use of products and services produced by the business.</p>
 
       <h3 class="mt-4">End Use (B2B, B2C)</h3>
-      {% include categoryItem.html bgColor="bg-orange dark:bg-orange-700" icon="./assets/images/icons.svg#devices" description="End-User Devices" %}
-      {% include categoryItem.html bgColor="bg-orange dark:bg-orange-700" icon="./assets/images/icons.svg#cell-tower" description="Network Data Transfer" %}
+      {% include categoryItem.html bgColor="bg-orange-400 dark:bg-orange-800" icon="./assets/images/icons.svg#devices" description="End-User Devices" %}
+      {% include categoryItem.html bgColor="bg-orange-400 dark:bg-orange-800" icon="./assets/images/icons.svg#cell-tower" description="Network Data Transfer" %}
     </div>
   </div>
 
 </div>
 
-<div class="flex justify-center items-center px-4 py-4 mt-2 lg:mt-0 bg-charcoal/25 dark:bg-black/25">
+<div class="flex justify-center items-center px-4 py-4 mt-2 lg:mt-0 bg-black/25 dark:bg-black/25">
   <div>
     <h3>Out of Scope</h3>
     <div class="flex items-center gap-2">
-      <div class="flex justify-center items-center size-12 bg-black/75">
+      <div class="flex justify-center items-center size-12 bg-charcoal-600 dark:bg-charcoal-800">
         <svg class="w-8 h-8 fill-white"><use href="./assets/images/icons.svg#groups"></svg>
       </div>
-      <div class="flex justify-center items-center size-12 bg-black/75">
+      <div class="flex justify-center items-center size-12 bg-charcoal-600 dark:bg-charcoal-800">
         <svg class="w-8 h-8 fill-white"><use href="./assets/images/icons.svg#domain"></svg>
       </div>
-      <div class="flex justify-center items-center size-12 bg-black/75">
+      <div class="flex justify-center items-center size-12 bg-charcoal-600 dark:bg-charcoal-800">
         <svg class="w-8 h-8 fill-white"><use href="./assets/images/icons.svg#devices"></svg>
       </div>
       People, Buildings and Travel
