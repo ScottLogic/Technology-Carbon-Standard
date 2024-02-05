@@ -37,4 +37,50 @@
   ul {
     @apply list-disc list-inside;
   }
+
+  /* CATEGORY U */
+  .cat-u {
+    @apply bg-blue dark:bg-blue-700 text-white;
+  }
+  .cat-u-body {
+    @apply bg-blue-200 dark:bg-blue-600 text-charcoal dark:text-white;
+  }
+  .cat-u-arrow-right {
+    @apply border-t-[2rem] border-l-[2rem] border-b-[2rem] border-transparent border-l-blue dark:border-l-blue-700;
+  }
+  .cat-u-arrow-down {
+    @apply border-t-[2rem] border-l-[6rem] border-r-[6rem] border-transparent border-t-blue dark:border-t-blue-700;
+  }
+
+  /* CATEGORY O */
+  .cat-o {
+    @apply bg-purple-600 dark:bg-purple-800 text-white;
+  }
+  .cat-o-body {
+    @apply bg-purple-300 dark:bg-purple-700 text-charcoal dark:text-white;
+  }
+  .cat-o-arrow-right {
+    @apply border-t-[2rem] border-l-[2rem] border-b-[2rem] border-transparent border-l-purple-600 dark:border-l-purple-800;
+  }
+  .cat-o-arrow-down {
+    @apply border-t-[2rem] border-l-[6rem] border-r-[6rem] border-transparent border-t-purple-600 dark:border-t-purple-800;
+  }
+
+  /* CATEGORY C */
+  .cat-c {
+    @apply bg-purple-800 dark:bg-purple-950 text-white;
+  }
+
+  /* CATEGORY G */
+  .cat-g {
+    @apply bg-charcoal-800 dark:bg-charcoal-950 text-white;
+  }
+
+  /* CATEGORY D */
+  .cat-d {
+    @apply bg-orange-500 dark:bg-orange-800 text-white;
+  }
+  .cat-d-body {
+    @apply bg-orange-200 dark:bg-orange-700 text-charcoal dark:text-white;
+  }
 }
