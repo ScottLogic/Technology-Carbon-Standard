@@ -1,6 +1,6 @@
 <!-- Carbon Standard Title and Legend -->
 <header class="flex flex-col lg:flex-row justify-between lg:items-center py-4 px-4 gap-2 lg:gap-0 bg-white dark:bg-black/30">
-  <h1 class="text-2xl font-medium m-0">Technology Carbon Standard</h1>
+  <h1 class="text-2xl lg:text-3xl font-medium">Technology Carbon Standard</h1>
   <div class="flex flex-col gap-1">
     <div class="flex gap-2">
       <div class="relative w-24 flex border border-white rounded overflow-hidden">
@@ -20,14 +20,14 @@
   </div>
 </header>
 
-<div class="flex flex-col lg:flex-row">
+<div class="flex flex-col lg:flex-row not-prose">
 
   <!-- UPSTREAM EMISSIONS -->
   <div class="flex flex-col lg:w-1/4">
     <div class="flex">
       <div class="grow flex flex-col justify-center h-[4rem] px-2 py-2 cat-u">
         <div class="relative">
-          <h2 class="pl-2 mb-0">Upstream Emissions</h1>
+          <h2 class="pl-2 mb-0 text-xl font-medium text-white"><a class="no-underline text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream">Upstream Emissions</a></h1>
           <div class="absolute right-0 top-8">
             {% include categoryLabel.html label="Category U" bgColor="cat-u" scope="3" %}
           </div>
@@ -39,10 +39,10 @@
     <div class="h-full lg:mr-[2rem] px-4 pt-4 pb-2 cat-u-body">
       <p>Upstream emissions relating to the embodied carbon of hardware and the development of software.</p>
 
-      <h3 class="mt-4">Commercial Software</h3>
+      <h3 class="mt-4 mb-2 text-lg font-medium">Commercial Software</h3>
       {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#web" description="Commercial Off The Shelf (COTS) Software" %}
 
-      <h3 class="mt-4">Hardware Manufacture, Transport and Installation</h3>
+      <h3 class="mt-4 mb-2 text-lg font-medium">Hardware Manufacture, Transport and Installation</h3>
       {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#devices" description="Employee Hardware (laptops, phones, printers, etc.)" %}
       {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#router" description="Networking Hardware" %}
       {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#storage" description="Data Center and Server Hardware" %}
@@ -55,7 +55,7 @@
   <div class="flex flex-col lg:w-2/4">
     <div class="flex">
       <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 cat-o">
-        <h2 class="lg:pl-[3rem] mb-0">Operational Emissions</h1>
+        <h2 class="lg:pl-[3rem] mb-0 text-xl font-medium"><a class="no-underline text-inherit hover:text-inherit hover:opacity-80" href="/categories/operational">Operational Emissions</a></h1>
       </div>
       <!-- ARROW RIGHT: hidden on smaller screens -->
       <div class="hidden lg:block w-0 h-0 z-10 cat-o-arrow-right"></div>
@@ -67,7 +67,7 @@
 
         <!-- DIRECT (Category O) -->
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
-          <h3>Direct</h3>
+          <h3 class="mb-2 text-lg font-medium">Direct</h3>
           <div class="absolute right-2 -top-2">
             {% include categoryLabel.html label="Category O" bgColor="cat-o" scope="2" %}
           </div>
@@ -88,7 +88,7 @@
 
         <!-- INDIRECT (Category C) -->
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
-          <h3>Indirect</h3>
+          <h3 class="mb-2 text-lg font-medium">Indirect</h3>
           <div class="absolute right-2 -top-2">
             {% include categoryLabel.html label="Category C" bgColor="cat-c" scope="3" %}
           </div>
@@ -109,7 +109,7 @@
     <div class="flex">
       <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 cat-d">
         <div class="relative">
-          <h2 class="lg:pl-[3rem] mb-0">Downstream Emissions</h1>
+          <h2 class="lg:pl-[3rem] mb-0 text-xl font-medium"><a class="no-underline text-inherit hover:text-inherit hover:opacity-80" href="/categories/downstream">Downstream Emissions</a></h1>
           <div class="absolute right-0 top-8">
             {% include categoryLabel.html label="Category D" bgColor="cat-d" scope="3" %}
           </div>
@@ -119,7 +119,7 @@
     <div class="h-full lg:-ml-[2rem] px-4 pt-4 pb-2 cat-d-body">
       <p>Carbon associated with the use of products and services produced by the business.</p>
 
-      <h3 class="mt-4">End Use (B2B, B2C)</h3>
+      <h3 class="mt-4 mb-2 text-lg font-medium">End Use (B2B, B2C)</h3>
       {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#devices" description="End-User Devices" %}
       {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#cell-tower" description="Network Data Transfer" %}
     </div>
@@ -129,7 +129,7 @@
 
 <div class="flex justify-center items-center px-4 py-4 mt-2 lg:mt-0 bg-black/25 dark:bg-black/25">
   <div>
-    <h3>Out of Scope</h3>
+    <h3 class="mb-2 text-lg font-medium">Out of Scope</h3>
     <div class="flex items-center gap-2">
       <div class="flex justify-center items-center size-12 bg-charcoal-600 dark:bg-charcoal-800">
         <svg class="w-8 h-8 fill-white"><use href="./assets/images/icons.svg#groups"></svg>
