@@ -8,13 +8,13 @@
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRVD4KMH9C"></script>
-    <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-PRVD4KMH9C'); </script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-PRVD4KMH9C');</script>
   </head>
   <body class="bg-gunmetal-50 text-charcoal dark:bg-gunmetal-950 dark:text-charcoal-100">
     <!-- NAVIGATION -->
-    <nav class="bg-gunmetal-800">
+    <nav class="bg-gunmetal-800 dark:bg-gunmetal-900">
       <div class="container max-w-7xl mx-auto h-20 w-full flex gap-4 px-2 items-end">
-        <a href="/"><svg class="size-12 mb-4 fill-cambridge-400"><use href="/assets/images/icons.svg#tcs-logo"></svg></a>
+        <a aria-label="Tech Carbon Standard home page" href="/"><svg class="size-12 mb-4 fill-cambridge-400 hover:fill-cambridge-300"><use href="/assets/images/icons.svg#tcs-logo"></use></a>
         {% include navigation.html %}
       </div>
     </nav>
@@ -25,7 +25,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-gunmetal-800 text-cambridge-100">
+    <footer class="bg-gunmetal-800 dark:bg-gunmetal-900 text-cambridge-100">
       <div class="container max-w-7xl w-full px-2 py-4 mx-auto">
         {% include footer.html %}
       </div>

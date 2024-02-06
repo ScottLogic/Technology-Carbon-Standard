@@ -54,9 +54,9 @@
 
   /* CATEGORY D */
   .cat-d {
-    @apply bg-orange-500 dark:bg-orange-800 text-white;
+    @apply bg-cambridge-500 dark:bg-cambridge-800 text-white;
   }
   .cat-d-body {
-    @apply bg-orange-200 dark:bg-orange-700 text-charcoal dark:text-white;
+    @apply bg-cambridge-200 dark:bg-cambridge-700 text-charcoal dark:text-white;
   }
 }
