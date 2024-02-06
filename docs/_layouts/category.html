@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="flex flex-col md:flex-row gap-6">
+  <aside class="md:w-1/5 border-b md:border-r md:border-b-0 border-gunmetal-200 pr-2 pb-2 pt-0">
+    <h3>Impact Categories</h3>
+
+    <div class="flex flex-col">
+      {% for item in site.data.categories %}
+        <a href="{{ item.link }}" class="font-normal {% if page.url == item.link %}text-cambridge-600 dark:text-cambridge-100{% endif %}">
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
+  </aside>
+  <article class="md:w-4/5">
+    {{ content }}
+  </article>
+</div>
