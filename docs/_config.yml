@@ -27,6 +27,9 @@ url: "http://www.techcarbonstandard.org/" # the base hostname & protocol for you
 
 # Build settings
 # theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-postcss
 
 postcss:
   cache: false
