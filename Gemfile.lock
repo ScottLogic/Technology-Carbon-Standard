@@ -73,8 +73,24 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  aarch64-linux
+  aarch64-linux-android
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux-androideabi
+  arm-linux-gnueabihf
+  arm-linux-musleabihf
+  arm64-darwin
+  x86-linux
+  x86-linux-android
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
   x64-mingw-ucrt
   x86_64-linux
+  x86_64-linux-android
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
