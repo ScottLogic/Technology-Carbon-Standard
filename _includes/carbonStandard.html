@@ -40,12 +40,12 @@
       <p>Upstream emissions relating to the embodied carbon of hardware and the development of software.</p>
 
       <h4 class="mt-4 mb-2 text-lg font-medium">Commercial Software</h4>
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#web" description="Commercial Off The Shelf (COTS) Software" %}
+      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#web" description="Commercial Off The Shelf (COTS) Software" link="/categories/upstream#commercial-software" %}
 
       <h4 class="mt-4 mb-2 text-lg font-medium">Hardware Manufacture, Transport and Installation</h4>
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#devices" description="Employee Hardware (laptops, printers, etc.)" %}
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#router" description="Networking Hardware" %}
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#storage" description="Data Center and Server Hardware" %}
+      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#devices" description="Employee Hardware (laptops, printers, etc.)" link="/categories/upstream#employee-hardware" %}
+      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#router" description="Networking Hardware" link="/categories/upstream#networking-hardware" %}
+      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#storage" description="Data Center and Server Hardware" link="/categories/upstream#data-center-and-server-hardware" %}
     </div>
     <!-- ARROW DOWN: visible on smaller screens -->
     <div class="w-full lg:hidden h-0 cat-u-arrow-down"></div>
@@ -72,9 +72,9 @@
             {% include categoryLabel.html label="Category O" bgColor="cat-o" scope="2" %}
           </div>
           <p class="mb-2">Direct running costs that are attributed to the electricity powering servers, networks and devices.</p>
-          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#storage" description="Servers and Storage" %}
-          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#router" description="Networking Devices" %}
-          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#devices" description="Employee Devices" %}
+          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#storage" description="Servers and Storage" link="/categories/operational#servers-and-storage" %}
+          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#router" description="Networking Devices" link="/categories/operational#networking-devices" %}
+          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#devices" description="Employee Devices" link="/categories/operational#employee-devices" %}
 
           <!-- DIRECT (Category G) -->
           <div class="relative">
@@ -82,7 +82,7 @@
             <div class="absolute right-2 -top-2">
               {% include categoryLabel.html label="Category G" bgColor="cat-g" scope="1" %}
             </div>
-            {% include categoryItem.html bgColor="cat-g" icon="./assets/images/icons.svg#bolt" description="Generators" %}
+            {% include categoryItem.html bgColor="cat-g" icon="./assets/images/icons.svg#bolt" description="Generators" link="/categories/operational#generators" %}
           </div>
         </div>
 
@@ -93,9 +93,9 @@
             {% include categoryLabel.html label="Category C" bgColor="cat-c" scope="3" %}
           </div>
           <p class="mb-2">Indirect running carbon costs that are attributed to external hardware and service solutions.</p>
-          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#cloud" description="Cloud Services" %}
-          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#router" description="SaaS" %}
-          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#storage" description="Managed Services" %}
+          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#cloud" description="Cloud Services" link="/categories/operational#cloud-services" %}
+          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#router" description="SaaS" link="/categories/operational#saas" %}
+          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#storage" description="Managed Services" link="/categories/operational#managed-services" %}
         </div>
       </div>
     </div>
@@ -120,8 +120,8 @@
       <p>Carbon associated with the use of products and services produced by the business.</p>
 
       <h4 class="mt-4 mb-2 text-lg font-medium">End Use (B2B, B2C)</h4>
-      {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#devices" description="End-User Devices" %}
-      {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#cell-tower" description="Network Data Transfer" %}
+      {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#devices" description="End-User Devices" link="/categories/downstream#end-user-devices" %}
+      {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#cell-tower" description="Network Data Transfer" link="/categories/downstream#network-data-transfer" %}
     </div>
   </div>
 
