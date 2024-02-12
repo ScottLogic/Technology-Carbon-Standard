@@ -15,7 +15,7 @@ By providing a structure to categorise and account for carbon across these diffe
 The Technology Carbon Standard was developed and is maintained by [Scott Logic](https://www.scottlogic.com) and offered as an open source project. Scott Logic has aligned it's approach with other open-source and science-backed, cross-industry frameworks such as the GHG Protocol and Green Software Foundation.
 
 For more information about Scott Logic and Sustainability, visit:
-- [Scott Logic Sustainabile Software](https://www.scottlogic.com/what-we-do/sustainable-software)
+- [Scott Logic Sustainable Software](https://www.scottlogic.com/what-we-do/sustainable-software)
 - [Scott Logic Sustainability Blog](https://blog.scottlogic.com/category/sustainability.html)
 
 
