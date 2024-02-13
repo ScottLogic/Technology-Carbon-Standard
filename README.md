@@ -4,8 +4,11 @@ A proposed Technology Carbon Standard that aims to provide a unified standard fo
 
 
 ## Running a Local Environment
-To run a local environment use:
-```bundle exec jekyll serve```
+
+Setting up your local environment you will need to install [Ruby](https://www.ruby-lang.org/en/) and [NodeJS](https://nodejs.org/en). Once installed run the followinng commands to install the project dependenices: ```npm install``` and  ```bundle install```.
+
+To run a local environment use: 
+```bundle exec jekyll serve```. This will start a local server running the website on http://localhost:4000/.
 
 Add `--livereload` to live reload the page on file save.
 
