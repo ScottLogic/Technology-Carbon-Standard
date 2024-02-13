@@ -15,9 +15,9 @@ GEM
     google-protobuf (3.25.2)
     google-protobuf (3.25.2-aarch64-linux)
     google-protobuf (3.25.2-arm64-darwin)
+    google-protobuf (3.25.2-x64-mingw-ucrt)
     google-protobuf (3.25.2-x86-linux)
     google-protobuf (3.25.2-x86_64-darwin)
-    google-protobuf (3.25.2-x64-mingw-ucrt)
     google-protobuf (3.25.2-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
@@ -77,6 +77,8 @@ GEM
       google-protobuf (~> 3.25)
     sass-embedded (1.70.0-arm64-darwin)
       google-protobuf (~> 3.25)
+    sass-embedded (1.70.0-x64-mingw-ucrt)
+      google-protobuf (~> 3.25)
     sass-embedded (1.70.0-x86-linux-android)
       google-protobuf (~> 3.25)
     sass-embedded (1.70.0-x86-linux-gnu)
@@ -86,8 +88,6 @@ GEM
     sass-embedded (1.70.0-x86_64-darwin)
       google-protobuf (~> 3.25)
     sass-embedded (1.70.0-x86_64-linux-android)
-      google-protobuf (~> 3.25)
-    sass-embedded (1.70.0-x64-mingw-ucrt)
       google-protobuf (~> 3.25)
     sass-embedded (1.70.0-x86_64-linux-gnu)
       google-protobuf (~> 3.25)
@@ -112,12 +112,12 @@ PLATFORMS
   arm-linux-gnueabihf
   arm-linux-musleabihf
   arm64-darwin
+  x64-mingw-ucrt
   x86-linux
   x86-linux-android
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
-  x64-mingw-ucrt
   x86_64-linux
   x86_64-linux-android
   x86_64-linux-gnu
