@@ -41,7 +41,17 @@ As the organisation does not own or control the IT assets delivering these servi
 Emissions estimates for third-party services can be obtained from providers to account for these indirect, supply chain impacts.
 
 {% include linkedHeading.html heading="Cloud Services" level=3 %}
-Cloud platform services like compute, storage, networking.
+This considers the emissions of Cloud platform services like compute, storage, networking etc. These services are all backed by computing hardware, which will have its own Upstream and Operational emissions. Different server instance types of varying performance are available, which impacts the proportion of Upstream emissions attributable to you, as well as the amount of energy consumed. The region that the services are run from can also have a significant impact on carbon emissions, depending on the mix of renewable energy sources that power the underlying data centers.
+
+Cloud providers may provide data on the emissions that are attributable to your service use, but what is included may vary and there can be a significant time delay to these figures. Due to this, third-party alternatives have arisen, which provide closer to real time emissions estimates, based on the usage data available from each provider.
+
+For more information, see the following:
+
+- [Tools for measuring Cloud Carbon Emissions](https://blog.scottlogic.com/2023/10/19/tools-for-measuring-cloud-carbon-emissions.html) - A more detailed look at the available tools for measuring the carbon emissions of Cloud services.
+- [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/) - A third party carbon footprint tool, which can report on all of the major Cloud Providers, using a consistent methodology.
+- [Deep Green](https://deepgreen.energy/) - A smaller Cloud provider who are specifically focussed on sustainability, with their micro data centers recapturing waste heat to repurpose for social good.
+
+
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
 Software-as-a-Service (SaaS) applications.
