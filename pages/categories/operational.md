@@ -45,13 +45,16 @@ This considers the emissions of Cloud platform services like compute, storage, n
 
 Cloud providers may provide data on the emissions that are attributable to your service use, but what is included may vary and there can be a significant time delay to these figures. Due to this, third-party alternatives have arisen, which provide closer to real time emissions estimates, based on the usage data available from each provider.
 
-For more information, see the following:
+#### Useful Links
 
-- [Tools for measuring Cloud Carbon Emissions](https://blog.scottlogic.com/2023/10/19/tools-for-measuring-cloud-carbon-emissions.html) - A more detailed look at the available tools for measuring the carbon emissions of Cloud services.
-- [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/) - A third party carbon footprint tool, which can report on all of the major Cloud Providers, using a consistent methodology.
-- [Deep Green](https://deepgreen.energy/) - A smaller Cloud provider who are specifically focussed on sustainability, with their micro data centers recapturing waste heat to repurpose for social good.
+[Tools for measuring Cloud Carbon Emissions](https://blog.scottlogic.com/2023/10/19/tools-for-measuring-cloud-carbon-emissions.html)  
+A more detailed look at the available tools for measuring the carbon emissions of Cloud services.
 
+[Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/)  
+A third party carbon footprint tool, which can report on all of the major Cloud Providers, using a consistent methodology.
 
+[Deep Green](https://deepgreen.energy/)  
+A smaller Cloud provider who are specifically focussed on sustainability, with their micro data centers recapturing waste heat to repurpose for social good.
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
 Software-as-a-Service (SaaS) applications.
