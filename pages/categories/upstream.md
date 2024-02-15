@@ -33,7 +33,7 @@ Laptops, desktops, mobiles, printers and peripherals used by employees
 
 
 {% include linkedHeading.html heading="Networking Hardware" level=3 %}
-Network routers, switches, wi-fi access points installed
+Network routers, switches, Wi-Fi access points installed
 
 
 {% include linkedHeading.html heading="Data centre and Server Hardware" level=3 %}

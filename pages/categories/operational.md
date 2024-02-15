@@ -23,7 +23,7 @@ The energy consumed by on-premise servers and data centres
 The energy consumed by networking devices such as:
 - routers
 - switches
-- wi-fi access points
+- Wi-Fi access points
 
 {% include linkedHeading.html heading="Employee Devices" level=3 %}
 The energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees. 
