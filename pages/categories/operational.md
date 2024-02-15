@@ -17,7 +17,7 @@ Direct emissions are a result of the organisation's direct consumption of grid-s
 Category O (On-premise) emissions can be related to GHG Protocol Scope 2, while Category G (Generators) are GHG Protocol Scope 1.
 
 {% include linkedHeading.html heading="Servers and Storage" level=3 %}
-The energy consumed by on-premise servers and data centers
+The energy consumed by on-premise servers and data centres
 
 {% include linkedHeading.html heading="Networking Devices" level=3 %}
 The energy consumed by networking devices such as:
