@@ -13,7 +13,7 @@ Downstream emissions (Category D) are the emissions produced by using an organis
 This considers the emissions generated from the electricity consumption of devices such as desktops, laptops, tablets, and mobile phones that utilise the products or services provided by the organisation. It is important to account for the differences in energy efficiency across various devices accessing these products and services. Typically, a smartphone uses less energy than a laptop, and a laptop uses less energy than a desktop. Understanding the energy use of devices can then be used to estimate carbon emissions by considering the source of the energy used to power or charge that device. Finally, end-user devices should have their embodied carbon estimated. This should take into account the product's life span to consider the entire Product Life Cycle.
 
 {% include linkedHeading.html heading="End-User Device Energy Consumption" level=3 %}
-Power range and average power of devices, data compiled from [Dimpact](#dimpact), [Scope3](#scope3) and [Fershad Irani](#fershad) and our own device energy use research:
+Power range and average power of devices, data compiled from Dimpact[^dimpact], Scope3[^scope3] and Fershad Irani[^fershad] and our own device energy use research:
 
 | Device             | Power Range (W)    | Average Power (W)  |
 | ------------------ | ------------------ | ------------------ |
@@ -24,7 +24,7 @@ Power range and average power of devices, data compiled from [Dimpact](#dimpact)
 | Monitor            | 17 - 30            | 30                 |
 | Television         | 40 - 120           | 74                 |
 
-Based on [Scope3](#scope3) and [Urban et al's](#urban-et-al) Installed Base data:
+Based on Scope3 and Urban et al's[^urban] installed base data:
 
 | Device             | Installed Base     |
 | ------------------ | ------------------ |
@@ -34,13 +34,15 @@ Based on [Scope3](#scope3) and [Urban et al's](#urban-et-al) Installed Base data
 
 When the end user's computer cannot be determined between a laptop (with or without a monitor) and a desktop. We can use the installed base data to estimate that a personal computer consumes an average of 53.2W (rounded up):
 
-<pre>(0.37 x 72.3) + (0.63 x 17.1) + (0.52 x 30) = 53.12W</pre>
+$$
+(0.37 \times 72.3) + (0.63 \times 17.1) + (0.52 \times 30) = 53.12W
+$$
 
 With these values, its possible to estimate the power consumption by users when using a product or service on a device. The more information available about what devices are used, and how much time users spend on these products, the more accurate the estimates can be. 
 
 To calculate energy use (Wh), the power (W) of the device is divided by the time factor (hours = 1, minutes = 60, seconds = 3600), then multiplied by the duration. For example to calculate 5 minutes of energy use of a laptop (without a monitor):
 
-<pre>Energy (Wh) = 17.1W / 60(minutes) x 5(duration) = 1.4Wh</pre>
+$$ Energy (Wh) = 17.1W / 60 \times 5 = 1.4Wh $$
 
 Examples of device energy consumption per minute:
 
@@ -55,15 +57,22 @@ Examples of device energy consumption per minute:
 
 
 {% include linkedHeading.html heading="End-User Device Carbon Emissions" level=3 %}
-Using the user's location, the carbon intenisty of the energy grid can be used to calcuate the carbon emissions of the device. #TODO Reference to Ember data
+Using the user's location, the carbon intensity of the energy grid can be used to calcuate the carbon emissions of the device.
 
 | Region             | Carbon Intensity (gCO2e/kWh)   |
 | ------------------ | ------------------------------ |
-| Global             | 442                            |
-| UK                 | 268                            |
-| More examples...   |                                |
+| Global             | 494                            |
+| Europe             | 330                            |
+| Germany            | 372                            |
+| UK                 | 238                            |
+| France             | 56                             |
 
-#TODO: Example calculation of carbon emissions...
+*Global and Europe values based on 2022 data, elsewhere is based on 2023 data. Source: Ember Data Explorer[^ember]*
+
+Continuing the example above, we can calculate the estimated carbon emissions of using a laptop for 5 minutes (1.4Wh = 0.0014kWh) on the UK energy grid:
+
+$$ Carbon Emissions = 0.0014 \times 238 = 0.33gCO2e $$
+
 
 {% include linkedHeading.html heading="End-User Device Embodied Carbon" level=3 %}
 #TODO:
@@ -82,14 +91,9 @@ Downstream emissions are related to GHG Protocol Scope 3.
 
 ## References
 
-<h3 id="dimpact">Dimpact</h3>
-[Methodology Statement](https://dimpact.org/publications)
 
-<h3 id="scope3">Scope3</h3>
-[Consumer Devices](https://methodology.scope3.com/consumer_devices)
-
-<h3 id="fershad">Fershad Irani</h3>
-[Thinking about a way to estimate website energy use](https://fershad.com/writing/thinking-about-a-way-to-estimate-website-energy-use/)
-
-<h3 id="urban-et-al">Urban, et al</h3>
-Urban, Bryan & Roth, Kurt & Singh, Mahendra & Howes, Duncan. (2019). [Residential Consumer Electronics Energy Consumption in the United States in 2017](https://www.researchgate.net/publication/335911295_Residential_Consumer_Electronics_Energy_Consumption_in_the_United_States_in_2017). 10.2760/667696. 
+[^dimpact]: [Dimpact; Methodology Statement](https://dimpact.org/publications)
+[^scope3]: [Scope3; Consumer Devices](https://methodology.scope3.com/consumer_devices)
+[^fershad]: [Fershad Irani; Thinking about a way to estimate website energy use](https://methodology.scope3.com/consumer_devices)
+[^urban]: Urban, Bryan & Roth, Kurt & Singh, Mahendra & Howes, Duncan. (2019). [Residential Consumer Electronics Energy Consumption in the United States in 2017](https://www.researchgate.net/publication/335911295_Residential_Consumer_Electronics_Energy_Consumption_in_the_United_States_in_2017). 10.2760/667696. 
+[^ember]: [Ember Data Explorer](https://ember-climate.org/data/data-tools/data-explorer/)
