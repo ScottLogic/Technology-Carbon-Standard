@@ -1,7 +1,6 @@
 <div role="menubar" class="container max-w-7xl mx-auto w-full flex px-2 pt-4 pb-4 sm:pb-0 items-center sm:items-end justify-start space-x-4">
 
-  <button id="menu-button" type="button" class="sm:hidden" aria-expanded="false">
-    <span class="sr-only">Open Menu</span>
+  <button id="menu-button" type="button" class="sm:hidden" aria-expanded="false" aria-label="open menu">
     <svg id="menu-icon" aria-hidden="true" class="size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#menu"></use></svg>
     <svg id="close-icon" aria-hidden="true" class="hidden size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#close"></use></svg>
   </button>
@@ -40,7 +39,12 @@
   const menuIcon = document.getElementById('menu-icon');
   const closeIcon = document.getElementById('close-icon');
   menuButton.addEventListener('click', function() {
-    console.log('Menu clicked')
+    const buttonAriaLabel = menuButton.getAttribute('aria-label');
+    if (buttonAriaLabel == 'open menu') {
+      menuButton.setAttribute('aria-label', 'close menu');
+    } else {
+      menuButton.setAttribute('aria-label', 'open menu');
+    }
     mobileMenu.classList.toggle('hidden');
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
