@@ -1,4 +1,4 @@
-<div role="menubar" class="container max-w-7xl mx-auto w-full flex px-2 pt-4 pb-4 sm:pb-0 items-center sm:items-end justify-start space-x-4">
+<div class="container max-w-7xl mx-auto w-full flex px-2 pt-4 pb-4 sm:pb-0 items-center sm:items-end justify-start space-x-4">
 
   <button id="menu-button" type="button" class="sm:hidden" aria-expanded="false" aria-label="open menu">
     <svg id="menu-icon" aria-hidden="true" class="size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#menu"></use></svg>
@@ -14,7 +14,7 @@
   <div class="hidden sm:block">
     <div class="flex space-x-6">
       {% for item in site.data.navigation %}
-        <a role="menuitem" href="{{ item.link }}" class="no-underline h-12  {% if page.url == item.link %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+        <a href="{{ item.link }}" class="no-underline h-12  {% if page.url == item.link %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
           {{ item.name }}
         </a>
       {% endfor %}
