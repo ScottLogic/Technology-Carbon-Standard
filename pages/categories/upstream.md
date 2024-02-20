@@ -29,13 +29,13 @@ Emissions from manufacturing, transport, and installation of all the hardware eq
 
 
 {% include linkedHeading.html heading="Employee Hardware" level=3 %}
-Laptops, desktops, mobiles, printers and peripherals used by employees
+Laptops, desktops, mobiles, printers and peripherals used by employees.
 
 
 {% include linkedHeading.html heading="Networking Hardware" level=3 %}
-Network routers, switches, Wi-Fi access points installed
+Network routers, switches, Wi-Fi access points installed.
 
 
 {% include linkedHeading.html heading="Data centre and Server Hardware" level=3 %}
-Servers, storage systems and data centre infrastructure installed on-premise
+Servers, storage systems and data centre infrastructure installed on-premise.
 
