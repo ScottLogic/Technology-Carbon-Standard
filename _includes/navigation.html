@@ -1,5 +1,52 @@
-{% for item in site.data.navigation %}
-  <a href="{{ item.link }}" class="no-underline h-12  {% if page.url == item.link %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
-    {{ item.name }}
+<div class="container max-w-7xl mx-auto w-full flex px-2 pt-4 pb-4 sm:pb-0 items-center sm:items-end justify-start space-x-4">
+
+  <button id="menu-button" type="button" class="sm:hidden" aria-expanded="false" aria-label="open menu">
+    <svg id="menu-icon" aria-hidden="true" class="size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#menu"></use></svg>
+    <svg id="close-icon" aria-hidden="true" class="hidden size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#close"></use></svg>
+  </button>
+
+  <!-- LOGO -->
+  <a class="flex items-center space-x-4 group no-underline" aria-label="Tech Carbon Standard home page" href="/">
+    <svg aria-hidden="true" class="size-12 sm:mb-4 fill-cambridge-300 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#tcs-logo"></use></svg>
+    <span class="sm:hidden text-lg text-cambridge-50 dark:text-cambridge-300 hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">Technology Carbon Standard</span>
   </a>
-{% endfor %}
+
+  <div class="hidden sm:block">
+    <div class="flex space-x-6">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" class="no-underline h-12  {% if page.url == item.link %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="hidden sm:hidden">
+  <div class="space-y-1 px-2 py-2">
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" class="block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  menuButton.addEventListener('click', function() {
+    const buttonAriaLabel = menuButton.getAttribute('aria-label');
+    if (buttonAriaLabel == 'open menu') {
+      menuButton.setAttribute('aria-label', 'close menu');
+    } else {
+      menuButton.setAttribute('aria-label', 'open menu');
+    }
+    mobileMenu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+</script>
