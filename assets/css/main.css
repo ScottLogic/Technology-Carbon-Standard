@@ -8,6 +8,11 @@
 @layer base {
   html {
     font-size: 16px;
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    overflow-y: scroll;
   }
 
   a {
