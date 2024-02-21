@@ -30,6 +30,11 @@ url: "http://www.techcarbonstandard.org/" # the base hostname & protocol for you
 postcss:
   cache: false
 
+collections:
+  glossary:
+
+# collections_dir: glossary
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
