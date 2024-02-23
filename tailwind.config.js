@@ -8,6 +8,7 @@ module.exports = {
     './_layouts/**/*.html',
     './_posts/*.md',
     './_glossary/*.md',
+    './_resources/*.md',
     './pages/*.md',
     './*.md',
     './*.html',
