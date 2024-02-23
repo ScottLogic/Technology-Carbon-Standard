@@ -32,13 +32,13 @@ Based on Scope3 and Urban et al's [^urban] installed base data:
 | Laptop             | 63%                |
 | Monitor            | 52%                |
 
-When the end user's computer cannot be determined between a laptop (with or without a monitor) and a desktop. We can use the installed base data to estimate that a personal computer consumes an average of 53.2W (rounded up):
+When the end user’s computer cannot be determined between a laptop (with or without a monitor) and a desktop, we can use the installed base data to estimate that a personal computer consumes an average of 53.2W (rounded up):
 
 $$
 (0.37 \times 72.3) + (0.63 \times 17.1) + (0.52 \times 30) = 53.12W
 $$
 
-With these values, its possible to estimate the power consumption by users when using a product or service on a device. The more information available about what devices are used, and how much time users spend on these products, the more accurate the estimates can be. 
+With these values, it is possible to estimate the power consumption by users when using a product or service on a device. The more information available about what devices are used and how much time users spend on these products, the more accurate the estimates can be.
 
 To calculate energy use (Wh), the power (W) of the device is divided by the time factor (hours = 1, minutes = 60, seconds = 3600), then multiplied by the duration. For example, assume a blog page with an estimated reading time of 5 minutes. The energy consumption of a user on a laptop (without a monitor) can be estimated using the following calculation:
 
@@ -57,7 +57,7 @@ Examples of device energy consumption per minute:
 
 
 {% include linkedHeading.html heading="End-User Device Carbon Emissions" level=3 %}
-Using the user's location, the carbon intensity of the energy grid can be used to calcuate the carbon emissions of the device.
+Using the user's location, the carbon intensity of the energy grid can be used to calculate the carbon emissions of the device.
 
 | Region             | Carbon Intensity (gCO2e/kWh)   |
 | ------------------ | ------------------------------ |
@@ -67,27 +67,27 @@ Using the user's location, the carbon intensity of the energy grid can be used t
 | UK                 | 238                            |
 | France             | 56                             |
 
-*Global and Europe values based on 2022 data, elsewhere is based on 2023 data. Source: Ember Data Explorer [^ember]*
+*Global and European values are based on 2022 data, other locations are based on 2023 data. Source: Ember Data Explorer [^ember]*
 
 Continuing the example above, a user, in the UK reading a blog page on a laptop for 5 minutes; we can calculate the estimated carbon emissions based on the energy consumed (1.4Wh = 0.0014kWh) and the UK energy grid (238gCO2e/kWh):
 
 $$ Carbon\ Emissions\ (gCO2e) = 0.0014 \times 238 = 0.33gCO2e $$
 
-An understanding of which devices, how long and how many end-users there are of these products and services is important to estimatating these emissions. Product and website metric and analytic tools are espeically useful for gathering this information.
+An understanding of which devices, how long and how many end-users there are of these products and services is important to estimating these emissions. Product and website metrics and analytic tools are especially useful for gathering this information.
 
 
 {% include linkedHeading.html heading="End-User Device Embodied Carbon" level=3 %}
 
-It's important to consider the embodied carbon of the device that goes beyond just the operational emissions. This includes the carbon emissions generated from the mining of raw materials, production of the device, transport and end of life processing. This data can usually be obtained from the manufacturers:
+It's important to consider the embodied carbon of the device that goes beyond just the operational emissions. This includes the carbon emissions generated from the mining of raw materials, production of the device, transport and end-of-life processing. This data can usually be obtained from the manufacturers, for example:
 
 - [Apple Environmental Reports](https://www.apple.com/environment/)
 - [Dell Product Carbon Footprints](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm)
 - [HP Product Carbon Footprints](https://h20195.www2.hp.com/v2/library.aspx?doctype=95&footer=95&filter_doctype=no&showregionfacet=yes&filter_country=no&cc=us&lc=en&filter_oid=no&filter_prodtype=rw&prodtype=ij&showproductcompatibility=yes&showregion=yes&showreglangcol=yes&showdescription=yes%23doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false#doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false)
 - [Samsung Life Cycle Assessment](https://www.samsung.com/global/sustainability/focus/products/sustainability-in-our-products/)
 
-Typically, over an average four year expected life span, a laptop has approximately 80% of its lifecycle emissions attributed to production emissions and 20% to operational emissions. Transport and end-of-life processing making up negligable percentages.
+Typically, over an average four-year expected life span, a laptop has approximately 80% of its lifecycle emissions attributed to production emissions and 20% to operational emissions. Transport and end-of-life processing make up negligible percentages.
 
-It is important to factor in the average life cycles of devices, given that 80% of its carbon emissions are attributed to production. Extending the life of a device, ie. using it beyond its expected life cycle bears a significant impact on the hardware efficiency. For example; A [2023 Apple 16" Macbook Pro has an embodied carbon of 290kgCO2e](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2023.pdf) with a life cycle of four years has an amortisation of:
+It is important to factor in the average life cycles of devices, given that 80% of their carbon emissions are attributed to production. Extending the life of a device, ie. using it beyond its expected life cycle bears a significant impact on the hardware efficiency. For example; A [2023 Apple 16" Macbook Pro has an embodied carbon of 290kgCO2e](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2023.pdf) with a life cycle of four years has an amortisation of:
 
 $$ Amortisation = 290\ kgCO2e / 4\ years = 72.5\ kgCO2e/year $$
 
@@ -97,15 +97,13 @@ $$ Amortisation = 290\ kgCO2e / 6\ years = 48.3\ kgCO2e/year $$
 
 A saving of over 24kgCO2e per year is possible by extending the life of the MacBook to six years. 
 
-A device's life span is driven by a number of factors, but it is mostly driven by social behaviour (a market driven desire for newer, improved technology). Other factors include:
-- built-in obsolescence by manufacturers, removed support and security 
-- applications demanding higher performance, latest operating systems and hardware
+A device's life span is driven by several factors, but it is mostly driven by social behavior (a market-driven desire for newer, improved technology). Other factors include:
+- built-in obsolescence by manufacturers - removed support and security 
+- applications demanding higher performance, the latest operating systems and hardware
 - un-repairable devices and hardware components (cannot physically be repaired/replaced or is cost prohibitive to do so)
 
 
 {% include linkedHeading.html heading="Network Data Transfer" level=2 %}
-
-#TODO:
 
 These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services. Network emissions can be estimated based on the size of the data transferred, the distance transmitted, and the carbon intensity of the regions through which the data is transferred.
 
