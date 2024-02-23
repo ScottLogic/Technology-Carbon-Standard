@@ -41,31 +41,46 @@ As the organisation does not own or control the IT assets delivering these servi
 Emissions estimates for third-party services can be obtained from providers to account for these indirect, supply chain impacts.
 
 {% include linkedHeading.html heading="Cloud Services" level=3 %}
-This considers the emissions of Cloud platform services like compute, storage, networking etc. These services are all backed by computing hardware, which will have its own Upstream and Operational emissions. Different server instance types of varying performance are available, which impacts the proportion of Upstream emissions attributable, as well as the amount of energy consumed. Generally speaking, it is in the cloud provider's interests to use the most energy efficient hardware possible to reduce their own operating costs. This extends to the typical Power Usage Effectiveness (PUE) of a cloud based data center, which can be lower than typical on-premise data centers.
 
-| Provider           | PUE                |
-| ------------------ | ------------------ |
-| Alibaba Cloud      | 1.3                |
-| AWS                | 1.135              |
-| Azure              | 1.185              |
-| GCP                | 1.1                |
-| Oracle Cloud       | 1.15               |
-| Worldwide Average  | 1.58               |
+Cloud computing has become a significant and rapidly growing part of the global computing infrastructure. It enables organizations to access a wide range of computing resources, including processing power, storage, networking, and software services, over the internet. Instead of building and maintaining their own data centres, businesses can leverage cloud services provided by major companies like Amazon (AWS), Microsoft (Azure), and Google (GCP).
+
+In simple terms, the "cloud" refers to vast networks of remote servers and data centres managed by these providers. Rather than hosting applications and storing data on local servers and computers, organizations can rent computing resources from cloud providers as needed, on a pay-as-you-go basis. This offers advantages such as scalability, flexibility, cost-effectiveness, reliability, and robust security measures.
+
+Cloud services are typically categorized into different models, such as Infrastructure as a Service (IaaS) and Platform as a Service (PaaS). IaaS provides access to virtualized computing resources like servers, storage, and networking, allowing organizations to manage these resources as needed. PaaS removes the need to manage the underlying infrastructure like hardware and operating systems, which can streamline development. This can extend to services like managed databases, where the cloud provider takes on the responsibility for administration and maintenance of the product.
+
+{% include linkedHeading.html heading="Environmental impact of Cloud Services" level=4 %}
+
+The environmental impact and carbon emissions associated with cloud computing are becoming increasingly important considerations. The energy consumption and carbon footprint of cloud data centres have grown substantially as the adoption of these services has accelerated. This hardware has its own Upstream and Operational emissions, which are attributable to clients under Scope 3 of the GHG protocol. Despite improvements in energy efficiency, the sheer scale of cloud infrastructure means its collective emissions are significant.
+
+At the same time, cloud computing presents some opportunities for improved sustainability compared to traditional on-premises data centres. Cloud providers can leverage economies of scale to invest in more energy-efficient hardware, cooling systems, and renewable energy sources. The flexibility of the cloud also allows organizations to dynamically provision resources and optimize their usage, potentially reducing idle capacity and associated emissions.
+
+Focussing specifically on energy efficiency, Cloud providers often use custom hardware with a lower power demand. Generally speaking, it is in their interests to use the most energy efficient hardware possible to reduce their own operating costs. This also allows users to switch to lower powered hardware without the initial outlay for new hardware. Improved energy efficiency also extends to the typical Power Usage Effectiveness (PUE) of a cloud based data centre, which can be lower than typical on-premise data centres.
+
+| Provider                      | PUE        |
+| ----------------------------- | ---------- |
+| Alibaba Cloud                 | 1.3        |
+| AWS                           | 1.135      |
+| Azure                         | 1.185      |
+| GCP                           | 1.1        |
+| Oracle Cloud                  | 1.15       |
+| Worldwide Data centre Average | 1.58 - 1.8 |
 
 Sources: [^ccf-pue] [^oracle-pue]
 
 [^ccf-pue]: [Cloud Carbon Footprint Methodology](https://www.cloudcarbonfootprint.org/docs/methodology#appendix-i-energy-coefficients)
 [^oracle-pue]: [Oracle Climate Action](https://www.oracle.com/uk/government/climate-action/#rc30p2)
 
-These figures should be considered carefully when sourced from the Cloud Providers themselves, as it may apply to specific data centers only rather than being an average. In future it is hoped that these figures can be further reduced by recapturing the waste heat from data centers, with [Deep Green](https://deepgreen.energy/) being an example of a smaller Cloud provider whose micro data centers extract heat to provide hot water for a range of purposes.
+These figures should be considered carefully when sourced from the Cloud Providers themselves, as it may apply to specific data centres only rather than being an average. In future it is hoped that these figures can be further reduced by recapturing the waste heat from data centres, with [Deep Green](https://deepgreen.energy/) being an example of a smaller Cloud provider whose micro data centres extract heat to provide hot water for a range of purposes.
 
-The region that the services are run from can also have a significant impact on carbon emissions, depending on the mix of renewable energy sources that power the underlying data centers. Some cloud providers may report that they use 'zero carbon' energy but it's important to distinguish between direct renewable power to the data center and that which has been offset via Power Purchase Agreements or Renewable Energy Certificates. The flexibility of the cloud does at least make it easier to switch location than it would be to move an on-premise estate.
+The region that the services are run from can also have a significant impact on carbon emissions, depending on the mix of renewable energy sources that power the underlying data centres. Some cloud providers may report that they use 'zero carbon' energy but it's important to distinguish between direct renewable power to the data centre and that which has been offset via Power Purchase Agreements or Renewable Energy Certificates. The flexibility of the cloud does at least make it easier to switch location than it would be to move an on-premise estate.
 
-So called 'Serverless' options provide ways of allocating resources that only exist when work is happening, minimizing the impact of idle hardware. Unfortunately the term has become slightly overloaded, with some services still requiring a minimum sized instance to run at all times, so careful reading of documentation may be necessary to determine if services can truly scale to zero.
+Returning to the IaaS and PaaS definitions, these can also be viewed through an emissions lens. IaaS may allow the most control over cloud resources but it retains the same issues that can be seen when running on-premise, with instances potentially being unused for the majority of time. PaaS may provide more opportunities for the Cloud provider to choose more efficient usage patterns behind the scenes. This extends to so called 'Serverless' options, which provide ways of allocating resources that only exist when work is happening, minimizing the impact of idle hardware. Unfortunately the term has become slightly overloaded, with some services still requiring a minimum sized instance to run at all times, so careful reading of documentation may be necessary to determine if services can truly scale to zero.
 
-Cloud services rely on virtualisation of the hardware to utilise it most effectively, allowing for a higher average utilization than most on-premise data centers. This can be in the range of ~50% utilization compared to ~20% in a traditional data centre.[^cloud-utilization] Cloud providers offer 'Spot' Instances as a way of making use of hardware that would otherwise be underutilized.
+Cloud services rely on virtualisation of the hardware to utilise it most effectively, allowing for a higher average utilization than most on-premise data centres. This can be in the range of ~50% utilization compared to ~20% in a traditional data centre.[^cloud-utilization] Cloud providers offer 'Spot' Instances as a way of making use of hardware that would otherwise be underutilized.
 
 [^cloud-utilization]: [United States Data Center Energy Usage Report](https://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf)
+
+{% include linkedHeading.html heading="Quantifying the emissions of Cloud Services" level=4 %}
 
 Cloud providers may provide data on the emissions that are attributable to service use, but what is included may vary and there can be a significant time delay to these figures. Here is a breakdown of the top 3 providers own tools.
 
