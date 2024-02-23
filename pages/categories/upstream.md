@@ -25,17 +25,17 @@ Emissions associated with developing and delivering commercial off-the-shelf (CO
 
 
 {% include linkedHeading.html heading="Hardware Manufacture, Transport and Installation" level=2 %}
-Emissions from manufacturing, transport, and installation of all the hardware equipment used within the organisation's technology infrastructure. This spans employee devices, networking gear, and on-premise data centers:
+Emissions from manufacturing, transport, and installation of all the hardware equipment used within the organisation's technology infrastructure. This spans employee devices, networking gear, and on-premise data centres:
 
 
 {% include linkedHeading.html heading="Employee Hardware" level=3 %}
-Laptops, desktops, mobiles, printers and peripherals used by employees
+Laptops, desktops, mobiles, printers and peripherals used by employees.
 
 
 {% include linkedHeading.html heading="Networking Hardware" level=3 %}
-Network routers, switches, wifi access points installed
+Network routers, switches, Wi-Fi access points installed.
 
 
-{% include linkedHeading.html heading="Data Center and Server Hardware" level=3 %}
-Servers, storage systems and data center infrastructure installed on-premise
+{% include linkedHeading.html heading="Data centre and Server Hardware" level=3 %}
+Servers, storage systems and data centre infrastructure installed on-premise.
 

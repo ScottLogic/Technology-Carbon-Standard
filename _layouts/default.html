@@ -14,14 +14,12 @@
   <body class="bg-gunmetal-50 text-charcoal dark:bg-gunmetal-950 dark:text-charcoal-100">
     <!-- NAVIGATION -->
     <nav class="bg-gunmetal-800 dark:bg-gunmetal-900">
-      <div class="container max-w-7xl mx-auto h-20 w-full flex gap-4 px-2 items-end">
-        <a aria-label="Tech Carbon Standard home page" href="/"><svg class="size-12 mb-4 fill-cambridge-300 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#tcs-logo"></use></svg></a>
-        {% include navigation.html %}
-      </div>
+      {% include navigation.html %}
     </nav>
 
     <!-- MAIN CONTENT -->
-    <main class="container min-h-[calc(100vh-208px)] max-w-7xl w-full px-2 py-4 mx-auto font-light prose dark:prose-invert prose-headings:font-light prose-h4:font-medium prose-h4:text-lg">
+
+    <main class="container min-h-[calc(100vh-214px)] max-w-7xl w-full px-2 py-4 mx-auto font-light prose dark:prose-invert prose-headings:font-light">
       {{ content }}
     </main>
 
