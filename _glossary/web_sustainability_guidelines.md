@@ -1,6 +1,6 @@
 ---
-title: Web Sustainability Guidlelines (WSG)
-linktext: Web Sustainability Guidlelines 
+title: Web Sustainability Guidelines (WSG)
+linktext: Web Sustainability Guidelines 
 link: https://w3c.github.io/sustyweb/
 ---
 
