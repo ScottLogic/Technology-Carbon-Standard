@@ -2,6 +2,7 @@
 layout: default
 title: Glossary
 permalink: /glossary
+published: false
 ---
 
 # Glossary
