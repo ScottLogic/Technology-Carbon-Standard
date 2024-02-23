@@ -57,17 +57,7 @@ Examples of device energy consumption per minute:
 
 
 {% include linkedHeading.html heading="End-User Device Carbon Emissions" level=3 %}
-Using the user's location, the carbon intensity of the energy grid can be used to calculate the carbon emissions of the device.
-
-| Region             | Carbon Intensity (gCO2e/kWh)   |
-| ------------------ | ------------------------------ |
-| Global             | 494                            |
-| Europe             | 330                            |
-| Germany            | 372                            |
-| UK                 | 238                            |
-| France             | 56                             |
-
-*Global and European values are based on 2022 data, other locations are based on 2023 data. Source: Ember Data Explorer [^ember]*
+Using the user's location, the [carbon intensity](/glossary#carbon-intensity) of the energy grid can be used to calculate the carbon emissions of the device.
 
 Continuing the example above, a user, in the UK reading a blog page on a laptop for 5 minutes; we can calculate the estimated carbon emissions based on the energy consumed (1.4Wh = 0.0014kWh) and the UK energy grid (238gCO2e/kWh):
 
@@ -85,22 +75,18 @@ It's important to consider the embodied carbon of the device that goes beyond ju
 - [HP Product Carbon Footprints](https://h20195.www2.hp.com/v2/library.aspx?doctype=95&footer=95&filter_doctype=no&showregionfacet=yes&filter_country=no&cc=us&lc=en&filter_oid=no&filter_prodtype=rw&prodtype=ij&showproductcompatibility=yes&showregion=yes&showreglangcol=yes&showdescription=yes%23doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false#doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false)
 - [Samsung Life Cycle Assessment](https://www.samsung.com/global/sustainability/focus/products/sustainability-in-our-products/)
 
-Typically, over an average four-year expected life span, a laptop has approximately 80% of its lifecycle emissions attributed to production emissions and 20% to operational emissions. Transport and end-of-life processing make up negligible percentages.
+Typically, a laptop has on average, an expected life span of four years. Approximately 80% of its product life cycle emissions are attributed to production emissions and 20% to operational emissions. Transport and end-of-life processing make up negligible percentages. It is important to factor in the average life cycles of devices, given that the majority of its carbon emissions are attributed to production. Extending the life of a device, i.e. using it beyond its expected life cycle bears a significant impact on the hardware efficiency. Read more about [amortisation here](/glossay#amortisation).
 
-It is important to factor in the average life cycles of devices, given that 80% of their carbon emissions are attributed to production. Extending the life of a device, ie. using it beyond its expected life cycle bears a significant impact on the hardware efficiency. For example; A [2023 Apple 16" Macbook Pro has an embodied carbon of 290kgCO2e](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2023.pdf) with a life cycle of four years has an amortisation of:
-
-$$ Amortisation = 290\ kgCO2e / 4\ years = 72.5\ kgCO2e/year $$
-
-If that Macbook's life cycle was extended to 6 years before being scrapped (and ideally recycled), the amortisation can be re-calculated as:
-
-$$ Amortisation = 290\ kgCO2e / 6\ years = 48.3\ kgCO2e/year $$
-
-A saving of over 24kgCO2e per year is possible by extending the life of the MacBook to six years. 
-
-A device's life span is driven by several factors, but it is mostly driven by social behavior (a market-driven desire for newer, improved technology). Other factors include:
+End-user device life spans are driven by several factors, but it is often driven by social behaviour (a market-driven desire for newer, improved technology). Other factors include:
 - built-in obsolescence by manufacturers - removed support and security 
 - applications demanding higher performance, the latest operating systems and hardware
 - un-repairable devices and hardware components (cannot physically be repaired/replaced or is cost prohibitive to do so)
+
+Whilst the end-user device's embodied carbon is beyond the direct control of an organisation's products and services, there are several things to consider, that can help extend the life of these devices:
+- ensure backward compatibility with hardware, operating systems and browsers, for as long as reasonably possible.
+- optimise applications; demand less from hardware and resources, minimise data transfer.
+
+Reducing the need for users to replace their devices can go a long way to reducing the carbon emissions associated with production and of course, waste.
 
 
 {% include linkedHeading.html heading="Network Data Transfer" level=2 %}
@@ -118,4 +104,3 @@ Downstream emissions are related to GHG Protocol Scope 3.
 [^scope3]: [Scope3; Consumer Devices](https://methodology.scope3.com/consumer_devices)
 [^fershad]: [Fershad Irani; Thinking about a way to estimate website energy use](https://methodology.scope3.com/consumer_devices)
 [^urban]: Urban, Bryan & Roth, Kurt & Singh, Mahendra & Howes, Duncan. (2019). [Residential Consumer Electronics Energy Consumption in the United States in 2017](https://www.researchgate.net/publication/335911295_Residential_Consumer_Electronics_Energy_Consumption_in_the_United_States_in_2017). 10.2760/667696. 
-[^ember]: [Ember Data Explorer](https://ember-climate.org/data/data-tools/data-explorer/)
