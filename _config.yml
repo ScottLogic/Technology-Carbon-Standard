@@ -31,7 +31,8 @@ postcss:
   cache: false
 
 collections:
-  glossary:
+  - glossary
+  - resources
 
 # collections_dir: glossary
 
