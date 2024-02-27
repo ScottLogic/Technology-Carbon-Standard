@@ -7,6 +7,8 @@ permalink: categories/operational
 # Operational Emissions
 Operational emissions encompass the greenhouse gases emitted from an organisation's own technology infrastructure and operations. These are categorised into three groups - On-Prem, Cloud, and Generator emissions (O, C and G) - based on the level of ownership and control an organisation has over the assets.
 
+Understanding operational emissions allows organisations to quantify, monitor, and benchmark the climate impacts of their technology infrastructure and business operations. It enables setting emission reduction targets and strategies and facilitates compliance with current and emerging climate disclosure legislations. 
+
 Emissions are further classified into direct and indirect sources:
 
 
@@ -17,7 +19,9 @@ Direct emissions are a result of the organisation's direct consumption of grid-s
 Category O (On-premise) emissions can be related to GHG Protocol Scope 2, while Category G (Generators) are GHG Protocol Scope 1.
 
 {% include linkedHeading.html heading="Servers and Storage" level=3 %}
-The energy consumed by on-premise servers and data centres
+This concerns the energy consumed by on-premise servers and data centres. Servers and data centres can be major contributors to an organisation's carbon footprint due to their high energy usage. Factors that influence emissions include the number of servers, their efficiency and utilisation, and the carbon/grid intensity of the operating location. 
+
+A good source of data is the SPEC Power Benchmark. This provides results based on real hardware use under varying levels of load, which can also help match utilisation to the differing power demands. Power draw figures extracted from manufacturer data or benchmarking tools can be used in heuristic calculations to refine estimation of overall energy consumption. 
 
 {% include linkedHeading.html heading="Networking Devices" level=3 %}
 The energy consumed by networking devices such as:
@@ -26,7 +30,60 @@ The energy consumed by networking devices such as:
 - Wi-Fi access points
 
 {% include linkedHeading.html heading="Employee Devices" level=3 %}
-The energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees. 
+This considers the energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees. Energy consumption will differ between devices due to varying power demands and employee usage patterns. Typically, a smartphone uses less energy than a laptop and a laptop uses less energy than a desktop, as illustrated in the table below. The energy consumption of devices can be used to estimate the operational carbon emissions by considering the source of energy used to power or charge that device. To capture the full carbon footprint of a device, the embodied carbon also needs to be considered. This is discussed in the upstream and downstream emissions categories.
+
+Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3] and Fershad Irani [^fershad] and our own device energy use research:
+
+| Device             | Power Range (W)    | Average Power (W)  |
+| ------------------ | ------------------ | ------------------ |
+| Desktop            | 72 - 100           | 72.3               |
+| Laptop             | 15 - 30            | 17.1               |
+| Tablet             | 3 - 5.5            | 3                  | ? 20W ?
+| Smartphone         | 0.77 - 2           | 1                  |
+| Monitor            | 17 - 30            | 30                 |
+| Television         | 40 - 120           | 74                 |
+
+At a high level, the annual energy consumption (kWh/yr) of a device can be estimated using the following formula:
+
+Annual Energy Consumption (kWh/yr) = Average Power Draw (kW) * Daily Uptime (hours) * Annual Uptime (days) 
+
+For example, consider a Dell XPS 13 9310 laptop. This is the same model as used in the example in upstream emissions. Manufacturers provide specifications for hardware models which often include a typical wattage figure. For this Dell model, the [specifications](https://www.dell.com/support/manuals/en-uk/xps-13-9310-laptop/xps-13-9310-setup-and-specifications/processor?guid=guid-b426df85-6237-4365-b1fc-c3bb6e190257&lang=en-us) suggest a processor wattage of 15W. Taking this wattage and considering a typical uptime of 8 hours a day for a working year (~220 days), annual energy consumption can be estimated as:
+
+0.015 kW * 8 hours * 220 days = 26.4 kWh/yr
+
+Once an estimation of energy consumption has been obtained, the following formula can be used to estimate operational emissions:
+
+Annual Operational Emissions (kgCO2e/yr) = Annual Energy Consumption (kWh/yr) * Carbon Intensity (kgCO2e/kWh) 
+
+For example, if the device is used in Europe, use a carbon intensity of 277 gCO2e/kWh to estimate annual operational emissions as. [From a provider like Electricity Maps, BEIS or IEA to source carbon intensity figures for each location.]
+
+26.4 kWh/yr * 0.277 kgCO2e/kWh = 7.31 kgCO2e/yr
+
+To scale up the operational emissions across an organisation's estate, counts of device models by location are needed. Ideal data sources are configuration management databases (CMDBs) from robust IT asset management processes. Where such data is incomplete, extrapolation from partial datasets can provide estimates such as partially completed asset management records, historic procurement data on devices purchased, employee numbers per office, generic device ratios per employee type. The accuracy of this underlying data will impact on the precision of emissions estimates across the estate. However, even roughly extrapolated totals highlight emission problem areas across the estate and allow year-on-year benchmarking to track improvement. Where specific device models or usage locations are unknown, average figures for the device category as a whole can be used instead. This sacrifices precision for practicality but maintains the estates view to direct technology optimisation efforts.
+
+Combining the above formulae, per device model in a certain location:
+
+Total Annual Operational Emissions (kgCO2e/yr) = Device Count * Average Power Draw (kW) * Daily Uptime (hours) * Annual Uptime (days)  * Carbon Intensity (kgCO2e/kWh) 
+
+For example, 500 of the Dell XPS 13 9310 laptops operating in Europe would result in estimated
+
+500 * 7.31 kgCO2e = 3,655 kgCO2e operational carbon emissions. 
+
+Operational emissions can be aggregated across different device types and locations to provide a high level estimate across an organisation's estate.
+
+| Device  | Model | Location | Device Count | Average Power Draw (kW) | Annual Energy Consumption (kWh/yr) | TEC (kWh/yr) | Carbon Intensity (kgCO2e/kWh) | Operational Emissions (kgCO2e/yr) |
+|---------|-------|----------|--------------|-------------------------|------------------------------------|--------------|-------------------------------|-----------------------------------|
+| Laptop  | Dell XPS 13 9310 | Europe | 500 | 0.015 |
+| Laptop  | Dell XPS 13 9310 | USA    | 300 | 0.015 |
+| Tablet  | iPad 10th Generation 64GB | Europe | 50 | 
+| Monitor | HP Z24s | Europe | 1000 |
+| Total | ||||||||
+
+While the above approach relies on key assumptions and does not account for the variability in device usage patterns, it is a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives. 
+
+As discussed in upstream emissions, manufacturers can provide PCF data that allocates a percentage of total emissions to each stage of a product's life cycle phase. This data relies on key assumptions made by the manufacturer regarding emissions estimations. This includes providing Typical Energy Consumption (TEC) figures for hardware (kWh/yr) which can be used in place of the estimated annual energy consumption figures discussed earlier. TEC quantifies the average annual energy consumption of a device or product under typical operating conditions. In the previous example, it is assumed that laptops run for 8 hours per day to reflect typical business usage. However, laptop manufacturers may base power draw specifications on consumer household usage, which is often less than in an office setting. Using TEC in subsequent estimations of emissions could result in lower emissions estimates than may be expected of business usage. In the previous laptop example, estimated annual consumption was 26.4 kWh/yr based on assumed business usage of 8 hours per day. However, the [manufacturer's product carbon footprint (PCF) documentation](https://www.delltechnologies.com/asset/en-us/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf) states a lower TEC of 21.43 kWh/yr. Feeding this TEC estimate into the operational emissions calculation for Europe would result in 2,968 kgCO2e/yr operational emissions as opposed to the 3,655 kgCO2e estimated earlier. Additionally, this document states that 13.9% of total 4-year lifecycle emissions of 322 kgCO2e are allocated to usage, equating to 11.19 kgCO2e/yr. This is higher than the 7.31 kgCO2e/yr estimate derived from the approach above. This discrepancy highlights the impact of employing different assumptions in estimating operational emissions. Since Dell cite a lower annual energy consumption (TEC) than may be expected for business usage, this suggests higher usage emissions likely stem from assuming a greater carbon intensity factor for the energy consumed.
+
+It is recommended to cross-reference TEC values and clarify assumptions made by manufacturers. Using consistent data sources and transparency over methodology is important for accurate and comparable emissions estimates across all hardware assets.
 
 {% include linkedHeading.html heading="Generators" level=3 %}
 Any fossil fuel-powered generators, solar PV, wind turbines or other systems installed on-site to supply electricity to technology equipment.
@@ -105,3 +162,8 @@ Software-as-a-Service (SaaS) applications.
 Managed Security Operations, IT support and data backup services.
 
 ## References
+
+[^dimpact]: [Dimpact; Methodology Statement](https://dimpact.org/publications)
+[^scope3]: [Scope3; Consumer Devices](https://methodology.scope3.com/consumer_devices)
+[^fershad]: [Fershad Irani; Thinking about a way to estimate website energy use](https://methodology.scope3.com/consumer_devices)
+[^urban]: Urban, Bryan & Roth, Kurt & Singh, Mahendra & Howes, Duncan. (2019). [Residential Consumer Electronics Energy Consumption in the United States in 2017](https://www.researchgate.net/publication/335911295_Residential_Consumer_Electronics_Energy_Consumption_in_the_United_States_in_2017). 10.2760/667696.
