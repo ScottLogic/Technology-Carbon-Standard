@@ -40,9 +40,9 @@ $$
 
 With these values, it is possible to estimate the power consumption by users when using a product or service on a device. The more information available about what devices are used and how much time users spend on these products, the more accurate the estimates can be.
 
-To calculate energy use (Wh), the power (W) of the device is divided by the time factor (hours = 1, minutes = 60, seconds = 3600), then multiplied by the duration. For example, assume a blog page with an estimated reading time of 5 minutes. The energy consumption of a user on a laptop (without a monitor) can be estimated using the following calculation:
+To calculate energy use (Wh), the power (W) of the device is multiplied by the duration of its use in hours. When dealing with other units of time, they must be divided by the amount in an hour (minutes = 60, seconds = 3600), to give a fractional amount of hours. For example, assume a blog page has an estimated reading time of 5 minutes. Then the energy consumption of a user on a laptop (without a monitor) can be estimated using the following calculation:
 
-$$ Energy\ (Wh) = 17.1W / 60 \times 5 = 1.4Wh $$
+$$ Energy\ (Wh) = 17.1W \times \frac{5}{60} = 1.4Wh $$
 
 Examples of device energy consumption per minute:
 
@@ -59,11 +59,11 @@ Examples of device energy consumption per minute:
 {% include linkedHeading.html heading="End-User Device Carbon Emissions" level=3 %}
 Using the user's location, the [carbon intensity](/glossary#carbon-intensity) of the energy grid can be used to calculate the carbon emissions of the device.
 
-Continuing the example above, a user, in the UK reading a blog page on a laptop for 5 minutes; we can calculate the estimated carbon emissions based on the energy consumed (1.4Wh = 0.0014kWh) and the UK energy grid (238gCO2e/kWh):
+Continuing the example above, given a user in the UK reading a blog page on a laptop for 5 minutes: we can calculate the estimated carbon emissions based on the energy consumed (1.4Wh = 0.0014kWh) and the UK energy grid (238gCO2e/kWh):
 
 $$ Carbon\ Emissions\ (gCO2e) = 0.0014 \times 238 = 0.33gCO2e $$
 
-An understanding of which devices, how long and how many end-users there are of these products and services is important to estimating these emissions. Product and website metrics and analytic tools are especially useful for gathering this information.
+An understanding of which devices, how long they are used for and how many end-users there are of these products and services is important to estimating these emissions. Product and website metrics and analytic tools are especially useful for gathering this information.
 
 
 {% include linkedHeading.html heading="End-User Device Embodied Carbon" level=3 %}
@@ -75,18 +75,18 @@ It's important to consider the embodied carbon of the device that goes beyond ju
 - [HP Product Carbon Footprints](https://h20195.www2.hp.com/v2/library.aspx?doctype=95&footer=95&filter_doctype=no&showregionfacet=yes&filter_country=no&cc=us&lc=en&filter_oid=no&filter_prodtype=rw&prodtype=ij&showproductcompatibility=yes&showregion=yes&showreglangcol=yes&showdescription=yes%23doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false#doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false)
 - [Samsung Life Cycle Assessment](https://www.samsung.com/global/sustainability/focus/products/sustainability-in-our-products/)
 
-Typically, a laptop has on average, an expected life span of four years. Approximately 80% of its product life cycle emissions are attributed to production emissions and 20% to operational emissions. Transport and end-of-life processing make up negligible percentages. It is important to factor in the average life cycles of devices, given that the majority of its carbon emissions are attributed to production. Extending the life of a device, i.e. using it beyond its expected life cycle bears a significant impact on the hardware efficiency. Read more about [amortisation here](/glossary#amortisation).
+Typically, a laptop has on average an expected life span of four years. Approximately 80% of its product life cycle emissions are attributed to production emissions and 20% to operational emissions. Transport and end-of-life processing make up negligible percentages. It is important to factor in the average life cycle of a device, given that the majority of its carbon emissions are attributed to production. Extending the life of a device, i.e. using it beyond its expected life cycle, bears a significant impact on the hardware efficiency. Read more about [amortisation here](/glossary#amortisation).
 
 End-user device life spans are driven by several factors, but it is often driven by social behaviour (a market-driven desire for newer, improved technology). Other factors include:
 - built-in obsolescence by manufacturers - removed support and security 
 - applications demanding higher performance, the latest operating systems and hardware
 - un-repairable devices and hardware components (cannot physically be repaired/replaced or is cost prohibitive to do so)
 
-Whilst the end-user device's embodied carbon is beyond the direct control of an organisation's products and services, there are several things to consider, that can help extend the life of these devices:
-- ensure backward compatibility with hardware, operating systems and browsers, for as long as reasonably possible.
-- optimise applications; demand less from hardware and resources, minimise data transfer.
+Whilst the end-user device's embodied carbon is beyond the direct control of an organisation's products and services, there are several things to consider that can help extend the life of these devices:
+- ensure backward compatibility with hardware, operating systems and browsers, for as long as reasonably possible
+- optimise applications; demand less from hardware and resources, minimise data transfer
 
-Reducing the need for users to replace their devices can go a long way to reducing the carbon emissions associated with production and of course, waste.
+Reducing the need for users to replace their devices can go a long way to reducing the carbon emissions associated with production and, of course, waste.
 
 
 {% include linkedHeading.html heading="Network Data Transfer" level=2 %}
