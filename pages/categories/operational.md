@@ -16,14 +16,8 @@ Direct emissions are a result of the organisation's direct consumption of grid-s
 
 Category O (On-premise) emissions can be related to GHG Protocol Scope 2, while Category G (Generators) are GHG Protocol Scope 1.
 
-
 {% include linkedHeading.html heading="Servers and Storage" level=3 %}
 The energy consumed by on-premise servers and data centres
-
-Your On-Premise hardware will have differing power demands and usage patterns, which factor into how much energy they consume
-
-You may have many virtualised servers, so you need to have a clear understanding of the physical hosts to avoid double counting.
-As you start to break down the energy used by different departments or projects, you may need to apportion the total energy usage of a piece of hardware to multiple virtual machines.
 
 {% include linkedHeading.html heading="Networking Devices" level=3 %}
 The energy consumed by networking devices such as:
@@ -33,72 +27,6 @@ The energy consumed by networking devices such as:
 
 {% include linkedHeading.html heading="Employee Devices" level=3 %}
 The energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees. 
-
-Your On-Premise hardware will have differing power demands and usage patterns, which factor into how much energy they consume
-
-Some sources for device counts could be simple estimations based on staff headcount, data from procurement and suppliers, scaling up based on numbers from a single site or a Configuration Management Database (CMDB).
-
-same as downstream section?? 
-This considers the emissions generated from the electricity consumption of employee devices such as desktops, laptops, tablets, and mobile phones that are utilised in the organisation. It is important to account for the differences in energy efficiency across various devices accessing these products and services. Typically, a smartphone uses less energy than a laptop, and a laptop uses less energy than a desktop. Understanding the energy use of devices can then be used to estimate carbon emissions by considering the source of the energy used to power or charge that device. Finally, end-user devices should have their embodied carbon estimated. This should take into account the product's life span to consider the entire Product Life Cycle.
-
-A point to touch on with Desktop devices is the variability in energy consumption they may have.
-* Are machines turned off at the end of every working day?
-* What is the specification of the machine, does it contain a GPU or other specialist hardware that may consume more energy?
-* What kind of workloads do these devices perform on a daily basis?
-
-As a first step, you should begin with a count of each different hardware type. Depending on the data available to you, this may still be somewhat of an estimate or extrapolation based on known figures. Each type of hardware can be assigned an average power draw, based on industry standards, which can be used to calculate a yearly energy usage figure using the following process:
-
-$\text{Device Count} \times \text{Average Power Draw (kW)} \times \text{Daily Uptime (hours)} \times \text{Annual Uptime (days)} = \text{Annual Energy Consumption (kWh/Yr)}$
-
-If you are looking for very rough estimates of power draw, we have started with the following:
-
-| Hardware Type | Power (kW) |
-| ------------- | ---------- |
-| Laptop        | 0.05       |
-| Desktop       | 0.1        |
-| Monitor       | 0.03       |
-| Server        | 0.4        |
-
-The uptime will vary depending on the class of hardware - Servers and Networking Devices are likely to be active 24 hours a day, 365 days a year, whereas Employee Devices may vary depending on your working year. A typical example might be 8 hours a day, 230 days a year.
-
-Once you have a figure for Annual Energy Consumption, you can apply an average carbon intensity to transform this from kWh to kg CO2e. You may operate in a single country and be able to use the average for that region or you can work with a worldwide average, which in the past has been 0.442 kg CO2e/kWh.
-
-So as a worked example, if our initial estimate for device count was 500 laptops, then we would calculate:
-
-$500 \times 0.05 \times 8 \times 230 \times 0.442 = \text{20,332 kgCO2e/yr}$
-
-Carbon Emission figures can often be hard to put into context on their own, so it can be helpful to add an equivalent figure, which in this case might be 52,122 miles driven by an average gasoline-powered car.[^equiv]
-
-[^equiv]: [Greenhouse Gas Equivalencies Calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator)
-
-As you try to get more accurate measurements, you will need to break down your types of equipment further and collate the hardware models that you own. Starting with the models that you have the most of, make use of the manufacturer's specifications to find the average power draw for those specific models. For servers specifically, another good source of data is the [SPEC Power Benchmark](https://www.spec.org/power_ssj2008/). This provides results based on real hardware use under varying levels of load, which can also help to match your own utilisation to the differing power demands. 
-
-As you get more information you may start to see more splits in hardware type, where there are significant differences in the power demand. This may be especially true in the realm of Networking Devices, where rack mounted Switches and Routers have a much higher draw than more end-user like devices and Wireless Access Points.
-
-Power draw figures extracted from manufacturer data or benchmarking tools can be used in the heuristic calculations discussed earlier to refine estimation of overall energy consumption.
-
-Manufacturers can also provide figures for hardware Typical Energy Consumption (TEC), expressed in units of kWh/year. This is a metric used to quantify the average energy consumption of a device or product under typical operating conditions. Often, it can be unclear what these operating conditions are. In the previous heuristic example, we assumed laptops run for 8 hours per day to reflect typical business usage. However, laptop manufacturers may base power draw specifications on consumer household usage, which is often far less than in an office setting. Therefore, using TEC in subsequent estimations of emissions could result in lower emissions esimates than may be expected of business usage. This is illustrated in the following example. Therefore, it is important to cross-reference or use consistent data sources and assumptions when taking a proxy approach to estimating energy consumption of hardware assets to ensure comparability. 
-
-Additionally, you can start to estimate operational carbon emissions taking into account the location where the hardware is running by using a location specific [Carbon Intensity](/Technology%20Carbon%20Standard/Glossary/README.md#carbon-intensity). This gives a better idea of where your biggest impacts are located and illustrates how the electricity supply may have a significant effect.
-
-To continue the heuristic example, we could refine the 500 laptop figure to split it into two main models of laptop, operated in 3 key locations. Using information from datasheets we can get two Typical Energy Consumption (TEC) figures for the models.
-
-You can then use a provider like [Electricity Maps](https://www.electricitymaps.com/), [BEIS](https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy) or [IEA](https://www.iea.org/) to source carbon intensity figures for each location. As an example we will use France at 0.053 kg CO2e/kWh, Germany at 0.403 kg CO2e/kWh and Poland at 0.776 kg CO2e/kWh.
-
-Given the following breakdown:
-
-| TEC (kWh/yr) | Location | Device Count | CI (kg CO2e/kWh) | OE (kg CO2e/yr) |
-|---------- |----------|--------------|------------------|---------------------|
-| 21.43 | France | 100 | 0.053 | 113.579 |
-| 21.43 | Germany | 150 | 0.403 | 1,295.4435 |
-| 21.43 | Poland | 70 | 0.776 | 1164.0776 |
-| 38.1 | France | 50 | 0.053 | 100.965 |
-| 38.1 | Germany | 70 | 0.403 | 1,074.801 |
-| 38.1 | Poland | 60 | 0.776 | 1,773.936 |
-
-This gives a total of ~5,500 kg CO2e per year - a huge decrease from the initial heuristic estimate. Here we can point to lower energy consumption and carbon intensity in some areas. This is not to say that proxy measurements will always lead to a decrease in the estimate, it may also uncover assumptions that have led to an underestimate.
-
-While electricity providers may supply some emissions data, this often doesn't provide the level of detail needed to optimize and attribute emissions across hardware, software, and teams. Home office energy use also may not be accounted for. More granular tracking is needed to optimize and attribute emissions. Power monitoring hardware provides accuracy but is costly to scale. CPU utilization proxies model energy use cost-effectively and allocate emissions across hardware and software. Live grid emissions factors from sites like ElectricityMap enable accurate CO2e monitoring. Combining bottom-up power and utilization data with real-time emissions factors allows reasonably precise emissions attribution.
 
 {% include linkedHeading.html heading="Generators" level=3 %}
 Any fossil fuel-powered generators, solar PV, wind turbines or other systems installed on-site to supply electricity to technology equipment.
