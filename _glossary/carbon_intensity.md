@@ -20,8 +20,3 @@ This method only considers the carbon intensity of the local grid and ignores th
 
 ### Market Based
 This method considers the electricity you have purchased from your suppliers which could be green energy tariffs that leverage [Renewable Energy Certificates (RECs)](#renewable-energy-certificates-recs) and Guarantees of Origin (REGO) allowing benefits in reporting for companies that source their electricity more sustainably.
-
-
-
-
-
