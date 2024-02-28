@@ -30,7 +30,7 @@ The energy consumed by networking devices such as:
 - Wi-Fi access points
 
 {% include linkedHeading.html heading="Employee Devices" level=3 %}
-This considers the energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees. Energy consumption will differ between devices due to varying power demands and employee usage patterns. Typically, a smartphone uses less energy than a laptop and a laptop uses less energy than a desktop, as illustrated in the table below. The energy consumption of devices can be used to estimate the operational carbon emissions by considering the source of energy used to power or charge that device. To capture the full carbon footprint of a device, the embodied carbon also needs to be considered. This is discussed in the upstream and downstream emissions categories.
+This considers the energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees. Energy consumption will differ between devices due to varying power demands and employee usage patterns. Typically, a smartphone uses less energy than a laptop and a laptop uses less energy than a desktop, as illustrated in the table below. The energy consumption of devices can be used to estimate the operational carbon emissions by considering the source of energy used to power or charge that device. To capture the full carbon footprint of a device, the embodied carbon also needs to be considered. This is discussed in the [upstream](upstream) and [downstream](downstream) emissions categories.
 
 Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3] and Fershad Irani [^fershad] and our own device energy use research:
 
@@ -43,45 +43,69 @@ Power range and average power of devices, data compiled from Dimpact [^dimpact],
 | Monitor            | 17 - 30            | 30                 |
 | Television         | 40 - 120           | 74                 |
 
-At a high level, the annual energy consumption (kWh/yr) of a device can be estimated using the following formula:
+{% include linkedHeading.html heading="A high level approach to estimation" level=4 %}
 
-Annual Energy Consumption (kWh/yr) = Average Power Draw (kW) * Daily Uptime (hours) * Annual Uptime (days) 
+At a high level, the annual energy consumption (kWh per year) of a device can be estimated using the following formula:
 
-For example, consider a Dell XPS 13 9310 laptop. This is the same model as used in the example in upstream emissions. Manufacturers provide specifications for hardware models which often include a typical wattage figure. For this Dell model, the [specifications](https://www.dell.com/support/manuals/en-uk/xps-13-9310-laptop/xps-13-9310-setup-and-specifications/processor?guid=guid-b426df85-6237-4365-b1fc-c3bb6e190257&lang=en-us) suggest a processor wattage of 15W. Taking this wattage and considering a typical uptime of 8 hours a day for a working year (~220 days), annual energy consumption can be estimated as:
+$$ Annual\ Energy\ Consumption\ (kWh/yr) = Average\ Power\ Draw\ (kW) \times Daily\ Uptime\ (hours) \times Annual\ Uptime\ (days) $$
 
-0.015 kW * 8 hours * 220 days = 26.4 kWh/yr
+For example, consider a Dell XPS 13 9310 laptop. This is the same model as used in the example in [upstream emissions](upstream). Manufacturers provide specifications for hardware models which often include a typical wattage figure. For this Dell model, the [specifications](https://www.dell.com/support/manuals/en-uk/xps-13-9310-laptop/xps-13-9310-setup-and-specifications/processor?guid=guid-b426df85-6237-4365-b1fc-c3bb6e190257&lang=en-us) suggest a processor wattage of 15W. Taking this wattage and considering a typical uptime of 8 hours a day over 220 days (a typical working year), annual energy consumption can be estimated to be
+
+$$ 0.015\ kW \times 8\ hours \times 220\ days = 26.4\ kWh/yr $$
+
+per device.
 
 Once an estimation of energy consumption has been obtained, the following formula can be used to estimate operational emissions:
 
-Annual Operational Emissions (kgCO2e/yr) = Annual Energy Consumption (kWh/yr) * Carbon Intensity (kgCO2e/kWh) 
+$$ Annual\ Operational\ Emissions\ (kg\ CO2e/yr) = Annual\ Energy\ Consumption\ (kWh/yr) \times \\ Carbon\ Intensity\ (kg\ CO2e/kWh) $$
 
-For example, if the device is used in Europe, use a carbon intensity of 277 gCO2e/kWh to estimate annual operational emissions as. [From a provider like Electricity Maps, BEIS or IEA to source carbon intensity figures for each location.]
+Consider running the device above in Europe, using the 2022 average [carbon intensity](/glossary#carbon-intensity) of 328 g CO2e per kWh. Applying the above formula, annual operational emissions can be estimated to be
 
-26.4 kWh/yr * 0.277 kgCO2e/kWh = 7.31 kgCO2e/yr
+$$ 26.4\ kWh/yr \times 0.328\ kg\ CO2e/kWh = 8.66\ kg\ CO2e/yr $$
 
-To scale up the operational emissions across an organisation's estate, counts of device models by location are needed. Ideal data sources are configuration management databases (CMDBs) from robust IT asset management processes. Where such data is incomplete, extrapolation from partial datasets can provide estimates such as partially completed asset management records, historic procurement data on devices purchased, employee numbers per office, generic device ratios per employee type. The accuracy of this underlying data will impact on the precision of emissions estimates across the estate. However, even roughly extrapolated totals highlight emission problem areas across the estate and allow year-on-year benchmarking to track improvement. Where specific device models or usage locations are unknown, average figures for the device category as a whole can be used instead. This sacrifices precision for practicality but maintains the estates view to direct technology optimisation efforts.
+per device.
 
-Combining the above formulae, per device model in a certain location:
+The per device estimates can be scaled up to give a total estimate of the operational emissions across an organisation's estate associated with running a particular hardware model in a certain location.
 
-Total Annual Operational Emissions (kgCO2e/yr) = Device Count * Average Power Draw (kW) * Daily Uptime (hours) * Annual Uptime (days)  * Carbon Intensity (kgCO2e/kWh) 
+Combined, the formula for estimating operational emissions across the estate becomes
 
-For example, 500 of the Dell XPS 13 9310 laptops operating in Europe would result in estimated
+$$ Total\ Annual\ Operational\ Emissions\ (kg\ CO2e/yr) = Device\ Count\ \times Average\ Power\ Draw\ (kW) \\ \times Daily\ Uptime\ (hours) \times Annual\ Uptime\ (days)  \times Carbon\ Intensity\ (kg\ CO2e/kWh) $$
 
-500 * 7.31 kgCO2e = 3,655 kgCO2e operational carbon emissions. 
+Imagine an organisation has 500 of the Dell XPS 13 9310 laptops operating in Europe. The total associated annual operational emissions could be estimated to be 
 
-Operational emissions can be aggregated across different device types and locations to provide a high level estimate across an organisation's estate.
+$$ 500 \times 8.66\ kg\ CO2e/yr = 4,330\ kg\ CO2e/yr $$
 
-| Device  | Model | Location | Device Count | Average Power Draw (kW) | Annual Energy Consumption (kWh/yr) | TEC (kWh/yr) | Carbon Intensity (kgCO2e/kWh) | Operational Emissions (kgCO2e/yr) |
-|---------|-------|----------|--------------|-------------------------|------------------------------------|--------------|-------------------------------|-----------------------------------|
-| Laptop  | Dell XPS 13 9310 | Europe | 500 | 0.015 |
-| Laptop  | Dell XPS 13 9310 | USA    | 300 | 0.015 |
-| Tablet  | iPad 10th Generation 64GB | Europe | 50 | 
-| Monitor | HP Z24s | Europe | 1000 |
-| Total | ||||||||
+The table below shows an example of aggregating emissions across different employee device types and locations using the high level approach above assuming business usage.
+
+| Device | Model | Location | Device Count | Average Power (kW) | Estimated Device Energy Consumption (kWh/yr) |Estimated Total Energy Consumption (kWh/yr) | Carbon Intensity (kg CO2e/kWh) | Estimated Operational Emissions (kg CO2e/yr) |
+|-------|-------|-------|-------|------------|------------|------------|------------|------------|
+| Laptop  | Dell XPS 13 9310 | Europe | 500 | 0.015 | 26.4| 13,200 | 0.328 |4,330|
+| Laptop  | Dell XPS 13 9310 | USA    | 300 | 0.015 | 26.4|7,920 | 0.410 |3,247|
+| Monitor | HP Z24s | Europe | 1000 | 0.06 | 105.6 |105,600 | 0.328 |34,637|
+| **Total** ||||||**126,720**|| **42,214** |
+
+Where specific device models or usage locations are unknown, average figures for the device category as a whole can be used instead. This sacrifices precision for practicality but maintains a view to direct technology optimisation efforts.
 
 While the above approach relies on key assumptions and does not account for the variability in device usage patterns, it is a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives. 
 
-As discussed in upstream emissions, manufacturers can provide PCF data that allocates a percentage of total emissions to each stage of a product's life cycle phase. This data relies on key assumptions made by the manufacturer regarding emissions estimations. This includes providing Typical Energy Consumption (TEC) figures for hardware (kWh/yr) which can be used in place of the estimated annual energy consumption figures discussed earlier. TEC quantifies the average annual energy consumption of a device or product under typical operating conditions. In the previous example, it is assumed that laptops run for 8 hours per day to reflect typical business usage. However, laptop manufacturers may base power draw specifications on consumer household usage, which is often less than in an office setting. Using TEC in subsequent estimations of emissions could result in lower emissions estimates than may be expected of business usage. In the previous laptop example, estimated annual consumption was 26.4 kWh/yr based on assumed business usage of 8 hours per day. However, the [manufacturer's product carbon footprint (PCF) documentation](https://www.delltechnologies.com/asset/en-us/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf) states a lower TEC of 21.43 kWh/yr. Feeding this TEC estimate into the operational emissions calculation for Europe would result in 2,968 kgCO2e/yr operational emissions as opposed to the 3,655 kgCO2e estimated earlier. Additionally, this document states that 13.9% of total 4-year lifecycle emissions of 322 kgCO2e are allocated to usage, equating to 11.19 kgCO2e/yr. This is higher than the 7.31 kgCO2e/yr estimate derived from the approach above. This discrepancy highlights the impact of employing different assumptions in estimating operational emissions. Since Dell cite a lower annual energy consumption (TEC) than may be expected for business usage, this suggests higher usage emissions likely stem from assuming a greater carbon intensity factor for the energy consumed.
+{% include linkedHeading.html heading="Understanding the technology estate" level=4 %}
+
+To estimate the total emissions associated with running an organisation's technology estate, it is important to first understand how many of each device an organisation has in their estate. 
+
+Ideal data sources are configuration management databases (CMDBs) from robust IT asset management processes. Where such data is incomplete, extrapolation from partial datasets can provide estimates. Sources include partially completed asset management records, historic procurement data on devices purchased, employee numbers per office or generic device ratios per employee type. 
+
+The accuracy of this underlying data will impact on the precision of emissions estimates across the estate. However, even roughly extrapolated totals help to highlight emission problem areas and allow year-on-year benchmarking to track improvement. 
+
+{% include linkedHeading.html heading="Using emissions data provided by manufacturers" level=4 %}
+
+As discussed in [upstream emissions](upstream), manufacturers can provide [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data breaking down a device's emissions by [product life cycle](/glossary#product-life-cycle) stage, including usage. This data relies on key assumptions made by the manufacturer regarding emissions estimations. 
+
+With regards to operational emissions, one such assumption to note is the [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) figure.
+This can be used in place of the estimated annual energy consumption figure approximated through the high level approach discussed earlier. However, TEC is based on standard usage which is often less than in an office setting. Using TEC in subsequent estimations of emissions could result in lower emissions estimates than may be expected of business usage.
+
+In the [Dell example](#a-high-level-approach-to-estimation) above, it is assumed that employee laptops run for 8 hours per day to reflect typical business usage, resulting in an estimated annual energy consumption of 26.4 kWh. However, the [Dell Product Carbon Footprint (PCF) documentation](https://www.delltechnologies.com/asset/en-us/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf) for this laptop states a lower TEC of 21.43 kWh per year. Using this TEC figure in the approach above results in a per device annual operational emissions estimation of ~7 kg CO2e compared to 8.66 kg CO2e. 
+
+Additionally, the PCF states that 13.9% of the total 4-year lifecycle emissions (~322 kg CO2e) are allocated to the usage stage, equating to ~11.19 kg CO2e per year. This is actually higher than both estimates derived from the approach above and the TEC. Dell cite a lower annual energy consumption (TEC) than may be expected for business usage, this suggests higher usage emissions likely stem from assuming a greater carbon intensity factor for the energy consumed. This discrepancy highlights the impact of using different assumptions when estimating operational emissions.
 
 It is recommended to cross-reference TEC values and clarify assumptions made by manufacturers. Using consistent data sources and transparency over methodology is important for accurate and comparable emissions estimates across all hardware assets.
 
