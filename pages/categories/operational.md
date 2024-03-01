@@ -19,13 +19,18 @@ Direct emissions are a result of the organisation's direct consumption of grid-s
 Category O (On-premise) emissions can be related to GHG Protocol Scope 2, while Category G (Generators) are GHG Protocol Scope 1.
 
 {% include linkedHeading.html heading="Servers and Storage" level=3 %}
-This concerns the energy consumed by on-premise servers and data centres. Servers and data centres can be major contributors to an organisation's carbon footprint due to their high energy usage. Energy consumption will differ between server hardware due to varying power demands. Factors that influence emissions include the number of servers, their efficiency and utilisation, and the carbon intensity of the operating location. 
+
+{% include linkedHeading.html heading="Servers" level=4 %}
+
+This concerns the energy consumed by on-premise servers. Servers can be major contributors to an organisation's carbon footprint due to their high energy usage. Energy consumption will differ between server hardware due to varying power demands. Factors that influence emissions include the number of servers, their efficiency and utilisation, and the carbon intensity of the operating location. 
 
 Manufacturer data or benchmarking tools can provide information on the typical power draw of different server hardware. One such tool is the [SPECpower benchmark](https://www.spec.org/power_ssj2008/) which evaluates the power and performance characteristics of servers, providing average power draw figures under varying levels of load. Such power figures can be used in high level approximations for annual energy consumption and subsequently annual operational emissions. 
 
 Here is an example of a [SPECpower benchmark summary](https://www.spec.org/power_ssj2008/results/res2019q2/power_ssj2008-20190311-00882.html) for a HPE ProLiant DL580 Gen10 server:
 
 ![specpower-benchmark-summary](/assets/images/specpower-benchmark-summary.PNG)
+
+{% include linkedHeading.html heading="Storage" level=4 %}
 
 {% include linkedHeading.html heading="Networking Devices" level=3 %}
 The energy consumed by networking devices such as:
