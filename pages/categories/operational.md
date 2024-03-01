@@ -42,7 +42,7 @@ Power range and average power of devices, data compiled from Dimpact [^dimpact],
 | ------------------ | ------------------ | ------------------ |
 | Desktop            | 72 - 100           | 72.3               |
 | Laptop             | 15 - 30            | 17.1               |
-| Tablet             | 3 - 5.5            | 3                  | ? 20W ?
+| Tablet             | 3 - 5.5            | 3                  |
 | Smartphone         | 0.77 - 2           | 1                  |
 | Monitor            | 17 - 30            | 30                 |
 | Television         | 40 - 120           | 74                 |

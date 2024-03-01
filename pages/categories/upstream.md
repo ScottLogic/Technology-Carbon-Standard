@@ -6,7 +6,7 @@ permalink: categories/upstream
 
 # Upstream Emissions
 
-Upstream emissions (Category U) refer to the emissions that occur in the production and distribution stages of technology products and software purchased by an organisation. Such emissions represent a significant portion of the total climate impact attributable to technology. Focusing only on operational and downstream emissions fails to capture the full carbon footprint. While difficult to quantify, considering these emissions is critical for comprehensive carbon accounting and driving responsible procurement and development of lower-impact technologies.
+Upstream emissions (Category U) refer to the emissions that occur in the production and distribution stages of technology products and software purchased by an organisation. There are two major components of the [product life cycle](product-life-cycle) carbon footprint: [embodied carbon](/glossary#embodied-carbon) and [operational carbon](/glossary#operational-carbon) associated with product use. Upstream emissions, particularly those from the production phase, make the largest contribution to embodied carbon. The World Economic Forum (WEF) reported that 77% of [greenhouse gas (GHG)](/glossary#greenhouse-gases-ghg) emissions from the electronics industry are attributed to the supply chain, including raw materials mining, manufacture, assembly and transportation of the finished product. Supply-chain decarbonisation presents a huge opportunity to reduce climate impacts. Notably, 35% of supply-chain emissions could be abated through renewable power, and efficiency improvements could further reduce emissions by ~20%[^WEF]. Focusing only on [operational](operational) and [downstream](downstream) emissions fails to capture the full carbon footprint. While difficult to quantify, considering these emissions is critical for comprehensive carbon accounting and driving responsible procurement and development of lower-impact technologies.
 
 To quantify upstream emissions, the technology purchase categories are mapped with life cycle emissions data for each product class published by reputable manufacturers and software vendors. This lifecycle data encompasses resource extraction, materials processing, manufacturing, transportation and product delivery phases before the operation stage.
 
@@ -32,17 +32,17 @@ Upstream emissions can vary significantly between devices. The [embodied carbon]
 
 ![embodied-vs-operational-amounts](/assets/images/embodied-vs-operational-amounts.png)
 
-*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^1], Desktop[^2], Monitor[^3] and Server[^4].*
+*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor] and Server[^server].*
 
-For employee hardware like laptops, embodied carbon typically constitutes 80% of total life cycle emissions with only 20% attributable to usage (operational). Conversely for servers, embodied typically accounts for 20% of total life cycle emissions with 80% attributable to usage. 
+For employee hardware like laptops, embodied carbon typically constitutes 80% of total life cycle emissions with only 20% attributable to usage (operational). Conversely for servers, embodied typically accounts for 20% of total life cycle emissions with 80% attributable to usage. These percentages can vary based on the specific device model. For devices such as desktops, the operational carbon can account for a larger proportion of total emissions when compared to other employee devices such as laptops or smartphones.
 
 ![embodied-vs-operational-percentages](/assets/images/embodied-vs-operational-percentages.png)
 
-*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^1], Desktop[^2], Monitor[^3] and Server[^4].*
+*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor] and Server[^server].*
 
 A full life cycle assessment is needed to thoroughly account for emissions from raw material extraction through production, transportation and delivery of devices. If specific data is unavailable, high-level estimates can be based on average emissions per device type, employees’ equipment, shipping mileage. 
 
-[Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data from manufacturers provides an estimate of the greenhouse gas emissions attributable to a product over its full [product life cycle](/glossary#product-life-cycle), from manufacture (upstream) through to end-of-life disposal (downstream). This differs from a [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) which considers the broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption). Reputable manufacturers use PCF tools that support complete LCAs, compliant with standards such as [ISO 14040](https://www.iso.org/standard/37456.html), [ISO 14044](https://www.iso.org/standard/38498.html) and [ISO 14067](https://www.iso.org/standard/71206.html). PCF data can often be difficult to find or may only be available on request. While standards aim for consistency, methodologies can vary between manufacturers so published figures require careful scrutiny to determine comparability. Additionally, such emissions figures have large margins of error. Studies have found truncation errors of 40% in estimating embodied carbon and 18% in estimating emissions associated with the usage phase of hardware [^5].
+[Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data from manufacturers provides an estimate of the greenhouse gas emissions attributable to a product over its full [product life cycle](/glossary#product-life-cycle), from manufacture (upstream) through to end-of-life disposal (downstream). This differs from a [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) which considers the broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption). Reputable manufacturers use PCF tools that support complete LCAs, compliant with standards such as [ISO 14040](https://www.iso.org/standard/37456.html), [ISO 14044](https://www.iso.org/standard/38498.html) and [ISO 14067](https://www.iso.org/standard/71206.html). PCF data can often be difficult to find or may only be available on request. While standards aim for consistency, methodologies can vary between manufacturers so published figures require careful scrutiny to determine comparability. Additionally, such emissions figures have large margins of error. Studies have found truncation errors of 40% in estimating embodied carbon and 18% in estimating emissions associated with the usage phase of hardware [^truncation-errors].
 
 - [Apple Environmental Reports](https://www.apple.com/environment/)
 - [Dell Product Carbon Footprints](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm)
@@ -82,8 +82,6 @@ Clearly, there is a discrepancy between this high level estimation (~35 kg CO2e 
 
 {% include linkedHeading.html heading="Understanding the technology estate" level=4 %}
 
-!Where should this section live?!
-
 To estimate the total emissions associated with running an organisation's technology estate, it is important to first understand how many of each device an organisation has in their estate. 
 
 Ideal data sources are configuration management databases (CMDBs) from robust IT asset management processes. Where such data is incomplete, extrapolation from partial datasets can provide estimates. Sources include partially completed asset management records, historic procurement data on devices purchased, employee numbers per office or generic device ratios per employee type. 
@@ -99,8 +97,9 @@ Servers, storage systems and data centre infrastructure installed on-premise.
 
 ## References
 
-[^1]: [XPS 13 9310 PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf)
-[^2]: [OptiPlex 7090 Tower PCF Datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/desktops-and-all-in-ones/technical-support/optiplex-7090-tower-pcf-datasheet.pdf)
-[^3]: [P2422H Monitor PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/p2422h-monitor-pcf-datasheet.pdf)
-[^4]: [carbon-footprint-poweredge-r640.pdf (dell.com)](https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf)
-[^5]: Berners-Lee, Mike. How Bad Are Bananas? : the Carbon Footprint of Everything. Book, 2020
+[^laptop]: [XPS 13 9310 PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf)
+[^desktop]: [OptiPlex 7090 Tower PCF Datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/desktops-and-all-in-ones/technical-support/optiplex-7090-tower-pcf-datasheet.pdf)
+[^monitor]: [P2422H Monitor PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/p2422h-monitor-pcf-datasheet.pdf)
+[^server]: [carbon-footprint-poweredge-r640.pdf (dell.com)](https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf)
+[^truncation-errors]: Berners-Lee, Mike. How Bad Are Bananas? : the Carbon Footprint of Everything. Book, 2020
+[^WEF]: [Net-Zero Challenge: The supply chain opportunity, World Economic Forum, Jan. Online, 2021](https://www.weforum.org/reports/net-zero-challengethe-supply-chain-opportunity/)
