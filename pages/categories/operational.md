@@ -95,15 +95,7 @@ The table below shows an example of aggregating emissions across different emplo
 
 Where specific device models or usage locations are unknown, average figures for the device category as a whole can be used instead. This sacrifices precision for practicality but maintains a view to direct technology optimisation efforts.
 
-While the above approach relies on key assumptions and does not account for the variability in device usage patterns, it is a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives. 
-
-{% include linkedHeading.html heading="Understanding the technology estate" level=4 %}
-
-To estimate the total emissions associated with running an organisation's technology estate, it is important to first understand how many of each device an organisation has in their estate. 
-
-Ideal data sources are configuration management databases (CMDBs) from robust IT asset management processes. Where such data is incomplete, extrapolation from partial datasets can provide estimates. Sources include partially completed asset management records, historic procurement data on devices purchased, employee numbers per office or generic device ratios per employee type. 
-
-The accuracy of this underlying data will impact on the precision of emissions estimates across the estate. However, even roughly extrapolated totals help to highlight emission problem areas and allow year-on-year benchmarking to track improvement. 
+While the above approach relies on key assumptions and does not account for the variability in device usage patterns, it is a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives.  
 
 {% include linkedHeading.html heading="Using emissions data provided by manufacturers" level=4 %}
 

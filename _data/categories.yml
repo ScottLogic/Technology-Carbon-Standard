@@ -1,4 +1,4 @@
-- name: Category U (Upstream) 
+- name: Upstream (Category U) 
   link: /categories/upstream
   subcategories: 
   - name: Software
@@ -18,7 +18,7 @@
   - name: Direct
     link: /categories/operational/direct
     subcategories: 
-    - name: Category O (On-Premise)
+    - name: On-Premise (Category O)
       link: /categories/operational/direct
       subcategories:
       - name: Servers and Storage
@@ -27,12 +27,12 @@
         link: /categories/operational/direct/networking
       - name: Employee
         link: /categories/operational/direct/employee
-    - name: Category G (Generators)
+    - name: Generators (Category G)
       link: /categories/operational/direct/generators
   - name: Indirect
     link: /categories/operational/indirect
     subcategories:
-    - name: Category C (Cloud)
+    - name: Cloud (Category C)
       link: /categories/operational/indirect
       subcategories: 
       - name: Cloud Services
@@ -41,7 +41,7 @@
         link: /categories/operational/indirect/saas
       - name: Managed Services
         link: /categories/operational/indirect/managedservices
-- name: Category D (Downstream)
+- name: Downstream (Category D)
   link: /categories/downstream
   subcategories:
   - name: End-User Devices
