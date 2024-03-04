@@ -5,4 +5,4 @@ linktext: Ember # link text for link
 link: https://ember-climate.org/
 ---
 
-Data insights into the power sector, openly published and accessible. We use the data available from Ember for the [Carbon Intensity](#carbon-intensity) in our methods.
+Data insights into the power sector, openly published and accessible. We use the data available from Ember for the [Carbon Intensity](/glossary#carbon-intensity) in our methods.

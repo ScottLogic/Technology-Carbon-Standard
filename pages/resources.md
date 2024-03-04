@@ -2,7 +2,6 @@
 layout: default
 title: Resources
 permalink: /resources
-published: false
 ---
 
 # Resources

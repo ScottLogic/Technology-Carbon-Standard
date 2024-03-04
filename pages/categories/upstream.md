@@ -15,11 +15,11 @@ Multiplying the volume of assets by the respective product emission factors can 
 Upstream emissions are related to GHG Protocol Scope 3.
 
 
-{% include linkedHeading.html heading="Commercial Software" level=2 %}
+{% include linkedHeading.html heading="Software" level=2 %}
 
-Emissions associated with developing and delivering commercial off-the-shelf (COTS) software installed on the organisation's systems. Includes emissions related to:
+Emissions associated with developing and delivering off-the-shelf and open-source software installed on the organisation's systems. Includes emissions related to:
 
-- Programming, testing and releasing new software versions purchased
+- Energy consumed and hardware used during programming, testing and releasing new software versions
 - Packaging and digital distribution of software over the internet
 - Product support services for troubleshooting and guiding customers
 
