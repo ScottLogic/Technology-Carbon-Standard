@@ -7,10 +7,43 @@ layout: default
     <a href="/categories" class="font-light block px-2 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900  {% if page.url == '/categories' %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">Impact Categories</a>
 
     <div class="flex flex-col">
-      {% for item in site.data.categories %}
-        <a href="{{ item.link }}" class="font-light px-4 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == item.link %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
-          {{ item.name }}
+      {% for category in site.data.categories %}
+        <a href="{{ category.link }}" class="font-light px-4 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == category.link %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+          {{ category.name }}
         </a>
+        {% if category.subcategories %}
+          <div class="ml-4">
+            {% for subcategory in category.subcategories %}
+              <div class="flex flex-col">
+                <a href="{{ subcategory.link }}" class="font-light px-4 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == subcategory.link %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+                  {{ subcategory.name }}
+                </a>
+                {% if subcategory.subcategories %}
+                  <div class="ml-4">
+                    {% for subcategory in subcategory.subcategories %}
+                      <div class="flex flex-col">
+                        <a href="{{ subcategory.link }}" class="font-light px-4 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == subcategory.link %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+                          {{ subcategory.name }}
+                        </a>
+                        {% if subcategory.subcategories %}
+                          <div class="ml-4">
+                            {% for subcategory in subcategory.subcategories %}
+                              <div class="flex flex-col">
+                                <a href="{{ subcategory.link }}" class="font-light px-4 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == subcategory.link %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+                                  {{ subcategory.name }}
+                                </a>
+                              </div>
+                            {% endfor %}
+                          </div>
+                        {% endif %}
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </aside>
