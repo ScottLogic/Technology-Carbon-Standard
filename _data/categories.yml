@@ -1,50 +1,6 @@
-- name: Upstream (Category U) 
+- name: Upstream Emissions
   link: /categories/upstream
-  subcategories: 
-  - name: Software
-    link: /categories/upstream/software
-  - name: Hardware
-    link: /categories/upstream/hardware
-    subcategories:
-    - name: Employee
-      link: /categories/upstream/hardware/employee
-    - name: Networking
-      link: /categories/upstream/hardware/networking
-    - name: Data Centre and Server
-      link: /categories/upstream/hardware/servers
-- name: Operational 
+- name: Operational Emissions
   link: /categories/operational
-  subcategories:
-  - name: Direct
-    link: /categories/operational/direct
-    subcategories: 
-    - name: On-Premise (Category O)
-      link: /categories/operational/direct
-      subcategories:
-      - name: Servers and Storage
-        link: /categories/operational/direct/servers
-      - name: Networking
-        link: /categories/operational/direct/networking
-      - name: Employee
-        link: /categories/operational/direct/employee
-    - name: Generators (Category G)
-      link: /categories/operational/direct/generators
-  - name: Indirect
-    link: /categories/operational/indirect
-    subcategories:
-    - name: Cloud (Category C)
-      link: /categories/operational/indirect
-      subcategories: 
-      - name: Cloud Services
-        link: /categories/operational/indirect/cloud
-      - name: SaaS
-        link: /categories/operational/indirect/saas
-      - name: Managed Services
-        link: /categories/operational/indirect/managedservices
-- name: Downstream (Category D)
+- name: Downstream Emissions
   link: /categories/downstream
-  subcategories:
-  - name: End-User Devices
-    link: /categories/downstream/enduser
-  - name: Network Data Transfer
-    link: /categories/downstream/networking

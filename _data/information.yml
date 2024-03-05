@@ -1,0 +1,11 @@
+- name: Life Cycle Emissions
+  link: /information/lifecycle
+  subcategories:
+  - name: Embodied Emissions
+    link: /information/lifecycle/embodied
+  - name: Operational Emissions
+    link: /information/lifecycle/operational
+- name: Estate Emissions
+  link: /information/estate
+- name: Cloud Emissions
+  link: /information/cloud
