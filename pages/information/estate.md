@@ -1,18 +1,14 @@
 ---
 layout: category
-title: Understanding Estate Emissions
-permalink: /estate
+title: Estimating Estate Emissions
+permalink: /information/estate
 ---
 
-# Understanding Estate Emissions
+# Estimating Estate Emissions
 
-To estimate the total emissions from an organisation's technology estate, it is crucial to understand the scale and composition of the various [Impact Categories](categories).  
+To estimate the total emissions from an organisation's technology estate, it is crucial to understand the scale and composition of the various [Impact Categories](categories). 
 
-## Software
-
-TBC...
-
-## Hardware
+{% include linkedHeading.html heading="Hardware" level=3 %}
 
 For hardware devices, this entails determining the quantity of each device type within the organisation's inventory. 
 
@@ -20,6 +16,8 @@ Ideal data sources are configuration management databases (CMDBs) from robust IT
 
 The accuracy of the underlying data will directly impact the precision of emissions estimates across the entire technology inventory. However, even approximate extrapolated totals can help identify significant emission hotspots. Conducting an inventory-wide emissions assessment enables organisations to pinpoint areas for emission reductions, track performance over time, and work towards minimising the carbon footprint across their entire digital ecosystem.
 
-## Cloud
+{% include linkedHeading.html heading="Software" level=3 %}
+TBC...
 
+{% include linkedHeading.html heading="Cloud" level=3 %}
 TBC...

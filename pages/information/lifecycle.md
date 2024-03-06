@@ -1,24 +1,22 @@
 ---
 layout: category
 title: Life Cycle Emissions
-permalink: /overview
+permalink: /information/lifecycle
 ---
 
 # Life Cycle Emissions
 
-The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacturing, use phase, and end-of-life disposal or recycling. 
+The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage and disposal. 
 
-Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/glossary#embodied-carbon) and [operational carbon](/glossary#operational-carbon). Embodied carbon consists of upstream carbon (emissions associated with product manufacturing and transportation), use stage carbon (emissions associated with materials and processes required for product maintenance, **excluding operational carbon**) and end-of-life carbon (emissions from reusing, recycling or disposing of the product). Operational carbon refers to the emissions produced during operation or use of the product.
+Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/glossary#embodied-carbon) and [operational carbon](/glossary#operational-carbon).
 
 $$ Life\ Cycle\ Carbon\ Footprint\ =\ Embodied\ Carbon\ +\ Operational\ Carbon $$
 
-$$ Embodied\ Carbon\ =\ Upstream\ Carbon\ +\ Use\ Stage\ Carbon +\ End\ of\ life\ Carbon $$
+To measure an organisation's technology carbon footprint, it is essential to consider the full product life cycle emissions. 
 
-To measure an organisation's technology carbon footprint, it is essential to consider the full product life cycle emissions. The Technology Carbon Standard aims to categorise an organisation's technology assets and group these categories under three broad emissions areas (upstream, operational and downstream) to provide a comprehensive view of the carbon footprint.   
+The Technology Carbon Standard aims to categorise an organisation's technology assets, which are then grouped under three broad emissions areas (upstream, operational and downstream) to provide a comprehensive view of the carbon footprint. In general, embodied carbon relates to upstream emissions (Category U) and operational emissions are associated with categories O, C, G and D. 
 
-[Read more about these Impact Categories.](categories) 
-
-## Life Cycle Emissions Data
+{% include linkedHeading.html heading="Life Cycle Emissions Data" level=3 %}
 
 A comprehensive [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. If such data is unavailable, high-level estimates can be based on average emissions per device type, employees’ equipment, shipping mileage.
 
@@ -33,8 +31,7 @@ Here are some examples of environmental reports, PCF documents and LCAs from pro
 - [HP Product Carbon Footprints](https://h20195.www2.hp.com/v2/library.aspx?doctype=95&footer=95&filter_doctype=no&showregionfacet=yes&filter_country=no&cc=us&lc=en&filter_oid=no&filter_prodtype=rw&prodtype=ij&showproductcompatibility=yes&showregion=yes&showreglangcol=yes&showdescription=yes%23doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false#doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false)
 - [Samsung Life Cycle Assessment](https://www.samsung.com/global/sustainability/focus/products/sustainability-in-our-products/)
 
-
-## Embodied vs Operational Carbon
+{% include linkedHeading.html heading="Embodied vs Operational Carbon" level=3 %}
 
 The total embodied carbon of an asset can be [amortised](/glossary#amortisation) over its expected lifetime, if information about its typical refresh cycle or life span is available. This enables understanding the annual carbon emissions attributed to embodied carbon. By amortising the embodied carbon over the product's lifetime, it allows a like-for-like comparison against annual operational emissions. 
 
