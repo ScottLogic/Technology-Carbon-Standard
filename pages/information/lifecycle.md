@@ -19,8 +19,6 @@ Where
 
 To measure an organisation's technology carbon footprint, it is essential to consider the full product life cycle emissions. 
 
-The Technology Carbon Standard aims to categorise an organisation's technology assets, which are then grouped under three broad emissions areas (upstream, operational and downstream) to provide a comprehensive view of the carbon footprint. In general, embodied carbon relates to upstream emissions (Category U) and operational emissions are associated with categories O, C, G and D. 
-
 [Read more about embodied carbon emissions.](embodied)
 
 [Read more about operational carbon emissions.](operational)
