@@ -42,9 +42,9 @@ Emissions estimates for third-party services can be obtained from providers to a
 
 {% include linkedHeading.html heading="Cloud Services" level=3 %}
 
-This considers the emissions of Cloud platform services like compute, storage, networking etc. These services are all backed by computing hardware, which will have its own Upstream and Operational emissions. Different server instance types of varying performance are available, which impacts the proportion of Upstream emissions attributable to you, as well as the amount of energy consumed. The region that the services are run from can also have a significant impact on carbon emissions, depending on the mix of renewable energy sources that power the underlying data centers.
+The emissions associated with cloud platform services like compute, storage and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types and region. 
 
-Cloud providers may provide data on the emissions that are attributable to your service use, but what is included may vary and there can be a significant time delay to these figures. Due to this, third-party alternatives have arisen, which provide closer to real time emissions estimates, based on the usage data available from each provider.
+[Read more about Cloud Services.](../information/cloud)
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
 Software-as-a-Service (SaaS) applications.
