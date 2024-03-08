@@ -6,7 +6,7 @@ permalink: /information/lifecycle/embodied
 
 # Embodied Carbon Emissions
 
-Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance and end-of-life of a device or product. Embodied carbon excludes emissions associated with the usage of a device or product, which instead falls under [operational emissions](operational). [Read more about life cycle emissions.](../lifecycle)
+Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance and end-of-life of a device or product. Embodied carbon excludes emissions associated with the usage of a device or product, which instead falls under [operational emissions](/glossary#operational-carbon). [Read more about life cycle emissions.](../lifecycle)
 
 Technology hardware can be associated with large embodied carbon emissions due to resource-intensive electronics production and complex global supply chains. In 2021, the World Economic Forum (WEF) reported that 77% of greenhouse gas (GHG) emissions from the electronics industry are attributed to the supply chain, including raw materials mining, manufacture, assembly and transportation of the finished product. Supply-chain decarbonisation presents a huge opportunity to reduce climate impacts. Notably, 35% of supply-chain emissions could be abated through renewable power, and efficiency improvements could further reduce emissions by ~20%[^WEF]. 
 

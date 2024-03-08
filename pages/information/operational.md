@@ -6,7 +6,7 @@ permalink: /information/lifecycle/operational
 
 # Operational Carbon Emissions 
 
-Operational carbon, also known as carbon emissions from use or usage emissions, refers to the [greenhouse gas (GHG)](/glossary#greenhouse-gases) emissions associated with the actual operation and use of a device or product over its lifetime. Operational carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements or end-of-life disposal phases, which instead fall under [embodied carbon](embodied). [Read more about life cycle emissions.](../lifecycle)
+Operational carbon, also known as carbon emissions from use or usage emissions, refers to the [greenhouse gas (GHG)](/glossary#greenhouse-gases) emissions associated with the actual operation and use of a device or product over its lifetime. Operational carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements or end-of-life disposal phases, which instead fall under [embodied carbon](/glossary#embodied-carbon). [Read more about life cycle emissions.](../lifecycle)
 
 Factors influencing operational carbon impact include the device's energy efficiency, usage patterns, life span and the [carbon intensity](/glossary#carbon-intensity) of the energy grid powering it.
 
