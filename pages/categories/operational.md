@@ -17,15 +17,19 @@ Direct emissions are a result of the organisation's direct consumption of grid-s
 
 Category O (On-premise) emissions can be related to GHG Protocol Scope 2, while Category G (Generators) are GHG Protocol Scope 1.
 
-{% include linkedHeading.html heading="Servers and Storage" level=3 %}
+{% include linkedHeading.html heading="On-premise" level=3 %}
+
+In terms of a product's [life cycle emissions](../information/lifecycle), this refers to the operational emissions associated with an organisation's owned hardware assets. [Read more about operational carbon emissions.](../information/lifecycle/operational)
+
+{% include linkedHeading.html heading="Servers and Storage" level=4 %}
 
 The energy consumed by on-premise servers and data centres.
 
-{% include linkedHeading.html heading="Networking Devices" level=3 %}
+{% include linkedHeading.html heading="Networking Devices" level=4 %}
 
 The energy consumed by networking devices such as routers, switches and Wi-Fi access points. 
 
-{% include linkedHeading.html heading="Employee Devices" level=3 %}
+{% include linkedHeading.html heading="Employee Devices" level=4 %}
 
 The energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees.
 
@@ -44,7 +48,7 @@ Emissions estimates for third-party services can be obtained from providers to a
 
 The emissions associated with cloud platform services like compute, storage and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types and region. 
 
-[Read more about Cloud Services.](../information/cloud)
+[Read more about cloud services.](../information/cloud)
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
 Software-as-a-Service (SaaS) applications.

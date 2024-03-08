@@ -22,7 +22,9 @@ Emissions associated with developing and delivering off-the-shelf and open-sourc
 
 {% include linkedHeading.html heading="Hardware" level=2 %}
 
-Embodied carbon emissions associated with hardware devices, covering the manufacturing, transportation, installation, maintenance and disposal life cycle phases. This spans employee devices, networking equipment and on-premise servers. 
+Embodied carbon emissions associated with hardware devices owned by an organisation, covering the manufacturing, transportation, installation, maintenance and disposal life cycle phases. This spans employee devices, networking equipment and on-premise servers. 
+
+[Read more about embodied carbon emissions.](../information/lifecycle/embodied)
 
 {% include linkedHeading.html heading="Employee Hardware" level=3 %} Laptops, desktops, mobiles, printers and peripherals used by employees.
 

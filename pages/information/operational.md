@@ -6,13 +6,13 @@ permalink: /information/lifecycle/operational
 
 # Operational Carbon Emissions 
 
-Operational carbon, also known as carbon emissions from use or usage emissions, refers to the [greenhouse gas (GHG)](/glossary#greenhouse-gases) emissions associated with the actual operation and use of a device or product over its lifetime. Operational carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements or end-of-life disposal phases, which instead fall under [embodied carbon](/glossary#embodied-carbon). Factors influencing operational carbon impact include the device's energy efficiency, usage patterns, life span and the [carbon intensity](/glossary#carbon-intensity) of the energy grid powering it.
+Operational carbon, also known as carbon emissions from use or usage emissions, refers to the [greenhouse gas (GHG)](/glossary#greenhouse-gases) emissions associated with the actual operation and use of a device or product over its lifetime. Operational carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements or end-of-life disposal phases, which instead fall under [embodied carbon](embodied). [Read more about life cycle emissions.](../lifecycle)
+
+Factors influencing operational carbon impact include the device's energy efficiency, usage patterns, life span and the [carbon intensity](/glossary#carbon-intensity) of the energy grid powering it.
 
 The ICT sector's electricity consumption was estimated at 1,183 TWh in 2022, accounting for 4.7 percent of the world's total electricity use in 2021[^worldbank]. With the accelerating pace of digitalisation and the increasing reliance on ICT services and infrastructure, the energy demands of the sector are projected to rise further in the coming years. Minimising operational carbon through efficiency improvements and cleaner energy sources is therefore crucial, in conjunction with reducing embodied emissions, to comprehensively reduce the greenhouse gas impact of a product or device across its complete life cycle.
 
 {% include linkedHeading.html heading="A high level approach to estimation" level=3 %}
-
-The following approach provides a high-level estimation of the direct operational emissions resulting from an organisation's owned hardware assets.
 
 At a high level, the energy consumption of a device can be estimated using the following formula:
 
@@ -89,7 +89,7 @@ In the absence of more granular emissions data (such as [Product Carbon Footprin
 
 {% include linkedHeading.html heading="Using emissions data provided by manufacturers" level=3 %}
 
-Many manufacturers choose to provide [life cycle emissions data](../lifecycle#life-cycle-emissions-data) such as information relating to the [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) of a product. A PCF provides an estimate of the total greenhouse gas emissions associated with a product across its entire life cycle, including the proportional allocation of emissions to each distinct life cycle stage. PCF data can be used to derive direct operational emissions resulting from an organisation's owned hardware assets.
+Many manufacturers choose to provide [life cycle emissions data](../lifecycle#life-cycle-emissions-data) such as information relating to the [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) of a product. A PCF provides an estimate of the total greenhouse gas emissions associated with a product across its entire life cycle, including the proportional allocation of emissions to each distinct life cycle stage. PCF data can be used to derive operational emissions resulting from a device.
 
 Operational carbon can vary widely between different device types, as illustrated below:
 
@@ -113,7 +113,7 @@ Consider the [PCF for a Dell XPS 13 9310 Laptop](https://www.delltechnologies.co
 
 Dell estimates the total carbon footprint of this laptop to be approximately 322 kg CO2e over its 4-year life time. Of this, 86.1% (277 kg CO2e) is attributed to embodied emissions (manufacturing, transportation, and end-of-life), while 13.9% (45 kg CO2e) is attributed to operational emissions. Amortizing the operational emissions over the expected 4-year life span, the annual operational emissions can be allocated as approximately 11 kg CO2e per year.
 
-However, employing the [high-level approach](operational#a-high-level-approach-to-estimation) discussed earlier yields a different result. Assuming business usage (8 hours a day) and a typical power draw of 15W[^dellxps], the estimated annual energy consumption is 26.4 kWh. Dell's PCF assumes Europe as usage location. Using an average [carbon intensity(/glossary#carbon-intensity)] factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], this translates to approximately 8.66 kg CO2e of annual operational emissions per device.
+However, employing the [high-level approach](operational#a-high-level-approach-to-estimation) discussed earlier yields a different result. Assuming business usage (8 hours a day) and a typical power draw of 15W[^dellxps], the estimated annual energy consumption is 26.4 kWh. Dell's PCF assumes Europe as usage location. Using an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], this translates to approximately 8.66 kg CO2e of annual operational emissions per device.
 
 The Dell PCF documentation states a Typical Energy Consumption (TEC) of 21.43 kWh per year for this laptop model. As discussed, this figure may be lower than expected of business usage, and more typical of standard household usage. Using this TEC figure in the high-level approach as above would result in an annual operational emissions estimate of approximately 7 kg CO2e per device.
 
