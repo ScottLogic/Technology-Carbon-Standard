@@ -69,7 +69,7 @@ Splitting into embodied (manufacturing, transportation and end-of-life) and oper
 | Embodied | 86.1 | 277 |
 | Operational | 13.9 | 45 |
 
-The embodied-to-operational ratio of 86.1/13.9 (embodied being approximately six times larger than operational) deviates slighly from the typical 80/20 industry average for laptops mentioned previously in [embodied vs. operational carbon](../lifecycle#embodied-vs-operational-carbon). Based on this manufacturer data, the embodied carbon per device is approximately 277 kg CO2e. 
+The embodied-to-operational ratio of 86.1/13.9 (embodied being approximately six times larger than operational) deviates slighly from the typical 80/20 industry average for laptops mentioned previously in [embodied vs operational carbon](../lifecycle#embodied-vs-operational-carbon). Based on this manufacturer data, the embodied carbon per device is approximately 277 kg CO2e. 
 
 ![dell-pcf-assumptions](/assets/images/dell-pcf-assumptions.PNG)
 
@@ -102,7 +102,7 @@ Splitting into embodied (manufacturing, transportation and end-of-life) and oper
 | Embodied | 30.5 | 1,725 |
 | Operational | 69.5 | 3,932 |
 
-The embodied-to-operational ratio of 30.5/69.5 (operational being just over two times larger than embodied) deviates slighly from the typical 20/80 industry average for servers mentioned previously in [embodied vs. operational carbon](../lifecycle#embodied-vs-operational-carbon). Based on this manufacturer data, the embodied carbon per this device is approximately 1,725 kg CO2e. 
+The embodied-to-operational ratio of 30.5/69.5 (operational being just over two times larger than embodied) deviates slighly from the typical 20/80 industry average for servers mentioned previously in [embodied vs operational carbon](../lifecycle#embodied-vs-operational-carbon). Based on this manufacturer data, the embodied carbon per this device is approximately 1,725 kg CO2e. 
 
 ![server-pcf-inputs](/assets/images/server-pcf-inputs.PNG)
 
