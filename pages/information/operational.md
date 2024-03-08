@@ -138,11 +138,9 @@ The PCF assumes an annual Typical Energy Consumption (TEC) value of 1,605 kWh fo
 
 Consider the server operates at a higher utilisation than assumed by the manufacturer. Assuming a linear relationship between load and utilisation (which does not always hold true), the [SPECpower benchmark summary](https://www.spec.org/power_ssj2008/results/res2018q3/power_ssj2008-20180828-00850.html) for a similar mainstream HPE ProLiant DL380 Gen10 server suggests an average power draw of 237W. Using the high-level approach as discussed above, and assuming 24/7 operation, this results in an estimated annual energy consumption of approximately 2,076 kWh. This is higher than the quoted TEC, which is to be expected due to higher utilisation.
 
-Consider this server is actually operating in Europe. Using an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], annual operational emissions can be estimated to be approximately 681 kg CO2e per year. This is lower than approximated emissions from running the server in the United States at a lower utilisation, emphasising the impact location has on carbon emissions (as carbon intensity in Europe is typically lower than in the United States).
+Consider this server is actually operating in Europe in a data centre with a PUE of 1.6[^pue]. Using an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], annual operational emissions can be estimated to be approximately 1,089 kg CO2e per year. 
 
-Additionally, consider this server is operating in a data centre with a PUE of 1.6[^pue]. Annual operational emissions can be estimated to be approximately 1,089 kg CO2e per year. This emphasises the importance of hosting server infrastructure in energy efficient data centres. 
-
-The discrepancies between the estimates highlights the impact of using different assumptions and data sources when estimating operational emissions. It underscores the importance of cross-referencing values and clarifying assumptions made by manufacturers to ensure accurate and consistent emissions reporting.
+The variability between the estimates highlights the impact of using different assumptions and data sources when estimating operational emissions. It underscores the importance of cross-referencing values and clarifying assumptions made by manufacturers to ensure accurate and consistent emissions reporting.
 
 ## References
 
