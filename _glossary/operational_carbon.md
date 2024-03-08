@@ -2,4 +2,8 @@
 title: Operational Carbon
 ---
 
-CO2 emissions due to the operational phase of software, this phase includes the hosting and use of software. So sources of emissions include the energy needed to keep your servers on, energy needed to keep end user devices running and energy needed to transfer data from your server to the end user’s device. The energy used can be transformed into CO2e emissions by taking into account the [Carbon Intensity](#carbon-intensity) at the time and place the energy was used.
+Carbon emissions from the usage stage of the [product life cycle](/glossary#product-life-cycle). Refers to the greenhouse gas (GHG) emissions associated with the operation and use of a device or product throughout its entire life cycle. For example, the energy needed to keep servers on, end user devices running and to transfer data from servers to the devices. 
+
+Factors influencing operational carbon impact include the device’s energy efficiency, usage patterns, life span and the [carbon intensity](/glossary#carbon-intensity) of the energy grid powering it.
+
+[Read more about operational carbon emissions.](../information/lifecycle/operational)

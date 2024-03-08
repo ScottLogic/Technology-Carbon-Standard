@@ -1,3 +1,7 @@
+- name: Cloud Services
+  link: /information/cloud
+- name: Estate Emissions
+  link: /information/estate
 - name: Life Cycle Emissions
   link: /information/lifecycle
   subcategories:
@@ -5,5 +9,3 @@
     link: /information/lifecycle/embodied
   - name: Operational Emissions
     link: /information/lifecycle/operational
-- name: Estate Emissions
-  link: /information/estate

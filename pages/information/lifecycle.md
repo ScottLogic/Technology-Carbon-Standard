@@ -10,11 +10,20 @@ The carbon footprint of an organisation's technology encompasses total emissions
 
 Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/glossary#embodied-carbon) and [operational carbon](/glossary#operational-carbon).
 
-$$ Life\ Cycle\ Carbon\ Footprint\ =\ Embodied\ Carbon\ +\ Operational\ Carbon $$
+$$ C = C_E + C_O $$
+
+Where
+- C is total life cycle carbon (kg CO2e).
+- C<sub>E</sub> is embodied carbon (kg CO2e).
+- C<sub>O</sub> is operational carbon (kg CO2e).
 
 To measure an organisation's technology carbon footprint, it is essential to consider the full product life cycle emissions. 
 
 The Technology Carbon Standard aims to categorise an organisation's technology assets, which are then grouped under three broad emissions areas (upstream, operational and downstream) to provide a comprehensive view of the carbon footprint. In general, embodied carbon relates to upstream emissions (Category U) and operational emissions are associated with categories O, C, G and D. 
+
+[Read more about embodied carbon emissions.](embodied)
+
+[Read more about operational carbon emissions.](operational)
 
 {% include linkedHeading.html heading="Life Cycle Emissions Data" level=3 %}
 
