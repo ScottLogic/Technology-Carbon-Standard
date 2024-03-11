@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Life Cycle Emissions
+title: Hardware Life Cycle Emissions
 permalink: /information/lifecycle
 ---
 
@@ -8,20 +8,20 @@ permalink: /information/lifecycle
 
 The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage, and disposal. 
 
-Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/glossary#embodied-carbon) and [operational carbon](/glossary#operational-carbon).
+Broadly, the full life cycle view can be divided into two main groups: [embodied carbon emissions](/glossary#embodied-carbon) and [usage carbon emissions](/glossary#usage-carbon).
 
-$$ C = C_E + C_O $$
+$$ C = C_E + C_U $$
 
 Where
-- C is total life cycle carbon (kg CO2e).
-- C<sub>E</sub> is embodied carbon (kg CO2e).
-- C<sub>O</sub> is operational carbon (kg CO2e).
+- C is total life cycle carbon emissions (kg CO2e).
+- C<sub>E</sub> is embodied carbon emissions (kg CO2e).
+- C<sub>U</sub> is usage carbon emissions (kg CO2e).
 
 To measure an organisation's technology carbon footprint, it is essential to consider the full product life cycle emissions. 
 
 [Read more about embodied carbon emissions.](embodied)
 
-[Read more about operational carbon emissions.](operational)
+[Read more about usage carbon emissions.](usage)
 
 {% include linkedHeading.html heading="Life Cycle Emissions Data" level=3 %}
 
@@ -40,19 +40,19 @@ Here are some examples of environmental reports, PCF documents, and LCAs from pr
 
 Reported emissions figures typically represent the mean value of carbon footprint estimates. Reported standard deviations or variances highlight the uncertainty inherent in these estimates, arising from the complexities involved in capturing accurate emissions data from manufacturing, transportation, and real-world usage scenarios.
 
-{% include linkedHeading.html heading="Embodied vs Operational Carbon" level=3 %}
+{% include linkedHeading.html heading="Embodied vs Usage Carbon" level=3 %}
 
-The total embodied carbon of an asset can be [amortised](/glossary#amortisation) over its expected lifetime, if information about its typical refresh cycle or life span is available. This enables understanding the annual carbon emissions attributed to embodied carbon. By amortising the embodied carbon over the product's lifetime, it allows a like-for-like comparison against annual operational emissions. 
+The total embodied carbon of an asset can be [amortised](/glossary#amortisation) over its expected lifetime, if information about its typical refresh cycle or life span is available. This enables understanding the annual carbon emissions attributed to embodied carbon. By amortising the embodied carbon over the product's lifetime, it allows a like-for-like comparison against annual usage emissions. 
 
-The ratio of embodied carbon to operational carbon varies across different types of device or product. In some cases, the embodied carbon associated with a product can exceed the carbon emissions from its operational usage, underscoring the importance of considering both when assessing the total carbon footprint. The following chart illustrates the relative contribution of operational carbon versus embodied carbon for different types of hardware.
+The ratio of embodied carbon to usage carbon varies across different types of device or product. In some cases, the embodied carbon associated with a product can exceed the carbon emissions from its usage, underscoring the importance of considering both when assessing the total carbon footprint. The following chart illustrates the relative contribution of usage carbon versus embodied carbon for different types of hardware.
 
-![embodied-vs-operational-amounts](/assets/images/embodied-vs-operational-amounts.png)
+![embodied-vs-usage-amounts](/assets/images/embodied-vs-usage-amounts.png)
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
-For end-user or employee devices such as laptops, embodied carbon typically accounts for around 80% of the total life cycle emissions, while operational emissions make up only 20%. In contrast, for servers, the breakdown can be reversed, with embodied carbon constituting around 20% and operational emissions around 80% of the total. These proportions can fluctuate depending on the specific device model. Desktops tend to have a higher proportion of operational emissions compared to other end-user or employee devices like laptops or smartphones.
+For end-user or employee devices such as laptops, embodied carbon typically accounts for around 80% of the total life cycle emissions, while usage emissions make up only 20%. In contrast, for servers, the breakdown can be reversed, with embodied carbon constituting around 20% and usage emissions around 80% of the total. These proportions can fluctuate depending on the specific device model. Desktops tend to have a higher proportion of usage emissions compared to other end-user or employee devices like laptops or smartphones.
 
-![embodied-vs-operational-percentages](/assets/images/embodied-vs-operational-percentages.png)
+![embodied-vs-usage-proportions](/assets/images/embodied-vs-usage-proportions.png)
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 

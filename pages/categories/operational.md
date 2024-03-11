@@ -19,7 +19,7 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2, while 
 
 {% include linkedHeading.html heading="On-premise" level=3 %}
 
-In terms of a product's [life cycle emissions](../information/lifecycle), this refers to the operational emissions associated with an organisation's owned hardware assets. [Read more about operational carbon emissions.](../information/lifecycle/operational)
+In terms of a product's [life cycle emissions](../information/lifecycle), this refers to the usage emissions associated with an organisation's owned hardware assets. [Read more about usage carbon emissions.](../information/lifecycle/usage)
 
 {% include linkedHeading.html heading="Servers and Storage" level=4 %}
 

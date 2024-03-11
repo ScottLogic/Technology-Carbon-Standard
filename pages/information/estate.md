@@ -2,6 +2,7 @@
 layout: category
 title: Estimating Estate Emissions
 permalink: /information/estate
+published: false
 ---
 
 # Estimating Estate Emissions
@@ -17,7 +18,5 @@ Ideal data sources are configuration management databases (CMDBs) from robust IT
 The accuracy of the underlying data will directly impact the precision of emissions estimates across the entire technology inventory. However, even approximate extrapolated totals can help identify significant emission hotspots. Conducting an inventory-wide emissions assessment enables organisations to pinpoint areas for emission reductions, track performance over time, and work towards minimising the carbon footprint across their entire digital ecosystem.
 
 {% include linkedHeading.html heading="Software" level=3 %}
-TBC...
 
 {% include linkedHeading.html heading="Cloud" level=3 %}
-TBC...

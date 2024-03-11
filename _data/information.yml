@@ -1,11 +1,9 @@
 - name: Cloud Services
   link: /information/cloud
-- name: Estate Emissions
-  link: /information/estate
-- name: Life Cycle Emissions
+- name: Hardware Life Cycle Emissions
   link: /information/lifecycle
   subcategories:
   - name: Embodied Emissions
     link: /information/lifecycle/embodied
-  - name: Operational Emissions
-    link: /information/lifecycle/operational
+  - name: Usage Emissions
+    link: /information/lifecycle/usage
