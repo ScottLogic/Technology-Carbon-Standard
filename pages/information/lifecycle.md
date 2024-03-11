@@ -6,7 +6,7 @@ permalink: /information/lifecycle
 
 # Life Cycle Emissions
 
-The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage and disposal. 
+The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage, and disposal. 
 
 Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/glossary#embodied-carbon) and [operational carbon](/glossary#operational-carbon).
 
@@ -25,20 +25,20 @@ To measure an organisation's technology carbon footprint, it is essential to con
 
 {% include linkedHeading.html heading="Life Cycle Emissions Data" level=3 %}
 
-A comprehensive [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. If such data is unavailable, high-level estimates can be based on average emissions per device type, employees’ equipment, shipping mileage.
+A comprehensive [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. If such data is unavailable, high-level estimates can be based on average emissions per device type, employees’ equipment, and shipping mileage.
 
-Many manufacturers choose to provide [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data for their products. A PCF provides an estimate of the greenhouse gas emissions attributable to a product over its full life cycle. This differs from an LCA, which considers broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption and land usage). 
+Many manufacturers choose to provide [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data for their products. A PCF provides an estimate of the greenhouse gas emissions attributable to a product over its full life cycle. This differs from an LCA, which considers broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption, and land usage). 
 
-Several international standards provide guidelines for estimating environmental impacts such as [ISO 14040](https://www.iso.org/standard/37456.html), [ISO 14044](https://www.iso.org/standard/38498.html) and [ISO 14067](https://www.iso.org/standard/71206.html) and [IEC TR 62921](https://webstore.iec.ch/publication/25994). These standards outline different approaches and outputs, which can be difficult to reconcile. A widely used methodology in the ICT industry to quantify greenhouse gas (GHG) emissions and estimate product carbon footprints is the [Product Attribute to Impact Algorithm (PAIA)](https://msl.mit.edu/projects/paia/main.html), although it is not strictly compliant with such standards. Methodologies can still vary between manufacturers so published figures require careful scrutiny to determine comparability. 
+Several international standards provide guidelines for estimating environmental impacts such as [ISO 14040](https://www.iso.org/standard/37456.html), [ISO 14044](https://www.iso.org/standard/38498.html), [ISO 14067](https://www.iso.org/standard/71206.html), and [IEC TR 62921](https://webstore.iec.ch/publication/25994). These standards outline different approaches and outputs, which can be difficult to reconcile. A widely used methodology in the ICT industry to quantify greenhouse gas (GHG) emissions and estimate product carbon footprints is the [Product Attribute to Impact Algorithm (PAIA)](https://msl.mit.edu/projects/paia/main.html), although it is not strictly compliant with such standards. Methodologies can still vary between manufacturers so published figures require careful scrutiny to determine comparability. 
 
-Here are some examples of environmental reports, PCF documents and LCAs from prominent manufacturers that detail the carbon footprints of their products over the full life cycle:
+Here are some examples of environmental reports, PCF documents, and LCAs from prominent manufacturers that detail the carbon footprints of their products over the full life cycle:
 
 - [Apple Environmental Reports](https://www.apple.com/environment/)
 - [Dell Product Carbon Footprints](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm)
 - [HP Product Carbon Footprints](https://h20195.www2.hp.com/v2/library.aspx?doctype=95&footer=95&filter_doctype=no&showregionfacet=yes&filter_country=no&cc=us&lc=en&filter_oid=no&filter_prodtype=rw&prodtype=ij&showproductcompatibility=yes&showregion=yes&showreglangcol=yes&showdescription=yes%23doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false#doctype-95&sortorder-popular&teasers-off&isRetired-false&isRHParentNode-false&titleCheck-false)
 - [Samsung Life Cycle Assessment](https://www.samsung.com/global/sustainability/focus/products/sustainability-in-our-products/)
 
-Reported emissions figures typically represent the mean value of carbon footprint estimates. Reported standard deviations or variances highlight the uncertainty inherent in these estimates, arising from the complexities involved in capturing accurate emissions data from manufacturing, transportation and real-world usage scenarios.
+Reported emissions figures typically represent the mean value of carbon footprint estimates. Reported standard deviations or variances highlight the uncertainty inherent in these estimates, arising from the complexities involved in capturing accurate emissions data from manufacturing, transportation, and real-world usage scenarios.
 
 {% include linkedHeading.html heading="Embodied vs Operational Carbon" level=3 %}
 
@@ -48,13 +48,13 @@ The ratio of embodied carbon to operational carbon varies across different types
 
 ![embodied-vs-operational-amounts](/assets/images/embodied-vs-operational-amounts.png)
 
-*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor] and Server[^server].*
+*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
 For end-user or employee devices such as laptops, embodied carbon typically accounts for around 80% of the total life cycle emissions, while operational emissions make up only 20%. In contrast, for servers, the breakdown can be reversed, with embodied carbon constituting around 20% and operational emissions around 80% of the total. These proportions can fluctuate depending on the specific device model. Desktops tend to have a higher proportion of operational emissions compared to other end-user or employee devices like laptops or smartphones.
 
 ![embodied-vs-operational-percentages](/assets/images/embodied-vs-operational-percentages.png)
 
-*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor] and Server[^server].*
+*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
 ## References
 

@@ -6,13 +6,13 @@ permalink: /information/lifecycle/embodied
 
 # Embodied Carbon Emissions
 
-Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance and end-of-life of a device or product. Embodied carbon excludes emissions associated with the usage of a device or product, which instead falls under [operational emissions](/glossary#operational-carbon). [Read more about life cycle emissions.](../lifecycle)
+Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance, and end-of-life of a device or product. Embodied carbon excludes emissions associated with the usage of a device or product, which instead falls under [operational emissions](/glossary#operational-carbon). [Read more about life cycle emissions.](../lifecycle)
 
-Technology hardware can be associated with large embodied carbon emissions due to resource-intensive electronics production and complex global supply chains. In 2021, the World Economic Forum (WEF) reported that 77% of greenhouse gas (GHG) emissions from the electronics industry are attributed to the supply chain, including raw materials mining, manufacture, assembly and transportation of the finished product. Supply-chain decarbonisation presents a huge opportunity to reduce climate impacts. Notably, 35% of supply-chain emissions could be abated through renewable power, and efficiency improvements could further reduce emissions by ~20%[^WEF]. 
+Technology hardware can be associated with large embodied carbon emissions due to resource-intensive electronics production and complex global supply chains. In 2021, the World Economic Forum (WEF) reported that 77% of greenhouse gas (GHG) emissions from the electronics industry are attributed to the supply chain, including raw materials mining, manufacture, assembly, and transportation of the finished product. Supply-chain decarbonisation presents a huge opportunity to reduce climate impacts. Notably, 35% of supply-chain emissions could be abated through renewable power, and efficiency improvements could further reduce emissions by ~20%[^WEF]. 
 
-End-of-life processes like reuse, recycling and disposal contribute a relatively small portion of a product's embodied carbon emissions compared to the supply chain. Manufacturers typically provide expected life spans for devices, ranging from 3 to 5 years in most cases. Extending a device's life span can reduce the annual or [amortized](/glossary#amortisation) embodied carbon emissions. However, factors like market demand for newer technology, built-in obsolescence, performance requirements and non-repairable design often limit device life spans, counteracting potential carbon savings.
+End-of-life processes like reuse, recycling, and disposal contribute a relatively small portion of a product's embodied carbon emissions compared to the supply chain. Manufacturers typically provide expected life spans for devices, ranging from 3 to 5 years in most cases. Extending a device's life span can reduce the annual or [amortised](/glossary#amortisation) embodied carbon emissions. However, factors like market demand for newer technology, built-in obsolescence, performance requirements, and non-repairable design often limit device life spans, counteracting potential carbon savings.
 
-Focusing carbon reduction efforts on operational emissions only fails to capture the full carbon footprint. While difficult to quantify, considering embodied carbon emissions is critical for comprehensive carbon accounting and driving responsible procurement and development of lower-impact technologies.
+Focusing carbon reduction efforts on only operational emissions fails to capture the full carbon footprint. While difficult to quantify, considering embodied carbon emissions is critical for comprehensive carbon accounting and driving responsible procurement and development of lower-impact technologies.
 
 {% include linkedHeading.html heading="A high level approach to estimation" level=3 %}
 
@@ -41,7 +41,7 @@ Embodied carbon varies between different devices, as illustrated below:
 
 ![embodied-carbon](/assets/images/embodied-carbon.png)
 
-*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor] and Server[^server].*
+*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
 The following examples look at PCF data for a laptop (employee or end-user device) and a server (on-premise infrastructure). 
 
@@ -62,14 +62,14 @@ Dell estimates the total carbon footprint of this laptop to be approximately 322
 
 Manufacturing accounts for the largest share (81.4%), followed by usage (13.9%), with relatively small contributions from transportation (4.4%) and end-of-life (0.3%).
 
-Splitting into embodied (manufacturing, transportation and end-of-life) and operational (usage) emissions:
+Splitting into embodied (manufacturing, transportation, and end-of-life) and operational (usage) emissions:
 
 | Life Cycle Emissions | Proportion (%) | Emissions (kg CO2e) |
 |-----|-----|-----|
 | Embodied | 86.1 | 277 |
 | Operational | 13.9 | 45 |
 
-The embodied-to-operational ratio of 86.1/13.9 (embodied being approximately six times larger than operational) deviates slighly from the typical 80/20 industry average for laptops mentioned previously in [embodied vs operational carbon](../lifecycle#embodied-vs-operational-carbon). Based on this manufacturer data, the embodied carbon per device is approximately 277 kg CO2e. 
+The embodied-to-operational ratio of 86.1/13.9 (embodied being approximately six times larger than operational) deviates slightly from the typical 80/20 industry average for laptops mentioned previously in [embodied vs operational carbon](../lifecycle#embodied-vs-operational-carbon). Based on this manufacturer data, the embodied carbon per device is approximately 277 kg CO2e. 
 
 ![dell-pcf-assumptions](/assets/images/dell-pcf-assumptions.PNG)
 
@@ -87,7 +87,7 @@ The total carbon footprint varies significantly, ranging from approximately 2,41
 
 Unlike employee or end-user devices such as laptops, server hardware can be highly customisable. The performance server, featuring more powerful CPUs, increased memory capacity, and higher energy consumption, results in a significantly higher carbon footprint across all usage locations – Europe, USA, and Japan. 
 
-In contrast to employee and end-user devices such as laptops or smartphones, usage accounts for the largest share of emissions for servers, ranging from 56.7% for a base server operating in Europe to 84.6% for a performance server operating in Japan. Embodied emissions (primarily from manufacturing, with small contributions from transportation and end-of-life) range from 15.4% for a performance server in Japan to 43.3% for a base server in Europe of total lifecycle emissions. Transportation emissions are estimated based on product packaging weight, shipping mode, distance travelled and emissions intensity data, accounting for varying emissions associated with different transportation modes and routes based on the usage location.
+In contrast to employee and end-user devices such as laptops or smartphones, usage accounts for the largest share of emissions for servers, ranging from 56.7% for a base server operating in Europe to 84.6% for a performance server operating in Japan. Embodied emissions (primarily from manufacturing, with small contributions from transportation and end-of-life) range from 15.4% for a performance server in Japan to 43.3% for a base server in Europe of total lifecycle emissions. Transportation emissions are estimated based on product packaging weight, shipping mode, distance travelled, and emissions intensity data, accounting for varying emissions associated with different transportation modes and routes based on the usage location.
 
 The pie charts are also summarised in the table below. 
 
@@ -95,7 +95,7 @@ The pie charts are also summarised in the table below.
 
 Consider a mainstream server operating in the United States. The total product carbon footprint is approximately 5,657 kg CO2e. 
 
-Splitting into embodied (manufacturing, transportation and end-of-life) and operational (usage) emissions:
+Splitting into embodied (manufacturing, transportation, and end-of-life) and operational (usage) emissions:
 
 | Life Cycle Emissions | Proportion (%) | Emissions (kg CO2e) |
 |-----|-----|-----|

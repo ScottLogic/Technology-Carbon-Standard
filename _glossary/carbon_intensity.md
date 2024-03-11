@@ -18,7 +18,7 @@ This method only considers the carbon intensity of the local grid and ignores th
 | USA                | 410                            | 
 | China              | 586                            | 
 
-*Figures for France, Germany and the UK are based on 2023 data, other locations are based on 2022 data. Source: Ember Data Explorer*
+*Figures for France, Germany, and the UK are based on 2023 data. Other locations are based on 2022 data. Source: Ember Data Explorer*
 
 There are other sources of credible data including government or government-affiliated sources (energy ministries, statistical bureaus), or utility companies that generate or manage power directly. For example, the IEA (International Energy Agency) providers emissions factors products. There are also online platforms such as [Electricity Maps](https://app.electricitymaps.com/map) which provide visualisations of carbon intensity data parsed from reputable data sources. 
 

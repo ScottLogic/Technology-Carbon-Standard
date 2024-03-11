@@ -6,9 +6,9 @@ permalink: /information/lifecycle/operational
 
 # Operational Carbon Emissions 
 
-Operational carbon, also known as carbon emissions from use or usage emissions, refers to the [greenhouse gas (GHG)](/glossary#greenhouse-gases) emissions associated with the actual operation and use of a device or product over its lifetime. Operational carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements or end-of-life disposal phases, which instead fall under [embodied carbon](/glossary#embodied-carbon). [Read more about life cycle emissions.](../lifecycle)
+Operational carbon, also known as carbon emissions from use or usage emissions, refers to the [greenhouse gas (GHG)](/glossary#greenhouse-gases) emissions associated with the actual operation and use of a device or product over its lifetime. Operational carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements, and end-of-life disposal phases, which instead fall under [embodied carbon](/glossary#embodied-carbon). [Read more about life cycle emissions.](../lifecycle)
 
-Factors influencing operational carbon impact include the device's energy efficiency, usage patterns, life span and the [carbon intensity](/glossary#carbon-intensity) of the energy grid powering it.
+Factors influencing operational carbon impact include the device's energy efficiency, usage patterns, life span, and the [carbon intensity](/glossary#carbon-intensity) of the energy grid powering it.
 
 The ICT sector's electricity consumption was estimated at 1,183 TWh in 2022, accounting for 4.7 percent of the world's total electricity use in 2021[^worldbank]. With the accelerating pace of digitalisation and the increasing reliance on ICT services and infrastructure, the energy demands of the sector are projected to rise further in the coming years. Minimising operational carbon through efficiency improvements and cleaner energy sources is therefore crucial, in conjunction with reducing embodied emissions, to comprehensively reduce the greenhouse gas impact of a product or device across its complete life cycle.
 
@@ -62,7 +62,7 @@ Where specific device models or usage locations are unknown, average figures for
 
 {% include linkedHeading.html heading="Power Consumption of End-User and Employee Devices" level=4 %}
 
-This considers the energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees or end-users. Energy consumption varies among devices due to different power demands and usage patterns. Typically, smartphones consume less power than laptops, and laptops consume less power than desktops, as shown in the following table:
+This considers the energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees or end-users. Energy consumption varies among devices due to different power demands and usage patterns. Typically, smartphones consume less power than laptops, and laptops consume less power than desktops, as shown in the following table:
 
 | Device             | Power Range (W)    | Average Power (W)  |
 | ------------------ | ------------------ | ------------------ |
@@ -73,13 +73,13 @@ This considers the energy consumed by computers (desktops, laptops), monitors, p
 | Monitor            | 17 - 30            | 30                 |
 | Television         | 40 - 120           | 74                 |
 
-*Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3] and Fershad Irani [^fershad] and our own device energy use research.*
+*Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3], Fershad Irani [^fershad], and our own device energy use research.*
 
 In the absence of more granular emissions data (such as [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data), these power figures can be used to estimate annual energy consumption and operational emissions for high-level approximations.
 
 {% include linkedHeading.html heading="Power Consumption of Servers" level=5 %}
 
-This section focuses on the energy consumed by on-premise servers, which can significantly contribute to an organisation's carbon footprint due to their high energy usage. Server hardware is highly customisable, resulting in large variances in power demands.Benchmarking tools, such as the [SPEC Power Benchmark](../../resources#spec-power-benchmark), can provide information on the typical power draw of different server hardware configurations. The SPEC Power benchmark evaluates the power and performance characteristics of servers, providing average power draw figures under varying levels of load. 
+This section focuses on the energy consumed by on-premise servers, which can significantly contribute to an organisation's carbon footprint due to their high energy usage. Server hardware is highly customisable, resulting in large variances in power demands. Benchmarking tools, such as the [SPEC Power Benchmark](../../resources#spec-power-benchmark), can provide information on the typical power draw of different server hardware configurations. The SPEC Power benchmark evaluates the power and performance characteristics of servers, providing average power draw figures under varying levels of load. 
 
 Here's an example of a [SPEC Power Benchmark summary](https://www.spec.org/power_ssj2008/results/res2019q2/power_ssj2008-20190311-00882.html) for an HPE ProLiant DL580 Gen10 server:
 
@@ -95,13 +95,13 @@ Operational carbon can vary widely between different device types, as illustrate
 
 ![operational-carbon](/assets/images/operational-carbon.png)
 
-*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor] and Server[^server].*
+*Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
 Servers can be associated with high operational emissions compared to employee or end-user devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns.
 
 {% include linkedHeading.html heading="Typical Energy Consumption (TEC)" level=4 %}
 
-When providing PCF data, manufacturers often include assumptions and inputs used in the methodology. With regards to operational emissions, one such assumption to note is the [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) figure. TEC is an estimate of a device's expected annual energy consumption based on standard usage patterns. For devices like desktops, laptops, and smartphones, TEC is based on standard household usage. For servers, TEC assumes 24/7 operation. The TEC figure can be used in place of the estimated annual energy consumption figure approximated through the high-level approach discussed earlier. 
+When providing PCF data, manufacturers often include assumptions and inputs used in the methodology. With regards to operational emissions, one such assumption to note is the [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) figure. TEC is an estimate of a device's expected annual energy consumption based on standard usage patterns. For devices like desktops, laptops, and smartphones, TEC is based on standard household usage. The TEC figure can be used in place of the estimated annual energy consumption figure approximated through the high-level approach discussed earlier. 
 
 It's important to note that for employee devices, TEC may underestimate energy consumption compared to actual business usage patterns, where devices are typically used for longer durations and more intensive workloads. Therefore, using TEC in subsequent estimations of emissions arising from business operations could result in lower emissions estimates than expected. 
 
@@ -111,7 +111,7 @@ To ensure accurate and comparable emissions estimates across all hardware assets
 
 Consider the [PCF for a Dell XPS 13 9310 Laptop](https://www.delltechnologies.com/asset/en-us/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf). This is the same example model considered in the [embodied emissions](embodied#laptop) section. Refer to this section for further detail on the life cycle emissions breakdown.
 
-Dell estimates the total carbon footprint of this laptop to be approximately 322 kg CO2e over its 4-year life time. Of this, 86.1% (277 kg CO2e) is attributed to embodied emissions (manufacturing, transportation, and end-of-life), while 13.9% (45 kg CO2e) is attributed to operational emissions. Amortizing the operational emissions over the expected 4-year life span, the annual operational emissions can be allocated as approximately 11 kg CO2e per year.
+Dell estimates the total carbon footprint of this laptop to be approximately 322 kg CO2e over its 4-year life time. Of this, 86.1% (277 kg CO2e) is attributed to embodied emissions (manufacturing, transportation, and end-of-life), while 13.9% (45 kg CO2e) is attributed to operational emissions. Amortising the operational emissions over the expected 4-year life span, the annual operational emissions can be allocated as approximately 11 kg CO2e per year.
 
 However, employing the [high-level approach](operational#a-high-level-approach-to-estimation) discussed earlier yields a different result. Assuming business usage (8 hours a day) and a typical power draw of 15W[^dellxps], the estimated annual energy consumption is 26.4 kWh. Dell's PCF assumes Europe as usage location. Using an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], this translates to approximately 8.66 kg CO2e of annual operational emissions per device.
 
@@ -134,13 +134,13 @@ The variation in operational emissions can be attributed to several factors:
 
 Consider a mainstream server operating in the United States. The total product carbon footprint is approximately 5,657 kg CO2e. Of this, 69.5% (3,932 kg CO2e) is attributed to operational emissions. Amortising the operational emissions over the expected 4-year life span, the annual operational emissions can be allocated as approximately 983 kg CO2e per year.
 
-The PCF assumes an annual Typical Energy Consumption (TEC) value of 1,605 kWh for this server model, based on modeling using the HPE Power Advisor tool and assuming 30% utilisation, 24/7 operation, and PUE values from industry sources.
+The PCF assumes an annual Typical Energy Consumption (TEC) value of 1,605 kWh for this server model, based on modelling using the HPE Power Advisor tool and assuming 30% utilisation, 24/7 operation, and PUE values from industry sources.
 
-Consider the server operates at a higher utilisation than assumed by the manufacturer. Assuming a linear relationship between load and utilisation (which does not always hold true), the [SPECpower benchmark summary](https://www.spec.org/power_ssj2008/results/res2018q3/power_ssj2008-20180828-00850.html) for a similar mainstream HPE ProLiant DL380 Gen10 server suggests an average power draw of 237W. Using the high-level approach as discussed above, and assuming 24/7 operation, this results in an estimated annual energy consumption of approximately 2,076 kWh. This is higher than the quoted TEC, which is to be expected due to higher utilisation.
+Consider the server operates at a higher utilisation than assumed by the manufacturer. Assuming a linear relationship between load and utilisation (which does not always hold true), the [SPEC Power benchmark summary](https://www.spec.org/power_ssj2008/results/res2018q3/power_ssj2008-20180828-00850.html) for a similar mainstream HPE ProLiant DL380 Gen10 server suggests an average power draw of 237W. Using the high-level approach as discussed above, and assuming 24/7 operation, this results in an estimated annual energy consumption of approximately 2,076 kWh. This is higher than the quoted TEC, which is to be expected due to higher utilisation.
 
 Consider this server is actually operating in Europe in a data centre with a PUE of 1.6[^pue]. Using an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], annual operational emissions can be estimated to be approximately 1,089 kg CO2e per year. 
 
-The variability between the estimates highlights the impact of using different assumptions and data sources when estimating operational emissions. It underscores the importance of cross-referencing values and clarifying assumptions made by manufacturers to ensure accurate and consistent emissions reporting.
+The variability between the estimates highlights the impact of using different assumptions and data sources when estimating operational emissions. This variation emphasises the need to clearly understand the assumptions made by manufacturers in order to ensure emissions reporting is accurate and consistent.
 
 ## References
 

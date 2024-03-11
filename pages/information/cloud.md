@@ -18,7 +18,7 @@ The environmental impact and carbon emissions associated with cloud computing ar
 
 At the same time, cloud computing presents some opportunities for improved sustainability compared to traditional on-premises data centres. Cloud providers can leverage economies of scale to invest in more energy-efficient hardware, cooling systems, and renewable energy sources. The flexibility of the cloud also allows organisations to dynamically provision resources and optimise their usage, potentially reducing idle capacity and associated emissions.
 
-Focussing specifically on energy efficiency, Cloud providers often use custom hardware with a lower power demand. Generally speaking, it is in their interests to use the most energy efficient hardware possible to reduce their own operating costs. This also allows users to switch to lower powered hardware without the initial outlay for new hardware. Improved energy efficiency also extends to the typical [Power Usage Effectiveness (PUE)](/glossary#power-usage-effectiveness-pue) of a cloud based data centre, which can be lower than typical on-premise data centres.
+Focusing specifically on energy efficiency, Cloud providers often use custom hardware with a lower power demand. Generally speaking, it is in their interests to use the most energy efficient hardware possible to reduce their own operating costs. This also allows users to switch to lower powered hardware without the initial outlay for new hardware. Improved energy efficiency also extends to the typical [Power Usage Effectiveness (PUE)](/glossary#power-usage-effectiveness-pue) of a cloud based data centre, which can be lower than typical on-premise data centres.
 
 | Provider                      | PUE        |
 | ----------------------------- | ---------- |

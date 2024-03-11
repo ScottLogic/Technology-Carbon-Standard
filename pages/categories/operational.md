@@ -5,7 +5,7 @@ permalink: categories/operational
 ---
 
 # Operational Emissions
-Operational emissions encompass the greenhouse gases emitted from an organisation's own technology infrastructure and operations. These are categorised into three groups - On-Prem, Cloud, and Generator emissions (O, C and G) - based on the level of ownership and control an organisation has over the assets.
+Operational emissions encompass the greenhouse gases emitted from an organisation's own technology infrastructure and operations. These are categorised into three groups - On-Prem, Cloud, and Generator emissions (O, C, and G) - based on the level of ownership and control an organisation has over the assets.
 
 Understanding operational emissions allows organisations to quantify, monitor, and benchmark the climate impacts of their technology infrastructure and business operations. It enables setting emission reduction targets and strategies and facilitates compliance with current and emerging climate disclosure legislations. 
 
@@ -27,18 +27,18 @@ The energy consumed by on-premise servers and data centres.
 
 {% include linkedHeading.html heading="Networking Devices" level=4 %}
 
-The energy consumed by networking devices such as routers, switches and Wi-Fi access points. 
+The energy consumed by networking devices such as routers, switches, and Wi-Fi access points. 
 
 {% include linkedHeading.html heading="Employee Devices" level=4 %}
 
-The energy consumed by computers (desktops, laptops), monitors, printers and other devices used by employees.
+The energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees.
 
 {% include linkedHeading.html heading="Generators" level=3 %}
 
-Any fossil fuel-powered generators, solar PV, wind turbines or other systems installed on-site to supply electricity to technology equipment.
+Any fossil fuel-powered generators, solar PV, wind turbines, or other systems installed on-site to supply electricity to technology equipment.
 
 {% include linkedHeading.html heading="Indirect Emissions" level=2 %}
-Indirect emissions result from the organisation's purchase of cloud computing services, software or managed IT services from third-party technology providers.
+Indirect emissions result from the organisation's purchase of cloud computing services, software, or managed IT services from third-party technology providers.
 
 As the organisation does not own or control the IT assets delivering these services, their associated emissions cannot be directly quantified. But use of these services contributes substantially to the organisation's overall technology emissions footprint. These are relatable to GHG Protocol Scope 3.
 
@@ -46,7 +46,7 @@ Emissions estimates for third-party services can be obtained from providers to a
 
 {% include linkedHeading.html heading="Cloud Services" level=3 %}
 
-The emissions associated with cloud platform services like compute, storage and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types and region. 
+The emissions associated with cloud platform services like compute, storage, and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
 
 [Read more about cloud services.](../information/cloud)
 
