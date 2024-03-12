@@ -4,20 +4,20 @@ title: Embodied Carbon Emissions
 permalink: /information/lifecycle/embodied
 ---
 
-# Embodied Carbon Emissions
+# Hardware Embodied Carbon Emissions
 
-Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance, and end-of-life of a device or product. Embodied carbon excludes emissions associated with the usage of a device or product, which instead falls under [usage emissions](/glossary#usage-carbon). [Read more about life cycle emissions.](../lifecycle)
+Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance, and end-of-life of a device or product. Embodied carbon excludes emissions associated with the usage of a device or product, which instead falls under [usage carbon](/glossary#usage-carbon). [Read more about life cycle emissions.](../lifecycle)
 
 Technology hardware can be associated with large embodied carbon emissions due to resource-intensive electronics production and complex global supply chains. In 2021, the World Economic Forum (WEF) reported that 77% of greenhouse gas (GHG) emissions from the electronics industry are attributed to the supply chain, including raw materials mining, manufacture, assembly, and transportation of the finished product. Supply-chain decarbonisation presents a huge opportunity to reduce climate impacts. Notably, 35% of supply-chain emissions could be abated through renewable power, and efficiency improvements could further reduce emissions by ~20%[^WEF]. 
 
-End-of-life processes like reuse, recycling, and disposal contribute a relatively small portion of a product's embodied carbon emissions compared to the supply chain. Manufacturers typically provide expected life spans for devices, ranging from 3 to 5 years in most cases. Extending a device's life span can reduce the annual or [amortised](/glossary#amortisation) embodied carbon emissions. However, factors like market demand for newer technology, built-in obsolescence, performance requirements, and non-repairable design often limit device life spans, counteracting potential carbon savings.
+End-of-life processes like reuse, recycling, and disposal contribute a relatively small portion of a product's embodied carbon emissions compared to the supply chain. Manufacturers typically provide expected life spans for devices, ranging from 3 to 5 years in most cases. Extending a device's life span can reduce the annual or [amortised](/glossary#amortisation) embodied carbon emissions. However, factors such as market demand for newer technology, built-in obsolescence, performance requirements, and non-repairable design often limit device life spans, counteracting potential carbon savings.
 
 Focusing carbon reduction efforts on only usage emissions fails to capture the full carbon footprint. While difficult to quantify, considering embodied carbon emissions is critical for comprehensive carbon accounting and driving responsible procurement and development of lower-impact technologies.
 
 {% include linkedHeading.html heading="A High-Level Approach for Estimating Embodied Emissions" level=2 %}
 
 The [ratio of embodied carbon to usage carbon](../lifecycle#embodied-vs-usage-carbon) varies across different device types. 
-In the absence of more granular emissions data (such as [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data), industry-wide ratios can be applied to estimated usage emissions to approximate embodied emissions. Typically, it is easier to [estimate usage emissions](usage#a-high-level-approach-to-estimation). 
+In the absence of more granular emissions data (such as [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data), industry-wide ratios can be applied to estimated usage emissions to approximate embodied emissions. Typically, it can be easier to [estimate usage emissions at a high level](usage#a-high-level-approach-for-estimating-usage-emissions). 
 
 $$ C_E = C_U \times \frac{P_E}{P_U} $$
 
@@ -37,7 +37,7 @@ It is important to emphasise this is a high-level approach. In reality, ratios c
 
 Many manufacturers choose to provide life cycle emissions data such as information relating to the [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) of a product or device. [Read more about life cycle emissions data.](../lifecycle#life-cycle-emissions-data)
 
-Typically, PCF documentation breaks down the total carbon footprint of a product or device into life cycle stages: manufacturing, transportation, use, and end-of-life. An embodied carbon estimate can be derived by combining manufacturing, transportation, and end-of-life emissions. Reported figures typically represent lifetime emissions and can be [amortised](/glossary#amortisation) to estimate annual contributions based on the assumed device lifespan outlined in the PCF.
+Typically, PCF documentation breaks down the total carbon footprint of a product or device into life cycle stages: manufacturing, transportation, use, and end-of-life. An embodied carbon estimate can be derived by combining the emissions estimates not attributable to the use stage (typically manufacturing, transportation, and end-of-life emissions). Reported figures typically represent lifetime emissions and can be [amortised](/glossary#amortisation) to estimate annual contributions based on the assumed device lifespan outlined in the PCF.
 
 Embodied carbon varies between different devices, as illustrated by the following example:
 

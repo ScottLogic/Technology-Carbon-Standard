@@ -7,7 +7,7 @@ published: false
 
 # Estimating Estate Emissions
 
-To estimate the total emissions from an organisation's technology estate, it is crucial to understand the scale and composition of the various [Impact Categories](categories). 
+To estimate the total emissions from an organisation's technology estate, it is crucial to understand the scale and composition of the various Impact Categories. 
 
 {% include linkedHeading.html heading="Hardware" level=3 %}
 

@@ -14,8 +14,6 @@ Downstream emissions are related to GHG Protocol Scope 3.
 
 This considers the emissions generated from the electricity consumption of devices such as desktops, laptops, tablets, and mobile phones that utilise the products or services provided by the organisation. 
 
-In terms of a product's [life cycle emissions](../information/lifecycle), this refers to the usage emissions associated with end-user devices (hardware not owned by the organisation). [Read more about usage carbon emissions.](../information/lifecycle/usage)
-
 {% include linkedHeading.html heading="Network Data Transfer" level=2 %}
 
 These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services. Network emissions can be estimated based on the size of the data transferred, the distance transmitted, and the carbon intensity of the regions through which the data is transferred.

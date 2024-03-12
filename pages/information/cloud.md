@@ -14,7 +14,7 @@ Cloud services are typically categorised into different models, such as Infrastr
 
 {% include linkedHeading.html heading="Environmental Impact of Cloud Services" level=2 %}
 
-The environmental impact and carbon emissions associated with cloud computing are becoming increasingly important considerations. The energy consumption and carbon footprint of cloud data centres have grown substantially as the adoption of these services has accelerated. This hardware has its own Upstream and Operational emissions, which are attributable to clients under Scope 3 of the GHG protocol. Despite improvements in energy efficiency, the sheer scale of cloud infrastructure means its collective emissions are significant.
+The environmental impact and carbon emissions associated with cloud computing are becoming increasingly important considerations. The energy consumption and carbon footprint of cloud data centres have grown substantially as the adoption of these services has accelerated. This hardware has its own upstream and operational emissions, which are attributable to clients under Scope 3 of the GHG protocol. Despite improvements in energy efficiency, the sheer scale of cloud infrastructure means its collective emissions are significant.
 
 At the same time, cloud computing presents some opportunities for improved sustainability compared to traditional on-premises data centres. Cloud providers can leverage economies of scale to invest in more energy-efficient hardware, cooling systems, and renewable energy sources. The flexibility of the cloud also allows organisations to dynamically provision resources and optimise their usage, potentially reducing idle capacity and associated emissions.
 

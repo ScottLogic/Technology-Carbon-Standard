@@ -22,12 +22,22 @@ Emissions associated with developing and delivering off-the-shelf and open-sourc
 
 {% include linkedHeading.html heading="Hardware" level=2 %}
 
-Embodied carbon emissions associated with hardware devices owned by an organisation, covering the manufacturing, transportation, installation, maintenance, and disposal life cycle phases. This spans employee devices, networking equipment, and on-premise servers. 
+Embodied carbon emissions associated with hardware devices owned by an organisation, including emissions from the manufacture, transportation, installation, maintenance, and end-of-life of a device.
 
-[Read more about embodied carbon emissions.](../information/lifecycle/embodied)
+[Read more about embodied carbon emissions.](../../information/lifecycle/embodied)
 
-{% include linkedHeading.html heading="Employee Hardware" level=3 %} Laptops, desktops, mobiles, printers, and peripherals used by employees.
+{% include linkedHeading.html heading="Employee Hardware" level=3 %} 
 
-{% include linkedHeading.html heading="Networking Hardware" level=3 %} Network routers, switches, Wi-Fi access points installed.
+Laptops, desktops, mobiles, printers, and peripherals used by employees. 
 
-{% include linkedHeading.html heading="Data Centre and Server Hardware" level=3 %} Servers, storage systems, and data centre infrastructure installed on-premise.
+[Click here to see a worked example of estimating embodied emissions for a laptop.](../../information/lifecycle/example/employee#embodied-carbon-emissions)
+
+{% include linkedHeading.html heading="Networking Hardware" level=3 %} 
+
+Network routers, switches, Wi-Fi access points installed.
+
+{% include linkedHeading.html heading="Data Centre and Server Hardware" level=3 %} 
+
+Servers, storage systems, and data centre infrastructure installed on-premise.
+
+[Click here to see a worked example of estimating embodied emissions for a server.](../../information/lifecycle/example/server#embodied-carbon-emissions)

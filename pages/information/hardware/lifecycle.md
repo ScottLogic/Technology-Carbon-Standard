@@ -8,7 +8,7 @@ permalink: /information/lifecycle
 
 The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage, and disposal. 
 
-Broadly, the full life cycle view can be divided into two main groups: [embodied carbon emissions](/glossary#embodied-carbon) and [usage carbon emissions](/glossary#usage-carbon).
+Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/glossary#embodied-carbon) and [usage carbon](/glossary#usage-carbon).
 
 $$ C = C_E + C_U $$
 
@@ -23,7 +23,7 @@ To measure an organisation's technology carbon footprint, it is essential to con
 
 [Read more about usage carbon emissions.](usage)
 
-{% include linkedHeading.html heading="Life Cycle Emissions Data" level=3 %}
+{% include linkedHeading.html heading="Life Cycle Emissions Data" level=2 %}
 
 A comprehensive [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. Many manufacturers choose to provide [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data for their products. A PCF provides an estimate of the greenhouse gas emissions attributable to a product over its full life cycle. This differs from an LCA, which considers broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption, and land usage). 
 
@@ -38,7 +38,7 @@ Here are some examples of environmental reports, PCF documents, and LCAs from pr
 
 Reported emissions figures typically represent the mean value of carbon footprint estimates. Reported standard deviations or variances highlight the uncertainty inherent in these estimates, arising from the complexities involved in capturing accurate emissions data from manufacturing, transportation, and real-world usage scenarios.
 
-{% include linkedHeading.html heading="Embodied vs Usage Carbon" level=3 %}
+{% include linkedHeading.html heading="Embodied vs Usage Carbon" level=2 %}
 
 The total embodied carbon of an asset can be [amortised](/glossary#amortisation) over its expected lifetime, if information about its typical refresh cycle or life span is available. This enables understanding the annual carbon emissions attributed to embodied carbon. By amortising the embodied carbon over the product's lifetime, it allows a like-for-like comparison against annual usage emissions. 
 
@@ -48,11 +48,17 @@ The ratio of embodied carbon to usage carbon varies across different types of de
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
-For end-user or employee devices such as laptops, embodied carbon typically accounts for around 80% of the total life cycle emissions, while usage emissions make up only 20%. In contrast, for servers, the breakdown can be reversed, with embodied carbon constituting around 20% and usage emissions around 80% of the total. These proportions can fluctuate depending on the specific device model. Desktops tend to have a higher proportion of usage emissions compared to other end-user or employee devices like laptops or smartphones.
+For devices such as laptops, embodied carbon typically accounts for around 80% of the total life cycle emissions, while usage emissions make up only 20%. In contrast, for servers, the breakdown can be reversed, with embodied carbon constituting around 20% and usage emissions around 80% of the total. These proportions can fluctuate depending on the specific device model. Desktops tend to have a higher proportion of usage emissions compared to other user devices like laptops or smartphones.
 
 ![embodied-vs-usage-proportions](/assets/images/embodied-vs-usage-proportions.png)
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
+
+{% include linkedHeading.html heading=" Worked Examples" level=2 %}
+
+[Click here to see a worked example of estimating life cycle emissions for a laptop.](../lifecycle/example/employee)
+
+[Click here to see a worked example of estimating life cycle emissions for a server.](../lifecycle/example/server)
 
 ## References
 

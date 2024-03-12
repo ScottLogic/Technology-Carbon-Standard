@@ -4,15 +4,15 @@ title: Usage Carbon Emissions
 permalink: /information/lifecycle/usage
 ---
 
-# Usage Carbon Emissions 
+# Hardware Usage Carbon Emissions 
 
-Usage emissions refer to the [greenhouse gas (GHG)](/glossary#greenhouse-gases) emissions associated with the actual operation and use of a device or product over its lifetime. Usage carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements, and end-of-life disposal phases, which instead fall under [embodied carbon](/glossary#embodied-carbon). [Read more about life cycle emissions.](../lifecycle)
+Usage emissions refer to the [greenhouse gas (GHG)](/glossary#greenhouse-gases-ghgs) emissions associated with the actual operation and use of a device or product over its lifetime. Usage carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements, and end-of-life disposal phases, which instead fall under [embodied carbon](/glossary#embodied-carbon). [Read more about life cycle emissions.](../lifecycle)
 
 Factors influencing usage emissions include the device's energy efficiency, usage patterns, life span, and the [carbon intensity](/glossary#carbon-intensity) of the energy grid powering it.
 
 The ICT sector's electricity consumption was estimated at 1,183 TWh in 2022, accounting for 4.7 percent of the world's total electricity use in 2021[^worldbank]. With the accelerating pace of digitalisation and the increasing reliance on ICT services and infrastructure, the energy demands of the sector are projected to rise further in the coming years. Minimising usage emissions through efficiency improvements and cleaner energy sources is therefore crucial, in conjunction with reducing embodied emissions, to comprehensively reduce the greenhouse gas impact of a product or device across its complete life cycle.
 
-{% include linkedHeading.html heading="A High-Level Approach for Estimating Usage Emissions" level=3 %}
+{% include linkedHeading.html heading="A High-Level Approach for Estimating Usage Emissions" level=2 %}
 
 At a high level, the energy consumption of a device can be estimated using the following formula:
 
@@ -21,7 +21,7 @@ $$ E = P \times t $$
 Where
 - E is energy consumption (kWh).
 - P is average power draw (kW).
-- t is time (hours).
+- t is time i.e. duration of usage (hours).
 
 The average power draw (P) can be obtained from industry averages, manufacturer data, or actual readings, in increasing order of precision but also complexity. Organisations should balance the need for precision with practical considerations when selecting the source for P, keeping in mind the goal of effectively directing technology optimisation efforts.
 
@@ -41,21 +41,19 @@ The per device estimates can be scaled up to give a total estimate of the usage 
 $$ U_T = N \times O $$
 
 Where
-- U<sub>T</sub> is the total usage emissions across the estate (kg CO2e).
+- U<sub>T</sub> is the total usage emissions (kg CO2e).
 - N is the number of devices of a particular hardware model operating in a particular location.
 - U is the usage emissions for a single device (kg CO2e), estimated as above.
 
-While the above approach relies on key assumptions and does not account for the variability in device usage patterns, it is a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives.
-
-Where specific device models or usage locations are unknown, average figures for the device category as a whole can be used instead. This sacrifices precision for practicality but maintains a view to direct technology optimisation efforts. The following subsections discuss how to obtain typical power draw figures for different types of hardware. 
+While this approach relies on key assumptions and does not account for the variability in device usage patterns, it is a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives.
 
 [See worked examples.](#worked-examples)
 
-{% include linkedHeading.html heading="Using Manufacturer Data for Estimating Usage Emissions" level=3 %}
+{% include linkedHeading.html heading="Using Manufacturer Data for Estimating Usage Emissions" level=2 %}
 
 Many manufacturers choose to provide life cycle emissions data such as information relating to the [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) of a product or device. [Read more about life cycle emissions data.](../lifecycle#life-cycle-emissions-data)
 
-Typically, PCF documentation breaks down the total carbon footprint of a product or device into life cycle stages: manufacturing, transportation, use, and end-of-life. Reported use or usage stage emissions estimates typically represent lifetime emissions and can be [amortised](/glossary#amortisation) to estimate annual contributions based on the assumed device lifespan outlined in the PCF.
+Typically, PCF documentation breaks down the total carbon footprint of a product or device into life cycle stages: manufacturing, transportation, use, and end-of-life. Reported use or usage stage emissions estimates often represent lifetime emissions; annual contributions can be estimated based on the assumed device lifespan outlined in the PCF.
 
 Usage carbon varies between different devices, as illustrated by the following example:
 
@@ -63,13 +61,13 @@ Usage carbon varies between different devices, as illustrated by the following e
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
-Servers can be associated with high usage emissions compared to employee or end-user devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns. Typically, their usage emissions contribute the larger portion to their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms the larger component compared to usage emissions. [Read more about embodied vs usage carbon emissions.](../lifecycle#embodied-vs-usage-carbon)
+Servers can be associated with high usage emissions compared to devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns. Typically, server usage emissions contribute the larger portion to their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms the larger component compared to usage emissions. [Read more about embodied vs usage carbon emissions.](../lifecycle#embodied-vs-usage-carbon)
 
-{% include linkedHeading.html heading="Typical Energy Consumption (TEC)" level=4 %}
+{% include linkedHeading.html heading="Typical Energy Consumption (TEC)" level=3 %}
 
-When providing PCF data, manufacturers often include assumptions and inputs used in the methodology. With regards to usage emissions, one such assumption to note is the [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) figure. TEC is an estimate of a device's expected annual energy consumption based on standard usage patterns. For devices like desktops, laptops, and smartphones, TEC is based on standard household usage. For servers, the estimation of TEC relies on several assumptions, including server utilisation, operational duration, and PUE of the data centre. 
+When providing PCF data, manufacturers should include the assumptions and inputs used in the methodology. With regards to usage emissions, one such assumption of note is the [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) figure. TEC is an estimate of a device's expected annual energy consumption based on standard usage patterns. For devices like desktops, laptops, and smartphones, TEC is based on standard household usage. For servers, the estimation of TEC relies on several assumptions, including server utilisation, operational duration, and PUE of the data centre. 
 
-The TEC figure can be used in place of the estimated annual energy consumption figure approximated through the high-level approach discussed earlier. However, it's important to note that in some cases TEC may underestimate energy consumption compared to actual business usage patterns. This may stand for employee devices, where devices are typically used for longer durations (for example, 8 hours a day), or for servers operating at higher average utilisation levels than those assumed in the TEC calculations. Therefore, using TEC in subsequent estimations of emissions arising from business operations could result in lower emissions estimates than expected. 
+The TEC figure can be used in place of the estimated annual energy consumption figure approximated through the [high-level approach discussed earlier](#a-high-level-approach-for-estimating-usage-emissions). However, it's important to note that in some cases TEC may underestimate energy consumption compared to actual business usage patterns. This may stand for employee devices, where devices are typically used for longer durations (for example, 8 hours a day), or for servers operating at higher average utilisation levels than those assumed in the TEC calculations. Therefore, using TEC in subsequent estimations of emissions arising from business operations could result in lower emissions estimates than expected. 
 
 To ensure accurate and comparable emissions estimates across all hardware assets, it is recommended to clarify the assumptions made by manufacturers. Using consistent data sources and transparency over methodology is crucial.
 

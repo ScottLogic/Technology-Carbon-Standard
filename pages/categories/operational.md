@@ -15,15 +15,19 @@ Emissions are further classified into direct and indirect sources:
 
 Direct emissions are a result of the organisation's direct consumption of grid-supplied electricity (Category O) or combustion of fossil fuels like diesel or natural gas for owned power generators (Category G). The organisation can directly measure and account for emissions from owned assets.
 
-Category O (On-premise) emissions can be related to GHG Protocol Scope 2, while Category G (Generators) are GHG Protocol Scope 1.
-
 {% include linkedHeading.html heading="On-premise" level=3 %}
 
-In terms of a product's [life cycle emissions](../information/lifecycle), this refers to the usage emissions associated with an organisation's owned hardware assets. [Read more about usage carbon emissions.](../information/lifecycle/usage)
+Emissions associated with the actual operation and use of devices owned by an organisation ([usage carbon](/glossary#usage-carbon)).
+
+[Read more about usage carbon emissions.](../information/lifecycle/usage)
+
+Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 {% include linkedHeading.html heading="Servers and Storage" level=4 %}
 
 The energy consumed by on-premise servers and data centres.
+
+[Click here to see a worked example of estimating usage emissions for a server.](../../information/lifecycle/example/server#usage-carbon-emissions)
 
 {% include linkedHeading.html heading="Networking Devices" level=4 %}
 
@@ -33,9 +37,13 @@ The energy consumed by networking devices such as routers, switches, and Wi-Fi a
 
 The energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees.
 
+[Click here to see a worked example of estimating usage emissions for a laptop.](../../information/lifecycle/example/employee#usage-carbon-emissions)
+
 {% include linkedHeading.html heading="Generators" level=3 %}
 
 Any fossil fuel-powered generators, solar PV, wind turbines, or other systems installed on-site to supply electricity to technology equipment.
+
+Category G (Generators) can be related to GHG Protocol Scope 1.
 
 {% include linkedHeading.html heading="Indirect Emissions" level=2 %}
 Indirect emissions result from the organisation's purchase of cloud computing services, software, or managed IT services from third-party technology providers.
