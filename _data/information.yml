@@ -7,3 +7,9 @@
     link: /information/lifecycle/embodied
   - name: Usage Emissions
     link: /information/lifecycle/usage
+  - name: Worked Examples
+    subcategories:
+    - name: Employee Hardware
+      link: /information/lifecycle/example/employee
+    - name: Data Centre and Server Hardware
+      link: /information/lifecycle/example/server

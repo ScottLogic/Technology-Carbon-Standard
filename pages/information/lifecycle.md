@@ -4,7 +4,7 @@ title: Hardware Life Cycle Emissions
 permalink: /information/lifecycle
 ---
 
-# Life Cycle Emissions
+# Hardware Life Cycle Emissions
 
 The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage, and disposal. 
 
@@ -25,9 +25,7 @@ To measure an organisation's technology carbon footprint, it is essential to con
 
 {% include linkedHeading.html heading="Life Cycle Emissions Data" level=3 %}
 
-A comprehensive [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. If such data is unavailable, high-level estimates can be based on average emissions per device type, employees’ equipment, and shipping mileage.
-
-Many manufacturers choose to provide [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data for their products. A PCF provides an estimate of the greenhouse gas emissions attributable to a product over its full life cycle. This differs from an LCA, which considers broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption, and land usage). 
+A comprehensive [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. Many manufacturers choose to provide [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data for their products. A PCF provides an estimate of the greenhouse gas emissions attributable to a product over its full life cycle. This differs from an LCA, which considers broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption, and land usage). 
 
 Several international standards provide guidelines for estimating environmental impacts such as [ISO 14040](https://www.iso.org/standard/37456.html), [ISO 14044](https://www.iso.org/standard/38498.html), [ISO 14067](https://www.iso.org/standard/71206.html), and [IEC TR 62921](https://webstore.iec.ch/publication/25994). These standards outline different approaches and outputs, which can be difficult to reconcile. A widely used methodology in the ICT industry to quantify greenhouse gas (GHG) emissions and estimate product carbon footprints is the [Product Attribute to Impact Algorithm (PAIA)](https://msl.mit.edu/projects/paia/main.html), although it is not strictly compliant with such standards. Methodologies can still vary between manufacturers so published figures require careful scrutiny to determine comparability. 
 
@@ -58,7 +56,7 @@ For end-user or employee devices such as laptops, embodied carbon typically acco
 
 ## References
 
-[^laptop]: [XPS 13 9310 PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf)
-[^desktop]: [OptiPlex 7090 Tower PCF Datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/desktops-and-all-in-ones/technical-support/optiplex-7090-tower-pcf-datasheet.pdf)
-[^monitor]: [P2422H Monitor PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/p2422h-monitor-pcf-datasheet.pdf)
-[^server]: [carbon-footprint-poweredge-r640.pdf (dell.com)](https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf)
+[^laptop]: [Dell; XPS 13 9310 PCF Datasheet](https://www.delltechnologies.com/asset/en-gb/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf)
+[^desktop]: [Dell; OptiPlex 7090 Tower PCF Datasheet](https://www.delltechnologies.com/asset/en-gb/products/desktops-and-all-in-ones/technical-support/optiplex-7090-tower-pcf-datasheet.pdf)
+[^monitor]: [Dell; P2422H Monitor PCF Datasheet](https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/p2422h-monitor-pcf-datasheet.pdf)
+[^server]: [Dell; PowerEdge R640 PCF Datasheet](https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf)

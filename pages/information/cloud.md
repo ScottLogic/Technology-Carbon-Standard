@@ -12,7 +12,7 @@ In simple terms, the "cloud" refers to vast networks of remote servers and data 
 
 Cloud services are typically categorised into different models, such as Infrastructure as a Service (IaaS) and Platform as a Service (PaaS). IaaS provides access to virtualised computing resources like servers, storage, and networking, allowing organisations to manage these resources as needed. PaaS removes the need to manage the underlying infrastructure like hardware and operating systems, which can streamline development. This can extend to services like managed databases, where the cloud provider takes on the responsibility for administration and maintenance of the product.
 
-{% include linkedHeading.html heading="Environmental impact of Cloud Services" level=3 %}
+{% include linkedHeading.html heading="Environmental Impact of Cloud Services" level=2 %}
 
 The environmental impact and carbon emissions associated with cloud computing are becoming increasingly important considerations. The energy consumption and carbon footprint of cloud data centres have grown substantially as the adoption of these services has accelerated. This hardware has its own Upstream and Operational emissions, which are attributable to clients under Scope 3 of the GHG protocol. Despite improvements in energy efficiency, the sheer scale of cloud infrastructure means its collective emissions are significant.
 
@@ -48,7 +48,7 @@ It's worth noting that making best use of these features may require investment 
 
 [^cloud-utilisation]: [United States Data Center Energy Usage Report](https://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf)
 
-{% include linkedHeading.html heading="Quantifying the emissions of Cloud Services" level=3 %}
+{% include linkedHeading.html heading="Quantifying the Emissions of Cloud Services" level=2 %}
 
 Cloud providers may provide data on the emissions that are attributable to service use, but what is included may vary and there can be a significant time delay to these figures. Here is a breakdown of the top 3 providers own tools.
 

@@ -12,7 +12,7 @@ Factors influencing usage emissions include the device's energy efficiency, usag
 
 The ICT sector's electricity consumption was estimated at 1,183 TWh in 2022, accounting for 4.7 percent of the world's total electricity use in 2021[^worldbank]. With the accelerating pace of digitalisation and the increasing reliance on ICT services and infrastructure, the energy demands of the sector are projected to rise further in the coming years. Minimising usage emissions through efficiency improvements and cleaner energy sources is therefore crucial, in conjunction with reducing embodied emissions, to comprehensively reduce the greenhouse gas impact of a product or device across its complete life cycle.
 
-{% include linkedHeading.html heading="A high level approach to estimation" level=3 %}
+{% include linkedHeading.html heading="A High-Level Approach for Estimating Usage Emissions" level=3 %}
 
 At a high level, the energy consumption of a device can be estimated using the following formula:
 
@@ -45,115 +45,47 @@ Where
 - N is the number of devices of a particular hardware model operating in a particular location.
 - U is the usage emissions for a single device (kg CO2e), estimated as above.
 
-For example, a typical laptop may draw 30W. Assuming an employee's laptop runs for 8 hours a day over a working year (approximately 220 days), the annual energy consumption can be estimated as 0.03kW * 8 * 220 = 52.8 kWh per year. If the employee works in Europe, with an average carbon intensity factor of 0.328 kg CO2e per kWh (2022)[^ember], the estimated usage emissions from this device would be 52.8 * 0.328 = 17.3 kg CO2e per year. Scaling this up, if there are 50 employees using this laptop model in Europe, the total usage emissions across the estate for this device in this location would be approximately 17.3 * 50 = 866 kg CO2e.
-
-The table below shows an example of aggregating emissions across different employee device types and locations using the high level approach above assuming business usage.
-
-| Device | Model | Location | Device Count | Average Power (kW) | Estimated Device Energy Consumption (kWh/yr) |Estimated Total Energy Consumption (kWh/yr) | Carbon Intensity (kg CO2e/kWh) | Estimated Usage Emissions (kg CO2e/yr) |
-|-------|-------|-------|-------|------------|------------|------------|------------|------------|
-| Laptop  | Dell XPS 13 9310 | Europe | 500 | 0.015[^dellxps] | 26.4| 13,200 | 0.328 |4,330|
-| Laptop  | Dell XPS 13 9310 | USA    | 300 | 0.015 | 26.4|7,920 | 0.410 |3,247|
-| Monitor | HP Z24s | Europe | 1000 | 0.06[^hpz24s] | 105.6 |105,600 | 0.328 |34,637|
-| **Total** ||||||**126,720**|| **42,214** |
-
 While the above approach relies on key assumptions and does not account for the variability in device usage patterns, it is a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives.
 
 Where specific device models or usage locations are unknown, average figures for the device category as a whole can be used instead. This sacrifices precision for practicality but maintains a view to direct technology optimisation efforts. The following subsections discuss how to obtain typical power draw figures for different types of hardware. 
 
-{% include linkedHeading.html heading="Power Consumption of End-User and Employee Devices" level=4 %}
+[See worked examples.](#worked-examples)
 
-This considers the energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees or end-users. Energy consumption varies among devices due to different power demands and usage patterns. Typically, smartphones consume less power than laptops, and laptops consume less power than desktops, as shown in the following table:
+{% include linkedHeading.html heading="Using Manufacturer Data for Estimating Usage Emissions" level=3 %}
 
-| Device             | Power Range (W)    | Average Power (W)  |
-| ------------------ | ------------------ | ------------------ |
-| Desktop            | 72 - 100           | 72.3               |
-| Laptop             | 15 - 30            | 17.1               |
-| Tablet             | 3 - 5.5            | 3                  |
-| Smartphone         | 0.77 - 2           | 1                  |
-| Monitor            | 17 - 30            | 30                 |
-| Television         | 40 - 120           | 74                 |
+Many manufacturers choose to provide life cycle emissions data such as information relating to the [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) of a product or device. [Read more about life cycle emissions data.](../lifecycle#life-cycle-emissions-data)
 
-*Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3], Fershad Irani [^fershad], and our own device energy use research.*
+Typically, PCF documentation breaks down the total carbon footprint of a product or device into life cycle stages: manufacturing, transportation, use, and end-of-life. Reported use or usage stage emissions estimates typically represent lifetime emissions and can be [amortised](/glossary#amortisation) to estimate annual contributions based on the assumed device lifespan outlined in the PCF.
 
-In the absence of more granular emissions data (such as [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data), these power figures can be used to estimate annual energy consumption and usage emissions for high-level approximations.
-
-{% include linkedHeading.html heading="Power Consumption of Servers" level=5 %}
-
-This section focuses on the energy consumed by on-premise servers, which can significantly contribute to an organisation's carbon footprint due to their high energy usage. Server hardware is highly customisable, resulting in large variances in power demands. Benchmarking tools, such as the [SPEC Power Benchmark](../../resources#spec-power-benchmark), can provide information on the typical power draw of different server hardware configurations. The SPEC Power benchmark evaluates the power and performance characteristics of servers, providing average power draw figures under varying levels of load. 
-
-Here's an example of a [SPEC Power Benchmark summary](https://www.spec.org/power_ssj2008/results/res2019q2/power_ssj2008-20190311-00882.html) for an HPE ProLiant DL580 Gen10 server:
-
-![specpower-benchmark-summary](/assets/images/specpower-benchmark-summary.PNG)
-
-In the absence of more granular emissions data (such as [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data), these power figures can be used to estimate annual energy consumption and usage emissions for high-level approximations.
-
-{% include linkedHeading.html heading="Using emissions data provided by manufacturers" level=3 %}
-
-Many manufacturers choose to provide [life cycle emissions data](../lifecycle#life-cycle-emissions-data) such as information relating to the [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) of a product. A PCF provides an estimate of the total greenhouse gas emissions associated with a product across its entire life cycle, including the proportional allocation of emissions to each distinct life cycle stage. PCF data can be used to derive usage emissions resulting from a device.
-
-Usage carbon emissions can vary widely between different device types, as illustrated below:
+Usage carbon varies between different devices, as illustrated by the following example:
 
 ![usage-carbon](/assets/images/usage-carbon.png)
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
-Servers can be associated with high usage emissions compared to employee or end-user devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns.
+Servers can be associated with high usage emissions compared to employee or end-user devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns. Typically, their usage emissions contribute the larger portion to their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms the larger component compared to usage emissions. [Read more about embodied vs usage carbon emissions.](../lifecycle#embodied-vs-usage-carbon)
 
 {% include linkedHeading.html heading="Typical Energy Consumption (TEC)" level=4 %}
 
-When providing PCF data, manufacturers often include assumptions and inputs used in the methodology. With regards to usage emissions, one such assumption to note is the [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) figure. TEC is an estimate of a device's expected annual energy consumption based on standard usage patterns. For devices like desktops, laptops, and smartphones, TEC is based on standard household usage. The TEC figure can be used in place of the estimated annual energy consumption figure approximated through the high-level approach discussed earlier. 
+When providing PCF data, manufacturers often include assumptions and inputs used in the methodology. With regards to usage emissions, one such assumption to note is the [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) figure. TEC is an estimate of a device's expected annual energy consumption based on standard usage patterns. For devices like desktops, laptops, and smartphones, TEC is based on standard household usage. For servers, the estimation of TEC relies on several assumptions, including server utilisation, operational duration, and PUE of the data centre. 
 
-It's important to note that for employee devices, TEC may underestimate energy consumption compared to actual business usage patterns, where devices are typically used for longer durations and more intensive workloads. Therefore, using TEC in subsequent estimations of emissions arising from business operations could result in lower emissions estimates than expected. 
+The TEC figure can be used in place of the estimated annual energy consumption figure approximated through the high-level approach discussed earlier. However, it's important to note that in some cases TEC may underestimate energy consumption compared to actual business usage patterns. This may stand for employee devices, where devices are typically used for longer durations (for example, 8 hours a day), or for servers operating at higher average utilisation levels than those assumed in the TEC calculations. Therefore, using TEC in subsequent estimations of emissions arising from business operations could result in lower emissions estimates than expected. 
 
 To ensure accurate and comparable emissions estimates across all hardware assets, it is recommended to clarify the assumptions made by manufacturers. Using consistent data sources and transparency over methodology is crucial.
 
-{% include linkedHeading.html heading="Laptop" level=4 %}
+[See worked examples.](#worked-examples)
 
-Consider the [PCF for a Dell XPS 13 9310 Laptop](https://www.delltechnologies.com/asset/en-us/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf). This is the same example model considered in the [embodied emissions](embodied#laptop) section. Refer to this section for further detail on the life cycle emissions breakdown.
+{% include linkedHeading.html heading=" Worked Examples" level=2 %}
 
-Dell estimates the total carbon footprint of this laptop to be approximately 322 kg CO2e over its 4-year life time. Of this, 86.1% (277 kg CO2e) is attributed to embodied emissions (manufacturing, transportation, and end-of-life), while 13.9% (45 kg CO2e) is attributed to usage emissions. Amortising the usage emissions over the expected 4-year life span, the annual usage emissions can be allocated as approximately 11 kg CO2e per year.
+[Click here to see a worked example of estimating usage emissions for a laptop.](../lifecycle/example/employee#usage-carbon-emissions)
 
-However, employing the [high-level approach](usage#a-high-level-approach-to-estimation) discussed earlier yields a different result. Assuming business usage (8 hours a day) and a typical power draw of 15W[^dellxps], the estimated annual energy consumption is 26.4 kWh. Dell's PCF assumes Europe as usage location. Using an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], this translates to approximately 8.66 kg CO2e of annual usage emissions per device.
-
-The Dell PCF documentation states a Typical Energy Consumption (TEC) of 21.43 kWh per year for this laptop model. As discussed, this figure may be lower than expected of business usage, and more typical of standard household usage. Using this TEC figure in the high-level approach as above would result in an annual usage emissions estimate of approximately 7 kg CO2e per device.
-
-The discrepancies between the different estimation approaches and the PCF data highlights the impact of using different assumptions and data sources when estimating usage emissions. It underscores the importance of cross-referencing values and clarifying assumptions made by manufacturers to ensure accurate and consistent emissions reporting.
-
-{% include linkedHeading.html heading="Server" level=4 %}
-
-Consider the [PCF for a HPE ProLiant DL380 Gen10 server](https://www.hpe.com/psnow/doc/a50004545enw). This is the same example model considered in the [embodied emissions](embodied#server) section. Refer to this section for further detail on the life cycle emissions breakdown.
-
-The total carbon footprint varies significantly, ranging from approximately 2,410 kg CO2e for a base server operating in Europe to approximately 13,402 kg CO2e for a performance server operating in Japan.
-
-In contrast to employee and end-user devices such as laptops or smartphones, usage (usage emissions) accounts for the largest share of a server's total life cycle emissions. For this server, usage emissions range from 56.7% for a base server operating in Europe to 84.6% for a performance server operating in Japan. 
-
-The variation in usage emissions can be attributed to several factors:
-1. Utilisation rates: The PCF assumes a 30% utilisation rate, which may differ from actual organisational usage patterns.
-2. [Carbon intensity](/glossary#carbon-intensity) of electricity: The carbon intensity of the electricity grid at the operating location significantly impacts the emissions. Typically, carbon intensity is lower in Europe compared to Asia, contributing to the smaller proportion of usage emissions for servers operating in Europe versus Japan.
-3. Power Usage Effectiveness (PUE): The PCF incorporates PUE data from industry sources to account for the energy consumption of supporting infrastructure (cooling, power distribution, etc.) in data centres.
-
-Consider a mainstream server operating in the United States. The total product carbon footprint is approximately 5,657 kg CO2e. Of this, 69.5% (3,932 kg CO2e) is attributed to usage emissions. Amortising the usage emissions over the expected 4-year life span, the annual usage emissions can be allocated as approximately 983 kg CO2e per year.
-
-The PCF assumes an annual Typical Energy Consumption (TEC) value of 1,605 kWh for this server model, based on modelling using the HPE Power Advisor tool and assuming 30% utilisation, 24/7 operation, and PUE values from industry sources.
-
-Consider the server operates at a higher utilisation than assumed by the manufacturer. Assuming a linear relationship between load and utilisation (which does not always hold true), the [SPEC Power benchmark summary](https://www.spec.org/power_ssj2008/results/res2018q3/power_ssj2008-20180828-00850.html) for a similar mainstream HPE ProLiant DL380 Gen10 server suggests an average power draw of 237W. Using the high-level approach as discussed above, and assuming 24/7 operation, this results in an estimated annual energy consumption of approximately 2,076 kWh. This is higher than the quoted TEC, which is to be expected due to higher utilisation.
-
-Consider this server is actually operating in Europe in a data centre with a PUE of 1.6[^pue]. Using an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember], annual usage emissions can be estimated to be approximately 1,089 kg CO2e per year. 
-
-The variability between the estimates highlights the impact of using different assumptions and data sources when estimating usage emissions. This variation emphasises the need to clearly understand the assumptions made by manufacturers in order to ensure emissions reporting is accurate and consistent.
+[Click here to see a worked example of estimating usage emissions for a server.](../lifecycle/example/server#usage-carbon-emissions)
 
 ## References
 
-[^dimpact]: [Dimpact; Methodology Statement](https://dimpact.org/publications)
-[^scope3]: [Scope3; Consumer Devices](https://methodology.scope3.com/consumer_devices)
-[^fershad]: [Fershad Irani; Thinking about a way to estimate website energy use](https://methodology.scope3.com/consumer_devices)
-[^urban]: Urban, Bryan & Roth, Kurt & Singh, Mahendra & Howes, Duncan. (2019). [Residential Consumer Electronics Energy Consumption in the United States in 2017](https://www.researchgate.net/publication/335911295_Residential_Consumer_Electronics_Energy_Consumption_in_the_United_States_in_2017). 10.2760/667696.
 [^worldbank]: [World Bank; Measuring the Emissions & Energy Footprint of the ICT Sector](https://documents1.worldbank.org/curated/en/099121223165540890/pdf/P17859702a98880540a4b70d57876048abb.pdf)
-[^laptop]: [XPS 13 9310 PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf)
-[^desktop]: [OptiPlex 7090 Tower PCF Datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/desktops-and-all-in-ones/technical-support/optiplex-7090-tower-pcf-datasheet.pdf)
-[^monitor]: [P2422H Monitor PCF datasheet (delltechnologies.com)](https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/p2422h-monitor-pcf-datasheet.pdf)
-[^server]: [carbon-footprint-poweredge-r640.pdf (dell.com)](https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf)
-[^hpz24s]: [HP Z24s Product Specifications](https://support.hp.com/us-en/product/product-specs/hp-z24s-23.8-inch-ips-uhd-display/7155481)
-[^dellxps]: [Dell XPS 13 9310 Specifications](https://www.dell.com/support/manuals/en-uk/xps-13-9310-laptop/xps-13-9310-setup-and-specifications/processor?guid=guid-b426df85-6237-4365-b1fc-c3bb6e190257&lang=en-us)
-[^ember]:[Ember Climate - Europe](https://ember-climate.org/countries-and-regions/regions/europe/)
+[^laptop]: [Dell; XPS 13 9310 PCF Datasheet](https://www.delltechnologies.com/asset/en-gb/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf)
+[^desktop]: [Dell; OptiPlex 7090 Tower PCF Datasheet](https://www.delltechnologies.com/asset/en-gb/products/desktops-and-all-in-ones/technical-support/optiplex-7090-tower-pcf-datasheet.pdf)
+[^monitor]: [Dell; P2422H Monitor PCF Datasheet](https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/p2422h-monitor-pcf-datasheet.pdf)
+[^server]: [Dell; PowerEdge R640 PCF Datasheet](https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf)
 [^pue]:[Uptime Institute; Global PUEs — are they going anywhere?](https://journal.uptimeinstitute.com/global-pues-are-they-going-anywhere/)
