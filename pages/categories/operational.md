@@ -48,9 +48,9 @@ Category G (Generators) can be related to GHG Protocol Scope 1.
 {% include linkedHeading.html heading="Indirect Emissions" level=2 %}
 Indirect emissions result from the organisation's purchase of cloud computing services, software, or managed IT services from third-party technology providers.
 
-As the organisation does not own or control the IT assets delivering these services, their associated emissions cannot be directly quantified. But use of these services contributes substantially to the organisation's overall technology emissions footprint. These are relatable to GHG Protocol Scope 3.
+As the organisation does not own or control the IT assets delivering these services, their associated emissions cannot be directly quantified. But use of these services can contribute substantially to the organisation's overall technology emissions footprint. Emissions estimates for third-party services can be obtained from providers to account for these indirect, supply chain impacts.
 
-Emissions estimates for third-party services can be obtained from providers to account for these indirect, supply chain impacts.
+Category C (Cloud) emissions can be related to GHG Protocol Scope 3.
 
 {% include linkedHeading.html heading="Cloud Services" level=3 %}
 

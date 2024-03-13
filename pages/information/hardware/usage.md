@@ -38,7 +38,7 @@ For data centre infrastructure, such as server hardware, multiply the estimated 
 
 The per device estimates can be scaled up to give a total estimate of the usage emissions across an organisation's estate **per hardware model and location**. Combined, the formula becomes:
 
-$$ U_T = N \times O $$
+$$ U_T = N \times U $$
 
 Where
 - U<sub>T</sub> is the total usage emissions (kg CO2e).
@@ -61,7 +61,7 @@ Usage carbon varies between different devices, as illustrated by the following e
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
-Servers can be associated with high usage emissions compared to devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns. Typically, server usage emissions contribute the larger portion to their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms the larger component compared to usage emissions. [Read more about embodied vs usage carbon emissions.](../lifecycle#embodied-vs-usage-carbon)
+Servers can be associated with high usage emissions compared to devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns. Typically, server usage carbon emissions contribute the larger portion of their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms a larger component than usage carbon. [Read more about embodied vs usage carbon emissions.](../lifecycle#embodied-vs-usage-carbon)
 
 {% include linkedHeading.html heading="Typical Energy Consumption (TEC)" level=3 %}
 

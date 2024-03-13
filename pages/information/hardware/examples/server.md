@@ -6,7 +6,7 @@ permalink: /information/lifecycle/example/server
 
 # Data Centre and Server Hardware Example
 
-To understand and estimate the carbon footprint associated with data centre hardware like servers, organisations must consider both the usage emissions from powering the infrastructure as well as the embodied emissions from manufacturing, transportation, and end-of-life across the full product life cycle.
+To understand and estimate the carbon footprint associated with data centre hardware like servers, organisations must consider both the usage emissions from powering the infrastructure and the embodied emissions from manufacturing, transportation, and end-of-life across the full product life cycle.
 
 [Read more about hardware life cycle emissions.](../../lifecycle)
 
@@ -54,7 +54,7 @@ Consider a mainstream server operating in the United States. The total product c
 | Embodied | 30.5 | 1,726 |
 | Usage | 69.5 | 3,931 |
 
-The embodied-to-usage ratio of 30.5/69.5 (usage being just over two times larger than embodied) deviates slighly from the typical 20/80 ratio for servers mentioned previously in [embodied vs usage carbon](../../lifecycle#embodied-vs-usage-carbon). 
+The embodied-to-usage ratio of 30.5/69.5 (usage being just over twice embodied) deviates slightly from the typical 20/80 ratio for servers mentioned previously in [embodied vs usage carbon](../../lifecycle#embodied-vs-usage-carbon). 
 
 According to the PCF, usage emissions are estimated to be approximately 3,931 kg CO2e per device. 
 

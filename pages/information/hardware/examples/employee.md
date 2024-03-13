@@ -6,7 +6,7 @@ permalink: /information/lifecycle/example/employee
 
 # Employee Hardware Example
 
-To understand and estimate the carbon footprint associated with employee hardware like computers (desktops, laptops), monitors, and printers, organisations must consider both the usage emissions from powering the devices as well as the embodied emissions from manufacturing, transportation, and end-of-life across the full product life cycle.
+To understand and estimate the carbon footprint associated with employee hardware like computers (desktops, laptops), monitors, and printers, organisations must consider both the usage emissions from powering the devices and the embodied emissions from manufacturing, transportation, and end-of-life across the full product life cycle.
 
 [Read more about hardware life cycle emissions.](../../lifecycle)
 
@@ -31,7 +31,7 @@ The power consumption of user devices can vary considerably. Typically, smartpho
 
 *Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3], Fershad Irani [^fershad], and our own device energy use research.*
 
-Consider the [high-level approach for estimating usage emissions](../usage#a-high-level-approach-for-estimating-usage-emissions) discussed in the usage carbon emissions section. Assuming a typical laptop draws 30 W and runs for 8 hours a day over a working year (220 days), the annual energy consumption can be estimated as 0.03 kW * 8 * 220 = 52.8 kWh per year. In Europe, with an average [carbon intensity](/glossary#carbon-intensity) factor of 0.328 kg CO2e per kWh (2022)[^ember], the estimated usage emissions would be 52.8 * 0.328 = 17.3 kg CO2e per year per device. Consider there are 50 employees in Europe, each owning 1 laptop, the total usage emissions across the estate for this device in this location would be approximately 17.3 * 50 = 866 kg CO2e per year.
+Consider the [high-level approach for estimating usage emissions](../usage#a-high-level-approach-for-estimating-usage-emissions) discussed in the usage carbon emissions section. Assuming a typical laptop draws 30 W and runs for 8 hours a day over a working year (220 days), the annual energy consumption can be estimated as 0.03 kW * 8 * 220 = 52.8 kWh per year. In Europe, with an average [carbon intensity](/glossary#carbon-intensity) of 0.328 kg CO2e per kWh (2022)[^ember], the estimated usage emissions would be 52.8 * 0.328 = 17.3 kg CO2e per year per device. If there are 50 employees in Europe, each owning 1 laptop, the total usage emissions across the estate for this device in this location would be approximately 17.3 * 50 = 866 kg CO2e per year.
 
 When specific device models are known, manufacturer specifications and data sheets can be used to derive average power draw and estimate emissions more accurately. The table below shows an example of aggregating emissions across different employee device types and locations using this high-level approach above assuming business usage (8 hours a day for 220 days), with average power draw figures derived from referenced manufacturer specifications. 
 
