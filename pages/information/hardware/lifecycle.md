@@ -42,7 +42,9 @@ Reported emissions figures typically represent the mean value of carbon footprin
 
 The total embodied carbon of an asset can be [amortised](/glossary#amortisation) over its expected lifetime, if information about its typical refresh cycle or life span is available. This enables understanding the annual carbon emissions attributed to embodied carbon. By amortising the embodied carbon over the product's lifetime, it allows a like-for-like comparison against annual usage emissions. 
 
-The ratio of embodied carbon to usage carbon varies across different types of device or product. In some cases, the embodied carbon associated with a product can exceed the carbon emissions from its usage, underscoring the importance of considering both when assessing the total carbon footprint. The following chart illustrates the relative contribution of usage carbon versus embodied carbon for different types of hardware.
+The ratio of embodied carbon to usage carbon varies across different types of device or product. In some cases, the embodied carbon associated with a product can exceed the carbon emissions from its usage, underscoring the importance of considering both when assessing the total carbon footprint. 
+
+The following charts demonstrate the carbon emissions attributed to usage versus embodied carbon across various hardware types. Figures shown in the graphs are derived from an example of one hardware model per device type. In reality, such figures will differ depending on the particular device model and its usage context.
 
 ![embodied-vs-usage-amounts](/assets/images/embodied-vs-usage-amounts.png)
 
