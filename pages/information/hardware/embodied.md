@@ -49,8 +49,6 @@ Embodied carbon varies between different devices, as illustrated by the followin
 
 Servers have relatively high embodied carbon emissions due to their complex and energy-intensive manufacturing processes, as well as the use of specialised components and materials. However, their usage carbon emissions still contribute the larger portion of their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms a larger component than usage carbon. [Read more about embodied vs usage carbon emissions.](../lifecycle#embodied-vs-usage-carbon)
 
-[See worked examples.](#worked-examples)
-
 {% include linkedHeading.html heading=" Worked Examples" level=2 %}
 
 [Click here to see a worked example of estimating embodied emissions for a laptop.](../lifecycle/example/employee#embodied-carbon-emissions)

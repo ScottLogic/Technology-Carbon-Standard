@@ -71,8 +71,6 @@ The TEC figure can be used in place of the estimated annual energy consumption f
 
 To ensure accurate and comparable emissions estimates across all hardware assets, it is recommended to clarify the assumptions made by manufacturers. Using consistent data sources and transparency over methodology is crucial.
 
-[See worked examples.](#worked-examples)
-
 {% include linkedHeading.html heading=" Worked Examples" level=2 %}
 
 [Click here to see a worked example of estimating usage emissions for a laptop.](../lifecycle/example/employee#usage-carbon-emissions)
