@@ -31,7 +31,7 @@ The power consumption of user devices can vary considerably. Typically, smartpho
 
 *Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3], Fershad Irani [^fershad], and our own device energy use research.*
 
-Consider the [high-level approach for estimating usage emissions](../usage#a-high-level-approach-for-estimating-usage-emissions) discussed in the usage carbon emissions section. Assuming a typical laptop draws 30 W and runs for 8 hours a day over a working year (220 days), the annual energy consumption can be estimated as $$ 0.03\ kW \times 8 \times 220 = 52.8\ kWh $$. In Europe, with an average [carbon intensity](/glossary#carbon-intensity) of 0.328 kg CO2e per kWh (2022)[^ember], the estimated annual usage emissions would be $$ 52.8 \times 0.328 = 17.3\ kg\ CO2e $$ per device. If there are 50 employees in Europe, each owning 1 laptop, the total annual usage emissions across the estate for this device in this location would be approximately $$ 17.3 \times 50 = 866\ kg\ CO2e $$.
+Consider the [high-level approach for estimating usage emissions](../usage#a-high-level-approach-for-estimating-usage-emissions) discussed in the usage carbon emissions section. Assuming a typical laptop draws 17.1 W and runs for 8 hours a day over a working year (220 days), the annual energy consumption can be estimated as $$ 0.0171\ kW \times 8 \times 220 = 30\ kWh $$. In Europe, with an average [carbon intensity](/glossary#carbon-intensity) of 0.328 kg CO2e per kWh (2022)[^ember], the estimated annual usage emissions would be $$ 30 \times 0.328 = 9.87\ kg\ CO2e $$ per device. If there are 50 employees in Europe, each owning 1 laptop, the total annual usage emissions across the estate for this device in this location would be approximately $$ 9.87 \times 50 = 494\ kg\ CO2e $$.
 
 When specific device models are known, manufacturer specifications and data sheets can be used to derive average power draw and estimate emissions more accurately. The table below shows an example of aggregating emissions across different employee device types and locations using this high-level approach above assuming business usage (8 hours a day for 220 days), with average power draw figures derived from referenced manufacturer specifications. 
 
@@ -41,8 +41,6 @@ When specific device models are known, manufacturer specifications and data shee
 | Laptop  | Dell XPS 13 9310 | USA    | 300 | 0.015 | 26.4|7,920 | 0.410 |3,247|
 | Monitor | HP Z24s | Europe | 1000 | 0.06[^hpz24s] | 105.6 |105,600 | 0.328 |34,637|
 | **Total** ||||||**126,720**|| **42,214** |
-
-For example, the annual energy consumption for a Dell XPS 13 9310 laptop can be estimated as 26.4kWh compared to the 52.8kWh previously derived for a non-specific laptop model.
 
 This approach does not account for the variability in device usage patterns, as many devices will spend time in different usage modes (off, idle, max) in reality. However, it is still a useful starting point for identifying emissions improvement opportunities within an organisation's technology footprint. Continued refinement of this baseline estimate through more granular monitoring and profiling of actual usage would be required to enable rollout of more targeted carbon reduction initiatives.
 
