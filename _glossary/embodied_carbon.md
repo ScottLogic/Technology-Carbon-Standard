@@ -2,4 +2,8 @@
 title: Embodied Carbon
 ---
 
-The CO2 emitted from all processes that are not directly related to operations and keeping the software up and running. This includes the manufacturing and transporting of hardware and the planning, designing and maintaining of the software. Embodied emissions often take up a larger portion of the total emissions in software compared to other sectors. These emissions are much harder to quantify as they are indirect and usually require business to interact and retrieve emissions data on purchased products. While it is becoming more common for this data to be available, there is not a common way to access this data for all hardware.
+The emissions associated with the manufacture, transportation, installation, maintenance, and end-of-life of a device or product.
+
+Embodied carbon emissions often contribute a larger portion of the total emissions in the technology industry compared to other sectors. These emissions are more challenging to quantify as they are indirect and typically require businesses to interact with suppliers and retrieve emissions data for the purchased products, such as [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data. Although the availability of such data is becoming more widespread, there is currently no standardised way to access this information for all products.
+
+[Read more about embodied carbon emissions.](../information/lifecycle/embodied)

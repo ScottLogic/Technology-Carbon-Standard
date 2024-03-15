@@ -9,14 +9,18 @@ This method only considers the carbon intensity of the local grid and ignores th
 
 | Region             | Carbon Intensity (gCO2e/kWh)   |
 | ------------------ | ------------------------------ |
-| Global             | 494                            |
-| Europe             | 330                            |
-| Germany            | 372                            |
-| UK                 | 238                            |
-| France             | 56                             |
+| Global             | 490                            | 
+| Europe             | 328                            | 
+| Asia               | 591                            | 
+| France             | 56                             | 
+| Germany            | 381                            | 
+| UK                 | 238                            | 
+| USA                | 410                            | 
+| China              | 586                            | 
 
-*Global and European values are based on 2022 data, other locations are based on 2023 data. Source: Ember Data Explorer*
+*Figures for France, Germany, and the UK are based on 2023 data. Other locations are based on 2022 data. Source: Ember Data Explorer*
 
+There are other sources of credible data including government and government-affiliated sources (energy ministries, statistical bureaus) and utility companies that generate or manage power directly. For example, the IEA (International Energy Agency) providers emissions factors products. There are also online platforms such as [Electricity Maps](https://app.electricitymaps.com/map) which provide visualisations of carbon intensity data parsed from reputable data sources. 
 
 ### Market Based
 This method considers the electricity you have purchased from your suppliers which could be green energy tariffs that leverage [Renewable Energy Certificates (RECs)](#renewable-energy-certificates-recs) and Guarantees of Origin (REGO) allowing benefits in reporting for companies that source their electricity more sustainably.

@@ -6,36 +6,38 @@ permalink: categories/upstream
 
 # Upstream Emissions
 
-Upstream emissions (Category U) refer to the emissions that occur in the production and distribution stages of technology products and software purchased by an organisation.
+Upstream emissions (Category U) refer to the [embodied carbon](/glossary#embodied-carbon) emissions of hardware purchased by an organisation and the carbon emissions of the development and distribution of installed software used by the organisation.
 
-To quantify upstream emissions, the technology purchase categories are mapped with life cycle emissions data for each product class published by reputable manufacturers and software vendors. This lifecycle data encompasses resource extraction, materials processing, manufacturing, transportation and product delivery phases before the operation stage.
-
-Multiplying the volume of assets by the respective product emission factors can yield an accurate upstream emissions profile. The product emission factors are available in Environmental Product Declarations (EPDs) and sustainability reports.
+Understanding upstream emissions allows organisations to comprehensively assess the environmental impact of their assets and supply chains. It enables the development of strategies to reduce the carbon footprint of materials and processes, promoting sustainable procurement practices and circular economy principles.
 
 Upstream emissions are related to GHG Protocol Scope 3.
-
 
 {% include linkedHeading.html heading="Software" level=2 %}
 
 Emissions associated with developing and delivering off-the-shelf and open-source software installed on the organisation's systems. Includes emissions related to:
 
-- Energy consumed and hardware used during programming, testing and releasing new software versions
-- Packaging and digital distribution of software over the internet
-- Product support services for troubleshooting and guiding customers
+- Energy consumed and hardware used during programming, testing and releasing new software versions.
+- Packaging and digital distribution of software over the internet.
+- Product support services for troubleshooting and guiding customers.
 
+{% include linkedHeading.html heading="Hardware" level=2 %}
 
-{% include linkedHeading.html heading="Hardware Manufacture, Transport and Installation" level=2 %}
-Emissions from manufacturing, transport, and installation of all the hardware equipment used within the organisation's technology infrastructure. This spans employee devices, networking gear, and on-premise data centres:
+Embodied carbon emissions associated with hardware devices owned by an organisation, including emissions from the manufacture, transportation, installation, maintenance, and end-of-life of a device.
 
+[Read more about embodied carbon emissions.](../../information/lifecycle/embodied)
 
-{% include linkedHeading.html heading="Employee Hardware" level=3 %}
-Laptops, desktops, mobiles, printers and peripherals used by employees.
+{% include linkedHeading.html heading="Employee Hardware" level=3 %} 
 
+Laptops, desktops, mobiles, printers, and peripherals used by employees. 
 
-{% include linkedHeading.html heading="Networking Hardware" level=3 %}
+[Click here to see a worked example of estimating embodied emissions for a laptop.](../../information/lifecycle/example/employee#embodied-carbon-emissions)
+
+{% include linkedHeading.html heading="Networking Hardware" level=3 %} 
+
 Network routers, switches, Wi-Fi access points installed.
 
+{% include linkedHeading.html heading="Data Centre and Server Hardware" level=3 %} 
 
-{% include linkedHeading.html heading="Data centre and Server Hardware" level=3 %}
-Servers, storage systems and data centre infrastructure installed on-premise.
+Servers, storage systems, and data centre infrastructure installed on-premise.
 
+[Click here to see a worked example of estimating embodied emissions for a server.](../../information/lifecycle/example/server#embodied-carbon-emissions)
