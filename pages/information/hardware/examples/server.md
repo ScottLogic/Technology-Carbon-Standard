@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: explore
 title: Data Centre and Server Hardware
 permalink: /information/lifecycle/example/server
 ---

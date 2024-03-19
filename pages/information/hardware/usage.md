@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: explore
 title: Usage Carbon Emissions
 permalink: /information/lifecycle/usage
 ---

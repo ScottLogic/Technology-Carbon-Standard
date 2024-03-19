@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: explore
 title: Cloud Services
 permalink: /information/cloud
 ---

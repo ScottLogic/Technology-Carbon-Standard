@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: explore
 title: Estimating Estate Emissions
 permalink: /information/estate
 published: false

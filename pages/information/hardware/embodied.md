@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: explore
 title: Embodied Carbon Emissions
 permalink: /information/lifecycle/embodied
 ---

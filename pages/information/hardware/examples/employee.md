@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: explore
 title: Employee Hardware
 permalink: /information/lifecycle/example/employee
 ---

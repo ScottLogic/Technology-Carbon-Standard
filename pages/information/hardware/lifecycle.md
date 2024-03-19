@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: explore
 title: Hardware Life Cycle Emissions
 permalink: /information/lifecycle
 ---
