@@ -100,71 +100,105 @@ These will typically derive from the principles and strategy set by the  archite
 
 {% include linkedHeading.html heading="Commercial" level=4 %}
 
-<b>Prefer vendor with a sustainability strategy:</b> When choosing a vendor adding a selection criteria favouring a company with a sustainability strategy and measured emissions creates market pressure for vendors to be reporting and reducing emissions. 
+<ul>
+<li><b>Prefer vendor with a sustainability strategy:</b> When choosing a vendor adding a selection criteria favouring a company with a sustainability strategy and measured emissions creates market pressure for vendors to be reporting and reducing emissions. </li>
 
-<b>Prefer higher user base:</b> Adding NFR around user base size means you'll be getting something well tested and more likely to be supported but can also influence carbon emissions. If you pay an organisation to create bespoke software for you or train a bespoke model for you teh incurred emissions will only benefit your user base. On the other hand adopting open source software used by 100 companies and their users means there's a small attribution to you and there's less duplicated work. The same applies for internal build vs buy although in this case there's category O emissions and other non tech ones like buildings. 
+<li><b>Prefer higher user base:</b> Adding NFR around user base size means you'll be getting something well tested and more likely to be supported but can also influence carbon emissions. If you pay an organisation to create bespoke software for you or train a bespoke model for you teh incurred emissions will only benefit your user base. On the other hand adopting open source software used by 100 companies and their users means there's a small attribution to you and there's less duplicated work. The same applies for internal build vs buy although in this case there's category O emissions and other non tech ones like buildings. 
+</li>
+</ul>
 
 {% include linkedHeading.html heading="Hardware Manufacture, Transport and Installation" level=2 %}
 
 NFRs here fall easily out of the strategy above and can include:
 
-<b>Lifetime (inc. support) &gt;= 5 years: </b> puts a clear requirement on procurement. 
+<ul>
+<li><b>Lifetime (inc. support) &gt;= 5 years: </b> puts a clear requirement on procurement.</li> 
 
-<b>Laptop/Switch/Server should have &lt;x embodied kgCO2.</b>You can relate embodied carbon to a scale factor like throughput or number of ports of network equipment. 
+<li><b>Laptop/Switch/Server should have &lt;x embodied kgCO2.</b>You can relate embodied carbon to a scale factor like throughput or number of ports of network equipment. </li>
+</ul>
 
 A software implementation NFR may also drive reduce embodied carbon. e.g. around reducing resource used per service or an NFR like:
 
-<b>New service should add no embodied emissions:</b> requiring a new service to use no additional embodied carbon means it must run on existing hardware. 
-
-
-<s>NFRs here fall easily out of the strategy and can:
- * be a specific minimum lifetime for a piece of hardware
- * put requirements on observability (arguably more of a functional requirement on hardware)
- * be a maximum level of embodied carbon 
-</s>
-
-
+<ul>
+<li><b>New service should add no embodied emissions:</b> requiring a new service to use no additional embodied carbon means it must run on existing hardware. </li>
+</ul>
 
 
 {% include linkedHeading.html heading="Operational emissions" level=3 %}
 For operational emissions you can directly target energy or emissions with your NFRs or proxy measures that will still promote reduced emissions. An obvious example of the latter is utilisation of a physical or virtual server, e.g. <b>utilisation should be > 50%</b>. 
 
 
+TODO expand here
+<li><b>Energy per service or even per API REST endpoint call should be &lt;x gCO2:</b> Such an NFR pushes development teams to optimise their apps. </li>
+
 {% include linkedHeading.html heading="Direct (Category O)" level=4 %}
 At the level of the data centre NFRs could include the following. 
 <ul>
-<li><b>Data centre PUE should be &lt; 1.3:</b>when building out a new data centre you can set a maximum Power Usage Effectiveness.</li>
-<li><b>Carbon intensity should be &lt;x kgCO2/kWh:</b>Setting an NFR around the carbon intensity of the electricty influences choices on location or installation of wind turbines or solar. </li>
+<li><b>Data centre PUE should be &lt; 1.3:</b> When building out a new data centre you can set a maximum Power Usage Effectiveness.</li>
+<li><b>Carbon intensity should be &lt;x kgCO2/kWh:</b> Setting an NFR around the carbon intensity of the electricty influences choices on location or installation of wind turbines or solar. </li>
 </ul>
 
-Servers: You can set utilisation targets for each server as per above but also go more granular. e.g. 
+<b>Servers:</b> You can set utilisation targets for each server as per above but also go more granular. e.g. 
 <ul>
 <li><b>Utilisation should be > 50%</b></li>
-<li><b>Energy per service or even per API REST endpoint call should be &lt;x gCO2: </b>Such an NFR pushes development teams to optimise their apps. </li>
+<li><b>Energy per service or even per API REST endpoint call should be &lt;x gCO2:</b> Such an NFR pushes development teams to optimise their apps. </li>
+<li><b>Servers must be energy observable via the network: </b>Really a function requirement but allows monitoring of progress in energy efficiency</li>
 </ul>
 
 
-Networks: Utilistion targets can be set for the hardware and a power per Gbps throughput or per port could be targetted just as an embodied carbon can be also. 
+<b>Networks:</b> 
+Again utilisation or power/carbon usage tarrgets can be set:
+<ul>
+<li><b>Network switch utilisation should be &gt;40%</b></li>
+<li><b>Power per port should be &lt; 2W</b>Power per Gbps throughput or per port could be targetted just as an embodied carbon can be also. 
+</li></ul>
 
 Some application targetted NFRs may also reduce network traffic and so reduce the need to have more network hardware - benfits operational and embodied. e.g.
- * data compression of 50% vs raw text in API payloads - promote zipping and/or efficient protocols like gRPC
- * normalise async messages, no one:many entity to message mappings - avoids one entity change causing a storm of messages
+<ul>
+<li><b>Data compression of 50% vs raw text in API payloads</b>: promote zipping and/or efficient protocols like gRPC</li>
+<li><b>normalise async messages, no one:many entity to message mappings</b>avoids one entity change causing a storm of messages</li>
+</ul>
+ 
 
-User devices:
-In the strategy section there were suggestions around selecting laptops with low energy usage and ensuring they switch to low power, sleep etc. A target average daily kWh energy usage could be set with these policies designed to meet it. 
+<b>User devices:</b>
+In the strategy section there were suggestions around selecting laptops with low energy usage and ensuring they switch to low power, sleep etc. A target average daily kWh energy usage could be set with these policies designed to meet it e.g.
+<ul>
+<li><b>Average energy consumption per 24 hours &lt;x gCO2</b>: promote zipping and/or efficient protocols like gRPC</li>
+</ul>
 
 {% include linkedHeading.html heading="Indirect (Category C)" level=4 %}
 
-When vendors are used then you can set NFRs around their electricity, e.g. 30% renewable.
-You may also set NFRs for carbon per unit of compute if you can get such data out of them which won't always be possible. 
+When vendors are used then you can set NFRs around their electricity e.g. 
+<ul>
+<li>30% electricity from renewable sources.</li>
+</ul>
+You may also set NFRs for carbon per unit of compute or request as well see below. Exactly what you can do will be very much dependent on the amount of information provided. This may itself be a criteria, who gives the most transparent information about their emissions. 
 
-Cloud:
-NFRs targetting carbon can be useful here to drive use of low carbon regions or times of day (but beware of downsides). e.g. xg CO2 for a VM of a particular capability
-NFRs based around low or no emissions when no work is happening drive the correct implementaiton of scale down or use of lambdas. 
+<b>Cloud:</b> Be careful when comparising vendors as reporting norms may vary. NFRs could include:
+<ul>
+<li><b>Prefer compute with &lt;g CO2 per core: </b> Pushes CPUs with lower power, e.g. ARM or CPUs powered by more renewable energy, e.g. in a different region. Be careful to weight according to CPU power though - clock requencies and processing capacity will vary</li> 
+<li><b>Create  no emissions when no requests are being handled:</b> Pushes the use of scale down or lambdas whilst not forcing an implementation</li>
+</ul>
+Note: When targetting regions or times of day via NFRs be aware of the risks - if everyone does it then it'll result in dispatchable power like gas being used. 
 
 SaaS:
 Ideally when selecting a service you'd have a criteria like "level of CO2 per end user API request &lt;x gCO2". 
 Otherwise you may just have to look at their total emissions vs customer base.
+
+<ul>
+<li></li>
+<li></li>
+</ul>
+
+<ul>
+<li></li>
+<li></li>
+</ul>
+
+<ul>
+<li></li>
+<li></li>
+</ul>
 
 Managed services:
 PUE< 1.3
