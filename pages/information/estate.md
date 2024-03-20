@@ -2,11 +2,30 @@
 layout: explore
 title: Estimating Estate Emissions
 permalink: /information/estate
-published: false
+published: true
 ---
 
 # Estimating Estate Emissions
 
+The carbon standard shows how you can think about your emissions by breaking them down in a way compatible with the GHG Protocol reporting scopes. At any level from dev team to the whole org it tells you that your tech emissions can be separated into groupings like server embodied emissions, on-prem networking emissions etc.
+
+It doesn't say how you think about these across an organisation and how it might be useful to break them down. To see why this is important remember that there's two aims to low carbon software practices: 
+ 1. Measuring your carbon emissions
+ 2. Improving your carbon emissions. 
+
+Some (but not all) measurements can be done at an organisational level, e.g. if there's one cloud organisation that is reported on as a whole or if you just measure electricity going into a data centre used by everyone. This isn't true of improvement which is a distributed activity over the various teams making up an org and requires a breakdown of emissions. 
+
+This section looks at that bigger picture of how to apply the standard to an org's estate and how to breakdown emissions where appropriate. 
+
+# Business view
+
+TODO
+
+![embodied-carbon](/assets/images/estate/business_view.png)
+
+TODO
+
+# Old part
 To estimate the total emissions from an organisation's technology estate, it is crucial to understand the scale and composition of the various Impact Categories. 
 
 {% include linkedHeading.html heading="Hardware" level=3 %}
