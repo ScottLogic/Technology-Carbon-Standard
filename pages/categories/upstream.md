@@ -34,7 +34,18 @@ Laptops, desktops, mobiles, printers, and peripherals used by employees.
 
 {% include linkedHeading.html heading="Networking Hardware" level=3 %} 
 
-Network routers, switches, Wi-Fi access points installed.
+When considering the upstream emissions of your network, you should consider the embodied carbon of any networking devices that are owned by your organisation. These include, but are not limited to:
+- routers
+- switches
+- bridges
+- Wi-Fi access points
+- firewalls
+- modems
+- hubs
+- repeaters
+- cables
+
+Ideally, data sheets from the manufacturer should be used to gather this data.
 
 {% include linkedHeading.html heading="Data Centre and Server Hardware" level=3 %} 
 

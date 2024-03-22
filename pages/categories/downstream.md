@@ -20,3 +20,5 @@ The [embodied carbon of end-user devices](/information/lifecycle/embodied) is no
 
 These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services. Network emissions can be estimated based on the size of the data transferred, the distance transmitted, and the carbon intensity of the regions through which the data is transferred.
 
+You should consider all four categories of network listed in [the information on networks](../information/networks/networks.md). 
+
