@@ -31,9 +31,9 @@ The energy consumed by on-premise servers and data centres.
 
 {% include linkedHeading.html heading="Networking Devices" level=4 %}
 
-In [the information on networks](../information/networks/networks.md), you will see that networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
+In [the information on networks](../information/networks/networks.md), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
 
-Within your operation network, you need to consider the running cost of the devices that you use. Again these include, but are not limited to:
+Within the operational network, consider the running cost of the connected devices. These include, but are not limited to:
 - routers
 - switches
 - bridges
@@ -43,11 +43,11 @@ Within your operation network, you need to consider the running cost of the devi
 - hubs
 - repeaters
 
-These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, they will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load. If you want accurate numbers, power monitors on the power socket are an excellent way of gathering data as we do not normally care about attributing the power they use to a single application or source, since their power usage varies so little.
+These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load. For accurate numbers, power monitors on the power socket are an excellent way of gathering data. As the power usage of networking equipment has very little variance while it is running, attributing the power consumption to specific applications or processes is less important.
 
-Public wired and wireless internet usage only needs to be measured in the Direct Emission category if you are consuming data from an external API or SAAS product, within your network. For example, if you host a website that shows train times in Birmingham, and you rely on an externally provided API to get up to date train information, then you would measure the amount of data coming from the API to your services. Note, that you do not count the data sent from the web server to the end users here - that is accounted for in [the downstream emissions](./downstream.md). 
+Public wired and wireless internet usage only needs to be measured in the Direct Emission category data from an external API or SAAS product is consumed within the network. Foe example, if the system under analysis consumes an external API to get up to date train information, then the data coming from the API into the service is measured. Note that data sent from the service to end users is not counted under direct emissions - that is accounted for in [the downstream emissions](./downstream.md). 
 
-This is much harder to measure as we do not have access to data about the equipment used over the public internet and no control over what route it takes, even if we did. Therefore it is appropriate to use a proxy such as number of calls or payload size multiplied by a factor in order to get an estimate.
+Data that is consumed over the Internet is much harder to measure as about the equipment used over the public internet are not available. Even if that data was available, the system has no control over what route the data takes. Therefore it is appropriate to use a proxy such as number of calls or payload size multiplied by a factor in order to get an estimate.
 
 {% include linkedHeading.html heading="Employee Devices" level=4 %}
 

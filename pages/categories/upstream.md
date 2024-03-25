@@ -34,7 +34,7 @@ Laptops, desktops, mobiles, printers, and peripherals used by employees.
 
 {% include linkedHeading.html heading="Networking Hardware" level=3 %} 
 
-When considering the upstream emissions of your network, you should consider the embodied carbon of any networking devices that are owned by your organisation. These include, but are not limited to:
+When considering the upstream emissions of a network, consider the embodied carbon of any networking devices that are owned by the organisation. These include, but are not limited to:
 - routers
 - switches
 - bridges
