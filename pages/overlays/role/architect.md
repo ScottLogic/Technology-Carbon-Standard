@@ -4,12 +4,14 @@ title: Architect overlay
 permalink: /overlays/role/architect
 ---
 
+
+
 # Architect
 
 As an architect you can exert significant influence on a company's tech carbon emissions. You might be a technical/solutions/enterprise/other architect and although the scope of responsibility can vary across roles there's many activities common to all where you can make a difference to carbon emissions inlcuding:
 
  1. Setting the tech strategy and principles
- 2. Promoting best practice
+ 2. Promoting good practice
  3. Leading technical selection, e.g. of a cloud vendor or a SaaS product
  4. Designing architecture (from enterprise to technical) 
  5. Setting NFRs
@@ -37,7 +39,7 @@ We'll now provide a bit more detail on each of these suggestions:
 </ul>
 All software creation comes with a cost and the first thing you might decide to do is to trade off open source and COTS software against in-house. Some of the in-house software carbon costs are out of the scope in this standard because they are non-technology items like buildings and transport for employees. Still they count in the overall picture of your org and if 1 company creates software that's less emissions than if 20 companies all create the same software.  
 
-You may also wish to prefer vendors who report on their emissions and follow sustainability best practices in order to push software and machine learning model creators to be more sustainable. e.g. training models with renewable electricity. 
+You may also wish to prefer vendors who report on their emissions and follow sustainability good practice in order to push software and machine learning model creators to be more sustainable. e.g. training models with renewable electricity. 
 {% include linkedHeading.html heading="Hardware Manufacture, Transport and Installation" level=2 %}
 
 Any hardware you buy in or acquire from data centre servers to employee laptops required energy produced emissions in manufacture and transport. Not all architects will get involved in hardware selection - servers and network equipment may fall under data centre architects for example. Where you do though you can apply pressure to ensure there is a low carbon strategy for:
@@ -279,3 +281,5 @@ End user devices like customer laptops are out of our control but there are NFRs
 
 References
  1. https://www.statista.com/statistics/871513/worldwide-data-created/
+
+ TODO: "When you talk about cloud vs on prem decision making can you add something like the cloud isn't more sustainable in all cases (to make it clear that despite the CSP marketing it isn't always greener)."
