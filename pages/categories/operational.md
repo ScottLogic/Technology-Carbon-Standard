@@ -45,9 +45,7 @@ Within the operational network, consider the running cost of the connected devic
 
 These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load. For accurate numbers, power monitors on the power socket are an excellent way of gathering data. As the power usage of networking equipment has very little variance while it is running, attributing the power consumption to specific applications or processes is less important.
 
-Public wired and wireless internet usage only needs to be measured in the Direct Emission category data from an external API or SAAS product is consumed within the network. Foe example, if the system under analysis consumes an external API to get up to date train information, then the data coming from the API into the service is measured. Note that data sent from the service to end users is not counted under direct emissions - that is accounted for in [the downstream emissions](./downstream.md). 
-
-Data that is consumed over the Internet is much harder to measure as about the equipment used over the public internet are not available. Even if that data was available, the system has no control over what route the data takes. Therefore it is appropriate to use a proxy such as number of calls or payload size multiplied by a factor in order to get an estimate.
+Public wired and wireless internet usage does not needs to be measured in the Direct Emission category. Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Data sent from the service to end users is accounted for in [the downstream emissions](./downstream.md) category. 
 
 {% include linkedHeading.html heading="Employee Devices" level=4 %}
 
