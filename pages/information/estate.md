@@ -7,7 +7,7 @@ published: true
 
 # Estate Mapping
 
-This section discusses how to apply the standard to an organisation. Whilst the standard specifies the different categories of emissions that may be presentattributed to tech it doesn't say how to go from an organisational view to numbers in each of the categories. This section addresses this and does so from 2 perspectives:
+This section discusses how to apply the standard to an organisation. Whilst the standard specifies the different categories of emissions that may be attributed to tech it doesn't say how to go from an organisational view to numbers in each of the categories. This section addresses this and does so from 2 perspectives:
  1. Quantifying your tech carbon emissions at the org level - typically for reporting
  2. Understanding how to improve them
 
@@ -153,17 +153,43 @@ As with data centres, improvement requires mapping of usage to business division
 
 In both cases proxies like spend, system utilisation can be used instead or number of requests to a service by each team. AWS tags, for example will be available on the cost explorer function even if not on carbon reporting. 
 
+
+
 {% include linkedHeading.html heading="Employee devices" level=2 %}
 
-In this section the technology used by people is discussed as opposed to the servers and networking devices described in the on-prem section. These don't relate to software applications unlike the cloud and on-prem categories and so the ammping for understanding is simpler. From a pure reporting point of view most of these emissions may be accounted for in electricity usage numbers. 
-
-This may include the following more common devices:
+In this section the technology used by people is discussed and this may include the following more common devices:
 
 <img style="max-width: 750px" class="none" alt="" src="/assets/images/estate/employee_devices.png" />
 
-Some devices will be fixed location like a desktop whilst others like laptops are mobile and for those that are fixed they may be in an office/facility or a home working location. For home devices staff or internal users (perhaps in an open source project) could be using their own monitors/equipment or ones purchased for them by the organisation. Occasionally it may be arguable as to whether a device belongs here or in on-prem and it doesn't matter so long as they are included. For example TVs maybe specific to a user, e.g, for testing a smart TV application but could also be providing a dashboard in the office in which case they are likely a permanent always on fixture like servers.  
+Ownership, usage and location patterns will often differ compared to the servers and networking devices in the on-prem section:
 
-The following table shows what should be reported with embodied carbon only being relevant for the organisation owned devices. The assumption being that user personal laptops would be purchased anyway and can't be attributed. 
+* Usage will generally be based around office hours
+* User devices are assigned to individuals (or occasionally a team, e.g. a test device or TV) which makes attribution to teams much easier than for servers that may belong to a platform team but run multiple business apps from other teams
+* Although some devices will be in a fixed office/facility location, e.g. a desktop, others including laptops are mobile. Also monitors may be in a fixed home working location. 
+* For home devices staff or internal users (perhaps in an open source project) could be using their own monitors/equipment rather than ones purchased for them by the organisation. 
+
+Note: occasionally it may be arguable as to whether a device belongs here or in on-prem and it doesn't matter so long as they are included. For example TVs maybe specific to a user, e.g, for testing a smart TV application but could also be providing a dashboard in the office in which case they are likely a permanent always on fixture like servers.  
+
+
+
+<s>and these differ from the previously discussed servers, networking and cloud in terms of location, usage patterns and also because they are not usually running a specific application belonging to a specific business team (e.g. online payments) as with servers.</s>
+
+ <s> From a pure reporting point of view most of these emissions may be accounted for in electricity usage numbers. </s> 
+
+{% include linkedHeading.html heading="Operational emissions - special case" level=4 %}
+As per the on-prem section, there is a special case for reporting operational emissions where all the organistion wants to do is report Scope 1 or 2 emissions at org or office/facility level and doesn't want to break out technology. In this case all the office/on-prem devices (including times when laptops are in the office and plugged in) will be included in the office electricity. In the remaining discussion it is assumed that the reporting should include a tech breakdown and that embodied (i.e. GHGP Scope 3) is needed as well as operational emissions.
+
+{% include linkedHeading.html heading="Device inventory" level=3 %}
+All equipment purchased by the organisation should be available via an asset management system, as mentioned in the on-prem section. Where this isn't present approximations will be needed based on employee numbers. For user devices the data should include the location which may be not just a specific office or org facility but whether it is for remote working or both in the case of a laptop. This matters because electricity carbon intensity may be different. 
+
+For user purchased devices (e.g. personal laptop or monitor) numbers are still needed. For laptops this can be approximated by assuming all users without an org laptop or desktop have a personal one. For monitors, a survey may be done of a subset of staff then extrapolated to get the typical number of monitors and their size. General population data could be used but may underestimate for staff like developers. 
+Similarly for personal laptops or desktops a survey will help understand the typical specs in order to provide some average numbers that can scaled across the population.
+
+{% include linkedHeading.html heading="Reporting" level=3 %}
+
+Given that not all devices are organisation purchased this affects how emissions should be reported and is captured in the following table. This shows that embodied carbon is only for organisation devices with the assumption being that user personal laptops would be purchased anyway and can't be attributed. 
+
+
 <style>
     tr.ownerTable > th {
         font-weight:bold;
@@ -188,42 +214,15 @@ The following table shows what should be reported with embodied carbon only bein
 </tr>
 </table>
 
-{% include linkedHeading.html heading="Operational emissions - special case" level=4 %}
-As per the on-prem section, there is a special case for reporting operational emissions where all the organistion wants to do is report Scope 1 or 2 emissions and doesn't want to break out tech. In this case all the office/on-prem devices (including times when laptops are in the office and plugged in) will be included in the office electricity. In the remaining discussion it is assumed that the reporting should include a tech breakdown and that embodied is needed as well as operational emissions.
+Ideally embodied carbon will fall directly out of the inventory data and should be combined with device lifetime information. e.g. if a company laptop is refreshed every 5 years then the embodied carbon for al devices should be divided by 5. Where embodied carbon is not included in the inventory or can't quickly be derived through cross referencing data sheets, then approximations can be made using emissions data for similar hardware. e.g. if you have 200 desktops and the manufacturer doesn't provide a value then take a desktop of similar spec and age that does and use the value from that. Such approximations should be explicitly captured. 
 
-{% include linkedHeading.html heading="Device inventory" level=3 %}
-All equipment purchased by the organisation this should be available via an asset management system, as mentioned in the on-prem section. Where this isn't present approximations will be needed based on employee numbers. In this case the data should include te location which may be not just a specific office or org facility but whether it is for remote working or both in the case of a laptop. This will support more accurate numbers for electricity carbon intensity where the office may have a certain level of renewables or genreation on site whereas home working should assume local grid carbon intensity. 
+For operational emissions the ownership of the device doesn't matter like for embodied carbon, but whether the user is using the device for non-personal reasons does. For example, for a laptop working hours emissions should be captured but not weekend browsing. For all the devices that are mobile or home based the electricity carbon intensity should come from the regional level whereas for fixed office/facility items more accuracy may be possible, e.g. if an office is known to be 50% solar on average. 
 
-For user purchased devices an inventory is still needed. For laptops this can be approximated by assuming all users without an org laptop or desktop have a personal one. For monitors, a survey may be done of a subset of staff then extrapolated to get the typical number of monitors and their size. General population data could be used but may underestimate for staff like developers. 
-Similarly for personal laptops or desktops a survey will help understand the typical specs in order to provide some average numbers that can scaled across the population.
+Energy usage can come from the information in the inventory and as with the embodied carbon this may be directly in the inventory or need looking up in data sheets. Ideally laptops and desktops would actually capture energy usage but this is unlikely to the the case for most organisations today.
 
-{% include linkedHeading.html heading="Reporting" level=3 %}
-Embodied carbon should be captured for organisation purchased devices as per the inventory but not user purchased as shown in the table above with the source of this information being the device data captured according to the previous section
+Care should be taken to avoid double counting any equipment. For example for monitors assumptions will be required based on how often users will be in the office vs at home and emissions only attributed to one of the 2 at a given point in time. 
 
-TODO - tidy up the below, been moving things around
-
-For operational emissions (Category O for user devices) the ownership of the device doesn't matter, just if the internal user is using the device for non-personal reasons. e.g. for a laptop working hours emissions should be captured but not weekend browsing. For all the devices that are at home or mobile electricity carbon intensity should just use the regional level whereas for fixed office items more accuracy may be possible, e.g. if an office is 50% solar. 
-
-Energy usage can come from the information in the inventory - which may be actual devices or approximate. Ideally laptops and desktops would actually capture energy usage but this is unlikely to the the case for most organisations today.
-
-For use of office monitors vs home ones assumptions will be required based on how often users will be in the office but good accuracy on this may not make a significant difference unless there is detailed knowledge of personal monitors which is unlikely. The key point would be to avoid double counting of the same person using both simultaneously. i.e. don't assume a working week for both per person.
-
-<s>
-There's 3 categories of devices for thinking about operational emissions:
- 1. Those in the office permanently
- 2. Those at home permanently
- 3. Those that move around like phones and laptops
-
- For items in 1, then where reporting is needed for the whole organisation and not just for tech assets the office electricity and its carbon intensity can be used as discussed in the on-prem section. 
-If a breakdown is needed at the level of technology devices ignoring things like lighting and heating then other methodologies are needed, e.g. capturing the energy consumption of a typical device in each calss and then extrapolating to all the others in the database, or taking datasheet energy if that's not possible.
-
-For items at home permanently then the same methodology should work but device accuracy won't be 
-</s>
-
-
-TODO - simplify or remove table as some of this is captured above and unnecessary here. e.g. number of assets and if embodied carbon is needed. Might just 
-
-The table below summarises the main scenarios and what should be captured and how:
+The table below captures some of the things to consider for various device types:
 
 <style>
     tr.deviceTable > th {
@@ -234,83 +233,144 @@ The table below summarises the main scenarios and what should be captured and ho
 <table>
 <tr class="deviceTable">
     <th>Hardware</th>
-    <th>Ownership</th>
-    <th>Number of assets</th>
-    <th>Embodied?</th>
-    <th>Operational?</th>
+    <th>Considerations</th>
 </tr>
 <tr>
     <td>Desktops</td>
-    <td>Organisation</td>
-    <td>Asset management system</td>
-    <td>Yes. From data sheets</td>
-    <td>Yes. Approximation based on data sheet power and assumptions on working hours and utilisation</td>
+    <td>Device power, working hours, average CPU utilisation</td>
+</tr>
+
+<tr>
+    <td>Laptops</td>
+    <td>Device power, working hours, average CPU utilisation, percentage of time outside the office</td>
 </tr>
 <tr>
-    <td rowspan="2">Laptops</td>
-    <td>Organisation</td>
-    <td>Asset management system</td>
-    <td>Yes - as per desktop</td>
-    <td>Yes - as per desktop</td>
+    <td >Monitors</td>    
+    <td>Device power, working hours</td>
 </tr>
 <tr>
-    <td>Personal</td>
-    <td>Calculated based on user numbers</td>
-    <td>No</td>
-    <td>Yes, Approximation based on typical laptop power and assumptions on working hours and utilisation</td>
+    <td>User phones</td>    
+    <td>Typical battery capacity and charge frequency, e.g. 0.7 of full charge once per day</td>
 </tr>
 <tr>
-    <td rowspan="2">Monitors</td>
-    <td>Organisation</td>
-    <td>Asset management system</td>
-    <td>Yes. From data sheets or taking average size and typical example if not</td>
-    <td>Yes. Approximation based on data sheet power and assumptions on working hours</td>
+    <td>Test phones</td>    
+    <td>Typical battery capacities and usage frequency, e.g. 20% of devices in use each week</td>
 </tr>
 <tr>
-    <td>Personal</td>
-    <td>Surveys or approximations based on user numbers</td>
-    <td>No</td>
-    <td>Yes. Approximation of typical size, power etc</td>
-</tr>
-<tr>
-    <td>Phones</td>
-    <td>Organisation</td>
-    <td>Asset management system or approximation, e.g. based on number of employees in roles that typically have phone</td>
-    <td>Yes</td>
-    <td>Yes. Approximation of charge frequency</td>
-</tr>
-<tr>
-    <td>TVs</td>
-    <td>Organisation</td>
-    <td>Asset management system or approximation</td>
-    <td>Yes</td>
-    <td>Yes. Approximation of charge requency</td>
+    <td>Test TVs</td>    
+    <td>Device power consumption and usage, e.g. 2 hours a day</td>
 </tr>
 </table>
-
+Device power may be specific or for 1 or 2 exemplar devices where not available which will always be the case for user owned devices. 
  
 
 {% include linkedHeading.html heading="Improving" level=3 %}
-Improvement
+For servers and cloud the analysis for improvement was more complex than reporting but the opposite is true for devices. In the case of servers there was not just the question of hardware embodied emissions and harware energy consumption but also the way the servers were utilised and the efficiency of the software running on them. That software could in turn be mapped to teams who managed or developed it. 
+
+Clear this isn't the case for monitors but also for laptops the software running on them isn't the main concern as the bulk of the carbon will be from their manufacture not the use (TODO insert link).
+User owned devices (like personal laptops) can be ignored and the focus can be on changing the default choices of device purchased by the org. e.g. if there are 1 or 2 procurement teams then all that matters is the choices of devices bought, their longevity and disposal. 
 
 {% include linkedHeading.html heading="End user devices" level=2 %}
-TODO - only partially done so far
+As a reminder, this is primarily about the emissions caused by consumers of the organisation's services. Popular games and social media apps in particular may cause users to spend additional hours every week on a device, using electricity as they do. 
 
 There's broadly 3 types of end user/consumer device:
- * Consumer devices like phones, tablet, TVs and laptops
+ * Standard devices like phones, tablet, TVs and laptops
  * IoT devices which may be provided by the organisation selling the software
  * Servers for service to service communication
 
+The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less or if API calls are in the thousands per day it is quite likely these emissions will just be noise vs other tech emissions. On the other hand for a video streaming or gaming app with hundreds of thousands of users who use the app or site for hours at a time these emissions shouldn't be ignored. Start with rough approximations based on the below and the information in <a href="/categories/downstream">Downstream</a> before deciding whether to go any further. 
+
+
 {% include linkedHeading.html heading="Consumer devices" level=3 %}
-Metrics should be available as to the number of unique devices - can be approximated based on number of users.
-Similarly the balance of device types should be known but where not a rough approximation should be made based on general population data about how many people consume content in different mediums
+
+As described in <a href="/information/lifecycle/user">Hardware Emissions</a> it should be possible to obtain estimates of average energy usage per unit time for an app or site on various device types. e.g. via Firefox profiling for a website/app on 2 or 3 common laptops. This will then need scaling across the user base. 
+
+The precise details of all the phones, tablets etc running your software or accessing your servers will not be visible but many organisations will have analytics data such as the following: 
+
+<style>
+    tr.infoTypeTable > th {
+        font-weight:bold;
+        padding-right:3pt;
+    }
+</style>
+<table>
+<tr class="infoTypeTable">
+    <th>Info type</th>
+    <th>Why it is useful</th>
+</tr>
+<tr>
+    <td>Number of users</td>
+    <td>Scaling factor for emisions</td>
+</tr>
+<tr>
+    <td>Device breakdown</td>
+    <td>Different device types will have different energy usage for a given app or site. May have a different mix of wifi vs mobile network too</td>
+</tr>
+<tr>
+    <td>Average interaction per user per day</td>
+    <td>Energy consumed will depend on time spent on an app or site</td>
+</tr>
+<tr>
+    <td>User locations</td>
+    <td>Affects the carbon intensity. Also if combined with server locations it would allow higher network energy to be assigned to more distant users</td>
+</tr>
+</table>
+
+Where this isn't all available a rough approximations can still be made, e.g. if you don't know the device breakdown there may be public info about content consumption via device for similar websites or apps.
+
+With this information the average energy on device of a particular type (like tablet) in a given time period (e.g. per minute) can be multiplied by the data about number of devices and average usage per day/week/year. Location data can then be used to get carbon intensity for the users in order to provide the final emissions.
+
+For networking energy you may look at app the metrics for APIs called to understand total traffic across endpoints or you can use device analytics to capture total data sent from the app. With the former you'll need to aggregate metrics from lots of serverside locations - some of which for SaaS endpoints may not be in your control. The alternative option of using device analytics will allow you to get all network traffic in one go although you may still want to break this down, e.g, if one heavily hit endpoint is running the other side of the world and so more energy intensive vs others in the same country. 
+
+{% include linkedHeading.html heading="Improvement" level=4 %}
+TODO
 
 {% include linkedHeading.html heading="IoT" level=3 %}
-TODO
+An example of this would be a smart camera or a sensor. This is very similar to consumer devices for energy usage except that:
+
+ * the devices being used are known - unlike the hundreds of laptop models
+ * usage patterns will be different but known, e.g. on all the time but in low power mode with a regular awake and check cycle or powerup-on-activity
+
+For these reasons it should be easier to get an accurate energy per device for IoT devices. 
+
+Where the org being measured and reported on has sold the IoT device to the consumer then the emissions from this must also be reported and is again just a case of scaling per device emissions by number of devices. Note that calculating the emissions of manufacture is out of the scope of this standard. 
+
+
 
 {% include linkedHeading.html heading="Server to server" level=3 %}
-TODO
+
+Rather than a consumer or user in another business using an organisation's service via a website or app there is also the possibility of customer's server directly making API calls. In this case the only energy usage is the downstream network energy from the external business's network through to the measured org's networks.
+
+In this case the only information available will be the number of API calls and possibly location data, either from knowledge of the customer or based on IP lookups. 
+
+
+{% include linkedHeading.html heading="Improvement" level=3 %}
+Starting with device energy (as opposed to network) where improvement is needed then the same data is useful as per the reporting - energy on device types for typical usage scaled out by the number of users and devices. Location doesn't matter here as it can't be controlled for customers.
+
+Normally a site or app will be owned by a particular team so this is much easier to map than for servers running the software of many teams. The exception is a micro-frontend architecture or an app with many plugins where certain pages or page sections are very power hungry compared to others. This should be possible to identify via energy profiling so that the total energy can be attributed to the separate pages and teams for driving improvement. 
+
+For networking, API endpoints should be mapped to business services and the development teams or SaaS products responsible. e.g. an app calls 15 different services but 80% of traffic is to one of them then 80% of emissions can be attributed to that team. Attribution may be done by number of requests and/or data transferred; there's not a definitive right way as data transferred would capture large unnessary payloads but miss cases of excessive TLS connections being setup.  
+
+{% include linkedHeading.html heading="Mapping large organisations" level=2 %} 
+
+For a small to medium size organistion of, for example, 100 employees, then the organisation will typically be in a single line of business and have a relatively straightforward hierarchical structure. There may still be challenges in mapping the technical estate and deriving emissions but the problem is understood. 
+
+In larger and/or more complex organisations it is not so simple. Often an organisation does multiple things and may have various separate subsidiaries that are not aligned or only partially aligned from a tech perspective. This may stem from an acquisition whereby there has yet to be full tech re-platforming. It may be that some HR systems and single-sign on is provided across the complete organisation but otherwise a subsidiary is run independently.
+
+The level at which the mapping exercise is carried out relates more to business architecture and business needs than technology. For example, if 2 subsidiaries are run very independently then it may make sense to have the mapping exercise be done independently with separate upstream operational cloud, on prem etc figures given to each with the option to then roll up. 
+
+Where this can be more complex is when there is some sharing. In this case we may either pull out the shared functions or have one unit treat the other as a SaaS product. e.g. imagine a flight booking company also has a hotel business that is largely separate but shares the HR system and we are trying to assess the emissions of the hotel business and look for improvements. We may choose to ignore this and say it'll be dealt with when considering the flight part of the business. Or if we want to report for scope 3 as fully as possible then we may just treat it as a SaaS product that we approximate early on and later attribute a percentage of emissions to.
+
+It should also be born in mind that as with financial cost, where there are duplicated functions across different parts of a complex org, then this will result in duplicated emissions and from an analysis point of view this is useful to know unless there is a deliberate design to keep the business areas separate, for example, for future sales. 
+
+This implies therefore that whilst it is fine to perform the mapping exercise at sub-org levels, once all are done they should be compared in terms of the business services supported by IT and where they are aligned and not. 
+
+
+
+
+
+
 
 {% include linkedHeading.html heading="TODOs" level=3 %}
 
-TODO - something about larger umbrella organisations
+None for now
