@@ -1,0 +1,39 @@
+# These are the default values for the technology category labels used in the _includes/categoryLabel.html template.
+# All valees are the default values, used EVERYWHERE, so please be aware when making any changes here.
+
+# The Category Items are mapped and accessible using thier item name.
+# - category: is actually a css class that is passed through to set the colour of the item (background to the icon).
+# - title: used as the label text for the item.
+# - GHGScope: is the GHG protocol scope that the category aligns to.
+
+CatU:
+  id: CatU
+  category: cat-u
+  title: Category U
+  GHGScope: 3
+  link: /categories/upstream#software
+  noLink: false
+
+CatO:
+  id: CatO
+  category: cat-o
+  title: Category O
+  GHGScope: 2
+
+CatG:
+  id: CatG
+  category: cat-g
+  title: Category G
+  GHGScope: 1
+
+CatC:
+  id: CatC
+  category: cat-c
+  title: Category C
+  GHGScope: 3
+
+CatD:
+  id: CatD
+  category: cat-d
+  title: Category D
+  GHGScope: 3
