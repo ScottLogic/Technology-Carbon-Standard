@@ -7,33 +7,26 @@
 # - GHGScope: is the GHG protocol scope that the category aligns to.
 
 CatU:
-  id: CatU
   category: cat-u
   title: Category U
   GHGScope: 3
-  link: /categories/upstream#software
-  noLink: false
 
 CatO:
-  id: CatO
   category: cat-o
   title: Category O
   GHGScope: 2
 
 CatG:
-  id: CatG
   category: cat-g
   title: Category G
   GHGScope: 1
 
 CatC:
-  id: CatC
   category: cat-c
   title: Category C
   GHGScope: 3
 
 CatD:
-  id: CatD
   category: cat-d
   title: Category D
   GHGScope: 3
