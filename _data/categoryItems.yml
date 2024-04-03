@@ -1,0 +1,153 @@
+# These are the default values for the technology category items used in the _includes/categoryItem.html template.
+# Only the 'id', 'selected', 'description' and 'link' parameters can be overridden when using categoryItem template.
+# All other vales are the default values, used EVERYWHERE, so please be aware when making any changes here.
+
+# The Category Items are mapped and accessible using thier item name.
+# - id: is the id attribute applied to the categoryItem. This is useful for anchor links. Useful for linking from a infographic item to an in page category item (optional, but defaults to the name of the item).
+# - category: is actually a css class that is passed through to set the colour of the item (background to the icon). There maybe other future  oppourtunities to use this.
+# - title: used as the main title/descriptor of the item (required and default).
+# - icon: used as the icon of the item (required and default). Maps to the assets/images/icons.svg.
+# - selected: when true, this highlights the item. Used for the contextual overlay views (false by default).
+# - description: adds additional text under the title providing som context. Used for the contextual overlay views (optional).
+# - link: Creates a link to another page (further details). These are setup by default to the relevant pages, but may be overridden for specific use cases, typically in the overlay views (optional, but defaults to a page).
+# - noLink: Provides an overide to prevent any navigation to a page. Renders the component in a <div> instead of an <a>.
+
+CatUSoftware:
+  id: CatUSoftware
+  category: cat-u
+  title: Off The Shelf including Open-Source Software
+  icon: web
+  selected: false
+  description:
+  link: /categories/upstream#software
+  noLink: false
+
+CatUEmployeeHardware:
+  id: CatUEmployeeHardware
+  category: cat-u
+  title: User Hardware (laptops, printers, etc.)
+  icon: devices
+  selected: false
+  description:
+  link: /categories/upstream#employee-hardware
+  noLink: false
+
+CatUNetworkHardware:
+  id: CatUNetworkHardware
+  category: cat-u
+  title: Networking and Infrastructure Hardware
+  icon: router
+  selected: false
+  description:
+  link: /categories/upstream#networking-hardware
+  noLink: false
+
+CatUServerHardware:
+  id: CatUServerHardware
+  category: cat-u
+  title: Servers and Storage Hardware
+  icon: storage
+  selected: false
+  description:
+  link: /categories/upstream#data-center-and-server-hardware
+  noLink: false
+
+CatOServers:
+  id: CatOServers
+  category: cat-o
+  title: Servers and Storage
+  icon: storage
+  selected: false
+  description:
+  link: /categories/operational#servers-and-storage
+  noLink: false
+
+CatONetworkDevices:
+  id: CatONetworkDevices
+  category: cat-o
+  title: Networking and Infrastructure
+  icon: router
+  selected: false
+  description:
+  link: /categories/operational#networking-devices
+  noLink: false
+
+CatOUserDevices:
+  id: CatOUserDevices
+  category: cat-o
+  title: User Devices
+  icon: devices
+  selected: false
+  description:
+  link: /categories/operational#employee-devices
+  noLink: false
+
+CatGGenerators:
+  id: CatGGenerators
+  category: cat-g
+  title: Generators
+  icon: bolt
+  selected: false
+  description:
+  link: /categories/operational#generators
+  noLink: false
+
+CatCCloud:
+  id: CatCCloud
+  category: cat-c
+  title: Cloud Services
+  icon: cloud
+  selected: false
+  description:
+  link: /categories/operational#cloud-services
+  noLink: false
+
+CatCSaas:
+  id: CatCSaas
+  category: cat-c
+  title: SaaS
+  icon: web
+  selected: false
+  description:
+  link: /categories/operational#saas
+  noLink: false
+
+CatCManaged:
+  id: CatCManaged
+  category: cat-c
+  title: Managed Services
+  icon: storage
+  selected: false
+  description:
+  link: /categories/operational#managed-services
+  noLink: false
+
+CatDEndUserDevices:
+  id: CatDEndUserDevices
+  category: cat-d
+  title: End-User Devices
+  icon: devices
+  selected: false
+  description:
+  link: /categories/downstream#end-user-devices
+  noLink: false
+
+CatDNetworkDataTransfer:
+  id: CatDNetworkDataTransfer
+  category: cat-d
+  title: Network Data Transfer
+  icon: cell-tower
+  selected: false
+  description:
+  link: /categories/downstream#network-data-transfer
+  noLink: false
+
+CatDInfrastructure:
+  id: CatDInfrastructure
+  category: cat-d
+  title: Downstream Infrastructure
+  icon: hub
+  selected: false
+  description:
+  link: /categories/downstream#infrastructure
+  noLink: false
