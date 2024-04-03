@@ -1,8 +1,18 @@
-{% assign id = include.id %}
+<!-- 'item' must be passed to this template! -->
+<!-- 'item' must be one of the category items in categoryItems.yml -->
 {% assign item = include.item %}
+
+<!-- 'title', 'icon' and 'category' are defined only by the mapped category item in categoryItems.yml -->
 {% assign title = site.data.categoryItems[item].title %}
 {% assign icon = site.data.categoryItems[item].icon %}
 {% assign category = site.data.categoryItems[item].category %}
+
+<!-- 'id', 'description', 'selected', 'link' and 'noLink' are optional params that can override the category item yml data -->
+{% if include.id %}
+  {% assign id = include.id %}
+{% else %}
+  {% assign id = site.data.categoryItems[item].id %}
+{% endif %}
 
 {% if include.description %}
   {% assign description = include.description %}
