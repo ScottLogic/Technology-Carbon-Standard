@@ -19,6 +19,8 @@
 # - link: Creates a link to another page (further details). These are setup by default to the relevant pages, but may be overridden for specific use cases, typically in the overlay views (optional, but defaults to a page).
 # - noLink: Provides an overide to prevent any navigation to a page. Renders the component in a <div> instead of an <a>.
 
+title: Technology Carbon Standard
+
 CatU:
   description: Upstream emissions relating to the embodied carbon of hardware and the development of software.
 

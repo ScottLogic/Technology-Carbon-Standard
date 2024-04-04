@@ -1,3 +1,6 @@
+# Optionally change the title of the infographic. Defaults to the carbonStandard.title otherwise.
+title:
+
 CatUSoftware:
   selected: true
   description: Strategy around COTS/OSS vs in-house. Use green vendors.

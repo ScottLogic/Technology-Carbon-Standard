@@ -8,11 +8,17 @@
   {% assign variant = site.data.carbonStandard %}
 {% endif %}
 
+{% if variant.title %}
+  {% assign title = variant.title %}
+{% else %}
+  {% assign title =  site.data.carbonStandard.title %}
+{% endif %}
+
 {% assign hideOutOfScope = include.hideOutOfScope %}
 
 <!-- Carbon Standard Title and Legend -->
-<header class="flex flex-col lg:flex-row justify-between leading-tight lg:items-center py-4 px-4 gap-2 lg:gap-0 bg-white dark:bg-black/30">
-  <h2 class="text-2xl lg:text-3xl font-medium">Technology Carbon Standard</h2>
+<header class="flex flex-col lg:flex-row justify-between leading-tight lg:items-center py-4 px-4 gap-2 lg:gap-0 bg-white dark:bg-black/30 not-prose">
+  <h2 class="text-2xl lg:text-3xl font-medium">{{ title }}</h2>
   <div class="flex flex-col gap-1">
     <div class="flex h-8 gap-2 items-center">
       <div class="relative h-full w-24 flex border border-white rounded overflow-hidden">
@@ -136,7 +142,7 @@
           %}
 
           <!-- DIRECT (Category G) -->
-          <div class="relative">
+          <div class="relative top-2">
             <hr class="border-white mb-2">
             <div class="absolute right-2 -top-2">
               {% include categoryLabel.html label="CatG" %}
@@ -220,20 +226,14 @@
         noLink=variant.CatDNetworkDataTransfer.noLink
         link=variant.CatDNetworkDataTransfer.link
       %}
-      {% include categoryItem.html
-        item="CatDInfrastructure"
-        selected=variant.CatDInfrastructure.selected
-        description=variant.CatDInfrastructure.description
-        noLink=variant.CatDInfrastructure.noLink
-        link=variant.CatDInfrastructure.link
-      %}
+
     </div>
   </div>
 
 </div>
 
 {% unless hideOutOfScope == true %}
-<div class="flex justify-center items-center px-4 py-4 mt-2 lg:mt-0 bg-black/25 dark:bg-black/25">
+<div class="flex justify-center items-center px-4 py-4 mt-2 lg:mt-0 bg-black/25 dark:bg-black/25 not-prose">
   <div>
     <h4 class="mb-2 text-lg font-medium">Out of Scope</h4>
     <div class="flex items-center gap-2">
@@ -253,6 +253,6 @@
 
 {% endunless %}
 
-<div class="flex justify-end px-2 pt-2 bg-black/5">
+<div class="flex justify-end px-2 pt-2 bg-black/5 not-prose">
   {% include creativeCommons.html %}
 </div>
