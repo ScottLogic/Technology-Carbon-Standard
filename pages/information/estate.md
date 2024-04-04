@@ -7,7 +7,7 @@ published: true
 
 # Estate Mapping
 
-This page discusses how to apply the Tech Carbon Standard (TCS) to an organisation. It builds on the main [TCS diagram](https://www.techcarbonstandard.org/) by explaining how to go from an organisational view to numbers in each of the categories and does so from 2 perspectives:
+This page discusses how to apply the Tech Carbon Standard (TCS) to an organisation. It builds on the main [TCS diagram](https://www.techcarbonstandard.org/) by explaining how to go from an organisational view to emissions numbers in each of the categories and does so from 2 perspectives:
  1. Quantifying an org's tech carbon emissions
  2. Understanding how to reduce them
 
@@ -115,38 +115,48 @@ In the earlier diagram the cooling/lighting/other boxes were distinguished in a 
 
 {% include linkedHeading.html heading="Operational emissions - reporting" level=3 %}
 
-If an organisation needs to report the total company emissions including any technology ones then the task can be reduced to identifying all sites and then getting the electricity usage for them and the carbon intensity at that site. When a facility is leased and the organisation isn't directly billed then the overall building electricity bill should be divided up and attributed to each org by a measure such as employee count or square footage - though the latter is better suited to heating costs. 
+Firstly consider the simplest case of an organisation that wants to report the total office/facility Scope 2 emissions including any technology specific ones without breaking these out.  In this case the task can be reduced to identifying all sites, getting the electricity usage for them and applying the carbon intensity at that site. When a facility is leased and the organisation isn't directly billed then it's less accurate as the overall building electricity bill must be divided up and attributed to each org by a measure such as employee count or square footage - though the latter is better suited to heating costs. 
 
-When reporting is wanted on technology specifically, e.g.if a CTO is asked to provide the emissions of all the teams and hardware that they are responsible for then the task is more complex and discussed below. It is assumed that the ability to monitor power consumption of all devices is not available as this is not common today. 
+The discussion below covers the more challenging scenario when reporting is requried on information technology specifically, e.g.if a CTO is asked to provide the emissions of all the teams and hardware that they are responsible for. 
 
 Unlike for the embodied calculation the operational one must take account of the location and the electricity mix at that location including any on-site generators or renewables. 
 
-__Data centres and server rooms__: Assuming only one organisation has equipment in the data centre this should be simple because this is the one case where operational emissions can actually come directly from the building electricity usage. Otherwise this is the same as for a server room and the device inventory data must be used to get approximate numbers based on device power use.  
+__Data centres and server rooms__: Assuming only one organisation has equipment in a given data centre then in this case the operational emissions can actually come directly from the building electricity usage. Otherwise this is the same as for a server room and the device inventory data must be used to get approximate numbers based on device power use.  i.e. take all the devices in the inventory and their power usage at typical utilisation to work out the approximate aggregate energy per month, year or other time period. 
 
 In the section above describing embodied carbon the building, heating, lighting etc for a data centre was out of scope because this standard is designed to help understand and optimise hardware and software. Nonetheless, in calculating total operational emissions for a data centre or anything at scale then it is conventional to include this for 2 reasons:
- * It may be tricky to isolate these periphery devices for a data centre where they'll form part of the power draw
- * PUE is typically included when comparing the efficiency of cloud vs on-prem  because it can make a significant difference
-     *  e.g. 1.6 vs 1.2 for example respectively. (but bear in mind there can be negatives like more water usage).
-     * for embodied carbon there's no equivalent comparison of all the building and facility carbon
+ * It may be tricky to isolate these periphery devices for a data centre where they'll form part of the electricity power draw
+ * PUE is typically published and included when comparing the efficiency of cloud vs on-prem  because it can make a significant difference to energy consumption
+     *  e.g. 1.6 for older DCs vs 1.2 for cloud. (But bear in mind there can be negatives like more water usage).
+     * but information on building and facility embodied carbon is rarely available and so a PUE like comparison can't be made
 
 
-__Office__: This is the most complicated scenario because there may be user laptops, monitors, lighting, heating etc as well as any server and networking hardware for running software. An electricity measurement is not practical if you want to specifically provide numbers for a particular device class. In this case the device database or approximations should also be employed. 
+__Office__: This is the most complicated scenario because there may be user laptops, monitors, lighting, heating etc as well as any server and networking hardware for running software. It's not possible to just look at the electricity usage and so approximations deriving from the device database should be used. 
 
- When approximating power consumption one-off measurements can be used or data sheet information (combined with utilisation if not at max power all the time) and then this can be scaled out to capture the effect of all devices. 
+ To get the power consumption of individual devices  before scaling this out across the estate then the simplest options are to:
+
+  * carry one-off measurements on representative hardware at representative load can be carried out to get representative numbers
+  * use data sheet information, combining with utilisation if devices are not at max power all the time
+
+See <a href="/information/lifecycle/usage">Usage Emissions</a> for a detailed discussion of calculating the energy usage of individual devices.
+
+{% include linkedHeading.html heading="Ideal solution" level=4 %}
+The optimal solution to the problem of understanding operational emissions would be that all devices do real time power monitoring and push this information to a central location, e.g. via HTTP. This would provide near real time monitoring of the whole estate so all devices and their daily energy is known. Unfortunately this is not practical today although modern devices are getting better at power monitoring. 
+
+Even if this were possible it should wouldn't address the next section on reducing emissions unless the software loads running on the specific hardware were also understood. 
 
 {% include linkedHeading.html heading="Reducing operational and embodied emissions" level=3 %}
 
 <img style="max-width: 650px" class="none" alt="" src="/assets/images/estate/business_services_breakdown.png" />
 
-In order to go beyond reporting and improve emissions it is necessary not just to to map out the hardware infrastructure owners but also the owners of the software running on the hardware because improvements can come from better software implementations as well as procuring more efficient hardware. In the business IT services diagram earlier, the Business Applications block can be broken down into various services offered by the business that are in turn implemented by particular applications (not shown) that are ultimately owned by particular technology teams who have the responsibility for developing and/or maintaining those applications (or for SaaS own the relationship).
+In order to go beyond reporting and improve emissions it is necessary not just to to map out the hardware infrastructure owners but also the owners of the software running on the hardware because improvements can come from better software implementations as well as procuring more efficient hardware. In the Business IT Services diagram earlier, the Business Applications block can be broken down into various services offered by the business that are in turn implemented by particular applications (not shown) that are ultimately owned by particular technology teams who have the responsibility for developing and/or maintaining those applications (or for SaaS own the relationship).
 
-With this in mind a more detailed mapping of the on-prem estate can be considered:
+The diagram below presents a more complex mapping that will help understanding of how to reduce emissions rather than just reporting at org or tech function level.
 
 <img style="max-width: 650px" class="none" alt="" src="/assets/images/estate/on-prem-responsibilities.png" />
 
-The diagram above presents the more complex mapping where improvement is required rather than just carbon reporting at org or tech function level. In this case there can be layers for virtualisation on top of the physical servers and/or clustering and then ultimately the applications belonging to different business application teams. 
+ In this case there's layers for virtualisation on top of the physical servers and/or clustering and then the applications belonging to the different business application teams. 
 
-In this case the mapping must also take account of the layers that the Platform teams have added, e.g. a Kubernetes cluster and then the apps. Operational and embodied emissions should be assigned to particular apps either directly or indirectly via metrics such as utilisation and memory usage - exactly what to use is out of the scope of the TCS and for individual orgs to decide because it is heavily dependent on implementation. The key point for the estate mapping perspective is to relate the emissions to teams at different levels so that they can make improvements. e.g. the Platform team providing higher utilisation via containerisation or application owners with more efficient app code. 
+ Operational and embodied emissions should be assigned to particular apps either directly or indirectly via metrics such as utilisation and memory usage - exactly what to use is out of the scope of the TCS and for individual orgs to decide because it is heavily dependent on implementation. The key point for the estate mapping perspective is to relate the emissions to teams so that they can make improvements. e.g. the Platform team providing higher utilisation via containerisation or application owners running more efficient app code. 
 
 {% include linkedHeading.html heading="Cloud" level=2 %}
 Mapping out the cloud emissions should generally be a lot simpler than for on-prem hardware. A typical organisation will have a cloud structure like the following:
@@ -157,25 +167,27 @@ Where terminology for the same concept varies across the 3 largest providers the
 
 Where an organisation actually has multiple hierarchies, i.e. 1 real organisation to 2+ cloud ones these must all be identified and reported separately.  
 
-{% include linkedHeading.html heading="Reducing emissions" level=3 %}
+{% include linkedHeading.html heading="Reducing cloud emissions" level=3 %}
 As with data centres, reducing emissions requires mapping of usage to business divisions and the development teams that own the services. The CSP tools and CCF will be able to report at the various levels of hierarchy down to Account. Complexities can arise in a couple of ways:
- 1. Where teams in the business don't align with cloud accounts or sub-orgs. One way this can happen is if many teams share an account and then tag with the owner. Some CSPs will include tag level data but some won't and nor will CCF and this will limit the ability to assign emissions to teams. 
+ 1. Where teams in the business don't align with cloud accounts or sub-orgs. One way this can happen is if many teams share an account and then tag resources with the owner. Some CSPs will include tag level data but some won't and nor will CCF and this will limit the ability to assign emissions to teams. 
  2. Some services may be provided by a platform team and shared across many applications, e.g. a database
 
-In both cases proxies like spend, system utilisation can be used instead or number of requests to a service by each team. AWS tags, for example will be available on the cost explorer function even if not on carbon reporting. 
+In both cases proxies like spend, system utilisation or number of requests can be used instead divide up the emissions between teams. AWS tags, for example, will be available on the cost explorer function even if not on carbon reporting. 
 
 {% include linkedHeading.html heading="SaaS" level=2 %}
-An organisation may use a variety of SaaS products from development and productivity tools such as Github and cloud JIRA through to business tools like Salesforce and payment services such as Stripe and Adyen.
+An organisation may use a variety of SaaS products from development and productivity tools such as Github and cloud JIRA through to business tools like Salesforce, payment services such as Stripe or Adyen and many more.
 
-Some organisations will have a central procurement team who manage a list of all the suppliers but it may be more distributed and so the first task in understanding SaaS emissions is to go to all the business teams such as the Platform tam, the various Business Applications divisions and Employee Enabling teams and find out all the SaaS products being used. It is likely that each will differ in the carbon reporting they provide and some will give Scope 2 only, some Scope 3 as well and some will provide no information and therefore each must be handled separately, in a bespoke way. It makes sense to focus on those products doing the most work which could be handling a lot of end user requests or doing very complex workflows or storing a lot of data as these will have the highest carbon impact. Approximations will be needed where no data is provided by the vendor. 
+Some organisations will have a central procurement team who manage a list of all the suppliers but it may be more distributed and so the first task in understanding SaaS emissions is to go to all the business services owners (e.g. Platform, Employee Enabling, various Business Applications divisions) and find out all the SaaS products being used. 
 
-{% include linkedHeading.html heading="Reducing Emissions" level=3 %}
+It is likely that each SaaS vendor will differ in the carbon reporting they provide; some will give Scope 2 only, some Scope 2+3 and some will provide no information and therefore each must be handled separately, in a bespoke way. Where these numbers are hard to obtain or to approximate then it makes sense to prioritise getting numbers for those products likely to create the most emissions, e.g. any handling a lot of end user requests or doing very complex workflows or storing a lot of data as these will have the highest carbon impact. 
+
+{% include linkedHeading.html heading="Reducing SaaS Emissions" level=3 %}
 There's a limited amount that can be done with a SaaS product but there are still some options:
  * store less data with them
  * use APIs more efficiently
  * pick a different provider
 
-All require an understanding of the teams using the SaaS product which may be one team or multiple. Where there's multiple and carbon reports from the SaaS provider are at account not team level then attribution may be done on a metric like number of requests to understand where to focus effort. 
+All require an understanding of the teams using the SaaS product which may be one team or multiple. Where there's multiple and carbon reports from the SaaS provider are at account not team level then attribution may be done on a metric like number of requests to break down the numbers to each service and team using the SaaS product. 
 
 In mapping out all SaaS products it's important to know the possibility to change and record this - if there is a contract renewal or tender process in 6 months time there is a lot more potential for change than where the contract is locked in for the next 5 years. Capacity and effort to change may also be recorded. 
 
@@ -189,24 +201,24 @@ Their technology may include the following more common devices:
 Ownership, usage and location patterns will often differ compared to the on-prem servers and networking devices in the following ways:
 
 * Usage will generally be based around office hours
-* User devices are assigned to individuals (or occasionally a team, e.g. a test device or TV) which makes attribution to teams much easier than for servers that may belong to a platform team but run multiple business apps from other teams
-* Although some devices like a desktop will be in a fixed office/facility location, others like laptops are mobile. Monitors may be in a fixed home working location as well or office. 
+* User devices are assigned to individuals (or occasionally a team, e.g. a test device or TV) which makes attribution to teams much easier than for servers because the owner of the server and who runs software on the server are usually different. 
+* Although some devices like a desktop will be in a fixed office/facility location, others like laptops are mobile. Monitors may be in a fixed home working location as well the office. 
 * For home devices internal users could be using their own monitors/equipment rather than ones purchased for them by the organisation. 
 
-Note: occasionally it may be arguable as to whether a device belongs in this grouping or in on-prem and it doesn't matter so long as they are included - the category doesn't change. For example TVs may be specific to a user when provided for testing a smart TV application but could also be providing a dashboard in the office in which case they are likely a permanent always on fixture like servers.  
+Note: occasionally it may be arguable as to whether a device belongs in this grouping or in on-prem and it doesn't matter so long as they are included - the category doesn't change. For example TVs may be specific to a user when provided to an employee for testing a smart TV application but could also be providing a dashboard in the office in which case they are likely a permanent always on fixture like servers.  
 
 
 {% include linkedHeading.html heading="Operational emissions - special case" level=4 %}
-As per the on-prem section, there is a special case for reporting <em>operational</em> emissions where all the organistion wants to do is report Scope 1 or 2 emissions at org or office/facility level and doesn't want to break this down into technology classes. In this case all the office/on-prem devices (including times when laptops are in the office and plugged in) will be included in the office electricity. In the remaining discussion it is assumed that the reporting should include a tech breakdown and that embodied (i.e. GHGP Scope 3) is needed as well as operational emissions.
+As per the <a href="#on-prem">on-prem section</a>, there is a special case for reporting <em>operational</em> emissions if all the organistion wants to do is report Scope 1 or 2 emissions at org or office/facility level: in this case the office/facility electricity usage data will cover all technology but the number will obviously also include more than just tech, e.g. kettles, lighting, electric heaters. In the remaining discussion it is assumed that the reporting should include a tech breakdown and that embodied emissions (i.e. GHGP Scope 3) is needed as well as operational emissions.
 
 {% include linkedHeading.html heading="Device inventory" level=3 %}
-All equipment purchased by the organisation should be available via a CMDB or some similar asset management system, as mentioned in the on-prem section. Where this isn't present approximations will be needed based on employee numbers. For user devices the data should include the location which may be not just a specific office or org facility but whether it is for remote working or both in the case of a laptop. This matters because electricity carbon intensity may be different. 
+All equipment purchased by the organisation should be available via a CMDB or some similar asset management system, as mentioned in the on-prem section. Where this isn't present approximations will be needed based on employee numbers. For user devices the data should include the location for which a device was purchased but whether it is for remote working or both in the case of a laptop. This matters because electricity carbon intensity may be different. 
 
-For user purchased devices (e.g. a personal laptop or monitor) numbers are still needed. For laptops this can be approximated by assuming all users without an org laptop or desktop have a personal one. For monitors, a survey may be done of a subset of staff then extrapolated to get the typical number of monitors and their size and the same for for personal laptops to understand the most common specs in order to provide some average numbers that can scaled across the population. Where you have no data from employees and are approximating based on general purpose data about most popular laptops or monitors bear in mind that developers may have slightly higher spec equipment as the use case is more demanding than basic web use. 
+For user purchased devices (also known as bring your own device or BYOD) estimation will be needed. Laptop numbers can be approximated by assuming all users without an org laptop or desktop have a personal one. For monitors, a survey may be done of a subset of staff then extrapolated to get the typical number of monitors and their size and the same for for personal laptops to understand the most common specs in order to provide some average numbers that can scaled across the user population. Bear in mind that some user types, e.g. graphic designers, developers may have higher spec equipment. 
 
 {% include linkedHeading.html heading="Reporting" level=3 %}
 
-Given that not all devices are organisation purchased this affects how emissions should be reported and is captured in the following table. This shows that embodied carbon is only captured for organisation purchased devices with the assumption being that personal laptops would be purchased anyway and can't be attributed. 
+Given that not all devices are organisation purchased this affects how emissions should be reported and is captured in the following table. Embodied carbon is only captured for organisation purchased devices with the assumption being that personal laptops would be purchased anyway and can't be attributed. 
 
 
 <style>
@@ -233,13 +245,13 @@ Given that not all devices are organisation purchased this affects how emissions
 </tr>
 </table>
 
-Ideally embodied carbon will come directly from CMDB inventory data and then be combined with device lifetime information. e.g. if a company laptop is refreshed every 5 years then the embodied carbon for all devices should be divided by 5 for an annual amount. Where embodied carbon is not included in the inventory or can't be quickly be derived through cross referencing data sheets, then approximations can be made using emissions data for similar hardware. e.g. if you have 200 desktops and the manufacturer doesn't provide a value then take a desktop of similar spec and age that does and use the value from that. Such approximations should be explicitly captured. 
+__Embodied Carbon__:
+Embodied carbon will come directly from inventory data or via a data sheet lookup and then be combined with device lifetime information. For example, if a company laptop is refreshed every 5 years then the embodied carbon for all devices should be divided by 5 for an annual amount. Where embodied carbon can't be quickly be derived through cross referencing data sheets, then approximations can be made using emissions data for similar hardware. e.g. if an org 200 desktop PCs of one type and the manufacturer doesn't provide a value then take a desktop PC of similar spec and age that does and use the value from that. Such approximations should be explicitly captured. 
 
-For operational emissions the ownership of the device doesn't matter, but whether the user is using the device for non-personal reasons does. For example, working hours emissions should be captured for a laptop but not weekend browsing. For all the devices that are mobile or home based the electricity carbon intensity should come from the regional level whereas for fixed office/facility items more accuracy may be possible, e.g. if an office is known to be 50% solar on average. 
+__Operational Emissions__:
+Ownership of the device doesn't matter, but whether the user is using the device for non-personal reasons does; for example, working hours emissions should be captured for a laptop but not weekend browsing. For all the devices that are mobile or home based the electricity carbon intensity should come from the country/regional value whereas for fixed office/facility items more accuracy may be possible, e.g. if an office is known to be 50% solar on average. 
 
-As for embodied carbon energy usage can come from the information in the inventory or be looked up in data sheets. 
-
-Care should be taken to avoid double counting any equipment. For example, when reporting monitor emissions assumptions will be required based on how often users will be in the office vs at home and emissions only attributed to one of the two at a given point in time. 
+Care should be taken to avoid double counting any equipment. For example, when reporting computer monitor emissions, assumptions will be required based on how often users will be in the office vs at home and emissions only attributed to one of the two at a given point in time. 
 
 The table below captures some of the things to consider for various device types:
 
@@ -284,21 +296,19 @@ Device power may be specific or if this isn't available for all devices then est
  
 
 {% include linkedHeading.html heading="Reducing emissions" level=3 %}
-For servers and cloud the analysis for reducing emissions was more complex than reporting but the opposite is true for devices. In the case of servers there was not just the question of hardware embodied emissions and harware energy consumption but also the way the servers were utilised and the efficiency of the software running on them. That software could in turn be mapped to teams who managed or developed it. 
+For servers and cloud the analysis for reducing emissions was more complex than reporting but the opposite is true for devices. Monitors don't have any software running on them to attribute to anyone and although technically laptops do, the wide variety of applications and the fact that the <a href="/information/lifecycle#embodied-vs-usage-carbon">bulk of the carbon will be from their manufacture not the use</a> means there is little value in any analysis. User owned devices (like personal laptops) can also be ignored. 
 
-Clearly this isn't the case for monitors but also for laptops the software running on them isn't the main concern as the 
-<a href="/information/lifecycle#embodied-vs-usage-carbon">bulk of the carbon will be from their manufacture not the use</a>.
-User owned devices (like personal laptops) can be ignored. Therefore, for reducing emissione the focus will be on procurement policy and on changing the default choices of device purchased by the org. e.g. if there are 1 or 2 procurement teams then all that matters is the choices of devices bought, their longevity and disposal. 
+Therefore, for reducing emissions the focus will be on procurement policy and on changing the default choices of device purchased by the org. If there are 1 or 2 procurement teams then all that matters is how those teams choose devices and manage their longevity and disposal. 
 
 {% include linkedHeading.html heading="End user devices" level=2 %}
-As a reminder, this is primarily about the emissions caused by consumers using the organisation's services. Popular games and social media apps in particular may cause users to spend additional hours every week on their phone/tablet/device, using electricity as they do. 
+As a reminder, this is primarily about the emissions caused by public consumers or other organisations using the measured organisation's services. Popular games and social media apps in particular may cause users to spend additional hours every week on their phone/tablet/device, using electricity as they do. 
 
-There's broadly 3 types of end user/consumer device:
+There's broadly 3 types of end user device:
  * Standard devices like phones, tablet, TVs and laptops
  * IoT devices which may be provided by the organisation selling the software
  * Servers for service to service communication
 
-The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less or even if API calls are in the thousands per day it is quite likely these emissions will just be noise vs other tech emissions. On the other hand, a video streaming or gaming app with hundreds of thousands of users using the app each day for hours a time shouldn't be ignored. Start with rough approximations based on the information in <a href="/categories/downstream">Downstream</a> and the following sub-sections before deciding whether to go any further. 
+The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less it is likely these emissions will just be noise vs other tech emissions. On the other hand, a video streaming or gaming app with hundreds of thousands of users using the app each day for hours a time shouldn't be ignored. Start with rough approximations based on the information in <a href="/categories/downstream">Downstream</a> and the following sub-sections before deciding whether to go any further. 
 
 
 {% include linkedHeading.html heading="Consumer devices" level=3 %}
@@ -340,9 +350,9 @@ The precise details of all the phones, tablets etc running your software or acce
 
 Where this isn't all available a rough approximations can still be made, e.g. if you don't know the device breakdown there may be publicly available info for similar websites or apps.
 
-With this information the average energy on device of a particular type (like tablet) in a given time period (e.g. per minute) can be multiplied by the data about number of devices and average usage per day/week/year. Location data can then be used to get carbon intensity for the users in order to provide the final emissions.
+With this information the average energy of a particular device type (e.g. tablet) in a given time period (e.g. per minute) can be multiplied by the data about number of devices and average usage per day/week/year. Location data can then be used to get carbon intensity for the users in order to provide the final emissions.
 
-For networking energy, metrics for server-side API calls would be one way to understand total traffic across endpoints but it does mean there's a need to aggregate metrics from lots of server-side locations - some of which could be SaaS and unavailable. Alternatively device analytics can capture total data sent from the app which will allow all network traffic to be provided in one go whilst still allowing for a breakdown to show what endpoints are generating the most traffic. 
+For networking energy, metrics for server-side API calls would be one way to understand total traffic across endpoints but it does mean there's a need to aggregate metrics from lots of server-side locations - some of which could be SaaS endpoints and lack metrics. Alternatively device analytics can capture total data sent from the app which will allow all network traffic to be provided in one go whilst still allowing for a breakdown to show what endpoints are generating the most traffic. 
 
 A more basic option would be to analyse the typical network activity per minute of app interaction and just add this on to the device energy usage as an extra factor before scaling by time and the user count. 
 
@@ -366,11 +376,11 @@ In this case the only information available will be the number of API calls and 
 
 
 {% include linkedHeading.html heading="Reducing emissions" level=3 %}
-To reduce device energy (as opposed to network) the same data is useful as per the reporting, that is the energy on typical device types for typical usage scaled out by the number of users and devices. Location doesn't matter for the purpose of reducing emissions as it can't be controlled for customers.
+To reduce device energy (as opposed to network) the same data is useful as per the reporting; that is the energy on typical device types for typical usage scaled out by the number of users and devices. Location doesn't matter for the purpose of reducing emissions as it can't be controlled for customers.
 
 Normally a site or app will be owned by a particular team so this is much easier to map than for servers running the software of many teams. The exception is a micro-frontend architecture or an app with many plugins where certain pages or page sections are very power hungry compared to others. The power hungry pages should identifiable via energy profiling so that the total energy can be attributed to the separate pages and teams for driving improvement. 
 
-For networking, as shown in the diagram below API endpoints should be mapped to business services and the development teams or SaaS products responsible. e.g. an app calls 15 different services but 80% of traffic is to one of them then 80% of emissions can be attributed to that team. Attribution may be done by number of requests and/or data transferred; there's not a definitive right way as data transferred would capture large unnessary payloads but miss cases of excessive TLS connections being setup by a very "chatty" API.  
+For networking, as shown in the diagram below API endpoints should be mapped to business services and the development teams or SaaS products responsible. e.g. an app calls 15 different services but 80% of traffic is to one of them then 80% of emissions can be attributed to that team. Attribution may be done by number of requests and/or data transferred; there's not a definitive right way as data transferred would capture large unnessary payloads but miss cases of excessive TLS connections being setup by a very "chatty" API. The cause of the excess network calls may be with the service team or with the app/website team but by identifying both sides of this a conversation can be had to reduce these emissions and there can be additional benefits like battery life. As mentioned earlier, this level of analysis is only worth doing if the user base is significant. 
 
 <img style="max-width: 550px" class="none" alt="" src="/assets/images/estate/api_to_business.png" />
 
@@ -380,7 +390,7 @@ For a small to medium size organisation (e.g. 250 employees), then the org will 
 
 <img style="max-width: 550px" class="none" alt="" src="/assets/images/estate/large_org.png" />
 
-In larger and/or more complex organisations it is not so simple. Often, as in the diagram above an organisation does multiple things and may have various separate subsidiaries that are not aligned or only partially aligned from a tech perspective. This may stem from an acquisition whereby there has yet to be full re-platforming or just that the 2 brands do very different things. Government or university departments are another example where IT teams will exist at different layers and be quite independent. There may be a mixed picture as shown below where some HR systems and single-sign on are provided across the complete group nisation but otherwise a subsidiary is run independently.
+In larger and/or more complex organisations it is not so simple. Often, as in the diagram above an organisation does multiple things and may have various separate subsidiaries that are not aligned or only partially aligned from a tech perspective. This may stem from an acquisition whereby there has yet to be full re-platforming or just that the 2 brands do very different things. Government or university departments are another example where IT teams will exist at different layers and be quite independent. There may be a mixed picture as shown below where some HR systems and single-sign on are provided across the complete group organisation but otherwise a subsidiary is run independently.
 
 <img style="max-width: 550px" class="none" alt="" src="/assets/images/estate/large_org_share.png" />
 
@@ -389,6 +399,5 @@ The level at which the mapping exercise is carried out relates more to business 
 Where this can be more complex is when there is some sharing as in the previous diagram. In this case the options are to either pull out the shared functions or have one unit treat the other as a SaaS product. e.g. imagine a flight booking company also has a hotel business that is largely separate but shares the HR system where the ask is to assess the emissions of the hotel business and look for improvements. The HR system could be ignored since it'll be dealt with when considering the flight part of the business. Or, to report for scope 3 as fully as possible, then it could be treated it as a SaaS product for which a proportion of emissions are attributed to the hotel business. 
 
 It should also be born in mind that as with financial cost, where there are duplicated functions across different parts of a complex org, then this will result in duplicated emissions and from an analysis point of view this is useful to know unless there is a deliberate design to keep the business areas separate, for example, for a future sale. 
-
-This implies therefore that whilst it is fine to perform the mapping exercise at sub-group levels, once all are done they should be compared in terms of the business services supported by IT and where they are aligned and not. 
+This implies therefore that, whilst it is fine to perform the mapping exercise at sub-group levels, once all are completed they should be compared in terms of the business services supported by IT and where they are aligned and not. 
 
