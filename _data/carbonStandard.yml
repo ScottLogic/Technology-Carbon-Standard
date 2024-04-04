@@ -1,8 +1,15 @@
-# These are the default values for the technology category items used in the _includes/categoryItem.html template.
+# These are the default values, text and descriptions for the TCS category items (used in the _includes/categoryItem.html template) and category descriptions (used in the _includes/carbonStandard.html template).
 # Only the 'id', 'selected', 'description' and 'link' parameters can be overridden when using categoryItem template.
 # All other vales are the default values, used EVERYWHERE, so please be aware when making any changes here.
 
-# The Category Items are mapped and accessible using thier item name.
+# Descriptive texts for the category sections are mapped by name, including:
+# - CatU
+# - OperationalEmissions (under the section header before the direct Cat O and Indirect Cat C sections)
+# - CatO
+# - CatC
+# - CatD
+
+# The Category Items are mapped and accessible using their item name.
 # - id: is the id attribute applied to the categoryItem. This is useful for anchor links. Useful for linking from a infographic item to an in page category item (optional, but defaults to the name of the item).
 # - category: is actually a css class that is passed through to set the colour of the item (background to the icon). There maybe other future  oppourtunities to use this.
 # - title: used as the main title/descriptor of the item (required and default).
@@ -11,6 +18,9 @@
 # - description: adds additional text under the title providing som context. Used for the contextual overlay views (optional).
 # - link: Creates a link to another page (further details). These are setup by default to the relevant pages, but may be overridden for specific use cases, typically in the overlay views (optional, but defaults to a page).
 # - noLink: Provides an overide to prevent any navigation to a page. Renders the component in a <div> instead of an <a>.
+
+CatU:
+  description: Upstream emissions relating to the embodied carbon of hardware and the development of software.
 
 CatUSoftware:
   id: CatUSoftware
@@ -52,6 +62,12 @@ CatUServerHardware:
   link: /categories/upstream#data-center-and-server-hardware
   noLink: false
 
+OperationalEmissions:
+  description: Operational emissions are associated to the running of business IT functions and systems. Each operational function may have a hybrid of IT infrastructure across direct and/or indirect emissions.
+
+CatO:
+  description: Direct running costs that are attributed to the electricity powering servers, networks and devices.
+
 CatOServers:
   id: CatOServers
   category: cat-o
@@ -92,6 +108,9 @@ CatGGenerators:
   link: /categories/operational#generators
   noLink: false
 
+CatC:
+  description: Indirect running carbon costs that are attributed to external hardware and service solutions.
+
 CatCCloud:
   id: CatCCloud
   category: cat-c
@@ -121,6 +140,9 @@ CatCManaged:
   description:
   link: /categories/operational#managed-services
   noLink: false
+
+CatD:
+  description: Carbon associated with the use of products and services produced by the business.
 
 CatDEndUserDevices:
   id: CatDEndUserDevices

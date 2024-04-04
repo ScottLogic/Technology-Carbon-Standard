@@ -1,31 +1,31 @@
 {% comment %}
   'item' must be passed to this template!
-  'item' must be one of the category items in categoryItems.yml
-  'title', 'icon' and 'category' are defined only by the mapped category item in categoryItems.yml
+  'item' must be one of the category items in carbonStandard.yml
+  'title', 'icon' and 'category' are defined only by the mapped category item in carbonStandard.yml
   'id', 'description', 'selected', 'link' and 'noLink' are optional params that can override the category item yml data
 {% endcomment %}
 
 {% assign item = include.item %}
-{% assign title = site.data.categoryItems[item].title %}
-{% assign icon = site.data.categoryItems[item].icon %}
-{% assign category = site.data.categoryItems[item].category %}
+{% assign title = site.data.carbonStandard[item].title %}
+{% assign icon = site.data.carbonStandard[item].icon %}
+{% assign category = site.data.carbonStandard[item].category %}
 
 {% if include.id %}
   {% assign id = include.id %}
 {% else %}
-  {% assign id = site.data.categoryItems[item].id %}
+  {% assign id = site.data.carbonStandard[item].id %}
 {% endif %}
 
 {% if include.description %}
   {% assign description = include.description %}
 {% else %}
-  {% assign description = site.data.categoryItems[item].description %}
+  {% assign description = site.data.carbonStandard[item].description %}
 {% endif %}
 
 {% if include.link %}
   {% assign link = include.link %}
 {% else %}
-  {% assign link = site.data.categoryItems[item].link %}
+  {% assign link = site.data.carbonStandard[item].link %}
 {% endif %}
 
 <div class="my-2">

@@ -37,7 +37,7 @@
       <div class="hidden lg:block w-0 h-0 z-10 cat-u-arrow-right"></div>
     </div>
     <div class="h-full lg:mr-[2rem] px-4 pt-4 pb-2 cat-u-body">
-      <p>Upstream emissions relating to the embodied carbon of hardware and the development of software.</p>
+      <p>{{ site.data.carbonStandard.CatU.description }}</p>
 
       <h4 class="mt-4 mb-2 text-lg font-medium">Software</h4>
       {% include categoryItem.html item="CatUSoftware" %}
@@ -61,7 +61,7 @@
       <div class="hidden lg:block w-0 h-0 z-10 cat-o-arrow-right"></div>
     </div>
     <div class="h-full lg:-ml-[2rem] lg:mr-[2rem] px-4 pt-4 pb-2 cat-o-body">
-      <p>Operational emissions are associated to the running of business IT functions and systems. Each operational function may have a hybrid of IT infrastructure across direct and/or indirect emissions.</p>
+      <p>{{ site.data.carbonStandard.OperationalEmissions.description }}</p>
 
       <div class="flex flex-col lg:flex-row gap-4 mt-4">
 
@@ -71,7 +71,8 @@
           <div class="absolute right-2 -top-2">
             {% include categoryLabel.html label="CatO" %}
           </div>
-          <p class="mb-2">Direct running costs that are attributed to the electricity powering servers, networks and devices.</p>
+          <p class="mb-2">{{ site.data.carbonStandard.CatO.description }}</p>
+
           {% include categoryItem.html item="CatOUserDevices" %}
           {% include categoryItem.html item="CatONetworkDevices" %}
           {% include categoryItem.html item="CatOServers" %}
@@ -92,7 +93,8 @@
           <div class="absolute right-2 -top-2">
             {% include categoryLabel.html label="CatC" %}
           </div>
-          <p class="mb-2">Indirect running carbon costs that are attributed to external hardware and service solutions.</p>
+          <p class="mb-2">{{ site.data.carbonStandard.CatC.description }}</p>
+
           {% include categoryItem.html item="CatCCloud" %}
           {% include categoryItem.html item="CatCSaas" %}
           {% include categoryItem.html item="CatCManaged" %}
@@ -117,7 +119,7 @@
       </div>
     </div>
     <div class="h-full lg:-ml-[2rem] px-4 pt-4 pb-2 cat-d-body">
-      <p>Carbon associated with the use of products and services produced by the business.</p>
+      <p>{{ site.data.carbonStandard.CatD.description }}</p>
 
       <h4 class="mt-4 mb-2 text-lg font-medium">End Use (B2B, B2C)</h4>
       {% include categoryItem.html item="CatDEndUserDevices" %}
