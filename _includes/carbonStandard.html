@@ -29,7 +29,7 @@
         <div class="relative">
           <h3 class="pl-2 mb-0 text-xl font-medium text-white"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream">Upstream Emissions</a></h3>
           <div class="absolute right-0 top-8">
-            {% include categoryLabel.html label="Category U" bgColor="cat-u" scope="3" %}
+            {% include categoryLabel.html label="CatU" %}
           </div>
         </div>
       </div>
@@ -37,15 +37,15 @@
       <div class="hidden lg:block w-0 h-0 z-10 cat-u-arrow-right"></div>
     </div>
     <div class="h-full lg:mr-[2rem] px-4 pt-4 pb-2 cat-u-body">
-      <p>Upstream emissions relating to the embodied carbon of hardware and the development of software.</p>
+      <p>{{ site.data.carbonStandard.CatU.description }}</p>
 
-      <h4 class="mt-4 mb-2 text-lg font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream#software">Software</a></h4>
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#web" description="Off The Shelf including Open-Source Software" link="/categories/upstream#software" %}
+      <h4 class="mt-4 mb-2 text-lg font-medium">Software</h4>
+      {% include categoryItem.html item="CatUSoftware" %}
 
-      <h4 class="mt-4 mb-2 text-lg font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream#hardware">Hardware Manufacture, Transport and Installations</a></h4>
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#devices" description="Employee Hardware (laptops, printers, etc.)" link="/categories/upstream#employee-hardware" %}
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#router" description="Networking Hardware" link="/categories/upstream#networking-hardware" %}
-      {% include categoryItem.html bgColor="cat-u" icon="./assets/images/icons.svg#storage" description="Data Centre and Server Hardware" link="/categories/upstream#data-centre-and-server-hardware" %}
+      <h4 class="mt-4 mb-2 text-lg font-medium">Hardware Manufacture, Transport and Installation</h4>
+      {% include categoryItem.html item="CatUEmployeeHardware" %}
+      {% include categoryItem.html item="CatUNetworkHardware" %}
+      {% include categoryItem.html item="CatUServerHardware" %}
     </div>
     <!-- ARROW DOWN: visible on smaller screens -->
     <div class="w-full lg:hidden h-0 cat-u-arrow-down"></div>
@@ -61,41 +61,43 @@
       <div class="hidden lg:block w-0 h-0 z-10 cat-o-arrow-right"></div>
     </div>
     <div class="h-full lg:-ml-[2rem] lg:mr-[2rem] px-4 pt-4 pb-2 cat-o-body">
-      <p>Operational emissions are associated to the running of business IT functions and systems. Each operational function may have a hybrid of IT infrastructure across direct and/or indirect emissions.</p>
+      <p>{{ site.data.carbonStandard.OperationalEmissions.description }}</p>
 
       <div class="flex flex-col lg:flex-row gap-4 mt-4">
 
         <!-- DIRECT (Category O) -->
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
-          <h4 class="mb-2 text-lg font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/operational#direct-emissions">Direct</a></h4>
+          <h4 class="mb-2 text-lg font-medium">Direct</h4>
           <div class="absolute right-2 -top-2">
-            {% include categoryLabel.html label="Category O" bgColor="cat-o" scope="2" %}
+            {% include categoryLabel.html label="CatO" %}
           </div>
-          <p class="mb-2">Direct running costs that are attributed to the electricity powering servers, networks and devices.</p>
-          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#storage" description="Servers and Storage" link="/categories/operational#servers-and-storage" %}
-          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#router" description="Networking Devices" link="/categories/operational#networking-devices" %}
-          {% include categoryItem.html bgColor="cat-o" icon="./assets/images/icons.svg#devices" description="Employee Devices" link="/categories/operational#employee-devices" %}
+          <p class="mb-2">{{ site.data.carbonStandard.CatO.description }}</p>
+
+          {% include categoryItem.html item="CatOUserDevices" %}
+          {% include categoryItem.html item="CatONetworkDevices" %}
+          {% include categoryItem.html item="CatOServers" %}
 
           <!-- DIRECT (Category G) -->
           <div class="relative">
             <hr class="border-white mb-2">
             <div class="absolute right-2 -top-2">
-              {% include categoryLabel.html label="Category G" bgColor="cat-g" scope="1" %}
+              {% include categoryLabel.html label="CatG" %}
             </div>
-            {% include categoryItem.html bgColor="cat-g" icon="./assets/images/icons.svg#bolt" description="Generators" link="/categories/operational#generators" %}
+            {% include categoryItem.html item="CatGGenerators" %}
           </div>
         </div>
 
         <!-- INDIRECT (Category C) -->
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
-          <h4 class="mb-2 text-lg font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/operational#indirect-emissions">Indirect</a></h4>
+          <h4 class="mb-2 text-lg font-medium">Indirect</h4>
           <div class="absolute right-2 -top-2">
-            {% include categoryLabel.html label="Category C" bgColor="cat-c" scope="3" %}
+            {% include categoryLabel.html label="CatC" %}
           </div>
-          <p class="mb-2">Indirect running carbon costs that are attributed to external hardware and service solutions.</p>
-          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#cloud" description="Cloud Services" link="/categories/operational#cloud-services" %}
-          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#web" description="SaaS" link="/categories/operational#saas" %}
-          {% include categoryItem.html bgColor="cat-c" icon="./assets/images/icons.svg#storage" description="Managed Services" link="/categories/operational#managed-services" %}
+          <p class="mb-2">{{ site.data.carbonStandard.CatC.description }}</p>
+
+          {% include categoryItem.html item="CatCCloud" %}
+          {% include categoryItem.html item="CatCSaas" %}
+          {% include categoryItem.html item="CatCManaged" %}
         </div>
       </div>
     </div>
@@ -111,17 +113,17 @@
         <div class="relative">
           <h3 class="lg:pl-[3rem] mb-0 text-xl font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/downstream">Downstream Emissions</a></h3>
           <div class="absolute right-0 top-8">
-            {% include categoryLabel.html label="Category D" bgColor="cat-d" scope="3" %}
+            {% include categoryLabel.html label="CatD" %}
           </div>
         </div>
       </div>
     </div>
     <div class="h-full lg:-ml-[2rem] px-4 pt-4 pb-2 cat-d-body">
-      <p>Carbon associated with the use of products and services produced by the business.</p>
+      <p>{{ site.data.carbonStandard.CatD.description }}</p>
 
-      <h4 class="mt-4 mb-2 text-lg font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/downstream">End Use (B2B, B2C)</a></h4>
-      {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#devices" description="End-User Devices" link="/categories/downstream#end-user-devices" %}
-      {% include categoryItem.html bgColor="cat-d" icon="./assets/images/icons.svg#cell-tower" description="Network Data Transfer" link="/categories/downstream#network-data-transfer" %}
+      <h4 class="mt-4 mb-2 text-lg font-medium">End Use (B2B, B2C)</h4>
+      {% include categoryItem.html item="CatDEndUserDevices" %}
+      {% include categoryItem.html item="CatDNetworkDataTransfer" %}
     </div>
   </div>
 
@@ -132,13 +134,13 @@
     <h4 class="mb-2 text-lg font-medium">Out of Scope</h4>
     <div class="flex items-center gap-2">
       <div class="flex justify-center items-center size-12 bg-charcoal-600 dark:bg-charcoal-800">
-        <svg aria-hidden="true" class="w-8 h-8 fill-white"><use href="./assets/images/icons.svg#groups"></use></svg>
+        <svg aria-hidden="true" class="w-8 h-8 fill-white"><use href="/assets/images/icons.svg#groups"></use></svg>
       </div>
       <div class="flex justify-center items-center size-12 bg-charcoal-600 dark:bg-charcoal-800">
-        <svg aria-hidden="true" class="w-8 h-8 fill-white"><use href="./assets/images/icons.svg#domain"></use></svg>
+        <svg aria-hidden="true" class="w-8 h-8 fill-white"><use href="/assets/images/icons.svg#domain"></use></svg>
       </div>
       <div class="flex justify-center items-center size-12 bg-charcoal-600 dark:bg-charcoal-800">
-        <svg aria-hidden="true" class="w-8 h-8 fill-white"><use href="./assets/images/icons.svg#commute"></use></svg>
+        <svg aria-hidden="true" class="w-8 h-8 fill-white"><use href="/assets/images/icons.svg#commute"></use></svg>
       </div>
       People, Buildings and Travel
     </div>

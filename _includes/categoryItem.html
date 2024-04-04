@@ -1,6 +1,51 @@
-<{% if include.link %}a href="{{ include.link }}" aria-label="{{ include.description }}"{% else %}div{% endif %} class="flex gap-2 items-center mb-2 {% if include.link %}no-underline text-inherit hover:bg-white/30{% endif %}">
-  <div class="flex justify-center items-center size-12 {{ include.bgColor }}">
-    <svg aria-hidden="true" class="w-8 h-8 fill-white"><use href="{{ include.icon }}"></use></svg>
-  </div>
-  <div class="flex-1 leading-tight">{{ include.description }}</div>
-</{% if include.link %}a{% else %}div{% endif %}>
+{% comment %}
+  'item' must be passed to this template!
+  'item' must be one of the category items in carbonStandard.yml
+  'title', 'icon' and 'category' are defined only by the mapped category item in carbonStandard.yml
+  'id', 'description', 'selected', 'link' and 'noLink' are optional params that can override the category item yml data
+{% endcomment %}
+
+{% assign item = include.item %}
+{% assign title = site.data.carbonStandard[item].title %}
+{% assign icon = site.data.carbonStandard[item].icon %}
+{% assign category = site.data.carbonStandard[item].category %}
+
+{% if include.id %}
+  {% assign id = include.id %}
+{% else %}
+  {% assign id = site.data.carbonStandard[item].id %}
+{% endif %}
+
+{% if include.description %}
+  {% assign description = include.description %}
+{% else %}
+  {% assign description = site.data.carbonStandard[item].description %}
+{% endif %}
+
+{% if include.link %}
+  {% assign link = include.link %}
+{% else %}
+  {% assign link = site.data.carbonStandard[item].link %}
+{% endif %}
+
+<div class="my-2">
+  {% if include.noLink == true %}
+    <div id="{{ id }}" class="flex gap-2 {% if description %}items-start{% else %}items-center{% endif %}{% if include.selected %} bg-white/80{% endif %}">
+  {% else %}
+    <a id="{{ id }}" href="{{ link }}" aria-label="{{ title }}" class="flex gap-2 no-underline text-inherit hover:bg-white/30 {% if description %}items-start{% else %}items-center{% endif %}{% if include.selected %} bg-white/80{% endif %}">
+  {% endif %}
+
+    <div class="flex justify-center {% if description %}items-start self-stretch py-1{% else %}h-12 items-center{% endif %} w-12 min-h-12 {{ category }}">
+      <svg aria-hidden="true" class="size-8 fill-white"><use href="{{ icon | prepend: "/assets/images/icons.svg#" }}"></use></svg>
+    </div>
+    <div class="flex-1 leading-tight {% if description %}py-1{% endif %}">
+      <div class="font-medium">{{ title }}</div>
+      <div class="font-light text-sm">{{ description }}</div>
+    </div>
+
+  {% if include.noLink == true %}
+    </div>
+  {% else %}
+    </a>
+  {% endif %}
+</div>

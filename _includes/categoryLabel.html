@@ -1,10 +1,15 @@
-<div class=" flex items-baseline {{ include.bgColor }} border border-white rounded text-sm">
+{% assign label = include.label %}
+{% assign title = site.data.categoryLabels[label].title %}
+{% assign scope = site.data.categoryLabels[label].GHGScope %}
+{% assign colour = site.data.categoryLabels[label].category %}
+
+<div class="inline-flex items-baseline {{ colour }} border border-white rounded text-sm">
   <div class="px-3 py-1 text-white">
-    {{ include.label }}
+    {{ title }}
   </div>
-  {% if include.scope %}
+  {% if scope %}
     <div class="flex justify-center w-6 py-1 font-medium bg-charcoal-50 text-charcoal">
-      {{ include.scope }}
+      {{ scope }}
     </div>
   {% endif %}
 </div>
