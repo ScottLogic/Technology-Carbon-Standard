@@ -1,0 +1,69 @@
+CatUSoftware:
+  selected: true
+  description: Strategy around COTS/OSS vs in-house. Use green vendors.
+  link: '#Software'
+
+CatUEmployeeHardware:
+  selected: true
+  description: Renewal cycles, recycling, low carbon hardware.
+  link: '#UserHardware'
+
+CatUNetworkHardware:
+  selected: true
+  description: Renewal cycles, recycling, low carbon hardware.
+  link: '#NetworkHardware'
+
+CatUServerHardware:
+  selected: true
+  description: Renewal cycles, recycling, low carbon hardware.
+  link: '#ServerHardware'
+
+CatOServers:
+  selected: true
+  description: Virtualisation or containerisation strategy.
+  link: "#Servers"
+
+CatONetworkDevices:
+  selected: true
+  description: Principles around maximum utilisation.
+  link: '#NetworkDevices'
+
+CatOUserDevices:
+  selected: true
+  description: Apply Power Management configuration.
+  link: '#UserDevices'
+
+CatGGenerators:
+  selected: false
+  description:
+  noLink: true
+
+CatCCloud:
+  selected: true
+  description: Promote low energy architecture and monitoring.
+  link: '#Cloud'
+
+CatCSaas:
+  selected: true
+  description: Create a vendor strategy and minimise API use.
+  link: '#Saas'
+
+CatCManaged:
+  selected: true
+  description: IaaS vendor strategy.
+  link: '#Managed'
+
+CatDEndUserDevices:
+  selected: true
+  description: Promote patterns to minimise energy. Consider framework choices.
+  link: '#EndUserDevices'
+
+CatDNetworkDataTransfer:
+  selected: true
+  description: API design to reduce network traffic. Promote push over polling.
+  link: '#NetworkTransfer'
+
+CatDInfrastructure:
+  selected: true
+  description:
+  link: '#Infrastructure'
