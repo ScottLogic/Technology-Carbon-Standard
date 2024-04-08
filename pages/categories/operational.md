@@ -45,7 +45,7 @@ Within the operational network, consider the running cost of the connected devic
 
 Research[^1] has shown that not all networking equipment will use power in line with the data it is transmitted over it. These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load[^2]. For accurate numbers, power monitors on the power socket are an excellent way of gathering data. As the power usage of networking equipment has very little variance while it is running, attributing the power consumption to specific applications or processes is less important.
 
-Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](./downstream.md) category. 
+Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](./downstream) category. 
 
 {% include linkedHeading.html heading="Employee Devices" level=4 %}
 
