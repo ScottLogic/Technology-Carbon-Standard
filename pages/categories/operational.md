@@ -31,7 +31,7 @@ The energy consumed by on-premise servers and data centres.
 
 {% include linkedHeading.html heading="Networking Devices" level=4 %}
 
-In [the information on networks](/information/networks/networks), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
+In [the information on networks](/information/networks), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
 
 Within the operational network, consider the running cost of the connected devices. These include, but are not limited to:
 - routers
