@@ -47,9 +47,6 @@ Research[^1] has shown that not all networking equipment will use power in line 
 
 Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](./downstream.md) category. 
 
-[^1]: [Beyond network standby: A policy framework and action plan for low energy networks](https://nachhaltigwirtschaften.at/resources/iea_pdf/reports/iea_4e_network_standby_final_report.pdf) 
-[^2] [Equipment power consumption in optical multilayer networks – source data](https://www.researchgate.net/publication/272819245_Equipment_power_consumption_in_optical_multilayer_networks_-_source_data)
-
 {% include linkedHeading.html heading="Employee Devices" level=4 %}
 
 The energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees.
@@ -80,3 +77,8 @@ Software-as-a-Service (SaaS) applications.
 
 {% include linkedHeading.html heading="Managed Services" level=3 %}
 Managed Security Operations, IT support and data backup services.
+
+## References
+
+[^1]: [Beyond network standby: A policy framework and action plan for low energy networks](https://nachhaltigwirtschaften.at/resources/iea_pdf/reports/iea_4e_network_standby_final_report.pdf) 
+[^2] [Equipment power consumption in optical multilayer networks – source data](https://www.researchgate.net/publication/272819245_Equipment_power_consumption_in_optical_multilayer_networks_-_source_data)
