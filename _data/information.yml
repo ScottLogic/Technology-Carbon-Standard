@@ -13,3 +13,5 @@
       link: /information/lifecycle/example/employee
     - name: Server Hardware
       link: /information/lifecycle/example/server
+- name: Networks
+  link: /information/networks

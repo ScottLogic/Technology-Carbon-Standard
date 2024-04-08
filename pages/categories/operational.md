@@ -31,7 +31,21 @@ The energy consumed by on-premise servers and data centres.
 
 {% include linkedHeading.html heading="Networking Devices" level=4 %}
 
-The energy consumed by networking devices such as routers, switches, and Wi-Fi access points. 
+In [the information on networks](/information/networks/networks), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
+
+Within the operational network, consider the running cost of the connected devices. These include, but are not limited to:
+- routers
+- switches
+- bridges
+- Wi-Fi access points
+- firewalls
+- modems
+- hubs
+- repeaters
+
+Research[^1] has shown that not all networking equipment will use power in line with the data it is transmitted over it. These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load[^2]. For accurate numbers, power monitors on the power socket are an excellent way of gathering data. As the power usage of networking equipment has very little variance while it is running, attributing the power consumption to specific applications or processes is less important.
+
+Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](./downstream) category. 
 
 {% include linkedHeading.html heading="Employee Devices" level=4 %}
 
@@ -63,3 +77,8 @@ Software-as-a-Service (SaaS) applications.
 
 {% include linkedHeading.html heading="Managed Services" level=3 %}
 Managed Security Operations, IT support and data backup services.
+
+## References
+
+[^1]: [Beyond network standby: A policy framework and action plan for low energy networks](https://nachhaltigwirtschaften.at/resources/iea_pdf/reports/iea_4e_network_standby_final_report.pdf) 
+[^2]: [Equipment power consumption in optical multilayer networks – source data](https://www.researchgate.net/publication/272819245_Equipment_power_consumption_in_optical_multilayer_networks_-_source_data)
