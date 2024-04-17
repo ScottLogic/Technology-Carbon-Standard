@@ -17,3 +17,5 @@
   link: /information/networks
 - name: SaaS
   link: /information/saas
+- name: PaaS
+  link: /information/paas

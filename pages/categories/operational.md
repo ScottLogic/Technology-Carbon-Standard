@@ -72,8 +72,16 @@ The emissions associated with cloud platform services like compute, storage, and
 
 [Read more about cloud services.](../information/cloud)
 
+Platform-as-a-Service is a subset of cloud that straddles the gap between Software as a Service, SaaS and Cloud Infrastructure as a service, IaaS (e.g. VMs, Load Balancers etc) allowing organisations to deploy their own applications but without any infrasturcture to manage. Note: It isn't called out separately on the TCS because it is a subset of Cloud.
+
+[Read more about PaaS emissions.](../information/information/paas)
+
 {% include linkedHeading.html heading="SaaS" level=3 %}
-Software-as-a-Service (SaaS) applications.
+Software-as-a-Service (SaaS) applications include anything from Github/Gitlab to Office 365 and accountancy software and are black-box applications where the vendor provides APIs and any user interfaces and the consumers of the service know nothing of the underlying implementation. 
+
+[Read more about SaaS emissions.](../information/information/saas)
+
+
 
 {% include linkedHeading.html heading="Managed Services" level=3 %}
 Managed Security Operations, IT support and data backup services.
