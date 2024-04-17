@@ -133,7 +133,7 @@ tr.factsTable > th {
 The first 3 are the most likely to be known as they are fully in the control of the organisation using the SaaS product. 
 Be aware that request time is not necessarily processing time and will depend on the location of the end user - this is discussed more later. 
 
-{% include linkedHeading.html heading="Front end" level=3 %}
+{% include linkedHeading.html heading="Front end measurements" level=3 %}
 Many SaaS products include web and mobile interfaces that may be targetted at admin users and general users of the service. This part of the SaaS emissions can be measured in standard ways such as:
 
  * browser energy measurements, e.g. via Firefox profiler functions
@@ -143,23 +143,25 @@ These measurements aren't practical to do on all user devices all the time and s
 
 The emissions associated with running SaaS sites/apps on on-prem laptops and desktops would fall under TCS Category O. 
 
-{% include linkedHeading.html heading="Sustainable Web Design method" level=3 %}
+{% include linkedHeading.html heading="Holistic emissions - Sustainable Web Design method" level=3 %}
 
-This is a method promoted by Sustainable Web Design Community Group and published on <a href="https://sustainablewebdesign.org/calculating-digital-emissions/">sustainablewebdesign.org</a>. The method is specifically about websites but parts of it can be adapted for other uses. It covers all aspects of a service from the front end through to embodied carbon on the server but can be split if only part of the estimate are of interest.  
+This is a method promoted by Sustainable Web Design (SWD) Community Group and published on <a href="https://sustainablewebdesign.org/calculating-digital-emissions/">sustainablewebdesign.org</a>. The method is specifically about websites but parts of it can be adapted for other uses. It covers all aspects of a service from the front end through to embodied carbon on the server but can be split if only part of the estimate are of interest.  
 
-In short it is a top down estimate that takes an existing public domain estimated figure for all website and internet emissions of 1988TWh and then divides by another existing estimate for total end user traffic of 2444EB to get an energy of 0.81kWh/GB. For returning visitors to a site where data is already cached then 2% of the 0.81kWh is assumed.
+In short it is a top down estimate that takes an existing public-domain estimated figure for all website and internet emissions of 1988TWh and then divides by another existing estimate for total end user traffic of 2444EB to get an energy of 0.81kWh/GB. For returning visitors to a site where data is already cached then 2% of the 0.81kWh is assumed.
 This 0.81kWh is then attributed to 52% end user device (i.e. laptop accessing the site), 14% network energy, 15% data centre energy and 19% production energy. 
 
-When estimating a SaaS product with a user interface the values above can be used as they are. For an API only service (or where measuring the front end directly as described earlier) then one approach is to take the production, data centre and network energy which is 48% or 0.39kWh/GB and multiple by the amount of data traffic to/from the SaaS service (dependent on whether it's a read/GET or write/POST/PUT). 
+When estimating a SaaS product with a user interface the values above can be used as-is. For an API only service (or where measuring the front end directly as described earlier) then one approach is to take the production, data centre and network energy which is 48% or 0.39kWh/GB and multiple by the amount of data traffic to/from the SaaS service (dependent on whether it's a read or write). 
 
-Once kWh are derived they can be multiplied by the carbon intensity to get the emissions. Ideally this is local to the service hosting but if this is unknown a global figure can be used. 
+Once the energy in kWh is derived it can be multiplied by the carbon intensity to get the emissions. Ideally this is specific to the service hosting location but if this is unknown a global figure can be used. 
 
 This method is clearly very approximate because it only concentrates on the amount of data transferred. This may bias it when considering, for example the read or writing of a JPEG file that goes straight to/from disk vs a much smaller JSON payload that involves quite a lot of work on the backend with multiple systems. 
 
-{% include linkedHeading.html heading="1 Byte method" level=3 %}
-This method is provided by The Shift Project <a href="https://theshiftproject.org/en"> which is a European think tank centres in Paris that is working towards a post carbon economy. 
+Note that the method may be used with total data transferred across all service consumers if this information is available via metrics or alternatively a value for a single representative consumer can be found then scaled. 
 
-It is similar to the SWD methodology in that it is based around data transfer, but the methodology to come to an emissions rate per byte of data transferred is different. In <a href="https://theshiftproject.org/wp-content/uploads/2019/03/Lean-ICT-Report_The-Shift-Project_2019.pdf">their Lean ICT paper</a> they refer to 3 contribitions to this per byte number:
+{% include linkedHeading.html heading="1 Byte method" level=3 %}
+This method is provided by <a href="https://theshiftproject.org/en">The Shift Project</a>  which is a European think tank centred in Paris that is working towards a post carbon economy. 
+
+It is similar to the SWD methodology in that it is based around data transfer, but the methodology to come to an emissions per byte of data transferred is different. In their <a href="https://theshiftproject.org/wp-content/uploads/2019/03/Lean-ICT-Report_The-Shift-Project_2019.pdf">Lean ICT paper</a> they refer to 3 contribitions to this per byte number:
 
 * The electricity consumption associated with using the terminal on which the action is performed;
  * The electricity consumption generated by the activity of the data centers involved in transferring the data;
@@ -177,17 +179,17 @@ tr.oneByte > th {
 <table >
 <tr class="oneByte">
     <th>Category</th>
-    <th>Energy source</th>
+    <th>Specific</th>
     <th>Value</th>
 </tr>
 <tr>
     <td rowspan="2">Device</td>
     <td>Phone</td>
-    <td>0.00011 kWh/min</td>
+    <td>1.1*10<sup>-4</sup> kWh/min</td>
 </tr>
 <tr>
     <td>Laptop</td>
-    <td>0.00032 kWh/min</td>
+    <td>3.2*10<sup>-4</sup> kWh/min</td>
 </tr>
 <tr>
     <td rowspan="3">Network</td>
@@ -209,22 +211,18 @@ tr.oneByte > th {
 </tr>
 </table>
 
-For SaaS the figure derived will depend on the balance of user types: server to server, human user and for the latter the balance of network types. 
-
-For example if the SaaS product is just being used for its APIs then only the data centre and network aspects apply and the network would be fixed wired. On the other hand if a SaaS product was being used from laptops or desktops and includes a web interface then the network would be fixed Wifi normally and the device data should be included with the laptop figure (unless measuring separately). 
+For estimating SaaS emissions the figure derived will depend on the make up of service consumers. For example if the SaaS product is just being used for its APIs then only the data centre and network aspects apply and the network would be fixed wired. On the other hand if a SaaS product was being used from laptops mainly and includes a web interface then it would be fair to assume fixed Wifi for the network choice and the device data should be included with the laptop figure (unless measuring separately). 
 
 {% include linkedHeading.html heading="Alternatives - synchronous requests" level=3 %}
 The two methods above are based around data transferred (and also time spent on the device for the 1-byte model) which is fine for the network components but isn't always a fair representation of the processing time on the server. It may be that a number of data sources (e.g. multiple DB tables or separate services) need to be queried in order to fetch a lot of data that is then aggregated down to just a few values. In such a case the returned data is very small but a lot of processing is needed. 
 
-An alternative, at least for synchronous requests would be to do an approximation around request time and provided a server or browser captures metrics then the time to each endpoint is known.
+An alternative, at least for synchronous requests would be to do an approximation around request time which will often be captured in metrics. There is no common methodology in the literature for this as per the 1-byte method and so the discussion below is just an example of the approach that may be taken but it is up to each organisation to ascertain the right solution and this may involve doing some experimentation (e.g. with a similar open source product to the SaaS one being use) to come to reasonable numbers and ratios. Nonetheless, rough approximations should allow a value in the right order of magnitude. 
 
-The diagram below shows the makeup of a typical request:
+The diagram below shows the makeup of a typical request to a REST API:
 
 <img style="max-width:600px" src="/assets/images/SaaS/RequestStructure.png"/>
 
-The numbers here are just given as an example and there aren't published values to use as per the 1-byte model but nonetheless, rough approximations should allow a value in the right order of magnitude. 
-
-In the breakdown above it can be seen that there's some initial time to establish a connection - this is typically a one off though if doing lots of requests in quick succession and also some latency based on the distance from caller to callee, e.g. a browser in the UK to Frankfurt might 15ms round trip or 140ms to LA. This can be approximated where the server location is known  but everything happening on the server is shown in dark because this is a black box to the user of the service or API. 
+It can be seen that there's some initial time to establish a connection - this is typically a one off though if doing lots of requests in quick succession and also some latency based on the distance from caller to callee, e.g. a browser in the UK to Frankfurt might 15ms round trip or 140ms to LA. This can be approximated where the server location is known  but everything happening on the server is shown in dark because this is a black box to the user of the service or API. 
 
 To get to an energy consumption then 
 <a href="https://docs.google.com/spreadsheets/d/1DqYgQnEDLQVQm5acMAhLgHLD8xXCG9BIrk-_Nv6jF3k/edit#gid=224728652">Teads AWS Estimation numbers</a> suggest that a typical vCPU plus memory is in the region of 10-15W when at 50-75% utilisation which can then be applied to the server part of the request time of 85ms above. 
@@ -249,7 +247,7 @@ $$
 0.1s * (30W * 0.5[app fraction] + 90W * 0.5[DB fraction]) * 2 [overheads] = 12J $$ 
  or $$3*10^{-6}kWh$$
 
-As a comparison point the SWD method gives a 10kB request as using
+As a comparison point the SWD method gives a similar energy for a 10kB request:
 
  $$0.81kWh/GB * 0.15[data centre fraction] * 0.00001 = 1.2*10^{-6}kWh $$
 
