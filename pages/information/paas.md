@@ -5,7 +5,7 @@ permalink: /information/paas
 ---
 
 # Platform as a Service (PaaS)
-Platform as a service is touched on in the Cloud section and refers to a service that provides a way to host front end sites and provide a backend API (often including data storage) without having to manage infrastructure and machines (VM or Physical). Examples include:
+Platform as a service is touched on in the Cloud section and refers to a service a way to run apps without having to manage infrastructure and machines (VM or Physical). This can include both backend apps (including storage in some cases) and hosting for front end web pages/apps. Examples include:
 
 * Heroku
 * AWS Lambda and Azure Functions (elements of IaaS in these)
@@ -25,3 +25,10 @@ For non-cloud vendors then there are two options:
 
  The latter is by far the more common scenario as most vendors don't provide carbon emissions attributed to each customer. Therefore estimation is typically required and methods for this are described in <a href="/information/cloud">SaaS</a>; In many ways PaaS is similar to SaaS in that the implementation is a black box although it may be slightly less opaque - for example in Salesforce Platform the database model is under the control of the user. 
  
+{% include linkedHeading.html heading="Serverless" level=2 %}
+Discuss AWS lambda, Azure Functions and also CDN lambda at edge that all allow the deployent and running of apps with minimal infrastructure to manage. No standard DB but can be combined with database services as described below. Can result in some infra to manage in terms of cloud networking to connect the 2. 
+
+ {% include linkedHeading.html heading="Functions as a service" level=3 %}
+
+ {% include linkedHeading.html heading="Other serverless" level=3 %}
+ TODO - can discuss things like Dynamo and Cosmos and other database services that can be used with functions without any infra to manage. 
