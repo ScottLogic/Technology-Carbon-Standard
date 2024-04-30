@@ -10,7 +10,18 @@ Cloud computing has become a significant and rapidly growing part of the global 
 
 In simple terms, the "cloud" refers to vast networks of remote servers and data centres managed by these providers. Rather than hosting applications and storing data on local servers and computers, organisations can rent computing resources from cloud providers as needed, on a pay-as-you-go basis. This offers advantages such as scalability, flexibility, cost-effectiveness, reliability, and robust security measures.
 
-Cloud services are typically categorised into different models, such as Infrastructure as a Service (IaaS) and Platform as a Service (PaaS). IaaS provides access to virtualised computing resources like servers, storage, and networking, allowing organisations to manage these resources as needed. PaaS removes the need to manage the underlying infrastructure like hardware and operating systems, which can streamline development. This can extend to services like managed databases, where the cloud provider takes on the responsibility for administration and maintenance.
+Cloud services are typically categorised into different models, such as Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) as illustrated below. 
+
+<img style="max-width:700px" src="/assets/images/PaaS/IaaS.png"/>
+
+IaaS provides access to virtualised computing resources like servers, storage, and networking, allowing organisations to manage these resources as needed.
+
+
+<img style="max-width:700px" src="/assets/images/PaaS/PaaS.png"/>
+
+PaaS removes the need to manage the underlying infrastructure like hardware and operating systems, which can streamline development. This can extend to services like managed databases, where the cloud provider takes on the responsibility for administration and maintenance. <a href="/information/cloud/paas">It is discussed in more detail here</a>. 
+
+The diagram above summarises this and indicates the relative challenges of measuring carbon for real hardware vs virtualised hardware vs the PaaS case where only an API is visible and there's no access to the underlying virtual or physical machines. 
 
 {% include linkedHeading.html heading="Environmental Impact of Cloud Services" level=2 %}
 
