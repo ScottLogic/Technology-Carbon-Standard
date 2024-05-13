@@ -1,0 +1,72 @@
+# Optionally change the title of the infographic. Defaults to the carbonStandard.title otherwise.
+title:
+
+CatUSoftware:
+  selected: false
+  description: false
+  noLink: true
+
+CatUEmployeeHardware:
+  selected: false
+  description:
+  noLink: true
+
+CatUNetworkHardware:
+  selected: false
+  description:
+  noLink: true
+
+CatUServerHardware:
+  selected: true
+  description: Drives for data at rest
+  link: '#ServerHardware'
+
+CatOServers:
+  selected: true
+  description: Organisation of data at rest
+  link: "#Servers"
+
+CatONetworkDevices:
+  selected: true
+  description: Data sent over networks 
+  noLink: "#NetworkDevices"
+
+CatOUserDevices:
+  selected: false
+  description:
+  noLink: true
+
+CatGGenerators:
+  selected: false
+  description:
+  noLink: true
+
+CatCCloud:
+  selected: false
+  description:
+  noLink: true
+
+CatCSaas:
+  selected: true
+  description: Data use in hosted software
+  link: '#Saas'
+
+CatCManaged:
+  selected: true
+  description: Data hosted externally
+  link: '#Managed'
+
+CatDEndUserDevices:
+  selected: true
+  description: Data on end user devices
+  link: '#EndUserDevices'
+
+CatDNetworkDataTransfer:
+  selected: true
+  description: Data in transit
+  link: '#NetworkTransfer'
+
+CatDInfrastructure:
+  selected: true
+  description:
+  link: '#Infrastructure'
