@@ -8,4 +8,4 @@ permalink: /case-studies
 
 Some text to introduce some of our case studies and collaborations.
 
-1. [The Green Web Foundation](green-web-foundation) 
+1. [Green Web Foundation](green-web-foundation) 
