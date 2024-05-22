@@ -35,7 +35,7 @@ CatUSoftware:
 CatUEmployeeHardware:
   id: CatUEmployeeHardware
   category: cat-u
-  title: User Hardware (laptops, printers, etc.)
+  title: Employee Hardware
   icon: devices
   selected: false
   description:
@@ -88,10 +88,10 @@ CatONetworkDevices:
   link: /categories/operational#networking-devices
   noLink: false
 
-CatOUserDevices:
-  id: CatOUserDevices
+CatOEmployeeDevices:
+  id: CatOEmployeeDevices
   category: cat-o
-  title: User Devices
+  title: Employee Devices
   icon: devices
   selected: false
   description:
