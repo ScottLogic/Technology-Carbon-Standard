@@ -88,8 +88,8 @@ CatONetworkDevices:
   link: /categories/operational#networking-devices
   noLink: false
 
-CatOUserDevices:
-  id: CatOUserDevices
+CatOEmployeeDevices:
+  id: CatOEmployeeDevices
   category: cat-o
   title: Employee Devices
   icon: devices
