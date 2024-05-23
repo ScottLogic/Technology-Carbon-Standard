@@ -8,4 +8,4 @@ permalink: /projects
 
 Some text to introduce some of our projects and collaborations.
 
-1. [The Green Web Foundation](green-web-foundation) 
+1. [Green Web Foundation](green-web-foundation) 
