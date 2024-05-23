@@ -5,7 +5,7 @@ permalink: /projects/green-web-foundation
 project: gwf
 ---
 
-# The Green Web Foundation
+# Green Web Foundation
 
 Introduction to the project with Green Web Foundation...
 
