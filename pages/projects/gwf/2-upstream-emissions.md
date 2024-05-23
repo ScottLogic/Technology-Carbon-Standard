@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: projects
 title: Green Web Foundation
-permalink: /case-studies/green-web-foundation/upstream
+permalink: /projects/green-web-foundation/upstream
+project: gwf
 ---
 
 # Estimating the Upstream Emissions (Category U)

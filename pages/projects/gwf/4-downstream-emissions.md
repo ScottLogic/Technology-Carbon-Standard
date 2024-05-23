@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: projects
 title: Green Web Foundation
-permalink: /case-studies/green-web-foundation/downstream
+permalink: /projects/green-web-foundation/downstream
+project: gwf
 ---
 
 # Estimating the Downstream Emissions (Category D)

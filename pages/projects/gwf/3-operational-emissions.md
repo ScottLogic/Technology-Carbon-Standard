@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: projects
 title: Green Web Foundation
-permalink: /case-studies/green-web-foundation/operational
+permalink: /projects/green-web-foundation/operational
+project: gwf
 ---
 
 # Estimating the Operational Emissions (Categories O, G, and C)
