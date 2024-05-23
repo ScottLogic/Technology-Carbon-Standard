@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: projects
 title: Green Web Foundation
-permalink: /case-studies/green-web-foundation/introduction
+permalink: /projects/green-web-foundation/introduction
+project: gwf
 ---
 
 # Introduction
