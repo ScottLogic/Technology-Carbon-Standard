@@ -1,5 +1,6 @@
 gwf:
   name: Green Web Foundation
+  link: /projects/green-web-foundation
   nav:
   - name: Introduction
     link: /projects/green-web-foundation/introduction
@@ -9,3 +10,5 @@ gwf:
     link: /projects/green-web-foundation/operational
   - name: Downstream Emissions
     link: /projects/green-web-foundation/downstream
+  - name: Detailed Employee Hardware Emissions
+    link: /projects/green-web-foundation/detailed-hardware
