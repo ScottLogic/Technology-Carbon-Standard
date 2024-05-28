@@ -15,3 +15,4 @@ Maybe include our diagram here?
 1. [Upstream Emissions](upstream)
 1. [Operational Emissions](operational)
 1. [Downstream Emissions](downstream)
+1. [Detailed Employee Hardware Estimates](detailed-hardware)

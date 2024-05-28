@@ -18,7 +18,7 @@ We identified some software prominently used by GWF employees. This includes sof
 
 Whilst we had initially planned to investigate and attempt to gather information to allow us to estimate the carbon footprints of this software, it was agreed that gathering this data would be espeically difficult. Due to time constraints, this was ultimately not undertaken.
 
-## User/ Employee Hardware
+## Employee Hardware
 
 For user hardware and devices, we gathered information regarding the number, type and locations of these devices:
 
@@ -36,33 +36,33 @@ Since there is no standard or convention for accounting for carbon emissions of 
 
 For the purposes of "beer mat" estimates, we assumed non-specific laptop equipment, using typical, average figures for embodied and operational energy consumption. For laptops, this embodied carbon is 230kgCO2e. This figure is obtained and concluded from multiple research sources and averaging multiple laptop datasheets from Dell, Hewlett-Packard (HP) and Apple.
 
-Considering the lifespan and refresh cycle of this equipment, which (was agreed with GWF) is 5 years, we can [amortise](/glossary#amortisation) this to 46kgCO2e/year (230 ÷ 5).
+With only a single laptop owned by GWF and the other five being BYODs, we attribute 100% of the embodied carbon to one laptop, and 70% to the other five.
 
-With only a single laptop owned by GWF and the other 5 being BYODs, we attribute 100% of the amortised value of the single GWF-owned laptop to GWF (46kgCO2e/year) and 70% of the amortised value to the other 5 laptops at 32.2kgCO2e/year each (46 × 0.7).
+$$ (230kgCO_2e \times 1) + 5 \times (230kgCO_2e \times 0.7) = 1035kgCO_2e $$
 
-**Laptop embodied carbon emissions total: 207kgCO2e/year.**
+<p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
 To keep it a simple, high-level estimation, we have not taken into account that some of this equipment is refurbished, older and second-hand hardware. The laptops are simply assumed to be up to 5 years old and have a refresh cycle of 5 years. 
 
 > Older, re-used and refurbished equipment would have a further positive impact on the amortisation calculations, reducing the embodied carbon footprint further.
 
+
 ### Monitors
 
-For monitors we used a typical, average embodied carbon of 355kgCO2e, with a lifespan of 6 years. This is amortised as 59.17kgCO2e/year (355 ÷ 6).
+For monitors we used a typical, average embodied carbon of 355kgCO2e. Of the 10 monitors used, four of those are wholly owned by GWF, the remaining six are BYODs. 
 
-Four monitors are 100% attributed to GWF, and the other 6 are BYOD, 70% attributable at 41.42kgCO2e/year (59.17 × 0.7).
+$$ 4 \times (355kgCO_2e \times 1) + 6 \times (355kgCO_2e \times 0.7) = 2911kgCO_2e $$
 
-**Monitor embodied carbon emissions total: 485.17kgCO2e/year.**
+<p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
+
 
 ## Printers
 
 We identified a single printer located in the Germany office. This is a home/ small office all-in-one inkjet printer, copier, and scanner. Unfortunately, however, we could find little (substantiated) data or research[^1],[^2], on printers (in a short period of time). As a high-level, “beer mat” estimate, a single small printer with (assuming) light use, it didn’t seem necessary to spend much time researching further. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. The printer manufacturers do not offer carbon estimates for these devices; they only offer energy use (standby and whilst printing) and [Typical Energy Consumption](/glossary#typical-energy-consumption-tec).
 
-Assumptions were made based on other IT hardware, such as laptops, monitors, servers and networking equipment, to estimate the embodied carbon of such printers. Therefore it seemed reasonable to assume an embodied carbon of 150kgCO2e ± 50kgCO2e and a 4 year lifespan. This gives an amortised value of (150 ÷ 4): 37.5kgCO2e/year. As a GWF-owned device this is 100% attributable.
+Assumptions were made based on other IT hardware, such as laptops, monitors, servers and networking equipment, to estimate the embodied carbon of such printers. Therefore it seemed reasonable to assume an embodied carbon of 150kgCO2e ± 50kgCO2e. As a GWF-owned device this is 100% attributable.
 
 > Some assumptions and guesses needed to be made regarding the embodied carbon of printers as the manufacturers do not publish this data. This certainly reduces the confidence we can have in this carbon emissions estimate, but we *felt* like we made a reasonable assumption.
-
-**Printer embodied carbon emissions total: 37.5kgCO2e/year.**
 
 ---
 
