@@ -83,7 +83,7 @@ Much of this equipment is personally owned by GWF employees, with a Bring Your O
 We started with an outline list regarding the quantity and location of each type of device.
 
 - 6 laptops (3× Germany, 1× UK, 1× Netherlands, 1× Taiwan)
-- <span style="color: red">10 monitors (6× Germany, 3× UK, 1× Taiwan)</span>
+- 8 monitors (3× Germany, 3× UK, 1x Netherlands, 1× Taiwan)</span>
 - 1 small desktop printer (Germany)
 
 ### High level estimate methodology
