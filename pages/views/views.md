@@ -2,6 +2,7 @@
 layout: default
 title: Views
 permalink: views
+published: false
 ---
 
 # Views

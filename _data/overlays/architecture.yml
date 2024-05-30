@@ -31,7 +31,7 @@ CatONetworkDevices:
   description: Principles around maximum utilisation.
   link: '#NetworkDevices'
 
-CatOUserDevices:
+CatOEmployeeDevices:
   selected: true
   description: Apply Power Management configuration.
   link: '#UserDevices'

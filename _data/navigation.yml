@@ -2,8 +2,8 @@
   link: /
 - name: Impact Categories
   link: /categories
-- name: Views
-  link: /views
+# - name: Views # TO BE PUBLSIHED WITH RESPECTIVE PAGES
+#   link: /views
 - name: Resources
   link: /resources
 - name: Glossary

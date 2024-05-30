@@ -2,6 +2,7 @@
 layout: default
 title: Architecture View
 permalink: views/roles/architecture
+published: false
 ---
 
 # Architecture View
