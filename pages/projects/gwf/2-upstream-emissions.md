@@ -5,36 +5,102 @@ permalink: /projects/green-web-foundation/upstream
 project: gwf
 ---
 
-# Estimating the Upstream Emissions (Category U)
+{: #top}
+
+<div class="pb-4">
+{% include categoryLabel.html label="CatU" %}
+</div>
+
+# GWF: Estimating upstream emissions (Category U)
+Read the TCS overview of <a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream">upstream emissions</a> for a primer on this category.
+
+When attemping to estimate Green Web Foundation's digital upstream emissions, we describe the approach used and why for each sub-category.
+
+- [Software](#software)
+- [Employee Hardware](#employee-hardware)
+- [Networking and Infrastructure Hardware](#networking-and-infrastructure-hardware)
+- [Servers and Storage Hardware](#servers-and-storage-hardware)
+
 
 ## Software
 
-We identified some software prominently used by GWF employees. This includes software installed on servers that are used by GWF to provide their services as well as typically used software installed on the employee laptops:
+{% include categoryItem.html item="CatUSoftware" %}
+
+### Estimated emissions
+
+Unknown
+
+Estimate confidence: *n/a - not attempted*
+
+### Agreed scope
+
+We started by identifying the software used most prominently by the GWF team, eg what's in our digital supply chain. We used the team's internal finance tracker to generate a starting list. We realised early on that trying to measure everything was inpractical so looked for the top 5. We agreed that software installed on employee laptops, as well as software installed on GWF controlled servers was in scope. 
+
+The first version of this list we settled on is:
 - Django (server installations)
 - Wordpress (server installations)
 - Zoom
 - Chrome
 - Firefox 
 
-Whilst we had initially planned to investigate and attempt to gather information to allow us to estimate the carbon footprints of this software, it was agreed that gathering this data would be espeically difficult. Due to time constraints, this was ultimately not undertaken.
+### High level estimate methodology
+
+The idea for this was to see what data exists to help us understand the embodied carbon in each piece of software. The key thing is that we know a whole bunch of energy would have been consumed making the software versions we see and use today. We were wondering if we can reflect this in some way in our own digital carbon estimates. 
+
+After a quick internet search for any such information from these suppliers we concluded this is, unsurprisingly, not yet readily available. Due to time constraints, we decided to prioritise our efforts elsewhere.
+
+**How could we improve upon this?**
+
+In an ideal world we would reach out to the relevant software support teams to raise this issue with them. In the absence of data, one of the most useful steps a team can take is to tell a software supplier they are looking for it. 
+
+We also could have looked for any kind of industry benchmarks and extracted some broad assumptions from those. Whilst those would have provided low confidence estimates, that would have been better than nothing.
+
+[To the top](#top)
 
 ## Employee Hardware
 
-For user hardware and devices, we gathered information regarding the number, type and locations of these devices:
+{% include categoryItem.html item="CatUEmployeeHardware" %}
 
-- 6 Laptops (3× Germany, 1× UK, 1× Netherlands, 1× Taiwan)
-- 10 Monitors (6× Germany, 3× UK, 1× Taiwan)
-- 1 Small Desktop Printer (Germany)
+### Estimated emissions
 
-We also ascertained that most of this equipment is personally owned by GWF employees, with a Bring Your Own Device (BYOD) policy. 
+<span style="color: red">TBC</span>
+
+<span style="color: red">Estimate confidence: High</span>
+
+### Agreed scope
+
+We limited the scope to the digital devices that require a power source used by staff on a day to day basis. Specifically this covers:
+
+- Laptops/desktops
+- Monitors
+- Printers
+- Company purchased mobile phones
+
+We agreed that other hardware such as keyboards, mice, landline phones and microphones are out of scope at this point. 
+
+Much of this equipment is personally owned by GWF employees, with a Bring Your Own Device (BYOD) policy enabling use at work. This meant that BYOD devices needed to be in scope as well as those purchased by GWF. 
+
+We started with an outline list regarding the quantity and location of each type of device.
+
+- 6 laptops (3× Germany, 1× UK, 1× Netherlands, 1× Taiwan)
+- <span style="color: red">10 monitors (6× Germany, 3× UK, 1× Taiwan)</span>
+- 1 small desktop printer (Germany)
+
+### High level estimate methodology
+
+Firstly we needed to decide a way to attribute the BYOD emissions to GWF. How much of the emissions are attributable to GWF and how much to the individual?
 
 > Bring Your Own Devcies (BYOD) policies was not something we had yet considered how to account for in the TCS. After further discussions with the Scott Logic Sustainability team and GWF, we came to an agreement as to how we would attribute these devices to the organisation.
 
-Since there is no standard or convention for accounting for carbon emissions of BYODs, it was decided that the responsibility of determining the percentage of attributional carbon to be attributed to GWF for these devices lies solely on GWF's preference, and what they felt was fair. GWF agreed on attributing 70% of the embodied carbon of BYODs to GWFs carbon footprint. Any equipment owned (purchased by GWF for GWF use) would be 100% attributable.
+We couldn't find a standard or convention for accounting for the carbon emissions of BYODs. Therefore, we all decided the best approach was for GWF to decide this for themselves, based on a broad sense of usage and fairness. GWF agreed on attributing 70% of the embodied carbon of BYODs to GWF's carbon footprint. Any equipment purchased by GWF would be 100% attributable to GWF.
 
-### Laptops
+**Laptops**
 
-For the purposes of "beer mat" estimates, we assumed non-specific laptop equipment, using typical, average figures for embodied and operational energy consumption. For laptops, this embodied carbon is 230kgCO2e. This figure is obtained and concluded from multiple research sources and averaging multiple laptop datasheets from Dell, Hewlett-Packard (HP) and Apple.
+To start with we assumed non-specific equipment. We sourced an average embodied carbon figure of 230kgCO2e. This figure came from averaging multiple laptop datasheets from Dell, Hewlett-Packard (HP) and Apple (<span style="color: red">can we link to some examples, or better yet specifics of where people can find these?</span>). This was cross-referenced against multiple research sources to check the number was in the right ballpark. We were not seeking high degrees of accuracy at this point and felt this was good enough.
+
+<span style="color: red">*This might need a bit of an overhaul now we've amended our approach here?*</span>
+
+<div style="color: blue;">
 
 With only a single laptop owned by GWF and the other five being BYODs, we attribute 100% of the embodied carbon to one laptop, and 70% to the other five.
 
@@ -46,23 +112,90 @@ To keep it a simple, high-level estimation, we have not taken into account that 
 
 > Older, re-used and refurbished equipment would have a further positive impact on the amortisation calculations, reducing the embodied carbon footprint further.
 
+</div>
 
-### Monitors
+**Monitors**
 
-For monitors we used a typical, average embodied carbon of 355kgCO2e. Of the 10 monitors used, four of those are wholly owned by GWF, the remaining six are BYODs. 
+For monitors we used a typical, average embodied carbon of 355kgCO2e. <span style="color: red">Can we assume a similar approach for coming up with this average number as with laptops - can we elaborate a little?</span> 
+
+<span style="color: red">*This might need a bit of an overhaul now we've amended our approach here?*</span>
+
+<div style="color: blue;">
+
+Of the 10 monitors used, four of those are wholly owned by GWF, the remaining six are BYODs. 
 
 $$ 4 \times (355kgCO_2e \times 1) + 6 \times (355kgCO_2e \times 0.7) = 2911kgCO_2e $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
+</div>
 
-## Printers
+**Printers**
 
 We identified a single printer located in the Germany office. This is a home/ small office all-in-one inkjet printer, copier, and scanner. Unfortunately, however, we could find little (substantiated) data or research[^1],[^2], on printers (in a short period of time). As a high-level, “beer mat” estimate, a single small printer with (assuming) light use, it didn’t seem necessary to spend much time researching further. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. The printer manufacturers do not offer carbon estimates for these devices; they only offer energy use (standby and whilst printing) and [Typical Energy Consumption](/glossary#typical-energy-consumption-tec).
 
 Assumptions were made based on other IT hardware, such as laptops, monitors, servers and networking equipment, to estimate the embodied carbon of such printers. Therefore it seemed reasonable to assume an embodied carbon of 150kgCO2e ± 50kgCO2e. As a GWF-owned device this is 100% attributable.
 
 > Some assumptions and guesses needed to be made regarding the embodied carbon of printers as the manufacturers do not publish this data. This certainly reduces the confidence we can have in this carbon emissions estimate, but we *felt* like we made a reasonable assumption.
+
+**How could we improve upon this?**
+
+After looking at these high level estimates in comparison to the other categories, we decided to go further and produce details estimates based on specifics.
+
+
+### Detailed estimate methodology
+
+<span style="color: red">TBC</span>
+
+[To the top](#top)
+
+
+## Networking and Infrastructure Hardware
+
+{% include categoryItem.html item="CatUNetworkHardware" %}
+
+### Estimated emissions
+
+<span style="color: red">TBC</span>
+
+<span style="color: red">Estimate confidence: Medium</span>
+
+### Agreed scope
+
+We started by identifying what office space GWF employees regularly use. There is dedicated office space in Berlin, and another co-working space in the UK. We decided not to include the home routers that staff use when working from home. Our reasoning being they would have these devices regardless of their work with GWF. We found out what networking equipment was in each office and used that as our starting point.
+
+### High level estimate methodology
+
+To calculate the embodied carbon, we found a (research paper from 2021)[https://www.sciencedirect.com/science/article/pii/S0921344921005607]. This gives a value of 171.7 kgCO2e, which we felt was robust enough for producing an initial estimate. However, we were surprised by this value as it was higher than expected. 
+
+<span style="color: red">*Is this correct?*</span>
+
+<div style="color: blue;">
+
+We assume a life span of 5 years for the routers and divide the embodied carbon by the lifespan to arrive at an amortised carbon total (one fifth of the embodied carbon for each of the five years). As one of the offices is shared, we only take a third of this carbon total for that office. 
+
+</div>
+
+**How could we improve upon this?**
+
+If we were looking at more networking hardware in a larger organisation, we could have found more research sources or attempted our own calculations based on weight and materials.
+
+## Servers and Storage Hardware
+
+{% include categoryItem.html item="CatUServerHardware" %}
+
+### Estimated emissions
+
+**0**
+
+<span style="color: red">Estimate confidence: High</span>
+
+### Agreed scope
+
+GWF does not own any of it's own servers or storage hardware. We agreed to take this category out of scope.
+
+[To the top](#top)
+
 
 ---
 
