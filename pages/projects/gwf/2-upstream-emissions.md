@@ -96,9 +96,10 @@ We couldn't find a standard or convention for accounting for the carbon emission
 
 **Laptops**
 
-To start with we assumed non-specific equipment. We sourced an average embodied carbon figure of 230kgCO2e. This figure came from averaging multiple laptop datasheets from Dell, Hewlett-Packard (HP) and Apple (<span style="color: red">can we link to some examples, or better yet specifics of where people can find these?</span>). This was cross-referenced against multiple research sources to check the number was in the right ballpark. We were not seeking high degrees of accuracy at this point and felt this was good enough.
+To start with we assumed non-specific equipment. We sourced an average embodied carbon figure of 230kgCO2e. This figure came from averaging multiple laptop datasheets from [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm), [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) and [Apple](https://www.apple.com/environment/) (<span style="color: red">~~can we link to some examples, or better yet specifics of where people can find these?~~</span> ✅). This was cross-referenced against multiple research sources to check the number was in the right ballpark. We were not seeking high degrees of accuracy at this point and felt this was good enough. The Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) data sheets typically provide a breakdown of carbon emissions during the products full life cycle, including it's usage. We remove the usage carbon emissions value (around 20%) from the total carbon footprint leaving us a value for manufacture, transport and end of life. We use this value as the embodied carbon value.
 
 <span style="color: red">*This might need a bit of an overhaul now we've amended our approach here?*</span>
+<span style="color: coral">*- DR: This is the beer mat estimate approach, ignoring amortisation - but it does still assume all devices acquired (ie. not for this accounting period). It's a weird one because the later detailed estimates have come back around to drive the old beer mat estimate - which originally was amortised (which we now realise is wrong).*</span>
 
 <div style="color: blue;">
 
@@ -108,7 +109,7 @@ $$ (230kgCO_2e \times 1) + 5 \times (230kgCO_2e \times 0.7) = 1035kgCO_2e $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-To keep it a simple, high-level estimation, we have not taken into account that some of this equipment is refurbished, older and second-hand hardware. The laptops are simply assumed to be up to 5 years old and have a refresh cycle of 5 years. 
+To keep it a simple, high-level estimation, we have not taken into account that some of this equipment is refurbished, older and second-hand hardware. This also assumes all laptops accountable this year, and not just laptops acquired this accounting year. The laptops are simply assumed to be up to 5 years old and have a refresh cycle of 5 years. 
 
 > Older, re-used and refurbished equipment would have a further positive impact on the amortisation calculations, reducing the embodied carbon footprint further.
 
@@ -116,15 +117,16 @@ To keep it a simple, high-level estimation, we have not taken into account that 
 
 **Monitors**
 
-For monitors we used a typical, average embodied carbon of 355kgCO2e. <span style="color: red">Can we assume a similar approach for coming up with this average number as with laptops - can we elaborate a little?</span> 
+For monitors we used a typical, average embodied carbon of 355kgCO2e. This figure is derived from data by [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm) and [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) 24-inch monitors.
 
 <span style="color: red">*This might need a bit of an overhaul now we've amended our approach here?*</span>
+<span style="color: coral">*- DR: As per above.*</span>
 
 <div style="color: blue;">
 
-Of the 10 monitors used, four of those are wholly owned by GWF, the remaining six are BYODs. 
+Of the 8 monitors used, one of those are wholly owned by GWF, the remaining seven are BYODs. 
 
-$$ 4 \times (355kgCO_2e \times 1) + 6 \times (355kgCO_2e \times 0.7) = 2911kgCO_2e $$
+$$ 1 \times (355kgCO_2e \times 1) + 7 \times (355kgCO_2e \times 0.7) = 2094kgCO_2e $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
@@ -166,15 +168,19 @@ We started by identifying what office space GWF employees regularly use. There i
 
 ### High level estimate methodology
 
-To calculate the embodied carbon, we found a (research paper from 2021)[https://www.sciencedirect.com/science/article/pii/S0921344921005607]. This gives a value of 171.7 kgCO2e, which we felt was robust enough for producing an initial estimate. However, we were surprised by this value as it was higher than expected. 
+To calculate the embodied carbon, we found a [research paper from 2021](https://www.sciencedirect.com/science/article/pii/S0921344921005607). This gives a value of 171.7kgCO<sub>2</sub>e, which we felt was robust enough for producing an initial estimate. However, we were surprised by this value as it was higher than expected. 
 
-<span style="color: red">*Is this correct?*</span>
-
-<div style="color: blue;">
-
-We assume a life span of 5 years for the routers and divide the embodied carbon by the lifespan to arrive at an amortised carbon total (one fifth of the embodied carbon for each of the five years). As one of the offices is shared, we only take a third of this carbon total for that office. 
-
+<div style="text-decoration-line: line-through;">
+  <span style="color: red">*Is this correct?*</span>
+  
+  <div style="color: blue;">
+    We assume a life span of 5 years for the routers and divide the embodied carbon by the lifespan to arrive at an amortised carbon total (one fifth of the embodied carbon for each of the five years). As one of the offices is shared, we only take a third of this carbon total for that office.
+  </div>
 </div>
+
+As one of the offices is a co-shared space with two others, so we simply attributed 33.3% of the office router's embodied carbon to GWF. The router dedicated to the GWF office attributes it's full embodied carbon to GWF.
+
+$$ (171.7kgCO_2e \times 0.333) + 171.7kgCO_2e = 229kgCO_2e $$
 
 **How could we improve upon this?**
 
@@ -192,7 +198,7 @@ If we were looking at more networking hardware in a larger organisation, we coul
 
 ### Agreed scope
 
-GWF does not own any of it's own servers or storage hardware. We agreed to take this category out of scope.
+GWF does not own any of it's own servers or storage hardware, <span style="color: coral;">~~We agreed to take this category out of scope.~~</span> so, there are no carbon emissions to report in this category.  
 
 [To the top](#top)
 
