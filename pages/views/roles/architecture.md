@@ -98,7 +98,7 @@ As well as the general application design patterns senior architects can drive v
 
 {% include categoryLabel.html label="CatC" %}
 
-All the indirect solutions involve a vendor and so it is important that archtects, where involved in vendor selection include carbon non functional requirements. This should include both how the vendor reports emissions but also the level of their emissions and how "green" their electricity is.
+All the indirect solutions involve a vendor and so it is important that architects, where involved in vendor selection include carbon non functional requirements. This should include both how the vendor reports emissions but also the level of their emissions and how "green" their electricity is.
 
 {% include categoryItem.html item="CatCCloud" id="Cloud" noLink=true %}
 
