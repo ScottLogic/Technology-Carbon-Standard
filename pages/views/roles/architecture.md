@@ -70,7 +70,7 @@ In the embodied section we talked about hardware selection maximising lifetime a
 
 {% include categoryItem.html item="CatOEmployeeDevices" id="EmployeeDevices" noLink=true %}
   
-Where architects are involved in workforce IT like employee devices there's a few of areas they can influence:
+Where architects are involved in workforce IT like employee devices there's a few areas they can influence:
 
 - Like servers and other infra prefer devices with low operational power, e.g. an ARM chip device if an option.
 - Put requirements on device power management. Ensure there is proper testing of device configuration such that laptops run in low power modes when with low activity and go to sleep quickly.
