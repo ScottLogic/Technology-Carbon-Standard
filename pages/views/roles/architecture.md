@@ -84,7 +84,7 @@ Where there's virtual networking functions running purely as software the same u
 
 Having application principles to minimise data transfer can reduce the amount of network traffic and even if this makes only a small reduction to the energy usage of switches and routers it may slow the need to add more hardware during growth. e.g. gRPC, persistent TCP connections.
 
-Patterns like multi-cast for video can be pursued to reduce network capacity needs in the data centre (and ISP). Similarly large file transfers can be architected to take the most direct route without intermediary systems reducing network emissions and costs. A preference for larger more monolithic applications may also reduce network traffic - but can be other costs.
+Patterns like multi-cast for video can be pursued to reduce network capacity needs in the data centre (and ISP). Similarly large file transfers can be architected to take the most direct route without intermediary systems reducing network emissions and costs. A preference for larger more monolithic applications may also reduce network traffic - but can have other costs.
 
 {% include categoryItem.html item="CatOServers" id="Servers" noLink=true %}
 
