@@ -9,7 +9,7 @@ published: false
 
 {% include carbonStandard.html variant=site.data.overlays.architecture hideOutOfScope=true %}
 
-As an architect you can exert significant influence on a company's tech carbon emissions. You might be a technical/solutions/enterprise/other architect and although the scope of responsibility can vary across roles there's many activities common to all where you can make a difference to carbon emissions inlcuding:
+As an architect you can exert significant influence on a company's tech carbon emissions. You might be a technical/solutions/enterprise/other architect and although the scope of responsibility can vary across roles, there are many activities common to all where you can make a difference to carbon emissions including:
 
 - Setting the tech strategy
 - Promoting best practice and setting tech principles
