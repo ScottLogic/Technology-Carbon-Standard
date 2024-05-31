@@ -51,7 +51,7 @@ All software creation comes with a cost and the first thing you might decide to 
 
 Any hardware you buy in or acquire from data centre servers to employee laptops required energy produced emissions in manufacture and transport. Not all architects will get involved in hardware selection - servers and network equipment may fall under data centre architects for example. Where you do though you can apply pressure to ensure there is a low carbon strategy for:
 
-- Renewal cycles: i.e. how often we should replace hardware. Less hardware bought per year is less emissions
+- Renewal cycles: i.e. how often we should replace hardware. Less hardware bought per year is less emissions.
 - Recycling. Check the criteria under which your current disposal partners were selected and if recycling and low energy usage were not considerations make sure they are next time the contrcats come around.
 - Procurement. Do the procurement teams understand the emissions with each item they supply? If not kick-off an initiative to look at this and ensure equipment is bought with a known embodied carbon and ideally a target to keep it under.
 
