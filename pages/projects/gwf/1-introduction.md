@@ -14,6 +14,8 @@ TBD
 
 For the purpose of this project and mapping the GWF technology estate to the TCS, we are calculating the final figures to **kgCO2e/year**. We will typically use **kW** and **kWhs** when quoting energy use and consumption. Carbon intensity is typically quoted in **gCO2e/kWh**.
 
+We're rounding values of the calculations used which may lead to some rounding errors and variation in the results.
+
 ### Regional Carbon Intensity
 
 Given that GWF employees are positioned around the world, we use the regional electricity grid’s carbon intensity to calculate the operational carbon emissions. The following regional carbon intensities are used:
