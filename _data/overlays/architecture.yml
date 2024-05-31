@@ -9,7 +9,7 @@ CatUSoftware:
 CatUEmployeeHardware:
   selected: true
   description: Renewal cycles, recycling, low carbon hardware.
-  link: '#UserHardware'
+  link: '#EmployeeHardware'
 
 CatUNetworkHardware:
   selected: true
