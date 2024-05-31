@@ -61,7 +61,7 @@ Whether you are running in the cloud or on-prem architects can promote architect
 
 They will work with dev-ops or developers or date centre engineers on tech strategies and should ensure carbon emissions are parts of those strategies.
 
-Observability is a key part of technical strategy that requires a joined up apprach between dev-ops, development and operations and architects should promote energy observability as part of this.
+Observability is a key part of technical strategy that requires a joined up approach between dev-ops, development and operations and architects should promote energy observability as part of this.
 
 ### Direct
 {% include categoryLabel.html label="CatO" %}
