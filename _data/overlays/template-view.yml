@@ -44,7 +44,7 @@ CatONetworkDevices:
   link:
   noLink: false
 
-CatOUserDevices:
+CatOEmployeeDevices:
   selected: false
   description:
   link:
