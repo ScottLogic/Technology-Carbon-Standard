@@ -45,7 +45,7 @@ The architect is at the center of vendor selection and so can promote green requ
 All software creation comes with a cost and the first thing you might decide to do is to trade off open source and COTS software against in-house. Some of the in-house software carbon costs are out of the scope in this standard because they are non-technology items like buildings and transport for employees. Still they count in the overall picture of your org and if 1 company creates software that's less emissions than if 20 companies all create the same software. You may also wish to prefer vendors who report on their emissions and follow sustainability best practices in order to push software and machine learning model creators to be more sustainable. e.g. training models with renewable electricity.
 
 ### Hardware Manufacture, Transport and Installation
-{% include categoryItem.html item="CatUEmployeeHardware" id="UserHardware" noLink=true %}
+{% include categoryItem.html item="CatUEmployeeHardware" id="EmployeeHardware" noLink=true %}
 {% include categoryItem.html item="CatUNetworkHardware" id="NetworkHardware" noLink=true %}
 {% include categoryItem.html item="CatUServerHardware" id="ServerHardware" noLink=true %}
 
