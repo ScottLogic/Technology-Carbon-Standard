@@ -34,7 +34,7 @@ CatONetworkDevices:
 CatOEmployeeDevices:
   selected: true
   description: Apply Power Management configuration.
-  link: '#UserDevices'
+  link: '#EmployeeDevices'
 
 CatGGenerators:
   selected: false
