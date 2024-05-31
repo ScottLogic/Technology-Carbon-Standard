@@ -7,7 +7,7 @@ published: false
 
 # Views
 
-Here, you can find some created views that look at the Tech Carbon Standard with a particular lens. Each view identifies and highlights the elements of the Technology Carbon Standard that are considered most relavant or impactful. You can use these views to direct you to the aspects of the Standard to help you get started and focus your effort on them.
+Here, you can find some created views that look at the Tech Carbon Standard with a particular lens. Each view identifies and highlights the elements of the Technology Carbon Standard that are considered most relevant or impactful. You can use these views to direct you to the aspects of the Standard to help you get started and focus your effort on them.
 
 ## Roles
 
