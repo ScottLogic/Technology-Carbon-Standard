@@ -118,7 +118,7 @@ GWF do not use any of their own servers or storage equipment on premise. We can 
 ## Generators
 {% include categoryItem.html item="CatGGenerators" %}
 
-GWF do notoperate any generators on premise, so again this can be reported as zero.
+GWF do not operate any generators on premise, so again this can be reported as zero.
 
 **Total carbon emissions for Generators: 0kgCO<sub>2</sub>e/year**
 
@@ -126,11 +126,8 @@ GWF do notoperate any generators on premise, so again this can be reported as ze
 ## Cloud Services
 {% include categoryItem.html item="CatCCloud" %}
 
-When considering cloud services, we need to think about VMs, storage and server back-end services for GWF.
-
-All of this is hosted in Hetzner and Scaleway. Unfortunately, we don’t have any good data for doing basic estimation of the carbon emissions of these services.
-
-In the absence of easy to find data, we decided to do an approximation by using AWS as a proxy.
+### Hetzner Cloud Services
+When considering cloud services, we need to think about VMs, storage and server back-end services for GWF. All of this is hosted in Hetzner and Scaleway. Unfortunately, we don’t have any good data for doing basic estimation of the carbon emissions of these services. In the absence of easy to find data, we decided to do an approximation by using AWS as a proxy.
 
 For the VMs, we mapped the server instances that GWF were using to equivalent appliances in AWS. Where there was no direct match, we mapped to the next service up that would still meet the services needs. During this mapping exercise we observed that Hetzner offers far more granular server specifications than AWS. AWS seems designed to push you up the appliance sizes faster. If you want more memory, you have to also take more virtual CPUs, regardless of if they are needed or not.
 
@@ -148,26 +145,41 @@ $$ $59.36/month \times 0.270373921kWh/USD \times 12months = 192.59kWh/year $$
 
 $$ $32.40/month \times 0.233471074kWh/USD \times 12months = 90.77kWh/year $$
 
-Finally for the data storage in Hetzner we use a value of 0.0012kW/TB. <span style="color: coral"><SOURCE TBC></span>
-We a total volume of 0.89TB of data stored we can calculate a yearly kWh:
+For the data storage in Hetzner we assume the use of SSD storage and use a value of 0.0012kWh/TBh from [Cloud Carbon Footprint Storage Methodology](https://www.cloudcarbonfootprint.org/docs/methodology/#storage).
+With a total volume of 0.89TB of data storage we can calculate a yearly kWh:
 
-$$ 0.89TB \times 0.0012kWh/TB \times 24hrs \times 365days = 9.36kWh/year $$
+$$ 0.89TB \times 0.0012kWh/TBh \times 24hrs \times 365days = 9.36kWh/year $$
 
-So a total kWh per year using Hetzner cloud services: 292.72kWh/year. 
+So a total kWh per year using Hetzner cloud services: 292.72kWh/year.
 
-We can then multiply this by the regional carbon intensity to calculate the carbon emissions. In this case Hetzner powers their servers from 100% renewable energy. In the case of the German data center, it is powered by hydro-electricity. To account for this we use a carbon intensity of 0.041kgCO<sub>2</sub>e/kWh. The operational carbon emissions of using Hetzner cloud:
+We can then multiply this by the regional carbon intensity to calculate the carbon emissions. In this case Hetzner powers their servers from 100% renewable energy. In the case of the German data center, it is powered by hydro-electricity. To account for this we use a carbon intensity of 0.041kgCO<sub>2</sub>e/kWh. 
+
+The operational carbon emissions of using Hetzner cloud:
 
 $$ 292.72kWh/year \times 0.041kgCO_2e/kWh = 12kgCO_2e/year $$
 
-We add to this the embodied carbon of the cloud servers:
+<span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
+
+We add to this the embodied carbon of the cloud servers for a total carbon emissions for Hetzner services:
 
 $$ 13.08kgCO_2e/year + 6.15kgCO_2e/year + 12kgCO_2e/year = 31.23kgCO_2e/year $$
 
-GWF has three volumes for storage, using approximately 3TB of data. To estimate this we used the CCF Methodology for Storage. 
+### Scaleway Cloud Services
 
-Finally, all the components of the carbon estimated were totaled and all added Operational (including the embodied carbon as under the TCS this is all added to Category O).
+Scaleway is just for block storage, so we used the same methodology as for the storage in Hetzner. One difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour. Typically GWF uses 463.58TBhours of data per month, assuming again the use of SSD storage and using the CCF methodology
 
-Scaleway is just for block storage, so I used the same methodology as for the storage in Hetzner. One difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour, so they use slightly different conversion calculations to get the kW hours.
+$$ 463.58TBh \times 0.0012kWh/TBh \times 12months = 6.68kWh/year $$
+
+[Scaleway also uses sustainable energy sources](https://www.scaleway.com/en/environmental-leadership/) (100% wind or hydro). So, we'll use the hyro-power carbon intensity of 0.041kgCO<sub>2</sub>e/kWh:
+
+$$ 6.68kWh/year \times 0.041kgCO_2e/kWh = 0.27kgCO_2e/year $$
+
+<span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
+
+**Total carbon emissions for Cloud services: 31.5kgCO<sub>2</sub>e/year**
+
+
+
 
 
 
