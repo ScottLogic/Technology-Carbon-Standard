@@ -1,0 +1,93 @@
+# All the category items are optional. Anything values removed or left empty will fallback to the master 'caronStandard.yml' file.
+
+# Optionally change the title of the infographic. Defaults to the carbonStandard.title otherwise.
+title:
+
+# selected (boolean) - to highlight the category item. Used in overlay views to bring attention to the item.  (default: false)
+# description (string) - adds a descriptive text to the item. Useful for adding additional context. Please keep as short as possible. (default: empty)
+# link (string) - a url passed to the item to make it a link. Useful for linking to sections in the same page. (default: defers to the master category page link)
+# noLink - set to true to prevent linking to anything at all. This overrides the default link. (default: false)
+
+CatUSoftware:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatUEmployeeHardware:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatUNetworkHardware:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatUServerHardware:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatOServers:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatONetworkDevices:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatOEmployeeDevices:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatGGenerators:
+  selected: false
+  description:
+  noLink:
+  noLink: false false
+
+CatCCloud:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatCSaas:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatCManaged:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatDEndUserDevices:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatDNetworkDataTransfer:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatDInfrastructure:
+  selected: false
+  description:
+  link:
+  noLink: false
