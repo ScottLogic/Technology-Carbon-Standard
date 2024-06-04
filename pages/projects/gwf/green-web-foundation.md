@@ -7,11 +7,11 @@ project: gwf
 
 # Green Web Foundation
 
-Introduction to the project with Green Web Foundation...
+As long-term advocates for the benefits of open-source, Green Web Foundation (GWF) and Scott Logic partnered on this project. The project set out to use the TCS framework to estimate GWF's digital estate, fully documenting the decisions, methodology and learning points as they went so others could learn from their experience. 
 
-Maybe include our diagram here?
+This project write-up is the result of this collaboration.
 
-1. [Introduction](introduction)
+1. [Overview](overview)
 1. [Data Assumptions](data-assumptions)
 1. [Upstream Emissions](upstream)
 1. [Operational Emissions](operational)
