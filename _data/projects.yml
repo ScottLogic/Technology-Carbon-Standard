@@ -4,6 +4,8 @@ gwf:
   nav:
   - name: Introduction
     link: /projects/green-web-foundation/introduction
+  - name: Data assumptions
+    link: /projects/green-web-foundation/data-assumptions
   - name: Upstream Emissions
     link: /projects/green-web-foundation/upstream
   - name: Operational Emissions

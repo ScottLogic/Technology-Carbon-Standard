@@ -12,6 +12,7 @@ Introduction to the project with Green Web Foundation...
 Maybe include our diagram here?
 
 1. [Introduction](introduction)
+1. [Data Assumptions](data-assumptions)
 1. [Upstream Emissions](upstream)
 1. [Operational Emissions](operational)
 1. [Downstream Emissions](downstream)
