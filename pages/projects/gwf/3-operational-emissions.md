@@ -73,7 +73,6 @@ $$ 30.1kWh/year \times 0.566kgCO_2e/kWh = 17.04kgCO_2e/year $$
 For monitors we used an average TEC of 45kWh/year obtained from Dell and HP PCF data sheets. As per the laptop calculations above we multiply this by the regional grid carbon intensity.
 
 
-
 **How could we improve upon this?**
 <span style="color: coral">*TBD*</span>
 
@@ -176,18 +175,36 @@ $$ 6.68kWh/year \times 0.041kgCO_2e/kWh = 0.27kgCO_2e/year $$
 
 <span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
 
-**Total carbon emissions for Cloud services: 31.5kgCO<sub>2</sub>e/year**
-
-
-
+**Total carbon emissions for Hetzner and Scaleway Cloud services: 31.5kgCO<sub>2</sub>e/year**
 
 
 
 ## SaaS Services
 {% include categoryItem.html item="CatCSaas" %}
 
+Unknown
+
+Estimate confidence: *n/a - not attempted*
+
 ## Managed Services
 {% include categoryItem.html item="CatCManaged" %}
+
+GWF use Cloudflare for content delivery network (CDN). We agreed to put this CDN service into the managed services category, but it could just as easily belong to the Cloud Services category instead.
+
+Cloudflare operate a (market-based) net-zero carbon service via Renewable Energy and Offset Purchases. So whilst we can report that GWF's CDN services for carbon emissions as zero, we did consider how to calculate the emissions for a CDN. Our brief research and thoughts given the little time we had to focus on this brought up two peices of information.
+
+1. [Cloudflare's Emissions Inventory for 2022](https://cf-assets.www.cloudflare.com/slt3lc6tev37/65gCD3up047PMsHB9aXEYN/d3d719c0f9f493f82e4fec9dab250e6d/Cloudflare_2022_Emissions_Inventory.pdf) - indicates that Cloudflare's total emissions was 21,000MTCO<sub>2</sub>e for 2022
+1. [Cloudflare Stats for 2023](https://backlinko.com/cloudflare-users) - shows that Cloudflare (as of August 2023) has 7.59million active websites.
+
+We can simply divide the carbon emissions by the number of active websites to get an average carbon emission per website per year:
+
+$$ (21,0000MTCO_2e/year \times 1000) ÷ 7,590,000 = 2.77kgCO2e/year/website $$
+
+2.77kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to estimate emissions of CDNs.
+
+In GWF's scenario however, we zero the carbon emissions based on the market-based net-zero value of Cloudflare.
+
+**Total carbon emissions for Managed Services: 0kgCO<sub>2</sub>e/year**
 
 
 ---
