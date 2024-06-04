@@ -15,6 +15,20 @@ project: gwf
 
 # Estimating the Operational Emissions (Categories O, G, and C)
 
+Read the TCS overview of <a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/operational">operational emissions</a> for a primer on this category.
+
+When attemping to estimate Green Web Foundation's digital upstream emissions, we describe the approach used and why for each sub-category.
+
+- [Employee Devices](#employee-devices)
+- [Networking and Infrastructure](#networking-and-infrastructure)
+- [Servers and Storage](#servers-and-storage)
+- [Generators](#generators)
+- [Cloud Services](#cloud-services)
+- [SaaS Services](#saas-services)
+- [Managed Services](#managed-services)
+
+---
+
 ## Employee Devices
 {% include categoryItem.html item="CatOEmployeeDevices" %}
 
@@ -81,6 +95,9 @@ The operational hours of the laptops and montitors did not take into account the
 ### Detailed estimate methodology
 <span style="color: coral">*DR: Detailed Estimates - here, or link to another page?*</span>
 
+[To the top](#top)
+
+---
 
 ## Networking and Infrastructure
 {% include categoryItem.html item="CatONetworkDevices" %}
@@ -107,12 +124,20 @@ $$ 25.36kgCO_2e/year \times 0.333 = 8.44kgCO_2e/year $$
 
 **Total carbon emissions for networking and infrastructure: 40.33kgCO<sub>2</sub>e/year**
 
+[To the top](#top)
+
+---
+
 ## Servers and Storage
 {% include categoryItem.html item="CatOServers" %}
 
 GWF do not use any of their own servers or storage equipment on premise. We can simply report the carbon emissions of this category as zero.
 
 **Total carbon emissions for Servers and Storage: 0kgCO<sub>2</sub>e/year**
+
+[To the top](#top)
+
+---
 
 ## Generators
 {% include categoryItem.html item="CatGGenerators" %}
@@ -121,6 +146,9 @@ GWF do not operate any generators on premise, so again this can be reported as z
 
 **Total carbon emissions for Generators: 0kgCO<sub>2</sub>e/year**
 
+[To the top](#top)
+
+---
 
 ## Cloud Services
 {% include categoryItem.html item="CatCCloud" %}
@@ -177,7 +205,9 @@ $$ 6.68kWh/year \times 0.041kgCO_2e/kWh = 0.27kgCO_2e/year $$
 
 **Total carbon emissions for Hetzner and Scaleway Cloud services: 31.5kgCO<sub>2</sub>e/year**
 
+[To the top](#top)
 
+---
 
 ## SaaS Services
 {% include categoryItem.html item="CatCSaas" %}
@@ -185,6 +215,10 @@ $$ 6.68kWh/year \times 0.041kgCO_2e/kWh = 0.27kgCO_2e/year $$
 Unknown
 
 Estimate confidence: *n/a - not attempted*
+
+[To the top](#top)
+
+---
 
 ## Managed Services
 {% include categoryItem.html item="CatCManaged" %}
@@ -206,6 +240,7 @@ In GWF's scenario however, we zero the carbon emissions based on the market-base
 
 **Total carbon emissions for Managed Services: 0kgCO<sub>2</sub>e/year**
 
+[To the top](#top)
 
 ---
 
