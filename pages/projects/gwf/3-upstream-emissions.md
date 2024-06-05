@@ -110,7 +110,7 @@ To keep things simple for this high-level estimate we assumed the following:
 - A laptop's expected life is 5 years at GWF (industry standard is often cited as 4 years). 
 - [Amortisation](/glossary#amortisation) of embodied emissions was appropriate for a [high-level estimate](assumptions#high-level-estimates) - more on this below.
 
-With only 1 laptop owned by GWF and the other 5 being BYODs, we attribute 100% of the embodied carbon to one laptop, and 70% to the other five.
+For the six laptops identified, only 1 laptop is owned by GWF and the other 5 are BYODs. We attribute 100% of the embodied carbon to 1 laptop, and 70% to the other 5.
 
 $$ (230\ kgCO_2e \times 1) + 5 \times (230\ kgCO_2e \times 0.7) = 1035\ kgCO_2e $$
 
@@ -121,32 +121,53 @@ $$ (230\ kgCO_2e \times 1) + 5 \times (230\ kgCO_2e \times 0.7) = 1035\ kgCO_2e 
 
 The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, as laptops are assumed to be replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure.
 
-$$ 1035\ kgCO_2e / 5 = 207\ kgCO_2e  $$
+$$ 1035\ kgCO_2e ÷ 5 = 207\ kgCO_2e  $$
 
 </div>
 
 **Monitors**
 
-For monitors we used a typical, average embodied carbon of 355kgCO2e. This figure is derived from data by [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm) and [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) 24-inch monitors.
+The approach for getting an average embodied carbon value for monitors was very similar to that of laptops. We derived data from PCFs by [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm) and [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) 24-inch monitors.
 
-<span style="color: red">*This might need a bit of an overhaul now we've amended our approach here?*</span>
-<span style="color: coral">*- DR: As per above.*</span>
+The average embodied carbon figure we used was **355kgCO2e**.
+
+We applied the same assumptions we made for laptop to the monitors.
+
+<span style="color: red">DAVID PLEASE CHECK THIS</span>
 
 <div style="color: blue;">
 
-Of the 8 monitors used, one of those are wholly owned by GWF, the remaining seven are BYODs. 
+Of the 8 monitors used, 1 is wholly owned by GWF, the remaining 7 are BYODs. 
 
 $$ 1 \times (355\ kgCO_2e \times 1) + 7 \times (355\ kgCO_2e \times 0.7) = 2094\ kgCO_2e $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
+The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, and we assume monitors are replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure.
+
+$$ 2094\ kgCO_2e ÷ 5 = 419\ kgCO_2e  $$
+
 </div>
 
 **Printers**
 
-We identified a single printer located in the Germany office. This is a home/ small office all-in-one inkjet printer, copier, and scanner. Unfortunately, however, we could find little (substantiated) data or research[^1],[^2], on printers (in a short period of time). As a high-level, “beer mat” estimate, a single small printer with (assuming) light use, it didn’t seem necessary to spend much time researching further. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. The printer manufacturers do not offer carbon estimates for these devices; they only offer energy use (standby and whilst printing) and [Typical Energy Consumption](/glossary#typical-energy-consumption-tec).
+We identified a single printer located in the Germany office. This is a home/ small office all-in-one inkjet printer, copier, and scanner. Unfortunately, however, we could find little (substantiated) data or research[^1],[^2], on printers in the time available. 
 
-Assumptions were made based on other IT hardware, such as laptops, monitors, servers and networking equipment, to estimate the embodied carbon of such printers. Therefore it seemed reasonable to assume an embodied carbon of 150kgCO2e ± 50kgCO2e. As a GWF-owned device this is 100% attributable.
+As a high-level, “beer mat” estimate, a single small printer with (assuming) light use, it didn’t seem necessary to spend much time researching further. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. 
+
+Printer manufacturers do not appear to offer carbon estimates for these devices. Instead they only offer energy use (standby and whilst printing) and [Typical Energy Consumption](/glossary#typical-energy-consumption-tec).
+
+Assumptions were made based on other IT hardware, such as laptops, monitors, servers and networking equipment, to estimate the embodied carbon of such printers.
+
+<span style="color: red">DAVID: I'm curious about why this is 150 + 50 - what's your logic here? Coudl be easier just to say 200 and keep it simpler?</span>
+
+The average embodied carbon figure we used was **150kgCO2e ± 50kgCO2e**. 
+
+As a GWF-owned device this is 100% attributable, and was amortised over 5 years (assumed expected life).
+
+<span style="color: red">DAVID PLEASE CHECK THIS</span>
+
+$$ 1 \times 200\ kgCO_2e ÷ 5 = 40\ kgCO_2e $$
 
 > Some assumptions and guesses needed to be made regarding the embodied carbon of printers as the manufacturers do not publish this data. This certainly reduces the confidence we can have in this carbon emissions estimate, but we *felt* like we made a reasonable assumption.
 
