@@ -12,8 +12,8 @@ As long-term advocates for the benefits of open-source, Green Web Foundation (GW
 This project write-up is the result of this collaboration.
 
 1. [Overview](overview)
-1. [Data Assumptions](data-assumptions)
+1. [Assumptions](data-assumptions)
 1. [Upstream Emissions](upstream)
 1. [Operational Emissions](operational)
 1. [Downstream Emissions](downstream)
-1. [Detailed Employee Hardware Estimates](detailed-hardware)
+1. [Reducing impact](reducing-impact)
