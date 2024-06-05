@@ -47,25 +47,25 @@ We started with an outline list regarding the quantity and location of each type
 #### Laptops
 We used an averge operational power use of 17.1W for laptops, based on data collected from manufacturer PCF data sheets, and [research](/information/lifecycle/example/employee#usage-carbon-emissions). We assume 1760hrs operational hours per year (based on 8hrs per day x 220 days per year). Therefore we can calculate an average [TEC](/glossary#typical-energy-consumption-tec) for laptops as:
 
-$$ 0.0171kWh \times 1760hrs = 30.1kWh/year $$
+$$ 0.0171\ kWh \times 1760\ hrs = 30.1\ kWh/year $$
 
 To calculate the estimated emissions of each laptop we multiply the TEC/year with the regional grid carbon intensity:
 
 **Germany (3 laptops, 0.364kgCO<sub>2</sub>e/kWh)**
 
-$$ 3 \times (30.1kWh/year \times 0.364kgCO_2e/kWh) = 32.87kgCO_2e/year $$
+$$ 3 \times (30.1\ kWh/year \times 0.364\ kgCO_2e/kWh) = 32.87\ kgCO_2e/year $$
 
 **UK (1 laptop, 0.268kgCO<sub>2</sub>e/kWh)**
 
-$$ 30.1kWh/year \times 0.268kgCO_2e/kWh = 8.07kgCO_2e/year $$
+$$ 30.1\ kWh/year \times 0.268\ kgCO_2e/kWh = 8.07\ kgCO_2e/year $$
 
 **Netherlands (1 laptop, 0.386kgCO<sub>2</sub>e/kWh)**
 
-$$ 30.1kWh/year \times 0.386kgCO_2e/kWh = 11.62kgCO_2e/year $$
+$$ 30.1\ kWh/year \times 0.386\ kgCO_2e/kWh = 11.62\ kgCO_2e/year $$
 
 **Taiwan (1 laptop, 0.566kgCO<sub>2</sub>e/kWh)**
 
-$$ 30.1kWh/year \times 0.566kgCO_2e/kWh = 17.04kgCO_2e/year $$
+$$ 30.1\ kWh/year \times 0.566\ kgCO_2e/kWh = 17.04\ kgCO_2e/year $$
 
 **Total carbon emissions of employee laptops: 69.6kgCO<sub>2</sub>e/year**
 
@@ -95,15 +95,15 @@ This value is then multiplied by the carbon intensity of the region to calculate
 
 **Germany (0.364kgCO<sub>2</sub>e/kWh)**
 
-$$ 0.01kWh \times 24hrs \times 365days \times 0.364kgCO_2e/kWh = 31.89kgCO_2e/year $$
+$$ 0.01\ kWh \times 24\ hrs \times 365\ days \times 0.364\ kgCO_2e/kWh = 31.89\ kgCO_2e/year $$
 
 **UK (0.268kgCO<sub>2</sub>e/kWh)**
 
-$$ 0.0108kWh \times 24hrs \times 365days \times 0.268kgCO_2e/kWh = 25.36kgCO_2e/year $$
+$$ 0.0108\ kWh \times 24\ hrs \times 365\ days \times 0.268\ kgCO_2e/kWh = 25.36\ kgCO_2e/year $$
 
 The UK office being a co-shared office space with two other organisations sharing the router, the attribution to GWF is only 1/3rd of this value:
 
-$$ 25.36kgCO_2e/year \times 0.333 = 8.44kgCO_2e/year $$
+$$ 25.36\ kgCO_2e/year \times 0.333 = 8.44\ kgCO_2e/year $$
 
 **Total carbon emissions for networking and infrastructure: 40.33kgCO<sub>2</sub>e/year**
 
@@ -134,20 +134,20 @@ For the embodied carbon we pulled together data from the Scott Logic estimator t
 
 We converted GWF's Hetzner monthly bill from Euros to US Dollars to then be able to multiply the embodied kgCO<sub>2</sub>e/USD for each instance type:
 
-$$ $59.36/month \times 0.018364507kgCO_2e/USD \times 12months = 13.08kgCO_2e/year $$
+$$ $59.36/month \times 0.018364507\ kgCO_2e/USD \times 12\ months = 13.08\ kgCO_2e/year $$
 
-$$ $32.40/month \times 0.015829902kgCO_2e/USD \times 12months = 6.15kgCO_2e/year $$
+$$ $32.40/month \times 0.015829902\ kgCO_2e/USD \times 12\ months = 6.15\ kgCO_2e/year $$
 
 For the operational computing power, a similar process was used. We multiplied the CCF method's kWh per USD (0.270373921kWh/USD and 0.233471074kWh/USD) by the monthly cost in USD (converted from Euros) to obtain a monthly compute kWh usage, multiplied by 12 months to get a yearly total compute kWh:
 
-$$ $59.36/month \times 0.270373921kWh/USD \times 12months = 192.59kWh/year $$
+$$ $59.36/month \times 0.270373921\ kWh/USD \times 12\ months = 192.59\ kWh/year $$
 
-$$ $32.40/month \times 0.233471074kWh/USD \times 12months = 90.77kWh/year $$
+$$ $32.40/month \times 0.233471074\ kWh/USD \times 12\ months = 90.77\ kWh/year $$
 
 For the data storage in Hetzner we assume the use of SSD storage and use a value of 0.0012kWh/TBh from [Cloud Carbon Footprint Storage Methodology](https://www.cloudcarbonfootprint.org/docs/methodology/#storage).
 With a total volume of 0.89TB of data storage we can calculate a yearly kWh:
 
-$$ 0.89TB \times 0.0012kWh/TBh \times 24hrs \times 365days = 9.36kWh/year $$
+$$ 0.89\ TB \times 0.0012\ kWh/TBh \times 24\ hrs \times 365\ days = 9.36\ kWh/year $$
 
 So a total kWh per year using Hetzner cloud services: 292.72kWh/year.
 
@@ -155,23 +155,23 @@ We can then multiply this by the regional carbon intensity to calculate the carb
 
 The operational carbon emissions of using Hetzner cloud:
 
-$$ 292.72kWh/year \times 0.041kgCO_2e/kWh = 12kgCO_2e/year $$
+$$ 292.72\ kWh/year \times 0.041\ kgCO_2e/kWh = 12\ kgCO_2e/year $$
 
 <span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
 
 We add to this the embodied carbon of the cloud servers for a total carbon emissions for Hetzner services:
 
-$$ 13.08kgCO_2e/year + 6.15kgCO_2e/year + 12kgCO_2e/year = 31.23kgCO_2e/year $$
+$$ 13.08\ kgCO_2e/year + 6.15\ kgCO_2e/year + 12\ kgCO_2e/year = 31.23\ kgCO_2e/year $$
 
 ### Scaleway Cloud Services
 
 Scaleway is just for block storage, so we used the same methodology as for the storage in Hetzner. One difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour. Typically GWF uses 463.58TBhours of data per month, assuming again the use of SSD storage and using the CCF methodology
 
-$$ 463.58TBh \times 0.0012kWh/TBh \times 12months = 6.68kWh/year $$
+$$ 463.58\ TBh \times 0.0012\ kWh/TBh \times 12\ months = 6.68\ kWh/year $$
 
 [Scaleway also uses sustainable energy sources](https://www.scaleway.com/en/environmental-leadership/) (100% wind or hydro). So, we'll use the hyro-power carbon intensity of 0.041kgCO<sub>2</sub>e/kWh:
 
-$$ 6.68kWh/year \times 0.041kgCO_2e/kWh = 0.27kgCO_2e/year $$
+$$ 6.68\ kWh/year \times 0.041\ kgCO_2e/kWh = 0.27\ kgCO_2e/year $$
 
 <span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
 
@@ -198,7 +198,7 @@ Cloudflare operate a (market-based) net-zero carbon service via Renewable Energy
 
 We can simply divide the carbon emissions by the number of active websites to get an average carbon emission per website per year:
 
-$$ (21,0000MTCO_2e/year \times 1000) ÷ 7,590,000 = 2.77kgCO2e/year/website $$
+$$ (21,0000\ MTCO_2e/year \times 1000) ÷ 7,590,000 = 2.77\ kgCO2e/year/website $$
 
 2.77kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to estimate emissions of CDNs.
 
