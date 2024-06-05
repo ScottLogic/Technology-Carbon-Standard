@@ -2,8 +2,10 @@ gwf:
   name: Green Web Foundation
   link: /projects/green-web-foundation
   nav:
-  - name: Introduction
-    link: /projects/green-web-foundation/introduction
+  - name: Overview
+    link: /projects/green-web-foundation/overview
+  - name: Data assumptions
+    link: /projects/green-web-foundation/data-assumptions
   - name: Upstream Emissions
     link: /projects/green-web-foundation/upstream
   - name: Operational Emissions

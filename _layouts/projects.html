@@ -5,9 +5,9 @@ layout: default
 {% assign project = site.data.projects[page.project] %}
 
 <div class="flex flex-col md:flex-row gap-6">
-  <aside class="md:w-1/5 border-b md:border-r md:border-b-0 border-gunmetal-200 pr-2 pb-2 pt-0">
+  <aside class="md:w-1/5 border-b md:border-r md:border-b-0 border-gunmetal-200 md:pl-4 pr-2 pb-2 pt-0">
 
-    <a href="{{ project.link }}" class="font-light block px-2 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900  {% if page.url == '/categories' %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+    <a href="{{ project.link }}" class="font-light block md:px-2 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900  {% if page.url == '/categories' %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
       {{ project.name }}
     </a>
 
@@ -20,7 +20,7 @@ layout: default
     </div>
 
   </aside>
-  <article class="md:w-4/5">
+  <article class="max-w-screen-md">
     {{ content }}
   </article>
 </div>
