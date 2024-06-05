@@ -51,5 +51,5 @@ A European non-profit organisation working towards a fossil-free internet by 203
 - James
 
 ---
-[Next - Data Assumptions](data-assumptions)
+[Next - Assumptions](assumptions)
 

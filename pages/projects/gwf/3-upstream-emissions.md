@@ -96,22 +96,32 @@ We couldn't find a standard or convention for accounting for the carbon emission
 
 **Laptops**
 
-To start with we assumed non-specific equipment. We sourced an average embodied carbon figure of 230kgCO2e. This figure came from averaging multiple laptop datasheets from [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm), [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) and [Apple](https://www.apple.com/environment/) (<span style="color: red">~~can we link to some examples, or better yet specifics of where people can find these?~~</span> ✅). This was cross-referenced against multiple research sources to check the number was in the right ballpark. We were not seeking high degrees of accuracy at this point and felt this was good enough. The Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) data sheets typically provide a breakdown of carbon emissions during the products full life cycle, including it's usage. We remove the usage carbon emissions value (around 20%) from the total carbon footprint leaving us a value for manufacture, transport and end of life. We use this value as the embodied carbon value.
+Firstly we needed to arrive at an average embodied carbon value for a laptop. We were not seeking high degrees of accuracy at this point, just something good enough to support an initial, high level estimate. 
 
-<span style="color: red">*This might need a bit of an overhaul now we've amended our approach here?*</span>
-<span style="color: coral">*- DR: This is the beer mat estimate approach, ignoring amortisation - but it does still assume all devices acquired (ie. not for this accounting period). It's a weird one because the later detailed estimates have come back around to drive the old beer mat estimate - which originally was amortised (which we now realise is wrong).*</span>
+The average embodied carbon figure we used was **230kgCO2e**. 
 
-<div style="color: blue;">
+We arrived at this by reviewing multiple PDF datasheets for laptops from [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm), [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) and [Apple](https://www.apple.com/environment/). We cross-referenced the specified values against multiple research sources to check the number was in the right ballpark.
 
-With only a single laptop owned by GWF and the other five being BYODs, we attribute 100% of the embodied carbon to one laptop, and 70% to the other five.
+The datasheets mentioned, know as Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) datasheets, typically provide a breakdown of carbon emissions during that product's full life cycle, including it's usage. But we only want the embodied carbon value for this estimate. So, we removed the usage carbon emissions value (around 20%) from the total carbon footprint leaving us a value for manufacture, transport and end of life. This becomes our embodied carbon value of **230kgCO2e**.
+
+To keep things simple for this high-level estimate we assumed the following:
+- All employees used non-manufacturer specific laptops at this point - we weren't ready to get a detailed equipment list at this point.
+- All laptops were purchased new - we ignored the fact that some machines were actually refurbished, older or second-hand.
+- A laptop's expected life is 5 years at GWF (industry standard is often cited as 4 years). 
+- [Amortisation](/glossary#amortisation) of embodied emissions was appropriate for a [high-level estimate](assumptions#high-level-estimates) - more on this below.
+
+With only 1 laptop owned by GWF and the other 5 being BYODs, we attribute 100% of the embodied carbon to one laptop, and 70% to the other five.
 
 $$ (230\ kgCO_2e \times 1) + 5 \times (230\ kgCO_2e \times 0.7) = 1035\ kgCO_2e $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-To keep it a simple, high-level estimation, we have not taken into account that some of this equipment is refurbished, older and second-hand hardware. This also assumes all laptops accountable this year, and not just laptops acquired this accounting year. The laptops are simply assumed to be up to 5 years old and have a refresh cycle of 5 years. 
+<span style="color:red;">DAVID PLEASE CHECK THIS</span>
+<div style="color: blue;">
 
-> Older, re-used and refurbished equipment would have a further positive impact on the amortisation calculations, reducing the embodied carbon footprint further.
+The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, as laptops are assumed to be replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure.
+
+$$ 1035\ kgCO_2e / 5 = 207\ kgCO_2e  $$
 
 </div>
 
@@ -142,7 +152,7 @@ Assumptions were made based on other IT hardware, such as laptops, monitors, ser
 
 **How could we improve upon this?**
 
-After looking at these high level estimates in comparison to the other categories, we decided to go further and produce details estimates based on specifics.
+After looking at these high level estimates in comparison to the other categories, we decided to go further and produce details estimates based on specifics. This would allow us to take the actual purchase year into account, and account between for older, re-used and refurbished equipment. 
 
 
 ### Detailed estimate methodology
