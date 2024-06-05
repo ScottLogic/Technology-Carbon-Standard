@@ -105,7 +105,7 @@ To start with we assumed non-specific equipment. We sourced an average embodied 
 
 With only a single laptop owned by GWF and the other five being BYODs, we attribute 100% of the embodied carbon to one laptop, and 70% to the other five.
 
-$$ (230kgCO_2e \times 1) + 5 \times (230kgCO_2e \times 0.7) = 1035kgCO_2e $$
+$$ (230\ kgCO_2e \times 1) + 5 \times (230\ kgCO_2e \times 0.7) = 1035\ kgCO_2e $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
@@ -126,7 +126,7 @@ For monitors we used a typical, average embodied carbon of 355kgCO2e. This figur
 
 Of the 8 monitors used, one of those are wholly owned by GWF, the remaining seven are BYODs. 
 
-$$ 1 \times (355kgCO_2e \times 1) + 7 \times (355kgCO_2e \times 0.7) = 2094kgCO_2e $$
+$$ 1 \times (355\ kgCO_2e \times 1) + 7 \times (355\ kgCO_2e \times 0.7) = 2094\ kgCO_2e $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
@@ -180,7 +180,7 @@ To calculate the embodied carbon, we found a [research paper from 2021](https://
 
 As one of the offices is a co-shared space with two others, so we simply attributed 33.3% of the office router's embodied carbon to GWF. The router dedicated to the GWF office attributes it's full embodied carbon to GWF.
 
-$$ (171.7kgCO_2e \times 0.333) + 171.7kgCO_2e = 229kgCO_2e $$
+$$ (171.7\ kgCO_2e \times 0.333) + 171.7\ kgCO_2e = 229\ kgCO_2e $$
 
 **How could we improve upon this?**
 
