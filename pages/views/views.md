@@ -2,7 +2,7 @@
 layout: default
 title: Views
 permalink: views
-published: false
+published: true
 ---
 
 # Views
@@ -13,7 +13,10 @@ Here, you can find some created views that look at the Tech Carbon Standard with
 
 Role views look at the Technology Carbon Standard from the perspective of a business role and the concerns that a role would most likely focus its efforts on.
 
-- [Architecture View](/views/roles/architecture)
+- [Architecture View, strategy](/views/roles/architecture)
+   - How to incorporate sustainability into technology strategy
+- [Architecture View, NFRs](/views/roles/architecture_nfrs)
+   - How to incorporate sustainability when setting NFRs
 
 ## Organisation Types
 

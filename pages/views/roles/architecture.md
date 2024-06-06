@@ -2,10 +2,10 @@
 layout: default
 title: Architecture View
 permalink: views/roles/architecture
-published: false
+published: true
 ---
 
-# Architecture View
+# Architecture View - setting strategy
 
 {% include carbonStandard.html variant=site.data.overlays.architecture hideOutOfScope=true %}
 
