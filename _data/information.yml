@@ -1,5 +1,12 @@
+- name: Estate
+  link: /information/estate
 - name: Cloud Services
   link: /information/cloud
+  subcategories:
+  - name: PaaS
+    link: /information/cloud/pass
+- name: SaaS
+  link: /information/saas
 - name: Hardware Life Cycle Emissions
   link: /information/lifecycle
   subcategories:
