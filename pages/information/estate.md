@@ -2,7 +2,7 @@
 layout: category
 title: Estimating Estate Emissions
 permalink: /information/estate
-published: true
+published: false
 ---
 
 # Estate Mapping

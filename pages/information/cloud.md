@@ -19,7 +19,7 @@ IaaS provides access to virtualised computing resources like servers, storage, a
 
 <img style="max-width:700px; background-color: white; padding: 8px; border-radius:10px" src="/assets/images/PaaS/PaaS.png"/>
 
-PaaS removes the need to manage the underlying infrastructure like hardware and operating systems, which can streamline development. This can extend to services like managed databases, where the cloud provider takes on the responsibility for administration and maintenance. <a href="/information/cloud/paas">It is discussed in more detail here</a>. 
+PaaS removes the need to manage the underlying infrastructure like hardware and operating systems, which can streamline development. This can extend to services like managed databases, where the cloud provider takes on the responsibility for administration and maintenance.
 
 The diagram above summarises this and indicates the relative challenges of measuring carbon for real hardware vs virtualised hardware vs the PaaS case where only an API is visible and there's no access to the underlying virtual or physical machines. 
 

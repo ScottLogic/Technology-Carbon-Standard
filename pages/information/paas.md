@@ -2,6 +2,7 @@
 layout: category
 title: Platform as a Service (PaaS)
 permalink: /information/cloud/pass
+published: false
 ---
 
 # Platform as a Service (PaaS)
