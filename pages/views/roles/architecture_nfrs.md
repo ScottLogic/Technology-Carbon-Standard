@@ -2,44 +2,16 @@
 layout: default
 title: Architecture View
 permalink: views/roles/architecture_nfrs
-published: true
+published: false
 ---
 
 # Architecture View - Setting NFRs
 
 {% include carbonStandard.html variant=site.data.overlays.architecture_nfrs hideOutOfScope=true %}
 
-<s>As an architect you can exert significant influence on a company's tech carbon emissions. You might be a technical/solutions/enterprise/other architect and although the scope of responsibility can vary across roles, there are many activities common to all where you can make a difference to carbon emissions including:
+This view presents some ideas for settings NFRs (also known as Quality Attributes) in order to promote energy efficiency and low carbon emissions. They derive from the strategy and principles described in [Architecture View - Strategy](/views/roles/architecture). What follows are just suggestions and examples; this is a new area and so there's no established NFRs like, for example 1/2/3/4 9s availability. Bear in mind that measuring carbon NFRs can be hard so think about your maturity in measurement and monitoring before setting NFRs - there's no point setting something where you'll never know if you met the requirement.  
 
-- Setting the tech strategy
-- Promoting best practice and setting tech principles
-- Leading technical selection, e.g. of a cloud vendor or a SaaS product
-- Designing architecture (from enterprise to technical)
-- Setting NFRs
-
-The first couple are high level activities that could include:
-
-- setting the cloud vs on-prem strategy
-- promoting technical principles around resilience, serverless vs container or data retention
-
-The remaining 3 are actually all about NFRs to some degree. Tech selection will be done against a set of functional and non-functional requirements and architecture design choices will be done against a set of NFRs, e.g. to promote availability or low cost. We'll start by looking at what an architect can do around strategy and principles for carbon reduction and then move onto the NFRs that derive from this.
-
-</s>
-
-TODO - reference architecture strategy page
-
-
-In this section we'll look at some of the NFRs (also known as Quality Attributes) that could be set by architects in order to promote energy efficiency and low carbon emissions. They derive from the strategy and principles above. What follows are just suggestions and examples; this is a new area and so there's no established NFRs like, for example 1/2/3/4 9s availability. Bear in mind that measuring carbon NFRs can be hard so think about your maturity in measurement and monitoring before setting NFRs - there's no point setting something where you'll never know if you met the requirement.  
-
-The diagram below overlays example NFRs onto the Tech Carbon Standard to show NFRs that can drive carbon reduction in each category such as embodied server hardware. Some NFRs may actually benefit more than one category; for example energy efficent software may allow you to squeeze more software onto less hardware reducing embodied carbon as well as operational. 
-
-
-
-
-
-{% include linkedHeading.html heading="More detail" level=2 %}
-
-The emission categories below takes the standard and overlays on the categories some examples of how you might influence them. These are just suggestions to trigger some ideas - figure out your own principles as appropriate to your organisation.
+The diagram maps NFRs onto specific TCS categories such as embodied server hardware but be aware that some NFRs may actually benefit more than one category; for example energy efficent software may allow you to squeeze more software onto less hardware reducing embodied carbon as well as operational. 
 
 
 ## Upstream Emissions
@@ -70,7 +42,7 @@ NFRs for hardware embodied carbon should fall out of the strategy and based on t
 <ul>
     <li><b>Hardware lifetime (inc. support) &gt;= 5 years: </b> Clear requirement for procurement on how long servers must work and for how long they should be supportable</li> 
 
-    <li><b>Laptop/Switch/Server should have &lt;x embodied kgCO2 per y.</b> You can relate embodied carbon to a scale factor y like throughput or number of ports of network equipment. </li>
+    <li><b>Laptop/Switch/Server should have &lt;x embodied kgCO2 per y.</b> You can relate embodied carbon to a scale factor y like throughput or number of ports on network equipment. </li>
 </ul>
 
 A software implementation NFR may also drive reduce embodied carbon:
@@ -83,7 +55,7 @@ A software implementation NFR may also drive reduce embodied carbon:
 
 For operational emissions you can directly target energy or emissions with your NFRs or proxy measures that will still promote reduced emissions. An obvious example of the latter is 
 <ul>
-    <li><b>VM/machine utilisation should be > 50%</b></li> 
+    <li><b>VM/machine utilisation should be &gt; 50%</b></li> 
 </ul>
 
 When targetting carbon or energy NFRs could include:
@@ -96,30 +68,29 @@ Such an NFR pushes development teams to optimise their apps. It says carbon OR e
 
 At the level of the data centre NFRs could include the following. 
 <ul>
-    <li><b>Data centre <a href="/glossary#power-usage-effectiveness-pue">PUE</a> should be &lt; 1.3:</b> When building out a new data centre you can set a maximum Power Usage Effectiveness.</li>
+    <li><b>Data centre <a href="/glossary#power-usage-effectiveness-pue">PUE</a> should be &lt; 1.3:</b> When building out a new data centre you can set a maximum Power Usage Effectiveness. That said, be wary of over using PUE without considering factors like water usage</li>
     <li><b><a href="/glossary#carbon-intensity">Carbon intensity</a> should be &lt;x kgCO2/kWh:</b> Setting an NFR around the carbon intensity of the electricty influences choices on location or installation of wind turbines or solar. </li>
 </ul>
 
 {% include categoryItem.html item="CatOEmployeeDevices" id="EmployeeDevices" noLink=true %}
   
-In the strategy section there were suggestions around selecting laptops with low energy usage and ensuring they switch to low power, sleep etc. A target average daily kWh energy usage could be set with these policies designed to meet it e.g.
+In the strategy section there were suggestions around selecting laptops with low energy usage and ensuring they switch to low power, sleep etc. A target for average daily kWh energy usage could be set to help meet these requirements e.g.
 <ul>
     <li><b>Average energy consumption per 24 hours &lt;x gCO2</b></li>
 </ul>
 
-
 {% include categoryItem.html item="CatONetworkDevices" id="NetworkDevices" noLink=true %}
 
-Again utilisation or power/carbon usage tarrgets can be set:
+Again utilisation or power/carbon usage targets can be set:
 <ul>
     <li><b>Network switch utilisation should be &gt;40%</b></li>
     <li><b>Power per port should be &lt; 2W:</b> Power per Gbps throughput or per port could be targetted just as an embodied carbon can be also. 
 </li></ul>
 
-Some application targetted NFRs may also reduce network traffic and so reduce the need to have more network hardware - benfits operational and embodied. e.g.
+Some application targetted NFRs may also reduce network traffic and so reduce the need to have more network hardware - this benfits operational and embodied carbon. e.g.
 <ul>
     <li><b>Data compression of 50% vs raw text in API payloads</b>: promote zipping and/or efficient protocols like gRPC</li>
-    <li><b>normalise async messages, no one:many entity to message mappings</b>avoids one entity change causing a storm of messages</li>
+    <li><b>normalise async messages, no one-to-many entity to message mappings</b>avoids one entity change causing a storm of messages</li>
 </ul>
 
 
@@ -127,7 +98,7 @@ Some application targetted NFRs may also reduce network traffic and so reduce th
 
 You can set utilisation targets for each server as per above but also go more granular. e.g. 
 <ul>
-    <li><b>Hardware utilisation should be > 50%</b></li>
+    <li><b>Hardware utilisation should be &gt; 50%</b></li>
     <li><b>Servers must be energy observable via the network: </b>Really a function requirement but allows monitoring of progress in energy efficiency</li>
 </ul>
 
@@ -172,17 +143,14 @@ The exception is where you're given dedicated resources in which case reporting 
 
 Consider NFRs like
 <ul>
-    <li><b>PUE< 1.3:</b>For when selecting a managed service</li>
+    <li><b>PUE&lt; 1.3:</b>For when selecting a managed service</li>
     <li><b>Utilisation &lt;= 50%:</b> Like cloud, at the level of VMs</li>
 </ul>
 
 
 {% include categoryLabel.html label="CatD" %}
-NFRs for devices are one of the easier things to set and test because although you can obtain real representative hardware to do measurements. Possible NFRs are:
-<ul>
-    <li><b>Single page view uses &lt;x kWh: </b>Promote pages that don't uneccessarily use energy</li>
-    <li><b>No energy usage when user not on page: </b>Ensure no energy used when user not on a webpage. Note modern browsers will help enforce this anyway</li>
-</ul>
+
+End user devices like customer laptops are out of our control but there are NFRs that can be set around the apps running on them and for battery powered devices low carbon usage has the added benefit of aiding battery life. 
 
 {% include categoryItem.html item="CatDEndUserDevices" id="EndUserDevices" noLink=true %}
 NFRs for devices are one of the easier things to set and test because although you can obtain real representative hardware to do measurements. Possible NFRs are:

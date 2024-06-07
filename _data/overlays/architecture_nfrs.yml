@@ -18,17 +18,17 @@ CatUNetworkHardware:
 
 CatUServerHardware:
   selected: true
-  description: Has &lt;X kgCO2 embodied carbon per core. New service should add no embodied carbon
+  description: Must have &lt;X kgCO2 embodied carbon per core. New service should add no embodied carbon
   link: '#ServerHardware'
 
 CatOServers:
   selected: true
-  description: Utilisation &gt; 45% average. Energy per REST call <X kWh.
+  description: Utilisation should be &gt; 45% average. Energy per REST call <X kWh.
   link: "#Servers"
 
 CatONetworkDevices:
   selected: true
-  description: Switch utilisation &gt; 45% average
+  description: Switch utilisation should be &gt; 45% average
   link: '#NetworkDevices'
 
 CatOEmployeeDevices:
