@@ -43,7 +43,7 @@ node_modules:
     js: assets/scripts
     css: assets/styles
   copy:
-  - source: "tech-carbon-estimator/dist/tech-carbon-estimator"
+  - source: "@scottlogic/tech-carbon-estimator"
     target: assets/tech-carbon-estimator
 
 # Exclude from processing.
