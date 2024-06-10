@@ -2,6 +2,7 @@
 layout: default
 title: Carbon Estimator
 permalink: /estimator
+includeEstimator: true
 ---
 
 # Technology Carbon Estimator
