@@ -16,3 +16,4 @@ Scott Logic helps organisations achieve their business sustainability goals by i
 ## Calculate your technology's potential carbon impact
 
 <tech-carbon-estimator class="not-prose" extra-height="112"></tech-carbon-estimator>
+<noscript>Javascript appears to be disabled - unfortunately the estimator requires it to be enabled to function.</noscript>
