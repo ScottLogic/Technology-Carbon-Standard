@@ -13,7 +13,7 @@ As an architect you can exert significant influence on a company's tech carbon e
 - Setting the tech strategy
     - e.g. cloud vs on-prem, build vs buy
 - Promoting best practice and setting tech principles
-    e.g. princples around resilience, data retention etc
+    - e.g. princples around resilience, data retention etc
 - Leading technical selection, e.g. of a cloud vendor or a SaaS product
 - Architecture Design (from enterprise to technical)
 - Setting non-functional requirements (NFRs)
