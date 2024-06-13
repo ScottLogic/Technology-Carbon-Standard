@@ -17,7 +17,7 @@ project: gwf
 
 Read the TCS overview of <a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/operational">operational emissions</a> for a primer on this category.
 
-When attemping to estimate Green Web Foundation's digital upstream emissions, we describe the approach used and why for each sub-category.
+When attemping to estimate Green Web Foundation's digital operational emissions, we describe the approach used and why for each sub-category.
 
 - [Employee Devices](#employee-devices)
 - [Networking and Infrastructure](#networking-and-infrastructure)
