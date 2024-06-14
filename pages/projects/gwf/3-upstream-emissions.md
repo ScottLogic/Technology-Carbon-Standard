@@ -161,13 +161,13 @@ Assumptions were made based on other IT hardware, such as laptops, monitors, ser
 
 <span style="color: red">DAVID: I'm curious about why this is 150 + 50 - what's your logic here? Coudl be easier just to say 200 and keep it simpler?</span>
 
+<span style="color: coral">HANNAH: It's a "+ or -" 50kgCO2e - just to capture the lack of confidence with the figure.</span>
+
 The average embodied carbon figure we used was **150kgCO2e ± 50kgCO2e**. 
 
 As a GWF-owned device this is 100% attributable, and was amortised over 5 years (assumed expected life).
 
-<span style="color: red">DAVID PLEASE CHECK THIS</span>
-
-$$ 1 \times 200\ kgCO_2e ÷ 5 = 40\ kgCO_2e $$
+$$ 150\ kgCO_2e ÷ 5 = 30\ kgCO_2e/year $$
 
 > Some assumptions and guesses needed to be made regarding the embodied carbon of printers as the manufacturers do not publish this data. This certainly reduces the confidence we can have in this carbon emissions estimate, but we *felt* like we made a reasonable assumption.
 
@@ -204,7 +204,7 @@ Below, the table compiles all of this data and produces the embodied carbon attr
 
 ### Laptops and Monitors
 
-| Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Condition | Days per Week for used GWF  | Product Carbon Footprint kgCO<sub>2</sub>e | Embodied Carbon kgCO<sub>2</sub>e | Refreshed/New Embodied Carbon kgCO<sub>2</sub>e | BYOD GWF Attributable kgCO<sub>2</sub>e |
+| Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Condition | Days per Week for GWF  | Product Carbon Footprint kgCO<sub>2</sub>e | Embodied Carbon kgCO<sub>2</sub>e | Refreshed/New Embodied Carbon kgCO<sub>2</sub>e | BYOD GWF Attributable kgCO<sub>2</sub>e |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Apple 2021 MacBook Pro 16" M1 Pro** | [Apple 16inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2021.pdf) | Refurbished | 4 | 349 | 255 | 38 | 31 |
 | Apple 2020 MacBook Pro 13" M1** | [Apple 13inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf)| Refurbished | 5 | 185 | 150 | 22 | 22 |
