@@ -39,6 +39,8 @@ The [Green Web Data](https://datasets.thegreenwebfoundation.org/) set is accessi
 
 ### High level estimate methodology
 
+#### Websites and Applications
+
 The three public websites have user analytics provided by [Cabin](https://withcabin.com/), that use GWF’s own CO2.js and SWD method to calculate the carbon emissions of the websites.
 
 For the high-level estimates of these websites, we’ll use the emissions values provided by Cabin. These figures are based on the period of 1st April 2023 - 31st March 2024:
@@ -74,11 +76,14 @@ Given the global audience noted in the Cabin analytics, we also assume a global 
 
 $$ 1.447875\ kWh/year \times 0.490\ kgCO_2e/kWh = 0.71\ kgCO_2e/year $$
 
+**Total carbon emissions of Websites and Applications: 36kgCO<sub>2</sub>e/year**
 
 #### 3rd Party Websites using CO2.js
 We considered the impact of CO2.js being used by third-party websites. The approach was to use the same methodology as above, taking the data transfer size of the CO2.js library.
 
-However, this value was ultimately reduced to zero. The reasoning behind this is that very few websites load the CO2.js library in the client’s web browser. Instead, most sites use CO2.js on the server side. The few websites that do load the CO2.js library in the client’s browser are assumed to have a low visitor count or reach. Of those, the minified library has minimal impact on emissions (based on an SWD method device boundary). Given the lack of detailed data for usage in the browser (but assumed to be very low) and the small payload (0.194MB uncompressed, but expected to be much lower when compressed and transferred), a high-level beer mat estimate emissions calculation would be so negligible we dismissed doing any further investigation. 
+However, this value was ultimately reduced to zero. The reasoning behind this is that very few websites load the CO2.js library in the client’s web browser. Instead, most sites use CO2.js on the server side. The few websites that do load the CO2.js library in the client’s browser are assumed to have a low visitor count or reach. Of those, the minified library has minimal impact on emissions (based on an SWD method device boundary). Given the lack of detailed data for usage in the browser (but assumed to be very low) and the small payload (0.194MB uncompressed, but expected to be much lower when compressed and transferred), a high-level beer mat estimate emissions calculation would be so negligible we dismissed doing any further investigation.
+
+With little visibility as to how CO2.js is used on client servers and it's small size, we also dismissed any further investigation into estimating the impact of CO2.js downstream.
 
 #### Downstream Infrastructure
 
@@ -99,7 +104,9 @@ $$ 10\ users \times 6.88\ kgCO2e/year = 68.82\ kgCO_2e/year $$
 This is a very low confidence estimate given that we are assuming high (1000 hours) of compute time per year and that 10 users are using it at this rate. We also assume a global carbon intensity. Each of these aspects are beyond GWF's visibility and control, and as such these estimates could swing the carbon impact wildly by mulitple orders of magnitude. Without further evidence or understanding how this data set is stored and used, its really impossible to have any confidence in this value.
  
 
-**Total carbon emissions of End-User Devices: 36kgCO<sub>2</sub>e/year**
+**Total carbon emissions of downstream infrastructure: 68.82kgCO<sub>2</sub>e/year (with very little confidence)**
+
+**Total carbon emissions of end-user devices: 104.82kgCO<sub>2</sub>e/year (but with very little confidence, per above)**
 
 ### Detailed estimate methodology
 

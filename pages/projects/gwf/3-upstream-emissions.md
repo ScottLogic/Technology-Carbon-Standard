@@ -116,14 +116,13 @@ $$ (230\ kgCO_2e \times 1) + 5 \times (230\ kgCO_2e \times 0.7) = 1035\ kgCO_2e 
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-<span style="color:red;">DAVID PLEASE CHECK THIS</span>
-<div style="color: blue;">
+<span style="color:red;">DAVID PLEASE CHECK THIS - DONE!</span>
+<span style="color: coral">DONE!</span>
 
-The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, as laptops are assumed to be replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure.
+The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, as laptops are assumed to be replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure per year.
 
 $$ 1035\ kgCO_2e ÷ 5 = 207\ kgCO_2e  $$
 
-</div>
 
 **Monitors**
 
@@ -134,8 +133,8 @@ The average embodied carbon figure we used was **355kgCO2e**.
 We applied the same assumptions we made for laptop to the monitors.
 
 <span style="color: red">DAVID PLEASE CHECK THIS</span>
+<span style="color: coral">DONE!</span>
 
-<div style="color: blue;">
 
 Of the 8 monitors used, 1 is wholly owned by GWF, the remaining 7 are BYODs. 
 
@@ -143,11 +142,10 @@ $$ 1 \times (355\ kgCO_2e \times 1) + 7 \times (355\ kgCO_2e \times 0.7) = 2094\
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, and we assume monitors are replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure.
+The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, and we assume monitors are replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure per year.
 
 $$ 2094\ kgCO_2e ÷ 5 = 419\ kgCO_2e  $$
 
-</div>
 
 **Printers**
 
@@ -161,7 +159,7 @@ Assumptions were made based on other IT hardware, such as laptops, monitors, ser
 
 <span style="color: red">DAVID: I'm curious about why this is 150 + 50 - what's your logic here? Coudl be easier just to say 200 and keep it simpler?</span>
 
-<span style="color: coral">HANNAH: It's a "+ or -" 50kgCO2e - just to capture the lack of confidence with the figure.</span>
+<span style="color: coral">HANNAH: It's a "+ or -" 50kgCO2e - just to capture the lack of confidence with the figure. I've corrected the formula below.</span>
 
 The average embodied carbon figure we used was **150kgCO2e ± 50kgCO2e**. 
 
@@ -262,6 +260,13 @@ To calculate the embodied carbon, we found a [research paper from 2021](https://
 As one of the offices is a co-shared space with two others, so we simply attributed 33.3% of the office router's embodied carbon to GWF. The router dedicated to the GWF office attributes it's full embodied carbon to GWF.
 
 $$ (171.7\ kgCO_2e \times 0.333) + 171.7\ kgCO_2e = 229\ kgCO_2e $$
+
+Amortising this by 5 years we get:
+
+$$ 229\ kgCO_2e ÷ 5 = 45.8\ kgCO_2e/year $$
+
+For accounting purposes, as these devices were not acquired in the carbon account year, they can be reduced to zero (on the assumption they were accounted for in the year of purchase).
+
 
 **How could we improve upon this?**
 
