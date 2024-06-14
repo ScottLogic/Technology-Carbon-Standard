@@ -14,6 +14,30 @@ In this section, we set the scene for this project.
 
 <span style="color: red;">Diagram and short summary of key insights here<span>
 
+<span style="color: coral;">HANNAH: please feel free to move and expand on this as you need to. Hopefully, these numbers are pretty solid now... (?!) and I promise to create a new treemap that looks better than the one below with more detail.<span>
+
+![GWF Emissions Treemap](/assets/images/projects/GWF/gwf-emissions-treemap.png)
+
+| Category | Carbon Emissions kgCO<sub>2</sub>e/year | as % | Notes |
+| --- |
+| **Upstream Emissions** | **252** | **41.93%** | |
+| [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | 0 | 0.00% | No data |
+| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 41.93% | Detailed Estimate |
+| [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | 0 | 0.00% | None (this year) |
+| [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | 0 | 0.00% | None |
+| **Operational Emissions** | **234** | **38.93%** | |
+| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 26.96% | Detailed Estimate |
+| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 6.66% | Beermat Estimate |
+| [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | 0 | 0.00% | None |
+| [Generators](/projects/green-web-foundation/operational#generators) | 0 | 0.00% | None |
+| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5.32% | Detailed Estimate |
+| [SaaS](/projects/green-web-foundation/operational#saas-services) | 0 | 0.00% | No data |
+| [Managed Services](/projects/green-web-foundation/operational#managed-services) | 0 | 0.00% | Beermat Estimate |
+| **Downstream Emissions** | **115** | **19.13%** | |
+| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17.47% | Beermat Estimate |
+| [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 1.66% | Beermat Estimate |
+| **Total** | **601 kgCO<sub>2</sub>e/year** | **100%**  |
+
 
 ## Context - why do this project?
 
