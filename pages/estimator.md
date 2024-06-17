@@ -11,7 +11,9 @@ includeEstimator: true
 
 The estimations are framed within our proposed model of tech emissions – the [Technology Carbon Standard](/) – designed to help you map out, measure and improve the environmental impacts of your technology.
 
-Scott Logic helps organisations achieve their business sustainability goals by improving their technology sustainability. If you'd like to discuss your technology carbon estimate with us, [get in touch](https://www.scottlogic.com/contact-us?formId=sales-enquiries).
+Scott Logic helps organisations achieve their business sustainability goals by improving their technology sustainability. If you'd like to discuss your technology carbon estimate with us, [please get in touch](https://www.scottlogic.com/contact-us?formId=sales-enquiries).
+
+If you experience any issues using the calculator, you can [report them on GitHub](https://github.com/ScottLogic/sl-tech-carbon-estimator/issues).
 
 ## Calculate your technology's potential carbon impact
 
