@@ -251,6 +251,57 @@ We add to this the embodied carbon of the cloud servers for a total carbon emiss
 
 $$ 13.08\ kgCO_2e/year + 6.15\ kgCO_2e/year + 12\ kgCO_2e/year = 31.23\ kgCO_2e/year $$
 
+#### Improving the CPU Estimates
+
+In an attempt to improve on the above CPU estimates we went back to the Cloud Carbon Footprint methodology to remove billing information from the equation. The problem with billing information when used as a usage indicator is that it is subjective. One company may negotiate a betting pricing structure than another due to their size, for example. A better approach would be to use actual CPU usage data available from teh Hetzner API.
+
+The other area for improvement was to use data about the actual CPU being used, not an Amazon equivalent.
+
+To do this we went back to the [blog from Etsy](https://www.etsy.com/codeascraft/cloud-jewels-estimating-kwh-in-the-cloud/) that the CCF methodology was based on. Looking at the [detailed methodology](https://github.com/etsy/cloud-jewels/blob/master/methodology.md) in their GitHub repository, we arrived at the following method.
+
+We first calculate the coefficient:
+- The Hetzner API reported that the appliance that runs the Greencheck API uses an AMD Epyc Processor running at 2.4 GHz. 
+- Get the number of threads, maximum and minimum average power draw for the AMD EPYC Processor (2.4 GHz) from https://www.spec.org/power_ssj2008/results/res2023q1/.
+- Ideally, we would find all uses of the chosen processor and average out the values, but for this example, I’ve just used the first matching row).
+- Divide the minimum power draw for the CPU by the number of threads to get the minimum power per thread.
+- Do the same for the maximum.
+- Calculate the average utilisation for the month from usage data supplied by the Hetzner API.
+
+Next, we apply the following formula to get the energy coefficient:
+
+$$ Wattage = MinimumWattage + AverageCpuUtilization * (MaximumWattage - MinimumWattage) $$
+
+| Description | Value | Notes |
+| --- |
+| Min average CPU draw for AMD EPYC 9654 2.40GHz | 63.2W | From https://www.spec.org/power_ssj2008/results/res2023q1/ |
+| Max average CPU draw for AMD EPYC 9654 2.40GHz | 351W | From https://www.spec.org/power_ssj2008/results/res2023q1/ |
+| Threads | 192 | From https://www.spec.org/power_ssj2008/results/res2023q1/ |
+| Min energy per thread | 0.3291666667 | Min / Threads |
+| Max energy per thread | 1.828125 | Max / Threads |
+| Percent utilisation for the month | 56.91044181 | Average CPU utilisation over all five servers over the course of 1 month. |
+| Wh per vCPUh [Server] (AMD EPYC 9654 2.40GHz) | *1.182230477* | Wattage = Minimum wattage + Average CPU Utilization * (Maximum wattage - minimum wattage) |
+
+*This gives us a coefficient of 1.182230477.*
+
+- We can then multiply this by the number of hours in the month and again by the number of servers.
+- From here, we can convert into kWh and calculate the energy for the year (assuming April was representative of the whole year - more accurate numbers could be produced by using more data than just April).
+- Finally we multiply the values by the carbon intensity for a final result.
+
+| Description | Value | Notes |
+| --- |
+| hours between 17/04/2024 23:36 and 17/05/2024 23:36 | 720 | |
+| Wh per CPU per month | 851.2059433 | Coefficient * hours in the month |
+| Hetzner PUE | 1.16 | https://www.hetzner.com/unternehmen/nachhaltigkeit |
+| Apply PUE | 987.3988942 | 851.2059433 * 1.16 |
+| kWh per CPU per month | 0.9873988942 | |
+| kWh per year | 11.84878673 | Calculate for the year |
+| Number of servers | 4 | Only including 4 servers as app5 was out of the pool during April |
+| Monthly energy in kWh for all servers | 3.949595577 | kWh per CPU per month * number of servers |
+| Yearly energy in kWh for all servers | 47.39514692 | kWh per CPU per year * number of servers |
+| Carbon intensity | 0.041 | Hydro electric carbon intensity |
+| Monthly Carbon Emissions (kgCO2) | 0.1619334186 | Monthly energy in kWh for all servers * Carbon intensity. Original estimate: 0.9867767872 |
+| Yearly Carbon Emissions (kgCO2) | 1.943201024 | Yearly energy in kWh for all servers * Carbon intensity. Original Estimate: 11.84132145 |
+
 ### Scaleway Cloud Services
 
 Scaleway is just for block storage, so we used the same methodology as for the storage in Hetzner. One difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour. Typically GWF uses 463.58TBhours of data per month, assuming again the use of SSD storage and using the CCF methodology
