@@ -9,7 +9,7 @@ project: gwf
 
 # Ongoing Improvement
 
-While the API is currently well optimised through a variety of techniques to reduce its carbon emissions, it is important to apply green software principals such as making sure  the code is energy efficient. To do this, we first need a way to measure the codebase and monitor that changes made don't negatively impact the carbon emissions.
+While the API is currently well optimised through a variety of techniques to reduce its carbon emissions, it is important to apply green software principals such as making sure  the code is energy efficient. To do this, we first need a way to measure the codebase and monitor that future changes don't negatively impact the carbon emissions.
 
 To do this, we set up the [Green Metrics Tool](https://www.green-coding.io/projects/green-metrics-tool/) from [Green Code Berlin](https://www.green-coding.io/).
 
@@ -28,12 +28,12 @@ When examining the output of the GMT, bear in mind that some of the statistics p
 
 The GMT works by running the different servers in your platform in Docker containers. You then generate traffic within the docker environment for the tool to measure and it generates reports for you to analyse.
 
-1. Dockerise your environment: If it is not already, you will need to get your environment running in Docker, using docker compose.
-2. Create a usage scenario: Green Code Berlin uses a fork of the docker compose YML format. It uses the same format, and supports many commands that are present in docker compose. It also extends it with some custom sections to drive the test automation required to run the time.
-3. Write or adapt automated tests: There are two types of tests. Validation tests that confirm the system you are testing is working as intended. These tests may call an endpoint or drive a website with a headless browser. They should then validate that the returned output is what is expected. Unit tests and automated UI tests are great for this. The second kind of test is a load or stress test. You want to generate a similar, or at least representative, load of traffic to your production site to see how it behaves under stress, from a carbon usage perspective. It should give you enough raw data to get a realistic picture of your platform's performance. JMeter and k6 are good examples.
-4. Create docker containers for your test instances. These could be load test containers (such as k6) or headless browsers such as puppeteer. The usage scenario file will drive these test containers to generate traffic to the rest of the platform in the dockerised test environment.
-5. Run the Green Metrics Tool locally to test if your environment works correctly and examine the output it generates.
-6. Submit your GitHub repo to the Green Metrics platform to see your stats in a more realistic environment.
+1. _Dockerise your environment_: If it is not already, you will need to get your environment running in Docker, using docker compose.
+2. _Create a usage scenario_: Green Code Berlin uses a fork of the docker compose YML format. It uses the same format, and supports many commands that are present in docker compose. It also extends it with some custom sections to drive the test automation required to run the time.
+3. _Write or adapt automated tests_: There are two types of tests. Validation tests that confirm the system you are testing is working as intended. These tests may call an endpoint or drive a website with a headless browser. They should then validate that the returned output is what is expected. Unit tests and automated UI tests are great for this. The second kind of test is a load or stress test. You want to generate a similar, or at least representative, load of traffic to your production site to see how it behaves under stress, from a carbon usage perspective. It should give you enough raw data to get a realistic picture of your platform's performance. JMeter and k6 are good examples.
+4. _Add test containers_: Create docker containers for your test instances. These could be load test containers (such as k6) or headless browsers such as puppeteer. The usage scenario file will drive these test containers to generate traffic to the rest of the platform in the dockerised test environment.
+5. _Test the implementation_: Run the Green Metrics Tool locally to test if your environment works correctly and examine the output it generates.
+6. _Submission_: Submit your GitHub repo to the Green Metrics platform to see your stats in a more realistic environment.
 
 With this set up done, you can start the iterative cycle described above, using this first run as a baseline.
 
