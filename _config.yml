@@ -34,6 +34,18 @@ collections:
   - glossary
   - resources
 
+plugins:
+  - jekyll-node-module
+
+node_modules:
+  modules_dir: node_modules
+  assets:
+    js: assets/scripts
+    css: assets/styles
+  copy:
+  - source: "@scottlogic/tech-carbon-estimator"
+    target: assets/tech-carbon-estimator
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
