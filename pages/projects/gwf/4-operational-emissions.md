@@ -253,29 +253,28 @@ $$ 13.08\ kgCO_2e/year + 6.15\ kgCO_2e/year + 12\ kgCO_2e/year = 31.23\ kgCO_2e/
 
 #### Improving the CPU Estimates
 
-In an attempt to improve on the above CPU estimates we went back to the Cloud Carbon Footprint methodology to remove billing information from the equation. The problem with billing information when used as a usage indicator is that it is subjective. One company may negotiate a betting pricing structure than another due to their size, for example. A better approach would be to use actual CPU usage data available from teh Hetzner API.
+In an attempt to improve on the above CPU estimates we went back to the Cloud Carbon Footprint methodology to remove billing information from the equation. The problem with billing information when used as a usage indicator is that it is subjective. One company may negotiate a betting pricing structure than another due to their size, for example. A better approach would be to use actual CPU usage data available from the Hetzner API.
 
 The other area for improvement was to use data about the actual CPU being used, not an Amazon equivalent.
 
-To do this we went back to the [blog from Etsy](https://www.etsy.com/codeascraft/cloud-jewels-estimating-kwh-in-the-cloud/) that the CCF methodology was based on. Looking at the [detailed methodology](https://github.com/etsy/cloud-jewels/blob/master/methodology.md) in their GitHub repository, we arrived at the following method.
+To do this we went back to the [blog from Etsy](https://www.etsy.com/codeascraft/cloud-jewels-estimating-kwh-in-the-cloud/) on Cloud Jewels, that the CCF methodology was based on. Looking at the [detailed methodology](https://github.com/etsy/cloud-jewels/blob/master/methodology.md) in their GitHub repository, we arrived at the following method.
 
 We first calculate the coefficient:
 - The Hetzner API reported that the appliance that runs the Greencheck API uses an AMD Epyc Processor running at 2.4 GHz. 
-- Get the number of threads, maximum and minimum average power draw for the AMD EPYC Processor (2.4 GHz) from https://www.spec.org/power_ssj2008/results/res2023q1/.
-- Ideally, we would find all uses of the chosen processor and average out the values, but for this example, I’ve just used the first matching row).
+- Get the number of threads, maximum and minimum average power draw for the AMD EPYC Processor (2.4 GHz) from [Spec.org](https://www.spec.org/power_ssj2008/results/res2023q1/). Ideally, we would find all uses of the chosen processor and average out the values, but for this example, I’ve just used the first matching row).
 - Divide the minimum power draw for the CPU by the number of threads to get the minimum power per thread.
 - Do the same for the maximum.
 - Calculate the average utilisation for the month from usage data supplied by the Hetzner API.
 
-Next, we apply the following formula to get the energy coefficient:
+Next, we apply the following formula from Etsy's Cloud Jewels (see link above) to get the energy coefficient:
 
 $$ Wattage = MinimumWattage + AverageCpuUtilization * (MaximumWattage - MinimumWattage) $$
 
 | Description | Value | Notes |
 | --- |
-| Min average CPU draw for AMD EPYC 9654 2.40GHz | 63.2W | From https://www.spec.org/power_ssj2008/results/res2023q1/ |
-| Max average CPU draw for AMD EPYC 9654 2.40GHz | 351W | From https://www.spec.org/power_ssj2008/results/res2023q1/ |
-| Threads | 192 | From https://www.spec.org/power_ssj2008/results/res2023q1/ |
+| Min average CPU draw for AMD EPYC 9654 2.40GHz | 63.2W | From [Spec.org](https://www.spec.org/power_ssj2008/results/res2023q1/) |
+| Max average CPU draw for AMD EPYC 9654 2.40GHz | 351W | From [Spec.org](From https://www.spec.org/power_ssj2008/results/res2023q1/) |
+| Threads | 192 | From [Spec.org](From https://www.spec.org/power_ssj2008/results/res2023q1/) |
 | Min energy per thread | 0.3291666667 | Min / Threads |
 | Max energy per thread | 1.828125 | Max / Threads |
 | Percent utilisation for the month | 56.91044181 | Average CPU utilisation over all five servers over the course of 1 month. |
