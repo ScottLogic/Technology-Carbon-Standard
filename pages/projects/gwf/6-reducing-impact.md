@@ -7,7 +7,14 @@ project: gwf
 
 # Reducing impact - our what-if scenarios
 
-# Ongoing Improvement
+In this section, we look beyond estimations/reporting and think about what factors affect the emissions of our digital estate. We're calling this our what-if scenarios. 
+
+*What would happen if* we switched cloud provider? *What would happen if* we only used refurbed hardware from now on. Here's what we explored in these sections:
+
+- [Optimising the Green Web platform and API](#optimising-the-green-web-platform-and-api)
+
+
+## Optimising the Green Web platform and API
 
 While the API is currently well optimised through a variety of techniques to reduce its carbon emissions, it is important to apply green software principals such as making sure  the code is energy efficient. To do this, we first need a way to measure the codebase and monitor that future changes don't negatively impact the carbon emissions.
 
