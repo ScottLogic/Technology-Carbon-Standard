@@ -5,10 +5,15 @@ permalink: /projects/green-web-foundation/overview
 project: gwf
 ---
 
+{: #top}
+
 # Overview
 
+This project, a collaboration between [Green Web Foundation](https://www.thegreenwebfoundation.org/) and [Scott Logic](https://www.scottlogic.com/), uses the TCS framework to estimate Green Web Foundation's digital estate. This write-up provides full documentation of the decisions, methodology and learning points so others can learn from what we experienced.
 
-In this section, we set the scene for this project. 
+- [Results summary](#results-summary)
+- [Why do this project?](#context---why-this-project)
+- [Partnering organisations and team](#partnering-organisations-and-team)
 
 ## Results summary
 
@@ -18,34 +23,43 @@ In this section, we set the scene for this project.
 
 ![GWF Emissions Treemap](/assets/images/projects/GWF/gwf-emissions-treemap.png)
 
+<div class="gwf-results-table"></div>
+
 | Category | Carbon Emissions kgCO<sub>2</sub>e/year | as % | Notes |
 | --- |
-| **Upstream Emissions** | **252** | **41.93%** | |
-| [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | 0 | 0.00% | No data |
-| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 41.93% | Detailed Estimate |
-| [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | 0 | 0.00% | None (this year) |
-| [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | 0 | 0.00% | None |
-| **Operational Emissions** | **234** | **38.93%** | |
-| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 26.96% | Detailed Estimate |
-| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 6.66% | Beermat Estimate |
-| [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | 0 | 0.00% | None |
-| [Generators](/projects/green-web-foundation/operational#generators) | 0 | 0.00% | None |
-| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5.32% | Detailed Estimate |
-| [SaaS](/projects/green-web-foundation/operational#saas-services) | 0 | 0.00% | No data |
-| [Managed Services](/projects/green-web-foundation/operational#managed-services) | 0 | 0.00% | Beermat Estimate |
-| **Downstream Emissions** | **115** | **19.13%** | |
-| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17.47% | Beermat Estimate |
-| [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 1.66% | Beermat Estimate |
-| **Total** | **601 kgCO<sub>2</sub>e/year** | **100%**  |
+| Upstream Emissions | 252 | 42% | |
+| [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
+| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 42% | Detailed Estimate |
+| [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None (this year) |
+| [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None |
+| Operational Emissions | 234 | 39% | |
+| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 27% | Detailed Estimate |
+| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 7% | Beermat Estimate |
+| [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None |
+| [Generators](/projects/green-web-foundation/operational#generators) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None |
+| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5% | Detailed Estimate |
+| [SaaS](/projects/green-web-foundation/operational#saas-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
+| [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | Beermat Estimate |
+| Downstream Emissions | 115 | 19% | |
+| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17% | Beermat Estimate |
+| [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | Beermat Estimate |
+| Total | 601 kgCO<sub>2</sub>e/year | 100% |
 
+[To the top](#top)
 
-## Context - why do this project?
+---
+
+## Context - why this project?
 
 At the beginning of 2024, Green Web Foundation (GWF) set a goal to estimate their organisation's carbon emissions for the first time. Given the GWF team's knowledge of estimating digital emissions, the team decided to split out estimating the emissions from their digital estate from the rest of the business.
 
 Also around the start of 2024, the first version of the open-source [Technology Carbon Standard](https://www.techcarbonstandard.org/) (TCS) was launched by Scott Logic.
 
-As long-term advocates for the benefits of open-source, GWF and Scott Logic agreed to partner up and form this project. The project set out to use the TCS framework to estimate GWF's digital estate, fully documenting their decisions, methodology and learning points as they went so others could learn from their experience. This project write-up is the result of this collaboration.
+As long-term advocates for the benefits of open-source, GWF and Scott Logic agreed to partner up and form this project. The project set out to use the TCS framework to estimate GWF's digital estate, fully documenting the decisions, methodology and learning points as we went so others could learn from our experience. This project write-up is the result of this collaboration.
+
+[To the top](#top)
+
+---
 
 ## Partnering organisations and team
 

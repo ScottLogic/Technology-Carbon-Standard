@@ -10,6 +10,7 @@ module.exports = {
     './_glossary/*.md',
     './_resources/*.md',
     './pages/*.md',
+    './pages/projects/gwf/*.md',
     './*.md',
     './*.html',
   ],

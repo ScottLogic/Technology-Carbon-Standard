@@ -1,0 +1,5 @@
+<style>
+    tbody tr:first-of-type {
+        background-color: red;
+    }
+</style>
