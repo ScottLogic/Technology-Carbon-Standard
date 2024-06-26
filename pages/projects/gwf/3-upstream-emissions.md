@@ -14,7 +14,7 @@ project: gwf
 # GWF: Estimating upstream emissions (Category U)
 Read the TCS overview of <a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream">upstream emissions</a> for a primer on this category.
 
-When attemping to estimate Green Web Foundation's digital upstream emissions, we describe the approach used and why for each sub-category.
+The approach used and why for each sub-category in upstream emissions:
 
 - [Software](#software)
 - [Employee Hardware](#employee-hardware)
@@ -28,13 +28,13 @@ When attemping to estimate Green Web Foundation's digital upstream emissions, we
 
 ### Estimated emissions
 
-Unknown
+**No data**
 
 Estimate confidence: *n/a - not attempted*
 
 ### Agreed scope
 
-We started by identifying the software used most prominently by the GWF team, eg what's in our digital supply chain. We used the team's internal finance tracker to generate a starting list. We realised early on that trying to measure everything was inpractical so looked for the top 5. We agreed that software installed on employee laptops, as well as software installed on GWF controlled servers was in scope. 
+We started by identifying the software used most prominently by the GWF team, eg the digital supply chain. We used GWF's internal finance tracker to generate a starting list. We realised early on that trying to measure everything was inpractical so looked for the top 5. We agreed that software installed on employee laptops, as well as software installed on GWF controlled servers was in scope. 
 
 The first version of this list we settled on is:
 - Django (server installations)
@@ -47,7 +47,7 @@ The first version of this list we settled on is:
 
 The idea for this was to see what data exists to help us understand the embodied carbon in each piece of software. The key thing is that we know a whole bunch of energy would have been consumed making the software versions we see and use today. We were wondering if we can reflect this in some way in our own digital carbon estimates. 
 
-After a quick internet search for any such information from these suppliers we concluded this is, unsurprisingly, not yet readily available. Due to time constraints, we decided to prioritise our efforts elsewhere.
+After drawing on our own knowledge of these software communities and supported by an internet search for useful information, we concluded that data to support these kinds of estimates is not yet readily available. Due to time constraints, we decided to prioritise our efforts elsewhere.
 
 **How could we improve upon this?**
 
@@ -63,9 +63,13 @@ We also could have looked for any kind of industry benchmarks and extracted some
 
 ### Estimated emissions
 
-<span style="color: red">TBC</span>
+**Estimate used: Detailed = 252 kgCO<sub>2</sub>e/year - 42% of overall digital estate**
 
-<span style="color: red">Estimate confidence: High</span>
+| **Estimate type** | **2023 estimate** | **Confidence in methodology** |
+| High level | 656 kgCO<sub>2</sub>e/year | Medium |
+| Detailed | 252 kgCO<sub>2</sub>e/year | High |
+
+
 
 ### Agreed scope
 
@@ -78,31 +82,35 @@ We limited the scope to the digital devices that require a power source used by 
 
 We agreed that other hardware such as keyboards, mice, landline phones and microphones are out of scope at this point. 
 
-Much of this equipment is personally owned by GWF employees, with a Bring Your Own Device (BYOD) policy enabling use at work. This meant that BYOD devices needed to be in scope as well as those purchased by GWF. 
+GWF has a Bring Your Own Device (BYOD) policy enabling personal device use at work. This meant that BYOD devices needed to be in scope as well as those purchased by GWF. 
 
 We started with an outline list regarding the quantity and location of each type of device.
 
 - 6 laptops (3× Germany, 1× UK, 1× Netherlands, 1× Taiwan)
-- 8 monitors (3× Germany, 3× UK, 1x Netherlands, 1× Taiwan)</span>
+- 8 monitors (3× Germany, 3× UK, 1x Netherlands, 1× Taiwan)
 - 1 small desktop printer (Germany)
 
 ### High level estimate methodology
+
+**BYOD policy**
 
 Firstly we needed to decide a way to attribute the BYOD emissions to GWF. How much of the emissions are attributable to GWF and how much to the individual?
 
 > Bring Your Own Devcies (BYOD) policies was not something we had yet considered how to account for in the TCS. After further discussions with the Scott Logic Sustainability team and GWF, we came to an agreement as to how we would attribute these devices to the organisation.
 
-We couldn't find a standard or convention for accounting for the carbon emissions of BYODs. Therefore, we all decided the best approach was for GWF to decide this for themselves, based on a broad sense of usage and fairness. GWF agreed on attributing 70% of the embodied carbon of BYODs to GWF's carbon footprint. Any equipment purchased by GWF would be 100% attributable to GWF.
+We couldn't find a standard or convention for accounting for the carbon emissions of BYODs. Therefore, we agreed the best approach was for GWF to decide this for themselves, based on a broad sense of usage and fairness. GWF agreed on attributing 70% of the embodied carbon of BYODs to GWF's carbon footprint. Any equipment purchased by GWF would be 100% attributable to GWF.
 
 **Laptops**
 
-Firstly we needed to arrive at an average embodied carbon value for a laptop. We were not seeking high degrees of accuracy at this point, just something good enough to support an initial, high level estimate. 
+We weren't seeking high degrees of accuracy at this point, just something good enough to support an initial, high level estimate. For this we needed an average embodied carbon value for a laptop. 
 
-The average embodied carbon figure we used was **230kgCO2e**. 
+The average embodied carbon figure used was **230 kgCO2e**. 
 
 We arrived at this by reviewing multiple PDF datasheets for laptops from [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm), [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) and [Apple](https://www.apple.com/environment/). We cross-referenced the specified values against multiple research sources to check the number was in the right ballpark.
 
-The datasheets mentioned, know as Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) datasheets, typically provide a breakdown of carbon emissions during that product's full life cycle, including it's usage. But we only want the embodied carbon value for this estimate. So, we removed the usage carbon emissions value (around 20%) from the total carbon footprint leaving us a value for manufacture, transport and end of life. This becomes our embodied carbon value of **230kgCO2e**.
+The datasheets mentioned, know as Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) datasheets, typically provide a breakdown of carbon emissions during that product's full life cycle, including it's usage. But we only want the embodied carbon value for this part of the TCS, just upstream emissions. Usage is accounted for in operational emissions. 
+
+We removed the usage carbon emissions value (around 20%) from the total carbon footprint leaving us a value for manufacture, transport and end of life. This becomes our embodied carbon value of **230 kgCO2e**.
 
 To keep things simple for this high-level estimate we assumed the following:
 - All employees used non-manufacturer specific laptops at this point - we weren't ready to get a detailed equipment list at this point.
@@ -116,27 +124,18 @@ $$ (230\ kgCO_2e \times 1) + 5 \times (230\ kgCO_2e \times 0.7) = 1035\ kgCO_2e 
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-<span style="color:red;">DAVID PLEASE CHECK THIS - DONE!</span>
-<span style="color: coral">DONE!</span>
-
 The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, as laptops are assumed to be replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure per year.
 
-$$ 1035\ kgCO_2e ÷ 5 = 207\ kgCO_2e  $$
+$$ 1035\ kgCO_2e ÷ 5 = 207\ kgCO_2e/year  $$
 
 
 **Monitors**
 
 The approach for getting an average embodied carbon value for monitors was very similar to that of laptops. We derived data from PCFs by [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm) and [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) 24-inch monitors.
 
-The average embodied carbon figure we used was **355kgCO2e**.
+The average embodied carbon figure we used was **355 kgCO2e**.
 
-We applied the same assumptions we made for laptop to the monitors.
-
-<span style="color: red">DAVID PLEASE CHECK THIS</span>
-<span style="color: coral">DONE!</span>
-
-
-Of the 8 monitors used, 1 is wholly owned by GWF, the remaining 7 are BYODs. 
+We applied the same assumptions we made for laptop to the monitors. Of the 8 monitors used, 1 is wholly owned by GWF, the remaining 7 are BYODs. 
 
 $$ 1 \times (355\ kgCO_2e \times 1) + 7 \times (355\ kgCO_2e \times 0.7) = 2094\ kgCO_2e $$
 
@@ -144,30 +143,35 @@ $$ 1 \times (355\ kgCO_2e \times 1) + 7 \times (355\ kgCO_2e \times 0.7) = 2094\
 
 The above assumes all the embodied carbon is accountable to this year eg purchased this year. This is unlikely to be the case, and we assume monitors are replaced every 5 years. Therefore, we use the amortisation technique and divide this figure by 5 to give an average figure per year.
 
-$$ 2094\ kgCO_2e ÷ 5 = 419\ kgCO_2e  $$
+$$ 2094\ kgCO_2e ÷ 5 = 419\ kgCO_2e/year  $$
 
 
 **Printers**
 
 We identified a single printer located in the Germany office. This is a home/ small office all-in-one inkjet printer, copier, and scanner. Unfortunately, however, we could find little (substantiated) data or research[^1],[^2], on printers in the time available. 
 
-As a high-level, “beer mat” estimate, a single small printer with (assuming) light use, it didn’t seem necessary to spend much time researching further. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. 
+Since it's only a single small printer with light use, it didn’t seem necessary to spend much time researching further to produce a high level estimate. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. 
 
 Printer manufacturers do not appear to offer carbon estimates for these devices. Instead they only offer energy use (standby and whilst printing) and [Typical Energy Consumption](/glossary#typical-energy-consumption-tec).
 
 Assumptions were made based on other IT hardware, such as laptops, monitors, servers and networking equipment, to estimate the embodied carbon of such printers.
 
-<span style="color: red">DAVID: I'm curious about why this is 150 + 50 - what's your logic here? Coudl be easier just to say 200 and keep it simpler?</span>
-
-<span style="color: coral">HANNAH: It's a "+ or -" 50kgCO2e - just to capture the lack of confidence with the figure. I've corrected the formula below.</span>
-
-The average embodied carbon figure we used was **150kgCO2e ± 50kgCO2e**. 
+The average embodied carbon figure we decided to use was **150kgCO2e**.
 
 As a GWF-owned device this is 100% attributable, and was amortised over 5 years (assumed expected life).
 
 $$ 150\ kgCO_2e ÷ 5 = 30\ kgCO_2e/year $$
 
 > Some assumptions and guesses needed to be made regarding the embodied carbon of printers as the manufacturers do not publish this data. This certainly reduces the confidence we can have in this carbon emissions estimate, but we *felt* like we made a reasonable assumption.
+
+**Resulting high-level estimate**
+
+| **Device type** | **Annual estimate** | **%** |
+| Laptops | 207 kgCO_2e | 32% |
+| Monitors | 419 kgCO_2e | 64% |
+| Printers | 30 kgCO_2e | 5% |
+| **TOTAL** | **656 kgCO_2e** | **100%** |
+
 
 **How could we improve upon this?**
 

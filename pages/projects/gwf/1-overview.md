@@ -54,12 +54,11 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 
 <span style="color: red">Still need to go through the retro doc and pick out other key insights.</span>
 
+* Whilst everyone in the project expected to see that the emissions from employee hardware be large, we were all shocked by the relative size compared to other activities. Especially surprising was how impactful monitors are compared to laptops. The industry is emphasising building greener software, but is greener hardware, such as remanufactured, refurbished and second-hand, getting enough attention?
 
-* Whilst everyone in the project expected to see that the emissions from employee hardware be large, we were all shocked by the relative size compared to other activities. The industry is emphasising building green software, but is greener hardware, such as remanufactured, refurbished and second-hand getting enough attention?
+* The impact of the cloud services segment is down to suppliers being located in regions of low carbon intensity.
 
-* The impacty of the cloud services segment is down to suppliers being located in regions of low carbon intensity.
-
-* Getting data for upstream emissions of software was very difficult. Without suppliers conducting their own digital carbon estimates, even at a high level, it is hard nut to crack.
+* Getting data for upstream emissions for printers and software was very difficult. Without suppliers conducting their own digital carbon estimates, even at a high level, this is hard nut to crack.
 
 
 [To the top](#top)
