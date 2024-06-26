@@ -9,11 +9,12 @@ project: gwf
 
 ## Estimates vs measurements: what models are we using?
 
+It’s important to be aware of the kind of model you’re working with, as it will impact estimates results. Top down models, tend to look at entire systems and as such are more likely to overestimate emissions. Bottom up models look to estimate smaller components of larger systems, and are likely to underestimate emissions. 
+
+That is to say, all models have flaws and it is important to understand their flaws and limitations. We've done our best to keep this in mind throughout this project, and clearly state the known flaws and limitiations for any approaches we've used.
+
 Fershad, from GWF, has spoken quite a bit about this difference in the past - his slides on [The Nuance of Quantifying Digital Carbon Emissions](https://www.thegreenwebfoundation.org/news/speaking-about-green-it-in-asia-green-io-conference-singapore-and-more/).
 
-It’s important to be aware of the kind of model you’re working with, as it will impact the results you see from the estimates it produces. Top down models, tend to look at entire systems and as such will more likely overestimate emissions. Bottom up models look to estimate smaller components of larger systems, and are likely to underestimate emissions. 
-
-That is to say, all models have flaws and it is important to understand their flaws and limitations.
 
 ### High-level estimates
 
@@ -29,7 +30,7 @@ We assumed a high-level estimate would be characterised as:
 
 ### Detailed estimates
 
-We decided that after producing our initial set of high-level estimates, we would deep dive into particular areas of concern or interest.
+We decided that after producing our initial set of high-level estimates, we would deep dive into particular areas of concern or interest as remaining capacity allowed.
 
 We assumed that detailed-level estimates would be characterised as:
 
@@ -53,7 +54,7 @@ We've chosen to round calcuation outputs when appropriate, which may lead to som
 
 ## Regional Carbon Intensity
 
-The GWF team are a remote team, positioned around the world. We use the regional electricity grid’s carbon intensity to calculate the operational carbon emissions. The following regional carbon intensities are used:
+The GWF team are a remote team, positioned around the world. We used the regional electricity grid’s carbon intensity to calculate the operational carbon emissions. The following regional carbon intensities are used:
 - Germany: 363.982gCO2e/kWh
 - Netherlands: 386.189gCO2e/kWh
 - Taiwan: 565.629gCO2e/kWh
