@@ -57,6 +57,8 @@ We also could have looked for any kind of industry benchmarks and extracted some
 
 [To the top](#top)
 
+---
+
 ## Employee Hardware
 
 {% include categoryItem.html item="CatUEmployeeHardware" %}
@@ -68,8 +70,6 @@ We also could have looked for any kind of industry benchmarks and extracted some
 | **Estimate type** | **2023 estimate** | **Confidence in methodology** |
 | High level | 656 kgCO<sub>2</sub>e/year | Medium |
 | Detailed | 252 kgCO<sub>2</sub>e/year | High |
-
-
 
 ### Agreed scope
 
@@ -234,6 +234,7 @@ The table provides values for GWF's total embodied carbon of employee hardware. 
 
 [To the top](#top)
 
+---
 
 ## Networking and Infrastructure Hardware
 
