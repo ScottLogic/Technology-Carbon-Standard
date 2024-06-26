@@ -34,20 +34,20 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 | --- |
 | Upstream Emissions | 252 | 42% | |
 | [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
-| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 42% | Detailed Estimate |
-| [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None (this year) |
-| [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None |
+| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 42% | Detailed estimate |
+| [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
+| [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | Operational Emissions | 234 | 39% | |
-| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 27% | Detailed Estimate |
-| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 7% | Beermat Estimate |
-| [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None |
-| [Generators](/projects/green-web-foundation/operational#generators) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | None |
-| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5% | Detailed Estimate |
+| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 27% | Detailed estimate |
+| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 7% | High level estimate |
+| [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
+| [Generators](/projects/green-web-foundation/operational#generators) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
+| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5% | Detailed estimate |
 | [SaaS](/projects/green-web-foundation/operational#saas-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
-| [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | Beermat Estimate |
+| [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate |
 | Downstream Emissions | 115 | 19% | |
-| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17% | Beermat Estimate |
-| [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | Beermat Estimate |
+| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17% | High level estimate |
+| [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | High level estimate |
 | Total | 601 kgCO<sub>2</sub>e/year | 100% |
 
 ### Key insights
@@ -87,7 +87,7 @@ The project set out to use the TCS framework to estimate GWF's digital estate, f
 
 ## Partnering organisations and team
 
-<div class="flex">
+<div class="flex gap-8">
 
 <div class="basis-1/2">
 
@@ -95,28 +95,28 @@ The project set out to use the TCS framework to estimate GWF's digital estate, f
 
 <a href="https://www.thegreenwebfoundation.org/">Green Web Foundation website</a>
 
-<p>Green Web Foundation European non-profit organisation working towards a fossil-free internet by 2030. We maintain the world’s largest <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">open dataset of websites</a> that run on green energy. We offer <a href="https://www.thegreenwebfoundation.org/tools/">open source tools</a>> to manage the environmental impact of digital services. And we support <a href="https://www.thegreenwebfoundation.org/fellowships">movement leaders and policymakers</a> to effectively frame the conversation when advocating for a sustainable and just internet.</p>
-
-
 <p>Project team: <a href="https://www.linkedin.com/in/hanopcan/">Hannah Smith</a>, <a href="https://www.linkedin.com/in/mrchrisadams/">Chris Adams</a>, <a href="https://www.linkedin.com/in/fershad/">Fershad Irani</a></p>
+
+<p>Green Web Foundation is a european non-profit organisation working towards a fossil-free internet by 2030. We maintain the world’s largest <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">open dataset of websites</a> that run on green energy. We offer <a href="https://www.thegreenwebfoundation.org/tools/">open source tools</a> to manage the environmental impact of digital services. And we support <a href="https://www.thegreenwebfoundation.org/fellowships">movement leaders and policymakers</a> to effectively frame the conversation when advocating for a sustainable and just internet.</p>
 
 </div>
 
 <div class="basis-1/2">
 
-### Scott Logic
+<p><span style="color: red;">Scott Logic logo</span></p>
 
-<span style="color: red;">Add some blurb here?<span>
+<p><a href="https://www.scottlogic.com/">Scott Logic website</a></p>
 
-[Visit Scott Logic website](https://www.scottlogic.com/)
+<p>Project team: David Rees, James Camilleri</p>
 
-**Team**
+<p><span style="color: red;">Add some blurb here?</span></p>
 
-- David
-- James
+
 
 </div>
 </div>
+
+[To the top](#top)
 
 ---
 [Next - Assumptions](assumptions)
