@@ -17,7 +17,7 @@ project: gwf
 
 Read the TCS overview of <a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/operational">operational emissions</a> for a primer on this category.
 
-When attemping to estimate Green Web Foundation's digital operational emissions, we describe the approach used and why for each sub-category.
+The approach used and why for each sub-category in operational emissions:
 
 - [Employee Devices](#employee-devices)
 - [Networking and Infrastructure](#networking-and-infrastructure)
@@ -34,71 +34,75 @@ When attemping to estimate Green Web Foundation's digital operational emissions,
 
 ### Estimated emissions
 
-<span style="color: red">Estimate confidence: High</span>
+**Estimate used: Detailed = 162.41 kgCO<sub>2</sub>e/year - 27% of overall digital estate**
+
+| **Estimate type** | **2023 estimate** | **Confidence in methodology** |
+| --- | --- | --- |
+| High level | 197.83 kgCO<sub>2</sub>e/year | Medium |
+| Detailed | 162.41 kgCO<sub>2</sub>e/year | High |
+
 
 ### Agreed scope
 
-<span style="color: coral">*HANNAH: Copy and paste of the hardware - do you want to repeat this, or re-word somehow?*</span>
-
-We limited the scope to the digital devices that require a power source used by staff on a day to day basis. Specifically this covers:
-
-- Laptops/desktops
-- Monitors
-- Printers
-- Company purchased mobile phones
-
-We agreed that other hardware such as keyboards, mice, landline phones and microphones are out of scope at this point. 
-
-Much of this equipment is personally owned by GWF employees, with a Bring Your Own Device (BYOD) policy enabling use at work. This meant that BYOD devices needed to be in scope as well as those purchased by GWF. 
-
-We started with an outline list regarding the quantity and location of each type of device.
-
-- 6 laptops (3× Germany, 1× UK, 1× Netherlands, 1× Taiwan)
-- 8 monitors (3× Germany, 3× UK, 1x Netherlands, 1× Taiwan)</span>
-- 1 small desktop printer (Germany)
+The scope here is the same as the [employee hardware category in upstream emissions](/projects/green-web-foundation/upstream#employee-hardware).
 
 ### High level estimate methodology
-#### Laptops
-We used an averge operational power use of 17.1W for laptops, based on data collected from manufacturer PCF data sheets, and [research](/information/lifecycle/example/employee#usage-carbon-emissions). We assume 1760hrs operational hours per year (based on 8hrs per day x 220 days per year). Therefore we can calculate an average [TEC](/glossary#typical-energy-consumption-tec) for laptops as:
+
+Our starting list of equipment is the same as the [employee hardware category in upstream emissions](/projects/green-web-foundation/upstream#employee-hardware).
+
+**Laptops**
+
+We weren't seeking high degrees of accuracy at this point, just something good enough to support an initial, high level estimate. For this we needed an average operational power value for a laptop. 
+
+We used an **averge operational power use of 0.0171 kWh for laptops**, based on data collected from manufacturer PCF data sheets, and [previous TCS research](/information/lifecycle/example/employee#usage-carbon-emissions). We assume 1760hrs operational hours per year, based on 8hrs per day x 220 days per year. 
+
+Therefore we can calculate an average [TEC](/glossary#typical-energy-consumption-tec) for laptops as:
 
 $$ 0.0171\ kWh \times 1760\ hrs = 30.1\ kWh/year $$
 
-To calculate the estimated emissions of each laptop we multiply the TEC/year with the regional grid carbon intensity:
+To calculate the estimated emissions of each laptop we multiply the TEC/year with the regional grid [carbon intensity](/glossary#carbon-intensity).
 
-Germany (3 laptops, 0.364kgCO<sub>2</sub>e/kWh):
+Germany - 3 laptops, regional grid carbon intensity 0.364kgCO<sub>2</sub>e/kWh:
 
 $$ 3 \times (30.1\ kWh/year \times 0.364\ kgCO_2e/kWh) = 32.87\ kgCO_2e/year $$
 
-UK (1 laptop, 0.268kgCO<sub>2</sub>e/kWh):
+<p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
+
+UK - 1 laptop, regional grid carbon intensity 0.268kgCO<sub>2</sub>e/kWh:
 
 $$ 30.1\ kWh/year \times 0.268\ kgCO_2e/kWh = 8.07\ kgCO_2e/year $$
 
-Netherlands (1 laptop, 0.386kgCO<sub>2</sub>e/kWh):
+Netherlands - 1 laptop, regional grid carbon intensity 0.386kgCO<sub>2</sub>e/kWh:
 
 $$ 30.1\ kWh/year \times 0.386\ kgCO_2e/kWh = 11.62\ kgCO_2e/year $$
 
-Taiwan (1 laptop, 0.566kgCO<sub>2</sub>e/kWh):
+Taiwan - 1 laptop, regional grid carbon intensity 0.566kgCO<sub>2</sub>e/kWh:
 
 $$ 30.1\ kWh/year \times 0.566\ kgCO_2e/kWh = 17.04\ kgCO_2e/year $$
 
 **Total carbon emissions of employee laptops: 69.6kgCO<sub>2</sub>e/year**
 
-#### Monitors
-For monitors we used an average TEC of 45kWh/year obtained from Dell and HP PCF data sheets. As per the laptop calculations above we multiply this by the regional grid carbon intensity.
+**Monitors**
 
-Germany (3 monitors, 0.364kgCO<sub>2</sub>e/kWh):
+For monitors we used an **average [TEC](/glossary#typical-energy-consumption-tec) of 45kWh/year** obtained from Dell and HP PCF data sheets. As per the laptop calculations above we multiply this by the regional grid carbon intensity.
+
+Germany - 3 monitors, 0.364kgCO<sub>2</sub>e/kWh:
 
 $$ 3 \times (45\ kWh/year \times 0.364\ kgCO_2e/kWh) = 49.14\ kgCO_2e/year $$
 
-UK (3 monitors, 0.268kgCO<sub>2</sub>e/kWh):
+<p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
+
+UK - 3 monitors, 0.268kgCO<sub>2</sub>e/kWh:
 
 $$ 3 \times (45\ kWh/year \times 0.268\ kgCO_2e/kWh = 36.18\ kgCO_2e/year $$
 
-Netherlands (1 monitor, 0.386kgCO<sub>2</sub>e/kWh):
+<p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
+
+Netherlands - 1 monitor, 0.386kgCO<sub>2</sub>e/kWh:
 
 $$ 45\ kWh/year \times 0.386\ kgCO_2e/kWh = 17.37\ kgCO_2e/year $$
 
-Taiwan (1 monitor, 0.566kgCO<sub>2</sub>e/kWh):
+Taiwan - 1 monitor, 0.566kgCO<sub>2</sub>e/kWh:
 
 $$ 45\ kWh/year \times 0.566\ kgCO_2e/kWh = 25.47\ kgCO_2e/year $$
 
@@ -106,11 +110,20 @@ $$ 45\ kWh/year \times 0.566\ kgCO_2e/kWh = 25.47\ kgCO_2e/year $$
 
 The operational hours of the laptops and montitors did not take into account the actual number of working hours per year. It assumed full time operational hours in the beer mat estimates.<span style="color: coral">*Hannah, do you want to update the above calculations with the 70% BYOD to GWF we used for upstream hardware calcs? Or leave it as is? I think I was only considering the 70% attribution purely from an embodied carbon perspective - and not reflecting the time employees actually work for GWF. How do you want to do this?*</span>
 
-#### Printers
+**Printers**
 
-For the operational carbon emissions we use an average TEC of 0.17kWh. This is based on datasheets of similar sized and specification printers from Canon (PIXMA G5570, for example). HP and the datasheet for the actual printer owned by GWF do not specify a TEC, so we use the Canon printer as a proxy. We simply apply Germany’s carbon intensity of 0.364kgCO2e/kWh to estimate the printer’s operational emissions:
+For the **operational carbon emissions we use an average TEC of 0.17kWh**. This is based on datasheets of similar sized and specification printers from Canon (PIXMA G5570, for example). HP and the datasheet for the actual printer owned by GWF do not specify a TEC, so we use the Canon printer as a proxy. We simply apply Germany’s carbon intensity of 0.364kgCO2e/kWh to estimate the printer’s operational emissions:
 
 $$ 0.17\ kWh \times 0.364\ kgCO_2e/kWh = 0.06kgCO_2e/year $$
+
+**Resulting high-level estimate**
+
+| **Device type** | **Annual estimate** | **%** |
+| --- | --- | --- |
+| Laptops | 69.9 kgCO_2e | 35% |
+| Monitors | 128.16 kgCO_2e | 65% |
+| Printers | 0.06 kgCO_2e | 0% |
+| **TOTAL** | **197.83 kgCO_2e** | **100%** |
 
 
 **How could we improve upon this?**
