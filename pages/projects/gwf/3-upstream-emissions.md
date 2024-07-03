@@ -68,8 +68,10 @@ We also could have looked for any kind of industry benchmarks and extracted some
 **Estimate used: Detailed = 252 kgCO<sub>2</sub>e/year - 42% of overall digital estate**
 
 | **Estimate type** | **2023 estimate** | **Confidence in methodology** |
+| --- | --- | --- |
 | High level | 656 kgCO<sub>2</sub>e/year | Medium |
 | Detailed | 252 kgCO<sub>2</sub>e/year | High |
+
 
 ### Agreed scope
 
@@ -84,13 +86,15 @@ We agreed that other hardware such as keyboards, mice, landline phones and micro
 
 GWF has a Bring Your Own Device (BYOD) policy enabling personal device use at work. This meant that BYOD devices needed to be in scope as well as those purchased by GWF. 
 
-We started with an outline list regarding the quantity and location of each type of device.
+### High level estimate methodology
+
+We started with an outline list regarding the quantity and location of each type of device. At this point we did not have specifics such as make, model, year of purchase or whether the device was brand new or remanufactured etc.
+
+Our outline list:
 
 - 6 laptops (3× Germany, 1× UK, 1× Netherlands, 1× Taiwan)
 - 8 monitors (3× Germany, 3× UK, 1x Netherlands, 1× Taiwan)
 - 1 small desktop printer (Germany)
-
-### High level estimate methodology
 
 **BYOD policy**
 
@@ -167,6 +171,7 @@ $$ 150\ kgCO_2e ÷ 5 = 30\ kgCO_2e/year $$
 **Resulting high-level estimate**
 
 | **Device type** | **Annual estimate** | **%** |
+| --- | --- | --- |
 | Laptops | 207 kgCO_2e | 32% |
 | Monitors | 419 kgCO_2e | 64% |
 | Printers | 30 kgCO_2e | 5% |
@@ -175,62 +180,77 @@ $$ 150\ kgCO_2e ÷ 5 = 30\ kgCO_2e/year $$
 
 **How could we improve upon this?**
 
-After looking at these high level estimates in comparison to the other categories, we decided to go further and produce details estimates based on specifics. This would allow us to take the actual purchase year into account, and account between for older, re-used and refurbished equipment. 
+After looking at these high level estimates in comparison to the other categories, we decided to go further and produce details estimates based on specifics. This would allow us to take the actual purchase year into account, and account between for older, re-used and refurbished equipment which is a conscious purchasing decision by Green Web Foundation staff. 
 
 
 ### Detailed estimate methodology
 
-<span style="color: red">Text still to be reviewed and edited.</span>
+**Accounting for refreshed products**
 
-After producing the "beer mat" estimates for GWF's technology we decided to focus on producing some more detailed estimates for the upstream employee hardware. There were a number of reasons for this focus:
+We needed to understand how to account for refreshed devices eg reused, refurbished or remanufactured. When new equipment is purchased the entire embodied carbon is accounted for by that organisation in the year of purchase. But we recognised from the outset that refreshed devices would need a different accounting strategy.
 
-1. The carbon emissions of the employee hardware makes up such a large percentage of GWF's overall carbon footprint meant it was simply too large to ignore.
-1. We knew that the "beer mat" estimates didn't take into any account for the use of refurbished equipment. Using refrubished equipment is a conscious decision by employees of Green Web Foundation, not only for cost saving, but the environmental benefit of extending the life of hardware for as long as posisble.
+We reached out to talk with [Circularity First](https://circularity-first.com/), who have extensive research and experience in refreshed and remanufactured products. 
 
-## Information Gathering
+They shared with us that purchasing a remanufactured product can save ~60% of the carbon emissions compared to buying the product new. A remanufactured device is deconstructed, fully checked and rebuilt using new or re-used replacement parts back to the original manufacturer's specification and often comes with an original manufacturer's warranty.
 
-The first steps to producing a more accurate carbon emissions estimate is to gather specific details of the hardware such as manufacturer and model of the equipment. Where possible we gathered product carbon footprint [(PCF)](/glossary#product-carbon-footprint-pcf) data sheets. Some manufacturers provide excellent resources for finding this data on their products. Some manufacturers are very poor. Where this was the case, we would find an approximatly equivalent product to use instead (these are indicated in the tables below).
+The process is less intensive for reburbished devices. Devices are simply cleaned, diagnosed and tested for defects and only damaged components are replaced where neccessary for functional operation. This process makes it harder to estimate the embodied carbon. It can vary between 85-95% saving of carbon emissions. These emissions would include transport to and from the place of refurbishment, packaging and the testing and diagnosis process, plus (if) any replacement parts. 
 
-When new equipment is purchased by an organisation, the entire embodied carbon is accounted for by that organisation. We tried to understand what that means for an organisation that acquires a refreshed (reused, refurbished, remanufactured) product, and how that would be accounted. After exploring some ideas and methods we reached out to talk with [Circularity First](https://circularity-first.com/). 
+We agreed to use a conservative estimate of 85% carbon emissions saving. Therefore we apply 15% of the original device's embodied carbon to GWF for refurbished devices in the year of purchase. 
 
-Circularity First have extensive research and experience in refreshed and remanufactured products. They shared with us that purchasing a remanufactured product can save ~60% of the carbon emissions compared to buying the product new. A "remanufactured" product is deconstructed, fully checked and rebuilt using new or re-used replacement parts back to the original manufacturers specification and often comes with an original manufacturers warranty.
-
-For "reburbished" devices, this process is less intensive. Devices are simply cleaned, diagnosed and tested for defects and only replace damaged components where neccessary for functional operation. This process is harder to estimate the embodied carbon, and can vary between 85-95% saving of carbon emissions. These emissions would include transport (to and from the place of refurbishment), packaging and the testing and diagnosis process, plus (if) any replacement parts. 
-
-As most of GWF's devices are refurbished, and we agreed to use a conservative estimate of 85% carbon emissions saving we apply 15% of the original device's embodied carbon to GWF. One device was simply re-used, acquired and repurposed for GWF and so this has no further embodied carbon to account for.
-
-With the specific understanding that most of the equipment is BYOD, it was useful to gather more detail about how many days per (working (5)) week the device is used for GWF and attribute those working days to GWF.
-
-Below, the table compiles all of this data and produces the embodied carbon attributable to GWF.
+For reuse - simply purchased second-hand with no testing or replacement parts - there is no further embodied carbon to account for.
 
 
-### Laptops and Monitors
+**Laptops and Monitors**
+
+For a more accurate carbon emissions estimate, we gathered specific details of the hardware such as manufacturer and model of the equipment. Where possible we found product carbon footprint [(PCF)](/glossary#product-carbon-footprint-pcf) data sheets. Some manufacturers provide excellent resources for finding this data on their products. Some manufacturers are very poor. Where this was the case, we would find an approximatly equivalent product to use instead, indicated in the tables below.
+
+With the specific understanding that most of the equipment is BYOD, it was useful to gather more detail about how many days per week the device is used for GWF and attribute those working days to GWF.
+
+Below, the table compiles all of this data. We show the embodied carbon attributable to GWF if *all this equipment was purchased in the same year*, which in reality it wasn't (more below).
 
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Condition | Days per Week for GWF  | Product Carbon Footprint kgCO<sub>2</sub>e | Embodied Carbon kgCO<sub>2</sub>e | Refreshed/New Embodied Carbon kgCO<sub>2</sub>e | BYOD GWF Attributable kgCO<sub>2</sub>e |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Apple 2021 MacBook Pro 16" M1 Pro** | [Apple 16inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2021.pdf) | Refurbished | 4 | 349 | 255 | 38 | 31 |
-| Apple 2020 MacBook Pro 13" M1** | [Apple 13inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf)| Refurbished | 5 | 185 | 150 | 22 | 22 |
+|**Apple 2021 MacBook Pro 16" M1 Pro**** | [Apple 16inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2021.pdf) | Refurbished | 4 | 349 | 255 | 38 | **31** |
+| **Apple 2020 MacBook Pro 13" M1**** | [Apple 13inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf)| Refurbished | 5 | 185 | 150 | 22 | **22** |
 | Apple 2020 MacBook Air 13" M1 | [Apple 13inch MacBook Air](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf) | Reused | 5 | 161 | 137 | 0 | 0 |
-| Apple 2022 MacBook Air 13.6" M2** | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | New | 4  | 147 | 115 | 115 | 92 |
+| **Apple 2022 MacBook Air 13.6" M2**** | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | New | 4  | 147 | 115 | 115 | **92** |
 | Lenovo Ideapad S145 | [Lenovo IdeaPad S145](https://static.lenovo.com/ww/docs/regulatory/PCF_ideapad_S145-15.pdf) | New | 2.5 | 357 | 264 | 264 | 132 |
-| Apple 2023 MacBook Air 13.6" M2** | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | New | 4 | 171 | 133 | 133 | 107 |
+| **Apple 2023 MacBook Air 13.6" M2**** | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | New | 4 | 171 | 133 | 133 | **107** |
 | **Laptop Total** | | | | | | | **384** |
 | Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf) | Refurbished | 2 | 194 | 116 | 17 | 7 |
-| Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf) | New | 0.25 | 492 | 339 | 339 | 17 |
 | Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | Refurbished | 2 | 605 | 430 | 64 | 26 |
+| Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf) | New | 0.25 | 492 | 339 | 339 | 17 |
 | Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | New | 4 | 643 | 431 | 431 | 345 |
 | Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | New | 5 | 643 | 431 | 431 | 431 |
 | HP 24" Monitor (24f)  | [HP M24f FHD*](https://h20195.www2.hp.com/v2/getpdf.aspx/c08754174.pdf) | New | 4 | 215 | 110 | 110 | 88 |
 | Samsung Oddysee | [Samsung Ultra WQHD*](https://image-us.samsung.com/SamsungUS/epeat/ProductCarbonFootprint(PCF)ResultsforMobileProductsandDisplaysReport.pdf) | New | 0.25 | 592 | 373 | 373 | 19 |
 | Samsung 32" 4k Curve Monitor | [Dell S3221QS*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-s3221qs-monitor-pcf-datasheet.pdf) | New | 4 | 763 | 435 | 435 | 348 |
-| **Monitor Total** | | | | | | | **1281** |
-| **Employee Hardware Total** | | | | | | | **1665** |
+| **Monitor Total** | | | | | | | **1279** |
+| **Employee Hardware Total** | | | | | | | **1663** |
 
 \* Approximately equivalent product that could be found with a PCF data sheet.
 
 \** Acquired in the carbon accouting year (Jan 2023 - December 2023).
 
-The table provides values for GWF's total embodied carbon of employee hardware. However for accounting purposes, only the equipment that is acquired for the carbon accounting period is reported. This included only 4 laptops as indicated, totalling **252kgCO<sub>2</sub>e**
+**Resulting detailed estimate**
+
+For accounting purposes only the equipment acquired for the carbon accounting period is reported. In this case we were looking at the 2023 calendar year. The result is that only 4 laptops, as indicated in bold in the table, were relevant totalling **252kgCO<sub>2</sub>e**. No monitors or printers were purchased this year.
+
+| **Device type** | **2023 estimate** | **%** |
+| --- | --- | --- |
+| Laptops | 252 kgCO_2e | 100% |
+| Monitors | 0 kgCO_2e | 0% |
+| Printers | 0 kgCO_2e | 0% |
+| **TOTAL** | **252 kgCO_2e** | **100%** |
+ 
+
+**How could we improve upon this?**
+
+<span style="color: red">Anything else to add here - is my suggestion below ok? - Han</span>
+
+For embodied carbon, the days per week working for GWF may be misleading. For example for several of the monitors, whilst we know they are BYOD and only used occasionally, we know they aren't used for anything else on the other days. This is in contrast to laptops which are used at home for other things on non-working days. Considering usage is relevant for thinking about operational emissions eg energy use. But it probably doesn't make much sense to divide the embodied carbon in this way, the carbon has still be spent as the device exists and sits in an office somewhere. Our detailed calculations could be refined through collecting better data about usage.
+
+
 
 [To the top](#top)
 

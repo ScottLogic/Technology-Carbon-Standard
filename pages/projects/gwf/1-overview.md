@@ -31,7 +31,7 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 <div class="gwf-results-table"></div>
 
 | Category | Carbon Emissions kgCO<sub>2</sub>e/year | as % | Notes |
-| --- |
+| --- | --- | --- |  --- | 
 | Upstream Emissions | 252 | 42% | |
 | [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
 | [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 42% | Detailed estimate |
@@ -55,6 +55,8 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 <span style="color: red">Still need to go through the retro doc and pick out other key insights.</span>
 
 * Whilst everyone in the project expected to see that the emissions from employee hardware be large, we were all shocked by the relative size compared to other activities. Especially surprising was how impactful monitors are compared to laptops. The industry is emphasising building greener software, but is greener hardware, such as remanufactured, refurbished and second-hand, getting enough attention?
+
+* There was a big difference between our high-level and detailed estimates for employee hardware -> 656 kg vs 252 kg. Collecting the specific data was worth the time and effort for a small organisation like ours. However, we wonder whether there would be such a large gap between methodologies for larger organisations with more purchases each year.
 
 * The impact of the cloud services segment is down to suppliers being located in regions of low carbon intensity.
 
