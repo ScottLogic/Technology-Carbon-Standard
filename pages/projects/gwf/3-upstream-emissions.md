@@ -262,35 +262,31 @@ For embodied carbon, the days per week working for GWF may be misleading. For ex
 
 ### Estimated emissions
 
-<span style="color: red">TBC</span>
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
 
-<span style="color: red">Estimate confidence: Medium</span>
+Estimate confidence: Medium
 
 ### Agreed scope
 
-We started by identifying what office space GWF employees regularly use. There is dedicated office space in Berlin, and another co-working space in the UK. We decided not to include the home routers that staff use when working from home. Our reasoning being they would have these devices regardless of their work with GWF. We found out what networking equipment was in each office and used that as our starting point.
+We started by identifying what locations GWF employees regularly use. 
+
+There is dedicated office space in Berlin, and another co-working space in the UK. We decided not to include the home routers that staff use when working from home. Our reasoning being they would have these devices regardless of their work with GWF. 
+
+We found out what networking equipment was in each location in scope (just office spaces), and used that as our starting point. This meant we were looking to calculate the embodied emissions of two relatively modest routers which had a max output of 18W and a normal load of around 10W.
 
 ### High level estimate methodology
 
-To calculate the embodied carbon, we found a [research paper from 2021](https://www.sciencedirect.com/science/article/pii/S0921344921005607). This gives a value of 171.7kgCO<sub>2</sub>e, which we felt was robust enough for producing an initial estimate. However, we were surprised by this value as it was higher than expected. 
+To calculate the embodied carbon of networking equipment, we found a [research paper from 2021](https://www.sciencedirect.com/science/article/pii/S0921344921005607). This gives a value of **171.7kgCO<sub>2</sub>e**, which we felt was robust enough for producing an initial estimate. The use of this research report to base our numbers on is why we've rated the confidence of this estimate as medium. However, we were surprised by this value as it was higher than expected. We used this figure for both routers.
 
-<div style="text-decoration-line: line-through;">
-  <span style="color: red">*Is this correct?*</span>
-  
-  <div style="color: blue;">
-    We assume a life span of 5 years for the routers and divide the embodied carbon by the lifespan to arrive at an amortised carbon total (one fifth of the embodied carbon for each of the five years). As one of the offices is shared, we only take a third of this carbon total for that office.
-  </div>
-</div>
-
-As one of the offices is a co-shared space with two others, so we simply attributed 33.3% of the office router's embodied carbon to GWF. The router dedicated to the GWF office attributes it's full embodied carbon to GWF.
+The router in the Berlin office attributes it's full embodied carbon, 100%, to GWF as this is dedicated to GWF use. For the co-working space in the UK, we attributed 33.3% of embodied carbon from the office router to GWF, as two other people work from that space not connected to GWF. 
 
 $$ (171.7\ kgCO_2e \times 0.333) + 171.7\ kgCO_2e = 229\ kgCO_2e $$
 
-Amortising this by 5 years we get:
+Amortising this by 5 years, the average expected life of such hardware, we would get:
 
 $$ 229\ kgCO_2e ÷ 5 = 45.8\ kgCO_2e/year $$
 
-For accounting purposes, as these devices were not acquired in the carbon account year, they can be reduced to zero (on the assumption they were accounted for in the year of purchase).
+As we knew these devices were not acquired in the 2023 carbon accounting period, we reduced their emissions to zero. This was done on the assumption their full embodied emissions would be accounted for in the year of purchase. If the absence of detailed knowledge about what devices were purchased when, the 45.8 figure could be used instead over a 5 year period.
 
 
 **How could we improve upon this?**
@@ -303,13 +299,13 @@ If we were looking at more networking hardware in a larger organisation, we coul
 
 ### Estimated emissions
 
-**0**
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
 
-<span style="color: red">Estimate confidence: High</span>
+Estimate confidence: n/a
 
 ### Agreed scope
 
-GWF does not own any of it's own servers or storage hardware, <span style="color: coral;">~~We agreed to take this category out of scope.~~</span> so, there are no carbon emissions to report in this category.  
+GWF does not own any of it's own servers or storage hardware. This means there are no carbon emissions to report in this category and we're highly confident about this.
 
 [To the top](#top)
 
