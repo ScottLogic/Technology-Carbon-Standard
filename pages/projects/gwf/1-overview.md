@@ -30,12 +30,12 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 
 <div class="gwf-results-table"></div>
 
-| Category | Carbon Emissions kgCO<sub>2</sub>e/year | as % | Notes |
+| Category | Carbon emissions<br/>kgCO<sub>2</sub>e/year | as % | Notes |
 | --- | --- | --- |  --- | 
 | Upstream Emissions | 252 | 42% | |
 | [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
-| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 42% | Detailed estimate |
-| [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
+| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 42% | Detailed estimate - high confidence |
+| [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
 | [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | Operational Emissions | 234 | 39% | |
 | [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 27% | Detailed estimate |
