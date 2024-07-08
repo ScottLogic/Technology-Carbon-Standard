@@ -38,8 +38,8 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 | [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
 | [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | Operational Emissions | 234 | 39% | |
-| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 27% | Detailed estimate |
-| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 7% | High level estimate |
+| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 27% | Detailed estimate - high confidence |
+| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 7% | High level estimate - medium confidence |
 | [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | [Generators](/projects/green-web-foundation/operational#generators) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5% | Detailed estimate |

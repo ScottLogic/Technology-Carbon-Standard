@@ -108,7 +108,8 @@ $$ 45\ kWh/year \times 0.566\ kgCO_2e/kWh = 25.47\ kgCO_2e/year $$
 
 **Total carbon emissions of employee monitors: 128.16kgCO<sub>2</sub>e/year**
 
-The operational hours of the laptops and montitors did not take into account the actual number of working hours per year. It assumed full time operational hours in the beer mat estimates.<span style="color: coral">*Hannah, do you want to update the above calculations with the 70% BYOD to GWF we used for upstream hardware calcs? Or leave it as is? I think I was only considering the 70% attribution purely from an embodied carbon perspective - and not reflecting the time employees actually work for GWF. How do you want to do this?*</span>
+The operational hours of the laptops and montitors did not take into account the actual number of working hours per year. It assumed full time operational hours in the beer mat estimates. <span style="color: coral">*Hannah, do you want to update the above calculations with the 70% BYOD to GWF we used for upstream hardware calcs? Or leave it as is? I think I was only considering the 70% attribution purely from an embodied carbon perspective - and not reflecting the time employees actually work for GWF. How do you want to do this?*</span>
+<span style="color: red">Great question David, thanks for raising. It makes most sense to me to also divide this by 70% to demonstrate the BYOD policy. I can't see a compelling reason not to make it consistent, but I'm happy to hear reasons if you see something I dont. Thanks, Han</span>
 
 **Printers**
 
@@ -128,14 +129,34 @@ $$ 0.17\ kWh \times 0.364\ kgCO_2e/kWh = 0.06kgCO_2e/year $$
 
 **How could we improve upon this?**
 
+As a small team, we felt it to be quite feasible for us to collect information on specific device makes/models to improve these estimates. We went ahead and did this to produce a details estimate.
+
 ### Detailed estimate methodology
 
-To obtain a more accurate operational carbon emission for employee devices we looked at the manufacturer data sheets for each product. In some cases it wasn't 100% clear if the specific model's specification differed from the data sheet, but we used the closest product specification and year of manufacture we could find. [Apple](https://www.apple.com/environment/) and [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2), were particularly easy to find datasheets for but Lenovo and Samsung proved to be more difficult.
+For a more accurate carbon emissions estimate, we gathered specific details of the hardware such as manufacturer and model of the equipment. Our detailed list of equipment is the same as the [employee hardware category in upstream emissions](/projects/green-web-foundation/upstream#employee-hardware).
 
-For each product we collected the carbon emissions of the use percentage (for laptops, this is typically about 20% of the total product carbon emissions). How the usage emissions are calculated isn't totally clear, but if we assume the manufacturers use a global carbon intensity (as they are globally reaching companies), we'll use 0.49kgCO<sub>2</sub>e/kWh as we have done throughout this project. With this we can calculate an estimated typical energy consumption (TEC, in kWh/year), then we can use the actualy carbon intensity for each laptop and apply the percentage of working days attributable to GWF:
+For each device we looked for a corresponding manufacturer data sheet. However, in some cases even when we did find a data sheet it wasn't always 100% clear if the specific model's specification differed from the data sheet. So we used the closest product specification and year of manufacture we could find. 
+
+[Apple](https://www.apple.com/environment/) and [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2) were particularly easy to find datasheets for. Lenovo and Samsung proved to be more difficult.
+
+For each product, using the data sheets we found the carbon emissions of the use percentage. 
+
+**Laptops**
+
+For laptops, the carbon emissions of the use percentage is typically about 20% of the total product carbon emissions. This came as a surprise, as we expected the usage percentage to be much higher than the embodied emissions.
+
+How the usage emissions are calculated isn't totally clear, so we had to make some assumptions to work it out. 
+
+<span style="color: red">I wonder if we might elaborate a bit more on the things that aren't clear about the manufacturer provided estimates. But also things that are clear might be helpful to demonstrate. For example do these sheets make it clear what assumptions they make for how much the laptop is used on a daily basis - a working weeek of 5 days, or a week of 7 days. I'm also guessing it assumes relatively light usage like browsing and playing videos, rather than complex calculations for gaming, software dev etc. It will help when we come to spelling out how we factor in BYOD and use at home on weekends for GWF owned devices which I think we might need to address - even if we decide to ultimately ignore these details in our calculations to keep things simpler.</span> 
+
+We assume manufacturers use a global carbon intensity value, as they are globally reaching companies, rather than a regional value. We use 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/projects/green-web-foundation/assumptions#regional-carbon-intensity) for more info. 
+
+With this we can calculate an estimated Typical Energy Consumption ([TEC](/glossary#typical-energy-consumption-tec), in kWh/year). We factor in where each laptop is actually used in practice by multiplying the TEC by the relevant regional grid intensity figure to get an annual operational emissions estimate. Lastly, we take into account the working days attributable to GWF.
+
+<span style="color: red">A bit like the detailed estimates, don't we need to factor in BYOD in here? For a laptop that is BYOD we need to assume it is also used on the weekend so the working week might actually be 7 days, not 5.</span>
 
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Carbon Emissions from Use kgCO<sub>2</sub>e | Calculated TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF kgCO<sub>2</sub>e/year |
-| --- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | Apple 2021 MacBook Pro 16" M1 Pro | [Apple 16inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2021.pdf) | 23.56 | 48.08 | UK, 0.268 | 12.9 | 4 | 10.32 |
 | Apple 2020 MacBook Pro 13" M1 | [Apple 13inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf) | 8.79 | 17.93 | Germany, 0.364 | 6.53 | 5 | 6.53 |
 | Apple 2020 MacBook Air 13" M1 | [Apple 13inch MacBook Air](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf) | 6.04 | 12.32 | Germany, 0.364 | 4.48 | 5 | 4.48 |
@@ -144,10 +165,14 @@ For each product we collected the carbon emissions of the use percentage (for la
 | Apple 2023 MacBook Air 13.6" M2 | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | 9.41 | 19.9 | Taiwan, 0.566 | 10.86 | 4 | 8.69 |
 | **Laptop Total** | | 79.1 | 162.09 | | 59.07 | | **43.96** |
 
-For the monitors, the manufacturers typically provide the TEC, so we can simply apply the regional carbon intensity and working days for GWF:
+**Monitors**
+
+Manufacturers typically provide the TEC for monitors. Using that for each monitor, we then apply the regional carbon intensity and working days for GWF much like we did for laptops.
+
+<span style="color: red">Don't think we need to factor in BYOD here as we can make a sweeping assumption that monitors are not typically used at home on weekends. It might be good to add this into the notes as specific point.</span>
 
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF (kgCO<sub>2</sub>e/year) |
-| --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf) | 47 | UK, 0.268 | 12.61 | 2 | 5.04 |
 | Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf) | 50.4 | UK, 0.268 | 13.52 | 0.25 | 0.68 |
 | Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | 71.2 | UK, 0.268 | 19.1 | 2 | 7.64 |
@@ -160,13 +185,30 @@ For the monitors, the manufacturers typically provide the TEC, so we can simply 
 
 \* Approximately equivalent product that could be found with a PCF data sheet.
 
-Because we didnt find any further details about the small office printer, we'll add the high-level estimated value of 0.06kgCO<sub>2</sub>e/year
+**Printers**
+
+Because we didnt find any further details about the small office printer, we decided to stick with the high-level estimated value of 0.06kgCO<sub>2</sub>e/year
+
+**Resulting detailed estimate**
+
+| **Device type** | **Annual estimate** | **%** |
+| --- | --- | --- |
+| Laptops | 43.96 kgCO_2e | 27% |
+| Monitors | 118.38 kgCO_2e | 73% |
+| Printers | 0.06 kgCO_2e | 0% |
+| **TOTAL** | **162.41 kgCO_2e** | **100%** |
 
 **Employee Device Total 162.41kgCO<sub>2</sub>e/year**
 
-Our high level estimate used an average 30.1kWh/year metric for laptops, and the detailed, calculated estimation came in at 26.9kWh/year - this gives us some confidence that the figures support each other. This extends to the carbon emissions high-level estimate of 69.6kgCO<sub>2</sub>e/year (full time) and the detailed estimate of 59.07kgCO<sub>2</sub>e/year (full time), accounting for non-full time use, this value dropped further down to 43.96kgCO<sub>2</sub>e/year.
+**How could we improve upon this?**
 
-For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high-level estimate of 128.16kgCO<sub>2</sub>e/year was much lower than the actual 181.3kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38kgCO<sub>2</sub>e/year
+Our high level estimate used an average 30.1kWh/year metric for laptops, and the detailed, calculated estimation came in at 26.9kWh/year. Similarly, the carbon emissions high-level estimate for <span style="color: red">?? - laptops/monitors - not quite sure whiat part this is referring to, help!</span> is 69.6kgCO<sub>2</sub>e/year (full-time) and the detailed estimate of 59.07kgCO<sub>2</sub>e/year (full-time).
+
+This gives us some confidence that the figures support each other. Further comparison of high-level and detailed estimates in other projects would be helpful to strengthen the confidence of using the high-level average figures to speed up the reporting process.
+
+For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high-level estimate of 128.16kgCO<sub>2</sub>e/year was much lower than the actual 181.3kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38kgCO<sub>2</sub>e/year.
+
+<span style="color: red">Any other ideas on how to improve upon this?</span>
 
 [To the top](#top)
 
@@ -175,13 +217,29 @@ For the monitors we assumed an average TEC of 45kWh/year, but the actual average
 ## Networking and Infrastructure
 {% include categoryItem.html item="CatONetworkDevices" %}
 
-For the operational carbon of networking and infrastructure, we took the maximum power load rating of 18W found on the power supply for the UK office router and assumed an average use of 60% (based on some research papers [^1], [^2]) of its total power equating to 10.8W (0.0108kWh). 
+### Estimated emissions
 
-For the second router, in Germany, we used the average power consumption of 10W listed in the data sheet for the router (0.01kWh).
+**Estimate used: High level = 40.33kgCO<sub>2</sub>e/year**
 
-We also assume the routers are operating 24 hours a day, all year round.
+Estimate confidence: medium
 
-This value is then multiplied by the carbon intensity of the region to calculate the carbon emissions:
+### Agreed scope
+
+The scope here is the same as the [Networking and Infrastructure Hardware category](projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) in upstream emissions.
+
+### High level estimate methodology
+
+For this estimate, you first need to work out an average power consumption figure.
+
+For the router in the Berlin office, we found its data sheet which uses 10W (0.01kWh)) as the average power consumption.
+
+For the router in the UK office, we couldn't find a data sheet. Instead we saw the plug for the router had a maximum power load rating of 18W written on it. We assumed an average use of 60%. This is based on data found in the two research papers listed below. This resulted in a similar figure of **total power of 10.8W (0.0108kWh)**.
+
+Paper 1 - [Equipment power consumption in optical multilayer networks – source data. ](https://www.researchgate.net/publication/272819245_Equipment_power_consumption_in_optical_multilayer_networks_-_source_data) - Idzikowski, Filip & Heddeghem, Ward & Idzikowski, F & Vereecken, W & Colle, Didier & Pickavet, Mario & Demeester, Piet. (2012).
+
+Paper 2 - [Electricity Intensity of Internet Data Transmission: Untangling the Estimates. Journal of Industrial Ecology, 22: 785-798.](https://doi.org/10.1111/jiec.12630) - Aslan, J., Mayers, K., Koomey, J.G. and France, C. (2018).
+
+We also assumed the routers are operating 24 hours a day, all year round. Lastly we factored in the [regional grid carbon intensity](/projects/green-web-foundation/assumptions#regional-carbon-intensity) of each router's location to estimate the emissions.
 
 **Germany (0.364kgCO<sub>2</sub>e/kWh)**
 
@@ -191,11 +249,16 @@ $$ 0.01\ kWh \times 24\ hrs \times 365\ days \times 0.364\ kgCO_2e/kWh = 31.89\ 
 
 $$ 0.0108\ kWh \times 24\ hrs \times 365\ days \times 0.268\ kgCO_2e/kWh = 25.36\ kgCO_2e/year $$
 
-The UK office being a co-shared office space with two other organisations sharing the router, the attribution to GWF is only 1/3rd of this value:
+The UK office being a co-shared office space with two other organisations sharing the router, the attribution to GWF is only one third of this value:
 
-$$ 25.36\ kgCO_2e/year \times 0.333 = 8.44\ kgCO_2e/year $$
+$$ 25.36\ kgCO_2e/year ÷ 3 = 8.44\ kgCO_2e/year $$
 
-**Total carbon emissions for networking and infrastructure: 40.33kgCO<sub>2</sub>e/year**
+This results in an estimate of 40.33kgCO<sub>2</sub>e/year.
+
+**How could we improve upon this?**
+
+<span style="color: red">How might we increase this methodology confidence from medium to high?</span>
+
 
 [To the top](#top)
 
@@ -204,9 +267,15 @@ $$ 25.36\ kgCO_2e/year \times 0.333 = 8.44\ kgCO_2e/year $$
 ## Servers and Storage
 {% include categoryItem.html item="CatOServers" %}
 
-GWF do not use any of their own servers or storage equipment on premise. We can simply report the carbon emissions of this category as zero.
+### Estimated emissions
 
-**Total carbon emissions for Servers and Storage: 0kgCO<sub>2</sub>e/year**
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
+
+Estimate confidence: n/a
+
+### Agreed scope
+
+GWF does not own any of it's own servers or storage hardware. This means there are no carbon emissions to report in this category and we're highly confident about this.
 
 [To the top](#top)
 
@@ -215,9 +284,15 @@ GWF do not use any of their own servers or storage equipment on premise. We can 
 ## Generators
 {% include categoryItem.html item="CatGGenerators" %}
 
-GWF do not operate any generators on premise, so again this can be reported as zero.
+### Estimated emissions
 
-**Total carbon emissions for Generators: 0kgCO<sub>2</sub>e/year**
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
+
+Estimate confidence: n/a
+
+### Agreed scope
+
+GWF do not operate any generators on premise. This means there are no carbon emissions to report in this category and we're highly confident about this.
 
 [To the top](#top)
 
@@ -370,7 +445,3 @@ In GWF's scenario however, we zero the carbon emissions based on the market-base
 [Next - Estimating the Downstream Emissions](downstream)
 
 ---
-
-[^1]:[Idzikowski, Filip & Heddeghem, Ward & Idzikowski, F & Vereecken, W & Colle, Didier & Pickavet, Mario & Demeester, Piet. (2012). Equipment power consumption in optical multilayer networks – source data. ](https://www.researchgate.net/publication/272819245_Equipment_power_consumption_in_optical_multilayer_networks_-_source_data)
-
-[^2]:[Aslan, J., Mayers, K., Koomey, J.G. and France, C. (2018), Electricity Intensity of Internet Data Transmission: Untangling the Estimates. Journal of Industrial Ecology, 22: 785-798.](https://doi.org/10.1111/jiec.12630)
