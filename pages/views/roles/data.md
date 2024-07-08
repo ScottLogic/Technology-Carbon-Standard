@@ -9,46 +9,42 @@ permalink: views/roles/data
 {% include carbonStandard.html variant=site.data.overlays.data hideOutOfScope=true %}
 
 Every bit of data, at rest or in transit, incurs a carbon cost.
-If a user minimises the amount of data they store, then, they can significantly reduce carbon emissions due to storage. Doing so is also likely to reduce monetary costs: hosted services generally charge by data use, while local storage will use less energy to read and write the data, and can use fewer or smaller storage options, reducing embedded carbon.
+If a user minimises the amount of data they store, then they can significantly reduce carbon emissions due to storage. Doing so is also likely to reduce monetary costs: hosted services generally charge by data use, while local storage will use less energy to read and write the data, and can use fewer or smaller storage options, reducing embodied carbon.
 
 ## Upstream Emissions
 
+### Servers and Storage Hardware 
+{% include categoryItem.html item="CatUServerHardware" id="ServerHardware" %}
+
+The first, and perhaps biggest choice, is where to store data: on local servers, or on the cloud (for which, see direct, below).
+
+The embodied costs of storage hardware will likely be a major contribution from on-premise storage:
+
+| Storage Type            | Embodied Carbon            |
+| ----------------------- | -------------------------: |
+| Hard Disk Drive (HDD)   | 20 kgCO2e/TB               |
+| Solid State Drive (SSD) | 160 kgCO2e/TB              |
+| Tape Drive (LTO 8)      | 46 kgCO2e + 0.62 kgCO2e/TB |
+
+(These embodied figures are average estmates from Tammu/Nair[^dirtysecret] and a tape data sheet[^tapedrive]. Of course, there are other considerations between media, such as faster read/write speed.)
+
+#### Long-term Copies and Backups
+
+Backups are commonly recommended for most data, and certainly all important data. Guidance like the 3-2-1 rule[^321rule] suggest keeping multiple copies, across multiple media and multiple sites. This will increase the carbon cost of storage accordingly, and should be accounted for.
+
+Removable media should also be considered for long-term storage. Their intermittent use makes it harder to estimate energy use while active, though published data imply that energy use is significantly lower than that for fixed drives.
+
 ## Operational Emissions
-
-While upstream data has a carbon cost, it is operational emissions where a company can make the choices for the greatest effect.
-
-The first, and perhaps biggest choice, is where to store data: on local servers, or on the cloud (or some other hosted solution).
-
-In either case, though, costs scale with the amount of data stored (and, to a lesser extent, with the rate at which that data is written or read). Therefore, compressing the data is likely to reduce storage costs; however, it will incur extra emissions in computing for compression and decompression.
 
 ### Direct
 {% include categoryLabel.html label="CatO" %}
 {% include categoryItem.html item="CatONetworkDevices" id="NetworkDevices" %}
 
-Transferring data over networks incurs an electricity cost, and therefore a carbon cost. 
+Transferring data over networks incurs an electricity cost, and therefore a carbon cost. As with data at rest, these costs can be minimised by compression.
 
 {% include categoryItem.html item="CatOServers" id="Servers" %}
 
-When hosting locally, the biggest factor in emissions is likely to be the embodied carbon of the servers.
-
-| Storage Type            | Embedded Carbon (kgCO2e/TB) | Operating Power (W/TB) |
-| ----------------------- | --------------------------: | ---------------------: |
-| Hard Disk Drive (HDD)   | 38                          | 1                      |
-| Solid State Drive (SSD) | 316                         | 2.5                    |
-
-(These figures are for a 8 TB HDD and a 1 TB SSD. Of course, there are reasons for using SSDs over HDDs, such as faster read/write speed.)
-
-A HDD will therefore have roughly equal amortised embodied carbon and operating emissions over 10 years of constant operation (while a SSD would require 35 years!). Since most storage media have a typical use life of around 5 years, increasing the lifespan of storage media is likely to have a significant effect on average emissions. 
-
-#### Long-term Copies and Backups
-
-Backups are commonly recommended for most data, and certainly all important data. Guidance like the 3-2-1 rule suggest keeping multiple copies, across multiple media and multiple sites. This will increase the carbon cost of storage accordingly, and should be accounted for.
-
-Removable media may also be considered for long-term storage. Their intermittent use makes it harder estimate energy use while active, though published data imply that energy use is significantly lower than that for fixed drives. Their embedded carbon may still be measured:
-
-| Storage Type       | Embedded Carbon (kgCO2e) | Media Embedded Carbon (kgCO2e/TB) |
-| ------------------ | -----------------------: | --------------------------------: |
-| Tape Drive (LTO 8) | 46.6                     | 0.62                              |
+Running the drives incurs a cost in electricity and therefore carbon. Most devices, regardless of type or size, run at a power of single-digit Watts when reading or writing; idle powers can vary more significantly, even within single media types. High-power drives in frequent use may therefore have yearly power consumptions of hundreds of kWh, and concomitantly high emissions.
 
 ### Indirect
 
@@ -56,7 +52,7 @@ Removable media may also be considered for long-term storage. Their intermittent
 
 {% include categoryItem.html item="CatCManaged" id="Managed" %}
 
-Much data is now stored on cloud storage - that is, storage managed by a cloud provider and accessed over the internet. Almost all cloud storage exists, ultimately, in HDD or SSD, and so while embedded carbon costs are hidden from the user, they are still incurred by the provider.
+Much data is now stored on cloud storage - that is, storage managed by a cloud provider and accessed over the internet. Almost all cloud storage exists, ultimately, in HDD or SSD, and so while embodied carbon costs are hidden from the user, they are still incurred by the provider.
 
 Cloud storage provision also incurs a carbon cost from use, and this can be more visible to the end user. Some cloud providers allow users to examine estimated emissions from their services, but not all do; still, emissions can be estimated since they are roughly proportional to the amount of data stored. Storing one terabyte of data on a major cloud storage provider for one year uses around 35 kilowatt-hours of electricity.
 
@@ -64,7 +60,11 @@ It should be noted that, by default, most cloud providers duplicate data, keepin
 
 #### Location and Legislation
 
-Since users can typically select different regions for their cloud service hosting, they can select regions with different carbon intensities and so different resultant emissions. However, there may be data localisation laws, which limit the sites at which personal data may be stored.
+Since users can typically select different regions for their cloud service hosting, they can select regions with different carbon intensities and so different resultant emissions. However, data localisation laws, which limit the sites at which personal data may be stored, may constrain this choice.
+
+#### ROT Data and auditing
+
+ROT (Redundant, Obsolete or Trivial) is a term used to describe useless data; surveys indicate that around 30% of data stored on the cloud is ROT[^ROTscale]. Since this data is still hosted, it will contribute to emissions as with useful data. It can be minimised with regular data audits, which analyse stored data to detect and remove ROT.
 
 ## Downstream Emissions
 
@@ -72,9 +72,10 @@ Since users can typically select different regions for their cloud service hosti
 
 {% include categoryItem.html item="CatDEndUserDevices" id="EndUserDevices" %}
 
-The same arguments for storage on servers (see above) apply to user devices (though embodied carbon can no longer be measured). However, electricity use for storage can be estimated, using the knowledge of the type and size of data stored, and the likely storage medium. (For instance, smartphones store data in flash storage, while laptops and desktops may use SSDs or HDDs.)
+The same arguments for storage on servers (see above) apply to user devices (though embodied carbon can no longer be measured directly, since it will depend upon users' choices). However, electricity use for storage can be estimated, using the knowledge of the type and size of data stored, and the likely storage medium. (For instance, smartphones store data in flash storage, while laptops and desktops may use SSDs or HDDs.)
 
-{% include categoryItem.html item="CatDNetworkDataTransfer" id="NetworkTransfer" %}
-
-<!--What should we do about references? Footnotes, perhaps?-->
-<!--Add links to glossary-->
+## References
+[^321rule]: [US-CERT Data Backup Options](https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf)
+[^dirtysecret]: [Tannu/Nair 2023, The Dirty Secret of SSDs](https://arxiv.org/pdf/2207.10793). See also [Pure Storage on Embodied Carbon](https://blog.purestorage.com/perspectives/how-does-the-embodied-carbon-dioxide-equivalent-of-flash-compare-to-hdds/), a rebuttal (whose numbers do not include upstream emissions from e.g. mineral extraction).
+[^tapedrive]: [IBM, Phyiscal Tape CO2, p. 6](https://www.ibm.com/downloads/cas/YE5WAQ0B)
+[^ROTscale]: [Veritas Databerg Report, 2020](https://www.veritas.com/content/dam/www/en_us/documents/at-a-glance/AG_uk_databerg_report.pdf)
