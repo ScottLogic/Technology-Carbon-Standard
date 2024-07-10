@@ -112,7 +112,7 @@ The average embodied carbon figure used was **230 kgCO2e**.
 
 We arrived at this by reviewing multiple PDF datasheets for laptops from [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm), [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) and [Apple](https://www.apple.com/environment/). We cross-referenced the specified values against multiple research sources to check the number was in the right ballpark.
 
-The datasheets mentioned, know as Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) datasheets, typically provide a breakdown of carbon emissions during that product's full life cycle, including it's usage. But we only want the embodied carbon value for this part of the TCS, just upstream emissions. Usage is accounted for in operational emissions. 
+The datasheets mentioned, known as Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) datasheets, typically provide a breakdown of carbon emissions during that product's full life cycle, including it's usage. But we only want the embodied carbon value for this part of the TCS, just upstream emissions. Usage is accounted for in operational emissions. 
 
 We removed the usage carbon emissions value (around 20%) from the total carbon footprint leaving us a value for manufacture, transport and end of life. This becomes our embodied carbon value of **230 kgCO2e**.
 

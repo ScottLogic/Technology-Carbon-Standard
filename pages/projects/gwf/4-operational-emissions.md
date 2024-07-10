@@ -38,7 +38,7 @@ The approach used and why for each sub-category in operational emissions:
 
 | **Estimate type** | **2023 estimate** | **Confidence in methodology** |
 | --- | --- | --- |
-| High level | 197.83 kgCO<sub>2</sub>e/year | Medium |
+| High level | 146.7 kgCO<sub>2</sub>e/year | Medium |
 | Detailed | 162.41 kgCO<sub>2</sub>e/year | High |
 
 
@@ -60,56 +60,53 @@ Therefore we can calculate an average [TEC](/glossary#typical-energy-consumption
 
 $$ 0.0171\ kWh \times 1760\ hrs = 30.1\ kWh/year $$
 
-To calculate the estimated emissions of each laptop we multiply the TEC/year with the regional grid [carbon intensity](/glossary#carbon-intensity).
+To calculate the estimated emissions of each laptop we multiply the TEC/year with the regional grid [carbon intensity](/glossary#carbon-intensity). Finally we apply the the same BYOD attribution of 70% to GWF as we did for upstream emissions.
 
-Germany - 3 laptops, regional grid carbon intensity 0.364kgCO<sub>2</sub>e/kWh:
+Germany - 3 laptops (2 BYOD, 1 GWF owned), regional grid carbon intensity 0.364kgCO<sub>2</sub>e/kWh:
 
-$$ 3 \times (30.1\ kWh/year \times 0.364\ kgCO_2e/kWh) = 32.87\ kgCO_2e/year $$
+$$ 2 \times (30.1\ kWh/year \times 0.364\ kgCO_2e/kWh \times 70\%) + 1 \times (30.1\ kWh/year \times 0.364\ kgCO_2e/kWh \times 100\%) = 26.3\ kgCO_2e/year $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-UK - 1 laptop, regional grid carbon intensity 0.268kgCO<sub>2</sub>e/kWh:
+UK - 1 laptop (BYOD), regional grid carbon intensity 0.268kgCO<sub>2</sub>e/kWh:
 
-$$ 30.1\ kWh/year \times 0.268\ kgCO_2e/kWh = 8.07\ kgCO_2e/year $$
+$$ 30.1\ kWh/year \times 0.268\ kgCO_2e/kWh \times 70\% = 5.65\ kgCO_2e/year $$
 
-Netherlands - 1 laptop, regional grid carbon intensity 0.386kgCO<sub>2</sub>e/kWh:
+Netherlands - 1 laptop (BYOD), regional grid carbon intensity 0.386kgCO<sub>2</sub>e/kWh:
 
-$$ 30.1\ kWh/year \times 0.386\ kgCO_2e/kWh = 11.62\ kgCO_2e/year $$
+$$ 30.1\ kWh/year \times 0.386\ kgCO_2e/kWh \times 70\% = 8.13\ kgCO_2e/year $$
 
-Taiwan - 1 laptop, regional grid carbon intensity 0.566kgCO<sub>2</sub>e/kWh:
+Taiwan - 1 laptop (BYOD), regional grid carbon intensity 0.566kgCO<sub>2</sub>e/kWh:
 
-$$ 30.1\ kWh/year \times 0.566\ kgCO_2e/kWh = 17.04\ kgCO_2e/year $$
+$$ 30.1\ kWh/year \times 0.566\ kgCO_2e/kWh \times 70\% = 11.93\ kgCO_2e/year $$
 
-**Total carbon emissions of employee laptops: 69.6kgCO<sub>2</sub>e/year**
+**Total carbon emissions of employee laptops: 52.01kgCO<sub>2</sub>e/year**
 
 **Monitors**
 
-For monitors we used an **average [TEC](/glossary#typical-energy-consumption-tec) of 45kWh/year** obtained from Dell and HP PCF data sheets. As per the laptop calculations above we multiply this by the regional grid carbon intensity.
+For monitors we used an **average [TEC](/glossary#typical-energy-consumption-tec) of 45kWh/year** obtained from Dell and HP PCF data sheets. As per the laptop calculations above we multiply this by the regional grid carbon intensity and apply the 70% BYOD where applicable.
 
-Germany - 3 monitors, 0.364kgCO<sub>2</sub>e/kWh:
+Germany - 3 monitors (2 BYOD, 1 GWF owned), 0.364kgCO<sub>2</sub>e/kWh:
 
-$$ 3 \times (45\ kWh/year \times 0.364\ kgCO_2e/kWh) = 49.14\ kgCO_2e/year $$
-
-<p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
-
-UK - 3 monitors, 0.268kgCO<sub>2</sub>e/kWh:
-
-$$ 3 \times (45\ kWh/year \times 0.268\ kgCO_2e/kWh = 36.18\ kgCO_2e/year $$
+$$ 2 \times (45\ kWh/year \times 0.364\ kgCO_2e/kWh \times 70\%) + 1 \times (45\ kWh/year \times 0.364\ kgCO_2e/kWh) = 39.31\ kgCO_2e/year $$
 
 <p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-Netherlands - 1 monitor, 0.386kgCO<sub>2</sub>e/kWh:
+UK - 3 monitors (BYOD), 0.268kgCO<sub>2</sub>e/kWh:
 
-$$ 45\ kWh/year \times 0.386\ kgCO_2e/kWh = 17.37\ kgCO_2e/year $$
+$$ 3 \times (45\ kWh/year \times 0.268\ kgCO_2e/kWh \times 70\%) = 25.33\ kgCO_2e/year $$
 
-Taiwan - 1 monitor, 0.566kgCO<sub>2</sub>e/kWh:
+<p style="text-align:center; font-style: italic;">Parentheses added for clarity.</p>
 
-$$ 45\ kWh/year \times 0.566\ kgCO_2e/kWh = 25.47\ kgCO_2e/year $$
+Netherlands - 1 monitor (BYOD), 0.386kgCO<sub>2</sub>e/kWh:
 
-**Total carbon emissions of employee monitors: 128.16kgCO<sub>2</sub>e/year**
+$$ 45\ kWh/year \times 0.386\ kgCO_2e/kWh \times 70\% = 12.16\ kgCO_2e/year $$
 
-The operational hours of the laptops and montitors did not take into account the actual number of working hours per year. It assumed full time operational hours in the beer mat estimates. <span style="color: coral">*Hannah, do you want to update the above calculations with the 70% BYOD to GWF we used for upstream hardware calcs? Or leave it as is? I think I was only considering the 70% attribution purely from an embodied carbon perspective - and not reflecting the time employees actually work for GWF. How do you want to do this?*</span>
-<span style="color: red">Great question David, thanks for raising. It makes most sense to me to also divide this by 70% to demonstrate the BYOD policy. I can't see a compelling reason not to make it consistent, but I'm happy to hear reasons if you see something I dont. Thanks, Han</span>
+Taiwan - 1 monitor (BYOD), 0.566kgCO<sub>2</sub>e/kWh:
+
+$$ 45\ kWh/year \times 0.566\ kgCO_2e/kWh \times 70\% = 17.83\ kgCO_2e/year $$
+
+**Total carbon emissions of employee monitors: 94.63kgCO<sub>2</sub>e/year**
 
 **Printers**
 
@@ -121,10 +118,10 @@ $$ 0.17\ kWh \times 0.364\ kgCO_2e/kWh = 0.06kgCO_2e/year $$
 
 | **Device type** | **Annual estimate** | **%** |
 | --- | --- | --- |
-| Laptops | 69.9 kgCO_2e | 35% |
-| Monitors | 128.16 kgCO_2e | 65% |
-| Printers | 0.06 kgCO_2e | 0% |
-| **TOTAL** | **197.83 kgCO_2e** | **100%** |
+| Laptops | 52.01 kgCO_2e | 35% |
+| Monitors | 94.63 kgCO_2e | 65% |
+| Printers | 0.06 kgCO_2e | <1% |
+| **TOTAL** | **146.7 kgCO_2e** | **100%** |
 
 
 **How could we improve upon this?**
@@ -143,27 +140,25 @@ For each product, using the data sheets we found the carbon emissions of the use
 
 **Laptops**
 
-For laptops, the carbon emissions of the use percentage is typically about 20% of the total product carbon emissions. This came as a surprise, as we expected the usage percentage to be much higher than the embodied emissions.
+~~For laptops, the carbon emissions of the use percentage is typically about 20% of the total product carbon emissions. This came as a surprise, as we expected the usage percentage to be much higher than the embodied emissions.~~
 
-How the usage emissions are calculated isn't totally clear, so we had to make some assumptions to work it out. 
+<span style="color: red">~~I wonder if we might elaborate a bit more on the things that aren't clear about the manufacturer provided estimates. But also things that are clear might be helpful to demonstrate. For example do these sheets make it clear what assumptions they make for how much the laptop is used on a daily basis - a working weeek of 5 days, or a week of 7 days. I'm also guessing it assumes relatively light usage like browsing and playing videos, rather than complex calculations for gaming, software dev etc. It will help when we come to spelling out how we factor in BYOD and use at home on weekends for GWF owned devices which I think we might need to address - even if we decide to ultimately ignore these details in our calculations to keep things simpler.~~</span> 
 
-<span style="color: red">I wonder if we might elaborate a bit more on the things that aren't clear about the manufacturer provided estimates. But also things that are clear might be helpful to demonstrate. For example do these sheets make it clear what assumptions they make for how much the laptop is used on a daily basis - a working weeek of 5 days, or a week of 7 days. I'm also guessing it assumes relatively light usage like browsing and playing videos, rather than complex calculations for gaming, software dev etc. It will help when we come to spelling out how we factor in BYOD and use at home on weekends for GWF owned devices which I think we might need to address - even if we decide to ultimately ignore these details in our calculations to keep things simpler.</span> 
-
-We assume manufacturers use a global carbon intensity value, as they are globally reaching companies, rather than a regional value. We use 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/projects/green-web-foundation/assumptions#regional-carbon-intensity) for more info. 
-
-With this we can calculate an estimated Typical Energy Consumption ([TEC](/glossary#typical-energy-consumption-tec), in kWh/year). We factor in where each laptop is actually used in practice by multiplying the TEC by the relevant regional grid intensity figure to get an annual operational emissions estimate. Lastly, we take into account the working days attributable to GWF.
+Apple don't provide ([TEC](/glossary#typical-energy-consumption-tec) values for it's products, just a percentage of the total carbon emissions for usage. The datasheets indicate that the usage is calculated based on historical customer use, modelling of battery drain for various activities and taking into account regional differences of energy grid mix. To gather a detailed estimate of operation carbon emission we have to assume the global carbon intensity value, and the expected lifespan of the product to calculate the TEC. We use a global intensity of 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/projects/green-web-foundation/assumptions#regional-carbon-intensity) for more info. By gathering the usage percentage of the product's total carbon emission, dividing that by the expected life in years we can calculate the usage carbon emissions per year (kgCO<sub>2</sub>e)/year. We can divide this by the global intensity to calculate a TEC (in kWh/year) for each product. Then, we can factor in where each laptop is actually used in practice by multiplying the TEC by the relevant regional grid intensity figure to get an annual operational emissions estimate. Lastly, we take into account the working days attributable to GWF.
 
 <span style="color: red">A bit like the detailed estimates, don't we need to factor in BYOD in here? For a laptop that is BYOD we need to assume it is also used on the weekend so the working week might actually be 7 days, not 5.</span>
 
+<span style="color: coral">We are already accounting for the BYOD here as the operation emissions are taking into account the days spent working for GWF. Personal use of a BYOD wouldn't be considered and recorded for GWF. However, whilst the TEC is per year, we need to assume the number of GWF working days as a percentage of 7 days, not 5. I'll update the numbers.</span>
+
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Carbon Emissions from Use kgCO<sub>2</sub>e | Calculated TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF kgCO<sub>2</sub>e/year |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Apple 2021 MacBook Pro 16" M1 Pro | [Apple 16inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2021.pdf) | 23.56 | 48.08 | UK, 0.268 | 12.9 | 4 | 10.32 |
-| Apple 2020 MacBook Pro 13" M1 | [Apple 13inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf) | 8.79 | 17.93 | Germany, 0.364 | 6.53 | 5 | 6.53 |
-| Apple 2020 MacBook Air 13" M1 | [Apple 13inch MacBook Air](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf) | 6.04 | 12.32 | Germany, 0.364 | 4.48 | 5 | 4.48 |
-| Apple 2022 MacBook Air 13.6" M2 | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | 8.09 | 16.5 | Germany, 0.364 | 6.01 | 4 | 4.8 |
-| Lenovo Ideapad S145 | [Lenovo IdeaPad S145](https://static.lenovo.com/ww/docs/regulatory/PCF_ideapad_S145-15.pdf) | 23.21 | 47.36 | Netherlands, 0.386 | 18.29 | 2.5 | 9.14 | 
-| Apple 2023 MacBook Air 13.6" M2 | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | 9.41 | 19.9 | Taiwan, 0.566 | 10.86 | 4 | 8.69 |
-| **Laptop Total** | | 79.1 | 162.09 | | 59.07 | | **43.96** |
+| Apple 2021 MacBook Pro 16" M1 Pro | [Apple 16inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2021.pdf) | 23.56 | 48.08 | UK, 0.268 | 12.9 | 4 | 7.37 |
+| Apple 2020 MacBook Pro 13" M1 | [Apple 13inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf) | 8.79 | 17.93 | Germany, 0.364 | 6.53 | 5 | 4.66 |
+| Apple 2020 MacBook Air 13" M1 | [Apple 13inch MacBook Air](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf) | 6.04 | 12.32 | Germany, 0.364 | 4.48 | 5 | 3.20 |
+| Apple 2022 MacBook Air 13.6" M2 | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | 8.09 | 16.5 | Germany, 0.364 | 6.01 | 4 | 3.43 |
+| Lenovo Ideapad S145 | [Lenovo IdeaPad S145](https://static.lenovo.com/ww/docs/regulatory/PCF_ideapad_S145-15.pdf) | 23.21 | 47.36 | Netherlands, 0.386 | 18.29 | 2.5 | 6.53 | 
+| Apple 2023 MacBook Air 13.6" M2 | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf) | 9.41 | 19.9 | Taiwan, 0.566 | 10.86 | 4 | 6.20 |
+| **Laptop Total** | | 79.1 | 162.09 | | 59.07 | | **31.4** |
 
 **Monitors**
 
@@ -173,15 +168,15 @@ Manufacturers typically provide the TEC for monitors. Using that for each monito
 
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF (kgCO<sub>2</sub>e/year) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf) | 47 | UK, 0.268 | 12.61 | 2 | 5.04 |
-| Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf) | 50.4 | UK, 0.268 | 13.52 | 0.25 | 0.68 |
-| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | 71.2 | UK, 0.268 | 19.1 | 2 | 7.64 |
-| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 4 | 19.43 |
-| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 5 | 24.29 |
-| HP 24" Monitor (24f)  | [HP M24f FHD*](https://h20195.www2.hp.com/v2/getpdf.aspx/c08754174.pdf) | 39.15 | Germany, 0.364 | 14.25 | 4 | 11.4 |
-| Samsung Oddysee | [Samsung Ultra WQHD*](https://image-us.samsung.com/SamsungUS/epeat/ProductCarbonFootprint(PCF)ResultsforMobileProductsandDisplaysReport.pdf) | 30 | Netherlands, 0.386 | 11.59 | 0.25 | 0.58 |
-| Samsung 32" 4k Curve Monitor | [Dell S3221QS*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-s3221qs-monitor-pcf-datasheet.pdf) | 109 | Taiwan, 0.566 | 61.65 | 4 | 49.32 |
-| **Monitor Total** | | 480.23 | | 181.3 | | **118.38** |
+| Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf) | 47 | UK, 0.268 | 12.61 | 2 | 3.60 |
+| Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf) | 50.4 | UK, 0.268 | 13.52 | 0.25 | 0.48 |
+| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | 71.2 | UK, 0.268 | 19.1 | 2 | 5.46 |
+| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 4 | 13.88 |
+| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 5 | 17.35 |
+| HP 24" Monitor (24f)  | [HP M24f FHD*](https://h20195.www2.hp.com/v2/getpdf.aspx/c08754174.pdf) | 39.15 | Germany, 0.364 | 14.25 | 4 | 8.14 |
+| Samsung Oddysee | [Samsung Ultra WQHD*](https://image-us.samsung.com/SamsungUS/epeat/ProductCarbonFootprint(PCF)ResultsforMobileProductsandDisplaysReport.pdf) | 30 | Netherlands, 0.386 | 11.59 | 0.25 | 0.41 |
+| Samsung 32" 4k Curve Monitor | [Dell S3221QS*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-s3221qs-monitor-pcf-datasheet.pdf) | 109 | Taiwan, 0.566 | 61.65 | 4 | 35.23 |
+| **Monitor Total** | | 480.23 | | 181.3 | | **84.56** |
 
 \* Approximately equivalent product that could be found with a PCF data sheet.
 
@@ -193,20 +188,18 @@ Because we didnt find any further details about the small office printer, we dec
 
 | **Device type** | **Annual estimate** | **%** |
 | --- | --- | --- |
-| Laptops | 43.96 kgCO_2e | 27% |
-| Monitors | 118.38 kgCO_2e | 73% |
+| Laptops | 31.4 kgCO_2e | 27% |
+| Monitors | 84.56 kgCO_2e | 73% |
 | Printers | 0.06 kgCO_2e | 0% |
-| **TOTAL** | **162.41 kgCO_2e** | **100%** |
+| **TOTAL** | **116.02 kgCO_2e** | **100%** |
 
-**Employee Device Total 162.41kgCO<sub>2</sub>e/year**
+**Employee Device Total 116.02 kgCO<sub>2</sub>e/year**
 
 **How could we improve upon this?**
 
-Our high level estimate used an average 30.1kWh/year metric for laptops, and the detailed, calculated estimation came in at 26.9kWh/year. Similarly, the carbon emissions high-level estimate for <span style="color: red">?? - laptops/monitors - not quite sure whiat part this is referring to, help!</span> is 69.6kgCO<sub>2</sub>e/year (full-time) and the detailed estimate of 59.07kgCO<sub>2</sub>e/year (full-time).
+Our high level estimate used an average TEC of 30.1kWh/year metric for laptops, and the detailed, calculated average TEC estimation came in at 26.9kWh/year. Taking into account regional carbon intensity, the carbon emissions high-level estimate for laptops is 52 kgCO<sub>2</sub>e/year and the detailed estimate of 31.4 kgCO<sub>2</sub>e/year. Our estimated laptop TEC was higher than the actual laptop TEC and also taking into account the actual working days per week we could be more confident with the estimation. Further comparison of high-level and detailed estimates in other projects would be helpful to strengthen the confidence of using the high-level average figures.
 
-This gives us some confidence that the figures support each other. Further comparison of high-level and detailed estimates in other projects would be helpful to strengthen the confidence of using the high-level average figures to speed up the reporting process.
-
-For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high-level estimate of 128.16kgCO<sub>2</sub>e/year was much lower than the actual 181.3kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38kgCO<sub>2</sub>e/year.
+For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high-level estimate of 128.16 kgCO<sub>2</sub>e/year was much lower than the actual 181.3kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38 kgCO<sub>2</sub>e/year.
 
 <span style="color: red">Any other ideas on how to improve upon this?</span>
 
