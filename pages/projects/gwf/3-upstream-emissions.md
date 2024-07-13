@@ -120,7 +120,7 @@ To keep things simple for this high-level estimate we assumed the following:
 - All employees used non-manufacturer specific laptops at this point - we weren't ready to get a detailed equipment list at this point.
 - All laptops were purchased new - we ignored the fact that some machines were actually refurbished, older or second-hand.
 - A laptop's expected life is 5 years at GWF (industry standard is often cited as 4 years). 
-- [Amortisation](/glossary#amortisation) of embodied emissions was appropriate for a [high-level estimate](assumptions#high-level-estimates) - more on this below.
+- [Amortisation](/glossary#amortisation) of embodied emissions was appropriate for a [high level estimate](assumptions#high-level-estimates) - more on this below.
 
 For the six laptops identified, only 1 laptop is owned by GWF and the other 5 are BYODs. We attribute 100% of the embodied carbon to 1 laptop, and 70% to the other 5.
 
