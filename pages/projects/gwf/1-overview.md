@@ -46,8 +46,8 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 | [SaaS](/projects/green-web-foundation/operational#saas-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
 | [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
 | Downstream Emissions | 115 | 19% | |
-| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17% | High level estimate |
-| [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | High level estimate |
+| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17% | High level estimate - low confidence |
+| [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | High level estimate - medium confidence |
 | Total | 601 kgCO<sub>2</sub>e/year | 100% |
 
 ### Key insights
