@@ -250,8 +250,11 @@ This results in an estimate of 40.33kgCO<sub>2</sub>e/year.
 
 **How could we improve upon this?**
 
-<span style="color: red">How might we increase this methodology confidence from medium to high?</span>
+For our very simple network set up, we could increase our confidence in this methodology from medium to high by using an energy monitor on the plug to the router to gain an accurate measurement. But for a use case like this we expect the embodied carbon in the monitor would far outweigh the value gain from such a measurement - probably best to borrow one!
 
+For a more complex network setup, where there could be viable mitigation actions, that approach may be justifiable. Depending on the network size you could monitor representative devices and extrapolate their energy usage from there. For example, if you had 5 switches, 3 wireless access points, a firewall and a router, you could capture data on one of each device type and assume the values of remaining switches and access points share a similar profile to the one you measured. If you had reason to believe there would be differences then more measurement would be required.
+
+This approach would only scale so far though and is high effort. Further research needs to be done in this area to create a more robust model that could be used based on devices, their power profiles, and traffic patterns. We predict that features such as power saving and the pattern of traffic is far more important than traffic quantity. We hypothesise that, given a network device with power saving features, frequent, small amounts of data are more power intensive than short bursts of large data.
 
 [To the top](#top)
 
