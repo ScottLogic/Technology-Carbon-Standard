@@ -42,9 +42,9 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 | [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 7% | High level estimate - medium confidence |
 | [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | [Generators](/projects/green-web-foundation/operational#generators) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
-| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5% | Detailed estimate |
+| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5% | Some high-level, some detailed estimate - medium to low confidence |
 | [SaaS](/projects/green-web-foundation/operational#saas-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
-| [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate |
+| [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
 | Downstream Emissions | 115 | 19% | |
 | [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17% | High level estimate |
 | [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | High level estimate |

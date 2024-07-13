@@ -473,7 +473,7 @@ Combining this usage estimation, with the high-level estimate for VM embodied em
 
 $$ 19.61\ kgCO_2e/year + 1.94\ kgCO_2e/year = 21.55 kgCO_2e/year $$
 
-<span style="color: red">What our insights from this. Are we surprised by the difference between the two estimates?</span>>
+<span style="color: red">What our insights from this? Are we surprised by the difference between the two estimates?</span>
 
 
 **Resulting detailed estimate**
@@ -496,9 +496,35 @@ $$ 19.61\ kgCO_2e/year + 1.94\ kgCO_2e/year = 21.55 kgCO_2e/year $$
 ## SaaS Services
 {% include categoryItem.html item="CatCSaas" %}
 
-Unknown
+### Estimated emissions
+
+**No data**
 
 Estimate confidence: *n/a - not attempted*
+
+### Agreed scope
+
+We started by identifying the SaaS products most prominently by the GWF team. We used GWF's internal finance tracker to generate a starting list. We realised early on that trying to measure everything was inpractical so looked for the top 10. The first version of this list we settled on is:
+- GitHub
+- NPM
+- Google workspaces, specifically GDrive and Calendars
+- Trello
+- Zulip
+- Miro
+- Brevo
+- Sentry
+- 1password
+- 34SP, specifically WordPress hosting
+
+### High level estimate methodology
+
+The idea for this was to see what data exists to help us make some high level estimates against our own use of these services. After drawing on our own knowledge of these products and supported by an internet search for useful information, we concluded that data to support these kinds of estimates is not yet readily available. Due to time constraints, we decided to prioritise our efforts elsewhere.
+
+**How could we improve upon this?**
+
+In an ideal world we would reach out to the relevant SaaS support teams to raise this issue with them. In the absence of data, one of the most useful steps a team can take is to tell a supplier they are looking for it. 
+
+We also could have looked for any kind of industry benchmarks and extracted some broad assumptions from those. Whilst those would have provided low confidence estimates, that would have been better than nothing.
 
 [To the top](#top)
 
@@ -507,22 +533,32 @@ Estimate confidence: *n/a - not attempted*
 ## Managed Services
 {% include categoryItem.html item="CatCManaged" %}
 
-GWF use Cloudflare for content delivery network (CDN). We agreed to put this CDN service into the managed services category, but it could just as easily belong to the Cloud Services category instead.
+### Estimated emissions
 
-Cloudflare operate a (market-based) net-zero carbon service via Renewable Energy and Offset Purchases. So whilst we can report that GWF's CDN services for carbon emissions as zero, we did consider how to calculate the emissions for a CDN. Our brief research and thoughts given the little time we had to focus on this brought up two peices of information.
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year - 0% of overall digital estate**
 
-1. [Cloudflare's Emissions Inventory for 2022](https://cf-assets.www.cloudflare.com/slt3lc6tev37/65gCD3up047PMsHB9aXEYN/d3d719c0f9f493f82e4fec9dab250e6d/Cloudflare_2022_Emissions_Inventory.pdf) - indicates that Cloudflare's total emissions was 21,000MTCO<sub>2</sub>e for 2022
-1. [Cloudflare Stats for 2023](https://backlinko.com/cloudflare-users) - shows that Cloudflare (as of August 2023) has 7.59million active websites.
+Estimate confidence: Medium
 
-We can simply divide the carbon emissions by the number of active websites to get an average carbon emission per website per year:
+### Agreed scope
+
+Cloudflare is a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) that GWF use to provide better performance for their websites and manage DNS settings. We put Cloudflare into this Managed Services category, but it could just as easily belong to the Cloud Services category instead. We ultimately took the decision as this category would have been empty otherwise, and we liked being about to separate Cloudflare clearly.
+
+### High level estimate methodology
+
+Cloudflare report they operate a (market-based) net-zero carbon service via [Renewable Energy and Offset Purchases](https://app.greenweb.org/directory/#779). This meant we can report the carbon emissions for this as zero in our own digital estimates.
+
+**How could we improve upon this?**
+
+We briefly explored what a high level estimate methodology for Cloudflare would look like if they didn't have their decarbonisation strategy. We found two key pieces of information:
+
+1. Cloudflare's total emissions was 21,000MTCO<sub>2</sub>e for 2022 - [Cloudflare's Emissions Inventory for 2022](https://cf-assets.www.cloudflare.com/slt3lc6tev37/65gCD3up047PMsHB9aXEYN/d3d719c0f9f493f82e4fec9dab250e6d/Cloudflare_2022_Emissions_Inventory.pdf)
+1. Cloudflare (as of August 2023) has 7.59million active websites - [Cloudflare Stats for 2023](https://backlinko.com/cloudflare-users]
+
+A rudimentary method is to simply divide the carbon emissions by the number of active websites to get an average carbon emission per website per year.
 
 $$ (21,0000\ MTCO_2e/year \times 1000) ÷ 7,590,000 = 2.77\ kgCO2e/year/website $$
 
-2.77kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to estimate emissions of CDNs.
-
-In GWF's scenario however, we zero the carbon emissions based on the market-based net-zero value of Cloudflare.
-
-**Total carbon emissions for Managed Services: 0kgCO<sub>2</sub>e/year**
+In the absense of any data whatsoever, 2.77kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to perform a [high level estimate](assumptions#high-level-estimates) of CDNs.
 
 [To the top](#top)
 
