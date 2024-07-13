@@ -152,7 +152,11 @@ $$ 2094\ kgCO_2e ÷ 5 = 419\ kgCO_2e/year  $$
 
 **Printers**
 
-We identified a single printer located in the Germany office. This is a home/ small office all-in-one inkjet printer, copier, and scanner. Unfortunately, however, we could find little (substantiated) data or research[^1],[^2], on printers in the time available. 
+We identified a single printer located in the Germany office. This is a home/ small office all-in-one inkjet printer, copier, and scanner. Unfortunately, however, we could find little (substantiated) data or recent research on printers in the time available. We did find two sources:
+
+1: [Life cycle assessment of an inkjet printer. Polish Journal of Environmental Studies. vol 21. 95–105.](https://www.researchgate.net/publication/276385268_Life_cycle_assessment_of_an_inkjet_printer) - Grzesik, Katarzyna & Terefeńko, Tomasz. (2012)
+
+2: [CDP 2015 Climate Change 2015 Information Request](https://www.kleenstrike.co.uk/carbon/carbon2015.pdf) - KLEEN STRIKE (UK) ltd
 
 Since it's only a single small printer with light use, it didn’t seem necessary to spend much time researching further to produce a high level estimate. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. 
 
@@ -315,6 +319,3 @@ GWF does not own any of it's own servers or storage hardware. This means there a
 [Next - Estimating the Operational Emissions](operational)
 
 ---
-
-[^1]:[Grzesik, Katarzyna & Terefeńko, Tomasz. (2012). Life cycle assessment of an inkjet printer. Polish Journal of Environmental Studies. vol 21. 95–105.](https://www.researchgate.net/publication/276385268_Life_cycle_assessment_of_an_inkjet_printer)
-[^2]:[CDP 2015 Climate Change 2015 Information Request KLEEN STRIKE (UK) ltd](https://www.kleenstrike.co.uk/carbon/carbon2015.pdf)
