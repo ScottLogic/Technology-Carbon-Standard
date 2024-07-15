@@ -15,19 +15,15 @@
     <div class="flex space-x-6">
       {% for item in site.data.navigation %}
         <a href="{{ item.link }}" class="no-underline h-12  {% if page.url == item.link %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
-          {% if item.icon %}
-            <div class="pt-0.5">
-              <svg class="w-6 h-6">
-                <use href="{{ item.icon }}" />
-              </svg>
-            </div>
-          {% else %}
-            {{ item.name }}
-          {% endif %}
+          {{ item.name }}
         </a>
       {% endfor %}
     </div>
   </div>
+
+  <a class="!ml-auto sm:!mr-7 !mr-0" aria-label="GitHub" href="https://github.com/ScottLogic/Technology-Carbon-Standard">
+    <svg aria-hidden="true" class="size-10 sm:mb-4"><use href="/assets/images/icons.svg#github"></use></svg>
+  </a>
 </div>
 
 <!-- MOBILE MENU -->
