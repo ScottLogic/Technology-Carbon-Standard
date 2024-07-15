@@ -13,4 +13,5 @@
 - name: Carbon Estimator
   link: /estimator
 - name: GitHub
+  icon: /assets/images/icons.svg#github
   link: https://github.com/ScottLogic/Technology-Carbon-Standard
