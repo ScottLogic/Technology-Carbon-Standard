@@ -20,15 +20,8 @@
   }
 
   input {
-    @apply accent-gunmetal-800
+    @apply accent-gunmetal-800 dark:accent-cambridge-300;
   }
-
-  @media (prefers-color-scheme: dark) {
-    input {
-        @apply accent-cambridge-300
-    }
-}
-
 
   /* CATEGORY U */
   .cat-u {
