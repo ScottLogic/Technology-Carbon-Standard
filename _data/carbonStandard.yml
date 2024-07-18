@@ -61,7 +61,7 @@ CatUServerHardware:
   icon: storage
   selected: false
   description:
-  link: /categories/upstream#data-center-and-server-hardware
+  link: /categories/upstream#data-centre-and-server-hardware
   noLink: false
 
 OperationalEmissions:

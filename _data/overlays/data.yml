@@ -29,7 +29,7 @@ CatOServers:
 CatONetworkDevices:
   selected: true
   description: Data sent over networks 
-  noLink: "#NetworkDevices"
+  link: "#NetworkDevices"
 
 CatOUserDevices:
   selected: false
@@ -42,19 +42,19 @@ CatGGenerators:
   noLink: true
 
 CatCCloud:
-  selected: false
-  description:
-  noLink: true
+  selected: true
+  description: Data hosted on the cloud
+  link: '#Cloud'
 
 CatCSaas:
   selected: true
   description: Data use in hosted software
-  link: '#Saas'
+  noLink: true
 
 CatCManaged:
-  selected: true
-  description: Data hosted externally
-  link: '#Managed'
+  selected: false
+  description:
+  noLink: true
 
 CatDEndUserDevices:
   selected: true
