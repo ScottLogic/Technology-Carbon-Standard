@@ -50,11 +50,11 @@ Running the drives incurs a cost in electricity and therefore carbon. Most devic
 
 {% include categoryLabel.html label="CatC" %}
 
-{% include categoryItem.html item="CatCManaged" id="Managed" %}
+{% include categoryItem.html item="CatCCloud" id="Cloud" %}
 
 Much data is now stored on cloud storage - that is, storage managed by a cloud provider and accessed over the internet. Almost all cloud storage exists, ultimately, in HDD or SSD, and so while embodied carbon costs are hidden from the user, they are still incurred by the provider.
 
-Cloud storage provision also incurs a carbon cost from use, and this can be more visible to the end user. Some cloud providers allow users to examine estimated emissions from their services, but not all do; still, emissions can be estimated since they are roughly proportional to the amount of data stored. Storing one terabyte of data on a major cloud storage provider for one year uses around 35 kilowatt-hours of electricity.
+Cloud storage provision also incurs a carbon cost from use, and this can be more visible to the end user. Some cloud providers allow users to examine estimated emissions from their services, but not all do; still, emissions can be estimated since they are roughly proportional to the amount of data stored. Storing one terabyte of data on a major cloud storage provider for one year uses around 32 kilowatt-hours of electricity[^CloudStorageRate].
 
 It should be noted that, by default, most cloud providers duplicate data, keeping three copies on three different machines (to ensure availability and insure against drive failure).
 
@@ -79,3 +79,4 @@ The same arguments for storage on servers (see above) apply to user devices (tho
 [^dirtysecret]: [Tannu/Nair 2023, The Dirty Secret of SSDs](https://arxiv.org/pdf/2207.10793). See also [Pure Storage on Embodied Carbon](https://blog.purestorage.com/perspectives/how-does-the-embodied-carbon-dioxide-equivalent-of-flash-compare-to-hdds/), a rebuttal (whose numbers do not include upstream emissions from e.g. mineral extraction).
 [^tapedrive]: [IBM, Phyiscal Tape CO2, p. 6](https://www.ibm.com/downloads/cas/YE5WAQ0B)
 [^ROTscale]: [Veritas Databerg Report, 2020](https://www.veritas.com/content/dam/www/en_us/documents/at-a-glance/AG_uk_databerg_report.pdf)
+[^CloudStorageRate]: [Cloud Carbon Footprint methodology](https://www.cloudcarbonfootprint.org/docs/methodology/#storage)
