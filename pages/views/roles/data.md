@@ -72,7 +72,7 @@ ROT (Redundant, Obsolete or Trivial) is a term used to describe useless data; su
 
 {% include categoryItem.html item="CatDEndUserDevices" id="EndUserDevices" %}
 
-The same arguments for storage on servers (see above) apply to user devices (though, depending upon the project, user devices' embodied carbon may be accounted for elsewhere). However, electricity use for storage can be estimated, using the knowledge of the type and size of data stored, and the likely storage medium. (For instance, smartphones store data in flash storage, while laptops and desktops may use SSDs or HDDs.)
+The same arguments for storage on servers (see above) apply to user devices (though embodied carbon can no longer be measured so confidently, since developers will typically not know the users' device choices). However, electricity use for storage can be estimated, using the knowledge of the type and size of data stored, and the likely storage medium. (For instance, smartphones store data in flash storage, while laptops and desktops may use SSDs or HDDs.)
 
 ## References
 [^321rule]: [US-CERT Data Backup Options](https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf)
