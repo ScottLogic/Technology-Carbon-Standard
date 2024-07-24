@@ -246,7 +246,7 @@ The UK office being a co-shared office space with two other organisations sharin
 
 $$ 25.36\ kgCO_2e/year ÷ 3 = 8.44\ kgCO_2e/year $$
 
-This results in an estimate of 40.33kgCO<sub>2</sub>e/year.
+**This results in an estimate of 40.33kgCO<sub>2</sub>e/year.**
 
 **How could we improve upon this?**
 
@@ -299,130 +299,137 @@ GWF do not operate any generators on premise. This means there are no carbon emi
 
 ### Estimated emissions
 
-**Estimate used: Detailed = 32 kgCO<sub>2</sub>e/year - 5% of overall digital estate**
+<!-- **Estimate used: Detailed = 32 kgCO<sub>2</sub>e/year - 5% of overall digital estate** -->
 
-| **Estimate type** | **2023 estimate** | **Confidence in methodology** |
-| --- | --- | --- |
-| High level | <span style="color: red">22.2</span> kgCO<sub>2</sub>e/year | <span style="color: red">tbc</span> |
-| Detailed | 32 kgCO<sub>2</sub>e/year | <span style="color: red">tbc</span> |
+<span style="color: blue">The estimations can't really be compared quite so broadly... I've gone into detail comparing the two estimates in detail at the end of this section as its not comparing apples to apples. The next paragraph attempts to explain the process we went through and what we did... - David</span>
+
+We started with a high-level spend-based, broad estimate of GWF's cloud services, from which this led to a focused detailed carbon estimate specifically for GWF's Greencheck API servers. For this reason, we cannot compare the total high-level estimate to a total detailed estimate (because we didn't complete a detailed estimate for all the servers). However, we did circle back to calculate a high-level estimate for the Greencheck API for a comparable result.
+
+| **Estimate Type** | **High-Level Estimate** | **Detailed Estimate** | **Confidence in Methodology (high-level/ detailed)** |
+| --- | --- | --- | --- |
+| All Cloud Services| 26.74 kgCO<sub>2</sub>e/year | NA | Low/ NA |
+| Greencheck API Services | 11.85 kgCO<sub>2</sub>e/year | 9.86*  kgCO<sub>2</sub>e/year | Low/ Medium |
+
+<small>* The embodied carbon emissions uses the high-level estimation model.</small>
 
 ### Agreed scope
 GWF use two cloud suppliers to host their [Green Web Dataset and accompanying tools](https://www.thegreenwebfoundation.org/tools/green-web-dataset/), these are [Hetzner](https://www.hetzner.com/) and [Scaleway](https://www.scaleway.com/en/). 
 
 The scope of this section was therefore estimating GWF's usage of these two suppliers, particularly the VMs, storage and server back-end services.
 
-### High level estimate methodology
+### High-Level Estimate Methodology
 
-Unfortunately, we weren't aware of any good data for doing basic estimations of the carbon emissions of these specific service providers based on usage. 
+We used a spend-based method to estimate the high-level carbon emissions. Unfortunately, we could not find specific methods for Hetzner or Scaleway. Instead, we used AWS as a proxy so that we could use the open-source spend-based model from [Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/). We felt this was good enough to produce a [high-level estimate](assumptions#high-level-estimates) in order to quantify the scale of emissions.
 
-We decided to do an approximation by using AWS as a proxy, and use spend as the main metric. We chose to map to AWS as this meant we could use the open source spend to CO2 data in [Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/). We felt this was good enough to produce a [high-level estimate](assumptions#high-level-estimates) in order to quantify the scale of emissions.
-
-**Hetzner VMs**
+#### **Hetzner VMs**
 
 For the VMs, we mapped the GWF server instances to equivalent appliances in [AWS](https://aws.amazon.com/). Where there was no direct match, we mapped to the next service up that would still meet the services needs. We ended up with just two instance sizes.
 
 *As an aside, during this mapping exercise we observed that Hetzner offers far more granular server specifications than AWS. AWS seems designed to push you up the appliance sizes faster. If you want more memory, you have to also take more virtual CPUs, regardless of if they are needed or not.*
 
-For the [embodied carbon](/glossary#embodied-carbon) per USD spent, we pulled data from [CCF](https://www.cloudcarbonfootprint.org/). For the two identified instance sizes we obtained values of 0.018364507 kgCO<sub>2</sub>e/USD and 0.015829902 kgCO<sub>2</sub>e/USD. For ease in the calculations below we round these **embodied carbon estimates to 0.018kg CO<sub>2</sub>e/USD and 0.016 kgCO<sub>2</sub>e/USD**.
+For the [embodied carbon](/glossary#embodied-carbon) estimate, we pulled spend-based data from [CCF](https://www.cloudcarbonfootprint.org/). For the two identified instance sizes we obtained values of 0.018364507 kgCO<sub>2</sub>e/USD and 0.015829902 kgCO<sub>2</sub>e/USD. For ease in the calculations below we round these embodied carbon estimates to 0.018kg CO<sub>2</sub>e/USD and 0.016 kgCO<sub>2</sub>e/USD.
 
-We got the monthly billing data provided by Hetzner and converted it from Euros to US Dollars at the exchange rate of April 2024. 
+We got the monthly billing data provided by Hetzner and converted it from Euros to US Dollars at the exchange rate of April 2024. Month to month, this spend does not vary much, so for a high-level estimate we assume this same spend every month for the year. 
 
-We multiplied monthly cost by the embodied kgCO<sub>2</sub>e/USD for each instance type. To keep the calculation simple at this point we multipled that monthly cost by 12 to get an annual figure. In this instance this made sense as the monthly costs did not vary much month on month. The calculations looks like this:
+We multiplied monthly spend by the embodied kgCO<sub>2</sub>e/USD for each instance type, and multiply that by 12 to get an annual figure:
 
-$$ \$ 59.36/month \times 0.018\ kgCO_2e/USD \times 12\ months = 13.08\ kgCO_2e/year $$
+$$ \$ 59.36/month \times 0.018\ kgCO_2e/USD \times 12\ months = 12.84\ kgCO_2e/year $$
 
-$$ \$ 32.40/month \times 0.016\ kgCO_2e/USD \times 12\ months = 6.52\ kgCO_2e/year $$
+$$ \$ 34.34/month \times 0.016\ kgCO_2e/USD \times 12\ months = 6.60\ kgCO_2e/year $$
 
 The combined embodied emissions value is therefore:
 
-$$ 13.08\ kgCO_2e/year + 6.52\ kgCO_2e/year = 19.61 kgCO_2e/year $$
+$$ 12.84\ kgCO_2e/year + 6.60\ kgCO_2e/year = 19.44\ kgCO_2e/year $$
 
-For [usage emissions](/glossary#usage-carbon), we sourced a kWh per USD value from [CCF](https://www.cloudcarbonfootprint.org/). We arrived at 0.270373921 kWh/USD and 0.233471074 kWh/USD. For ease in the calculations below we round these **usage carbon estimates to 0.270 kWh/USD and 0.233 kWh/USD**.
+For [usage emissions](/glossary#usage-carbon), we sourced a kWh per USD value from [CCF](https://www.cloudcarbonfootprint.org/). We arrived at 0.270373921 kWh/USD and 0.233471074 kWh/USD. For ease in the calculations below we round these usage carbon estimates to 0.270 kWh/USD and 0.233 kWh/USD.
 
-We multiplied the kWh/USD by the monthly cost in USD (converted from Euros) to obtain a monthly compute kWh usage. Then we multiplied by 12 months to get a yearly total compute kWh:
+We multiplied the kWh/USD by the monthly cost in USD to obtain a compute kWh/month, then we multiplied that by 12 months to get a total compute kWh/year:
 
-$$ \$ 59.36/month \times 0.270\ kWh/USD \times 12\ months = 192.59\ kWh/year $$
+$$ \$ 59.36/month \times 0.27\ kWh/USD \times 12\ months = 192.33\ kWh/year $$
 
-$$ \$ 32.40/month \times 0.233\ kWh/USD \times 12\ months = 90.77\ kWh/year $$
+$$ \$ 34.34/month \times 0.233\ kWh/USD \times 12\ months = 96.01\ kWh/year $$
 
-To convert that to a carbon emissions estimates, we needed a carbon intensity value for the electricity used to power the VMs. In this case the German data center used by GWF is 100% renewable energy, specifically hydro-electricity. To account for this we use a carbon intensity of 0.041 kgCO<sub>2</sub>e/kWh. <span style="color: red">It would be helpful to specify where we got the number.</span>
+To convert that to a carbon emissions estimate, we needed a carbon intensity value for the electricity used to power the VMs. In this case, the Hetzner data center used by GWF uses 100% renewable energy, specifically hydro-electricity. To account for this we use the median carbon intensity of hydropower; 0.024 kgCO<sub>2</sub>e/kWh as per the [Intergovernmental Panel on Climate Change (IPCC) report](https://archive.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_annex-iii.pdf).
 
 <span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
 
-$$ 192.59\ kWh/year \times 0.041 kgCO_2e/year = 7.89\ kgCO_2e/year $$
+$$ 192.33\ kWh/year \times 0.024 kgCO_2e/year = 4.62\ kgCO_2e/year $$
 
-$$ 90.77\ kWh/year \times 0.041 kgCO_2e/year = 3.95\ kgCO_2e/year $$
+$$ 96.01\ kWh/year \times 0.024 kgCO_2e/year = 2.30\ kgCO_2e/year $$
 
-Then we add the operational and usage annual estimates together for each VM instance.
+Then, we add the embodied and operational carbon emissions together for each VM instance:
 
-$$ 13.08\ kgCO_2e/year + 7.89\ kgCO_2e/year = 20.98\ kgCO_2e/year $$
+$$ 12.84\ kgCO_2e/year + 4.62\ kgCO_2e/year = 17.46\ kgCO_2e/year $$
 
-$$ 6.15\ kgCO_2e/year + 3.95\ kgCO_2e/year = 10.47\ kgCO_2e/year $$
+$$ 6.60\ kgCO_2e/year + 2.30\ kgCO_2e/year = 8.90\ kgCO_2e/year $$
 
-This results in an estimate of 31.45 kgCO_2e/year for the Hetzner VMs.
+**This results in an estimate of 26.36 kgCO<sub>2</sub>e/year for the Hetzner VMs.**
 
-**Hetzner data storage**
+#### **Hetzner Data Storage**
 
 For the data storage in Hetzner we assume the use of SSD storage and use a value of 0.0012 kWh/TBh from [CCF's Storage Methodology](https://www.cloudcarbonfootprint.org/docs/methodology/#storage). With a total volume of 0.89TB of data storage we can calculate a yearly kWh:
 
 $$ 0.89\ TB \times 0.0012\ kWh/TBh \times 24\ hrs \times 365\ days = 9.36\ kWh/year $$
 
-We then multiply this by the carbon intensity value. As before we're using 0.041kgCO<sub>2</sub>e/kWh. 
+We then multiply this by the carbon intensity value. As before we're using 0.024kgCO<sub>2</sub>e/kWh. 
 
-$$ 9.36\ kWh/year \times 0.041 kgCO_2e/year = 0.38\ kgCO_2e/year $$
+$$ 9.36\ kWh/year \times 0.024 kgCO_2e/year = 0.22\ kgCO_2e/year $$
 
-Our final estimate for the Hetzner data storage is 0.38 kgCO_2e/year.
+**Our estimate for the Hetzner data storage is 0.22 kgCO_2e/year.**
 
-**Scaleway data storage**
+#### **Scaleway Data Storage**
 
-GWF use Scaleway just for block storage. So we used the same methodology as for the Hetzner data storage. One key difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour. 
+GWF use Scaleway for block storage. So, we used the same methodology as for the Hetzner data storage. One key difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour. 
 
-Typically GWF uses 463.58 TBhours of data per month. We again assumed SSD storage and use a value of 0.0012 kWh/TBh from [CCF's Storage Methodology](https://www.cloudcarbonfootprint.org/docs/methodology/#storage).
+Typically GWF uses 463.579 TBhours of data per month. We again assumed SSD storage and use a value of 0.0012 kWh/TBh from [CCF's Storage Methodology](https://www.cloudcarbonfootprint.org/docs/methodology/#storage).
 
-$$ 463.58\ TBh \times 0.0012\ kWh/TBh \times 12\ months = 6.68\ kWh/year $$
+$$ 463.579\ TBh \times 0.0012\ kWh/TBh \times 12\ months = 6.68\ kWh/year $$
 
-[Scaleway also uses sustainable energy sources](https://www.scaleway.com/en/environmental-leadership/), 100% wind or hydro. So, we'll use the hydro-power carbon intensity of 0.041kgCO<sub>2</sub>e/kWh:
+[Scaleway also uses sustainable energy sources](https://www.scaleway.com/en/environmental-leadership/), 100% wind or hydro. So, we'll use the hydro-power carbon intensity of 0.024kgCO<sub>2</sub>e/kWh:
 
-$$ 6.68\ kWh/year \times 0.041\ kgCO_2e/kWh = 0.27\ kgCO_2e/year $$
+$$ 6.68\ kWh/year \times 0.024\ kgCO_2e/kWh = 0.16\ kgCO_2e/year $$
 
-Our final estimate for the Scaleway data storage is 0.27 kgCO_2e/year.
+**Our estimate for the Scaleway data storage is 0.16 kgCO_2e/year.**
 
-**Resulting high-level estimate**
+#### **Resulting High-Level Estimate**
 
 | **Service type** | **Annual estimate** | **%** |
 | --- | --- | --- |
-| Hetzner VMs | 31.45 kgCO_2e | 98% |
-| Hetzner data storage | 0.38 kgCO_2e | 1% |
-| Scaleway data storage | 0.27 kgCO_2e | 1% |
-| **TOTAL** | **32.1 kgCO_2e** | **100%** |
+| Hetzner VMs | 26.36 kgCO_2e | 99% |
+| Hetzner data storage | 0.22 kgCO_2e | < 1% |
+| Scaleway data storage | 0.16 kgCO_2e | < 1% |
+| **TOTAL** | **26.74 kgCO_2e** | **100%** |
 
 <span style="color: red">We should probably add some insights here that's its low, and point to the what if part as noted already by David.</span>
 <span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
 
 **How could we improve upon this?**
 
-For this particular project, given that the VMs are 98% of the emissions it makes sense to focus on trying to improve this part. Specifically swapping billing information for actual CPU usage data. The problem with billing information when used as a usage indicator is that it is subjective. For example, one company may negotiate a betting pricing structure than another due to their size. A better approach is using specific CPU data. For example there is usage data available from the Hetzner API and that could be combined with data about the actual CPU being used, not an Amazon equivalent/proxy.
+For this particular project, given that the VMs are 99% of the emissions it makes sense to focus on trying to improve this part. Specifically, swapping billing information for actual CPU usage data. The problem with billing information when used as a usage indicator is that it is subjective. For example, one company may negotiate a betting pricing structure than another due to their size. A better approach is using specific CPU data. For example, there is usage data available from the Hetzner API and that could be combined with data about the actual CPU being used, not an AWS equivalent/proxy.
 
-### Detailed estimate methodology
+### Detailed Estimate Methodology
 
-**Hetzner VMs**
+#### **Hetzner VMs**
 
-<span style="color: red">Need to explain how this fits in with the way we described the VMs before. We said there were two instances we were using, which does this equate to? Also do we assume this is just the usage part, not the embodied part. I'd like to compare the high level and detailed and make it easy to show the difference between the two in a like for like way at the end of this explanation.</span>
+<!-- <span style="color: red">Need to explain how this fits in with the way we described the VMs before. We said there were two instances we were using, which does this equate to? Also do we assume this is just the usage part, not the embodied part. I'd like to compare the high level and detailed and make it easy to show the difference between the two in a like for like way at the end of this explanation.</span> -->
 
-To improve upon our high-level methodology we went back to the [blog from Etsy on Cloud Jewels](https://www.etsy.com/codeascraft/cloud-jewels-estimating-kwh-in-the-cloud/), which the CCF methodology is based on. Reviewing the [detailed methodology](https://github.com/etsy/cloud-jewels/blob/master/methodology.md) in their GitHub repository, we arrived at the following method.
+To improve upon our high-level methodology we took a look at [blog from Etsy on Cloud Jewels](https://www.etsy.com/codeascraft/cloud-jewels-estimating-kwh-in-the-cloud/), which the CCF methodology is based on. Reviewing the [detailed methodology](https://github.com/etsy/cloud-jewels/blob/master/methodology.md) in their GitHub repository, we arrived at a more detailed method of estimating the operational carbon of cloud VMs.
 
-<span style="color: red">I think we need a sentence or two to explain what this cofficient is.</span>
+The following detailed methodology was focused specifically on four of GWF's servers that provide the greencheck API, as they are known to be the most popular service and using the most resources. We used values obtained from the Hetzner reports for April 2024 as a representative average month to keep things simple, but more accurate numbers could be produced by using data obtained for the whole year.
 
-1. **Calculate the coefficient**
-    1. Find out the specific processor being used. The Hetzner API reported that the appliance running the Greencheck API uses an AMD Epyc Processor running at 2.4 GHz. 
-    1. Get the number of threads, maximum and minimum average power draw for processor. We used [Spec.org](https://www.spec.org/power_ssj2008/results/res2023q1/) to find specific data for our processort. Ideally, we would find all uses of the chosen processor and average out the values. For speed we used the first matching row.
-    1. Work out the minimum power per thread. Divide the minimum power draw for the CPU by the number of threads.
-    1. Do the same for the maximum.
-    1. Calculate the average utilisation for the month. The usage data supplied by the Hetzner API came in handy here.
+**1. Calculate the Coefficient**
+
+The coefficient gives us the number of Watts a single virtual CPU uses based on the type of physical CPU in the server and the workload of the CPU over time. To calculate this:
+
+1. Find out the specific processor being used. The Hetzner API reported that the appliance running the Greencheck API uses an AMD Epyc Processor running at 2.4 GHz. 
+1. Get the number of threads, maximum and minimum average power draw for processor. We used [Spec.org](https://www.spec.org/power_ssj2008/results/res2023q1/) to find specific data for our processor. Ideally, we would find all uses of the chosen processor and average out the values. For speed we used the first matching row.
+1. Work out the minimum power per thread. Divide the minimum power draw for the CPU by the number of threads.
+1. Do the same for the maximum.
+1. Calculate the average utilisation for the month. The usage data supplied by the Hetzner API came in handy here.
 
 Next, we apply the following formula from the Cloud Jewels methodology to get the energy coefficient:
 
-$$ Wattage = MinimumWattage + AverageCpuUtilization * (MaximumWattage - MinimumWattage) $$
+$$ Watts/vCPU = Minimum\ Wattage + Average\ CPU\ Utilization \times (Maximum\ Wattage - Minimum\ Wattage) $$
 
 Here are the specific values we used:
 
@@ -431,63 +438,102 @@ Here are the specific values we used:
 | Min average CPU draw for AMD EPYC 9654 2.40GHz | 63.2W | From [Spec.org](https://www.spec.org/power_ssj2008/results/res2023q1/) |
 | Max average CPU draw for AMD EPYC 9654 2.40GHz | 351W | From [Spec.org](From https://www.spec.org/power_ssj2008/results/res2023q1/) |
 | Threads | 192 | From [Spec.org](From https://www.spec.org/power_ssj2008/results/res2023q1/) |
-| Min energy per thread | 0.3291666667 | Min / Threads |
-| Max energy per thread | 1.828125 | Max / Threads |
-| Percent utilisation for the month | 56.91044181 | Average CPU utilisation over all five servers over the course of 1 month. |
-| Wh per vCPUh [Server] (AMD EPYC 9654 2.40GHz) | *1.182230477* | Wattage = Minimum wattage + Average CPU Utilization * (Maximum wattage - minimum wattage) |
+| Min energy per thread | 0.329167 | Minimum average power / Threads |
+| Max energy per thread | 1.828125 | Maximum average power / Threads |
+| Percent utilisation for the month | 56.91 | Average CPU utilisation over all five servers over the course of 1 month. |
 
-**This gives us a coefficient of 1.182230477.**
+$$ 0.329167 + 56.91\% \times (1.828125 - 0.329167) = 1.182224\ W/vCPU $$
 
-2. **Work out the monthly electricity consumption of the servers**
-    1. Multiply the coefficient by the number of hours in a month.
-    1. Factor in the [PUE](/glossary#power-usage-effectiveness-pue). 
-    1. Factor in the number of servers.
+<!-- **This gives us a coefficient of 1.182224 Watts.** -->
 
-| **Description** | **Value** | **Notes** |
+**2. Work out the monthly electricity consumption of the servers**
+1. Multiply the coefficient by the number of hours in a year (8760) to gather Wh/CPU per year.
+1. Multiply that by the [PUE](/glossary#power-usage-effectiveness-pue) ([1.16](https://www.hetzner.com/unternehmen/nachhaltigkeit)). 
+1. Multiply that by the number of servers (4) for total energy consumption per year.
+
+$$ 1.182224 \times 8760 \times \ 1.16 \times 4 = 48.05 kWh/year $$
+
+<!-- | **Description** | **Value** | **Notes** |
 | --- | --- | --- |
-| Coefficient | 1.182230477| derived as above |
+| Coefficient | 1.182224| derived as above |
 | Hours  | 720 |  between 17/04/2024 23:36 and 17/05/2024 23:36| 
 | Wh per CPU per month | 851.2059433 | Coefficient * hours in the month |
 | Hetzner PUE | 1.16 | https://www.hetzner.com/unternehmen/nachhaltigkeit |
 | Apply PUE | 987.3988942 | 851.2059433 * 1.16 |
 | kWh per CPU per month | 0.9873988942 | Convert from W to kWh, divide by 1000 |
 | Number of servers | 4 | Including the 4 servers running at the time |
-| Monthly energy in kWh for all servers | 3.949595577 | kWh per CPU per month * number of servers |
+| Monthly energy in kWh for all servers | 3.949595577 | kWh per CPU per month * number of servers | -->
 
-3. **Factor in carbon intensity for electricity**
-    1. Convert into kWh and calculate the energy for the year. We assumed April (the current month) was representative of the whole year to keep things simple, but more accurate numbers could be produced by using specific data for the whole year.
-    1. Finally we multiply the values by the carbon intensity.
+**3. Factor in carbon intensity for electricity**
 
-| **Description** | **Value** | **Notes** |
+Finally we multiply the values by the carbon intensity of hydropower, 0.024 kgCO<sub>2</sub>e/kWh.
+
+$$ 48.05\ kWh/year \times 0.024\ kgCO_2e/kWh = 1.15\ kgCO2_e/year $$
+
+<!-- | **Description** | **Value** | **Notes** |
 | --- | --- | --- |
 | Monthly energy in kWh for all servers | 3.949595577 | kWh per CPU per month * number of servers |
-| Carbon intensity | 0.041 | Hydro electric carbon intensity |
+| Carbon intensity | 0.024 | Hydropower carbon intensity |
 | Monthly Carbon Emissions (kgCO2) | 0.1619334186 | Monthly energy in kWh for all servers * Carbon intensity |
-| Yearly Carbon Emissions (kgCO2) | 1.943201024 | Monthly carbon emissions * 12  |
+| Yearly Carbon Emissions (kgCO2) | 1.943201024 | Monthly carbon emissions * 12  | -->
 
-The resulting estimate for usage part of the Hetzner VMs is 1.94 kgCO_2e/year.
+**The resulting detailed operational carbon emissions estimate for the four Hetzner VMs is 1.15 kgCO<sub>2</sub>e/year.**
 
-<span style="color: red">Need to round this off by showing which part of the high-level methodology we're swapping out for the revised numbers here. Assuming it was the operational part of both VMs together... It was 10.47 kgCO2e/year but now its 1.94 I think?</span>
+<!-- <span style="color: red">Need to round this off by showing which part of the high-level methodology we're swapping out for the revised numbers here. Assuming it was the operational part of both VMs together... It was 10.47 kgCO2e/year but now its 1.94 I think?</span> -->
 
-Combining this usage estimation, with the high-level estimate for VM embodied emissions, we get:
+To combine the embodied carbon of these servers, we need to rely on the high-level methodology (without knowing the specific details of the server's embodied carbon). In this case we are specifically taking into account the four servers we have looked at in the detailed calculations above, and not the total embodied carbon of all of GWF's servers we concluded in the high-level-estimate.
 
-$$ 19.61\ kgCO_2e/year + 1.94\ kgCO_2e/year = 21.55 kgCO_2e/year $$
+We use the spend based value of 0.018 kgCO<sub>2</sub>e/USD and the cost of $40.33 USD.
 
-<span style="color: red">What our insights from this? Are we surprised by the difference between the two estimates?</span>
+$$ \$ 40.33/month \times 0.018\ kgCO_2e/USD \times 12\ months = 8.71\ kgCO_2e/year $$
+
+Combining this high-level embodied carbon estimate, with the detailed operational estimate for the VMs total carbon emissions per year:
+
+$$ 8.71\ kgCO_2e/year + 1.15\ kgCO_2e/year = 9.86 kgCO_2e/year $$
+
+**Detailed total carbon emissions of the four Hetzner VMs used for Greencheck API = 9.86 kgCO_2e/year**
+
+<!-- But of course we can't compare the detailed estimate of four VMs to the high-level estimate of all servers... so lets work out the high level estimate for 4 servers for actual comparison... -->
+
+However, to compare this detailed operational estimate to the high-level estimate we would need to gather the processor and utilisation data for all of the other servers (which we didn't have time to do). Alternatively, we can re-calculate the high-level operational estimate specifically for these four servers using the spend based method, where the spend is $40.33 USD/month and the kWh/month value of 0.27 kWh/USD:
+
+$$ $40.33/month \times 0.27\ kWh/USD \times 12\ months = 130.67\ kWh/year $$
+
+Then apply the hydropower carbon intensity of 0.024kgCO<sub>2</sub>e/kWh:
+
+$$ 130.67\ kWh/year \times 0.024kgCO_2e/kWh = 3.14\ kgCO_2e/year $$
+
+The detailed emissions estimate can now be directly compared to the high-level estimate: 
+
+| **4x Greencheck API Servers** | **High-Level Estimate kgCO<sub>2</sub>e/year** | **Detailed Estimate kgCO<sub>2</sub>e/year** |
+| --- | --- | --- |
+| Operational Carbon Emissions | 3.14 | 1.15 |
+| Embodied Carbon Emissions | 8.71 | (8.71)* |
+| **Total Carbon Emissions** | **11.85** | **9.86** |
+
+<small>* We use the high-level estimated embodied carbon, without the specific server's embodied carbon data.</small> 
+
+The high-level operational emissions are 2.73x higher than the detailed operational estimate. High-level estimations, especially a spend-based model, are typically higher than detailed estimations (as they tend to over-estimate), and in this case it is signifantly higher. As noted in the high-level methodology, we used CCF's modelling to map the Hetzner servers to AWS servers, meeting all of the minimum service needs, this led to over-sizing the server instances. So, compounding the over-estimated spend-based model, with over-sized server instances, it is a likely reason for such an extreme over-estimation.
+
+Notably, however the embodied carbon makes up 74% - 88% (high-level - detailed) of the total carbon. Which means that for the total carbon emissions, the high-level estimate is only 1.2x higher than the detailed estimate. This is however, based on the same high-level (likely over-estimated) embodied carbon estimate lacking any specific server embodied carbon data.
 
 
-**Resulting detailed estimate**
+<!-- **Resulting detailed estimate**
 
 | **Service type** | **Annual estimate** | **%** |
 | --- | --- | --- |
 | Hetzner VMs | 21.55 kgCO_2e | 97% |
 | Hetzner data storage - as high-level | 0.38 kgCO_2e | 2% |
 | Scaleway data storage - as high-level | 0.27 kgCO_2e | 1% |
-| **TOTAL** | **22.21 kgCO_2e** | **100%** |
+| **TOTAL** | **22.21 kgCO_2e** | **100%** | -->
 
 **How could we improve upon this?**
 
-<span style="color: red">How would we take this methodology forward if we had the time and resources?</span>
+<!-- <span style="color: red">How would we take this methodology forward if we had the time and resources?</span> -->
+
+With more time and resources, the detailed estimate could be much improved. Firstly, as we only commited to detailing the four servers used for the Greencheck API, this modelling could be extended to all of the servers. This would require gathering more data regarding the processors used, the processor's min/max power, number of threads and the avgerage CPU utilisation for each server. Also, we only used the month of April as a sample of average CPU utilisation. This modelling could be applied to every month of the year, for a monthly comparison, or simply calculate the average utilisation for the entire year.
+
+We didn't gather any detail of the server's embodied carbon. This would likely need to be obtained from Hetzner if they would be willing to share more details of the hardware. As a high proportion of the total carbon emissions, this could have a significant impact on the total emissions.
 
 [To the top](#top)
 
