@@ -440,7 +440,7 @@ Here are the specific values we used:
 | Threads | 192 | From [Spec.org](From https://www.spec.org/power_ssj2008/results/res2023q1/) |
 | Min energy per thread | 0.329167 | Minimum average power / Threads |
 | Max energy per thread | 1.828125 | Maximum average power / Threads |
-| Percent utilisation for the month | 56.91 | Average CPU utilisation over all five servers over the course of 1 month. |
+| Percent utilisation for the month | 56.91 | Average CPU utilisation of the four servers over 1 month. |
 
 $$ 0.329167 + 56.91\% \times (1.828125 - 0.329167) = 1.182224\ W/vCPU $$
 
