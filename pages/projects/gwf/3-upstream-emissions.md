@@ -208,19 +208,19 @@ For reuse - simply purchased second-hand with no testing or replacement parts - 
 
 For a more accurate carbon emissions estimate, we gathered specific details of the hardware such as manufacturer and model of the equipment. Where possible we found product carbon footprint [(PCF)](/glossary#product-carbon-footprint-pcf) data sheets. Some manufacturers provide excellent resources for finding this data on their products. Some manufacturers are very poor. Where this was the case, we would find an approximately equivalent product to use instead, indicated in the tables below.
 
-With the specific understanding that most of the equipment is BYOD, it was useful to gather more detail about how many days per week the device is used for GWF and attribute those working days to GWF.
+On the basis that most GWF equipment is BYOD, it was useful to gather more detail about how many days per week each device is used for GWF vs personal use. This helped us to work out what embodied carbon is attributed to GWF.
 
 The embodied carbon is calculated with the following formula:
-$$ Attributed\_Carbon = Embodied\_Carbon \times Condition\_Factor \times Attribution\_Factor $$
+$$ Attributed\_Carbon = Embodied\_Carbon \times Condition\_Factor \times BYOD\_Attribution\_Factor $$
 
-Where; 
-- Embodied_Carbon is gathered from the product data sheets, usually as a percentage of the total product lifecycle.
-- Condition_Factor is a multiplier based on the condition or refresh type, where; New: 100%, Remanufactured: 40%, Refurbished: 15% and Reused/Second-hand: 0% of the device's original embodied carbon.
-- Attribution_Factor is a multiplier if the device is a BYOD. If it is, we use the number of GWF working days per (7 day) week. ie. a BYOD used only 4 days per week for GWF purposes has an attribution factor of 57%.
+Where: 
+- *Embodied_Carbon* is gathered from the product data sheets, usually as a percentage of the total product lifecycle.
+- *Condition_Factor* is a multiplier based on the condition or refresh type, where; New: 100%, Remanufactured: 40%, Refurbished: 15% and Reused/Second-hand: 0% of the device's original embodied carbon.
+- *BYOD_Attribution_Factor* is an optional multiplier allowing us to factor in other use outside of GWF activities. Example, a BYOD used only 4 days per week for GWF purposes, and used 3 days a week for other things, has an attribution factor of 57% (4 days ÷ 7 days). A non-BYOD device has a factor of 100% - all embodied carbon should be attributed. We've decided an appropriate factor based on what we know about how each device is used in practice.
 
-Below, the table compiles all of this data. We show the embodied carbon attributable to GWF if *all this equipment was purchased in the same year*, which in reality it wasn't (more below).
+Below, the table compiles all of this data. We show the embodied carbon attributable to GWF if *all this equipment was purchased in the same year*, which in reality it wasn't. We go into that a bit more below.
 
-| Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Product Carbon Footprint kgCO<sub>2</sub>e | Embodied Carbon kgCO<sub>2</sub>e | Condition Factor |  BYOD? | Attribution Factor | GWF Attributable kgCO<sub>2</sub>e |
+| Laptop Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Product Carbon Footprint kgCO<sub>2</sub>e | Embodied Carbon kgCO<sub>2</sub>e | Condition Factor |  BYOD? | Attribution Factor | GWF Attributable kgCO<sub>2</sub>e |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |**Apple 2021 MacBook Pro 16" M1 Pro**** | [Apple 16inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/16-inch_MacBook_Pro_PER_Oct2021.pdf) | 349 | 255 | Refurbished (15%) | Yes | 57% | **22** |
 | **Apple 2020 MacBook Pro 13" M1**** | [Apple 13inch MacBook Pro](https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf) | 185 | 150 | Refurbished (15%) | No | 100% | **22** |
@@ -229,16 +229,20 @@ Below, the table compiles all of this data. We show the embodied carbon attribut
 | Lenovo Ideapad S145 | [Lenovo IdeaPad S145](https://static.lenovo.com/ww/docs/regulatory/PCF_ideapad_S145-15.pdf)| 357 | 264  | New (100%) | Yes | 36% | 94 |
 | **Apple 2023 MacBook Air 13.6" M2**** | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf)| 171 | 133  | New (100%) | Yes | 57% | **76** |
 | **Laptop Total** | | | | | | | **280** |
-| Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf)| 194 | 116  | Refurbished (15%) | Yes | 29% | 5 |
-| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf)| 605 | 430  | Refurbished (15%) | Yes | 29% | 18 |
-| Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf)| 492 | 339  | New (100%) | Yes | 4% | 12 |
-| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf)| 643 | 431  | New (100%) | No | 100% | 431 |
-| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf)| 643 | 431  | New (100%) | No | 100% | 431 |
-| HP 24" Monitor (24f)  | [HP M24f FHD*](https://h20195.www2.hp.com/v2/getpdf.aspx/c08754174.pdf)| 215 | 110  | New (100%) | Yes | 57% | 63 |
+
+
+| Monitor Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Product Carbon Footprint kgCO<sub>2</sub>e | Embodied Carbon kgCO<sub>2</sub>e | Condition Factor |  BYOD? | Attribution Factor | GWF Attributable kgCO<sub>2</sub>e |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf)| 194 | 116  | Refurbished (15%) | Yes | <span style="color: red">90%</span> | <span style="color: red">16</span> |
+| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf)| 605 | 430  | Refurbished (15%) | Yes | <span style="color: red">90%</span> | <span style="color: red">58</span> |
+| Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf)| 492 | 339  | New (100%) | Yes | <span style="color: red">90%</span> | <span style="color: red">306</span> |
+| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf)| 643 | 431  | New (100%) | No | 100% | 246 |
+| Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf)| 643 | 431  | New (100%) | No | 100% | 308 |
+| HP 24" Monitor (24f)  | [HP M24f FHD*](https://h20195.www2.hp.com/v2/getpdf.aspx/c08754174.pdf)| 215 | 110  | New (100%) | Yes | <span style="color: red">90%</span> | <span style="color: red">99</span> |
 | Samsung Oddysee | [Samsung Ultra WQHD*](https://image-us.samsung.com/SamsungUS/epeat/ProductCarbonFootprint(PCF)ResultsforMobileProductsandDisplaysReport.pdf)| 592 | 373  | New (100%) | Yes | 4% | 13 |
 | Samsung 32" 4k Curve Monitor | [Dell S3221QS*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-s3221qs-monitor-pcf-datasheet.pdf)| 763 | 435  | New (100%) | Yes | 57% | 249 |
-| **Monitor Total** | | | | | | | **1222** |
-| **Employee Hardware Total** | | | | | | | **1502** |
+| **Monitor Total** | | | | | | | **1294** |
+| **Employee Hardware Total** | | | | | | | **1568** |
 
 \* Approximately equivalent product that could be found with a PCF data sheet.
 
@@ -246,7 +250,7 @@ Below, the table compiles all of this data. We show the embodied carbon attribut
 
 **Resulting detailed estimate**
 
-For accounting purposes only the equipment acquired for the carbon accounting period is reported. In this case we were looking at the 2023 calendar year. The result is that only 4 laptops, as indicated in bold in the table, were relevant totalling **186 kgCO<sub>2</sub>e**. No monitors or printers were purchased this year.
+**For accounting purposes only the equipment acquired for the carbon accounting period is reported.** In this case we were looking at the 2023 calendar year. The result is that only 4 laptops, as indicated in bold in the table, were relevant totalling **186 kgCO<sub>2</sub>e**. No monitors or printers were purchased this year.
 
 | **Device type** | **2023 estimate** | **%** |
 | --- | --- | --- |
@@ -258,16 +262,13 @@ For accounting purposes only the equipment acquired for the carbon accounting pe
 
 **How could we improve upon this?**
 
-<span style="color: red">Anything else to add here - is my suggestion below ok? - Han</span>
+We realised the *BYOD_Attributional_factor* is a flexible and optional factor. 
 
-For embodied carbon, the days per week working for GWF may be misleading. For example for several of the monitors, whilst we know they are BYOD and only used occasionally, we know they aren't used for anything else on the other days. This is in contrast to laptops which are used at home for other things on non-working days. Considering usage is relevant for thinking about operational emissions eg energy use. But it probably doesn't make much sense to divide the embodied carbon in this way, the carbon has still be spent as the device exists and sits in an office somewhere. Our detailed calculations could be refined through collecting better data about usage.
+GWF made the decision to attribute a portion of the embodied carbon from BYOD laptops and monitors to itself, as we felt that GWF should take some responsibility for it. There is some complication around taking into account how much a BYOD is used in the office vs at home, and modelling that well. We realised there is a big difference between laptops which are portable, and monitors which are not. Therefore dividing everything by seven days a week didn't always make sense. Laptops might be taken home to use on the weekend, but a BYOD monitor, stationed in a home office isn't likely to be used all that much on the weekend. We decided a sensible factor on a case by case basis, and could work that up into a more robust methodology later down the line. 
 
-<span style="color: red">After some rework and calcs, I don't think the above paragraph is relevant anymore. We've attributed the embodied carbon of BYOD devices (laptops and monitors) based on number of working days per 7 day week, specifically for GWF carbon accounting. Non-BYODs are fully accountable 100% to GWF. Whilst, yes, the embodied carbon exists in any case, for devices used personally, those carbon emissions are only partially attributable to GWF. <br><br>
-Now, this could be looked at in other ways, this "attributional factor" as we've now called it is somewhat a flexible and optional factor. GWF (commendably) made the decision to attribute a portion of the embodied carbon to itself, as you feel that GWF is somewhat responsible for it. And in this detailed view, we re-calculated it to take into consideration days per week, rather than the arbitrary 70% in the high-level estimate. A simpler model could simply be 5/7 days per week assuming all full-time BYODs, and you could go even further only assume x days per year of working, but that's going even more detailed. Or, you could simply take full responsibility for the BYODs, as without them, your employees wouldn't be able to do their job at all, which is an even simpler view.<br><br>
-Another way to look at it, is that an organisation could simply write-off BYOD embodied carbon entirely, simply because they didn't acquire the equipment themselves at all. Not a commendable, or responsible approach, but arguably "fair" in accounting terms. So, is this a perfect way of calculating the embodied carbon, taking into account condition, BYOD, number of working days.... I think we've made a reasonably detailed attempt, we've made some fair assumptions (conditions), tried to account for actual use of BYODs and non-BYODs, and tried to *fairly attribute something* to GWF.<br><br> 
-As for, "How could we improve this further?" - well, we could try to more accurately model the precise number of working days per year, rather than per week, and attribute it more precisely? Or, attempt to more precisely understand how much each individual and device uses their equipment (personally, for work, not at all...). But I think the bottom line and take-away here is that like all these detailed calculations; as long as the method is clearly explained, assumptions are reasonable, believeable, backed up with some research and supporting evidence, that there is total transparency as to how these figures were produced, I think this is good as it can be. At least until another method, more research and evidence comes to light, and then... I think that will simply and only further enhance what we have already. - David</span>
+Given how large a slice of the overall emissions this section represents, this feels worthy of more work/research. Is this approach more helpful than the arbitrary 70% used in the high-level estimate? Or, should an organisation simply take full responsibility for the BYODs, as without them employees wouldn't be able to do their job at all - an even simpler view. Another way to look at it, is that an organisation could simply write-off BYOD embodied carbon entirely, simply because they didn't acquire the equipment themselves at all. Not a commendable, or responsible approach, but arguably "fair" in accounting terms. 
 
-
+So, is this a perfect way of calculating the embodied carbon, taking into account condition, BYOD, number of working days.... We've made a reasonably detailed attempt with fair assumptions (conditions), tried to account for actual use of BYODs and non-BYODs, and tried to *fairly attribute something* to GWF.
 
 [To the top](#top)
 
