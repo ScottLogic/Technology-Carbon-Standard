@@ -54,7 +54,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      image: "/assets/images/tcs-main.png"
+      image: "/assets/images/social/default.png"
       summary: Introducing a proposed Technology Carbon Standard for analysing an organisation's Technology Carbon Footprint.
 
 
