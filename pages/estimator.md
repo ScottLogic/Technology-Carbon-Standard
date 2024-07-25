@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Carbon Estimator
+title: Technology Carbon Estimator
 summary: The Technology Carbon Estimator is designed to give a high-level overview of the possible areas of carbon impact within your IT estate.
 permalink: /estimator
 includeEstimator: true
