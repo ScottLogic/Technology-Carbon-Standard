@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href={{"/assets/css/main.css" | relative_url }}>
+
+    <!-- OpenGraph MetaData -->
+    <meta property="og:title" content="{{ page.title | escape }}" />
+    <meta property="og:description" content="{{ page.summary | escape }}"/>
+    <meta property="og:image" content="{{ page.image | relative_url }}" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRVD4KMH9C"></script>
