@@ -7,6 +7,16 @@ project: gwf
 
 # Assumptions and Decisions
 
+## Digital sustainability vs carbon
+
+Digital sustainability and decarbonising digital are not the same thing. Sustainability, or understanding ones wider impact, involves a much broader set of considerations covering other planetary boundaries (water, rare raw materials, land use) and social implications. 
+
+This project narrowed in on carbon emissions as a starting lens to begin understanding these questions.
+
+Hannah, from GWF, has spoken a lot about this issue in the past. Her fellowship project, [doingthedoughnut.tech](https://doingthedoughnut.tech/), goes into this in a lot more detail.
+
+
+
 ## Estimates vs measurements: what models are we using?
 
 It’s important to be aware of the kind of model you’re working with, as it will impact estimates results. Top down models, tend to look at entire systems and as such are more likely to overestimate emissions. Bottom up models look to estimate smaller components of larger systems, and are likely to underestimate emissions. 

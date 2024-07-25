@@ -9,7 +9,7 @@ project: gwf
 
 # Overview
 
-This project, a collaboration between [Green Web Foundation](https://www.thegreenwebfoundation.org/) and [Scott Logic](https://www.scottlogic.com/), uses the TCS framework to estimate Green Web Foundation's digital estate. This write-up provides full documentation of the decisions, methodology and learning points so others can learn from what we experienced.
+This project, a collaboration between [Green Web Foundation](https://www.thegreenwebfoundation.org/) and [Scott Logic](https://www.scottlogic.com/), trials using the new TCS framework to estimate the carbon emissions Green Web Foundation's digital estate. This write-up provides full documentation of the decisions, methodology and learning points so others can learn from what we experienced.
 
 - [Results summary](#results-summary)
 - [Why do this project?](#context---why-this-project)
