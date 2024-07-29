@@ -45,6 +45,9 @@ node_modules:
   copy:
   - source: "@scottlogic/tech-carbon-estimator"
     target: assets/tech-carbon-estimator
+    # Add icons where site is looking for them
+  - source: "@scottlogic/tech-carbon-estimator/media"
+    target: media
 
 # Exclude from processing.
 # The following items will not be processed, by default.
