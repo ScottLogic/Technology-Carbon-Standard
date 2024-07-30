@@ -538,6 +538,8 @@ In an ideal world we would reach out to the relevant SaaS support teams to raise
 
 We also could have looked for any kind of industry benchmarks and extracted some broad assumptions from those. Whilst those would have provided low confidence estimates, that would have been better than nothing.
 
+If we had the capacity to explore this further, we would likely consider a spend-based method for high-level estimates. 
+
 [To the top](#top)
 
 ---
@@ -553,7 +555,7 @@ Estimate confidence: Medium
 
 ### Agreed scope
 
-Cloudflare is a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) that GWF use to provide better performance for their websites and manage DNS settings. We put Cloudflare into this Managed Services category, but it could just as easily belong to the Cloud Services category instead. We ultimately took the decision as this category would have been empty otherwise, and we liked being about to separate Cloudflare clearly.
+Cloudflare is a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) that GWF use to provide better performance for their websites and manage DNS settings. We put Cloudflare into this Managed Services category, but it could just as easily belong to the Cloud Services category instead. We ultimately took the decision as this category would have been empty otherwise, and we liked being able to separate Cloudflare clearly.
 
 ### High level estimate methodology
 
@@ -564,13 +566,13 @@ Cloudflare report they operate a (market-based) net-zero carbon service via [Ren
 We briefly explored what a high level estimate methodology for Cloudflare would look like if they didn't have their decarbonisation strategy. We found two key pieces of information:
 
 1. Cloudflare's total emissions was 21,000MTCO<sub>2</sub>e for 2022 - [Cloudflare's Emissions Inventory for 2022](https://cf-assets.www.cloudflare.com/slt3lc6tev37/65gCD3up047PMsHB9aXEYN/d3d719c0f9f493f82e4fec9dab250e6d/Cloudflare_2022_Emissions_Inventory.pdf)
-1. Cloudflare (as of August 2023) has 7.59million active websites - [Cloudflare Stats for 2023](https://backlinko.com/cloudflare-users]
+1. Cloudflare (as of August 2023) has 7.59million active websites - [Cloudflare Stats for 2023](https://backlinko.com/cloudflare-users)
 
 A rudimentary method is to simply divide the carbon emissions by the number of active websites to get an average carbon emission per website per year.
 
 $$ (21,0000\ MTCO_2e/year \times 1000) ÷ 7,590,000 = 2.77\ kgCO2e/year/website $$
 
-In the absense of any data whatsoever, 2.77kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to perform a [high level estimate](assumptions#high-level-estimates) of CDNs.
+In the absense of any data whatsoever, 2.77 kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to perform a [high level estimate](assumptions#high-level-estimates) of CDNs.
 
 [To the top](#top)
 
