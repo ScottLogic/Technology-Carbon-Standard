@@ -176,10 +176,10 @@ $$ 150\ kgCO_2e ÷ 5 = 30\ kgCO_2e/year $$
 
 | **Device type** | **Annual estimate** | **%** |
 | --- | --- | --- |
-| Laptops | 207 kgCO_2e | 32% |
-| Monitors | 419 kgCO_2e | 64% |
-| Printers | 30 kgCO_2e | 5% |
-| **TOTAL** | **656 kgCO_2e** | **100%** |
+| Laptops | 207 kgCO<sub>2</sub>e | 32% |
+| Monitors | 419 kgCO<sub>2</sub>e | 64% |
+| Printers | 30 kgCO<sub>2</sub>e | 5% |
+| **TOTAL** | **656 kgCO<sub>2</sub>e** | **100%** |
 
 
 **How could we improve upon this?**
