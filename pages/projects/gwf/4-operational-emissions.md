@@ -308,7 +308,7 @@ We started with a high-level spend-based, broad estimate of GWF's cloud services
 | **Estimate Type** | **High-Level Estimate** | **Detailed Estimate** | **Confidence in Methodology (high-level/ detailed)** |
 | --- | --- | --- | --- |
 | All Cloud Services| 26.74 kgCO<sub>2</sub>e/year | NA | Low/ NA |
-| Greencheck API Services | 11.85 kgCO<sub>2</sub>e/year | 9.86*  kgCO<sub>2</sub>e/year | Low/ Medium |
+| Greencheck API Services | 11.26 kgCO<sub>2</sub>e/year | 9.65*  kgCO<sub>2</sub>e/year | Low/ Medium |
 
 <small>* The embodied carbon emissions uses the high-level estimation model.</small>
 

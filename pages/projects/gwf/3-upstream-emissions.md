@@ -65,12 +65,12 @@ We also could have looked for any kind of industry benchmarks and extracted some
 
 ### Estimated emissions
 
-**Estimate used: Detailed = 252 kgCO<sub>2</sub>e/year - 42% of overall digital estate**
+**Estimate used: Detailed = 186 kgCO<sub>2</sub>e/year - 35% of overall digital estate**
 
 | **Estimate type** | **2023 estimate** | **Confidence in methodology** |
 | --- | --- | --- |
 | High level | 656 kgCO<sub>2</sub>e/year | Medium |
-| Detailed | 252 kgCO<sub>2</sub>e/year | High |
+| Detailed | 186 kgCO<sub>2</sub>e/year | High |
 
 
 ### Agreed scope
