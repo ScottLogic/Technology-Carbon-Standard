@@ -17,38 +17,39 @@ This project, a collaboration between [Green Web Foundation](https://www.thegree
 
 ## Results summary
 
-**This project estimates that in 2023, Green Web Foundation's (GWF) digital estate was responsible for 601 kgCO<sub>2</sub>e.**
+**This project estimates that in 2023, Green Web Foundation's (GWF) digital estate was responsible for 496 kgCO<sub>2</sub>e.**
 
-The biggest area of emissions by far, over three quarters, comes from the purchase and use of employee hardware eg laptops, monitors, printers and office internet. This accounts for 76% of the emissions - 42% arising from the purchase of employee hardware, 27% arising from the use of it and a further 7% from running internet in our office spaces. 
+The biggest area of emissions by far, comes from the purchase and use of employee hardware eg laptops, monitors, printers and office internet. This accounts for 69% of the emissions - 38% arising from the purchase of employee hardware, 23% arising from the use of it and a further 8% from running internet in our office spaces. 
 
-Next we estimated that emissions arising from the end-use of our digital services, such as our websites and Green Web Platform, account for 17% of the emissions. 
+Next we estimated that emissions arising from the end-use of our digital services, such as our websites and Green Web Platform, account for 24% of the emissions. 
 
 Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from data transfer across the internet arising from public use of GWF's Green Web APIs.
 
 ![GWF Emissions Treemap](/assets/images/projects/GWF/gwf-emissions-treemap.png)
-<p class="italic text-center">Visual summary of carbon emission estimates for Green Web Foundation 1st Jan - 31st Dec 2023.</p>
+<p class="italic text-center">Visual summary of carbon equivalent emission estimates for Green Web Foundation 1st Jan - 31st Dec 2023.</p>
 
 <div class="gwf-results-table"></div>
 
 | Category | Carbon emissions<br/>kgCO<sub>2</sub>e/year | as % | Notes |
 | --- | --- | --- |  --- | 
-| Upstream Emissions | 252 | 42% | |
+| Upstream Emissions | 186 | 38% | |
 | [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
-| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 180 | 38% | Detailed estimate - high confidence |
+| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 186 | 38% | Detailed estimate - high confidence |
 | [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
 | [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
-| Operational Emissions | 234 | 39% | |
-| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 115 | 27% | Detailed estimate - high confidence |
+| Direct Operational Emissions | 156 | 31% | |
+| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 116 | 23% | Detailed estimate - high confidence |
 | [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 8% | High level estimate - medium confidence |
 | [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | [Generators](/projects/green-web-foundation/operational#generators) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
-| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 27 | 6% | Some high-level, some detailed estimate - medium to low confidence |
+| Indirect Operational Emissions | 27 | 5% | |
+| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 27 | 5% | Some high-level, some detailed estimate - medium to low confidence |
 | [SaaS](/projects/green-web-foundation/operational#saas-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
-| [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
-| Downstream Emissions | 115 | 19% | |
-| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 105 | 17% | High level estimate - low confidence |
+| [Managed Services](/projects/green-web-foundation/operational#managed-services) | 0 | 0% | High level estimate - medium confidence |
+| Downstream Emissions | 127 | 26% | |
+| [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 117 | 24% | High level estimate - low confidence |
 | [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | High level estimate - medium confidence |
-| Total | 601 kgCO<sub>2</sub>e/year | 100% |
+| Total | 496 kgCO<sub>2</sub>e/year | 100% |
 
 ### Key insights
 
@@ -92,9 +93,9 @@ The project set out to use the TCS framework to estimate GWF's digital estate, f
 
 <div class="basis-1/2">
 
-<img style="height:60px" src="/assets/images/projects/GWF/GWF-logo.svg">
+<a href="https://www.thegreenwebfoundation.org/" target="_blank"><img style="height:60px" src="/assets/images/projects/GWF/GWF-logo.svg"></a>
 
-<a href="https://www.thegreenwebfoundation.org/">Green Web Foundation website</a>
+<a href="https://www.thegreenwebfoundation.org/" target="_blank">Green Web Foundation website</a>
 
 <p>Project team: <a href="https://www.linkedin.com/in/hanopcan/">Hannah Smith</a>, <a href="https://www.linkedin.com/in/mrchrisadams/">Chris Adams</a>, <a href="https://www.linkedin.com/in/fershad/">Fershad Irani</a></p>
 
@@ -104,15 +105,15 @@ The project set out to use the TCS framework to estimate GWF's digital estate, f
 
 <div class="basis-1/2">
 
-<p><span style="color: red;">Scott Logic logo</span></p>
+<a href="https://www.scottlogic.com/" target="_blank"><img style="height:60px" src="/assets/images/scott-logic-primary-no-tagline-full-color-rgb.svg"></a>
 
-<p><a href="https://www.scottlogic.com/">Scott Logic website</a></p>
+<p><a href="https://www.scottlogic.com/" target="_blank">Scott Logic website</a></p>
 
 <p>Project team: David Rees, James Camilleri</p>
 
-<p><span style="color: red;">Add some blurb here?</span></p>
+<p>Scott Logic transforms clients’ businesses by engineering innovative, bespoke software solutions that drive measurable value, whilst also enhancing the core strengths of their technology delivery capability.</p>
 
-
+<p>We advise on and implement sustainable solutions across a series of sustainability themes. We go beyond just green and carbon considerations to design and build software that balances the many trade-offs – including impacts to ongoing software costs, impacts to users, and security and risk considerations – while aligning sustainability with organisational quality goals.</p>
 
 </div>
 </div>

@@ -25,7 +25,7 @@ The approach used and why for each sub-category in downstream emissions:
 
 ### Estimated emissions
 
-**Estimate used: High level = 104.82kgCO<sub>2</sub>e/year - 17% of overall digital estate**
+**Estimate used: High level = 116.92 kgCO<sub>2</sub>e/year - 24% of overall digital estate**
 
 Estimate confidence: Low
 
@@ -33,6 +33,7 @@ Estimate confidence: Low
 
 GWF's public websites:
 - [www.thegreenwebfoundation.org](https://www.thegreenwebfoundation.org/)
+- [branch.climateaction.tech](https://branch.climateaction.tech/)
 - [app.greenweb.org/directory](https://app.greenweb.org/directory)
 - [developers.thegreenwebfoundation.org](https://developers.thegreenwebfoundation.org/)
 - [carbontxt.org](https://carbontxt.org)
@@ -50,13 +51,14 @@ GWF websites user analytics provided by [Cabin](https://withcabin.com/). Cabin p
 
 To support our high level estimates, we use the emissions values provided by Cabin. 
 
-| **Website** | **Cabin estimate, kgCO<sub>2</sub>e/year** | **Notes** |
-| --- | --- | --- |
-| www.thegreenwebfoundation.org | 28 | 1st April 2023 - 31st March 2024 |
-| app.greenweb.org/directory | 6.8 | 1st Jan 2023 - 31st March 2024, multiplied by four to get a whole year |
-| developers.thegreenwebfoundation.org | 0.44 | 1st April 2023 - 31st March 2024 |
-| carbontxt.org | 0.05 | 1st Jan 2023 - 31st March 2024, multiplied by four to get a whole year |
-| **Total** | **35.3** |  |
+| **Website**                           | **Cabin estimate, kgCO<sub>2</sub>e** | **Notes**   |
+| ------------------------------------- | ----------- | ------------------------------------- |
+| www.thegreenwebfoundation.org         | 27          | 1st January 2023 - 31st December 2023 |
+| branch.climateaction.tech             | 19.8        | 1st January 2023 - 31st December 2023 |
+| app.greenweb.org/directory            | 0.16        | 6th September 2023 - 31st December 2023 (no data before 6th September) |
+| developers.thegreenwebfoundation.org  | 0.4         | 1st January 2023 - 31st December 2023 |
+| carbontxt.org                         | 0.25        | 20th July 2023 - 31st December 2023 (no data before 20th July) |
+| **Total**                             | **47.39**   |                                       |
 
 **Dataset access site**
 
@@ -120,11 +122,11 @@ With little visibility as to how CO2.js is used on client servers and it's small
 
 | **Area of scope** | **Estimate, kgCO<sub>2</sub>e/year** |
 | --- | --- |
-| Public facing websites | 35.3 |
+| Public facing websites | 47.39 |
 | Dataset access site | 0.71 |
 | Downstream infrastructure from self-hosting Green Web Dataset | 68.82 |
 | 3rd Party Websites using CO2.js | 0 |
-| **Total** | **104.8** |  |
+| **Total** | **116.92** |  |
 
 
 **How could we improve upon this?**
@@ -139,7 +141,7 @@ No further detailed estimation was attempted, as we would have been likely to me
 {% include categoryItem.html item="CatDNetworkDataTransfer" %}
 
 ### Estimated emissions
-**Estimate used: High level = 9.75 kgCO<sub>2</sub>e/year - 17% of overall digital estate**
+**Estimate used: High level = 9.74 kgCO<sub>2</sub>e/year - 2% of overall digital estate**
 
 Estimate confidence: Medium
 
@@ -157,7 +159,7 @@ There are two parts to the Network Data Transfer we considered:
 
 For the [Green Web Check API (greencheck/{url})](https://admin.thegreenwebfoundation.org/api-docs/), there are two kinds of respones. A green response and a grey response. 
 
-We inspected the file size of a Green Web Check response, using “thegreenwebfoundation.org” as a sample URL to check. The response body is 1kB. API responses with a grey value are much smaller as they don't contain evidence of green credentials. It’s also assumed that there will be some variance depending on the supporting documentation that verifies the green credentials. However, for the purposes of the high level estimates and keeping things simple, we based our calculations on all responses having a response payload size of 1kB or (1 x 10^<sup>-6</sup> GB).
+We inspected the file size of a Green Web Check response, using "thegreenwebfoundation.org" as a sample URL to check. The response body is 1kB. API responses with a grey value are much smaller as they don't contain evidence of green credentials. It’s also assumed that there will be some variance depending on the supporting documentation that verifies the green credentials. However, for the purposes of the high level estimates and keeping things simple, we based our calculations on all responses having a response payload size of 1kB or (1 x 10^<sup>-6</sup> GB).
 
 We used the [Green Coding Berlin](https://www.green-coding.io/) network (fixed-line) transmission energy rate of 0.0028125kWh/GB to calculate the energy consumption per API response:
 
@@ -191,9 +193,9 @@ $$ 14\ kWh/year \times 0.490\ kgCO_2e/kWh = 6.86\ kgCO_2e/year $$
 
 | **Scope area** | **Annual estimate** |
 | --- | --- | 
-| Green Web Check API | 6.86 kgCO_2e | 
-| Dataset Download | 2.88 kgCO_2e |
-| **TOTAL** | **9.75 kgCO_2e** | 
+| Green Web Check API | 2.88 kgCO<sub>2</sub>e/year | 
+| Dataset Download | 6.86 kgCO<sub>2</sub>e/year |
+| **TOTAL** | **9.74 kgCO<sub>2</sub>e** | 
 
 [To the top](#top)
 

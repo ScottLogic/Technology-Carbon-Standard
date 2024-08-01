@@ -65,7 +65,7 @@ We also could have looked for any kind of industry benchmarks and extracted some
 
 ### Estimated emissions
 
-**Estimate used: Detailed = 186 kgCO<sub>2</sub>e/year - 35% of overall digital estate**
+**Estimate used: Detailed = 186 kgCO<sub>2</sub>e/year - 38% of overall digital estate**
 
 | **Estimate type** | **2023 estimate** | **Confidence in methodology** |
 | --- | --- | --- |
@@ -280,7 +280,7 @@ So, is this a perfect way of calculating the embodied carbon, taking into accoun
 
 ### Estimated emissions
 
-**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year - 0% of overall digital estate**
 
 Estimate confidence: Medium
 
@@ -317,7 +317,7 @@ If we were looking at more networking hardware in a larger organisation, we coul
 
 ### Estimated emissions
 
-**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year - 0% of overall digital estate**
 
 Estimate confidence: n/a
 

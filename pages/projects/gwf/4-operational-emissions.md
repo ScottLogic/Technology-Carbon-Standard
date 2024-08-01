@@ -34,12 +34,12 @@ The approach used and why for each sub-category in operational emissions:
 
 ### Estimated emissions
 
-**Estimate used: Detailed = 114.63 kgCO<sub>2</sub>e/year - 27% of overall digital estate**
+**Estimate used: Detailed = 116.02 kgCO<sub>2</sub>e/year - 23% of overall digital estate**
 
 | **Estimate type** | **2023 estimate** | **Confidence in methodology** |
 | --- | --- | --- |
 | High level | 146.7 kgCO<sub>2</sub>e/year | Medium |
-| Detailed | 114.63 kgCO<sub>2</sub>e/year | High |
+| Detailed | 116.02 kgCO<sub>2</sub>e/year | High |
 
 
 ### Agreed scope
@@ -140,13 +140,13 @@ For each product, using the data sheets we found the carbon emissions of the use
 
 **Laptops**
 
-Apple don't provide [TEC](/glossary#typical-energy-consumption-tec) values for it's products. For this part of our sums we do need this. Instead they say what percentage of the total carbon emissions for any given product is for usage. Using that we can work out a TEC value to use. 
+Apple don't provide [TEC](/glossary#typical-energy-consumption-tec) values for it's products. For this part of our sums we do need this. Instead, they indicate what percentage of the total carbon emissions for any given product is for usage. Using that we can work out a TEC value to use. 
 
 Apple's datasheets indicate that the usage is calculated based on historical customer use, modelling of battery drain for various activities and taking into account regional differences of energy grid mix. So we have to assume that any carbon intensity figure they've applied is the global carbon intensity value. We use a global intensity of 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/projects/green-web-foundation/assumptions#regional-carbon-intensity) for more info.
 
-Our methodology is to take the usage percentage of the product's total carbon emission and divide that by the expected life in years. This gets us the usage carbon emissions per year (kgCO<sub>2</sub>e)/year. We divide again this by the global intensity to calculate a TEC (in kWh/year) for each product. 
+Our methodology is to take the product's use proportion of its total carbon emission and divide that by the expected life in years. This gets us the usage carbon emissions per year (kgCO<sub>2</sub>e)/year. We divide this again by the global intensity to calculate a TEC (in kWh/year) for each product. 
 
-Then, we factor in where each laptop is actually used in practice to get an annual operational emissions estimate. We do this multiplying the TEC by the relevant regional grid intensity figure. Lastly, we take the actual days attributable to GWF into account, assumign a seven day week.
+Then, we factor in where each laptop is actually used in practice to get an annual operational emissions estimate. We do this multiplying the TEC by the relevant regional grid intensity figure. Lastly, we take the actual days attributable to GWF into account, assuming a seven day week.
 
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Carbon Emissions from Use kgCO<sub>2</sub>e | Calculated TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF kgCO<sub>2</sub>e/year |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -165,14 +165,14 @@ Manufacturers typically provide the TEC for monitors. Using that for each monito
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF (kgCO<sub>2</sub>e/year) |
 | --- | --- | --- | --- | --- | --- | --- |
 | Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf) | 47 | UK, 0.268 | 12.61 | 2 | 3.60 |
+| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | 71.2 | UK, 0.268 | 19.1 | 2 | 5.46 |
 | Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf) | 50.4 | UK, 0.268 | 13.52 | 0.25 | 0.48 |
-| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | 71.2 | UK, 0.268 | 19.1 | 2 | 3.86 |
 | Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 4 | 13.88 |
 | Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 5 | 17.35 |
 | HP 24" Monitor (24f)  | [HP M24f FHD*](https://h20195.www2.hp.com/v2/getpdf.aspx/c08754174.pdf) | 39.15 | Germany, 0.364 | 14.25 | 4 | 8.14 |
 | Samsung Oddysee | [Samsung Ultra WQHD*](https://image-us.samsung.com/SamsungUS/epeat/ProductCarbonFootprint(PCF)ResultsforMobileProductsandDisplaysReport.pdf) | 30 | Netherlands, 0.386 | 11.59 | 0.25 | 0.41 |
 | Samsung 32" 4k Curve Monitor | [Dell S3221QS*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-s3221qs-monitor-pcf-datasheet.pdf) | 109 | Taiwan, 0.566 | 61.65 | 4 | 35.23 |
-| **Monitor Total** | | 480.23 | | 181.3 | | **83.17** |
+| **Monitor Total** | | 480.23 | | 181.3 | | **84.56** |
 
 \* Approximately equivalent product that could be found with a PCF data sheet.
 
@@ -185,17 +185,17 @@ Because we didn't find any further details about the small office printer, we de
 | **Device type** | **Annual estimate** | **%** |
 | --- | --- | --- |
 | Laptops | 31.4 kgCO_2e | 27% |
-| Monitors | 83.17 kgCO_2e | 73% |
-| Printers | 0.06 kgCO_2e | 0% |
-| **TOTAL** | **114.63 kgCO_2e** | **100%** |
+| Monitors | 84.56 kgCO_2e | 73% |
+| Printers | 0.06 kgCO_2e | <1% |
+| **TOTAL** | **116.02 kgCO_2e** | **100%** |
 
-**Employee Device Total 114.63 kgCO<sub>2</sub>e/year**
+**Employee Device Total 116.02 kgCO<sub>2</sub>e/year**
 
 **How could we improve upon this?**
 
-Our high level estimate used an average TEC of 30.1kWh/year metric for laptops, and the detailed, calculated average TEC estimation came in at 26.9kWh/year. Taking into account regional carbon intensity, the carbon emissions high level estimate for laptops is 52 kgCO<sub>2</sub>e/year and the detailed estimate of 31.4 kgCO<sub>2</sub>e/year. Our estimated laptop TEC was higher than the actual laptop TEC and also taking into account the actual working days per week we could be more confident with the estimation. Further comparison of high level and detailed estimates in other projects would be helpful to strengthen the confidence of using the high level average figures.
+Our high level estimate used an average TEC of 30.1 kWh/year metric for laptops, and the detailed, calculated average TEC estimation came in at 26.9 kWh/year. Taking into account regional carbon intensity, the carbon emissions high level estimate for laptops is 52 kgCO<sub>2</sub>e/year and the detailed estimate of 31.4 kgCO<sub>2</sub>e/year. Our estimated laptop TEC was higher than the actual laptop TEC and also taking into account the actual working days per week we could be more confident with the estimation. Further comparison of high level and detailed estimates in other projects would be helpful to strengthen the confidence of using the high level average figures.
 
-For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high level estimate of 128.16 kgCO<sub>2</sub>e/year was much lower than the actual 181.3kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38 kgCO<sub>2</sub>e/year.
+For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high level estimate of 128.16 kgCO<sub>2</sub>e/year was much lower than the actual 181.3 kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38 kgCO<sub>2</sub>e/year.
 
 [To the top](#top)
 
@@ -206,7 +206,7 @@ For the monitors we assumed an average TEC of 45kWh/year, but the actual average
 
 ### Estimated emissions
 
-**Estimate used: High level = 40.33kgCO<sub>2</sub>e/year**
+**Estimate used: High level = 40.33 kgCO<sub>2</sub>e/year - 8% of overall digital estate**
 
 Estimate confidence: medium
 
@@ -259,7 +259,7 @@ This approach would only scale so far though and is high effort. Further researc
 
 ### Estimated emissions
 
-**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year - 0% of overall digital estate**
 
 Estimate confidence: n/a
 
@@ -276,7 +276,7 @@ GWF does not own any of it's own servers or storage hardware. This means there a
 
 ### Estimated emissions
 
-**Estimate used: High level = 0 kgCO<sub>2</sub>e/year**
+**Estimate used: High level = 0 kgCO<sub>2</sub>e/year - 0% of overall digital estate**
 
 Estimate confidence: n/a
 
@@ -528,7 +528,7 @@ In an ideal world we would reach out to the relevant SaaS support teams to raise
 
 We also could have looked for any kind of industry benchmarks and extracted some broad assumptions from those. Whilst those would have provided low confidence estimates, that would have been better than nothing.
 
-If we had the capacity to explore this further, we would likely consider a spend-based method for high level estimates. 
+If we had the capacity to explore this further, we could consider a spend-based method for high level estimates. 
 
 [To the top](#top)
 
