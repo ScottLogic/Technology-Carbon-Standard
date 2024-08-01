@@ -34,12 +34,12 @@ The approach used and why for each sub-category in operational emissions:
 
 ### Estimated emissions
 
-**Estimate used: Detailed = 162.41 kgCO<sub>2</sub>e/year - 27% of overall digital estate**
+**Estimate used: Detailed = 114.63 kgCO<sub>2</sub>e/year - 27% of overall digital estate**
 
 | **Estimate type** | **2023 estimate** | **Confidence in methodology** |
 | --- | --- | --- |
 | High level | 146.7 kgCO<sub>2</sub>e/year | Medium |
-| Detailed | 162.41 kgCO<sub>2</sub>e/year | High |
+| Detailed | 114.63 kgCO<sub>2</sub>e/year | High |
 
 
 ### Agreed scope
@@ -114,7 +114,7 @@ For the **operational carbon emissions we use an average TEC of 0.17kWh**. This 
 
 $$ 0.17\ kWh \times 0.364\ kgCO_2e/kWh = 0.06kgCO_2e/year $$
 
-**Resulting high-level estimate**
+**Resulting high level estimate**
 
 | **Device type** | **Annual estimate** | **%** |
 | --- | --- | --- |
@@ -140,15 +140,13 @@ For each product, using the data sheets we found the carbon emissions of the use
 
 **Laptops**
 
-~~For laptops, the carbon emissions of the use percentage is typically about 20% of the total product carbon emissions. This came as a surprise, as we expected the usage percentage to be much higher than the embodied emissions.~~
+Apple don't provide [TEC](/glossary#typical-energy-consumption-tec) values for it's products. For this part of our sums we do need this. Instead they say what percentage of the total carbon emissions for any given product is for usage. Using that we can work out a TEC value to use. 
 
-<span style="color: red">~~I wonder if we might elaborate a bit more on the things that aren't clear about the manufacturer provided estimates. But also things that are clear might be helpful to demonstrate. For example do these sheets make it clear what assumptions they make for how much the laptop is used on a daily basis - a working weeek of 5 days, or a week of 7 days. I'm also guessing it assumes relatively light usage like browsing and playing videos, rather than complex calculations for gaming, software dev etc. It will help when we come to spelling out how we factor in BYOD and use at home on weekends for GWF owned devices which I think we might need to address - even if we decide to ultimately ignore these details in our calculations to keep things simpler.~~</span> 
+Apple's datasheets indicate that the usage is calculated based on historical customer use, modelling of battery drain for various activities and taking into account regional differences of energy grid mix. So we have to assume that any carbon intensity figure they've applied is the global carbon intensity value. We use a global intensity of 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/projects/green-web-foundation/assumptions#regional-carbon-intensity) for more info.
 
-Apple don't provide ([TEC](/glossary#typical-energy-consumption-tec) values for it's products, just a percentage of the total carbon emissions for usage. The datasheets indicate that the usage is calculated based on historical customer use, modelling of battery drain for various activities and taking into account regional differences of energy grid mix. To gather a detailed estimate of operation carbon emission we have to assume the global carbon intensity value, and the expected lifespan of the product to calculate the TEC. We use a global intensity of 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/projects/green-web-foundation/assumptions#regional-carbon-intensity) for more info. By gathering the usage percentage of the product's total carbon emission, dividing that by the expected life in years we can calculate the usage carbon emissions per year (kgCO<sub>2</sub>e)/year. We can divide this by the global intensity to calculate a TEC (in kWh/year) for each product. Then, we can factor in where each laptop is actually used in practice by multiplying the TEC by the relevant regional grid intensity figure to get an annual operational emissions estimate. Lastly, we take into account the working days attributable to GWF.
+Our methodology is to take the usage percentage of the product's total carbon emission and divide that by the expected life in years. This gets us the usage carbon emissions per year (kgCO<sub>2</sub>e)/year. We divide again this by the global intensity to calculate a TEC (in kWh/year) for each product. 
 
-<span style="color: red">A bit like the detailed estimates, don't we need to factor in BYOD in here? For a laptop that is BYOD we need to assume it is also used on the weekend so the working week might actually be 7 days, not 5.</span>
-
-<span style="color: coral">We are already accounting for the BYOD here as the operation emissions are taking into account the days spent working for GWF. Personal use of a BYOD wouldn't be considered and recorded for GWF. However, whilst the TEC is per year, we need to assume the number of GWF working days as a percentage of 7 days, not 5. I'll update the numbers.</span>
+Then, we factor in where each laptop is actually used in practice to get an annual operational emissions estimate. We do this multiplying the TEC by the relevant regional grid intensity figure. Lastly, we take the actual days attributable to GWF into account, assumign a seven day week.
 
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | Carbon Emissions from Use kgCO<sub>2</sub>e | Calculated TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF kgCO<sub>2</sub>e/year |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -164,44 +162,40 @@ Apple don't provide ([TEC](/glossary#typical-energy-consumption-tec) values for 
 
 Manufacturers typically provide the TEC for monitors. Using that for each monitor, we then apply the regional carbon intensity and working days for GWF much like we did for laptops.
 
-<span style="color: red">Don't think we need to factor in BYOD here as we can make a sweeping assumption that monitors are not typically used at home on weekends. It might be good to add this into the notes as specific point.</span>
-
 | Device Manufacturer and Model | PCF Data Sheet (or approx. equivalent) | TEC kWh/year | Regional Carbon Intensity kgCO<sub>2</sub>e/kWh | Operational Emissions kgCO<sub>2</sub>e/year | Days per Week for GWF | Attributional Operating Emissions to GWF (kgCO<sub>2</sub>e/year) |
 | --- | --- | --- | --- | --- | --- | --- |
 | Dell 27" Monitor (P2717H) | [Dell P2725H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/p2725h-monitor-pcf-report.pdf) | 47 | UK, 0.268 | 12.61 | 2 | 3.60 |
 | Philips 22" FHD Monitor (223V5LSB2) | [Dell SE2222H*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-se2222h-monitor-pcf-datasheet.pdf) | 50.4 | UK, 0.268 | 13.52 | 0.25 | 0.48 |
-| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | 71.2 | UK, 0.268 | 19.1 | 2 | 5.46 |
+| Dell UltraSharp 27" Monitor (U2715H) | [Dell U2724D*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-u2724d-monitor-pcf-datasheet.pdf) | 71.2 | UK, 0.268 | 19.1 | 2 | 3.86 |
 | Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 4 | 13.88 |
 | Dell UltraSharp 27" Monitor (U2722DE) | [Dell U2722DE](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/u2722de-monitor-pcf-datasheet.pdf) | 66.74 | Germany, 0.364 | 24.29 | 5 | 17.35 |
 | HP 24" Monitor (24f)  | [HP M24f FHD*](https://h20195.www2.hp.com/v2/getpdf.aspx/c08754174.pdf) | 39.15 | Germany, 0.364 | 14.25 | 4 | 8.14 |
 | Samsung Oddysee | [Samsung Ultra WQHD*](https://image-us.samsung.com/SamsungUS/epeat/ProductCarbonFootprint(PCF)ResultsforMobileProductsandDisplaysReport.pdf) | 30 | Netherlands, 0.386 | 11.59 | 0.25 | 0.41 |
 | Samsung 32" 4k Curve Monitor | [Dell S3221QS*](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm#scroll=off&tab0=2&pdf-overlay=//www.delltechnologies.com/asset/en-uk/products/electronics-and-accessories/technical-support/dell-s3221qs-monitor-pcf-datasheet.pdf) | 109 | Taiwan, 0.566 | 61.65 | 4 | 35.23 |
-| **Monitor Total** | | 480.23 | | 181.3 | | **84.56** |
+| **Monitor Total** | | 480.23 | | 181.3 | | **83.17** |
 
 \* Approximately equivalent product that could be found with a PCF data sheet.
 
 **Printers**
 
-Because we didnt find any further details about the small office printer, we decided to stick with the high-level estimated value of 0.06kgCO<sub>2</sub>e/year
+Because we didn't find any further details about the small office printer, we decided to stick with the high level estimated value of 0.06kgCO<sub>2</sub>e/year
 
 **Resulting detailed estimate**
 
 | **Device type** | **Annual estimate** | **%** |
 | --- | --- | --- |
 | Laptops | 31.4 kgCO_2e | 27% |
-| Monitors | 84.56 kgCO_2e | 73% |
+| Monitors | 83.17 kgCO_2e | 73% |
 | Printers | 0.06 kgCO_2e | 0% |
-| **TOTAL** | **116.02 kgCO_2e** | **100%** |
+| **TOTAL** | **114.63 kgCO_2e** | **100%** |
 
-**Employee Device Total 116.02 kgCO<sub>2</sub>e/year**
+**Employee Device Total 114.63 kgCO<sub>2</sub>e/year**
 
 **How could we improve upon this?**
 
-Our high level estimate used an average TEC of 30.1kWh/year metric for laptops, and the detailed, calculated average TEC estimation came in at 26.9kWh/year. Taking into account regional carbon intensity, the carbon emissions high-level estimate for laptops is 52 kgCO<sub>2</sub>e/year and the detailed estimate of 31.4 kgCO<sub>2</sub>e/year. Our estimated laptop TEC was higher than the actual laptop TEC and also taking into account the actual working days per week we could be more confident with the estimation. Further comparison of high-level and detailed estimates in other projects would be helpful to strengthen the confidence of using the high-level average figures.
+Our high level estimate used an average TEC of 30.1kWh/year metric for laptops, and the detailed, calculated average TEC estimation came in at 26.9kWh/year. Taking into account regional carbon intensity, the carbon emissions high level estimate for laptops is 52 kgCO<sub>2</sub>e/year and the detailed estimate of 31.4 kgCO<sub>2</sub>e/year. Our estimated laptop TEC was higher than the actual laptop TEC and also taking into account the actual working days per week we could be more confident with the estimation. Further comparison of high level and detailed estimates in other projects would be helpful to strengthen the confidence of using the high level average figures.
 
-For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high-level estimate of 128.16 kgCO<sub>2</sub>e/year was much lower than the actual 181.3kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38 kgCO<sub>2</sub>e/year.
-
-<span style="color: red">Any other ideas on how to improve upon this?</span>
+For the monitors we assumed an average TEC of 45kWh/year, but the actual average was much higher at 60kWh/year due to GWF more larger screens than the average business office (22-24"). This consequently meant the high level estimate of 128.16 kgCO<sub>2</sub>e/year was much lower than the actual 181.3kgCO<sub>2</sub>e/year (assuming full time use). Once we accounted for actual working use and not full time hours, this conveniently re-aligned closer to the original estimate at 118.38 kgCO<sub>2</sub>e/year.
 
 [To the top](#top)
 
@@ -299,27 +293,25 @@ GWF do not operate any generators on premise. This means there are no carbon emi
 
 ### Estimated emissions
 
-<!-- **Estimate used: Detailed = 32 kgCO<sub>2</sub>e/year - 5% of overall digital estate** -->
+**Estimate used: High level = 26.74 kgCO<sub>2</sub>e/year - 5% of overall digital estate**
 
-<span style="color: blue">The estimations can't really be compared quite so broadly... I've gone into detail comparing the two estimates in detail at the end of this section as its not comparing apples to apples. The next paragraph attempts to explain the process we went through and what we did... - David</span>
-
-We started with a high-level spend-based, broad estimate of GWF's cloud services, from which this led to a focused detailed carbon estimate specifically for GWF's Greencheck API servers. For this reason, we cannot compare the total high-level estimate to a total detailed estimate (because we didn't complete a detailed estimate for all the servers). However, we did circle back to calculate a high-level estimate for the Greencheck API for a comparable result.
-
-| **Estimate Type** | **High-Level Estimate** | **Detailed Estimate** | **Confidence in Methodology (high-level/ detailed)** |
+| **Estimate Type** | **High level Estimate** | **Detailed Estimate** | **Confidence in Methodolog<br/>(High level/ detailed)** |
 | --- | --- | --- | --- |
 | All Cloud Services| 26.74 kgCO<sub>2</sub>e/year | NA | Low/ NA |
 | Greencheck API Services | 11.26 kgCO<sub>2</sub>e/year | 9.65*  kgCO<sub>2</sub>e/year | Low/ Medium |
 
-<small>* The embodied carbon emissions uses the high-level estimation model.</small>
+<small>* The embodied carbon emissions uses the high level estimation model.</small>
+
+NB: We started by producing a high level spend-based estimate of GWF's cloud services. This led to producing a detailed carbon estimate specifically for GWF's Greencheck API servers, which is a subset of the whole cloud services estate. So we can't compare the total high level estimate to a total detailed estimate, as we didn't complete a detailed estimate for all the servers. However, we do have a comparable result for the Greencheck API as we completed both a high level and detailed estimate for that part.
 
 ### Agreed scope
 GWF use two cloud suppliers to host their [Green Web Dataset and accompanying tools](https://www.thegreenwebfoundation.org/tools/green-web-dataset/), these are [Hetzner](https://www.hetzner.com/) and [Scaleway](https://www.scaleway.com/en/). 
 
 The scope of this section was therefore estimating GWF's usage of these two suppliers, particularly the VMs, storage and server back-end services.
 
-### High-Level Estimate Methodology
+### High level Estimate Methodology
 
-We used a spend-based method to estimate the high-level carbon emissions. Unfortunately, we could not find specific methods for Hetzner or Scaleway. Instead, we used AWS as a proxy so that we could use the open-source spend-based model from [Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/). We felt this was good enough to produce a [high-level estimate](assumptions#high-level-estimates) in order to quantify the scale of emissions.
+We used a spend-based method to estimate the high level carbon emissions. Unfortunately, we could not find specific methods for Hetzner or Scaleway. Instead, we used AWS as a proxy so that we could use the open-source spend-based model from [Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/). We felt this was good enough to produce a [high level estimate](assumptions#high level-estimates) in order to quantify the scale of emissions.
 
 #### **Hetzner VMs**
 
@@ -329,7 +321,7 @@ For the VMs, we mapped the GWF server instances to equivalent appliances in [AWS
 
 For the [embodied carbon](/glossary#embodied-carbon) estimate, we pulled spend-based data from [CCF](https://www.cloudcarbonfootprint.org/). For the two identified instance sizes we obtained values of 0.018364507 kgCO<sub>2</sub>e/USD and 0.015829902 kgCO<sub>2</sub>e/USD. For ease in the calculations below we round these embodied carbon estimates to 0.018kg CO<sub>2</sub>e/USD and 0.016 kgCO<sub>2</sub>e/USD.
 
-We got the monthly billing data provided by Hetzner and converted it from Euros to US Dollars at the exchange rate of April 2024. Month to month, this spend does not vary much, so for a high-level estimate we assume this same spend every month for the year. 
+We got the monthly billing data provided by Hetzner and converted it from Euros to US Dollars at the exchange rate of April 2024. Month to month, this spend does not vary much, so for a high level estimate we assume this same spend every month for the year. 
 
 We multiplied monthly spend by the embodied kgCO<sub>2</sub>e/USD for each instance type, and multiply that by 12 to get an annual figure:
 
@@ -354,8 +346,6 @@ To convert that to a carbon emissions estimate, we needed a carbon intensity val
 $$ (0.024\ kgCO_2e/kWh + 0.015\ kgCO_2e/kWh) ÷ 2 =  0.0195\ kgCO_2e/kWh $$
 
 Then we calculate the carbon emissions of the Hetzner VMs:
-
-<span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
 
 $$ 192.33\ kWh/year \times 0.0195 kgCO_2e/kWh = 3.75\ kgCO_2e/year $$
 
@@ -395,7 +385,7 @@ $$ 6.68\ kWh/year \times 0.0195\ kgCO_2e/kWh = 0.13\ kgCO_2e/year $$
 
 **Our estimate for the Scaleway data storage is 0.13 kgCO_2e/year.**
 
-#### **Resulting High-Level Estimate**
+#### **Resulting High level Estimate**
 
 | **Service type** | **Annual estimate** | **%** |
 | --- | --- | --- |
@@ -404,18 +394,16 @@ $$ 6.68\ kWh/year \times 0.0195\ kgCO_2e/kWh = 0.13\ kgCO_2e/year $$
 | Scaleway data storage | 0.13 kgCO_2e | < 1% |
 | **TOTAL** | **25.37 kgCO_2e** | **100%** |
 
-<span style="color: red">We should probably add some insights here that's its low, and point to the what if part as noted already by David.</span>
-<span style="color: coral">WHAT IF: we can easily update the carbon intensity to any other region or global intenstiy to work out the "what if it's not green" scenario here.</span>
-
 **How could we improve upon this?**
 
 For this particular project, given that the VMs are 99% of the emissions it makes sense to focus on trying to improve this part. Specifically, swapping billing information for actual CPU usage data. The problem with billing information when used as a usage indicator is that it is subjective. For example, one company may negotiate a betting pricing structure than another due to their size. A better approach is using specific CPU data. For example, there is usage data available from the Hetzner API and that could be combined with data about the actual CPU being used, not an AWS equivalent/proxy.
 
 ### Detailed Estimate Methodology
 
+{: #hetzner-vm-detail}
 #### **Hetzner VMs**
 
-To improve upon our high-level methodology we took a look at [blog from Etsy on Cloud Jewels](https://www.etsy.com/codeascraft/cloud-jewels-estimating-kwh-in-the-cloud/), which the CCF methodology is based on. Reviewing the [detailed methodology](https://github.com/etsy/cloud-jewels/blob/master/methodology.md) in their GitHub repository, we arrived at a more detailed method of estimating the operational carbon of cloud VMs.
+To improve upon our high level methodology we took a look at [blog from Etsy on Cloud Jewels](https://www.etsy.com/codeascraft/cloud-jewels-estimating-kwh-in-the-cloud/), which the CCF methodology is based on. Reviewing the [detailed methodology](https://github.com/etsy/cloud-jewels/blob/master/methodology.md) in their GitHub repository, we arrived at a more detailed method of estimating the operational carbon of cloud VMs.
 
 The following detailed methodology was focused specifically on four of GWF's servers that provide the greencheck API, as they are known to be the most popular service and using the most resources. We used values obtained from the Hetzner reports for April 2024 as a representative average month to keep things simple, but more accurate numbers could be produced by using data obtained for the whole year.
 
@@ -461,19 +449,21 @@ $$ 48.05\ kWh/year \times 0.0195\ kgCO_2e/kWh = 0.94\ kgCO2_e/year $$
 
 **The resulting detailed operational carbon emissions estimate for the four Hetzner VMs is 0.94 kgCO<sub>2</sub>e/year.**
 
-To combine the embodied carbon of these servers, we need to rely on the high-level methodology (without knowing the specific details of the server's embodied carbon). In this case we are specifically taking into account the four servers we have looked at in the detailed calculations above, and not the total embodied carbon of all of GWF's servers we concluded in the high-level-estimate.
+We experiment with a different carbon intensity value in the [cloud services reducing impact write-up](reducing-impact#cloud-services). 
+
+To combine the embodied carbon of these servers, we need to rely on the high level methodology (without knowing the specific details of the server's embodied carbon). In this case we are specifically taking into account the four servers we have looked at in the detailed calculations above, and not the total embodied carbon of all of GWF's servers we concluded in the high level-estimate.
 
 We use the spend based value of 0.018 kgCO<sub>2</sub>e/USD and the cost of $40.33 USD.
 
 $$ \$ 40.33/month \times 0.018\ kgCO_2e/USD \times 12\ months = 8.71\ kgCO_2e/year $$
 
-Combining this high-level embodied carbon estimate, with the detailed operational estimate for the VMs total carbon emissions per year:
+Combining this high level embodied carbon estimate, with the detailed operational estimate for the VMs total carbon emissions per year:
 
 $$ 8.71\ kgCO_2e/year + 0.94\ kgCO_2e/year = 9.65 kgCO_2e/year $$
 
 **Detailed total carbon emissions of the four Hetzner VMs used for Greencheck API = 9.65 kgCO_2e/year**
 
-However, to compare this detailed operational estimate to the high-level estimate we would need to gather the processor and utilisation data for all of the other servers (which we didn't have time to do). Alternatively, we can re-calculate the high-level operational estimate specifically for these four servers using the spend based method, where the spend is $40.33 USD/month and the kWh/month value of 0.27 kWh/USD:
+However, to compare this detailed operational estimate to the high level estimate we would need to gather the processor and utilisation data for all of the other servers (which we didn't have time to do). Alternatively, we can re-calculate the high level operational estimate specifically for these four servers using the spend based method, where the spend is $40.33 USD/month and the kWh/month value of 0.27 kWh/USD:
 
 $$ $40.33/month \times 0.27\ kWh/USD \times 12\ months = 130.67\ kWh/year $$
 
@@ -481,19 +471,19 @@ Then apply the carbon intensity of hydro and wind power mix; 0.0195 kgCO<sub>2</
 
 $$ 130.67\ kWh/year \times 0.0195\ kgCO_2e/kWh = 2.55\ kgCO_2e/year $$
 
-The detailed emissions estimate can now be directly compared to the high-level estimate: 
+The detailed emissions estimate can now be directly compared to the high level estimate: 
 
-| **4x Greencheck API Servers** | **High-Level Estimate kgCO<sub>2</sub>e/year** | **Detailed Estimate kgCO<sub>2</sub>e/year** |
+| **4x Greencheck API Servers** | **High level Estimate kgCO<sub>2</sub>e/year** | **Detailed Estimate kgCO<sub>2</sub>e/year** |
 | --- | --- | --- |
 | Operational Carbon Emissions | 2.55 | 0.94 |
 | Embodied Carbon Emissions | 8.71 | (8.71)* |
 | **Total Carbon Emissions** | **11.26** | **9.65** |
 
-<small>* We use the high-level estimated embodied carbon, without the specific server's embodied carbon data.</small> 
+<small>* We use the high level estimated embodied carbon, without the specific server's embodied carbon data.</small> 
 
-The high-level operational emissions are ~2.7x higher than the detailed operational estimate. High-level estimations, especially a spend-based model, are typically higher than detailed estimations (as they tend to over-estimate), and in this case it is signifantly higher. As noted in the high-level methodology, we used CCF's modelling to map the Hetzner servers to AWS servers, meeting all of the minimum service needs, this led to over-sizing the server instances. So, compounding the over-estimated spend-based model, with over-sized server instances, it is a likely reason for such an extreme over-estimation.
+The high level operational emissions are ~2.7x higher than the detailed operational estimate. High level estimations, especially a spend-based model, are typically higher than detailed estimations (as they tend to over-estimate), and in this case it is signifantly higher. As noted in the high level methodology, we used CCF's modelling to map the Hetzner servers to AWS servers, meeting all of the minimum service needs, this led to over-sizing the server instances. So, compounding the over-estimated spend-based model, with over-sized server instances, it is a likely reason for such an extreme over-estimation.
 
-Notably, however the embodied carbon makes up 77% - 90% (high-level - detailed) of the total carbon. Which means that for the total carbon emissions, the high-level estimate is only ~1.2x higher than the detailed estimate. This is however, based on the same high-level (likely over-estimated) embodied carbon estimate lacking any specific server embodied carbon data.
+Notably, however the embodied carbon makes up 77% - 90% (high level - detailed) of the total carbon. Which means that for the total carbon emissions, the high level estimate is only ~1.2x higher than the detailed estimate. This is however, based on the same high level (likely over-estimated) embodied carbon estimate lacking any specific server embodied carbon data.
 
 **How could we improve upon this?**
 
@@ -538,7 +528,7 @@ In an ideal world we would reach out to the relevant SaaS support teams to raise
 
 We also could have looked for any kind of industry benchmarks and extracted some broad assumptions from those. Whilst those would have provided low confidence estimates, that would have been better than nothing.
 
-If we had the capacity to explore this further, we would likely consider a spend-based method for high-level estimates. 
+If we had the capacity to explore this further, we would likely consider a spend-based method for high level estimates. 
 
 [To the top](#top)
 
@@ -572,7 +562,7 @@ A rudimentary method is to simply divide the carbon emissions by the number of a
 
 $$ (21,0000\ MTCO_2e/year \times 1000) ÷ 7,590,000 = 2.77\ kgCO2e/year/website $$
 
-In the absense of any data whatsoever, 2.77 kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to perform a [high level estimate](assumptions#high-level-estimates) of CDNs.
+In the absense of any data whatsoever, 2.77 kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to perform a [high level estimate](assumptions#high level-estimates) of CDNs.
 
 [To the top](#top)
 

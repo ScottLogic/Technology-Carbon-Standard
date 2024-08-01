@@ -34,15 +34,15 @@ Lastly, GWF's use of cloud services accounts for 5%. The remaining 2% comes from
 | --- | --- | --- |  --- | 
 | Upstream Emissions | 252 | 42% | |
 | [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
-| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 252 | 42% | Detailed estimate - high confidence |
+| [Employee Hardware](/projects/green-web-foundation/upstream#employee-hardware) | 180 | 38% | Detailed estimate - high confidence |
 | [Networking and Infrastructure Hardware](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
 | [Server and Storage Hardware](/projects/green-web-foundation/upstream#servers-and-storage-hardware) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | Operational Emissions | 234 | 39% | |
-| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 162 | 27% | Detailed estimate - high confidence |
-| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 7% | High level estimate - medium confidence |
+| [Employee Devices](/projects/green-web-foundation/operational#employee-devices) | 115 | 27% | Detailed estimate - high confidence |
+| [Networking and Infrastructure](/projects/green-web-foundation/operational#networking-and-infrastructure) | 40 | 8% | High level estimate - medium confidence |
 | [Servers and Storage](/projects/green-web-foundation/operational#servers-and-storage) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
 | [Generators](/projects/green-web-foundation/operational#generators) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | <span class="text-charcoal-300">n/a</span> |
-| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 32 | 5% | Some high-level, some detailed estimate - medium to low confidence |
+| [Cloud Services](/projects/green-web-foundation/operational#cloud-services) | 27 | 6% | Some high-level, some detailed estimate - medium to low confidence |
 | [SaaS](/projects/green-web-foundation/operational#saas-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | No data |
 | [Managed Services](/projects/green-web-foundation/operational#managed-services) | <span class="text-charcoal-300">0</span> | <span class="text-charcoal-300">0%</span> | High level estimate - medium confidence |
 | Downstream Emissions | 115 | 19% | |
