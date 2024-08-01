@@ -49,6 +49,15 @@ node_modules:
   - source: "@scottlogic/tech-carbon-estimator/media"
     target: media
 
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      image: "/assets/images/social/default.png"
+      summary: Introducing a proposed Technology Carbon Standard for analysing an organisation's Technology Carbon Footprint.
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
