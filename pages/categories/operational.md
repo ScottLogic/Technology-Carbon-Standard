@@ -47,9 +47,9 @@ Research[^1] has shown that not all networking equipment will use power in line 
 
 Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](./downstream) category. 
 
-{% include linkedHeading.html heading="Employee Devices" level=4 %}
+{% include linkedHeading.html heading="Onsite Employee Devices" level=4 %}
 
-The energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees.
+The energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees in offices. This is energy directly used by the business, and all of the emissions related to this energy are their responsibility.
 
 [Click here to see a worked example of estimating usage emissions for a laptop.](../../information/lifecycle/example/employee#usage-carbon-emissions)
 
@@ -77,6 +77,12 @@ Software-as-a-Service (SaaS) applications.
 
 {% include linkedHeading.html heading="Managed Services" level=3 %}
 Managed Security Operations, IT support and data backup services.
+
+{% include linkedHeading.html heading="Offsite Employee Devices" level=3 %}
+
+The emissions incurred by computers (desktops, laptops), monitors, printers, and other devices used by employees, when used out-of-office. Since these are required by the business, they are accounted for, but as with other indirect groupings, the business does not control them directly.
+
+Offsite employee devices are typically accounted for with an [attribution factor](/glossary#attribution-factor), representing the proportion of time that their use is dedicated to business purposes.
 
 ## References
 
