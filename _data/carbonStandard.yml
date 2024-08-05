@@ -90,14 +90,14 @@ CatONetworkDevices:
   link: /categories/operational#networking-devices
   noLink: false
 
-CatOEmployeeDevices:
-  id: CatOEmployeeDevices
+CatOOnsiteEmployeeDevices:
+  id: CatOOnsiteEmployeeDevices
   category: cat-o
-  title: Employee Devices
+  title: Onsite Employee Devices
   icon: devices
   selected: false
   description:
-  link: /categories/operational#employee-devices
+  link: /categories/operational#onsite-employee-devices
   noLink: false
 
 CatGGenerators:
@@ -141,6 +141,16 @@ CatCManaged:
   selected: false
   description:
   link: /categories/operational#managed-services
+  noLink: false
+
+CatOOffsiteEmployeeDevices:
+  id: CatOOffsiteEmployeeDevices
+  category: cat-c
+  title: Offsite Employee Devices
+  icon: devices
+  selected: false
+  description:
+  link: /categories/operational#offsite-employee-devices
   noLink: false
 
 CatD:
