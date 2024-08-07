@@ -41,6 +41,11 @@ CatGGenerators:
   description:
   noLink: true
 
+CatCOffsiteEmployeeDevices:
+  selected: true
+  description: Laptops use &lt;X kWh on average
+  link: '#EmployeeDevices'
+
 CatCCloud:
   selected: true
   description: No requests, no energy consumption. Electricity carbon intensity &lt;n gCO2/kWh

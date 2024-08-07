@@ -143,8 +143,8 @@ CatCManaged:
   link: /categories/operational#managed-services
   noLink: false
 
-CatOOffsiteEmployeeDevices:
-  id: CatOOffsiteEmployeeDevices
+CatCOffsiteEmployeeDevices:
+  id: CatOffsiteEmployeeDevices
   category: cat-c
   title: Offsite Employee Devices
   icon: devices

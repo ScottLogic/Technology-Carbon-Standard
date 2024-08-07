@@ -41,6 +41,11 @@ CatGGenerators:
   description:
   noLink: true
 
+CatCOffsiteEmployeeDevices:
+  selected: true
+  description: Apply Power Management configuration.
+  link: '#EmployeeDevices'
+
 CatCCloud:
   selected: true
   description: Promote low energy architecture and monitoring.
