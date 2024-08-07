@@ -144,7 +144,7 @@ CatCManaged:
   noLink: false
 
 CatCOffsiteEmployeeDevices:
-  id: CatOffsiteEmployeeDevices
+  id: CatCOffsiteEmployeeDevices
   category: cat-c
   title: Offsite Employee Devices
   icon: devices
