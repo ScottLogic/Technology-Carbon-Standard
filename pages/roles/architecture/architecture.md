@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: sideNavigation
 title: Architecture View
-permalink: views/roles/architecture
-published: false
+permalink: roles/architecture
+# published: false
 ---
 
 # Architecture Views
@@ -20,7 +20,7 @@ As an architect you can exert significant influence on a company's tech carbon e
 
 The first couple are about strategy and the other 3 about NFRs - tech selection and solution design are about weighing up options against the non functionals. Therefore 2 views are provied to cover these 2 areas:
 
-- [Architecture View - Strategy](/views/roles/architecture_strategy)
+- [Architecture View - Strategy](/roles/architecture/strategy)
       - How to incorporate sustainability into technology strategy
-- [Architecture View - NFRs](/views/roles/architecture_nfrs)
+- [Architecture View - NFRs](/roles/architecture/nfrs)
       - How to incorporate sustainability when setting NFRs

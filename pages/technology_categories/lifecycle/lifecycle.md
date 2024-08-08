@@ -1,7 +1,7 @@
 ---
-layout: category
+layout: sideNavigation
 title: Hardware Life Cycle Emissions
-permalink: /information/lifecycle
+permalink: /technology_categories/lifecycle
 ---
 
 # Hardware Life Cycle Emissions

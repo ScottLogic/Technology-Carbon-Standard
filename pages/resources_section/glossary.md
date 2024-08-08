@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Glossary
-permalink: /glossary
+permalink: /resources/glossary
 published: true
 ---
 

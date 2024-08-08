@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: sideNavigation
 title: Architecture View
-permalink: views/roles/architecture_strategy
-published: false
+permalink: /roles/architecture/strategy
+# published: false
 ---
 
 # Architecture View - setting strategy
 
 {% include carbonStandard.html variant=site.data.overlays.architecture hideOutOfScope=true %}
 
-This view shows how architecture strategy and technology principles can influence the various categories in the TCS. See [Architecture View - NFRs](/views/roles/architecture_nfrs) for a mapping of the NFRs that can derive from the strategy.
+This view shows how architecture strategy and technology principles can influence the various categories in the TCS. See [Architecture View - NFRs](/roles/architecture_nfrs) for a mapping of the NFRs that can derive from the strategy.
 
 ## Upstream Emissions
 
