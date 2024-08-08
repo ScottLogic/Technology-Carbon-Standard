@@ -27,22 +27,6 @@
   </a>
 </div>
 
-<div class="w-full bg-cambridge-400 dark:bg-cambridge-600">
-  <div class="container max-w-7xl mx-auto w-full px-2 pt-0 pb-0 items-center sm:items-end justify-start flex space-x-4 ">
-    {% if currentNavigation.sublinks %}
-      <a href="{{ currentNavigation.link }}" class="no-underline pt-1.5 pb-0.5 border-b-4 {% if page.url == currentNavigation.link %}text-gunmetal-100  border-gunmetal-800 dark:border-gunmetal-900 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300 border-cambridge-400 dark:border-cambridge-600{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
-        {{ currentNavigation.name }}
-      </a>        
-      {% for subItem in currentNavigation.sublinks %}
-      <a href="{{ subItem.link }}" class="no-underline pt-1.5 pb-0.5 border-b-4 {% if page.url contains subItem.link %}text-gunmetal-100  border-gunmetal-800 dark:border-gunmetal-900 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300 border-cambridge-400 dark:border-cambridge-600{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
-        {{ subItem.name }}
-      </a>        
-      {% endfor %}
-    {% endif %}
-  </div>
-
-</div>
-
 <!-- MOBILE MENU -->
 <div id="mobile-menu" class="hidden sm:hidden">
   <div class="space-y-1 px-2 py-2">
@@ -54,11 +38,29 @@
   </div>
 </div>
 
+<div id="sublevel-navigation" class="w-full overflow-x-scroll bg-cambridge-400 dark:bg-cambridge-600">
+  <div class="container max-w-7xl mx-auto w-max sm:w-full px-2 pt-0 pb-0 items-center sm:items-end justify-start flex space-x-4 ">
+    {% if currentNavigation.sublinks %}
+      <a href="{{ currentNavigation.link }}" class="no-underline pt-1.5 pb-0.5 border-b-4 {% if page.url == currentNavigation.link %} text-gunmetal-100  border-gunmetal-800 dark:border-gunmetal-900 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300 border-cambridge-400 dark:border-cambridge-600{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
+        {{ currentNavigation.name }}
+      </a>        
+      {% for subItem in currentNavigation.sublinks %}
+      <a href="{{ subItem.link }}" class="no-underline pt-1.5 pb-0.5 border-b-4 {% if page.url contains subItem.link %} text-gunmetal-100  border-gunmetal-800 dark:border-gunmetal-900 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300 border-cambridge-400 dark:border-cambridge-600{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
+        {{ subItem.name }}
+      </a>        
+      {% endfor %}
+    {% endif %}
+  </div>
+
+</div>
+
 <script>
   const menuButton = document.getElementById('menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuIcon = document.getElementById('menu-icon');
   const closeIcon = document.getElementById('close-icon');
+  const sublevelNavigation = document.getElementById('sublevel-navigation');
+  
   menuButton.addEventListener('click', function() {
     const buttonAriaLabel = menuButton.getAttribute('aria-label');
     if (buttonAriaLabel == 'open menu') {
@@ -69,5 +71,6 @@
     mobileMenu.classList.toggle('hidden');
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
+    sublevelNavigation.classList.toggle('hidden');
   });
 </script>
