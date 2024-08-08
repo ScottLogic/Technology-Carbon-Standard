@@ -8,13 +8,13 @@ permalink: /technology_categories/lifecycle/example/employee
 
 To understand and estimate the carbon footprint associated with employee hardware like computers (desktops, laptops), monitors, and printers, organisations must consider both the usage emissions from powering the devices and the embodied emissions from manufacturing, transportation, and end-of-life across the full product life cycle.
 
-[Read more about hardware life cycle emissions.](../../lifecycle)
+[Read more about hardware life cycle emissions.](/technology_categories/lifecycle)
 
-Building on the approaches discussed in the [usage carbon emissions](../usage) and [embodied carbon emissions](../embodied) sections, this page provides an example of estimating emissions from employee devices, using both industry averages and a specific laptop model to illustrate different approaches and considerations.
+Building on the approaches discussed in the [usage carbon emissions](/technology_categories/lifecycle/usage) and [embodied carbon emissions](/technology_categories/lifecycle/embodied) sections, this page provides an example of estimating emissions from employee devices, using both industry averages and a specific laptop model to illustrate different approaches and considerations.
 
 {% include linkedHeading.html heading="Usage Carbon Emissions" level=2 %}
 
-Usage emissions refer to the [greenhouse gas (GHG)](/glossary#greenhouse-gases-ghgs) emissions associated with operating a device over its lifetime. [Read more about usage emissions.](../usage)
+Usage emissions refer to the [greenhouse gas (GHG)](/resources/glossary#greenhouse-gases-ghgs) emissions associated with operating a device over its lifetime. [Read more about usage emissions.](/technology_categories/lifecycle/usage)
 
 {% include linkedHeading.html heading="Example Using a High-Level Approach for Estimating Usage Emissions" level=3 %}
 
@@ -31,7 +31,7 @@ The power consumption of user devices can vary considerably. Typically, smartpho
 
 *Power range and average power of devices, data compiled from Dimpact [^dimpact], Scope3 [^scope3], Fershad Irani [^fershad], and our own device energy use research.*
 
-Consider the [high-level approach for estimating usage emissions](../usage#a-high-level-approach-for-estimating-usage-emissions) discussed in the usage carbon emissions section. Assuming a typical laptop draws 17.1 W and runs for 8 hours a day over a working year (220 days), the annual energy consumption can be estimated as $$ 0.0171\ kW \times 8 \times 220 = 30\ kWh $$. In Europe, with an average [carbon intensity](/glossary#carbon-intensity) of 0.328 kg CO2e per kWh (2022)[^ember], the estimated annual usage emissions would be $$ 30 \times 0.328 = 9.87\ kg\ CO2e $$ per device. If there are 50 employees in Europe, each owning 1 laptop, the total annual usage emissions across the estate for this device in this location would be approximately $$ 9.87 \times 50 = 494\ kg\ CO2e $$.
+Consider the [high-level approach for estimating usage emissions](/technology_categories/lifecycle/usage#a-high-level-approach-for-estimating-usage-emissions) discussed in the usage carbon emissions section. Assuming a typical laptop draws 17.1 W and runs for 8 hours a day over a working year (220 days), the annual energy consumption can be estimated as $$ 0.0171\ kW \times 8 \times 220 = 30\ kWh $$. In Europe, with an average [carbon intensity](/resources/glossary#carbon-intensity) of 0.328 kg CO2e per kWh (2022)[^ember], the estimated annual usage emissions would be $$ 30 \times 0.328 = 9.87\ kg\ CO2e $$ per device. If there are 50 employees in Europe, each owning 1 laptop, the total annual usage emissions across the estate for this device in this location would be approximately $$ 9.87 \times 50 = 494\ kg\ CO2e $$.
 
 When specific device models are known, manufacturer specifications and data sheets can be used to derive average power draw and estimate emissions more accurately. The table below shows an example of aggregating emissions across different employee device types and locations using this high-level approach above assuming business usage (8 hours a day for 220 days), with average power draw figures derived from referenced manufacturer specifications. 
 
@@ -46,7 +46,7 @@ This approach does not account for the variability in device usage patterns, as 
 
 {% include linkedHeading.html heading="Example Using Manufacturer Data for Estimating Usage Emissions" level=3 %}
 
-Many manufacturers choose to provide [life cycle emissions data](../../lifecycle#life-cycle-emissions-data) such as information relating to the [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) of a product. A PCF provides an estimate of the total greenhouse gas emissions associated with a product across its entire life cycle, including the proportional allocation of emissions to each distinct life cycle stage. Consider the [PCF for a Dell XPS 13 9310 Laptop](https://www.delltechnologies.com/asset/en-us/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf). 
+Many manufacturers choose to provide [life cycle emissions data](/technology_categories/lifecycle#life-cycle-emissions-data) such as information relating to the [Product Carbon Footprint (PCF)](/resources/glossary#product-carbon-footprint-pcf) of a product. A PCF provides an estimate of the total greenhouse gas emissions associated with a product across its entire life cycle, including the proportional allocation of emissions to each distinct life cycle stage. Consider the [PCF for a Dell XPS 13 9310 Laptop](https://www.delltechnologies.com/asset/en-us/products/laptops-and-2-in-1s/technical-support/xps-13-9310.pdf). 
 
 ![dell-pcf](/assets/images/dell-pcf.PNG)
 
@@ -68,27 +68,27 @@ To break down the emissions into embodied (manufacturing, transportation, and en
 | Embodied | 86.1 | 277 |
 | Usage | 13.9 | 45 |
 
-The embodied-to-usage ratio of 86.1/13.9 (embodied being approximately six times larger than usage) deviates slightly from the typical 80/20 ratio for laptops mentioned previously in [embodied vs usage carbon](../../lifecycle#embodied-vs-usage-carbon).
+The embodied-to-usage ratio of 86.1/13.9 (embodied being approximately six times larger than usage) deviates slightly from the typical 80/20 ratio for laptops mentioned previously in [embodied vs usage carbon](/technology_categories/lifecycle#embodied-vs-usage-carbon).
 
 According to the PCF, usage emissions are estimated to be approximately 45 kg CO2e per device. 
 
 ![dell-pcf-assumptions](/assets/images/dell-pcf-assumptions.PNG)
 
-The PCF document outlines the key assumptions used in approximating life cycle emissions of the device. With the 4-year lifetime assumed by the manufacturer, usage emissions can be [amortised](/glossary#amortisation) over the expected lifespan and allocated as approximately 11 kg CO2e per year. 
+The PCF document outlines the key assumptions used in approximating life cycle emissions of the device. With the 4-year lifetime assumed by the manufacturer, usage emissions can be [amortised](/resources/glossary#amortisation) over the expected lifespan and allocated as approximately 11 kg CO2e per year. 
 
-A [Typical Energy Consumption (TEC)](/glossary#typical-energy-consumption-tec) of 21.43 kWh per year for this laptop model has been assumed. As discussed in the [usage emissions section](../usage#typical-energy-consumption-tec), this figure may be lower than expected of business usage, and more typical of standard household usage. Employing the [high-level approach discussed earlier](#example-using-a-high-level-approach-for-estimating-usage-emissions), assuming business usage (8 hours a day) and a typical power draw of 15W[^dellxps], the estimated annual energy consumption is 26.4 kWh. Assuming the embodied emissions remain the same, this higher usage estimate would shift the percentage of emissions due to the use phase to approximately 17% as opposed to 13.9%, and embodied carbon emissions down to approximately 83% from 86.1%. This example demonstrates how a product's carbon footprint composition and proportions can vary depending on factors like usage patterns.
+A [Typical Energy Consumption (TEC)](/resources/glossary#typical-energy-consumption-tec) of 21.43 kWh per year for this laptop model has been assumed. As discussed in the [usage emissions section](/technology_categories/lifecycle/usage#typical-energy-consumption-tec), this figure may be lower than expected of business usage, and more typical of standard household usage. Employing the [high-level approach discussed earlier](#example-using-a-high-level-approach-for-estimating-usage-emissions), assuming business usage (8 hours a day) and a typical power draw of 15W[^dellxps], the estimated annual energy consumption is 26.4 kWh. Assuming the embodied emissions remain the same, this higher usage estimate would shift the percentage of emissions due to the use phase to approximately 17% as opposed to 13.9%, and embodied carbon emissions down to approximately 83% from 86.1%. This example demonstrates how a product's carbon footprint composition and proportions can vary depending on factors like usage patterns.
 
-The PCF assumes Europe as usage location. Continuing with the high-level approach by applying an average [carbon intensity](/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember] to the annual energy consumption estimate of 26.4 kWh translates to approximately 8.66 kg CO2e of annual usage emissions per device. Applying the same method to the manufacturer's TEC figure (21.43 kWh) would result in an annual usage emissions estimate of approximately 7 kg CO2e per device.
+The PCF assumes Europe as usage location. Continuing with the high-level approach by applying an average [carbon intensity](/resources/glossary#carbon-intensity) factor for Europe (0.328 kg CO2e per kWh in 2022)[^ember] to the annual energy consumption estimate of 26.4 kWh translates to approximately 8.66 kg CO2e of annual usage emissions per device. Applying the same method to the manufacturer's TEC figure (21.43 kWh) would result in an annual usage emissions estimate of approximately 7 kg CO2e per device.
 
 The discrepancies between the emissions estimates derived from the high-level approach and the PCF data highlights the impact of using different assumptions and data sources when estimating usage emissions. It underscores the importance of cross-referencing values and clarifying assumptions made by manufacturers to ensure accurate and consistent emissions reporting.
 
 {% include linkedHeading.html heading="Embodied Carbon Emissions" level=2 %}
 
-Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance, and end-of-life of a device. [Read more about embodied carbon emissions.](../embodied)
+Embodied carbon refers to the emissions associated with the manufacture, transportation, installation, maintenance, and end-of-life of a device. [Read more about embodied carbon emissions.](/technology_categories/lifecycle/embodied)
 
 {% include linkedHeading.html heading="Example Using a High-Level Approach for Estimating Embodied Emissions" level=3 %}
 
-For devices such as laptops, embodied carbon typically accounts for around 80% of the total life cycle emissions, while usage emissions make up only 20%. Using this 80/20 ratio, [amortised](/glossary#amortisation) embodied emissions can be approximated as four times the annual usage emissions. For example, the amortised embodied carbon for a laptop with annual usage emissions of 10 kg CO2e per year can be allocated as approximately 40 kg CO2e per year. [Read more about this high-level approach for estimating embodied emissions.](../embodied#a-high-level-approach-for-estimating-embodied-emissions)
+For devices such as laptops, embodied carbon typically accounts for around 80% of the total life cycle emissions, while usage emissions make up only 20%. Using this 80/20 ratio, [amortised](/resources/glossary#amortisation) embodied emissions can be approximated as four times the annual usage emissions. For example, the amortised embodied carbon for a laptop with annual usage emissions of 10 kg CO2e per year can be allocated as approximately 40 kg CO2e per year. [Read more about this high-level approach for estimating embodied emissions.](/technology_categories/lifecycle/embodied#a-high-level-approach-for-estimating-embodied-emissions)
 
 However, this 80/20 ratio assumes a certain life span for the device. If the life span changes, the ratio will change as well. For instance, if the life span doubles from the baseline assumption, and assuming the same usage pattern, the ratio would shift to around 67/33 (67% embodied emissions and 33% usage emissions).  
 
@@ -98,9 +98,9 @@ The ratio can also vary considerably depending on other factors such as hardware
 
 Refer to the [Product Carbon Footprint (PCF) breakdown for a Dell XPS 13 9310 Laptop](#example-using-manufacturer-data-for-estimating-usage-emissions) discussed above. 
 
-Based on this manufacturer data, the embodied carbon per device is approximately 277 kg CO2e. [Amortising](/glossary#amortisation) the embodied emissions over the expected 4-year life span, the annual embodied carbon emissions can be allocated as approximately 69 kg CO2e per year.
+Based on this manufacturer data, the embodied carbon per device is approximately 277 kg CO2e. [Amortising](/resources/glossary#amortisation) the embodied emissions over the expected 4-year life span, the annual embodied carbon emissions can be allocated as approximately 69 kg CO2e per year.
 
-As discussed in the [life cycle emissions data](../../lifecycle#life-cycle-emissions-data) section, while reputable manufacturers derive PCFs using methodologies driven by international standards, their estimates come with caveats and significant variance. These values should not be treated as definitive due to uncertainties around device supply chains, operational contexts, and potential truncation errors, which can all vary depending on the specific device. 
+As discussed in the [life cycle emissions data](/technology_categories/lifecycle#life-cycle-emissions-data) section, while reputable manufacturers derive PCFs using methodologies driven by international standards, their estimates come with caveats and significant variance. These values should not be treated as definitive due to uncertainties around device supply chains, operational contexts, and potential truncation errors, which can all vary depending on the specific device. 
 
 ## References
 

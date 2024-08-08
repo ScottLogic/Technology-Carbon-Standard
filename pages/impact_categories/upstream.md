@@ -6,7 +6,7 @@ permalink: impact_categories/upstream
 
 # Upstream Emissions
 
-Upstream emissions (Category U) refer to the [embodied carbon](/glossary#embodied-carbon) emissions of hardware purchased by an organisation and the carbon emissions of the development and distribution of installed software used by the organisation.
+Upstream emissions (Category U) refer to the [embodied carbon](/resources/glossary#embodied-carbon) emissions of hardware purchased by an organisation and the carbon emissions of the development and distribution of installed software used by the organisation.
 
 Understanding upstream emissions allows organisations to comprehensively assess the environmental impact of their assets and supply chains. It enables the development of strategies to reduce the carbon footprint of materials and processes, promoting sustainable procurement practices and circular economy principles.
 
@@ -24,13 +24,13 @@ Emissions associated with developing and delivering off-the-shelf and open-sourc
 
 Embodied carbon emissions associated with hardware devices owned by an organisation, including emissions from the manufacture, transportation, installation, maintenance, and end-of-life of a device.
 
-[Read more about embodied carbon emissions.](../../information/lifecycle/embodied)
+[Read more about embodied carbon emissions.](/technology_categories/lifecycle/embodied)
 
 {% include linkedHeading.html heading="Employee Hardware" level=3 %} 
 
 Laptops, desktops, mobiles, printers, and peripherals used by employees. 
 
-[Click here to see a worked example of estimating embodied emissions for a laptop.](../../information/lifecycle/example/employee#embodied-carbon-emissions)
+[Click here to see a worked example of estimating embodied emissions for a laptop.](/technology_categories/lifecycle/example/employee#embodied-carbon-emissions)
 
 {% include linkedHeading.html heading="Networking Hardware" level=3 %} 
 
@@ -51,4 +51,4 @@ Ideally, data sheets from the manufacturer should be used to gather this data.
 
 Servers, storage systems, and data centre infrastructure installed on-premise.
 
-[Click here to see a worked example of estimating embodied emissions for a server.](../../information/lifecycle/example/server#embodied-carbon-emissions)
+[Click here to see a worked example of estimating embodied emissions for a server.](/technology_categories/lifecycle/example/server#embodied-carbon-emissions)
