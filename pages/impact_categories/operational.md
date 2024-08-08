@@ -17,9 +17,9 @@ Direct emissions are a result of the organisation's direct consumption of grid-s
 
 {% include linkedHeading.html heading="On-premise" level=3 %}
 
-Emissions associated with the actual operation and use of devices owned by an organisation ([usage carbon](/glossary#usage-carbon)).
+Emissions associated with the actual operation and use of devices owned by an organisation ([usage carbon](/resources/glossary#usage-carbon)).
 
-[Read more about usage carbon emissions.](../information/lifecycle/usage)
+[Read more about usage carbon emissions.](/technology_categories/lifecycle/usage)
 
 Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
@@ -27,11 +27,11 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 The energy consumed by on-premise servers and data centres.
 
-[Click here to see a worked example of estimating usage emissions for a server.](../../information/lifecycle/example/server#usage-carbon-emissions)
+[Click here to see a worked example of estimating usage emissions for a server.](/technology_categories/lifecycle/example/server#usage-carbon-emissions)
 
 {% include linkedHeading.html heading="Networking Devices" level=4 %}
 
-In [the information on networks](/information/networks), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
+In [the information on networks](/technology_categories/networks), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
 
 Within the operational network, consider the running cost of the connected devices. These include, but are not limited to:
 - routers
@@ -45,13 +45,13 @@ Within the operational network, consider the running cost of the connected devic
 
 Research[^1] has shown that not all networking equipment will use power in line with the data it is transmitted over it. These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load[^2]. For accurate numbers, power monitors on the power socket are an excellent way of gathering data. As the power usage of networking equipment has very little variance while it is running, attributing the power consumption to specific applications or processes is less important.
 
-Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](./downstream) category. 
+Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](/impact-categories/downstream) category. 
 
 {% include linkedHeading.html heading="Onsite Employee Devices" level=4 %}
 
 The energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees in offices. This is energy directly used by the business, and all of the emissions related to this energy are their responsibility.
 
-[Click here to see a worked example of estimating usage emissions for a laptop.](../../information/lifecycle/example/employee#usage-carbon-emissions)
+[Click here to see a worked example of estimating usage emissions for a laptop.](/technology_categories/lifecycle/example/employee#usage-carbon-emissions)
 
 {% include linkedHeading.html heading="Generators" level=3 %}
 
@@ -70,7 +70,7 @@ Category C (Cloud) emissions can be related to GHG Protocol Scope 3.
 
 The emissions associated with cloud platform services like compute, storage, and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
 
-[Read more about cloud services.](../information/cloud)
+[Read more about cloud services.](/technology_categories/cloud)
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
 Software-as-a-Service (SaaS) applications.

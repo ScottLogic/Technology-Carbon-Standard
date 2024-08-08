@@ -6,9 +6,9 @@ permalink: /technology_categories/lifecycle
 
 # Hardware Life Cycle Emissions
 
-The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage, and disposal. 
+The carbon footprint of an organisation's technology encompasses total emissions across the entire [product life cycle](/resources/glossary#product-life-cycle), from raw material extraction through manufacture, transportation, usage, and disposal. 
 
-Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/glossary#embodied-carbon) and [usage carbon](/glossary#usage-carbon).
+Broadly, the full life cycle view can be divided into two main groups: [embodied carbon](/resources/glossary#embodied-carbon) and [usage carbon](/resources/glossary#usage-carbon).
 
 $$ C = C_E + C_U $$
 
@@ -19,13 +19,13 @@ Where
 
 To measure an organisation's technology carbon footprint, it is essential to consider the full product life cycle emissions. 
 
-[Read more about embodied carbon emissions.](embodied)
+[Read more about embodied carbon emissions.](/technology_categories/lifecycle/embodied)
 
-[Read more about usage carbon emissions.](usage)
+[Read more about usage carbon emissions.](/technology_categories/lifecycle/usage)
 
 {% include linkedHeading.html heading="Life Cycle Emissions Data" level=2 %}
 
-A comprehensive [Life Cycle Assessment (LCA)](/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. Many manufacturers choose to provide [Product Carbon Footprint (PCF)](/glossary#product-carbon-footprint-pcf) data for their products. A PCF provides an estimate of the greenhouse gas emissions attributable to a product over its full life cycle. This differs from an LCA, which considers broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption, and land usage). 
+A comprehensive [Life Cycle Assessment (LCA)](/resources/glossary#life-cycle-assessment-lca) is necessary to fully quantify the environmental impacts across all stages of a product's life cycle. Many manufacturers choose to provide [Product Carbon Footprint (PCF)](/resources/glossary#product-carbon-footprint-pcf) data for their products. A PCF provides an estimate of the greenhouse gas emissions attributable to a product over its full life cycle. This differs from an LCA, which considers broader environmental impacts beyond just greenhouse gas emissions (for example, water consumption, and land usage). 
 
 Several international standards provide guidelines for estimating environmental impacts such as [ISO 14040](https://www.iso.org/standard/37456.html), [ISO 14044](https://www.iso.org/standard/38498.html), [ISO 14067](https://www.iso.org/standard/71206.html), and [IEC TR 62921](https://webstore.iec.ch/publication/25994). These standards outline different approaches and outputs, which can be difficult to reconcile. A widely used methodology in the ICT industry to quantify greenhouse gas (GHG) emissions and estimate product carbon footprints is the [Product Attribute to Impact Algorithm (PAIA)](https://msl.mit.edu/projects/paia/main.html), although it is not strictly compliant with such standards. Methodologies can still vary between manufacturers so published figures require careful scrutiny to determine comparability. 
 
@@ -40,7 +40,7 @@ Reported emissions figures typically represent the mean value of carbon footprin
 
 {% include linkedHeading.html heading="Embodied vs Usage Carbon" level=2 %}
 
-The total embodied carbon of an asset can be [amortised](/glossary#amortisation) over its expected lifetime, if information about its typical refresh cycle or life span is available. This enables understanding the annual carbon emissions attributed to embodied carbon. By amortising the embodied carbon over the product's lifetime, it allows a like-for-like comparison against annual usage emissions. 
+The total embodied carbon of an asset can be [amortised](/resources/glossary#amortisation) over its expected lifetime, if information about its typical refresh cycle or life span is available. This enables understanding the annual carbon emissions attributed to embodied carbon. By amortising the embodied carbon over the product's lifetime, it allows a like-for-like comparison against annual usage emissions. 
 
 The ratio of embodied carbon to usage carbon varies across different types of device or product. In some cases, the embodied carbon associated with a product can exceed the carbon emissions from its usage, underscoring the importance of considering both when assessing the total carbon footprint. 
 
@@ -58,9 +58,9 @@ For devices such as laptops, embodied carbon typically accounts for around 80% o
 
 {% include linkedHeading.html heading=" Worked Examples" level=2 %}
 
-[Click here to see a worked example of estimating life cycle emissions for a laptop.](../lifecycle/example/employee)
+[Click here to see a worked example of estimating life cycle emissions for a laptop.](/technology_categories/lifecycle/example/employee)
 
-[Click here to see a worked example of estimating life cycle emissions for a server.](../lifecycle/example/server)
+[Click here to see a worked example of estimating life cycle emissions for a server.](/technology_categories/lifecycle/example/server)
 
 ## References
 
