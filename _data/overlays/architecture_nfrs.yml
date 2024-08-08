@@ -31,7 +31,7 @@ CatONetworkDevices:
   description: Switch utilisation should be &gt; 45% average
   link: '#NetworkDevices'
 
-CatOEmployeeDevices:
+CatOOnsiteEmployeeDevices:
   selected: true
   description: Laptops use &lt;X kWh on average
   link: '#EmployeeDevices'
@@ -40,6 +40,11 @@ CatGGenerators:
   selected: false
   description:
   noLink: true
+
+CatCOffsiteEmployeeDevices:
+  selected: true
+  description: Laptops use &lt;X kWh on average
+  link: '#EmployeeDevices'
 
 CatCCloud:
   selected: true

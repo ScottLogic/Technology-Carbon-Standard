@@ -50,7 +50,7 @@ Observability is a key part of technical strategy that requires a joined up appr
 
 In the embodied section we talked about hardware selection, maximising lifetime and having low manufacture emissions. Procurement strategy should also include observability and emissions in use. Accurate energy observability (and thus carbon monitoring) is not possible without hardware support and so this must be a consideration when selecting hardware for the data centre.
 
-{% include categoryItem.html item="CatOEmployeeDevices" id="EmployeeDevices" noLink=true %}
+{% include categoryItem.html item="CatOOnsiteEmployeeDevices" id="EmployeeDevices" noLink=true %}
   
 Where architects are involved in workforce IT, such as employee devices, there's a few areas they can influence:
 

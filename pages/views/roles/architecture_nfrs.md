@@ -61,7 +61,7 @@ At the level of the data centre, NFRs could include the following:
 - **[Carbon intensity](/glossary#carbon-intensity) should be < X kgCO2e/kWh:** Setting an NFR around the carbon intensity of the electricty influences choices on location or installation of wind turbines or solar.
 
 
-{% include categoryItem.html item="CatOEmployeeDevices" id="EmployeeDevices" noLink=true %}
+{% include categoryItem.html item="CatOOnsiteEmployeeDevices" id="EmployeeDevices" noLink=true %}
   
 In the strategy section there were suggestions around selecting laptops with low energy usage and ensuring they switch to low power, sleep etc. A target for average daily kWh energy usage could be set to help meet these requirements e.g.
 - **Average energy consumption per 24 hours < X gCO2e**

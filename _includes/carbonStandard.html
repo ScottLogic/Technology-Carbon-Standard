@@ -118,11 +118,11 @@
           <p class="mb-2">{{ variant.CatO.description }}</p>
 
           {% include categoryItem.html
-            item="CatOEmployeeDevices"
-            selected=variant.CatOEmployeeDevices.selected
-            description=variant.CatOEmployeeDevices.description
-            noLink=variant.CatOEmployeeDevices.noLink
-            link=variant.CatOEmployeeDevices.link
+            item="CatOOnsiteEmployeeDevices"
+            selected=variant.CatOOnsiteEmployeeDevices.selected
+            description=variant.CatOOnsiteEmployeeDevices.description
+            noLink=variant.CatOOnsiteEmployeeDevices.noLink
+            link=variant.CatOOnsiteEmployeeDevices.link
           %}
 
           {% include categoryItem.html
@@ -164,6 +164,14 @@
             {% include categoryLabel.html label="CatC" %}
           </div>
           <p class="mb-2">{{ variant.CatC.description }}</p>
+          
+          {% include categoryItem.html
+            item="CatCOffsiteEmployeeDevices"
+            selected=variant.CatCOffsiteEmployeeDevices.selected
+            description=variant.CatCOffsiteEmployeeDevices.description
+            noLink=variant.CatCOffsiteEmployeeDevices.noLink
+            link=variant.CatCOffsiteEmployeeDevices.link
+          %}
 
           {% include categoryItem.html
             item="CatCCloud"
