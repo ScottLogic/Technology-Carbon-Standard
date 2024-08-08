@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: sideNavigation
 title: Software as a Service (SaaS)
 permalink: /information/saas
 published: false

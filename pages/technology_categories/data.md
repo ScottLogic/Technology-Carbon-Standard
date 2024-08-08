@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Data View
-permalink: views/roles/data
-published: false
+permalink: technology_categories/data
 ---
 
 # Data View

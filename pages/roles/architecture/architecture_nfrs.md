@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: sideNavigation
 title: Architecture View
-permalink: views/roles/architecture_nfrs
-published: false
+permalink: /roles/architecture/nfrs
+# published: false
 ---
 
 # Architecture View - Setting NFRs
 
 {% include carbonStandard.html variant=site.data.overlays.architecture_nfrs hideOutOfScope=true %}
 
-This view presents some ideas for settings NFRs (also known as Quality Attributes) in order to promote energy efficiency and low carbon emissions. They derive from the strategy and principles described in [Architecture View - Strategy](/views/roles/architecture). What follows are just suggestions and examples; this is a new area and so there's no established NFRs like, for example 1/2/3/4 9s availability. Bear in mind that measuring carbon NFRs can be hard so think about your maturity in measurement and monitoring before setting NFRs - there's no point setting something where you'll never know if you met the requirement.  
+This view presents some ideas for settings NFRs (also known as Quality Attributes) in order to promote energy efficiency and low carbon emissions. They derive from the strategy and principles described in [Architecture View - Strategy](/roles/architecture). What follows are just suggestions and examples; this is a new area and so there's no established NFRs like, for example 1/2/3/4 9s availability. Bear in mind that measuring carbon NFRs can be hard so think about your maturity in measurement and monitoring before setting NFRs - there's no point setting something where you'll never know if you met the requirement.  
 
 The diagram maps NFRs onto specific TCS categories such as embodied server hardware but be aware that some NFRs may actually benefit more than one category; for example energy efficent software may allow you to squeeze more software onto less hardware reducing embodied carbon as well as operational. 
 

@@ -1,7 +1,7 @@
 ---
-layout: category
+layout: sideNavigation
 title: Employee Hardware
-permalink: /information/lifecycle/example/employee
+permalink: /technology_categories/lifecycle/example/employee
 ---
 
 # Employee Hardware Example

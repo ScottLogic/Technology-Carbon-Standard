@@ -1,7 +1,7 @@
 ---
-layout: category
+layout: sideNavigation
 title: Data Centre and Server Hardware
-permalink: /information/lifecycle/example/server
+permalink: /technology_categories/lifecycle/example/server
 ---
 
 # Data Centre and Server Hardware Example

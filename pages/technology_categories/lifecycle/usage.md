@@ -1,7 +1,7 @@
 ---
-layout: category
+layout: sideNavigation
 title: Usage Carbon Emissions
-permalink: /information/lifecycle/usage
+permalink: /technology_categories/lifecycle/usage
 ---
 
 # Hardware Usage Carbon Emissions 

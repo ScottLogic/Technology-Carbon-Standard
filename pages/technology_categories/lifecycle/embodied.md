@@ -1,7 +1,7 @@
 ---
-layout: category
+layout: sideNavigation
 title: Embodied Carbon Emissions
-permalink: /information/lifecycle/embodied
+permalink: /technology_categories/lifecycle/embodied
 ---
 
 # Hardware Embodied Carbon Emissions

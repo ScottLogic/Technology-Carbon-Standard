@@ -1,7 +1,7 @@
 ---
-layout: category
+layout: sideNavigation
 title: Cloud Services
-permalink: /information/cloud
+permalink: /technology_categories/cloud
 ---
 
 # Cloud Services 
