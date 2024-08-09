@@ -1,7 +1,7 @@
 ---
 layout: sideNavigation
 title: Hardware Life Cycle Emissions
-permalink: /technology_categories/lifecycle
+permalink: /technology-categories/lifecycle
 ---
 
 # Hardware Life Cycle Emissions
@@ -19,9 +19,9 @@ Where
 
 To measure an organisation's technology carbon footprint, it is essential to consider the full product life cycle emissions. 
 
-[Read more about embodied carbon emissions.](/technology_categories/lifecycle/embodied)
+[Read more about embodied carbon emissions.](/technology-categories/lifecycle/embodied)
 
-[Read more about usage carbon emissions.](/technology_categories/lifecycle/usage)
+[Read more about usage carbon emissions.](/technology-categories/lifecycle/usage)
 
 {% include linkedHeading.html heading="Life Cycle Emissions Data" level=2 %}
 
@@ -58,9 +58,9 @@ For devices such as laptops, embodied carbon typically accounts for around 80% o
 
 {% include linkedHeading.html heading=" Worked Examples" level=2 %}
 
-[Click here to see a worked example of estimating life cycle emissions for a laptop.](/technology_categories/lifecycle/example/employee)
+[Click here to see a worked example of estimating life cycle emissions for a laptop.](/technology-categories/lifecycle/example/employee)
 
-[Click here to see a worked example of estimating life cycle emissions for a server.](/technology_categories/lifecycle/example/server)
+[Click here to see a worked example of estimating life cycle emissions for a server.](/technology-categories/lifecycle/example/server)
 
 ## References
 

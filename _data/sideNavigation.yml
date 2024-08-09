@@ -1,43 +1,43 @@
-- baseUrl: /technology_categories
+- baseUrl: /technology-categories
   name: Technology Categories
-  link: /technology_categories
+  link: /technology-categories
   categories: 
     # - name: Estate
-    #   link: /technology_categories/estate
+    #   link: /technology-categories/estate
     - name: Cloud Services
-      link: /technology_categories/cloud
+      link: /technology-categories/cloud
       # categories:
       # - name: PaaS
-      #   link: /technology_categories/cloud/pass
+      #   link: /technology-categories/cloud/pass
     # - name: SaaS
-    #   link: /technology_categories/saas
+    #   link: /technology-categories/saas
     - name: Hardware Life Cycle Emissions
-      link: /technology_categories/lifecycle
+      link: /technology-categories/lifecycle
       categories:
       - name: Embodied Emissions
-        link: /technology_categories/lifecycle/embodied
+        link: /technology-categories/lifecycle/embodied
       - name: Usage Emissions
-        link: /technology_categories/lifecycle/usage
+        link: /technology-categories/lifecycle/usage
       - name: Worked Examples
         categories:
         - name: Employee Hardware
-          link: /technology_categories/lifecycle/example/employee
+          link: /technology-categories/lifecycle/example/employee
         - name: Server Hardware
-          link: /technology_categories/lifecycle/example/server
+          link: /technology-categories/lifecycle/example/server
     - name: Data
-      link: /technology_categories/data
+      link: /technology-categories/data
     - name: Networks
-      link: /technology_categories/networks
-- baseUrl: /impact_categories
+      link: /technology-categories/networks
+- baseUrl: /impact-categories
   name: Impact Categories
-  link: /impact_categories
+  link: /impact-categories
   categories: 
     - name: Upstream Emissions
-      link: /impact_categories/upstream
+      link: /impact-categories/upstream
     - name: Operational Emissions
-      link: /impact_categories/operational
+      link: /impact-categories/operational
     - name: Downstream Emissions
-      link: /impact_categories/downstream
+      link: /impact-categories/downstream
 - baseUrl: /roles
   name: Roles
   link: /roles

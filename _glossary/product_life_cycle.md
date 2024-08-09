@@ -14,4 +14,4 @@ Aspects like usage will need to take into account the expected life span of the 
 
 The environmental impacts of a product or device throughout its product life cycle can be assessed by considering its [Life Cycle Assessment (LCA)](/resources/glossary#life-cycle-assessment-lca) or [Product Carbon Footprint (PCF)](/resources/glossary#product-carbon-footprint-pcf).
 
-[Read more about life cycle emissions data.](/technology_categories/lifecycle#life-cycle-emissions-data)
+[Read more about life cycle emissions data.](/technology-categories/lifecycle#life-cycle-emissions-data)

@@ -6,4 +6,4 @@ Carbon emissions from the usage stage of the [product life cycle](/resources/glo
 
 Factors influencing usage carbon include the device’s energy efficiency, usage patterns, life span, and the [carbon intensity](/resources/glossary#carbon-intensity) of the energy grid powering it.
 
-[Read more about usage carbon emissions.](/technology_categories/lifecycle/usage)
+[Read more about usage carbon emissions.](/technology-categories/lifecycle/usage)
