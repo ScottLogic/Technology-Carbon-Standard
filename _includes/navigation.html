@@ -1,5 +1,5 @@
 {% assign currentNavigation = site.data.navigation | reverse | find_exp: "item", "page.url contains item.link" %}
-<div class="container max-w-7xl mx-auto w-full flex px-2 pt-4 pb-4 sm:pb-0 items-center sm:items-end space-x-4 justify-start ">
+<div class="container max-w-7xl mx-auto w-full flex px-2 pt-4 pb-4 sm:pb-0 items-center space-x-4 justify-start">
 
   <button id="menu-button" type="button" class="sm:hidden" aria-expanded="false" aria-label="open menu">
     <svg id="menu-icon" aria-hidden="true" class="size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#menu"></use></svg>
@@ -7,7 +7,7 @@
   </button>
 
   <!-- LOGO -->
-  <a class="flex items-center space-x-4 group no-underline" aria-label="Tech Carbon Standard home page" href="/">
+  <a class="flex items-center space-x-4 no-underline" aria-label="Tech Carbon Standard home page" href="/">
     <svg aria-hidden="true" class="size-12 sm:mb-4 fill-cambridge-300 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#tcs-logo"></use></svg>
     <span class="sm:hidden text-lg text-cambridge-50 dark:text-cambridge-300 hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">Technology Carbon Standard</span>
   </a>
@@ -15,9 +15,26 @@
   <div class="hidden flex-grow sm:flex flex-col">
     <div class="flex space-x-6">
       {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" class="no-underline h-12  {% if item.name == currentNavigation.name %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
-          {{ item.name }}
-        </a>        
+        <div class="group/nav">
+          <a href="{{ item.link }}" class="h-12 no-underline pb-[18px] {% if item.name == currentNavigation.name %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+            {{ item.name }}
+          </a>
+
+          {% if item.sublinks %}
+            <div class="absolute invisible group-hover/nav:visible bg-gunmetal-700 dark:bg-gunmetal-800">
+              <div class="flex flex-col px-8 py-2 items-start justify-start">
+                <a href="{{ item.link }}" class="no-underline pt-2 pb-0.5 {% if page.url contains subItem.link %} text-gunmetal-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
+                  {{ item.name }}
+                </a>
+                  {% for subItem in item.sublinks %}
+                  <a href="{{ subItem.link }}" class="no-underline pt-2 pb-0.5 {% if page.url contains subItem.link %} text-gunmetal-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
+                    {{ subItem.name }}
+                  </a>
+                  {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -38,29 +55,12 @@
   </div>
 </div>
 
-<div id="sublevel-navigation" class="w-full overflow-x-scroll bg-cambridge-400 dark:bg-cambridge-600">
-  <div class="container max-w-7xl mx-auto w-max sm:w-full px-2 pt-0 pb-0 items-center sm:items-end justify-start flex space-x-4 ">
-    {% if currentNavigation.sublinks %}
-      <a href="{{ currentNavigation.link }}" class="no-underline pt-1.5 pb-0.5 border-b-4 {% if page.url == currentNavigation.link %} text-gunmetal-100  border-gunmetal-800 dark:border-gunmetal-900 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300 border-cambridge-400 dark:border-cambridge-600{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
-        {{ currentNavigation.name }}
-      </a>        
-      {% for subItem in currentNavigation.sublinks %}
-      <a href="{{ subItem.link }}" class="no-underline pt-1.5 pb-0.5 border-b-4 {% if page.url contains subItem.link %} text-gunmetal-100  border-gunmetal-800 dark:border-gunmetal-900 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300 border-cambridge-400 dark:border-cambridge-600{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
-        {{ subItem.name }}
-      </a>        
-      {% endfor %}
-    {% endif %}
-  </div>
-
-</div>
 
 <script>
   const menuButton = document.getElementById('menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuIcon = document.getElementById('menu-icon');
   const closeIcon = document.getElementById('close-icon');
-  const sublevelNavigation = document.getElementById('sublevel-navigation');
-  
   menuButton.addEventListener('click', function() {
     const buttonAriaLabel = menuButton.getAttribute('aria-label');
     if (buttonAriaLabel == 'open menu') {
@@ -71,6 +71,5 @@
     mobileMenu.classList.toggle('hidden');
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
-    sublevelNavigation.classList.toggle('hidden');
   });
 </script>
