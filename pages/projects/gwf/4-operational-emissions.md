@@ -212,7 +212,7 @@ Estimate confidence: medium
 
 ### Agreed scope
 
-The scope here is the same as the [Networking and Infrastructure Hardware category](projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) in upstream emissions.
+The scope here is the same as the [Networking and Infrastructure Hardware category](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) in upstream emissions.
 
 ### High level estimate methodology
 
@@ -298,9 +298,10 @@ GWF do not operate any generators on premise. This means there are no carbon emi
 | **Estimate Type** | **High level Estimate** | **Detailed Estimate** | **Confidence in Methodolog<br/>(High level/ detailed)** |
 | --- | --- | --- | --- |
 | All Cloud Services| 26.74 kgCO<sub>2</sub>e/year | NA | Low/ NA |
-| Greencheck API Services | 11.26 kgCO<sub>2</sub>e/year | 9.65*  kgCO<sub>2</sub>e/year | Low/ Medium |
+| Greencheck API Services* | 11.26 kgCO<sub>2</sub>e/year | 9.65** kgCO<sub>2</sub>e/year | Low/ Medium |
 
-<small>* The embodied carbon emissions uses the high level estimation model.</small>
+<small>* A subset of services contained within All Cloud Services.</small><br/>
+<small>** The embodied carbon emissions uses the high level estimation model.</small>
 
 NB: We started by producing a high level spend-based estimate of GWF's cloud services. This led to producing a detailed carbon estimate specifically for GWF's Greencheck API servers, which is a subset of the whole cloud services estate. So we can't compare the total high level estimate to a total detailed estimate, as we didn't complete a detailed estimate for all the servers. However, we do have a comparable result for the Greencheck API as we completed both a high level and detailed estimate for that part.
 
@@ -487,7 +488,7 @@ Notably, however the embodied carbon makes up 77% - 90% (high level - detailed) 
 
 **How could we improve upon this?**
 
-With more time and resources, the detailed estimate could be much improved. Firstly, as we only commited to detailing the four servers used for the Greencheck API, this modelling could be extended to all of the servers. This would require gathering more data regarding the processors used, the processor's min/max power, number of threads and the avgerage CPU utilisation for each server. Also, we only used the month of April as a sample of average CPU utilisation. This modelling could be applied to every month of the year, for a monthly comparison, or simply calculate the average utilisation for the entire year.
+With more time and resources, the detailed estimate could be much improved. Firstly, as we only commited to detailing the four servers used for the Greencheck API, this modelling could be extended to all of the servers. This would require gathering more data regarding the processors used, the processor's min/max power, number of threads and the average CPU utilisation for each server. Also, we only used the month of April as a sample of average CPU utilisation. This modelling could be applied to every month of the year, for a monthly comparison, or simply calculate the average utilisation for the entire year.
 
 We didn't gather any detail of the server's embodied carbon. This would likely need to be obtained from Hetzner if they would be willing to share more details of the hardware. As a high proportion of the total carbon emissions, this could have a significant impact on the total emissions.
 

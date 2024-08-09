@@ -131,7 +131,9 @@ With little visibility as to how CO2.js is used on client servers and it's small
 
 **How could we improve upon this?**
 
-No further detailed estimation was attempted, as we would have been likely to measure each website and apply the SWD method as we did for the online data set; - which Cabin already uses. Though it's not exactly clear what calculations Cabin is making beyond the use of CO2.js, it didn't seem like a good use of time to focus any more effort for the realtively small carbon emissions estimated.
+For the websites part, we're somewhere between low and medium confidence in our high level approach. It's not clear what calculations Cabin is making beyond the use of CO2.js. We also know that the Sustainable Web Design Methodology (SWDM) that Cabin uses is version 3. [Version 4](https://www.thegreenwebfoundation.org/news/understanding-the-latest-sustainable-web-design-model-update/), released in June 2024, has an improved approach and typically produces estimates two thirds smaller. Additionally the SWDM uses data transfer as it's main metric. We view this as a great starting point as that data is relatively easy to obtain. But as research deepens it's becoming more clear that the relationship betweem energy consumption and network energy use is non-linear, especially at network level. 
+
+For self-hosting Green Web Dataset part. As noted, this is very low confidence. Without a clear understanding of how the dataset is used in practice, this estimate is best viewed as an educated shot in the dark. 
 
 [To the top](#top)
 
