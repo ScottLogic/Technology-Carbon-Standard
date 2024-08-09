@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Case Studies
-permalink: case_studies
+permalink: /case-studies
 ---
 
 # Case Studies
