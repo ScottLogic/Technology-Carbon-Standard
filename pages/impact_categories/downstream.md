@@ -1,7 +1,7 @@
 ---
 layout: sideNavigation
 title: Downstream Emissions
-permalink: impact_categories/downstream
+permalink: /impact-categories/downstream
 ---
 
 # Downstream Emissions

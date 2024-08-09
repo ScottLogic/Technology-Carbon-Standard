@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Case Studies
-permalink: case_studies/gwf
+permalink: /case-studies/gwf
 ---
 
 # Green Web Foundation

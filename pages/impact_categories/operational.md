@@ -1,7 +1,7 @@
 ---
 layout: sideNavigation
 title: Operational Emissions
-permalink: impact_categories/operational
+permalink: /impact-categories/operational
 ---
 
 # Operational Emissions

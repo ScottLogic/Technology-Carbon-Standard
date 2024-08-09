@@ -1,7 +1,7 @@
 ---
 layout: sideNavigation
 title: Upstream Emissions
-permalink: impact_categories/upstream
+permalink: /impact-categories/upstream
 ---
 
 # Upstream Emissions

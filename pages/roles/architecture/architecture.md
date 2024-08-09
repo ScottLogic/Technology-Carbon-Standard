@@ -1,7 +1,7 @@
 ---
 layout: sideNavigation
 title: Architecture View
-permalink: roles/architecture
+permalink: /roles/architecture
 # published: false
 ---
 

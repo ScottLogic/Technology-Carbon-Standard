@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: sideNavigation
 title: Data View
-permalink: technology_categories/data
+permalink: /technology-categories/data
 ---
 
 # Data View
