@@ -2,18 +2,18 @@
   link: /
   sublinks:
     - name: Impact Categories
-      link: /impact_categories
+      link: /impact-categories
     - name: Technology Categories
-      link: /technology_categories
+      link: /technology-categories
     - name: Roles
       link: /roles
 # - name: Views # TO BE PUBLSIHED WITH RESPECTIVE PAGES
 #   link: /views
 - name: Case Studies
-  link: /case_studies
+  link: /case-studies
   sublinks:
     - name: GWF
-      link: /case_studies/gwf
+      link: /case-studies/gwf
 - name: Resources
   link: /resources
   sublinks:   

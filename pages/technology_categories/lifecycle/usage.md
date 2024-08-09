@@ -1,12 +1,12 @@
 ---
 layout: sideNavigation
 title: Usage Carbon Emissions
-permalink: /technology_categories/lifecycle/usage
+permalink: /technology-categories/lifecycle/usage
 ---
 
 # Hardware Usage Carbon Emissions 
 
-Usage emissions refer to the [greenhouse gas (GHG)](/resources/glossary#greenhouse-gases-ghgs) emissions associated with the actual operation and use of a device or product over its lifetime. Usage carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements, and end-of-life disposal phases, which instead fall under [embodied carbon](/resources/glossary#embodied-carbon). [Read more about life cycle emissions.](/technology_categories/lifecycle)
+Usage emissions refer to the [greenhouse gas (GHG)](/resources/glossary#greenhouse-gases-ghgs) emissions associated with the actual operation and use of a device or product over its lifetime. Usage carbon excludes emissions from the manufacturing, transportation, maintenance, consumables/replacements, and end-of-life disposal phases, which instead fall under [embodied carbon](/resources/glossary#embodied-carbon). [Read more about life cycle emissions.](/technology-categories/lifecycle)
 
 Factors influencing usage emissions include the device's energy efficiency, usage patterns, life span, and the [carbon intensity](/resources/glossary#carbon-intensity) of the energy grid powering it.
 
@@ -51,7 +51,7 @@ While this approach relies on key assumptions and does not account for the varia
 
 {% include linkedHeading.html heading="Using Manufacturer Data for Estimating Usage Emissions" level=2 %}
 
-Many manufacturers choose to provide life cycle emissions data such as information relating to the [Product Carbon Footprint (PCF)](/resources/glossary#product-carbon-footprint-pcf) of a product or device. [Read more about life cycle emissions data.](/technology_categories/lifecycle#life-cycle-emissions-data)
+Many manufacturers choose to provide life cycle emissions data such as information relating to the [Product Carbon Footprint (PCF)](/resources/glossary#product-carbon-footprint-pcf) of a product or device. [Read more about life cycle emissions data.](/technology-categories/lifecycle#life-cycle-emissions-data)
 
 Typically, PCF documentation breaks down the total carbon footprint of a product or device into life cycle stages: manufacturing, transportation, use, and end-of-life. Reported use or usage stage emissions estimates often represent lifetime emissions; annual contributions can be estimated based on the assumed device lifespan outlined in the PCF.
 
@@ -61,7 +61,7 @@ Usage carbon varies between different devices, as illustrated by the following e
 
 *Source: Dell Product Carbon Footprint (PCF) documents for an example model of Laptop[^laptop], Desktop[^desktop], Monitor[^monitor], and Server[^server].*
 
-Servers can be associated with high usage emissions compared to devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns. Typically, server usage carbon emissions contribute the larger portion of their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms a larger component than usage carbon. [Read more about embodied vs usage carbon emissions.](/technology_categories/lifecycle#embodied-vs-usage-carbon)
+Servers can be associated with high usage emissions compared to devices like laptops or smartphones. This is largely due to higher power consumption associated with more powerful processors, large amounts of RAM, and multiple hard drives to store and process data, as well as more continuous usage patterns. Typically, server usage carbon emissions contribute the larger portion of their overall carbon footprint. In contrast, for user devices like laptops and desktops, embodied carbon forms a larger component than usage carbon. [Read more about embodied vs usage carbon emissions.](/technology-categories/lifecycle#embodied-vs-usage-carbon)
 
 {% include linkedHeading.html heading="Typical Energy Consumption (TEC)" level=3 %}
 
@@ -73,9 +73,9 @@ To ensure accurate and comparable emissions estimates across all hardware assets
 
 {% include linkedHeading.html heading=" Worked Examples" level=2 %}
 
-[Click here to see a worked example of estimating usage emissions for a laptop.](/technology_categories/lifecycle/example/employee#usage-carbon-emissions)
+[Click here to see a worked example of estimating usage emissions for a laptop.](/technology-categories/lifecycle/example/employee#usage-carbon-emissions)
 
-[Click here to see a worked example of estimating usage emissions for a server.](/technology_categories/lifecycle/example/server#usage-carbon-emissions)
+[Click here to see a worked example of estimating usage emissions for a server.](/technology-categories/lifecycle/example/server#usage-carbon-emissions)
 
 ## References
 

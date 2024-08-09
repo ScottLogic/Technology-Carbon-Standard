@@ -24,13 +24,13 @@ Emissions associated with developing and delivering off-the-shelf and open-sourc
 
 Embodied carbon emissions associated with hardware devices owned by an organisation, including emissions from the manufacture, transportation, installation, maintenance, and end-of-life of a device.
 
-[Read more about embodied carbon emissions.](/technology_categories/lifecycle/embodied)
+[Read more about embodied carbon emissions.](/technology-categories/lifecycle/embodied)
 
 {% include linkedHeading.html heading="Employee Hardware" level=3 %} 
 
 Laptops, desktops, mobiles, printers, and peripherals used by employees. 
 
-[Click here to see a worked example of estimating embodied emissions for a laptop.](/technology_categories/lifecycle/example/employee#embodied-carbon-emissions)
+[Click here to see a worked example of estimating embodied emissions for a laptop.](/technology-categories/lifecycle/example/employee#embodied-carbon-emissions)
 
 {% include linkedHeading.html heading="Networking Hardware" level=3 %} 
 
@@ -51,4 +51,4 @@ Ideally, data sheets from the manufacturer should be used to gather this data.
 
 Servers, storage systems, and data centre infrastructure installed on-premise.
 
-[Click here to see a worked example of estimating embodied emissions for a server.](/technology_categories/lifecycle/example/server#embodied-carbon-emissions)
+[Click here to see a worked example of estimating embodied emissions for a server.](/technology-categories/lifecycle/example/server#embodied-carbon-emissions)

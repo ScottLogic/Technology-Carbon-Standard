@@ -19,7 +19,7 @@ Direct emissions are a result of the organisation's direct consumption of grid-s
 
 Emissions associated with the actual operation and use of devices owned by an organisation ([usage carbon](/resources/glossary#usage-carbon)).
 
-[Read more about usage carbon emissions.](/technology_categories/lifecycle/usage)
+[Read more about usage carbon emissions.](/technology-categories/lifecycle/usage)
 
 Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
@@ -27,11 +27,11 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 The energy consumed by on-premise servers and data centres.
 
-[Click here to see a worked example of estimating usage emissions for a server.](/technology_categories/lifecycle/example/server#usage-carbon-emissions)
+[Click here to see a worked example of estimating usage emissions for a server.](/technology-categories/lifecycle/example/server#usage-carbon-emissions)
 
 {% include linkedHeading.html heading="Networking Devices" level=4 %}
 
-In [the information on networks](/technology_categories/networks), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
+In [the information on networks](/technology-categories/networks), networks are split into four categories - the operational network, the wired backbone internet, the wireless internet and your consumer's network. Of these, the first three need to be considered in Operational Emissions.
 
 Within the operational network, consider the running cost of the connected devices. These include, but are not limited to:
 - routers
@@ -51,7 +51,7 @@ Data consumed from a supplier's API, that is external to your organisation, is a
 
 The energy consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees in offices. This is energy directly used by the business, and all of the emissions related to this energy are their responsibility.
 
-[Click here to see a worked example of estimating usage emissions for a laptop.](/technology_categories/lifecycle/example/employee#usage-carbon-emissions)
+[Click here to see a worked example of estimating usage emissions for a laptop.](/technology-categories/lifecycle/example/employee#usage-carbon-emissions)
 
 {% include linkedHeading.html heading="Generators" level=3 %}
 
@@ -70,7 +70,7 @@ Category C (Cloud) emissions can be related to GHG Protocol Scope 3.
 
 The emissions associated with cloud platform services like compute, storage, and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
 
-[Read more about cloud services.](/technology_categories/cloud)
+[Read more about cloud services.](/technology-categories/cloud)
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
 Software-as-a-Service (SaaS) applications.

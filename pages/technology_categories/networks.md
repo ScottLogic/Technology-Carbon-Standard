@@ -1,7 +1,7 @@
 ---
 layout: sideNavigation
 title: Networks Emissions
-permalink: /technology_categories/networks
+permalink: /technology-categories/networks
 ---
 # Network Emissions
 Networks can be challenging when considering carbon emissions for two reasons:-
