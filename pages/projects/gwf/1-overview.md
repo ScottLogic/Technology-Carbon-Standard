@@ -64,27 +64,47 @@ Lastly, the remaining 2% comes from data transfer across the internet arising fr
 
 ### There is a serious lack of data and transparency from suppliers
 
-Getting data for the emissions associated with GWF's use of very common software was difficult. Basically impossible. In two areas, [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) and [SaaS](/projects/green-web-foundation/operational#saas-services), we didn't manage to find any public data for a single supplier to base an estimate on. We failed to produce a high level estimate, even with with low confidence for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces, specifically GDrive and Calendars, Trello, Zulip, Miro, Brevo, Sentry, 1password, 34SP (specifically WordPress hosting).
+Finding publicly available emissions estimates data for common software is basically impossible. In two areas, [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) and [SaaS](/projects/green-web-foundation/operational#saas-services), we didn't manage to find any kind of public data for a single supplier to base an estimate on. This means we've got gaps in our understanding for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces (GDrive and Calendars), Trello, Zulip, Miro, Brevo, Sentry, 1password, 34SP (WordPress hosting and emails).
 
-On the cloud services level, we were able to get some data to work with such as fairly granular spend based data. Also some information about the specific hardware running on the machines we were using. But no granular information about the server's embodied carbon, or carbon emissions estimates from GWF's suppliers themselves.
+For the cloud services category, things were a little more forthcoming. We were able to get data relating to GWF's spend based on actual usage and info about the specific server hardware being used. That gave us some key metrics from which we produced our own estimates using other publicly available data from the [Cloud Carbon Footprint tools](resources#cloud-carbon-footprint-ccf).
 
-We see the industry in a chicken and egg situation. Everyone is reliant on each other's data but no-one wants to go first. It would be great to see some of the Big Tech companies come together to bust through some of these issues. You can certainly argue that the world's most valuable companies could spare some resources to do this if they really wanted to.
+This whole process would be a lot easier if suppliers of digital services provided carbon estimates to their customers based on their usage as standard. In an ideal world a customer wouldn't have to make a special request for this data. It would be as easy to find as billing data and the methodologies and assumptions would completely transparent, not treated as trade secrets.
 
-Essentially without suppliers conducting their own digital carbon estimates, even at a high level like we've done here, the industry remains stuck.
+The industry appears to be in a chicken and egg situation - everyone is reliant on each other's data but no-one wants to go first. We'd argue that the world's most valuable companies, the Big Tech companies, could spare some resources to do this if they really wanted to. What will it take for the Big Tech companies to put the interests of a liveable planet first and come together to bust through these issues?
 
-### Employee hardware is much more significant than originally assumed
+Without key suppliers getting off the starting blocks and conducting their own digital carbon estimates, even at a high, imperfect level like we've done here, the industry remains stuck.
 
-Everyone in the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out as 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
+### Employee hardware is more significant than originally assumed
 
-How confident can we be in the 69% figure? Is it to be trusted? The **short answer** is yes. We think it's *good enough* to demonstrate the relative scale and support telling a story around the larger than expected impact of employee hardware versus other parts of the known estate.
+Everyone working on the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out as 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
 
-The **longer answer** is that we recognise there a multitude of ways you can poke holes in our numbers. Here's a few we can think of:
+How confident can we be in the 69% figure? Is it to be trusted? The **short answer** is yes. We think it's *good enough* to demonstrate relative scale and support telling a story around the larger than expected impact of employee hardware versus other parts of the known estate.
 
-* The 342 kgCO<sub>2</sub>e/year figure itself is only an estimate. The accuracy of any estimate should always be viewed with a pinch of salt and be considered as an indication of relative scale rather than a precise measurement. However, we rated the methodologies we used for the two largest parts of this calculation with high confidence. The third methodology with medium confidence. Is there room for improvement in our methodologies? Absolutely. Is there room for improvement in the [PCF](/glossary#product-carbon-footprint-pcf) datasheets produced, or in many cases not produced, by hardware manufacturers? Absolutely. *(Looking at you printer manufacturers.)* We look forward to seeing more organisations run through this process and publically publish they way they did it so our industry can learn and grow together. 
-* The 342 kgCO<sub>2</sub>e/year figure comes from a snapshot in time. 2023 turns out to be a year that GWF ended up bearing responsibility for the emissions of four purchased machines (two refurbed and two new), but no monitor purchases. Is this an average year? Possibly, but we can't know confidently until we run the reporting for a few more years.
-* The 69% part is relative to the other categories in the estate. All of these other ones that we attempted are rated as medium or low confidence. When there are better ways to estimate these parts, the figures might change and the relative percentage of employee hardware may go up or down as a response. On top of that the software element is not a full picture yet as we couldn't produce any kind of estimate for OTS & Open Source Software and SaaS.
+The **longer answer** is that we recognise there are a multitude of ways you can poke holes in these estimates. Here's a few we can think of:
+
+* The 69% part is relative to the other categories in the estate. For those categories outside of the employee hardware grouping that we attempted to estimate, we only have medium or low confidence in the methodologies we used. When there are better ways to estimate these parts, the figures might change and the relative percentage of employee hardware may go up or down in response. On top of that, we couldn't produce any kind of estimate for OTS & Open Source Software and SaaS. Once we're able to do that, its likely the relative percentage of employee hardware will go down.
+* The 342 kgCO<sub>2</sub>e/year figure comes from a snapshot in time. 2023 turns out to be a year that GWF ended up bearing responsibility for the emissions of four purchased machines (two refurbed and two new), but no monitor purchases. Is this an average year or an outlier? We can't know confidently until we estimate GWF's digital estate for a few more years.
+* The 342 kgCO<sub>2</sub>e/year figure itself is only an estimate. The accuracy of any estimate should always be viewed with a pinch of salt. It is not a precise measurement. However, we rated the methodologies we used for the two largest parts of this calculation with high confidence. The third methodology with medium confidence. Is there room for improvement in these methodologies? Absolutely. Is there room for improvement in the [PCF](/glossary#product-carbon-footprint-pcf) datasheets produced, or in many cases not produced, by hardware manufacturers? Absolutely. *(Looking at you printer manufacturers.)* We look forward to seeing more organisations run through this process and publicly publish they way they did it so our industry can learn and grow together. 
 
 ### Our monitors probably deserve more attention, especially the big ones.
+
+If you'd asked the project team ahead of the project which represented more emissions, laptops or monitors, we'd have all guessed laptops. But surprisingly the data we found shows the organisation's monitors are estimated to produce more emissions on a unit by unit basis. This is true both for the embodied and usage emissions.
+
+To illustrate this, below we summarise the estimates found in manufacturer [PCF](/glossary#product-carbon-footprint-pcf) datasheets for laptops and monitors. These are the estimated emissions for a new unit, and before we factor in what percentage of these emissions are allocated to GWF.
+
+| **Device type** | **Estimate category** | **Lowest value** | **Highest value** |
+| --- | --- | --- | --- |
+| Laptops | Embodied (new only) - kgCO<sub>2</sub>e | 115 | 264 |
+| Monitors | Embodied (new only) - kgCO<sub>2</sub>e | 110 | 435 |
+| Laptops | Usage - kgCO<sub>2</sub>e/year | 4.48 | 18.29 |
+| Monitors | Usage - kgCO<sub>2</sub>e/year | 11.59 | 61.65 |
+
+Of note, is that the bigger and more high definition the monitor the greater the impact. Also some GWF staff have multiple monitors stationed in their various work locations. It's not always a 1:1 relationship like laptops appear to be. Plus some members of the technical team may use two monitors when doing some types of work. These factors mean an even greater impact from monitors. 
+
+This raises a question: are the emissions from monitors getting enough attention? Is there as much effort going into reducing the impact by manufacturers and users alike, say compared to laptops, or even software iteself. For example Europe's eco-design legislation does not cover monitors <span style="color: red;"> I need to fact check this some more, it may well be wrong. Was reading this - https://repair.eu/news/new-ecodesign-for-sustainable-products-regulation-espr-what-does-it-mean-for-repair/ - HAN</span>
+
+Which leads us to our next insight...
+
 
 ### The digital sustainability industry might be over indexing on green coding too much.
 

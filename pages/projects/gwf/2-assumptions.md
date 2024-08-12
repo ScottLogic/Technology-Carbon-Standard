@@ -34,7 +34,7 @@ We assumed a high-level estimate would be characterised as:
 
 - Imperfect but relatively quick to do
 - Containing broad assumptions and averages
-- Favouring publically available data rather than specific measurements unique to GWF
+- Favouring publicly available data rather than specific measurements unique to GWF
 - Intended to give a feel for the magnitude of emissions on particular category vs another, allowing us to identify areas of most potential concern
 - Better than nothing
 
