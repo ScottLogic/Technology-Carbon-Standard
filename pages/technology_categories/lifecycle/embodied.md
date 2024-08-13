@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Embodied Carbon Emissions
 permalink: /technology-categories/lifecycle/embodied
+redirect_from:
+    - /information/lifecycle/embodied
 ---
 
 # Hardware Embodied Carbon Emissions

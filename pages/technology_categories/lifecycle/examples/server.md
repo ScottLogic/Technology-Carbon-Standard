@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Data Centre and Server Hardware
 permalink: /technology-categories/lifecycle/example/server
+redirect_from:
+    - /information/lifecycle/example/server
 ---
 
 # Data Centre and Server Hardware Example

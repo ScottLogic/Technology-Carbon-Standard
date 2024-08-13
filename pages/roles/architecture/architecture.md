@@ -3,6 +3,8 @@ layout: sideNavigation
 title: Architecture View
 permalink: /roles/architecture
 # published: false
+redirect_from:
+    - /views/roles/architecture
 ---
 
 # Architecture Views

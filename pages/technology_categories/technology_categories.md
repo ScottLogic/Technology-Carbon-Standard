@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Technology Categories
 permalink: /technology-categories
+redirect_from:
+    - /information
 ---
 
 # Technology Categories 

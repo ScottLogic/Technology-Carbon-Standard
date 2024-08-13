@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Hardware Life Cycle Emissions
 permalink: /technology-categories/lifecycle
+redirect_from:
+    - /information/lifecycle
 ---
 
 # Hardware Life Cycle Emissions

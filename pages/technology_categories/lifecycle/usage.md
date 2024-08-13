@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Usage Carbon Emissions
 permalink: /technology-categories/lifecycle/usage
+redirect_from:
+    - /information/lifecycle/usage
 ---
 
 # Hardware Usage Carbon Emissions 

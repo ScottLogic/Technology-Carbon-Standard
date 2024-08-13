@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Data View
 permalink: /technology-categories/data
+redirect_from:
+    - /views/roles/data
 ---
 
 # Data View

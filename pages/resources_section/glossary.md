@@ -3,6 +3,8 @@ layout: default
 title: Glossary
 permalink: /resources/glossary
 published: true
+redirect_from:
+    - /glossary
 ---
 
 # Glossary

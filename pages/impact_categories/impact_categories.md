@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Impact Categories
 permalink: /impact-categories
+redirect_from:
+    - /categories
 ---
 
 # Impact Categories

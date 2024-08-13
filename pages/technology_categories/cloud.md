@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Cloud Services
 permalink: /technology-categories/cloud
+redirect_from:
+    - /information/cloud
 ---
 
 # Cloud Services 

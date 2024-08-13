@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Employee Hardware
 permalink: /technology-categories/lifecycle/example/employee
+redirect_from:
+    - /information/lifecycle/example/employee
 ---
 
 # Employee Hardware Example

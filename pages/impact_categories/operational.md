@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Operational Emissions
 permalink: /impact-categories/operational
+redirect_from:
+    - /categories/operational  
 ---
 
 # Operational Emissions

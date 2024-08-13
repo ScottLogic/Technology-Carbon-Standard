@@ -2,6 +2,8 @@
 layout: sideNavigation
 title: Downstream Emissions
 permalink: /impact-categories/downstream
+redirect_from:
+    - /categories/downstream    
 ---
 
 # Downstream Emissions
