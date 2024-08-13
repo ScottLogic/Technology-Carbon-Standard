@@ -4,8 +4,8 @@ layout: default
 
 <div class="flex flex-col md:flex-row gap-6">
     <aside class="md:w-1/5 border-b md:border-r md:border-b-0 border-gunmetal-200 pr-2 pb-2 pt-0">
-        {% assign sideNavItem = site.data.sideNavigation | where_exp: "item", "page.url contains item.baseUrl" %}
-        {% include sideNavigationLevel.html categories=sideNavItem %}      
+        {% assign sideNavItem = site.data.sideNavigation | find_exp: "item", "page.url contains item.baseUrl" %}
+        {% include sideNavigationLevel.html categories=sideNavItem.categories %}      
     </aside>
     <article class="md:w-4/5">
       {{ content }}
