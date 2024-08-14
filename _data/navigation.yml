@@ -15,10 +15,10 @@
 - name: Resources
   link: /resources
   sublinks:   
-  - name: Tools
-    link: /resources/tools
-  - name: Links
-    link: /resources/links
+  # - name: Tools
+  #   link: /resources/tools
+  # - name: Links
+  #   link: /resources/links
   - name: Glossary
     link: /resources/glossary
   # - name: References
