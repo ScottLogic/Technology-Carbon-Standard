@@ -5,10 +5,8 @@
       link: /impact-categories
     - name: Technology Categories
       link: /technology-categories
-    - name: Roles
-      link: /roles
-# - name: Views # TO BE PUBLSIHED WITH RESPECTIVE PAGES
-#   link: /views
+    # - name: Roles
+    #   link: /roles
 - name: Case Studies
   link: /case-studies
   sublinks:

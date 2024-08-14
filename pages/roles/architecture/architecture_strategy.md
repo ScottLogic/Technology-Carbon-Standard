@@ -2,7 +2,7 @@
 layout: sideNavigation
 title: Architecture View
 permalink: /roles/architecture/strategy
-# published: false
+published: false
 redirect_from:
     - /views/roles/architecture_strategy
 ---

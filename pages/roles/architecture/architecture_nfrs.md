@@ -2,7 +2,7 @@
 layout: sideNavigation
 title: Architecture View
 permalink: /roles/architecture/nfrs
-# published: false
+published: false
 redirect_from:
     - /views/roles/architecture_nfrs
 ---
