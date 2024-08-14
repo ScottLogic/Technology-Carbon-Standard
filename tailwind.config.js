@@ -12,6 +12,7 @@ module.exports = {
     './pages/*.md',
     './*.md',
     './*.html',
+    './**/resources.md'
   ],
   theme: {
     fontFamily: {
