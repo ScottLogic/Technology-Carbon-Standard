@@ -1,7 +1,9 @@
 ---
 layout: sideNavigation
 title: Platform as a Service (PaaS)
-permalink: /information/cloud/pass
+permalink: /technology-categories/cloud/paas
+redirect_from:
+    - /information/cloud/pass
 published: false
 ---
 

@@ -1,7 +1,9 @@
 ---
 layout: sideNavigation
 title: Estimating Estate Emissions
-permalink: /information/estate
+permalink: /technology-categories/estate
+redirect_from:
+    - /information/estate
 published: false
 ---
 

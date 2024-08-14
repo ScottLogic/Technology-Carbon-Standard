@@ -1,7 +1,9 @@
 ---
 layout: sideNavigation
 title: Software as a Service (SaaS)
-permalink: /information/saas
+permalink: /technology-categories/saas
+redirect_from:
+    - /information/saas
 published: false
 ---
 
