@@ -46,24 +46,24 @@
     {% for item in site.data.navigation %}
       
       {% if item.sublinks %}
-        <div class="grid grid-cols-[auto_50px] items-center">
-          <a href="{{ item.link }}" class="block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+        <div class="grid grid-cols-[auto_50px] items-center ">
+          <a href="{{ item.link }}" class="h-8 block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
             {{ item.name }}
           </a> 
            <button class="expand-button justify-self-center" type="button" aria-expanded="false" aria-label="expand section">
-            <svg aria-hidden="true" class="expand-icon size-6 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#expand"></use></svg>
-            <svg aria-hidden="true" class="collapse-icon hidden size-6 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#collapse"></use></svg>
+            <svg aria-hidden="true" class="expand-icon size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#expand"></use></svg>
+            <svg aria-hidden="true" class="collapse-icon hidden size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#collapse"></use></svg>
           </button>
           <div class="expand-block col-span-2 ml-4 hidden">
             {% for subItem in item.sublinks %}
-              <a href="{{ subItem.link }}" class="block no-underline px-2 {% if page.url == subItem.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+              <a href="{{ subItem.link }}" class="h-8 block no-underline px-2 {% if page.url == subItem.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
                 {{ subItem.name }}
               </a>
             {% endfor %}
           </div>
         </div>
         {% else %}
-        <a href="{{ item.link }}" class="block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+        <a href="{{ item.link }}" class="h-8 block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
           {{ item.name }}
         </a> 
       {% endif %}
