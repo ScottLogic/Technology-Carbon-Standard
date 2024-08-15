@@ -9,9 +9,6 @@
     #   link: /roles
 - name: Case Studies
   link: /case-studies
-  sublinks:
-    - name: GWF
-      link: /case-studies/gwf
 - name: Resources
   link: /resources
   sublinks:   
