@@ -7,8 +7,8 @@
       link: /technology-categories
     # - name: Roles
     #   link: /roles
-- name: Case Studies
-  link: /case-studies
+# - name: Case Studies
+#   link: /case-studies
 - name: Resources
   link: /resources
   sublinks:   
