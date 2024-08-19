@@ -8,7 +8,7 @@ redirect_from:
 
 # Technology Categories 
 
-- [Lifecycle](/technology-categories/lifecycle)
 - [Cloud Services](/technology-categories/cloud)
+- [Hardware Life Cycle Emissions](/technology-categories/lifecycle)
 - [Data](/technology-categories/data)
 - [Networks](/technology-categories/networks)
