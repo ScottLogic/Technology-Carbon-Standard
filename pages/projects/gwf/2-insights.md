@@ -27,60 +27,53 @@ These key insights have been written by Green Web Foundation. When you see words
 
 ## TCS helps fill key gaps in estimating digital estate emissions
 
-When we set [our goal to estimate GWF's emissions for 2023](overview#context---why-this-project) we reviewed what [solutions for small businesses exist](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). When looking at how the most popular SaaS tools approached producing *digital estate* estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond those high level details. 
+When we set [our goal to estimate GWF's emissions for 2023](overview#context---why-this-project) we reviewed what [solutions for small businesses exist](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). Looking at how the most popular SaaS tools approached producing *digital estate* estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond the high level. 
 
-We know from our own experience that spend based metrics are at best a starting point, are riddled with problems and don't really lend any meaningful assistance when considering how to reduce impact as many commercial models rely on free offerings. We felt there's enough research out there by now that we can make the next iteration forward and improve upon this, whilst of course embracing the concept of [progress over perfection](https://branch.climateaction.tech/issues/issue-8/).
+We know from our own experience that spend based metrics are best viewed as a starting point. They're riddled with problems and don't lend any meaningful assistance when considering how to reduce impact as many commercial models rely on free, or reduced, offerings. We felt there's enough research out there by now that we can make the next iteration forward and improve upon this. Whilst of course embracing the concept of [progress over perfection](https://branch.climateaction.tech/issues/issue-8/).
 
 Therefore we saw that openly test driving the TCS approach in collaboration with the Scott Logic team was a concrete way to address:
 
 - the relative lack of detailed guidance on estimating an entire digital estate.
 - approaches for how you can move beyond spend as a metric (when open-source data supports that).
 
-Through publically showing our approach, calculations and concerns, together we're think we're playing a part in filling the guidance gap for estimating digital estate emissions using best practices.
-
 **Actionable opportunity**
 
-More organisations should try using the TCS to measure their digital estates, and contribute back to the field through openly sharing their approaches for each section.
+We encourage more organisations to publicly show their approaches, calculations and concerns in detail. Together we can contribute back to the field and fill the guidance gap for estimating digital estate emissions using best practices. This is just as applicable for organisations using the TCS or other standards.
 
 ## TCS can't cover everything you need to produce estimates for digital products or services 
 
-This part is no secret! The TCS make this completely clear on the [homepage](/). But it's important enough to reiterate. 
+This part is no secret! TCS make this completely clear on the [homepage](/). But it's important enough to reiterate. 
 
-Out of scope of this estimation process are other key things that any organisation needs such as buildings, travel and overheads. At GWF, we know we need to have office space, to travel and manage other necessary overheads of our organisation, in order to develop and maintaining our open source tools. 
+Out of scope from TCS are other key things that any organisation needs such as buildings, travel and overheads. All of these things also contribute to an organisation's emissions.
 
-For example, if someone were to ask us to estimate the emissions associated with our [Green Web Dataset](https://www.thegreenwebfoundation.org/tools/green-web-dataset/), it would be remiss of us not to factor in these other parts of our business. The boundaries or scope is too open to question otherwise.
+For example, if someone were to ask us to estimate the emissions associated with our [Green Web Dataset](https://www.thegreenwebfoundation.org/tools/green-web-dataset/), it would be remiss of us not to factor in these other parts of our business. We know we need to have office space, travel and manage other necessary overheads of our organisation, in order to develop and maintaining our open source tools. Excluding these items from our reporting scope would seem remiss.
 
-Therefore, the TCS alone is not enough. Its best seen as a subset of the work that goes into estimating any organisation, or digital product provided by such an organisation.
+Therefore, the TCS alone is not enough if you want to produce an estimate for a given digital product or service. Its best seen as a subset, a *vital* subset, of the work that's needed.
 
 **Actionable opportunity**
 
-??
+Organisations responding to transparency requests from customers around the emissions associated with a digital product or service should make the scope boundaries they use abundantly clear. 
 
 
 ## There is a serious lack of data and transparency from suppliers
 
-<div style="color:red;">
-
-Hypothesis: Machine readable data, publicly verifiable data 
-This methods and numbers should be accessible. And emphasize how to improve reporting by giving access to machine-readable data 
-<br/><br/>
-In the field: others are trying to solve this as well, Boavista, GSF, SDIA
-(examples of initiatives that are trying to encourage disclosure of assumptions in digital services)
-<br/><br/>
-Our work: Would carbon.txt help to close this gap at all?
-Could we link to the manifest files being touted by GSF for example
-</div>
-
-
 Finding publicly available emissions estimates data for common software is basically impossible. In two areas, [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) and [SaaS](/projects/green-web-foundation/operational#saas-services), we didn't manage to find any kind of public data for a single supplier to base an estimate on. This means we've got gaps in our understanding for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces (GDrive and Calendars), Trello, Zulip, Miro, Brevo, Sentry, 1password, 34SP (WordPress hosting and emails).
 
-For the cloud services category, things were a little more forthcoming. We were able to get data relating to GWF's spend based on actual usage and info about the specific server hardware being used. That gave us some key metrics from which we produced our own estimates using other publicly available data from the [Cloud Carbon Footprint tools](resources#cloud-carbon-footprint-ccf).
+To be clear, we're not trying to throw shade at these suppliers. We know this stuff is an emerging practice, and it's hard. But nonetheless there is a glaring gap here at the moment.
 
-This whole process would be a lot easier if suppliers of digital services provided carbon estimates to their customers based on their usage as standard. In an ideal world a customer wouldn't have to make a special request for this data. It would be as easy to find as billing data and the methodologies and assumptions would completely transparent, not treated as trade secrets.
+For the cloud services category, things were a little more forthcoming. We were able to get data relating to spend based on actual usage and info about the specific server hardware being used. That gave us some key metrics from which we produced our own estimates using other publicly available data from the [Cloud Carbon Footprint tools](resources#cloud-carbon-footprint-ccf). But we know that spend is not really a metric we want to use. 
 
-The industry appears to be in a chicken and egg situation - everyone is reliant on each other's data but no-one wants to go first. We'd argue that the world's most valuable companies, the Big Tech companies, could spare some resources to do this if they really wanted to. What will it take for the Big Tech companies to put the interests of a liveable planet first and come together to bust through these issues?
+This could evolve if, as standard, suppliers of digital services provided machine readable, publicly verifiable emission estimate data about their operations as whole. Methodologies and assumptions would be completely transparent, not treated as trade secrets. In an ideal world, a customer wouldn't have to make a special request for this data based on their usage. It would be as easy to find as billing data.
 
-Without key suppliers getting off the starting blocks and conducting their own digital carbon estimates, even at a high, imperfect level like we've done here, the industry remains stuck.
+The industry appears to be in a chicken and egg situation - everyone is reliant on each other's data but no-one wants to go first. Thankfully, the EU is introducing several sets of legislation aimed at breaking this stalemate. Legislation like the [Corporate Sustainability Reporting Directive (CSRD)](https://plana.earth/policy/corporate-sustainability-reporting-directive-csrd) literally says:
+
+> Users of sustainability information increasingly expect such information to be findable, comparable and machine-readable in digital formats. Member States should be able to require that undertakings subject to the sustainability reporting requirements of Directive 2013/34/EU make their management reports available on their websites, free of charge to the public. ([clause 55](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2464))
+
+**Actionable opportunities**
+
+Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support, and sign post others to a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).
+
+
 
 ## Employee hardware is more significant than originally assumed
 
