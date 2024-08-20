@@ -9,19 +9,13 @@ project: gwf
 
 # Key insights
 
-<span style="color:red;">
-Summary:<br/>
-*Data* refers to unanalyzed user observations<br/>
-*Finding*s capture patterns among data points<br/>
-*Insights* are the actionable opportunities based on research and business goals - what can we do about it?</span>
-
 These key insights have been written by Green Web Foundation. When you see words like "we" and "us" in this section, please assume it's referring solely to Green Web Foundation's perspective. 
 
 - TCS helps fill key gaps in estimating digital estate emissions
 - TCS can't cover everything needed to produce estimates for digital products or services 
 - There is a serious lack of data and transparency from suppliers
 - Employee hardware is more significant than originally assumed, especially monitors
-- The digital sustainability industry might be over indexing on green coding
+- The digital sustainability industry needs to look beyond green coding to influencing impactful structural change
 
 
 ## TCS helps fill key gaps in estimating digital estate emissions
@@ -39,6 +33,10 @@ Therefore we saw that openly test driving the TCS approach in collaboration with
 
 We encourage more organisations to publicly show their approaches, calculations and concerns in detail. Together we can contribute back to the field and fill the guidance gap for estimating digital estate emissions using best practices. This is just as applicable for organisations using the TCS or other standards.
 
+[To the top](#top)
+
+---
+
 
 ## TCS can't cover everything you need to produce estimates for digital products or services 
 
@@ -53,6 +51,10 @@ Therefore, the TCS alone is not enough if you want to produce an estimate for a 
 **Actionable opportunity**
 
 Organisations responding to transparency requests from customers around the emissions associated with a digital product or service should make the scope boundaries they use abundantly clear. 
+
+[To the top](#top)
+
+---
 
 
 ## There is a serious lack of data and transparency from suppliers
@@ -73,13 +75,11 @@ The industry appears to be in a chicken and egg situation - everyone is reliant 
 
 Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support, and sign post others to a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).
 
+[To the top](#top)
+
+---
 
 ## Employee hardware is more significant than originally assumed, especially monitors
-
-<div style="color:red;">
-Tradeoffs around employee productivity and comfort. 
-it wasn’t easy  to find guidance on reducing “embodied carbon.” – incentives around hardware? What are we incenstived to do/change as a result. 
-</div>
 
 Everyone working on the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out as 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
 
@@ -115,7 +115,7 @@ To illustrate this, below we summarise the estimates found in manufacturer [PCF]
 
 <p style="text-align:center; font-style: italic;">For both tables, these estimated emissions are before we factor in what percentage of these emissions are allocated to GWF.</p>
 
-<span style="color:red;">*please can this section be sense-checked by someone?* What this shows is that for embodied carbon, the difference between laptops and monitors is between -4% and 65%. For usage, the difference is much larger. It's between 159% and 237%. Our smallest monitor creates around 1.5 times more emissions than our smallest laptop when running for the same length of time. There's a nearly a 2.5 times difference between running our most powerful laptop and largest monitor.</span>
+What this shows is that for embodied carbon, the difference between laptops and monitors is between -4% and 65%. For usage, the difference is much larger. It's between 159% and 237%. Our smallest monitor creates around 1.5 times more emissions than our smallest laptop when running for the same length of time. There's a nearly a 2.5 times difference between running our most powerful laptop and largest monitor.
 
 This raises an important question. What can we really do to minimize the impact of our employee devices beyond buying differently and using them mindfully? We accept that we do need a certain level of equipment to ensure our team are safe and productive. Once you've taken the obvious actions what's left? This takes us into the realm of systemic change, and the promise of the [EU's new eco-design legislation](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products-regulation_en) that came into force in July 2024.
 
@@ -123,35 +123,29 @@ This raises an important question. What can we really do to minimize the impact 
 
 Organisations can make a considerable impact on their digital estate emission estimates by choosing to minimise unnecessary hardware and use what they do need efficiently. Procurement departments can prioritise refurbed, remanufactured or reused employee hardware and shortly, consider the ecodesign ratings on specific product groups. As an added bonus, organisations can also choose to support non-profit campaign groups like [repair.eu](https://repair.eu/). 
 
+[To the top](#top)
 
-## The digital sustainability industry might be over indexing on green coding too much
+---
 
-<div style="color:red;">
-Problem: As an org trying to reduce our impacts, we didn’t find enough guidance on addressing impacts beyond making code more efficient and this is a gap in the digital sustainability practice.  
-Hypothesis: The digital sustainability field invests a lot in making code more efficient because it’s “easier” to integrate these practices rather than addressing impacts elsewhere. However, structural changes are also needed. As well as addressing supply AND demand (example, not using AI if it’s not needed). And addressing some of the “harder” parts of making digital operations greener. 
-Are we a typical organisation? - We’ve optimised as much as we can, we have high utilisation rates in our cloud services. We’ve done the reasonable stuff 
-We need guidance to change these other bigger impacts. There are gaps in the guidance that the digital sustainability field provides.   
-These include: not only looking at efficiency, structural changes are needed (decarbonizing the whole grid) 
-Personal blog: Being in the green driving foundation
-C’s suggested framing - there are new skills as an industry we would need to pick up. Green coding is one of the easier things to buy into because politically it is much more palatable, and less risky than organisational change.
-The biggest impacts come from sources other than code—meanwhile, the digital sustainability invests most of its effort in making code more efficient (-> its the infrastructure)
-Operational efficiency vs coding efficiency - this is outlined in Building Green Software (cite Ann Currie) 
-We’re pumping a lot of time and effort into optimising code, but the real structural levers are elsewhere. There’s a lot of investment in this green coding area, but the high impact areas need more guidance/investment.
-Efficiency is not the only important metric. 
-Structural changes are also needed 
-Example: UK setting goal for fossil-free grid by 2030. A structural change that came about through democracy, etc rather than changing coding practice
-Supply and demand are both levers (not just green your work, but also use less – example from our AI briefing: do you even need AI?)
-CID (consumption, intensity and direction) 
-</div>
+## The digital sustainability industry needs to look beyond green coding to influencing impactful structural change
 
-As the digital sustainability industry starts to take off, there is a risk that it becomes synonynous with only building more efficient software. A practice commonly referred to as "green coding" or "green software engineering". Whilst this is definitely an important part of digital sustainability, there is more to it than that. 
+As an organisation trying to reduce the impact of our digital estate, we think we've exhausted the most *impactful* commonly cited green coding guidance. We've chosen our hosting suppliers carefully based on a number of criteria such as use of renewable energy, transparency and quality of service. We've optimised our digital services as much as feasible. Our websites are lean, code is efficient enough and we have high utilisation rates on our cloud services. We monitor the impact of our code changes using the [Green Metrics tool](https://www.green-coding.io/projects/green-metrics-tool/). We're at a point where further code optimisation might be fun to do, but the gains aren't likely to reduce our estimates meaningfully. We have a BYOD policy for employee devices and encourage the purchase refurbed equipment when possible. For Saas and off the shelf software, we default to services that are open source. (We would default to those with a verified, lower carbon estimate if we could, but as we know we don't have the data to support that decision making yet).
 
-If all the improved green software we produced fails to lead to us using less resources (energy, water, rare raw materials) over time and reducing the  or seeing our overall use of electricity drop 
+We recognise we're a small, lean organisation offering a relatively straightforward set of digital products with staff who live and breathe digital sustainability. We recognise that making changes to our own practices is easier for us compared to larger organisations. Such organisations will have the same problems to address but at much more extreme rates of complexity. For example larger, more interdependent systems. Larger teams at all levels who are only just starting their journey of picking up the mindsets and skills needed to be more sustainable. Balancing conflicting organisational priorities such as profitability, innovation and sustainability. Reacting and complying with ever changing legislation. The list goes on. 
 
- But our estimates lead us to think a more impactful place to start looking is possibly less glamourous, it's a procurement problem rather than an engineering one. 
+All this is to say, we recognise our journey so far, whilst certainly challenging at times, is less demanding than others. We believe we've exhausted the available guidance on how to make *impactful* changes in our own organisational context, eg the things we can influence directly.
 
-Is greener hardware, such as remanufactured, refurbished and second-hand, getting enough attention inside digital sustainability circles? This is also a relevant question for data centers who typically refresh hardware every five years. But recent data shows this is becoming shorter due to technological improvements. 
+And now we're in a position of wondering what next? We've optimised what we can and even if everyone could get there tomorrow, we know it's not enough to counter the harms from this growing industry. 
 
+As the digital sustainability industry starts to take off, there is a risk that it becomes synonynous with only building more efficient software. A practice commonly referred to as "*green coding*" or "*[green software](http://127.0.0.1:4000/glossary#green-software)*". Whilst this is definitely an important part of digital sustainability, there is more to it than that. The missing part we need is how to affect **structural change**. Chris from our team, have written a short post about this on his personal blog: [Being in the Green Driving Foundation](https://rtl.chrisadams.me.uk/2024/05/being-in-the-green-driving-foundation/).
+
+If all the improved "green software" we work hard to produce fails to lead to us using less resources (energy, water, rare raw materials) and causing less harm to people over time, then we've somewhat missed the main challenge. 
+
+The biggest impacts come from sources other than code. It's the infrastructure. As an example, the [UK has recently set a goal for a fossil-free grid by 2030](https://www.theguardian.com/politics/article/2024/jun/06/could-labour-gb-energy-plan-future-proof-power-generation-uk). This is a structural change that's come about through democracy rather than changing coding practice.
+
+**Actionable opportunities**
+
+There are new skills as a digital industry that we need to pick up. Green coding is one such important skill. This is seen as one of the easier things to buy into at organisation leadership level because politically its much more palatable, and immediately impacts organisation emission estimates and often profitability. However, the real levers are elsewhere and we need more investment for creating guidance that go beyond immediate changes.
 
 [To the top](#top)
 

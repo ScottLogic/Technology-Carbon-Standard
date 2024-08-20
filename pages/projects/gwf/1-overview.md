@@ -62,7 +62,11 @@ Lastly, the remaining 2% comes from data transfer across the internet arising fr
 
 ## Key insights
 
-<span style="color:red;">Once insights are finished summarise in bullet point list here.</span>
+- TCS helps fill key gaps in estimating digital estate emissions
+- TCS can't cover everything needed to produce estimates for digital products or services 
+- There is a serious lack of data and transparency from suppliers
+- Employee hardware is more significant than originally assumed, especially monitors
+- The digital sustainability industry needs to look beyond green coding to influencing impactful structural change
 
 [Insights full write-up](Insights)
 
