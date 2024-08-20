@@ -4,6 +4,8 @@ gwf:
   nav:
   - name: Overview
     link: /projects/green-web-foundation/overview
+  - name: Insights
+    link: /projects/green-web-foundation/insights  
   - name: Assumptions
     link: /projects/green-web-foundation/assumptions
   - name: Upstream Emissions
