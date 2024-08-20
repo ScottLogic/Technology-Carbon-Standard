@@ -11,6 +11,8 @@ project: gwf
 
 These key insights have been written by Green Web Foundation. When you see words like "we" and "us" in this section, please assume it's referring solely to Green Web Foundation's perspective. 
 
+## Summary of insights
+
 - TCS helps fill key gaps in estimating digital estate emissions
 - TCS can't cover everything needed to produce estimates for digital products or services 
 - There is a serious lack of data and transparency from suppliers
