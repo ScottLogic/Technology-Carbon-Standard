@@ -9,24 +9,52 @@ project: gwf
 
 # Key insights
 
-- The TCS is helping to fill an important gap
+<span style="color:red;">
+Summary:<br/>
+*Data* refers to unanalyzed user observations<br/>
+*Finding*s capture patterns among data points<br/>
+*Insights* are the actionable opportunities based on research and business goals - what can we do about it?</span>
+
+These key insights have been written by Green Web Foundation. When you see words like "we" and "us" in this section, please assume it's referring solely to Green Web Foundation's perspective. 
+
+- TCS helps fill key gaps in estimating digital estate emissions
+- TCS can't cover everything needed to produce estimates for digital products or services 
 - There is a serious lack of data and transparency from suppliers
 - Employee hardware is more significant than originally assumed
 - Our monitors probably deserve more attention, especially the big ones
 - The digital sustainability industry might be over indexing on green coding too much
 
 
-## The TCS is helping to fill an important gap
+## TCS helps fill key gaps in estimating digital estate emissions
 
-This was designed to address a need (method for assessing digital operations) rather than overall operational emissions 
-Addressing problem: Existing guidance is hard to follow, there’s a gap in doing this specifica subset
-We want to help close the gap in this area
-We wanted to test-drive this.
+When we set [our goal to estimate GWF's emissions for 2023](overview#context---why-this-project) we reviewed what [solutions for small businesses exist](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). When looking at how the most popular SaaS tools approached producing *digital estate* estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond those high level details. 
 
-Stuff that is out of scope
-Heated offices, travel etc. 
+We know from our own experience that spend based metrics are at best a starting point, are riddled with problems and don't really lend any meaningful assistance when considering how to reduce impact as many commercial models rely on free offerings. We felt there's enough research out there by now that we can make the next iteration forward and improve upon this, whilst of course embracing the concept of [progress over perfection](https://branch.climateaction.tech/issues/issue-8/).
 
+Therefore we saw that openly test driving the TCS approach in collaboration with the Scott Logic team was a concrete way to address:
 
+- the relative lack of detailed guidance on estimating an entire digital estate.
+- approaches for how you can move beyond spend as a metric (when open-source data supports that).
+
+Through publically showing our approach, calculations and concerns, together we're think we're playing a part in filling the guidance gap for estimating digital estate emissions using best practices.
+
+**Actionable opportunity**
+
+More organisations should try using the TCS to measure their digital estates, and contribute back to the field through openly sharing their approaches for each section.
+
+## TCS can't cover everything you need to produce estimates for digital products or services 
+
+This part is no secret! The TCS make this completely clear on the [homepage](/). But it's important enough to reiterate. 
+
+Out of scope of this estimation process are other key things that any organisation needs such as buildings, travel and overheads. At GWF, we know we need to have office space, to travel and manage other necessary overheads of our organisation, in order to develop and maintaining our open source tools. 
+
+For example, if someone were to ask us to estimate the emissions associated with our [Green Web Dataset](https://www.thegreenwebfoundation.org/tools/green-web-dataset/), it would be remiss of us not to factor in these other parts of our business. The boundaries or scope is too open to question otherwise.
+
+Therefore, the TCS alone is not enough. Its best seen as a subset of the work that goes into estimating any organisation, or digital product provided by such an organisation.
+
+**Actionable opportunity**
+
+??
 
 
 ## There is a serious lack of data and transparency from suppliers
