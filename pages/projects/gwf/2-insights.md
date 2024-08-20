@@ -20,9 +20,8 @@ These key insights have been written by Green Web Foundation. When you see words
 - TCS helps fill key gaps in estimating digital estate emissions
 - TCS can't cover everything needed to produce estimates for digital products or services 
 - There is a serious lack of data and transparency from suppliers
-- Employee hardware is more significant than originally assumed
-- Our monitors probably deserve more attention, especially the big ones
-- The digital sustainability industry might be over indexing on green coding too much
+- Employee hardware is more significant than originally assumed, especially monitors
+- The digital sustainability industry might be over indexing on green coding
 
 
 ## TCS helps fill key gaps in estimating digital estate emissions
@@ -39,6 +38,7 @@ Therefore we saw that openly test driving the TCS approach in collaboration with
 **Actionable opportunity**
 
 We encourage more organisations to publicly show their approaches, calculations and concerns in detail. Together we can contribute back to the field and fill the guidance gap for estimating digital estate emissions using best practices. This is just as applicable for organisations using the TCS or other standards.
+
 
 ## TCS can't cover everything you need to produce estimates for digital products or services 
 
@@ -74,42 +74,54 @@ The industry appears to be in a chicken and egg situation - everyone is reliant 
 Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support, and sign post others to a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).
 
 
-
-## Employee hardware is more significant than originally assumed
-
-Everyone working on the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out as 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
-
-How confident can we be in the 69% figure? Is it to be trusted? The **short answer** is yes. We think it's *good enough* to demonstrate relative scale and support telling a story around the larger than expected impact of employee hardware versus other parts of the known estate.
-
-The **longer answer** is that we recognise there are a multitude of ways you can poke holes in these estimates. Here's a few we can think of:
-
-* The 69% part is relative to the other categories in the estate. For those categories outside of the employee hardware grouping that we attempted to estimate, we only have medium or low confidence in the methodologies we used. When there are better ways to estimate these parts, the figures might change and the relative percentage of employee hardware may go up or down in response. On top of that, we couldn't produce any kind of estimate for OTS & Open Source Software and SaaS. Once we're able to do that, its likely the relative percentage of employee hardware will go down.
-* The 342 kgCO<sub>2</sub>e/year figure comes from a snapshot in time. 2023 turns out to be a year that GWF ended up bearing responsibility for the emissions of four purchased machines (two refurbed and two new), but no monitor purchases. Is this an average year or an outlier? We can't know confidently until we estimate GWF's digital estate for a few more years.
-* The 342 kgCO<sub>2</sub>e/year figure itself is only an estimate. The accuracy of any estimate should always be viewed with a pinch of salt. It is not a precise measurement. However, we rated the methodologies we used for the two largest parts of this calculation with high confidence. The third methodology with medium confidence. Is there room for improvement in these methodologies? Absolutely. Is there room for improvement in the [PCF](/glossary#product-carbon-footprint-pcf) datasheets produced, or in many cases not produced, by hardware manufacturers? Absolutely. *(Looking at you printer manufacturers.)* We look forward to seeing more organisations run through this process and publicly publish they way they did it so our industry can learn and grow together. 
-
-## Our monitors probably deserve more attention, especially the big ones
+## Employee hardware is more significant than originally assumed, especially monitors
 
 <div style="color:red;">
 Tradeoffs around employee productivity and comfort. 
 it wasn’t easy  to find guidance on reducing “embodied carbon.” – incentives around hardware? What are we incenstived to do/change as a result. 
 </div>
 
-If you'd asked the project team ahead of the project which represented more emissions, laptops or monitors, we'd have all guessed laptops. But surprisingly the data we found shows the organisation's monitors are estimated to produce more emissions on a unit by unit basis. This is true both for the embodied and usage emissions.
+Everyone working on the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out as 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
 
-To illustrate this, below we summarise the estimates found in manufacturer [PCF](/glossary#product-carbon-footprint-pcf) datasheets for laptops and monitors. These are the estimated emissions for a new unit, and before we factor in what percentage of these emissions are allocated to GWF.
+How confident can we be in the 69% figure? Is it to be trusted? The **short answer** is yes. We think it's *good enough* to demonstrate relative scale and support telling a story around the larger than expected impact of employee hardware versus other parts of the known digital estate.
 
-| **Device type** | **Estimate category** | **Lowest value** | **Highest value** |
-| --- | --- | --- | --- |
-| Laptops | Embodied (new only) - kgCO<sub>2</sub>e | 115 | 264 |
-| Monitors | Embodied (new only) - kgCO<sub>2</sub>e | 110 | 435 |
-| Laptops | Usage - kgCO<sub>2</sub>e/year | 4.48 | 18.29 |
-| Monitors | Usage - kgCO<sub>2</sub>e/year | 11.59 | 61.65 |
+The **longer answer** is that we recognise there are a multitude of ways you can poke holes in these estimates. Here's a few we can think of:
 
-Of note, is that the bigger and more high definition the monitor the greater the impact. Also some GWF staff have multiple monitors stationed in their various work locations. It's not always a 1:1 relationship like laptops appear to be. Plus some members of the technical team may use two monitors when doing some types of work. These factors mean an even greater impact from monitors. 
+* The 69% part is relative to the other categories in the estate. Outside of the employee hardware grouping, we only have low to medium confidence in our chosen methodologies. When there are better ways to estimate these parts, the figures might change and the relative percentage of employee hardware may go up or down in response. On top of that, we couldn't produce any kind of estimate for OTS & Open Source Software and SaaS. Once we're able to do that, its likely the relative percentage of employee hardware will go down.
+* The 342 kgCO<sub>2</sub>e/year figure comes from a snapshot in time. 2023 turns out to be a year that GWF ended up bearing responsibility for the emissions of four purchased machines (two refurbed and two new), but no monitor purchases. Is this an average year or an outlier? We can't know confidently until we estimate GWF's digital estate for a few more years.
+* The 342 kgCO<sub>2</sub>e/year figure itself is only an estimate. The accuracy of any estimate should always be viewed with a pinch of salt. It is not a precise measurement. However, we rated the methodologies we used for the two largest parts of this calculation with high confidence. The third methodology with medium confidence. Is there room for improvement in these methodologies? Absolutely. Is there room for improvement in the [PCF](/glossary#product-carbon-footprint-pcf) datasheets produced, or in many cases not produced, by hardware manufacturers? Absolutely. *(Looking at you printer manufacturers.)*
 
-This raises a question: are the emissions from monitors getting enough attention? Is there as much effort going into reducing the impact by manufacturers and users alike, say compared to laptops, or even software iteself. For example Europe's eco-design legislation does not cover monitors <span style="color: red;"> I need to fact check this some more, it may well be wrong. Was reading this - https://repair.eu/news/new-ecodesign-for-sustainable-products-regulation-espr-what-does-it-mean-for-repair/ - HAN</span>
+What's really noteworthy about this section is the impact that buying refurbed, remanufactured or reused hardware has on estimates. [We modelled the impact of our laptop choices](reducing-impact#employee-hardware) and found that simply by choosing a refurbed machine over a new one, you can save nearly 85% of the carbon emissions.
 
-Which leads us to our next insight...
+Another surprise was what the numbers showed us about the impact of monitors. Again, if you'd asked the project team at the start which represented more emissions - laptops or monitors - we'd have all guessed laptops. But surprisingly the data we found shows monitors are estimated to produce more emissions on a unit by unit basis. This is true both for the embodied and usage emissions.
+
+To illustrate this, below we summarise the estimates found in manufacturer [PCF](/glossary#product-carbon-footprint-pcf) datasheets for the laptops and monitors we actually use.
+
+**Embodied (new only) - kgCO<sub>2</sub>e**
+
+| **Device type** | **Lowest value** | **Highest value** |
+| --- |  --- | --- |
+| Laptops | 115 | 264 |
+| Monitors | 110 | 435 |
+| Difference | -5 = -4%  | 171 = 65% |
+
+**Usage - kgCO<sub>2</sub>e/year**
+
+| **Device type** | **Lowest value** | **Highest value** |
+| --- |  --- | --- |
+| Laptops | 4.48 | 18.29 |
+| Monitors | 11.59 | 61.65 |
+| Difference | 7.11 = 159%  | 43.36 = 237% |
+
+<p style="text-align:center; font-style: italic;">For both tables, these estimated emissions are before we factor in what percentage of these emissions are allocated to GWF.</p>
+
+<span style="color:red;">*please can this section be sense-checked by someone?* What this shows is that for embodied carbon, the difference between laptops and monitors is between -4% and 65%. For usage, the difference is much larger. It's between 159% and 237%. Our smallest monitor creates around 1.5 times more emissions than our smallest laptop when running for the same length of time. There's a nearly a 2.5 times difference between running our most powerful laptop and largest monitor.</span>
+
+This raises an important question. What can we really do to minimize the impact of our employee devices beyond buying differently and using them mindfully? We accept that we do need a certain level of equipment to ensure our team are safe and productive. Once you've taken the obvious actions what's left? This takes us into the realm of systemic change, and the promise of the [EU's new eco-design legislation](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products-regulation_en) that came into force in July 2024.
+
+**Actionable opportunities**
+
+Organisations can make a considerable impact on their digital estate emission estimates by choosing to minimise unnecessary hardware and use what they do need efficiently. Procurement departments can prioritise refurbed, remanufactured or reused employee hardware and shortly, consider the ecodesign ratings on specific product groups. As an added bonus, organisations can also choose to support non-profit campaign groups like [repair.eu](https://repair.eu/). 
 
 
 ## The digital sustainability industry might be over indexing on green coding too much
