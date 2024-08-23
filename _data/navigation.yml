@@ -1,14 +1,26 @@
 - name: Technology Carbon Standard
   link: /
-- name: Impact Categories
-  link: /categories
-# - name: Views # TO BE PUBLSIHED WITH RESPECTIVE PAGES
-#   link: /views
+  sublinks:
+    - name: Impact Categories
+      link: /impact-categories
+    - name: Technology Categories
+      link: /technology-categories
+    # - name: Roles
+    #   link: /roles
+# - name: Case Studies
+#   link: /case-studies
 - name: Resources
   link: /resources
-- name: Glossary
-  link: /glossary
-- name: About
-  link: /about
+  sublinks:   
+  # - name: Tools
+  #   link: /resources/tools
+  # - name: Links
+  #   link: /resources/links
+  - name: Glossary
+    link: /resources/glossary
+  # - name: References
+  #   link: /resources/references
 - name: Carbon Estimator
   link: /estimator
+- name: About
+  link: /about

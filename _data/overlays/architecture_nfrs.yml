@@ -63,7 +63,7 @@ CatCManaged:
 
 CatDEndUserDevices:
   selected: true
-  description: Single page view shold be &lt;x kWh energy. No energy use when user on another page/tab
+  description: Single page view should be &lt;x kWh energy. No energy use when user on another page/tab
   link: '#EndUserDevices'
 
 CatDNetworkDataTransfer:

@@ -1,0 +1,51 @@
+- baseUrl: /technology-categories
+  name: Technology Categories
+  link: /technology-categories
+  categories: 
+    # - name: Estate
+    #   link: /technology-categories/estate
+    - name: Cloud Services
+      link: /technology-categories/cloud
+      # categories:
+      # - name: PaaS
+      #   link: /technology-categories/cloud/pass
+    # - name: SaaS
+    #   link: /technology-categories/saas
+    - name: Hardware Life Cycle Emissions
+      link: /technology-categories/lifecycle
+      categories:
+      - name: Embodied Emissions
+        link: /technology-categories/lifecycle/embodied
+      - name: Usage Emissions
+        link: /technology-categories/lifecycle/usage
+      - name: Worked Examples
+        categories:
+        - name: Employee Hardware
+          link: /technology-categories/lifecycle/example/employee
+        - name: Server Hardware
+          link: /technology-categories/lifecycle/example/server
+    - name: Data
+      link: /technology-categories/data
+    - name: Networks
+      link: /technology-categories/networks
+- baseUrl: /impact-categories
+  name: Impact Categories
+  link: /impact-categories
+  categories: 
+    - name: Upstream Emissions
+      link: /impact-categories/upstream
+    - name: Operational Emissions
+      link: /impact-categories/operational
+    - name: Downstream Emissions
+      link: /impact-categories/downstream
+- baseUrl: /roles
+  name: Roles
+  link: /roles
+  categories: 
+    - name: Architecture
+      link: /roles/architecture
+      categories:
+        - name: Strategy
+          link: /roles/architecture/strategy
+        - name: NFRs
+          link: /roles/architecture/nfrs
