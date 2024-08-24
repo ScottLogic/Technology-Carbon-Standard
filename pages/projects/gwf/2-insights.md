@@ -16,17 +16,22 @@ We've summarised the key points of interest arising from estimating our digital 
 
 ## Summary of insights
 
-- [Digital technology is not impact free and reductions are possible](#insight-1)
-- [TCS helps fill key gaps in estimating digital estate emissions](#insight-2)
-- [TCS can't cover everything needed to produce estimates for digital products or services](#insight-3)
-- [The digital sustainability industry needs to look beyond green coding to influencing impactful structural change](#insight-4)
-- [There's a serious lack of data and transparency from suppliers](#insight-5)
-- [Employee hardware is more significant than originally assumed, especially monitors](#insight-6)
+1. [Digital technology is not impact free and reductions are possible](#insight-1)
+
+2. [TCS helps fill key gaps in estimating digital estate emissions](#insight-2)
+
+3. [TCS can't cover everything needed to produce estimates for digital products or services](#insight-3)
+
+4. [The digital sustainability industry needs to look beyond green coding to influencing impactful structural change](#insight-4)
+
+5. [There's a serious lack of data and transparency from suppliers](#insight-5)
+
+6. [Employee hardware is more significant than originally assumed, especially monitors](#insight-6)
 
 ---
 
 {: #insight-1}
-## Digital technology is not impact free and reductions are possible
+## 1. Digital technology is not impact free and reductions are possible
 
 **Actionable opportunity**
 
@@ -54,7 +59,7 @@ We recognise that making changes to our own practices is easier for us compared 
 ---
 
 {: #insight-2}
-## TCS helps fill key gaps in estimating digital estate emissions
+## 2. TCS helps fill key gaps in estimating digital estate emissions
 
 **Actionable opportunity**
 
@@ -76,7 +81,7 @@ Therefore we saw that openly test driving the TCS approach in collaboration with
 ---
 
 {: #insight-3}
-## TCS can't cover everything you need to produce estimates for digital products or services 
+## 3. TCS can't cover everything you need to produce estimates for digital products or services 
 
 **Actionable opportunity**
 
@@ -97,7 +102,7 @@ Therefore, the TCS alone is not enough if you want to produce an estimate for a 
 ---
 
 {: #insight-4}
-## The digital sustainability industry needs to look beyond green coding to influencing impactful structural change
+## 4. The digital sustainability industry needs to look beyond green coding to influencing impactful structural change
 
 **Actionable opportunity**
 
@@ -113,14 +118,14 @@ We see a risk that as the digital sustainability industry starts to take off, it
 
 If all the improved "green software" we work hard to produce fails to lead us to causing less harm to people over time, then we've somewhat missed the main challenge. Chris Adams from our team, has written a short personal blog on this: [Being in the Green Driving Foundation](https://rtl.chrisadams.me.uk/2024/05/being-in-the-green-driving-foundation/).
 
-The biggest impacts come from sources other than code. It's the infrastructure and hardware. Things like where and how we site data centers, the carbon intensity of energy grids around the world and unhealthy practices like [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence). We need to find a way to mobilise more leadership teams to use their resources to **affect structural change**. 
+The biggest impacts come from sources other than code. It's more often more to do with infrastructure, hardware and how we share data. Things like where and how we site data centers, the carbon intensity of energy grids around the world and unhealthy practices like [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence). We need to find a way to mobilise more leadership teams to use their resources to **affect structural change**. We get into some specifics in insights 5 and 6.
 
 [To the top](#top)
 
 ---
 
 {: #insight-5}
-## There's a serious lack of data and transparency from suppliers
+## 5. There's a serious lack of data and transparency from suppliers
 
 **Actionable opportunities**
 
@@ -145,7 +150,7 @@ The industry appears to be in a chicken and egg situation - everyone is reliant 
 ---
 
 {: #insight-6}
-## Employee hardware is more significant than originally assumed, especially monitors
+## 6. Employee hardware is more significant than originally assumed, especially monitors
 
 **Actionable opportunities**
 
@@ -190,13 +195,6 @@ To illustrate this, below we summarise the estimates found in manufacturer [PCF]
 What this shows is that for embodied carbon, the difference between laptops and monitors is between -4% and 65%. For usage, the difference is much larger. It's between 159% and 237%. Our smallest monitor creates around 1.5 times more emissions than our smallest laptop when running for the same length of time. There's a nearly a 2.5 times difference between running our most powerful laptop and largest monitor.
 
 This raises an important question. What can we really do to minimize the impact of our employee devices beyond buying differently and using them mindfully? We accept that we do need a certain level of equipment to ensure our team are safe and productive. Once you've taken the obvious actions what's left? This takes us into the realm of systemic change, and the promise of the [EU's new eco-design legislation](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products-regulation_en) that came into force in July 2024.
-
-
-[To the top](#top)
-
----
-
-
 
 [To the top](#top)
 
