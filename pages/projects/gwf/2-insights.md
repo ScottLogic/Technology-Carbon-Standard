@@ -9,11 +9,14 @@ project: gwf
 
 # Key insights
 
-These key insights have been written by Green Web Foundation. When you see words like "we" and "us" in this section, please assume it's referring solely to Green Web Foundation's perspective. 
+We've summarised the key points of interest arising from estimating our digital estate using the TCS. We also share the actionable opportunities that we believe will address some of the key sticking points that we've experienced in this process, many of which require systemic change to the way the digital industry operates.
+
+*Quick note: When you see words like "we" and "us" in this section, please assume it's referring to the Green Web Foundation's perspective.*
+
 
 ## Summary of insights
 
-- [Using digital technology is not impact free ](#insight-1)
+- [Digital technology is not impact free and reductions are possible](#insight-1)
 - [TCS helps fill key gaps in estimating digital estate emissions](#insight-2)
 - [TCS can't cover everything needed to produce estimates for digital products or services](#insight-3)
 - [The digital sustainability industry needs to look beyond green coding to influencing impactful structural change](#insight-4)
@@ -23,33 +26,27 @@ These key insights have been written by Green Web Foundation. When you see words
 ---
 
 {: #insight-1}
-## Using digital technology is not impact free and reductions are possible
-
-There's still a prevalent misconception that the digital technologies sector is green by default, and there's no carbon impact associated with using digital tools. This isn't the case. It's common to see the sector estimated as responsible for between [2.1 and 3.9% of global greenhouse gas emissions](https://www.sciencedaily.com/releases/2021/09/210910121715.htm) and growing rapidly as society adopts more AI. This is not nothing.
-
-Whilst the impact is smaller than other sectors - [agriculture is around 12%](https://www.statista.com/topics/10348/agriculture-emissions-worldwide/) and [transport is around 33%](https://www.iea.org/energy-system/transport) - its more than enough to merit that the industry becomes more conscious of the consequences of it's use.
-
-This project estimates GWF's digital estate emissions for 2023 are [*at least* 496 kgCO<sub>2</sub>e](overview#results-summary). To put this figure into perspective it's estimated the average cow raised for beef in Scotland emits around [2,600 kgCO<sub>2</sub>e per year](https://www.gov.scot/publications/resas-climate-change-evidence-dairy-farmer-led-group/pages/3/).  An economy class return flight from [London to Berlin is 523 kgCO<sub>2</sub>](https://co2.myclimate.org/en/portfolios?calculation_id=7289065). 
-
-When taken in isolation you might conclude digital estate emissions are too small a figure to care about. But there are a couple of key things to bear in mind.
-
-**We're very small.** We're a six person team operating a lean non-profit organisation, with a relatively straightforward set of digital products. We'd expect our emissions estimate to be small.
-
-**We've already optimised everything we can**. Our staff work with us because they already care about digital sustainability, and it's a mindset baked into each of us. We think we've exhausted the most *impactful* commonly cited green coding guidance.
-
-We've chosen our hosting suppliers carefully based on a number of criteria such as use of renewable energy, transparency and quality of service. We've optimised our digital services as much as feasible. Our websites are lean, code is efficient enough and we have high utilisation rates on our cloud services. We monitor the impact of code changes on our Green Web Platform using the [Green Metrics tool](https://www.green-coding.io/projects/green-metrics-tool/). We're at a point where further code optimisation might be fun to do, but the gains aren't likely to reduce our estimates meaningfully. We have a BYOD policy for employee devices and purchase refurbed equipment when possible. For Saas and off the shelf software, we default to services that are open source. (We would default to those with a verified, lower carbon estimate if we could. But the data isn't there to support that decision making yet, [more on that to come]((#insight-5)).
-
-We don't know the *exact* reduction in estimated emissions from this effort as we don't have a before and after picture. In [our reducing impact](/reducing-impact) section we modelled reductiions arising from two areas, employee hardware and cloud services. We found that adjustments in just those two areas are estimated to have reduced our estimates by 268 kgCO<sub>2</sub>e. So without making those efforts, our estimates would have been *at least* 764 kgCO<sub>2</sub>e. **That's roughly a one third reduction.**
-
-We recognise that making changes to our own practices is easier for us compared to larger organisations. Such organisations will have the same problems to address but at much more extreme rates of complexity, speed and cost.
-
-But that means the opportunities for making savings are likely to be greater too. 
-
-Scott Logic's [2023 Environmental Impact Report](https://www.scottlogic.com/news/making-good-progress-towards-net-zero) details their digital emissions for the first time. Whilst there are some differences between our methodologies, their digital estate is estimated at 158,000 kgCO<sub>2</sub>e (158 tonnes CO<sub>2</sub>e). A one third reduction there is not trivial.
+## Digital technology is not impact free and reductions are possible
 
 **Actionable opportunity**
 
-> It is valuable for organisations to take the time to measure their digital estate emissions, and openly share them. This helps to dispel the myth that digital is not impact free both internally and within the wider industry. It also supports education around what steps can be taken to reduce impact.
+**It's valuable for organisations to take the time to measure their digital estate emissions, and openly share them. This helps to dispel the myth that digital is not impact free both internally within teams and around the wider industry. It also supports education around what steps can be taken to reduce impact.**
+
+**The findings**
+
+There's still a prevalent misconception that the digital technologies sector is green by default, and there's no carbon impact associated with using digital tools. Check the appendix for our [insight into why we think that might be](appendix/#green-by-default).
+
+But we're starting to know better. There are now examples of organisations having a go at estimating their overall impact from digital, and for many it's surprising. Recent studies by digitally-enabled service based organisations, like [Salesforce](https://podcast.greensoftware.foundation/e/vnwrkjm8-the-week-in-green-software-net-zero-cloud) and [ABN Amro](https://www.abnamro.com/en/information/sustainability-reporting-and-publications?selectedTabs=Reporting), estimate that digital accounts for 40 - 50% of their organisation’s greenhouse gas emissions. Scott Logic's [2023 Environmental Impact Report](https://www.scottlogic.com/news/making-good-progress-towards-net-zero) details their digital emissions for the first time estimated at 158 tonnes CO<sub>2</sub>e, 15% of their organisation's total.
+
+Our own 2023 digital estate emissions are [*at least* 496 kgCO<sub>2</sub>e](overview#estimates-summary). To put this figure into perspective it's estimated the average cow raised for beef in Scotland emits around [2,600 kgCO<sub>2</sub>e per year](https://www.gov.scot/publications/resas-climate-change-evidence-dairy-farmer-led-group/pages/3/).  An economy class return flight from [London to Berlin is 523 kgCO<sub>2</sub>](https://co2.myclimate.org/en/portfolios?calculation_id=7289065). If taken in isolation, you might continue to conclude that the digital impact is too small work on. But there are a couple of key things to bear in mind.
+
+**We're very small.** We're a six person team operating a lean non-profit organisation, with a relatively straightforward set of digital products. We'd expect our emissions estimate to be small. Unfortunately we haven't done the rest of our 2023 emissions reporting yet to understand the relative percentage of that. But our napkin based figures suggest it'll be less than 10%, and that's mainly due to our travel.
+
+**We've already optimised everything we can**. We think we've exhausted the most *impactful* commonly cited green coding guidance. We've chosen our hosting suppliers carefully based on a number of criteria such as use of renewable energy, transparency and quality of service. We've optimised our digital services as much as feasible. Our websites are lean, code is efficient enough and we have high utilisation rates on our cloud services. We monitor the impact of code changes on our Green Web Platform using the [Green Metrics tool](https://www.green-coding.io/projects/green-metrics-tool/). We're at a point where further code optimisation might be fun to do, but the gains aren't likely to reduce our estimates meaningfully. We have a BYOD policy for employee devices and purchase refurbed equipment when possible. For Saas and off the shelf software, we default to services that are open source. We would default to those with a verified, lower carbon estimate if we could. But the data isn't there to support that decision making yet, [more on that to come]((#insight-5)).
+
+We don't know the *exact* reduction in estimated emissions from this effort as we don't have a before and after picture. In [our reducing impact](/reducing-impact) section we modelled reductiions arising from two areas, employee hardware and cloud services. We found that adjustments in just those two areas are estimated to have reduced our estimates by 268 kgCO<sub>2</sub>e. So without making those efforts, our estimates would have been *at least* 764 kgCO<sub>2</sub>e. **That's roughly a one third reduction.**
+
+We recognise that making changes to our own practices is easier for us compared to larger organisations. Such organisations will have the same problems to address but at much more extreme rates of complexity, speed and cost. But that means the opportunities for making savings are likely to be greater too. A one third reduction from a much bigger number is not a trivial impact to make.
 
 
 [To the top](#top)
@@ -58,6 +55,12 @@ Scott Logic's [2023 Environmental Impact Report](https://www.scottlogic.com/news
 
 {: #insight-2}
 ## TCS helps fill key gaps in estimating digital estate emissions
+
+**Actionable opportunity**
+
+**More organisations should publicly show their approaches, calculations and concerns *in detail*. This supports building the field and filling the guidance gap for estimating digital estate emissions using best practices. This is just as applicable for organisations using the TCS or other standards.**
+
+**The findings**
 
 When we set [our goal to estimate GWF's emissions for 2023](overview#context---why-this-project) we reviewed what [solutions for small businesses exist](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). Looking at how the most popular SaaS tools approached producing *digital estate* estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond the high level. 
 
@@ -68,10 +71,6 @@ Therefore we saw that openly test driving the TCS approach in collaboration with
 - the relative lack of detailed guidance on estimating an entire digital estate.
 - approaches for how you can move beyond spend as a metric (when open-source data supports that).
 
-**Actionable opportunity**
-
-We encourage more organisations to publicly show their approaches, calculations and concerns in detail. Together we can contribute back to the field and fill the guidance gap for estimating digital estate emissions using best practices. This is just as applicable for organisations using the TCS or other standards.
-
 [To the top](#top)
 
 ---
@@ -79,17 +78,19 @@ We encourage more organisations to publicly show their approaches, calculations 
 {: #insight-3}
 ## TCS can't cover everything you need to produce estimates for digital products or services 
 
-This part is no secret! TCS make this completely clear on the [homepage](/). But it's important enough to reiterate. 
+**Actionable opportunity**
+
+**Organisations should make the scope boundaries they use abundantly clear when producing data about the emissions associated with a digital product or service they provide.**
+
+**The findings**
+
+This part is no secret - TCS make this completely clear on the [homepage](/). But it's important enough to reiterate. 
 
 Out of scope from TCS are other key things that any organisation needs such as buildings, travel and overheads. All of these things also contribute to an organisation's emissions.
 
 For example, if someone were to ask us to estimate the emissions associated with our [Green Web Dataset](https://www.thegreenwebfoundation.org/tools/green-web-dataset/), it would be remiss of us not to factor in these other parts of our business. We know we need to have office space, travel and manage other necessary overheads of our organisation, in order to develop and maintaining our open source tools. Excluding these items from our reporting scope would seem remiss.
 
-Therefore, the TCS alone is not enough if you want to produce an estimate for a given digital product or service. Its best seen as a subset, a *vital* subset, of the work that's needed.
-
-**Actionable opportunity**
-
-Organisations responding to transparency requests from customers around the emissions associated with a digital product or service should make the scope boundaries they use abundantly clear. 
+Therefore, the TCS alone is not enough if you want to produce an estimate for a given digital product or service. It's best seen as a subset, a *vital* subset, of the work that's needed.
 
 [To the top](#top)
 
@@ -98,19 +99,21 @@ Organisations responding to transparency requests from customers around the emis
 {: #insight-4}
 ## The digital sustainability industry needs to look beyond green coding to influencing impactful structural change
 
-All this is to say, we recognise our journey so far, whilst certainly challenging at times, is less demanding than others. We believe we've exhausted the available guidance on how to make *impactful* changes in our own organisational context, eg the things we can influence directly.
+**Actionable opportunity**
 
-And now we're in a position of wondering what next? We've optimised what we can and even if everyone could get there tomorrow, we know it's not enough to counter the harms from this growing industry. 
+**We need more investment into creating palatable ways for senior leaders to marshall resources into initiatives that go beyond their immediate organisation, and instead contribute to systemic changes.**
 
-As the digital sustainability industry starts to take off, there is a risk that it becomes synonynous with only building more efficient software. A practice commonly referred to as "*green coding*" or "*[green software](http://127.0.0.1:4000/glossary#green-software)*". Whilst this is definitely an important part of digital sustainability, there is more to it than that. The missing part we need is how to affect **structural change**. Chris from our team, have written a short post about this on his personal blog: [Being in the Green Driving Foundation](https://rtl.chrisadams.me.uk/2024/05/being-in-the-green-driving-foundation/).
+**The findings**
 
-If all the improved "green software" we work hard to produce fails to lead to us using less resources (energy, water, rare raw materials) and causing less harm to people over time, then we've somewhat missed the main challenge. 
+We believe we've exhausted the available guidance on how to make *impactful* changes in our own organisational context. Mostly this has involved our own individual efforts around efficiency or choosing different suppliers. We've changed what we feasibly can. What can we, or another organisation in our position, do next?
 
-The biggest impacts come from sources other than code. It's the infrastructure. As an example, the [UK has recently set a goal for a fossil-free grid by 2030](https://www.theguardian.com/politics/article/2024/jun/06/could-labour-gb-energy-plan-future-proof-power-generation-uk). This is a structural change that's come about through democracy rather than changing coding practice.
+It's widely acknowledged that the kind of climate action we need happens at [both the individual and system level](https://www.forbes.com/sites/briankateman/2022/02/15/to-save-the-planet-we-need-systemic-change-but-your-individual-choices-still-matter/). We want to see more of this in the digital industry, and more tech firms being brave enough to support system change. Heroic individual actions from any one firm is not enough to counter the harms from digital's growing electricity consumption. 
 
-**Actionable opportunities**
+We see a risk that as the digital sustainability industry starts to take off, it becomes synonynous with only building more efficient software. This is a practice commonly referred to as "*green coding*" or "*[green software](glossary#green-software)*". This is definitely an important part of digital sustainability and a skill we want to foster. Its one of the more palatable things to buy into at organisation leadership level because it immediately impacts organisation emission estimates and often profitability. A great starting point. But not enough.
 
-There are new skills as a digital industry that we need to pick up. Green coding is one such important skill. This is seen as one of the easier things to buy into at organisation leadership level because politically its much more palatable, and immediately impacts organisation emission estimates and often profitability. However, the real levers are elsewhere and we need more investment for creating guidance that go beyond immediate changes.
+If all the improved "green software" we work hard to produce fails to lead us to causing less harm to people over time, then we've somewhat missed the main challenge. Chris Adams from our team, has written a short personal blog on this: [Being in the Green Driving Foundation](https://rtl.chrisadams.me.uk/2024/05/being-in-the-green-driving-foundation/).
+
+The biggest impacts come from sources other than code. It's the infrastructure and hardware. Things like where and how we site data centers, the carbon intensity of energy grids around the world and unhealthy practices like [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence). We need to find a way to mobilise more leadership teams to use their resources to **affect structural change**. 
 
 [To the top](#top)
 
@@ -118,6 +121,12 @@ There are new skills as a digital industry that we need to pick up. Green coding
 
 {: #insight-5}
 ## There's a serious lack of data and transparency from suppliers
+
+**Actionable opportunities**
+
+**Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).**
+
+**The findings**
 
 Finding publicly available emissions estimates data for common software is basically impossible. In two areas, [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) and [SaaS](/projects/green-web-foundation/operational#saas-services), we didn't manage to find any kind of public data for a single supplier to base an estimate on. This means we've got gaps in our understanding for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces (GDrive and Calendars), Trello, Zulip, Miro, Brevo, Sentry, 1password, 34SP (WordPress hosting and emails).
 
@@ -131,16 +140,18 @@ The industry appears to be in a chicken and egg situation - everyone is reliant 
 
 > Users of sustainability information increasingly expect such information to be findable, comparable and machine-readable in digital formats. Member States should be able to require that undertakings subject to the sustainability reporting requirements of Directive 2013/34/EU make their management reports available on their websites, free of charge to the public. ([clause 55](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2464))
 
-**Actionable opportunities**
-
-Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support, and sign post others to a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).
-
 [To the top](#top)
 
 ---
 
 {: #insight-6}
 ## Employee hardware is more significant than originally assumed, especially monitors
+
+**Actionable opportunities**
+
+**Organisations can make a considerable impact on their digital estate emission estimates by choosing to minimise unnecessary hardware and use what they do need efficiently. Procurement departments can prioritise refurbed, remanufactured or reused employee hardware and shortly, consider the ecodesign ratings on specific product groups. As an added bonus, organisations can also choose to support non-profit campaign groups like [repair.eu](https://repair.eu/).**
+
+**The findings**
 
 Everyone working on the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out as 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
 
@@ -180,9 +191,6 @@ What this shows is that for embodied carbon, the difference between laptops and 
 
 This raises an important question. What can we really do to minimize the impact of our employee devices beyond buying differently and using them mindfully? We accept that we do need a certain level of equipment to ensure our team are safe and productive. Once you've taken the obvious actions what's left? This takes us into the realm of systemic change, and the promise of the [EU's new eco-design legislation](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products-regulation_en) that came into force in July 2024.
 
-**Actionable opportunities**
-
-Organisations can make a considerable impact on their digital estate emission estimates by choosing to minimise unnecessary hardware and use what they do need efficiently. Procurement departments can prioritise refurbed, remanufactured or reused employee hardware and shortly, consider the ecodesign ratings on specific product groups. As an added bonus, organisations can also choose to support non-profit campaign groups like [repair.eu](https://repair.eu/). 
 
 [To the top](#top)
 

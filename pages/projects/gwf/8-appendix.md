@@ -9,7 +9,19 @@ project: gwf
 
 Here's a few things we worked on in this project that we wanted to write about, but that didn't necessarily feel like the right fit in the other sections. We've included them here.
 
+- What's contributed to misconception that digital technologies are green by default?
 - [Setting up the Green Metrics Tools](#setting-up-the-Green-Metrics-Tools)
+
+{: #green-by-default}
+## What's contributed to misconception that digital technologies are green by default?
+
+There's still a prevalent misconception that the digital technologies sector is green by default, and there's no carbon impact associated with using digital tools. This has probably stemmed from two places.
+
+Firstly, the estimated emissions from a single digital transaction end up being very small. Digital transactions are things like sending an email, performing an API call, loading a web page, saving a file to the cloud etc. Let's use emails as an example. Mike Berners-Lee estimated that a single email could range between 0.03g and 26g in his book ‘How Bad are Bananas?: The Carbon Footprint of Everything’ (2020). Whereas an average beef steak (200g pre-cooked weight) is estimated to be 20kg. Your email seems tiny by comparison. But when we factor in how many of these transactions happen every day, the impact scales up quickly. According to Statista, more than 306 billion emails were sent in 2021. The problem is that for most of us, we don't have a sense of that scale. So we're likely to dismiss it as a concern. 
+
+Secondly, the digital technologies sector is estimated to be significantly smaller than other sectors. [Agriculture is around 12%](https://www.statista.com/topics/10348/agriculture-emissions-worldwide/) of global greenhouse gas emissions and [transport around 33%](https://www.iea.org/energy-system/transport). Whereas the digital sector is estimated to be responsible for between [2.1 and 3.9%](https://www.sciencedaily.com/releases/2021/09/210910121715.htm). It is however estimated to grow rapidly as society adopts more AI. Even so, if you're looking for a starting point when channelling your emissions reduction efforts, it's likely most organisations have bigger fish to fry.
+
+So, the myth that using digital gives you a free pass has been somewhat understandable. 
 
 ## Setting up the Green Metrics Tools
 
