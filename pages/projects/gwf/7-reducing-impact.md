@@ -37,7 +37,7 @@ $$ Attributed\_Carbon = Embodied\_Carbon \times Condition\_Factor \times BYOD\_A
 | Apple 2023 MacBook Air 13.6" M2 | [Apple MacBook Air M2](https://www.apple.com/environment/pdf/products/notebooks/M2_MacBook_Air_PER_June2022.pdf)| 171 | 133  | New (100%) | Yes | 57% | 76 |
 | **Laptop Total** | | | | | | | **437** |
 
-With two refurbished and two new laptops, we previously calculated a total of **186 kgCO<sub>2</sub>e**. If they were all purchased new, that total becomes **437 kgCO<sub>2</sub>e**. 
+With two refurbished and two new laptops, we previously calculated a total of 186 kgCO<sub>2</sub>e. If they were all purchased new, that total becomes 437 kgCO<sub>2</sub>e. That's a difference of **251 kgCO<sub>2</sub>e**.
 
 > Purchasing refurbished hardware clearly brings significant carbon savings.
 
@@ -59,7 +59,7 @@ $$ 48.05\ kWh/year \times 0.364\ kgCO_2e/kWh = 17.49\ kgCO_2e/year $$
 
 Just by using a cloud service provider that does not commit to only using renewable energy sources, the operational emissions leap from less than **1 kgCO<sub>2</sub>e/year** to over **17 kgCO<sub>2</sub>e/year**. 
 
-> It is a massive saving in carbon emissions for simply choosing a renewable energy cloud provider.
+> It's a massive saving in carbon emissions for simply choosing a renewable energy cloud provider. When changes like this are made at scale, the impacts from emission reduction are likely to be significant.
 
 ---
 

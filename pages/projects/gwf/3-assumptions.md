@@ -11,9 +11,9 @@ project: gwf
 
 Digital sustainability and decarbonising digital are not the same thing. Sustainability, or understanding ones wider impact, involves a much broader set of considerations covering other planetary boundaries (water, rare raw materials, land use) and social implications. 
 
-This project narrowed in on carbon emissions as a starting lens to begin understanding these questions.
+This project narrowed in on carbon emissions as a starting lens to begin understanding these considerations.
 
-Hannah, from GWF, has spoken a lot about this issue in the past. Her fellowship project, [doingthedoughnut.tech](https://doingthedoughnut.tech/), goes into this in a lot more detail.
+Hannah, from GWF, has spoken a lot about this issue in the past. Her fellowship project, [doingthedoughnut.tech](https://doingthedoughnut.tech/), goes into this more detail.
 
 
 
@@ -50,6 +50,10 @@ We assumed that detailed-level estimates would be characterised as:
 - Helpful for understanding what can be changed to reduce impact.
 
 Our approaches to producing these high-level, and when relevant detailed estimates, are documented in this project write-up.
+
+## Using publicly available data
+
+One of core values at GWF is to work in the open, in part because we believe this is an important way to foster faster action on the climate crisis. Therefore we decided early on that we'd only rely on data that had already been openly published. This meant we would not rely on tools, methodologies or datasets behind paywalls. 
 
 
 ## Units

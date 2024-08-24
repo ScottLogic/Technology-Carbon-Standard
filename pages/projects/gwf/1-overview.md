@@ -9,7 +9,7 @@ project: gwf
 
 # Overview
 
-This project collaboration between [Green Web Foundation](https://www.thegreenwebfoundation.org/) and [Scott Logic](https://www.scottlogic.com/) ran in mid 2024. It trialled using an early version of the TCS framework to estimate the carbon emissions arising from Green Web Foundation's digital estate. This write-up provides full documentation of the decisions, methodology and learning points so others can learn from what we experienced.
+This project collaboration between [Green Web Foundation](https://www.thegreenwebfoundation.org/) and [Scott Logic](https://www.scottlogic.com/) ran in mid 2024. It trialled using an early version of the TCS framework to estimate the carbon emissions arising from Green Web Foundation's digital estate, using publicly available data. This write-up provides full documentation of the decisions, methodology and learning points so others can learn from what we experienced.
 
 - [Results summary](#results-summary)
 - [Key insights summary](#key-insights)
@@ -23,7 +23,11 @@ This project collaboration between [Green Web Foundation](https://www.thegreenwe
 ![GWF Emissions Treemap](/assets/images/projects/GWF/gwf-emissions-treemap.png)
 <p class="italic text-center">Visual summary of carbon equivalent emission estimates for Green Web Foundation 1st Jan - 31st Dec 2023.</p>
 
-By far the biggest area of estimated emissions comes from Green Web Foundation's (GWF) purchase and use of employee hardware eg laptops, monitors, printers and office internet. This accounts for 69% of the emissions. 38% arising from the purchase of employee hardware, 23% arising from the use of it and a further 8% from running internet in office spaces. 
+To put this into perspective it's estimated [the average cow raised for beef in Scotland emits in the region of 2,600 kgCO<sub>2</sub>e per year](https://www.gov.scot/publications/resas-climate-change-evidence-dairy-farmer-led-group/pages/3/).  An economy class return flight from [London to Berlin is 523 kgCO<sub>2</sub>](https://co2.myclimate.org/en/portfolios?calculation_id=7289065).
+
+### Results summary by category area
+
+By far the biggest area of estimated emissions comes from Green Web Foundation's (GWF) purchase and use of employee hardware eg laptops, monitors, printers and office internet. This accounts for 69% of the emissions. 38% arising from the purchase of employee hardware, 23% arising from the use of it and a further 8% from running internet in GWF office spaces. 
 
 Next we estimated that 24% of the emissions arise from the end-use of our digital services, such as websites and the Green Web Platform. 
 
@@ -62,11 +66,12 @@ Lastly, the remaining 2% comes from data transfer across the internet arising fr
 
 ## Key insights
 
-- TCS helps fill key gaps in estimating digital estate emissions
-- TCS can't cover everything needed to produce estimates for digital products or services 
-- There is a serious lack of data and transparency from suppliers
-- Employee hardware is more significant than originally assumed, especially monitors
-- The digital sustainability industry needs to look beyond green coding to influencing impactful structural change
+- [Using digital technology is not impact free ](insights/#insight-1)
+- [TCS helps fill key gaps in estimating digital estate emissions](insights/#insight-2)
+- [TCS can't cover everything needed to produce estimates for digital products or services](insights/#insight-3)
+- [The digital sustainability industry needs to look beyond green coding to influencing impactful structural change](insights/#insight-4)
+- [There's a serious lack of data and transparency from suppliers](insights/#insight-5)
+- [Employee hardware is more significant than originally assumed, especially monitors](insights/#insight-6)
 
 [Insights full write-up](Insights)
 
@@ -76,7 +81,7 @@ Lastly, the remaining 2% comes from data transfer across the internet arising fr
 
 ## Context - why this project?
 
-At the beginning of 2024, Green Web Foundation (GWF) set a goal to estimate the carbon emissions of all the organisation's activities for the first time. Given the GWF team's knowledge of estimating digital emissions, the team decided to split the project into two:
+At the beginning of 2024, Green Web Foundation (GWF) set a goal to estimate the carbon emissions of all the organisation's activities for the first time. The Given the GWF team's knowledge of estimating digital emissions, the team decided to split the project into two:
 
 1. Emissions from their digital estate.
 2. Emissions arising from other business activities such as travel, office estate and other non-digital operational activities.
