@@ -67,14 +67,14 @@ We recognise that making changes to our own practices is easier for us compared 
 
 **The findings**
 
-When we set [our goal to estimate GWF's emissions for 2023](overview#context---why-this-project) we reviewed what [solutions for small businesses exist](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). Looking at how the most popular SaaS tools approached producing _digital estate_ estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond the high level.
+When we set [our goal to estimate GWF's emissions for 2023](overview#context---why-this-project) we reviewed what [solutions for small businesses existed](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). Looking at how the most popular SaaS tools approached producing _digital estate_ estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond the high level.
 
-We know from our own experience that spend based metrics are best viewed as a starting point. They're riddled with problems and don't lend any meaningful assistance when considering how to reduce impact as many commercial models rely on free, or reduced, offerings. We felt there's enough research out there by now that we can make the next iteration forward and improve upon this. Whilst of course embracing the concept of [progress over perfection](https://branch.climateaction.tech/issues/issue-8/).
+We know from our own experience that spend based metrics are best viewed as a starting point. They're riddled with problems and don't lend any meaningful assistance when considering how to reduce impact as many commercial models rely on free, or reduced, offerings. We felt there's enough research out there by now that we can make the next iteration forward and improve upon this. Whilst, of course, still embracing the concept of [progress over perfection](https://branch.climateaction.tech/issues/issue-8/).
 
 Therefore we saw that openly test driving the TCS approach in collaboration with the Scott Logic team was a concrete way to address:
 
 - the relative lack of detailed guidance on estimating an entire digital estate.
-- approaches for how you can move beyond spend as a metric (when open-source data supports that).
+- approaches for how to move beyond spend as a metric (when open-source data supports that).
 
 [To the top](#top)
 
@@ -90,7 +90,7 @@ Therefore we saw that openly test driving the TCS approach in collaboration with
 
 **The findings**
 
-This part is no secret - TCS make this completely clear on the [homepage](/). But it's important enough to reiterate.
+This part is no secret - TCS makes this completely clear on the [homepage](/). But it's important enough to reiterate.
 
 Out of scope from TCS are other key things that any organisation needs such as buildings, travel and overheads. All of these things also contribute to an organisation's emissions.
 
@@ -114,11 +114,11 @@ Therefore, the TCS alone is not enough if you want to produce an estimate for a 
 
 We believe we've exhausted the available guidance on how to make _impactful_ changes in our own organisational context. Mostly this has involved our own individual efforts around efficiency or choosing different suppliers. We've changed what we feasibly can. What can we, or another organisation in our position, do next?
 
-It's widely acknowledged that the kind of climate action we need happens at [both the individual and system level](https://www.forbes.com/sites/briankateman/2022/02/15/to-save-the-planet-we-need-systemic-change-but-your-individual-choices-still-matter/). We want to see more of this in the digital industry, and more tech firms being brave enough to support system change. Heroic individual actions from any one firm is not enough to counter the harms from digital's growing electricity consumption.
+It's widely acknowledged that the kind of climate action we need happens at [both the individual and system level](https://www.forbes.com/sites/briankateman/2022/02/15/to-save-the-planet-we-need-systemic-change-but-your-individual-choices-still-matter/). We want to see more of this in the digital industry, and more tech firms being brave enough to support systemic change. Heroic individual actions from any one firm is not enough to counter the harms from digital's growing electricity consumption.
 
 We see a risk that as the digital sustainability industry starts to take off, it becomes synonynous with only building more efficient software. This is a practice commonly referred to as "_green coding_" or "_[green software](glossary#green-software)_". This is definitely an important part of digital sustainability and a skill we want to foster. Its one of the more palatable things to buy into at organisation leadership level because it immediately impacts organisation emission estimates and often profitability. A great starting point. But not enough.
 
-If all the improved "green software" we work hard to produce fails to lead us to causing less harm to people over time, then we've somewhat missed the main challenge. Chris Adams from our team, has written a short personal blog on this: [Being in the Green Driving Foundation](https://rtl.chrisadams.me.uk/2024/05/being-in-the-green-driving-foundation/).
+If all the improved "green software" we work hard to produce fails to lead to us causing less harm to people over time, then we've somewhat missed the main challenge. Chris Adams from our team, has written a short personal blog on this: [Being in the Green Driving Foundation](https://rtl.chrisadams.me.uk/2024/05/being-in-the-green-driving-foundation/).
 
 The biggest impacts come from sources other than code. It's more often more to do with infrastructure, hardware and how we share data. Things like where and how we site data centers, the carbon intensity of energy grids around the world and unhealthy practices like [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence). We need to find a way to mobilise more leadership teams to use their resources to **affect structural change**. We get into some specifics in insights 5 and 6.
 
@@ -136,7 +136,7 @@ The biggest impacts come from sources other than code. It's more often more to d
 
 **The findings**
 
-Finding publicly available emissions estimates data for common software is basically impossible. In two areas, [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) and [SaaS](/projects/green-web-foundation/operational#saas-services), we didn't manage to find any kind of public data for a single supplier to base an estimate on. This means we've got gaps in our understanding for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces (GDrive and Calendars), Trello, Zulip, Miro, Brevo, Sentry, 1password, 34SP (WordPress hosting and emails).
+Finding publicly available emissions estimates data for common software is basically impossible. In two areas, [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) and [SaaS](/projects/green-web-foundation/operational#saas-services), we didn't manage to find any kind of public data for a single supplier to base an estimate on. This means we've got gaps in our understanding for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces (GDrive and Calendars), Trello, Zulip, Miro, Brevo, Sentry, 1Password, 34SP (WordPress hosting and emails).
 
 To be clear, we're not trying to throw shade at these suppliers. We know this stuff is an emerging practice, and it's hard. But nonetheless there is a glaring gap here at the moment.
 
@@ -162,7 +162,7 @@ The industry appears to be in a chicken and egg situation - everyone is reliant 
 
 **The findings**
 
-Everyone working on the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out as 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
+Everyone working on the project expected employee hardware emissions to be large. But no-one would have guessed it would turn out to be 69% of the overall amount. This equates to 342 kgCO<sub>2</sub>e/year.
 
 How confident can we be in the 69% figure? Is it to be trusted? The **short answer** is yes. We think it's _good enough_ to demonstrate relative scale and support telling a story around the larger than expected impact of employee hardware versus other parts of the known digital estate.
 
