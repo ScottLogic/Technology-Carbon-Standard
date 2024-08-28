@@ -23,6 +23,7 @@ Secondly, the digital technologies sector is estimated to be significantly small
 
 So, the myth that using digital gives you a free pass has been somewhat understandable. 
 
+{: #setting-up-the-Green-Metrics-Tools}
 ## Setting up the Green Metrics Tools
 
 While the API is currently well optimised through a variety of techniques to reduce its carbon emissions, it is important to apply green software principals such as making sure  the code is energy efficient. To do this, we first need a way to measure the codebase and monitor that future changes don't negatively impact the carbon emissions.
@@ -40,7 +41,7 @@ The Green Metrics Tool (GMT) measures a variety of operational data for a platfo
 
 When examining the output of the GMT, bear in mind that some of the statistics produced are based on measurements and others are estimates derived from models. Both are valuable, but your mileage may vary.
 
-## Setting Up the Green Metrics Tool
+## Using the Green Metrics Tool
 
 The GMT works by running the different servers in your platform in Docker containers. You then generate traffic within the docker environment for the tool to measure and it generates reports for you to analyse.
 
