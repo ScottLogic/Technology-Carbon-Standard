@@ -492,6 +492,13 @@ With more time and resources, the detailed estimate could be much improved. Firs
 
 We didn't gather any detail of the server's embodied carbon. This would likely need to be obtained from Hetzner if they would be willing to share more details of the hardware. As a high proportion of the total carbon emissions, this could have a significant impact on the total emissions.
 
+One last point around the compatibility of this approach with the [GHG Protocol](https://ghgprotocol.org/). If cloud services fell into our scope 2 (eg in our direct control such as on-premise), it'd be better to use the regional intensity figure for the data centre's location, and separately list the market-based figure of zero. This is what the GHG protocol suggests. But we did something different and  used the IPCC figures for wind and hydro instead. However, the GHG Protocol guidance is a bit ambiguous on scope 3, which is where our data centers actually fall in this context.
+
+You could argue that our scope 3 should be kept inline with what you do at the scope 2 level. In that case we'd swap the carbon intensity figure used for the regional ones. As an example, the Hetzner machines would use the regional intensity figure for Finland, their actual location. In our own CO2.js data that's 0.07916. Compared to the IPCC hydro/wind figure of 0.0195, that's around four times bigger. This would increase our figures a fair amount.
+
+But, you can pick holes in using the regional carbon intensity approach for scope 3, so it's not clear cut. Either way you'd need to be super clear on the approach. Which route we'd settle on would require a bit more thought, as we only picked up on this point right at the closing stages of the project.
+
+
 [To the top](#top)
 
 ---
