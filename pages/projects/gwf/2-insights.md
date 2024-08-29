@@ -132,7 +132,7 @@ The biggest impacts come from sources other than code. It's more often more to d
 
 **Actionable opportunities**
 
-**Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).**
+**Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), [iMasons Digital Accord](https://climateaccord.org/) and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).**
 
 **The findings**
 
@@ -147,6 +147,8 @@ This could evolve if, as standard, suppliers of digital services provided machin
 The industry appears to be in a chicken and egg situation - everyone is reliant on each other's data but no-one wants to go first. Thankfully, the EU is introducing several sets of legislation aimed at breaking this stalemate. Legislation like the [Corporate Sustainability Reporting Directive (CSRD)](https://plana.earth/policy/corporate-sustainability-reporting-directive-csrd) literally says:
 
 > Users of sustainability information increasingly expect such information to be findable, comparable and machine-readable in digital formats. Member States should be able to require that undertakings subject to the sustainability reporting requirements of Directive 2013/34/EU make their management reports available on their websites, free of charge to the public. ([clause 55](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2464))
+
+There are also a number of non-profits driving progress which we've listed in the actionable opportunities section of this insight.
 
 [To the top](#top)
 
