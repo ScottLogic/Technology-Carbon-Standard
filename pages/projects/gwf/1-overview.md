@@ -11,44 +11,10 @@ project: gwf
 
 This project collaboration between [Green Web Foundation](https://www.thegreenwebfoundation.org/) and [Scott Logic](https://www.scottlogic.com/) ran in mid 2024. It trialled using an early version of the TCS framework to estimate the carbon emissions arising from Green Web Foundation's digital estate, using publicly available data. This write-up provides full documentation of the decisions, methodology and learning points so others can learn from what we experienced.
 
-- [Key insights summary](#key-insights)
 - [Estimates summary](#estimates-summary)
+- [Key insights summary](#key-insights)
 - [Why do this project?](#context---why-this-project)
 - [Partnering organisations and team](#partnering-organisations-and-team)
-
----
-
-## Key insights
-
-We've summarised the key learning points arising from estimating our digital estate using the TCS. We also share the actionable opportunities that we believe will address some of the key sticking points we've experienced in this process.
-
-[1. Digital technology is not impact free and reductions are possible](#insight-1)
-
-It's valuable for organisations to take the time to measure their digital estate emissions, and openly share them. This helps to dispel the myth that digital is not impact free both internally within teams and around the wider industry. It also supports education around what steps can be taken to reduce impact
-
-[2. TCS helps fill key gaps in estimating digital estate emissions](#insight-2)
-
-More organisations should publicly show their approaches, calculations and concerns *in detail*. This supports building the field and filling the guidance gap for estimating digital estate emissions using best practices. This is just as applicable for organisations using the TCS or other standards.
-
-[3. TCS can't cover everything needed to produce estimates for digital products or services](#insight-3)
-
-Organisations should make the scope boundaries they use abundantly clear when producing data about the emissions associated with a digital product or service they provide.
-
-[4. The digital sustainability industry needs to look beyond green coding to influencing impactful structural change](#insight-4)
-
-We need more investment into creating palatable ways for senior leaders to marshall resources into initiatives that go beyond their immediate organisation, and instead contribute to systemic changes.
-
-[5. There's a serious lack of data and transparency from suppliers](#insight-5)
-
-Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).
-
-[6. Employee hardware is more significant than originally assumed, especially monitors](#insight-6)
-
-Organisations can make a considerable impact on their digital estate emission estimates by choosing to minimise unnecessary hardware and use what they do need efficiently. Procurement departments can prioritise refurbed, remanufactured or reused employee hardware and shortly, consider the ecodesign ratings on specific product groups. As an added bonus, organisations can also choose to support non-profit campaign groups like [repair.eu](https://repair.eu/).
-
-[Insights full write-up](Insights)
-
-[To the top](#top)
 
 ---
 
@@ -95,6 +61,40 @@ Lastly, the remaining 2% comes from data transfer across the internet arising fr
 | [End-User Devices](/projects/green-web-foundation/downstream#end-user-devices) | 117 | 24% | High level estimate - low confidence |
 | [Network Data Transfer](/projects/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | High level estimate - medium confidence |
 | Total | 496 kgCO<sub>2</sub>e/year | 100% |
+
+[To the top](#top)
+
+---
+
+## Key insights
+
+We've summarised the key learning points arising from estimating our digital estate using the TCS. We also share the actionable opportunities that we believe will address some of the key sticking points we've experienced in this process.
+
+[1. Digital technology is not impact free and reductions are possible](#insight-1)
+
+It's valuable for organisations to take the time to measure their digital estate emissions, and openly share them. This helps to dispel the myth that digital is not impact free both internally within teams and around the wider industry. It also supports education around what steps can be taken to reduce impact
+
+[2. TCS helps fill key gaps in estimating digital estate emissions](#insight-2)
+
+More organisations should publicly show their approaches, calculations and concerns *in detail*. This supports building the field and filling the guidance gap for estimating digital estate emissions using best practices. This is just as applicable for organisations using the TCS or other standards.
+
+[3. TCS can't cover everything needed to produce estimates for digital products or services](#insight-3)
+
+Organisations should make the scope boundaries they use abundantly clear when producing data about the emissions associated with a digital product or service they provide.
+
+[4. The digital sustainability industry needs to look beyond green coding to influencing impactful structural change](#insight-4)
+
+We need more investment into creating palatable ways for senior leaders to marshall resources into initiatives that go beyond their immediate organisation, and instead contribute to systemic changes.
+
+[5. There's a serious lack of data and transparency from suppliers](#insight-5)
+
+Organisations can push suppliers to provide machine readable, publicly verifiable emission estimate data about their operations. Organisations can also actively support a number of non-profit organisations working to encourage disclosure of assumptions in digital services. Examples include [Boavista](https://boavizta.org/en), [Green Software Foundation](https://greensoftware.foundation/), [Sustainable Digital Infrastructure Alliance](https://sdialliance.org/), and of course ourselves at [Green Web Foundation](https://www.thegreenwebfoundation.org/) through our [carbon.txt project](https://www.thegreenwebfoundation.org/news/carbon-txt).
+
+[6. Employee hardware is more significant than originally assumed, especially monitors](#insight-6)
+
+Organisations can make a considerable impact on their digital estate emission estimates by choosing to minimise unnecessary hardware and use what they do need efficiently. Procurement departments can prioritise refurbed, remanufactured or reused employee hardware and shortly, consider the ecodesign ratings on specific product groups. As an added bonus, organisations can also choose to support non-profit campaign groups like [repair.eu](https://repair.eu/).
+
+[Insights full write-up](Insights)
 
 [To the top](#top)
 
