@@ -120,7 +120,7 @@ We see a risk that as the digital sustainability industry starts to take off, it
 
 If all the improved "green software" we work hard to produce fails to lead to us causing less harm to people over time, then we've somewhat missed the main challenge. Chris Adams from our team, has written a short personal blog on this: [Being in the Green Driving Foundation](https://rtl.chrisadams.me.uk/2024/05/being-in-the-green-driving-foundation/).
 
-The biggest impacts come from sources other than code. It's more often more to do with infrastructure, hardware and how we share data. Things like where and how we site data centers, the carbon intensity of energy grids around the world and unhealthy practices like [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence). We need to find a way to mobilise more leadership teams to use their resources to **affect structural change**. We get into some specifics in insights 5 and 6.
+The biggest impacts come from sources other than code. It's more often more to do with infrastructure, hardware and how we share data. Things like where and how we site data centres, the carbon intensity of energy grids around the world and unhealthy practices like [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence). We need to find a way to mobilise more leadership teams to use their resources to **affect structural change**. We get into some specifics in insights 5 and 6.
 
 [To the top](#top)
 
