@@ -13,7 +13,7 @@ This project write-up is the result of this collaboration.
 
 1. [Overview](overview)
 1. [Insights](insights)
-1. [Assumptions](data-assumptions)
+1. [Assumptions](assumptions)
 1. [Upstream Emissions](upstream)
 1. [Operational Emissions](operational)
 1. [Downstream Emissions](downstream)
