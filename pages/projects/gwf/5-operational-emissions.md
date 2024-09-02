@@ -374,7 +374,7 @@ $$ 9.36\ kWh/year \times 0.0195 kgCO_2e/kWh = 0.18\ kgCO_2e/year $$
 
 #### **Scaleway Data Storage**
 
-GWF use Scaleway for block storage. So, we used the same methodology as for the Hetzner data storage. One key difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour. 
+GWF use Scaleway for object storage. So, we used the same methodology as for the Hetzner data storage. One key difference was that Hetzner allocates a fixed amount of storage while Scaleway charges per gigabyte hour. 
 
 Typically GWF uses 463.579 TBhours of data per month. We again assumed SSD storage and use a value of 0.0012 kWh/TBh from [CCF's Storage Methodology](https://www.cloudcarbonfootprint.org/docs/methodology/#storage).
 
