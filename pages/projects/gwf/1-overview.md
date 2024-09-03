@@ -102,7 +102,7 @@ Organisations can make a considerable impact on their digital estate emission es
 
 ## Context - why this project?
 
-At the beginning of 2024, Green Web Foundation (GWF) set a goal to estimate the carbon emissions of all the organisation's activities for the first time. The Given the GWF team's knowledge of estimating digital emissions, the team decided to split the project into two:
+At the beginning of 2024, Green Web Foundation (GWF) set a goal to estimate the carbon emissions of all the organisation's activities for the first time. Given the GWF team's knowledge of estimating digital emissions, the team decided to split the project into two:
 
 1. Emissions from their digital estate.
 2. Emissions arising from other business activities such as travel, office estate and other non-digital operational activities.
