@@ -6,7 +6,7 @@
 @import "tailwindcss/utilities";
 
 /* Project Specific CSS */
-@import "./gwf.css";
+@import "gwf.css";
 
 @layer base {
 
