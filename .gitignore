@@ -11,3 +11,4 @@ vendor/
 **/.DS_Store
 # Ignore .vscode settings folder
 .vscode/
+package-lock.json

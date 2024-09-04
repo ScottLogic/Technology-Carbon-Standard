@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% assign project = site.data.projects[page.project] %}
+
+<div class="flex flex-col md:flex-row gap-6">
+  <aside class="md:w-1/5 border-b md:border-r md:border-b-0 border-gunmetal-200 md:pl-4 pr-2 pb-2 pt-0">
+
+    <a href="{{ project.link }}" class="font-light block md:px-2 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900  {% if page.url == '/categories' %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+      {{ project.name }}
+    </a>
+
+    <div class="flex flex-col">
+      {% for item in project.nav %}
+        <a href="{{ item.link }}" class="font-light px-4 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == item.link %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
+
+  </aside>
+  <article class="max-w-screen-md">
+    {{ content }}
+  </article>
+</div>
