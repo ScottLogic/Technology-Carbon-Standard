@@ -13,6 +13,7 @@ module.exports = {
     './pages/projects/gwf/*.md',
     './*.md',
     './*.html',
+    './**/resources.md'
   ],
   theme: {
     fontFamily: {

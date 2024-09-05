@@ -19,6 +19,8 @@
 # - link: Creates a link to another page (further details). These are setup by default to the relevant pages, but may be overridden for specific use cases, typically in the overlay views (optional, but defaults to a page).
 # - noLink: Provides an overide to prevent any navigation to a page. Renders the component in a <div> instead of an <a>.
 
+title: Technology Carbon Standard
+
 CatU:
   description: Upstream emissions relating to the embodied carbon of hardware and the development of software.
 
@@ -59,7 +61,7 @@ CatUServerHardware:
   icon: storage
   selected: false
   description:
-  link: /categories/upstream#data-center-and-server-hardware
+  link: /categories/upstream#data-centre-and-server-hardware
   noLink: false
 
 OperationalEmissions:
@@ -88,14 +90,15 @@ CatONetworkDevices:
   link: /categories/operational#networking-devices
   noLink: false
 
-CatOEmployeeDevices:
-  id: CatOEmployeeDevices
+
+CatOOnsiteEmployeeDevices:
+  id: CatOOnsiteEmployeeDevices
   category: cat-o
-  title: Employee Devices
+  title: Onsite Employee Devices
   icon: devices
   selected: false
   description:
-  link: /categories/operational#employee-devices
+  link: /categories/operational#onsite-employee-devices
   noLink: false
 
 CatGGenerators:
@@ -139,6 +142,16 @@ CatCManaged:
   selected: false
   description:
   link: /categories/operational#managed-services
+  noLink: false
+
+CatCOffsiteEmployeeDevices:
+  id: CatCOffsiteEmployeeDevices
+  category: cat-c
+  title: Offsite Employee Devices
+  icon: devices
+  selected: false
+  description:
+  link: /categories/operational#offsite-employee-devices
   noLink: false
 
 CatD:

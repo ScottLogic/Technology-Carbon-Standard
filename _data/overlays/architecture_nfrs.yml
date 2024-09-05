@@ -1,0 +1,77 @@
+# Optionally change the title of the infographic. Defaults to the carbonStandard.title otherwise.
+title:
+
+CatUSoftware:
+  selected: true
+  description: Prefer vendor with sustainability strategy. Prefer large user base.
+  link: '#Software'
+
+CatUEmployeeHardware:
+  selected: true
+  description: Laptops have &lt;X kgCO2 embodied carbon. Lifetime &gt; 5 years
+  link: '#EmployeeHardware'
+
+CatUNetworkHardware:
+  selected: true
+  description: Switch should have &lt;X kgCO2 embodied carbon per port.
+  link: '#NetworkHardware'
+
+CatUServerHardware:
+  selected: true
+  description: Must have &lt;X kgCO2 embodied carbon per core. New service should add no embodied carbon
+  link: '#ServerHardware'
+
+CatOServers:
+  selected: true
+  description: Utilisation should be &gt; 45% average. Energy per REST call <X kWh.
+  link: "#Servers"
+
+CatONetworkDevices:
+  selected: true
+  description: Switch utilisation should be &gt; 45% average
+  link: '#NetworkDevices'
+
+CatOOnsiteEmployeeDevices:
+  selected: true
+  description: Laptops use &lt;X kWh on average
+  link: '#EmployeeDevices'
+
+CatGGenerators:
+  selected: false
+  description:
+  noLink: true
+
+CatCOffsiteEmployeeDevices:
+  selected: true
+  description: Laptops use &lt;X kWh on average
+  link: '#EmployeeDevices'
+
+CatCCloud:
+  selected: true
+  description: No requests, no energy consumption. Electricity carbon intensity &lt;n gCO2/kWh
+  link: '#Cloud'
+
+CatCSaas:
+  selected: true
+  description: Runs on cloud with carbon intensity &lt;n gCO2/kWh
+  link: '#Saas'
+
+CatCManaged:
+  selected: true
+  description: PUE &lt; 1.3, Server lifetime &gt;=5 years.
+  link: '#Managed'
+
+CatDEndUserDevices:
+  selected: true
+  description: Single page view should be &lt;x kWh energy. No energy use when user on another page/tab
+  link: '#EndUserDevices'
+
+CatDNetworkDataTransfer:
+  selected: true
+  description: 2nd API call uses 80% energy of 1st
+  link: '#NetworkTransfer'
+
+CatDInfrastructure:
+  selected: true
+  description:
+  link: '#Infrastructure'

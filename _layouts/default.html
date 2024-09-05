@@ -6,10 +6,23 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href={{"/assets/css/main.css" | relative_url }}>
 
+    <!-- OpenGraph MetaData -->
+    <meta property="og:title" content="{{ page.title | escape }}" />
+    <meta property="og:description" content="{{ page.summary | escape }}"/>
+    <meta property="og:image" content="{{ page.image | relative_url }}" />
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRVD4KMH9C"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-PRVD4KMH9C');</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    
+    {% if page.includeEstimator == true %}
+      <!-- Tech carbon estimator -->
+      <script src={{ "assets/tech-carbon-estimator/polyfills.js" | relative_url }} type="module"></script>
+      <script src={{ "assets/tech-carbon-estimator/main.js" | relative_url }} type="module"></script>    
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+      <link rel="stylesheet" href={{"/assets/tech-carbon-estimator/styles.css" | relative_url }}>
+    {% endif %}
   </head>
   <body class="bg-gunmetal-50 text-charcoal dark:bg-gunmetal-950 dark:text-charcoal-100">
     <!-- NAVIGATION -->
