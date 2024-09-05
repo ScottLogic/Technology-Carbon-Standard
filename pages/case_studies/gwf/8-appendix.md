@@ -1,8 +1,8 @@
 ---
-layout: projects
+layout: caseStudies
 title: Green Web Foundation
-permalink: /projects/green-web-foundation/appendix
-project: gwf
+permalink: /case-studies/green-web-foundation/appendix
+caseStudy: gwf
 ---
 
 # Appendix

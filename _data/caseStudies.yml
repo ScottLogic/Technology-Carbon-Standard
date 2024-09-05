@@ -1,0 +1,20 @@
+gwf:
+  name: Green Web Foundation
+  link: /case-studies/green-web-foundation
+  nav:
+  - name: Overview
+    link: /case-studies/green-web-foundation/overview
+  - name: Insights
+    link: /case-studies/green-web-foundation/insights
+  - name: Assumptions
+    link: /case-studies/green-web-foundation/assumptions
+  - name: Upstream Emissions
+    link: /case-studies/green-web-foundation/upstream
+  - name: Operational Emissions
+    link: /case-studies/green-web-foundation/operational
+  - name: Downstream Emissions
+    link: /case-studies/green-web-foundation/downstream
+  - name: Reducing impact
+    link: /case-studies/green-web-foundation/reducing-impact
+  - name: Appendix
+    link: /case-studies/green-web-foundation/appendix

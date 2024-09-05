@@ -10,7 +10,7 @@ module.exports = {
     './_glossary/*.md',
     './_resources/*.md',
     './pages/*.md',
-    './pages/projects/gwf/*.md',
+    './pages/case_studies/gwf/*.md',
     './*.md',
     './*.html',
     './**/resources.md'

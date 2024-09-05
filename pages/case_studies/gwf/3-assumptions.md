@@ -1,8 +1,8 @@
 ---
-layout: projects
+layout: caseStudies
 title: Green Web Foundation
-permalink: /projects/green-web-foundation/assumptions
-project: gwf
+permalink: /case-studies/green-web-foundation/assumptions
+caseStudy: gwf
 ---
 
 # Assumptions and Decisions
@@ -79,7 +79,7 @@ We've chosen to round calcuation outputs when appropriate, which may lead to som
 
 ## Regional Carbon Intensity
 
-The GWF team are a remote team, positioned around the world. We used the regional electricity grid’s [carbon intensity](/glossary#carbon-intensity) to calculate the operational carbon emissions. 
+The GWF team are a remote team, positioned around the world. We used the regional electricity grid’s [carbon intensity](/resources/glossary#carbon-intensity) to calculate the operational carbon emissions. 
 
 The following regional carbon intensities are used:
 - Germany: 363.982gCO2e/kWh

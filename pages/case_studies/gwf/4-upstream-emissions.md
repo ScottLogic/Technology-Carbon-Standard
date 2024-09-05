@@ -1,8 +1,8 @@
 ---
-layout: projects
+layout: caseStudies
 title: Green Web Foundation
-permalink: /projects/green-web-foundation/upstream
-project: gwf
+permalink: /case-studies/green-web-foundation/upstream
+caseStudy: gwf
 ---
 
 {: #top}
@@ -11,7 +11,7 @@ project: gwf
 {% include categoryLabel.html label="CatU" %}
 </div>
 
-# GWF: Estimating upstream emissions (Category U)
+# Estimating upstream emissions (Category U)
 Read the TCS overview of <a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream">upstream emissions</a> for a primer on this category.
 
 The approach used and why for each sub-category in upstream emissions:
@@ -112,7 +112,7 @@ The average embodied carbon figure used was **230 kgCO<sub>2</sub>e**.
 
 We arrived at this by reviewing multiple PDF datasheets for laptops from [Dell](https://www.dell.com/en-uk/dt/corporate/social-impact/advancing-sustainability/climate-action/product-carbon-footprints.htm), [Hewlett-Packard (HP)](https://h20195.www2.hp.com/v2/library.aspx) and [Apple](https://www.apple.com/environment/). We cross-referenced the specified values against multiple research sources to check the number was in the right ballpark.
 
-The datasheets mentioned, known as Product Carbon Footprint [(PCF)](/glossary#product-carbon-footprint-pcf) datasheets, typically provide a breakdown of carbon emissions during that product's full life cycle, including it's usage. But we only want the embodied carbon value for this part of the TCS, just upstream emissions. Usage is accounted for in operational emissions. 
+The datasheets mentioned, known as Product Carbon Footprint [(PCF)](/resources/glossary#product-carbon-footprint-pcf) datasheets, typically provide a breakdown of carbon emissions during that product's full life cycle, including it's usage. But we only want the embodied carbon value for this part of the TCS, just upstream emissions. Usage is accounted for in operational emissions. 
 
 We removed the usage carbon emissions value (around 20%) from the total carbon footprint leaving us a value for manufacture, transport and end of life. This becomes our embodied carbon value of **230 kgCO<sub>2</sub>e**.
 
@@ -120,7 +120,7 @@ To keep things simple for this high-level estimate we assumed the following:
 - All employees used non-manufacturer specific laptops at this point - we weren't ready to get a detailed equipment list at this point.
 - All laptops were purchased new - we ignored the fact that some machines were actually refurbished, older or second-hand.
 - A laptop's expected life is 5 years at GWF (industry standard is often cited as 4 years). 
-- [Amortisation](/glossary#amortisation) of embodied emissions was appropriate for a [high level estimate](assumptions#high-level-estimates) - more on this below.
+- [Amortisation](/resources/glossary#amortisation) of embodied emissions was appropriate for a [high level estimate](assumptions#high-level-estimates) - more on this below.
 
 For the six laptops identified, only 1 laptop is owned by GWF and the other 5 are BYODs. We attribute 100% of the embodied carbon to 1 laptop, and 70% to the other 5.
 
@@ -160,7 +160,7 @@ We identified a single printer located in the Germany office. This is a home/ sm
 
 Since it's only a single small printer with light use, it didn’t seem necessary to spend much time researching further to produce a high level estimate. However, the basic research included gathering data from manufacturers of several home and small office inkjet and laser printers, such as Canon and HP, and a few articles suggesting the carbon footprints of printers. 
 
-Printer manufacturers do not appear to offer carbon estimates for these devices. Instead they only offer energy use (standby and whilst printing) and [Typical Energy Consumption](/glossary#typical-energy-consumption-tec).
+Printer manufacturers do not appear to offer carbon estimates for these devices. Instead they only offer energy use (standby and whilst printing) and [Typical Energy Consumption](/resources/glossary#typical-energy-consumption-tec).
 
 Assumptions were made based on other IT hardware, such as laptops, monitors, servers and networking equipment, to estimate the embodied carbon of such printers.
 
@@ -206,7 +206,7 @@ For reuse - simply purchased second-hand with no testing or replacement parts - 
 
 **Laptops and Monitors**
 
-For a more accurate carbon emissions estimate, we gathered specific details of the hardware such as manufacturer and model of the equipment. Where possible we found product carbon footprint [(PCF)](/glossary#product-carbon-footprint-pcf) data sheets. Some manufacturers provide excellent resources for finding this data on their products. Some manufacturers are very poor. Where this was the case, we would find an approximately equivalent product to use instead, indicated in the tables below.
+For a more accurate carbon emissions estimate, we gathered specific details of the hardware such as manufacturer and model of the equipment. Where possible we found product carbon footprint [(PCF)](/resources/glossary#product-carbon-footprint-pcf) data sheets. Some manufacturers provide excellent resources for finding this data on their products. Some manufacturers are very poor. Where this was the case, we would find an approximately equivalent product to use instead, indicated in the tables below.
 
 On the basis that most GWF equipment is BYOD, it was useful to gather more detail about how many days per week each device is used for GWF vs personal use. This helped us to work out what embodied carbon is attributed to GWF.
 

@@ -1,8 +1,8 @@
 ---
-layout: projects
+layout: caseStudies
 title: Green Web Foundation
-permalink: /projects/green-web-foundation/insights
-project: gwf
+permalink: /case-studies/green-web-foundation/insights
+caseStudy: gwf
 ---
 
 {: #top}
@@ -136,7 +136,7 @@ The biggest impacts come from sources other than code. It's more often more to d
 
 **The findings**
 
-Finding publicly available emissions estimates data for common software is basically impossible. In two areas, [OTS and Open Source Software](/projects/green-web-foundation/upstream#software) and [SaaS](/projects/green-web-foundation/operational#saas-services), we didn't manage to find any kind of public data for a single supplier to base an estimate on. This means we've got gaps in our understanding for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces (GDrive and Calendars), Trello, Zulip, Miro, Brevo, Sentry, 1Password, 34SP (WordPress hosting and emails).
+Finding publicly available emissions estimates data for common software is basically impossible. In two areas, [OTS and Open Source Software](/case-studies/green-web-foundation/upstream#software) and [SaaS](/case-studies/green-web-foundation/operational#saas-services), we didn't manage to find any kind of public data for a single supplier to base an estimate on. This means we've got gaps in our understanding for the following: Django, Wordpress, Zoom, Chrome, Firefox, GitHub, NPM, Google workspaces (GDrive and Calendars), Trello, Zulip, Miro, Brevo, Sentry, 1Password, 34SP (WordPress hosting and emails).
 
 To be clear, we're not trying to throw shade at these suppliers. We know this stuff is an emerging practice, and it's hard. But nonetheless there is a glaring gap here at the moment.
 
@@ -172,13 +172,13 @@ The **longer answer** is that we recognise there are a multitude of ways you can
 
 - The 69% part is relative to the other categories in the estate. Outside of the employee hardware grouping, we only have low to medium confidence in our chosen methodologies. When there are better ways to estimate these parts, the figures might change and the relative percentage of employee hardware may go up or down in response. On top of that, we couldn't produce any kind of estimate for OTS & Open Source Software and SaaS. Once we're able to do that, its likely the relative percentage of employee hardware will go down.
 - The 342 kgCO<sub>2</sub>e/year figure comes from a snapshot in time. 2023 turns out to be a year that GWF ended up bearing responsibility for the emissions of four purchased machines (two refurbed and two new), but no monitor purchases. Is this an average year or an outlier? We can't know confidently until we estimate GWF's digital estate for a few more years.
-- The 342 kgCO<sub>2</sub>e/year figure itself is only an estimate. The accuracy of any estimate should always be viewed with a pinch of salt. It is not a precise measurement. However, we rated the methodologies we used for the two largest parts of this calculation with high confidence. The third methodology with medium confidence. Is there room for improvement in these methodologies? Absolutely. Is there room for improvement in the [PCF](/glossary#product-carbon-footprint-pcf) datasheets produced, or in many cases not produced, by hardware manufacturers? Absolutely. _(Looking at you printer manufacturers.)_
+- The 342 kgCO<sub>2</sub>e/year figure itself is only an estimate. The accuracy of any estimate should always be viewed with a pinch of salt. It is not a precise measurement. However, we rated the methodologies we used for the two largest parts of this calculation with high confidence. The third methodology with medium confidence. Is there room for improvement in these methodologies? Absolutely. Is there room for improvement in the [PCF](/resources/glossary#product-carbon-footprint-pcf) datasheets produced, or in many cases not produced, by hardware manufacturers? Absolutely. _(Looking at you printer manufacturers.)_
 
 What's really noteworthy about this section is the impact that buying refurbed, remanufactured or reused hardware has on estimates. [We modelled the impact of our laptop choices](reducing-impact#employee-hardware) and found that simply by choosing a refurbed machine over a new one, you can save nearly 85% of the carbon emissions.
 
 Another surprise was what the numbers showed us about the impact of monitors. Again, if you'd asked the project team at the start which represented more emissions - laptops or monitors - we'd have all guessed laptops. But surprisingly the data we found shows monitors are estimated to produce more emissions on a unit by unit basis. This is true both for the embodied and usage emissions.
 
-To illustrate this, below we summarise the estimates found in manufacturer [PCF](/glossary#product-carbon-footprint-pcf) datasheets for the laptops and monitors we actually use.
+To illustrate this, below we summarise the estimates found in manufacturer [PCF](/resources/glossary#product-carbon-footprint-pcf) datasheets for the laptops and monitors we actually use.
 
 **Embodied (new only) - kgCO<sub>2</sub>e**
 

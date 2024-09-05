@@ -1,8 +1,8 @@
 ---
-layout: projects
+layout: caseStudies
 title: Green Web Foundation
-permalink: /projects/green-web-foundation/downstream
-project: gwf
+permalink: /case-studies/green-web-foundation/downstream
+caseStudy: gwf
 ---
 
 {: #top}
@@ -86,21 +86,21 @@ Multiply the energy per visit by the number of visits per year:
 
 $$ 0.00005265\ kWh \times 27500\ visits/year = 1.447875\ kWh/year $$
 
-Given the global audience noted in the Cabin analytics, we also assume a [global carbon intensity](/projects/green-web-foundation/assumptions#regional-carbon-intensity) of 0.490kgCO<sub>2</sub>e/kWh. We calculate the estimated emissions per year:
+Given the global audience noted in the Cabin analytics, we also assume a [global carbon intensity](/case-studies/green-web-foundation/assumptions#regional-carbon-intensity) of 0.490kgCO<sub>2</sub>e/kWh. We calculate the estimated emissions per year:
 
 $$ 1.447875\ kWh/year \times 0.490\ kgCO_2e/kWh = 0.71\ kgCO_2e/year $$
 
 **Downstream infrastructure from self-hosting Green Web Dataset**
 
-To estimate the carbon cost of hosting a copy of the dataset, we considered three costs: storage, compute (for serving the data), and transfer from queries to the dataset. Populating the dataset is covered in the [Network data transfer category](projects/green-web-foundation/downstream#network-data-transfer), also in Downstream Emissions.
+To estimate the carbon cost of hosting a copy of the dataset, we considered three costs: storage, compute (for serving the data), and transfer from queries to the dataset. Populating the dataset is covered in the [Network data transfer category](/case-studies/green-web-foundation/downstream#network-data-transfer), also in Downstream Emissions.
 
 The storage was estimated using [Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/)’s estimates for AWS. Investigation suggested these numbers would be approximately correct for other cloud servers, and likely of the correct order-of-magnitude for local hosting. 
 
-The current Green Web Dataset was measured at around 500 MB. Storing it for a year represents (0.5 × 24 × 365 = ) 4.38 TBh. At the estimated costs of 0.004 kWh/TBh and with a global [carbon intensity](/projects/green-web-foundation/assumptions#regional-carbon-intensity) of 0.49 kgCO2e/kWh. That comes to 0.086 kgCO2e/year to store the dataset.
+The current Green Web Dataset was measured at around 500 MB. Storing it for a year represents (0.5 × 24 × 365 = ) 4.38 TBh. At the estimated costs of 0.004 kWh/TBh and with a global [carbon intensity](/case-studies/green-web-foundation/assumptions#regional-carbon-intensity) of 0.49 kgCO2e/kWh. That comes to 0.086 kgCO2e/year to store the dataset.
 
 Compute costs were estimated similarly, assuming that a dedicated virtual CPU would be running the data server. The CCF data suggests that a vCPU runs at around 14 watts; a server kept running for around 4 hours per working day would then run a total of 0.014 × 4 × 250 = 14 kWh/year. (his assumes a high use rate, keeping the vCPU active, and is likely an overestimate. At the same carbon intensity, that comes to 6.86 kgCO2e/year.
 
-Costs from subsequent downloads were estimated in the same way as the [Green Web Check API](projects/green-web-foundation/downstream#network-data-transfer). Each response was estimated to cost 2.81×10^(-9) kWh. So even a high request rate of 10 million requests per year would use 0.0281 kWh and cause emissions of 0.013 kgCO2e/year.
+Costs from subsequent downloads were estimated in the same way as the [Green Web Check API](/case-studies/green-web-foundation/downstream#network-data-transfer). Each response was estimated to cost 2.81×10^(-9) kWh. So even a high request rate of 10 million requests per year would use 0.0281 kWh and cause emissions of 0.013 kgCO2e/year.
 
 From these estimates, by far the greatest share is from compute costs, and the overall estimate is 6.88 kgCO2e/year per user. Even assuming a far lower use rate (at 10 vCPU hours per year, estimated for local hosting as a back-up to the GWF API, most of the costs would come from compute.
 
@@ -171,7 +171,7 @@ The [Green Web Check API (greencheck/{url})] has 174.3 million API calls per mon
 
 $$ 2.8125 \times 10^{-9}\ kWh \times 2.091 \times 10^{9}/year = 5.88\ kWh/year $$
 
-Assuming a global audience using this API, we use the [global carbon intensity](/projects/green-web-foundation/assumptions#regional-carbon-intensity) of 0.49kgCO<sub>2</sub>e/kWh to calculate the carbon emissions:
+Assuming a global audience using this API, we use the [global carbon intensity](/case-studies/green-web-foundation/assumptions#regional-carbon-intensity) of 0.49kgCO<sub>2</sub>e/kWh to calculate the carbon emissions:
 
 $$ 5.88\ kWh/year \times 0.49\ kgCO_2e/kWh = 2.88\ kgCO_2e/year $$
 
@@ -187,7 +187,7 @@ We assume that most users of the Data Set will keep it up-to-date, and so downlo
 
 $$ 30,000\ downloads \times 0.000466875\ kWh = 14\ kWh/year $$
 
-Assuming a global audience, we apply the [global carbon intensity](/projects/green-web-foundation/assumptions#regional-carbon-intensity) of 0.490kgCO<sub>2</sub>e/kWh:
+Assuming a global audience, we apply the [global carbon intensity](/case-studies/green-web-foundation/assumptions#regional-carbon-intensity) of 0.490kgCO<sub>2</sub>e/kWh:
 
 $$ 14\ kWh/year \times 0.490\ kgCO_2e/kWh = 6.86\ kgCO_2e/year $$
 

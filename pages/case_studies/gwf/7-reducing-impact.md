@@ -1,8 +1,8 @@
 ---
-layout: projects
+layout: caseStudies
 title: Green Web Foundation
-permalink: /projects/green-web-foundation/reducing-impact
-project: gwf
+permalink: /case-studies/green-web-foundation/reducing-impact
+caseStudy: gwf
 ---
 
 # Reducing impact - our what-if scenarios

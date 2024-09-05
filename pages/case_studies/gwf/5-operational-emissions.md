@@ -1,8 +1,8 @@
 ---
-layout: projects
+layout: caseStudies
 title: Green Web Foundation
-permalink: /projects/green-web-foundation/operational
-project: gwf
+permalink: /case-studies/green-web-foundation/operational
+caseStudy: gwf
 ---
 
 {: #top}
@@ -32,6 +32,8 @@ The approach used and why for each sub-category in operational emissions:
 ## Employee Devices
 {% include categoryItem.html item="CatOEmployeeDevices" %}
 
+*Note: Before this project was completed and published, Employee Devices was updated in the Tech Carbon Standard. It is split into "Onsite Employee Devices" and "Offsite Employee Devices" to correctly capture the GHG scopes they each fall within. This particular detail was not captured during this assessment.*
+
 ### Estimated emissions
 
 **Estimate used: Detailed = 116.02 kgCO<sub>2</sub>e/year - 23% of overall digital estate**
@@ -44,11 +46,11 @@ The approach used and why for each sub-category in operational emissions:
 
 ### Agreed scope
 
-The scope here is the same as the [employee hardware category in upstream emissions](/projects/green-web-foundation/upstream#employee-hardware).
+The scope here is the same as the [employee hardware category in upstream emissions](/case-studies/green-web-foundation/upstream#employee-hardware).
 
 ### High level estimate methodology
 
-Our starting list of equipment is the same as the [employee hardware category in upstream emissions](/projects/green-web-foundation/upstream#employee-hardware).
+Our starting list of equipment is the same as the [employee hardware category in upstream emissions](/case-studies/green-web-foundation/upstream#employee-hardware).
 
 **Laptops**
 
@@ -56,11 +58,11 @@ We weren't seeking high degrees of accuracy at this point, just something good e
 
 We used an **averge operational power use of 0.0171 kWh for laptops**, based on data collected from manufacturer PCF data sheets, and [previous TCS research](/information/lifecycle/example/employee#usage-carbon-emissions). We assume 1760hrs operational hours per year, based on 8hrs per day x 220 days per year. 
 
-Therefore we can calculate an average [TEC](/glossary#typical-energy-consumption-tec) for laptops as:
+Therefore we can calculate an average [TEC](/resources/glossary#typical-energy-consumption-tec) for laptops as:
 
 $$ 0.0171\ kWh \times 1760\ hrs = 30.1\ kWh/year $$
 
-To calculate the estimated emissions of each laptop we multiply the TEC/year with the regional grid [carbon intensity](/glossary#carbon-intensity). Finally we apply the the same BYOD attribution of 70% to GWF as we did for upstream emissions.
+To calculate the estimated emissions of each laptop we multiply the TEC/year with the regional grid [carbon intensity](/resources/glossary#carbon-intensity). Finally we apply the the same BYOD attribution of 70% to GWF as we did for upstream emissions.
 
 Germany - 3 laptops (2 BYOD, 1 GWF owned), regional grid carbon intensity 0.364kgCO<sub>2</sub>e/kWh:
 
@@ -84,7 +86,7 @@ $$ 30.1\ kWh/year \times 0.566\ kgCO_2e/kWh \times 70\% = 11.93\ kgCO_2e/year $$
 
 **Monitors**
 
-For monitors we used an **average [TEC](/glossary#typical-energy-consumption-tec) of 45kWh/year** obtained from Dell and HP PCF data sheets. As per the laptop calculations above we multiply this by the regional grid carbon intensity and apply the 70% BYOD where applicable.
+For monitors we used an **average [TEC](/resources/glossary#typical-energy-consumption-tec) of 45kWh/year** obtained from Dell and HP PCF data sheets. As per the laptop calculations above we multiply this by the regional grid carbon intensity and apply the 70% BYOD where applicable.
 
 Germany - 3 monitors (2 BYOD, 1 GWF owned), 0.364kgCO<sub>2</sub>e/kWh:
 
@@ -130,7 +132,7 @@ As a small team, we felt it to be quite feasible for us to collect information o
 
 ### Detailed estimate methodology
 
-For a more accurate carbon emissions estimate, we gathered specific details of the hardware such as manufacturer and model of the equipment. Our detailed list of equipment is the same as the [employee hardware category in upstream emissions](/projects/green-web-foundation/upstream#employee-hardware).
+For a more accurate carbon emissions estimate, we gathered specific details of the hardware such as manufacturer and model of the equipment. Our detailed list of equipment is the same as the [employee hardware category in upstream emissions](/case-studies/green-web-foundation/upstream#employee-hardware).
 
 For each device we looked for a corresponding manufacturer data sheet. However, in some cases even when we did find a data sheet it wasn't always 100% clear if the specific model's specification differed from the data sheet. So we used the closest product specification and year of manufacture we could find. 
 
@@ -140,9 +142,9 @@ For each product, using the data sheets we found the carbon emissions of the use
 
 **Laptops**
 
-Apple don't provide [TEC](/glossary#typical-energy-consumption-tec) values for it's products. For this part of our sums we do need this. Instead, they indicate what percentage of the total carbon emissions for any given product is for usage. Using that we can work out a TEC value to use. 
+Apple don't provide [TEC](/resources/glossary#typical-energy-consumption-tec) values for it's products. For this part of our sums we do need this. Instead, they indicate what percentage of the total carbon emissions for any given product is for usage. Using that we can work out a TEC value to use. 
 
-Apple's datasheets indicate that the usage is calculated based on historical customer use, modelling of battery drain for various activities and taking into account regional differences of energy grid mix. So we have to assume that any carbon intensity figure they've applied is the global carbon intensity value. We use a global intensity of 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/projects/green-web-foundation/assumptions#regional-carbon-intensity) for more info.
+Apple's datasheets indicate that the usage is calculated based on historical customer use, modelling of battery drain for various activities and taking into account regional differences of energy grid mix. So we have to assume that any carbon intensity figure they've applied is the global carbon intensity value. We use a global intensity of 0.49kgCO<sub>2</sub>e/kWh -  see [our assumptions page](/case-studies/green-web-foundation/assumptions#regional-carbon-intensity) for more info.
 
 Our methodology is to take the product's use proportion of its total carbon emission and divide that by the expected life in years. This gets us the usage carbon emissions per year (kgCO<sub>2</sub>e)/year. We divide this again by the global intensity to calculate a TEC (in kWh/year) for each product. 
 
@@ -212,7 +214,7 @@ Estimate confidence: medium
 
 ### Agreed scope
 
-The scope here is the same as the [Networking and Infrastructure Hardware category](/projects/green-web-foundation/upstream#networking-and-infrastructure-hardware) in upstream emissions.
+The scope here is the same as the [Networking and Infrastructure Hardware category](/case-studies/green-web-foundation/upstream#networking-and-infrastructure-hardware) in upstream emissions.
 
 ### High level estimate methodology
 
@@ -226,7 +228,7 @@ Paper 1 - [Equipment power consumption in optical multilayer networks – source
 
 Paper 2 - [Electricity Intensity of Internet Data Transmission: Untangling the Estimates. Journal of Industrial Ecology, 22: 785-798.](https://doi.org/10.1111/jiec.12630) - Aslan, J., Mayers, K., Koomey, J.G. and France, C. (2018).
 
-We also assumed the routers are operating 24 hours a day, all year round. Lastly we factored in the [regional grid carbon intensity](/projects/green-web-foundation/assumptions#regional-carbon-intensity) of each router's location to estimate the emissions.
+We also assumed the routers are operating 24 hours a day, all year round. Lastly we factored in the [regional grid carbon intensity](/case-studies/green-web-foundation/assumptions#regional-carbon-intensity) of each router's location to estimate the emissions.
 
 **Germany (0.364kgCO<sub>2</sub>e/kWh)**
 
@@ -320,7 +322,7 @@ For the VMs, we mapped the GWF server instances to equivalent appliances in [AWS
 
 *As an aside, during this mapping exercise we observed that Hetzner offers far more granular server specifications than AWS. AWS seems designed to push you up the appliance sizes faster. If you want more memory, you have to also take more virtual CPUs, regardless of if they are needed or not.*
 
-For the [embodied carbon](/glossary#embodied-carbon) estimate, we pulled spend-based data from [CCF](https://www.cloudcarbonfootprint.org/). For the two identified instance sizes we obtained values of 0.018364507 kgCO<sub>2</sub>e/USD and 0.015829902 kgCO<sub>2</sub>e/USD. For ease in the calculations below we round these embodied carbon estimates to 0.018kg CO<sub>2</sub>e/USD and 0.016 kgCO<sub>2</sub>e/USD.
+For the [embodied carbon](/resources/glossary#embodied-carbon) estimate, we pulled spend-based data from [CCF](https://www.cloudcarbonfootprint.org/). For the two identified instance sizes we obtained values of 0.018364507 kgCO<sub>2</sub>e/USD and 0.015829902 kgCO<sub>2</sub>e/USD. For ease in the calculations below we round these embodied carbon estimates to 0.018kg CO<sub>2</sub>e/USD and 0.016 kgCO<sub>2</sub>e/USD.
 
 We got the monthly billing data provided by Hetzner and converted it from Euros to US Dollars at the exchange rate of April 2024. Month to month, this spend does not vary much, so for a high level estimate we assume this same spend every month for the year. 
 
@@ -334,7 +336,7 @@ The combined embodied emissions value is therefore:
 
 $$ 12.84\ kgCO_2e/year + 6.60\ kgCO_2e/year = 19.44\ kgCO_2e/year $$
 
-For [usage emissions](/glossary#usage-carbon), we sourced a kWh per USD value from [CCF](https://www.cloudcarbonfootprint.org/). We arrived at 0.270373921 kWh/USD and 0.233471074 kWh/USD. For ease in the calculations below we round these usage carbon estimates to 0.270 kWh/USD and 0.233 kWh/USD.
+For [usage emissions](/resources/glossary#usage-carbon), we sourced a kWh per USD value from [CCF](https://www.cloudcarbonfootprint.org/). We arrived at 0.270373921 kWh/USD and 0.233471074 kWh/USD. For ease in the calculations below we round these usage carbon estimates to 0.270 kWh/USD and 0.233 kWh/USD.
 
 We multiplied the kWh/USD by the monthly cost in USD to obtain a compute kWh/month, then we multiplied that by 12 months to get a total compute kWh/year:
 
@@ -437,7 +439,7 @@ $$ 0.329167 + 56.91\% \times (1.828125 - 0.329167) = 1.182224\ W/vCPU $$
 
 **2. Work out the monthly electricity consumption of the servers**
 1. Multiply the coefficient by the number of hours in a year (8760) to gather Wh/CPU per year.
-1. Multiply that by the [PUE](/glossary#power-usage-effectiveness-pue) ([1.16](https://www.hetzner.com/unternehmen/nachhaltigkeit)). 
+1. Multiply that by the [PUE](/resources/glossary#power-usage-effectiveness-pue) ([1.16](https://www.hetzner.com/unternehmen/nachhaltigkeit)). 
 1. Multiply that by the number of servers (4) for total energy consumption per year.
 
 $$ 1.182224 \times 8760 \times \ 1.16 \times 4 = 48.05 kWh/year $$
