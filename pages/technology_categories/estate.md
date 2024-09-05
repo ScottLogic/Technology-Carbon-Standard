@@ -310,7 +310,7 @@ There's broadly 3 types of end user device:
  * IoT devices which may be provided by the organisation selling the software
  * Servers for service to service communication
 
-The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less it is likely these emissions will just be noise vs other tech emissions. On the other hand, a video streaming or gaming app with hundreds of thousands of users using the app each day for hours a time shouldn't be ignored. Start with rough approximations based on the information in <a href="/categories/downstream">Downstream</a> and the following sub-sections before deciding whether to go any further. 
+The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less it is likely these emissions will just be noise vs other tech emissions. On the other hand, a video streaming or gaming app with hundreds of thousands of users using the app each day for hours a time shouldn't be ignored. Start with rough approximations based on the information in <a href="/impact-categories/downstream">Downstream</a> and the following sub-sections before deciding whether to go any further. 
 
 
 {% include linkedHeading.html heading="Consumer devices" level=3 %}
