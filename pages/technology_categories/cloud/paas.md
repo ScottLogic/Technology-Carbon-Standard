@@ -24,7 +24,7 @@ Cloud vendor PaaS options often straddle the IaaS divide and allow the mixing an
 There's also a pattern of CDN providers now offering short-lived compute and sometimes storage services alongside traditional caching use cases. 
 
 {% include linkedHeading.html heading="Benefits of PaaS for emissions" level=2 %}
-The advantages and disadvantages of cloud from an emissions perspective are discussed in <a href="/information/cloud#environmental-impact-of-cloud-services">Cloud Emissions</a> including the use of green electricity (if offsetting is counted) and having a low PUE. 
+The advantages and disadvantages of cloud from an emissions perspective are discussed in <a href="/technology-categories/cloud#environmental-impact-of-cloud-services">Cloud Emissions</a> including the use of green electricity (if offsetting is counted) and having a low PUE. 
 
 Where PaaS can have an advantage over IaaS is in maximising utilisation. Where an organisation has lifted and shifted virtual machines from on-prem those machines may be doing very little work but taking a percentage of a physical machine's resources meaning energy use from CPU and memory usage and also resulting in embodied carbon. e.g. if some large cloud VM instances are required to be continually running in case of high traffic once a day or week. 
 
@@ -93,7 +93,7 @@ For AWS, Azure, GCP PaaS services can be measured as described in <a href="/info
 This is not possible for most of the other solutions except where they provision resources in the cloud account of the organisation using the PaaS product. As already discussed, PaaS solutions offer the most benefits from a sustainability perspective when multi-tenant. However, this also makes reporting very challenging as the attribution of carbon emissions is not easy, as many users share one set of servers and virtual servers.
 
 Where the underlying infrastructure is opaque, there are two options:
-1. Follow the [same approach as for SaaS](/information/saas#measurement-estimation-methods)
+1. Follow the [same approach as for SaaS](/technology-categories/saas#measurement-estimation-methods)
     * i.e. Sustainable Web Design, or Shift 1, or a custom request time-based method where the data or request time in combination with the number of users is used to aid estimation. 
 2. Run locally or in some other environment periodically. 
 
