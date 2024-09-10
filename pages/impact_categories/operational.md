@@ -82,9 +82,9 @@ Managed Security Operations, IT support and data backup services.
 
 {% include linkedHeading.html heading="Offsite Employee Devices" level=3 %}
 
-The emissions incurred by computers (desktops, laptops), monitors, printers, and other devices used by employees, when used out-of-office. Since these are required by the business, they are accounted for, but as with other indirect groupings, the business does not control them directly. Accordingly, they come under [GHG Protocol Scope 3](/glossary#greenhouse-gas-ghg-protocols), and so are a separate category.
+The emissions incurred by computers (desktops, laptops), monitors, printers, and other devices used by employees, when used out-of-office. Since these are required by the business, they are accounted for, but as with other indirect groupings, the business does not control them directly. Accordingly, they come under [GHG Protocol Scope 3](/resources/glossary#greenhouse-gas-ghg-protocols), and so are a separate category.
 
-Offsite employee devices are typically accounted for with an [attribution factor](/glossary#attribution-factor), representing the proportion of time that their use is dedicated to business purposes.
+Offsite employee devices are typically accounted for with an [attribution factor](/resources/glossary#attribution-factor), representing the proportion of time that their use is dedicated to business purposes.
 
 ## References
 
