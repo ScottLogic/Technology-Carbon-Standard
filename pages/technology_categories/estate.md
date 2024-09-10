@@ -99,7 +99,7 @@ Starting with on-prem hardware, many organisations will have some or all of the 
 
 The top of the diagram shows there can be multiple sites and each has a geographical location impacting the operational emissions due to varying carbon intensity. Next, it shows that a given site could be a dedicated data centre or a more general location that includes technology components. For example there may be a dedicated server room and/or odd pieces of hardware in the office.  Note that on-site monitors and desktops are covered under organisation user devices later but could have been included here - there's valid reasons for both approaches.
 
-To get a complete picture of emissions then all sites, their locations and all hardware within those sites must be identified as well as a <a href="/glossary#power-usage-effectiveness-pue">PUE</a> for each one to capture efficiency. More detail on how to do this is provided in the following sub-sections. Where there's a need to prioritise the analysis, then focus on the largest sources of emissions which will normally be data centres, as indicated by the arrow in the diagram. 
+To get a complete picture of emissions then all sites, their locations and all hardware within those sites must be identified as well as a <a href="/resources/glossary#power-usage-effectiveness-pue">PUE</a> for each one to capture efficiency. More detail on how to do this is provided in the following sub-sections. Where there's a need to prioritise the analysis, then focus on the largest sources of emissions which will normally be data centres, as indicated by the arrow in the diagram. 
 
 {% include linkedHeading.html heading="Device inventory records" level=3 %}
 
@@ -113,7 +113,7 @@ The accuracy of the underlying data will directly impact the precision of emissi
 
 Embodied emissions should be based on the asset database described above and ideally the CMDB records will include manufacturer data about each asset's embodied carbon or at least enough information that it can be looked up via data sheets. Where this is not present approximations may be used based on typical values - see <a href="/information/lifecycle/example/server">Server example</a> for some suggestions around how to do this. 
 
-In the earlier diagram the cooling/lighting/other boxes were distinguished in a different shade of green because they are not technology hardware but general purpose equipment that support it. For embodied emissions they are out of the scope of the TCS and therefore not discussed but you should still calculate them for full <a href="/glossary#greenhouse-gas-ghg-protocols">GHGP Scope 3</a> emissions. 
+In the earlier diagram the cooling/lighting/other boxes were distinguished in a different shade of green because they are not technology hardware but general purpose equipment that support it. For embodied emissions they are out of the scope of the TCS and therefore not discussed but you should still calculate them for full <a href="/resources/glossary#greenhouse-gas-ghg-protocols">GHGP Scope 3</a> emissions. 
 
 {% include linkedHeading.html heading="Operational emissions - reporting" level=3 %}
 
@@ -298,7 +298,7 @@ Device power may be specific or if this isn't available for all devices then est
  
 
 {% include linkedHeading.html heading="Reducing emissions" level=3 %}
-For servers and cloud the analysis for reducing emissions was more complex than reporting but the opposite is true for devices. Monitors don't have any software running on them to attribute to anyone and although technically laptops do, the wide variety of applications and the fact that the <a href="/information/lifecycle#embodied-vs-usage-carbon">bulk of the carbon will be from their manufacture not the use</a> means there is little value in any analysis. User owned devices (like personal laptops) can also be ignored. 
+For servers and cloud the analysis for reducing emissions was more complex than reporting but the opposite is true for devices. Monitors don't have any software running on them to attribute to anyone and although technically laptops do, the wide variety of applications and the fact that the <a href="/technology-categories/lifecycle#embodied-vs-usage-carbon">bulk of the carbon will be from their manufacture not the use</a> means there is little value in any analysis. User owned devices (like personal laptops) can also be ignored. 
 
 Therefore, for reducing emissions the focus will be on procurement policy and on changing the default choices of device purchased by the org. If there are 1 or 2 procurement teams then all that matters is how those teams choose devices and manage their longevity and disposal. 
 
@@ -310,7 +310,7 @@ There's broadly 3 types of end user device:
  * IoT devices which may be provided by the organisation selling the software
  * Servers for service to service communication
 
-The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less it is likely these emissions will just be noise vs other tech emissions. On the other hand, a video streaming or gaming app with hundreds of thousands of users using the app each day for hours a time shouldn't be ignored. Start with rough approximations based on the information in <a href="/categories/downstream">Downstream</a> and the following sub-sections before deciding whether to go any further. 
+The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less it is likely these emissions will just be noise vs other tech emissions. On the other hand, a video streaming or gaming app with hundreds of thousands of users using the app each day for hours a time shouldn't be ignored. Start with rough approximations based on the information in <a href="/impact-categories/downstream">Downstream</a> and the following sub-sections before deciding whether to go any further. 
 
 
 {% include linkedHeading.html heading="Consumer devices" level=3 %}
