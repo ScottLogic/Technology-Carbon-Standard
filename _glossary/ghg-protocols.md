@@ -1,17 +1,26 @@
 ---
 title: Greenhouse Gas (GHG) Protocols
-# A link is optional, but the linktext and the link are required together
 linktext: GHG Protocols # link text for link
 link: https://ghgprotocol.org/
 ---
 
-Greenhouse Gas protocols set the standard to measure and manage emissions.
+The [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/) is a globally recognised accounting tool for governments and businesses to understand, quantify, and manage their greenhouse gas emissions. The protocol defines three scopes of emissions:
 
 ### Scope 1
-Includes all direct emissions that are generated from sources that are directly owned or controlled by an organisation. For a software company there is a very small list of sources but it is not empty. It can include any emissions from fossil fuelled hire cars used to visit customers and emissions from refrigerant leaks found in A/C & fuel burnt in heating systems within offices.
+Scope 1 emissions encompass the direct greenhouse gas (GHG) releases from resources a company owns and controls. These emissions enter the atmosphere as an immediate consequence of the company's operations. It's important to note that all fuel consumption resulting in GHG emissions must be accounted for within Scope 1. Scope 1 is categorised into four main areas:
+- Stationary combustion; such as fuels and heating sources.
+- Mobile combustion; from all fuel burning company owned or controlled vehicles.
+- Fugitive emissions; from leaked refridgeration and air conditioning units.
+- Process emissions; released during manufacturing and industrial processes.
 
 ### Scope 2
-Includes all indirect emissions from the generation of the electricity purchased and used by an organisation at local or international sites. This is a much larger list for a software company. The most prominent is the electricity produced to run computers, office lights and office A/C and heating systems.
+Scope 2 includes all indirect emissions from the generation of energy purchased by an organisation. The most common is electricity consumption used by equipment, lighting, heating and cooling. The [GHG Corporate Standard](https://ghgprotocol.org/sites/default/files/standards/ghg-protocol-revised.pdf) recommends multiplying electricity consumption by the supplier specific emissions factor ([carbon intensity](#carbon-intensity)) to calculate the GHG emissions impact. If the details about the electricity supply are unavailable, it is recommended to use the regional grid carbon intensity.
+
+Scope 1 and 2 reporting is required for GHG accounting. Importantly, Scope 1 and 2 definitions do not allow for double counting.
 
 ### Scope 3
-Includes all indirect emissions that occur in an organisation’s value chain. The largest and hardest to quantify because it relies on suppliers to provide detailed breakdowns of a product’s carbon footprint. This scope includes areas like emissions from cloud infrastructure and the embodied carbon of computer hardware.
+Scope 3 includes all indirect emissions that occur in an organisation’s value chain, both upstream and downstream. The GHG Protocol seperates Scope 3 into 15 categories, including business travel, waste disposal and purchased goods and services.
+
+Scope 3 emissions often represent the largest portion of a company's total GHG emissions, sometimes accounting for more than 70% of the carbon footprint. Therefore, while it may be optional in some contexts, reporting Scope 3 emissions is increasingly seen as crucial for understanding and managing a company's full climate impact.
+
+Unlike scope 1 and 2, scope 3 can be double counted. For example, the manufacture of a product would be accounted for within the manufacturer's scope 1, 2 and 3 emissions. A company purchasing that product would report and count the emissions of that product's manufacture and transport in their own Scope 3 emissions, accounting for those emissions a second time. This double counting can only occur within a company's scope 3 emissions.
