@@ -90,6 +90,16 @@ CatONetworkDevices:
   link: /impact-categories/operational#networking-devices
   noLink: false
 
+# LEGACY ITEM
+# Maintaining legacy items for (typically) case studies where the TCS has moved on, but the item is still referenced.
+CatOEmployeeDevices:
+  id: CatOEmployeeDevices
+  category: cat-o
+  title: Employee Devices
+  icon: devices
+  selected: false
+  noLink: true
+
 CatOOnsiteEmployeeDevices:
   id: CatOOnsiteEmployeeDevices
   category: cat-o

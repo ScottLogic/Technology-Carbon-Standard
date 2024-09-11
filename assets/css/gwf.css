@@ -1,0 +1,39 @@
+@layer components {
+  /* Custom styles for GWF results table */
+  .gwf-results-table + table th,
+  .gwf-results-table + table td {
+    @apply px-3
+  }
+
+  .gwf-results-table + table thead tr {
+    @apply bg-charcoal-200 dark:bg-charcoal
+  }
+  .gwf-results-table + table thead th {
+    @apply font-bold pt-2
+  }
+
+  /* CAT-U Upstream emissions header */
+  .gwf-results-table + table tbody tr:first-of-type {
+    @apply bg-blue dark:bg-blue-700 text-white;
+  }
+
+  /* CAT-O Operational emissions header */
+  .gwf-results-table + table tbody tr:nth-of-type(6) {
+    @apply cat-o
+  }
+
+  /* CAT-C Operational emissions header */
+  .gwf-results-table + table tbody tr:nth-of-type(11) {
+    @apply cat-c
+  }
+
+  /* CAT-D Downstream emissions header */
+  .gwf-results-table + table tbody tr:nth-of-type(15) {
+    @apply cat-d
+  }
+  /* CAT-D Downstream emissions header */
+  .gwf-results-table + table tbody tr:last-of-type {
+    @apply bg-charcoal-800 dark:bg-charcoal text-white font-bold
+  }
+
+}
