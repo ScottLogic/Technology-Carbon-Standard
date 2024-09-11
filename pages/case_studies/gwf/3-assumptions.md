@@ -102,4 +102,4 @@ This project narrowed in on carbon emissions as a starting lens to begin underst
 Hannah, from GWF, has spoken a lot about this issue in the past. Her fellowship project, [doingthedoughnut.tech](https://doingthedoughnut.tech/), goes into this more detail.
 
 ---
-[Next - Estimating the Upstream Emissions](upstream)
+[Next - Estimating the Upstream Emissions](/case-studies/green-web-foundation/upstream)

@@ -314,7 +314,7 @@ The scope of this section was therefore estimating GWF's usage of these two supp
 
 ### High level Estimate Methodology
 
-We used a spend-based method to estimate the high level carbon emissions. Unfortunately, we could not find specific methods for Hetzner or Scaleway. Instead, we used AWS as a proxy so that we could use the open-source spend-based model from [Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/). We felt this was good enough to produce a [high level estimate](assumptions#high level-estimates) in order to quantify the scale of emissions.
+We used a spend-based method to estimate the high level carbon emissions. Unfortunately, we could not find specific methods for Hetzner or Scaleway. Instead, we used AWS as a proxy so that we could use the open-source spend-based model from [Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/). We felt this was good enough to produce a [high level estimate](/case-studies/green-web-foundation/assumptions#high level-estimates) in order to quantify the scale of emissions.
 
 #### **Hetzner VMs**
 
@@ -452,7 +452,7 @@ $$ 48.05\ kWh/year \times 0.0195\ kgCO_2e/kWh = 0.94\ kgCO2_e/year $$
 
 **The resulting detailed operational carbon emissions estimate for the four Hetzner VMs is 0.94 kgCO<sub>2</sub>e/year.**
 
-We experiment with a different carbon intensity value in the [cloud services reducing impact write-up](reducing-impact#cloud-services). 
+We experiment with a different carbon intensity value in the [cloud services reducing impact write-up](/case-studies/green-web-foundation/reducing-impact#cloud-services). 
 
 To combine the embodied carbon of these servers, we need to rely on the high level methodology (without knowing the specific details of the server's embodied carbon). In this case we are specifically taking into account the four servers we have looked at in the detailed calculations above, and not the total embodied carbon of all of GWF's servers we concluded in the high level-estimate.
 
@@ -572,12 +572,12 @@ A rudimentary method is to simply divide the carbon emissions by the number of a
 
 $$ (21,0000\ MTCO_2e/year \times 1000) ÷ 7,590,000 = 2.77\ kgCO2e/year/website $$
 
-In the absense of any data whatsoever, 2.77 kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to perform a [high level estimate](assumptions#high level-estimates) of CDNs.
+In the absense of any data whatsoever, 2.77 kgCO<sub>2</sub>e/year per website could be used an average or proxy metric to perform a [high level estimate](/case-studies/green-web-foundation/assumptions#high level-estimates) of CDNs.
 
 [To the top](#top)
 
 ---
 
-[Next - Estimating the Downstream Emissions](downstream)
+[Next - Estimating the Downstream Emissions](/case-studies/green-web-foundation/downstream)
 
 ---

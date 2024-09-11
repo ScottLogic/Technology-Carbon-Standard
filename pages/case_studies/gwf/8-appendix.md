@@ -76,7 +76,7 @@ Development of the tool and the methodologies it uses to calculate the measureme
 
 ---
 
-[Next - Back to Introduction](overview)
+[Next - Back to Introduction](/case-studies/green-web-foundation/overview)
 
 ---
 

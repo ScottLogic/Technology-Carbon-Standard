@@ -39,11 +39,11 @@ _Quick note: When you see words like "we" and "us" in this section, please assum
 
 **The findings**
 
-There's still a prevalent misconception that the digital technologies sector is green by default, and there's no carbon impact associated with using digital tools. Check the appendix for our [insight into why we think that might be](appendix/#green-by-default).
+There's still a prevalent misconception that the digital technologies sector is green by default, and there's no carbon impact associated with using digital tools. Check the appendix for our [insight into why we think that might be](/case-studies/green-web-foundation/appendix/#green-by-default).
 
 But we're starting to know better. There are now examples of organisations having a go at estimating their overall impact from digital, and for many it's surprising. Recent studies by digitally-enabled service based organisations, like [Salesforce](https://podcast.greensoftware.foundation/e/vnwrkjm8-the-week-in-green-software-net-zero-cloud) and [ABN Amro](https://www.abnamro.com/en/information/sustainability-reporting-and-publications?selectedTabs=Reporting), estimate that digital accounts for 40 - 50% of their organisation’s greenhouse gas emissions. Scott Logic's [2023 Environmental Impact Report](https://www.scottlogic.com/news/making-good-progress-towards-net-zero) details their digital emissions for the first time estimated at 158 tonnes CO<sub>2</sub>e, 15% of their organisation's total.
 
-Our own 2023 digital estate emissions are [_at least_ 496 kgCO<sub>2</sub>e](overview#estimates-summary). To put this figure into perspective it's estimated the average cow raised for beef in Scotland emits around [2,600 kgCO<sub>2</sub>e per year](https://www.gov.scot/publications/resas-climate-change-evidence-dairy-farmer-led-group/pages/3/). An economy class return flight from [London to Berlin is 523 kgCO<sub>2</sub>](https://co2.myclimate.org/en/portfolios?calculation_id=7289065). If taken in isolation, you might continue to conclude that the digital impact is too small work on. But there are a couple of key things to bear in mind.
+Our own 2023 digital estate emissions are [_at least_ 496 kgCO<sub>2</sub>e](/case-studies/green-web-foundation/overview#estimates-summary). To put this figure into perspective it's estimated the average cow raised for beef in Scotland emits around [2,600 kgCO<sub>2</sub>e per year](https://www.gov.scot/publications/resas-climate-change-evidence-dairy-farmer-led-group/pages/3/). An economy class return flight from [London to Berlin is 523 kgCO<sub>2</sub>](https://co2.myclimate.org/en/portfolios?calculation_id=7289065). If taken in isolation, you might continue to conclude that the digital impact is too small work on. But there are a couple of key things to bear in mind.
 
 **We're very small.** We're a six person team operating a lean non-profit organisation, with a relatively straightforward set of digital products. We'd expect our emissions estimate to be small. Unfortunately we haven't done the rest of our 2023 emissions reporting yet to understand the relative percentage of that. But our napkin based figures suggest it'll be less than 10%, and that's mainly due to our travel.
 
@@ -67,7 +67,7 @@ We recognise that making changes to our own practices is easier for us compared 
 
 **The findings**
 
-When we set [our goal to estimate GWF's emissions for 2023](overview#context---why-this-project) we reviewed what [solutions for small businesses existed](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). Looking at how the most popular SaaS tools approached producing _digital estate_ estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond the high level.
+When we set [our goal to estimate GWF's emissions for 2023](/case-studies/green-web-foundation/overview#context---why-this-project) we reviewed what [solutions for small businesses existed](https://ib1.org/ecosystem/2024-carbon-reporting-solutions-report/) (thanks Icebreaker One!). Looking at how the most popular SaaS tools approached producing _digital estate_ estimates, we saw that the methodologies revolved around using financial spend as the key metric. But frustratingly these approaches seemed opaque beyond the high level.
 
 We know from our own experience that spend based metrics are best viewed as a starting point. They're riddled with problems and don't lend any meaningful assistance when considering how to reduce impact as many commercial models rely on free, or reduced, offerings. We felt there's enough research out there by now that we can make the next iteration forward and improve upon this. Whilst, of course, still embracing the concept of [progress over perfection](https://branch.climateaction.tech/issues/issue-8/).
 
@@ -174,7 +174,7 @@ The **longer answer** is that we recognise there are a multitude of ways you can
 - The 342 kgCO<sub>2</sub>e/year figure comes from a snapshot in time. 2023 turns out to be a year that GWF ended up bearing responsibility for the emissions of four purchased machines (two refurbed and two new), but no monitor purchases. Is this an average year or an outlier? We can't know confidently until we estimate GWF's digital estate for a few more years.
 - The 342 kgCO<sub>2</sub>e/year figure itself is only an estimate. The accuracy of any estimate should always be viewed with a pinch of salt. It is not a precise measurement. However, we rated the methodologies we used for the two largest parts of this calculation with high confidence. The third methodology with medium confidence. Is there room for improvement in these methodologies? Absolutely. Is there room for improvement in the [PCF](/resources/glossary#product-carbon-footprint-pcf) datasheets produced, or in many cases not produced, by hardware manufacturers? Absolutely. _(Looking at you printer manufacturers.)_
 
-What's really noteworthy about this section is the impact that buying refurbed, remanufactured or reused hardware has on estimates. [We modelled the impact of our laptop choices](reducing-impact#employee-hardware) and found that simply by choosing a refurbed machine over a new one, you can save nearly 85% of the carbon emissions.
+What's really noteworthy about this section is the impact that buying refurbed, remanufactured or reused hardware has on estimates. [We modelled the impact of our laptop choices](/case-studies/green-web-foundation/reducing-impact#employee-hardware) and found that simply by choosing a refurbed machine over a new one, you can save nearly 85% of the carbon emissions.
 
 Another surprise was what the numbers showed us about the impact of monitors. Again, if you'd asked the project team at the start which represented more emissions - laptops or monitors - we'd have all guessed laptops. But surprisingly the data we found shows monitors are estimated to produce more emissions on a unit by unit basis. This is true both for the embodied and usage emissions.
 
@@ -206,4 +206,4 @@ This raises an important question. What can we really do to minimize the impact 
 
 ---
 
-[Next - Assumptions](assumptions)
+[Next - Assumptions](/case-studies/green-web-foundation/assumptions)
