@@ -203,6 +203,6 @@ $$ 14\ kWh/year \times 0.490\ kgCO_2e/kWh = 6.86\ kgCO_2e/year $$
 
 ---
 
-[Next - Reducing impact](reducing-impact)
+[Next - Reducing impact](/case-studies/green-web-foundation/reducing-impact)
 
 ---

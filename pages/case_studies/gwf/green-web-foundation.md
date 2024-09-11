@@ -11,11 +11,11 @@ As long-term advocates for the benefits of open-source, Green Web Foundation (GW
 
 This project write-up is the result of this collaboration.
 
-1. [Overview](overview)
-1. [Insights](insights)
-1. [Assumptions](assumptions)
-1. [Upstream Emissions](upstream)
-1. [Operational Emissions](operational)
-1. [Downstream Emissions](downstream)
-1. [Reducing impact](reducing-impact)
-1. [Appendix](appendix)
+1. [Overview](/case-studies/green-web-foundation/overview)
+1. [Insights](/case-studies/green-web-foundation/insights)
+1. [Assumptions](/case-studies/green-web-foundation/assumptions)
+1. [Upstream Emissions](/case-studies/green-web-foundation/upstream)
+1. [Operational Emissions](/case-studies/green-web-foundation/operational)
+1. [Downstream Emissions](/case-studies/green-web-foundation/downstream)
+1. [Reducing impact](/case-studies/green-web-foundation/reducing-impact)
+1. [Appendix](/case-studies/green-web-foundation/appendix)

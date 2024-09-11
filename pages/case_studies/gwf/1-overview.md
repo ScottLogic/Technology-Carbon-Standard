@@ -94,7 +94,7 @@ Organisations can push suppliers to provide machine readable, publicly verifiabl
 
 Organisations can make a considerable impact on their digital estate emission estimates by choosing to minimise unnecessary hardware and use what they do need efficiently. Procurement departments can prioritise refurbed, remanufactured or reused employee hardware and shortly, consider the ecodesign ratings on specific product groups. As an added bonus, organisations can also choose to support non-profit campaign groups like [repair.eu](https://repair.eu/).
 
-[Insights full write-up](Insights)
+[Insights full write-up](/case-studies/green-web-foundation/insights)
 
 [To the top](#top)
 
@@ -153,5 +153,5 @@ The project set out to use the TCS framework to estimate GWF's digital estate, f
 [To the top](#top)
 
 ---
-[Next - Insights](Insights)
+[Next - Insights](/case-studies/green-web-foundation/insights)
 

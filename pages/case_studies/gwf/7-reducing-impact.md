@@ -25,7 +25,7 @@ In this section, we look beyond estimations/reporting and think about what facto
 
 Of the four laptops acquired in 2023, two were purchased new and two refurbished. Those refurbished laptops use a condition factor of 15% attribution, the new laptops use 100% attribution.
 
-Returning to the [formula we used in the upstream emissions section](upstream#detailed-estimate-methodology), we can recalculate the total embodied carbon emissions assuming all four laptops were acquired as new:
+Returning to the [formula we used in the upstream emissions section](/case-studies/green-web-foundation/upstream#detailed-estimate-methodology), we can recalculate the total embodied carbon emissions assuming all four laptops were acquired as new:
 
 $$ Attributed\_Carbon = Embodied\_Carbon \times Condition\_Factor \times BYOD\_Attribution\_Factor $$
 
@@ -49,7 +49,7 @@ With two refurbished and two new laptops, we previously calculated a total of 18
 
 ### Exploration
 
-Let's revisit the [detailed estimation for Hetzner VMs operational emissions](operational#hetzner-vm-detail). The resulting detailed operational carbon emissions estimate for the four Hetzner VMs was 0.94 kgCO2e/year.
+Let's revisit the [detailed estimation for Hetzner VMs operational emissions](/case-studies/green-web-foundation/operational#hetzner-vm-detail). The resulting detailed operational carbon emissions estimate for the four Hetzner VMs was 0.94 kgCO2e/year.
 
 To estimate those emissions, we used a renewable energy carbon intensity value of 0.0195 kgCO<sub>2</sub>e/kWh which represents a mix of hydro and wind power. To model our what-if scenario we can replace this carbon intensity for a region's carbon intensity. 
 
@@ -77,6 +77,6 @@ Let's bear in mind these numbers in isolation are very small, because GWF doesn'
 
 ---
 
-[Next - Appendix](appendix)
+[Next - Appendix](/case-studies/green-web-foundation/appendix)
 
 ---
