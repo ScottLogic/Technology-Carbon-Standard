@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techcarbonstandard.org/schemas/techcarbonstandardschema.json",
+  "title": "Technology Carbon Standard",
+  "description": "The Technology Carbon Standard is a standard for measuring and managing the carbon emissions of technology products and services.",
+  "type": "object",
+  "properties": {
+    "upstream_emissions": {
+      "type": "object",
+      "description": "Upstream emissions relating to the embodied carbon of hardware and the development of software.",
+      "properties": {
+        "software": {
+          "type": "number",
+          "description": "The carbon emissions of software products and services. (kgCO2e)",
+          "minimum": 0
+        },
+        "employee_hardware": {
+          "type": "number",
+          "description": "The embodied carbon emissions of employee hardware. (kgCO2e)",
+          "minimum": 0
+        },
+        "network_hardware": {
+          "type": "number",
+          "description": "The embodied carbon emissions of network hardware. (kgCO2e)",
+          "minimum": 0
+        },
+        "server_hardware": {
+          "type": "number",
+          "description": "The embodied carbon emissions of server hardware. (kgCO2e)",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "software",
+        "employee_hardware",
+        "network_hardware",
+        "server_hardware"
+      ],
+      "additionalProperties": false
+    },
+    "direct_emissions": {
+      "type": "object",
+      "description": "Direct running costs that are attributed to the electricity powering servers, networks and devices.",
+      "properties": {
+        "onsite_employee_hardware": {
+          "type": "number",
+          "description": "The operational carbon emissions of employee equipment (kgCO2e). ",
+          "minimum": 0
+        },
+        "networking": {
+          "type": "number",
+          "description": "The operational carbon emissions of networking equipment. (kgCO2e)",
+          "minimum": 0
+        },
+        "servers": {
+          "type": "number",
+          "description": "The operational carbon emissions of servers. (kgCO2e)",
+          "minimum": 0
+        },
+        "generators": {
+          "type": "number",
+          "description": "The operational carbon emissions of generators. (kgCO2e)",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "onsite_employee_hardware",
+        "networking",
+        "servers",
+        "generators"
+      ],
+      "additionalProperties": false
+    },
+    "indirect_emissions": {
+      "type": "object",
+      "description": "Indirect running carbon costs that are attributed to external hardware and service solutions.",
+      "properties": {
+        "offsite_employee_hardware": {
+          "type": "number",
+          "description": "The operational carbon emissions of employee equipment offsite (kgCO2e).",
+          "minimum": 0
+        },
+        "cloud_services": {
+          "type": "number",
+          "description": "The operational carbon emissions of cloud services (kgCO2e).",
+          "minimum": 0
+        },
+        "saas": {
+          "type": "number",
+          "description": "The operational carbon emissions of SaaS products and services (kgCO2e).",
+          "minimum": 0
+        },
+        "managed_services": {
+          "type": "number",
+          "description": "The operational carbon emissions of managed services (kgCO2e).",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "offsite_employee_hardware",
+        "cloud_services",
+        "saas",
+        "managed_services"
+      ],
+      "additionalProperties": false
+    },
+    "downstream_emissions": {
+      "type": "object",
+      "description": "Carbon associated with the use of products and services produced by the business.",
+      "properties": {
+        "end_user_devices": {
+          "type": "number",
+          "description": "The carbon emissions of end user devices (kgCO2e).",
+          "minimum": 0
+        },
+        "network_data_transfer": {
+          "type": "number",
+          "description": "The carbon emissions of network data transfer (kgCO2e).",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "end_user_devices",
+        "network_data_transfer"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "upstream_emissions",
+    "direct_emissions",
+    "indirect_emissions",
+    "downstream_emissions"
+  ],
+  "additionalProperties": false
+}
