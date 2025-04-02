@@ -1,5 +1,14 @@
 {
-	"organisation": "Scott Logic",
+	"organisation": {
+		"name": "Scott Logic",
+		"disclosures": [
+			{
+				"url": "https://www.scottlogic.com/who-we-are/sustainability",
+				"doc_type": "Web Page",
+				"description": "Scott Logic Sustainability web page"
+			}
+		]
+	},
 	"reportingPeriod": {
 		"fromDate": "2023-01-01",
 		"toDate": "2023-12-31"

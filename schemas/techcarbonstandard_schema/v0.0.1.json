@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema#",
-  "$id": "https://techcarbonstandard.org/schemas/techcarbonstandard_schema.json",
+  "$id": "https://techcarbonstandard.org/schemas/techcarbonstandard_schema/v0.0.1.json",
+  "version": "0.0.1",
   "title": "Technology Carbon Standard",
   "description": "The Technology Carbon Standard is a standard for measuring and managing the carbon emissions of technology products and services.",
   "type": "object",
@@ -26,8 +27,50 @@
 
   "properties": {
     "organisation": {
-      "type": "string",
-      "description": "Name of the reporting organisation"
+      "type": "object",
+      "description": "Details of the reporting organsation's carbon emissions data.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the reporting organisation"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the reporting organisation"
+        },
+        "company_registration_id": {
+          "type": "string",
+          "description": "Company registration number of the reporting organisation"
+        },
+        "company_registration_country": {
+          "type": "string",
+          "description": "Country of registration of the reporting organisation"
+        },
+        "disclosures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL of the disclosure"
+              },
+              "doc_type": {
+                "enum": ["Web Page", "Sustainability Report", "Methodology", "Other"]
+              },
+              "description": {
+                "type": "string",
+                "description": "Description of the disclosure"
+              }
+            },
+            "required": ["url", "doc_type"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["name"],
+      "additionalProperties": false
     },
     "reportingPeriod": {
       "type": "object",
