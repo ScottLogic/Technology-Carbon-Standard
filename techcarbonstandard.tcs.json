@@ -1,24 +1,24 @@
 {
 	"organisation": {
-		"name": "Scott Logic",
-		"disclosures": [
-			{
-				"url": "https://www.scottlogic.com/who-we-are/sustainability",
-				"doc_type": "Web Page",
-				"description": "Scott Logic Sustainability web page"
-			},
-			{
-				"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
-				"doc_type": "Report",
-				"description": "Scott Logic 2023 Sustainability Report"
-			}
-		],
-		"verification": "self reported"
+		"name": "Scott Logic"
 	},
 	"reportingPeriod": {
 		"fromDate": "2023-01-01",
 		"toDate": "2023-12-31"
 	},
+	"verification": "self reported",
+	"disclosures": [
+		{
+			"url": "https://www.scottlogic.com/who-we-are/sustainability",
+			"doc_type": "Web Page",
+			"description": "Scott Logic Sustainability web page"
+		},
+		{
+			"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+			"doc_type": "Report",
+			"description": "Scott Logic 2023 Sustainability Report"
+		}
+	],
 	"upstream_emissions": {
 		"software": {
 			"emissions": 0,

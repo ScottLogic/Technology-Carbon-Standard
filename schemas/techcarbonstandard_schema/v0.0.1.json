@@ -65,53 +65,9 @@
         "company_registration_country": {
           "type": "string",
           "description": "Country of registration of the reporting organisation"
-        },
-        "verification": {
-          "type": "string",
-          "enum": ["self reported", "independently verified"],
-          "description": "Verification status of the reported carbon emissions data"
-        },
-        "auditor_link": {
-          "type": "string",
-          "format": "uri",
-          "description": "Link to the independent auditor's verification statement or report"
-        },
-        "disclosures": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "url": {
-                "type": "string",
-                "format": "uri",
-                "description": "URL of the disclosure"
-              },
-              "doc_type": {
-                "enum": ["Web Page", "Report", "Methodology", "Other"]
-              },
-              "description": {
-                "type": "string",
-                "description": "Description of the disclosure"
-              }
-            },
-            "required": ["url", "doc_type"],
-            "additionalProperties": false
-          }
         }
       },
-      "required": ["name", "verification"],
-      "allOf": [
-        {
-          "if": {
-            "properties": {
-              "verification": { "enum": ["independently verified"] }
-            }
-          },
-          "then": {
-            "required": ["auditor_link"]
-          }
-        }
-      ],
+      "required": ["name"],
       "additionalProperties": false
     },
     "reportingPeriod": {
@@ -131,6 +87,39 @@
       },
       "required": ["fromDate", "toDate"],
       "additionalProperties": false
+    },
+    "verification": {
+      "type": "string",
+      "enum": ["self reported", "independently verified"],
+      "description": "Verification status of the reported carbon emissions data"
+    },
+    "auditor_link": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to the independent auditor's verification statement or report"
+    },
+    "disclosures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the disclosure"
+          },
+          "doc_type": {
+            "enum": ["Web Page", "Report", "Methodology", "Other"],
+            "description": "Type of disclosure - must be one of: 'Web Page, 'Report', 'Methodology', or 'Other'"
+          },
+          "description": {
+            "type": "string",
+            "description": "Brief description of what the disclosure contains"
+          }
+        },
+        "required": ["url", "doc_type"],
+        "additionalProperties": false
+      }
     },
     "upstream_emissions": {
       "type": "object",
@@ -240,7 +229,20 @@
   },
   "required": [
     "organisation",
-    "reportingPeriod"
+    "reportingPeriod",
+    "verification"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verification": { "enum": ["independently verified"] }
+        }
+      },
+      "then": {
+        "required": ["auditor_link"]
+      }
+    }
   ],
   "additionalProperties": false
 }

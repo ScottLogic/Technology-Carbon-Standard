@@ -42,9 +42,9 @@ The Technology Carbon Standard categorises emissions into four main categories:
 
 ## Schema Structure
 
-### Organisation Information
+### Organisation Information (required)
 
-Basic details about the reporting organisation:
+Basic details about the reporting organisation, for example:
 
 ```json
 "organisation": {
@@ -52,28 +52,61 @@ Basic details about the reporting organisation:
   "description": "Description of the organisation",
   "company_registration_id": "12345678",
   "company_registration_country": "England",
-  "disclosures": [
-    {
-      "url": "https://example.com/sustainability",
-      "doc_type": "Web Page",
-      "description": "Sustainability page"
-    }
-  ]
 }
 ```
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| name | string | Yes | Organization name |
-| description | string | No | Description of the organization |
-| company_registration_id | string | No | Company registration number |
-| company_registration_country | string | No | Country of registration |
-| disclosures | array | No | Documentation and disclosure URLs |
+| name | string | Yes | Name of the reporting organisation |
+| description | string | No | Description of the reporting organisation |
+| company_registration_id | string | No | Company registration number of the reporting organisation |
+| company_registration_country | string | No | Country of registration of the reporting organisation |
 
 
-#### Disclosures Schema
+### Verification and Auditing (required)
 
-The disclosures field contains an array of objects that document and link to relevant sustainability and emissions calculation methodology information:
+The schema includes fields for verification status and auditor information. The `verification` field indicates the level of assurance for the reported emissions data:
+
+```json
+"verification": "independently verified",
+"auditor_link": "https://example.com/auditor-statement-2023.pdf"
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| verification | enum | Yes | Verification status - must be either "self reported" or "independently verified" |
+| auditor_link | string (URI) | Conditional | Link to auditor's verification statement - required if verification is "independently verified" |
+
+**Conditional Requirement**: When `verification` is set to `"independently verified"`, the `auditor_link` field becomes required. This ensures that claims of independent verification are supported by accessible documentation.
+
+```json
+// Example with self-reported data
+"verification": "self reported"
+
+// Example with independently verified data
+"verification": "independently verified",
+"auditor_link": "https://example.com/auditor-verification.pdf"
+```
+
+### Reporting Period (required)
+
+The timeframe covered by the emissions report:
+
+```json
+"reportingPeriod": {
+  "fromDate": "2023-01-01",
+  "toDate": "2023-12-31"
+}
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| fromDate | string (date) | Yes | Start date in ISO8601 format (YYYY-MM-DD) |
+| toDate | string (date) | Yes | End date in ISO8601 format (YYYY-MM-DD) |
+
+### Disclosures
+
+The disclosures property contains an array of objects that document and link to relevant sustainability and emissions calculation methodology information. For example:
 
 ```json
 "disclosures": [
@@ -92,24 +125,8 @@ The disclosures field contains an array of objects that document and link to rel
 
 | Field | Type | Required | Description |
 | url | string (URI format) | Yes | URL pointing to the disclosure document |
-| doc_type | enum | Yes | Type of document - must be one of: "Web Page", "Sustainability Report", "Methodology", or "Other" |
-| description | string | No | Brief description of what the disclosure contains|
-
-### Reporting Period
-
-The timeframe covered by the emissions report:
-
-```json
-"reportingPeriod": {
-  "fromDate": "2023-01-01",
-  "toDate": "2023-12-31"
-}
-```
-
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| fromDate | string (date) | Yes | Start date in ISO8601 format (YYYY-MM-DD) |
-| toDate | string (date) | Yes | End date in ISO8601 format (YYYY-MM-DD) |
+| doc_type | enum | Yes | Type of disclosure - must be one of: "Web Page", "Report", "Methodology", or "Other" |
+| description | string | No | Brief description of what the disclosure contains |
 
 ### Emissions Categories
 
@@ -126,9 +143,6 @@ Each emissions category uses a common structure and is **always reported in kgCO
 |-------|------|----------|-------------|
 | emissions | number | Yes | Carbon emissions **in kgCO2e** |
 | notes | string | No | Notes on methodology or calculation |
-
-
-**TODO** add links to the relevant sections of TCS. Maybe use the exiting badges? do they link?
 
 
 {% include linkedHeading.html heading="1. Upstream Emissions" level=3 %}
@@ -209,90 +223,120 @@ Emissions associated with customer use of products and services provided by the 
 | network_data_transfer | Emissions from data transmission infrastructure used by customers |
 
 
+## Required and Optional Fields
+The Technology Carbon Standard schema requires certain fields while making others optional:
+
+### Required Fields
+
+- `organisation` (with required sub-field `name`)
+- `reportingPeriod` (with required sub-fields `fromDate` and `toDate`)
+- `verification`
+
+### Conditionally Required Fields
+
+- `auditor_link`: Required if `verification` is set to `"independently verified"`
+
+### Optional Emissions Categories
+
+Emissions categories are optional, providing flexibility for organisations to report only on categories relevant to their operations. The schema validates that:
+
+- If categories are included, they must follow the correct structure
+- All fields within a category must use the appropriate emissions definition format
+
+
 {% include linkedHeading.html heading="Example Implementation" level=2 %}
 
 Below is an example of a complete Technology Carbon Standard report:
 
 ```json
 {
-  "organisation": {
-    "name": "Scott Logic",
-    "disclosures": [
-      {
-        "url": "https://www.scottlogic.com/who-we-are/sustainability",
-        "doc_type": "Web Page",
-        "description": "Scott Logic Sustainability web page"
-      }
-    ]
-  },
-  "reportingPeriod": {
-    "fromDate": "2023-01-01",
-    "toDate": "2023-12-31"
-  },
-  "upstream_emissions": {
-    "software": {
-      "emissions": 0,
-      "notes": "Not currently meaningfully calculable or estimatable"
-    },
-    "employee_hardware": {
-      "emissions": 55000,
-      "notes": "Embodied carbon of purchased laptops and monitors, using production and transportation figures from manufacturers' product lifecycle reports"
-    },
-    "network_hardware": {
-      "emissions": 1000,
-      "notes": "Loose estimate, based on minimal hardware purchase"
-    },
-    "server_hardware": {
-      "emissions": 0,
-      "notes": "No servers or storage hardware purchased"
-    }
-  },
-  "direct_emissions": {
-    "onsite_employee_hardware": {
-      "emissions": 5000,
-      "notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
-    },
-    "networking": {
-      "emissions": 1000,
-      "notes": "Loose estimate, based on known minimal networking infrastructure"
-    },
-    "servers": {
-      "emissions": 1000,
-      "notes": "Loose estimate, based on known minimal infrastructure"
-    },
-    "generators": {
-      "emissions": 0,
-      "notes": "No generators"
-    }
-  },
-  "indirect_emissions": {
-    "offsite_employee_hardware": {
-      "emissions": 3000,
-      "notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
-    },
-    "cloud_services": {
-      "emissions": 5000,
-      "notes": "Full cloud estate measured using Cloud Carbon Footprinting tool"
-    },
-    "saas": {
-      "emissions": 84000,
-      "notes": "Spend-based estimate calculated using Plan A platform"
-    },
-    "managed_services": {
-      "emissions": 1000,
-      "notes": "Loose estimate, based on known minimal managed services"
-    }
-  },
-  "downstream_emissions": {
-    "end_user_devices": {
-      "emissions": 1000,
-      "notes": "Calculated based on www website traffic figures"
-    },
-    "network_data_transfer": {
-      "emissions": 1000,
-      "notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
-    }
-  }
+	"organisation": {
+		"name": "Scott Logic"
+	},
+	"reportingPeriod": {
+		"fromDate": "2023-01-01",
+		"toDate": "2023-12-31"
+	},
+	"verification": "self reported",
+	"disclosures": [
+		{
+			"url": "https://www.scottlogic.com/who-we-are/sustainability",
+			"doc_type": "Web Page",
+			"description": "Scott Logic Sustainability web page"
+		},
+		{
+			"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+			"doc_type": "Report",
+			"description": "Scott Logic 2023 Sustainability Report"
+		}
+	],
+	"upstream_emissions": {
+		"software": {
+			"emissions": 0,
+			"notes": "Not currently meaningfully calculable or estimatable"
+		},
+		"employee_hardware": {
+			"emissions": 55000,
+			"notes": "Embodied carbon of purchased laptops and monitors, using production and transportation figures from manufacturers' product lifecycle reports"
+		},
+		"network_hardware": {
+			"emissions": 1000,
+			"notes": "Loose estimate, based on minimal hardware purchase"
+		},
+		"server_hardware": {
+			"emissions": 0,
+			"notes": "No servers or storage hardware purchased"
+		}
+	},
+	"direct_emissions": {
+		"onsite_employee_hardware": {
+			"emissions": 5000,
+			"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures",
+			"market_based": false
+		},
+		"networking": {
+			"emissions": 1000,
+			"notes": "Loose estimate, based on known minimal networking infrastructure",
+			"market_based": false
+		},
+		"servers": {
+			"emissions": 1000,
+			"notes": "Loose estimate, based on known minimal infrastructure",
+			"market_based": false
+		},
+		"generators": {
+			"emissions": 0,
+			"notes": "No generators"
+		}
+	},
+	"indirect_emissions": {
+		"offsite_employee_hardware": {
+			"emissions": 3000,
+			"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
+		},
+		"cloud_services": {
+			"emissions": 5000,
+			"notes": "Full cloud estate measured using Cloud Carbon Footprinting tool"
+		},
+		"saas": {
+			"emissions": 84000,
+			"notes": "Spend-based estimate calculated using Plan A platform"
+		},
+		"managed_services": {
+			"emissions": 1000,
+			"notes": "Loose estimate, based on known minimal managed services"
+		}
+	},
+	"downstream_emissions": {
+		"end_user_devices": {
+			"emissions": 1000,
+			"notes": "Calculated based on www website traffic figures"
+		},
+		"network_data_transfer": {
+			"emissions": 1000,
+			"notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
+		}
+	}
 }
 ```
 
