@@ -22,6 +22,26 @@
       },
       "required": ["emissions"],
       "additionalProperties": false
+    },
+    "marketBasedEmissionsDef": {
+      "type": "object",
+      "properties": {
+        "emissions": {
+          "type": "number",
+          "description": "Total carbon emissions in kgCO2e",
+          "minimum": 0
+        },
+        "notes": {
+          "type": "string",
+          "description": "Notes on the carbon emissions"
+        },
+        "market_based": {
+          "type": "boolean",
+          "description": "The value should be 'true' if the emissions are calculated using a market-based method."
+        }
+      },
+      "required": ["emissions", "market_based"],
+      "additionalProperties": false
     }
   },
 
@@ -46,6 +66,16 @@
           "type": "string",
           "description": "Country of registration of the reporting organisation"
         },
+        "verification": {
+          "type": "string",
+          "enum": ["self reported", "independently verified"],
+          "description": "Verification status of the reported carbon emissions data"
+        },
+        "auditor_link": {
+          "type": "string",
+          "format": "uri",
+          "description": "Link to the independent auditor's verification statement or report"
+        },
         "disclosures": {
           "type": "array",
           "items": {
@@ -57,7 +87,7 @@
                 "description": "URL of the disclosure"
               },
               "doc_type": {
-                "enum": ["Web Page", "Sustainability Report", "Methodology", "Other"]
+                "enum": ["Web Page", "Report", "Methodology", "Other"]
               },
               "description": {
                 "type": "string",
@@ -69,7 +99,19 @@
           }
         }
       },
-      "required": ["name"],
+      "required": ["name", "verification"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "verification": { "enum": ["independently verified"] }
+            }
+          },
+          "then": {
+            "required": ["auditor_link"]
+          }
+        }
+      ],
       "additionalProperties": false
     },
     "reportingPeriod": {
@@ -124,15 +166,27 @@
       "description": "Direct running costs that are attributed to the electricity powering servers, networks and devices.",
       "properties": {
         "onsite_employee_hardware": {
-          "$ref": "#/$defs/emissionsDef",
+          "$ref": "#/$defs/marketBasedEmissionsDef",
+          "market_based": {
+            "type": "boolean",
+            "description": "The value should be 'true' if the emissions are calculated using a market-based method."
+          },
           "description": "Emissions associated with the operation and use of devices owned by an organisation."
         },
         "networking": {
-          "$ref": "#/$defs/emissionsDef",
+          "$ref": "#/$defs/marketBasedEmissionsDef",
+          "market_based": {
+            "type": "boolean",
+            "description": "The value should be 'true' if the emissions are calculated using a market-based method."
+          },
           "description": "Emissions associated with the operation and use of networking and infrastructure."
         },
         "servers": {
-          "$ref": "#/$defs/emissionsDef",
+          "$ref": "#/$defs/marketBasedEmissionsDef",
+          "market_based": {
+            "type": "boolean",
+            "description": "The value should be 'true' if the emissions are calculated using a market-based method."
+          },
           "description": "The energy consumed by on-premise servers and data centres."
         },
         "generators": {
@@ -140,12 +194,7 @@
           "description": "Any fossil fuel-powered generators, solar PV, wind turbines, or other systems installed on-site to supply electricity to technology equipment."
         }
       },
-      "required": [
-        "onsite_employee_hardware",
-        "networking",
-        "servers",
-        "generators"
-      ],
+      "required": [],
       "additionalProperties": false
     },
     "indirect_emissions": {
@@ -169,12 +218,7 @@
           "description": "The associated emissions of Managed Security Operations, IT support and data backup services."
         }
       },
-      "required": [
-        "offsite_employee_hardware",
-        "cloud_services",
-        "saas",
-        "managed_services"
-      ],
+      "required": [],
       "additionalProperties": false
     },
     "downstream_emissions": {
@@ -190,20 +234,13 @@
           "description": "These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services."
         }
       },
-      "required": [
-        "end_user_devices",
-        "network_data_transfer"
-      ],
+      "required": [],
       "additionalProperties": false
     }
   },
   "required": [
     "organisation",
-    "reportingPeriod",
-    "upstream_emissions",
-    "direct_emissions",
-    "indirect_emissions",
-    "downstream_emissions"
+    "reportingPeriod"
   ],
   "additionalProperties": false
 }

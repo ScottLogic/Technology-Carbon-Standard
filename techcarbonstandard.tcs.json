@@ -6,8 +6,14 @@
 				"url": "https://www.scottlogic.com/who-we-are/sustainability",
 				"doc_type": "Web Page",
 				"description": "Scott Logic Sustainability web page"
+			},
+			{
+				"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+				"doc_type": "Report",
+				"description": "Scott Logic 2023 Sustainability Report"
 			}
-		]
+		],
+		"verification": "self reported"
 	},
 	"reportingPeriod": {
 		"fromDate": "2023-01-01",
@@ -34,15 +40,18 @@
 	"direct_emissions": {
 		"onsite_employee_hardware": {
 			"emissions": 5000,
-			"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
+			"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures",
+			"market_based": false
 		},
 		"networking": {
 			"emissions": 1000,
-			"notes": "Loose estimate, based on known minimal networking infrastructure"
+			"notes": "Loose estimate, based on known minimal networking infrastructure",
+			"market_based": false
 		},
 		"servers": {
 			"emissions": 1000,
-			"notes": "Loose estimate, based on known minimal infrastructure"
+			"notes": "Loose estimate, based on known minimal infrastructure",
+			"market_based": false
 		},
 		"generators": {
 			"emissions": 0,
