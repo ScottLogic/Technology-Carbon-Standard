@@ -1,11 +1,9 @@
+## Issue
 <!--
  Remove if not applicable.
  See https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue for other wording options
  -->
-Resolves #&lt;Issue number&gt;
-
-<!-- Remove if issue not tracked via Jira -->
-[&lt;Issue Code&gt; Jira ticket](https://scottlogic.atlassian.net/browse/Issue-Code)
+Resolves Issue: #&lt;Issue number&gt;
 
 ## Description of Change
 
