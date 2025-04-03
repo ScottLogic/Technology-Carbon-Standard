@@ -1,7 +1,7 @@
 ---
 layout: default
 title: TCS Schema
-permalink: /schema/
+permalink: /schema/techcarbonstandard
 ---
 
 # Technology Carbon Standard Schema
