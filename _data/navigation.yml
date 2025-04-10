@@ -7,11 +7,13 @@
       link: /technology-categories
     # - name: Roles
     #   link: /roles
+- name: About
+  link: /about
 - name: Case Studies
   link: /case-studies
 - name: Resources
   link: /resources
-  sublinks:   
+  sublinks:
   # - name: Tools
   #   link: /resources/tools
   # - name: Links
@@ -20,7 +22,8 @@
     link: /resources/glossary
   # - name: References
   #   link: /resources/references
+- name: Schema
+  link: /schema/techcarbonstandard
 - name: Carbon Estimator
   link: /estimator
-- name: About
-  link: /about
+

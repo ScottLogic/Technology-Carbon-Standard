@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema#",
+  "$id": "https://techcarbonstandard.org/schemas/techcarbonstandard_schema/v0.0.1.json",
+  "version": "0.0.1",
+  "title": "Technology Carbon Standard",
+  "description": "The Technology Carbon Standard is a standard for measuring and managing the carbon emissions of technology products and services.",
+  "type": "array",
+
+  "$defs": {
+    "emissions_def": {
+      "type": "object",
+      "properties": {
+        "emissions": {
+          "type": "number",
+          "description": "Total carbon emissions in kgCO2e",
+          "minimum": 0
+        },
+        "notes": {
+          "type": "string",
+          "description": "Notes on the carbon emissions"
+        }
+      },
+      "required": ["emissions"],
+      "additionalProperties": false
+    },
+    "scope_2_emissions_def": {
+      "type": "object",
+      "properties": {
+        "emissions": {
+          "type": "number",
+          "description": "Total carbon emissions in kgCO2e",
+          "minimum": 0
+        },
+        "notes": {
+          "type": "string",
+          "description": "Notes on the carbon emissions"
+        },
+        "method": {
+          "enum": ["location-based", "market-based", "mixed-methods", "other"],
+          "description": "Provide the method used for calculating the emissions. Must be one of: 'location-based', 'market-based', 'mixed-method', or 'other."
+        }
+      },
+      "required": ["emissions"],
+      "additionalProperties": false
+    }
+  },
+
+  "properties": {
+    "organisation": {
+      "type": "object",
+      "description": "Details of the reporting organsation's carbon emissions data.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the reporting organisation"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the reporting organisation"
+        },
+        "open_corporates_id": {
+          "type": "string",
+          "description": "Open corporates ID of the reporting organisation"
+        },
+        "registered_country": {
+          "type": "string",
+          "description": "Country of registration of the reporting organisation"
+        }
+      },
+      "required": ["name"],
+      "additionalProperties": false
+    },
+    "reporting_period": {
+      "type": "object",
+      "description": "The reporting period for the carbon emissions data.",
+      "properties": {
+        "from_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Reporting start date in ISO8601 format (YYYY-MM-DD)"
+        },
+        "to_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Reporting end date in ISO8601 format (YYYY-MM-DD)"
+        }
+      },
+      "required": ["from_date", "to_date"],
+      "additionalProperties": false
+    },
+    "verification": {
+      "type": "string",
+      "enum": ["self reported", "independently verified"],
+      "description": "Verification status of the reported carbon emissions data"
+    },
+    "auditor_link": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to the independent auditor's website"
+    },
+    "disclosures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the disclosure"
+          },
+          "doc_type": {
+            "enum": ["report", "methodology", "other"],
+            "description": "Type of disclosure - must be one of: 'report', 'methodology', or 'other'"
+          },
+          "description": {
+            "type": "string",
+            "description": "Brief description of what the disclosure contains"
+          }
+        },
+        "required": ["url", "doc_type"],
+        "additionalProperties": false
+      }
+    },
+    "upstream_emissions": {
+      "type": "object",
+      "description": "Upstream emissions relating to the embodied carbon of hardware and the development of software.",
+      "properties": {
+        "software": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "Emissions associated with developing and delivering off-the-shelf and open-source software installed on the organisation's systems."
+        },
+        "employee_hardware": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "Embodied carbon emissions associated with hardware devices owned by an organisation, including emissions from the manufacture, transportation, installation, maintenance, and end-of-life of a device."
+        },
+        "network_hardware": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "When considering the upstream emissions of a network, consider the embodied carbon of any networking devices that are owned by the organisation."
+        },
+        "server_hardware": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "Servers, storage systems, and data centre infrastructure installed on-premise."
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "direct_emissions": {
+      "type": "object",
+      "description": "Direct running costs that are attributed to the electricity powering servers, networks and devices.",
+      "properties": {
+        "onsite_employee_hardware": {
+          "$ref": "#/$defs/scope_2_emissions_def",
+          "description": "Emissions associated with the operation and use of devices owned by an organisation."
+        },
+        "networking": {
+          "$ref": "#/$defs/scope_2_emissions_def",
+          "description": "Emissions associated with the operation and use of networking and infrastructure."
+        },
+        "servers": {
+          "$ref": "#/$defs/scope_2_emissions_def",
+          "description": "The energy consumed by on-premise servers and data centres."
+        },
+        "generators": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "Any fossil fuel-powered generators, solar PV, wind turbines, or other systems installed on-site to supply electricity to technology equipment."
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "indirect_emissions": {
+      "type": "object",
+      "description": "Indirect running carbon costs that are attributed to external hardware and service solutions.",
+      "properties": {
+        "offsite_employee_hardware": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "The emissions incurred by computers (desktops, laptops), monitors, printers, and other devices used by employees, when used out-of-office."
+        },
+        "cloud_services": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "The emissions associated with cloud platform services like compute, storage, and networking."
+        },
+        "saas": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "The emissions associated with Software-as-a-Service (SaaS) applications."
+        },
+        "managed_services": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "The associated emissions of Managed Security Operations, IT support and data backup services."
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "downstream_emissions": {
+      "type": "object",
+      "description": "Carbon associated with the use of products and services produced by the organisation.",
+      "properties": {
+        "end_user_devices": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "This considers the emissions generated from the electricity consumption of devices such as desktops, laptops, tablets, and mobile phones that utilise the products or services provided by an organisation."
+        },
+        "network_data_transfer": {
+          "$ref": "#/$defs/emissions_def",
+          "description": "These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services."
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "organisation",
+    "reporting_period",
+    "verification"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verification": { "enum": ["independently verified"] }
+        }
+      },
+      "then": {
+        "required": ["auditor_link"]
+      }
+    }
+  ],
+  "additionalProperties": false
+}
