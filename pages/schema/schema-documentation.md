@@ -52,6 +52,37 @@ The **tcs.json* emissions file is an array of emissions reports. Each TCS report
 
 ## Schema Structure
 
+The schema requires each TCS emission report object be listed in an array.
+
+```json
+// tcs.json
+[
+	// TCS Report for reporting period 2024-2025:
+	{
+		"organisation": {...},
+		"reporting_period": {...},
+		"verification": {...},
+		"disclosures": {...},
+		"upstream_emissions": {...},
+		"direct_emissions": {...},
+		"indirect_emissions": {...},
+		"downstream_emissions": {...}
+	},
+
+	// TCS Report for reporting period 2023-2024:
+	{
+		"organisation": {...},
+		"reporting_period": {...},
+		"verification": {...},
+		"disclosures": {...},
+		"upstream_emissions": {...},
+		"direct_emissions": {...},
+		"indirect_emissions": {...},
+		"downstream_emissions": {...}
+	}
+]
+```
+
 ### Organisation Information (required)
 
 Basic details about the reporting organisation, for example:
@@ -87,7 +118,7 @@ The schema includes fields for verification status and auditor information. The 
 | verification | enum | Yes | Verification status - must be either "self reported" or "independently verified" |
 | auditor_link | string (URI) | Conditional | Link to auditor's website - required if verification is "independently verified" |
 
-**Conditional Requirement**: When {% include inlineCode.html code="verification" %} is set to {% include inlineCode.html code="'independently verified" %}, the {% include inlineCode.html code="auditor_link" %} field becomes required. This ensures that claims of independent verification are supported by accessible documentation.
+**Conditional Requirement**: When {% include inlineCode.html code="verification" %} is set to {% include inlineCode.html code="'independently verified'" %}, the {% include inlineCode.html code="auditor_link" %} field becomes required. This ensures that claims of independent verification are supported by accessible documentation.
 
 ```json
 // Example with self-reported data
@@ -404,7 +435,7 @@ You can validate your tcs.json file against the schema using tools like:
 
 ### 3. Publish the tcs.json File
 
-Publish your **tcs.json** file at the root of your organisation's web domain e.g., **https://example.com/tcs.json** and ensure it is publically accessible.
+Publish your **tcs.json** file at the root of your organisation's web domain e.g., **https://example.com/tcs.json** or, preferably at the "well-known location" of their web domain e.g., *https://example.com/.well-known/tcs.json* and ensure it is publically accessible.
 
 
 {% include linkedHeading.html heading="Resources" level=2 %}
