@@ -17,7 +17,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"']
+      'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"'],
+      'mono': ['Menlo', 'Consolas', '"Courier New"', 'Courier', '"Liberation Mono"', 'monospace'],
     },
     extend:{
       colors: {

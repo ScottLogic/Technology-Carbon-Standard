@@ -13,7 +13,7 @@ The Technology Carbon Standard is a structured framework for measuring and manag
 The TCS Schema serves a critical purpose in the sustainability landscape:
 
 - **Standardised Reporting**: It creates a uniform machine-readable format for technology-related carbon emissions, enabling consistent reporting across organisations.
-- **Discoverability**: Organisations publish their emissions data in a standardised file named *tcs-emissions.json* (**TBC**) at the root of their web domain e.g., *https://example.com/tcs-emissions.json*, making it easily discoverable.
+- **Discoverability - Details TBC**: Organisations publish their TCS emissions data in a standardised file named *tcs.json* either at the root domain; *https://example.com/tcs.json* or, preferably at the "well-known location" of their web domain e.g., *https://example.com/.well-known/tcs.json*, making it easily discoverable. **Note: well-known location requires approved registration, TBC...**.
 - **Accessibility**: This standard location and format makes emissions data directly accessible to automated systems, reporting tools, industry benchmarks, and other machine-readable services without requiring manual data extraction.
 - **Transparency**: By making emissions data available in a structured, public format, organisations demonstrate their commitment to transparency and environmental responsibility.
 - **Comparability**: The standardised format allows for meaningful comparison of emissions data across different organisations and time periods.
@@ -33,12 +33,22 @@ Organisations implementing the standard should reference the specific version th
 
 ## Overview
 
-The Technology Carbon Standard categorises emissions into four main categories:
+The Technology Carbon Standard emissions file consists of:
+
+- the reporting organisation (required)
+- the reporting period (required)
+- the verification method (required)
+- any related disclosures
+- the emissions reported across the TCS categories
+
+The categories of emissions into four main categories:
 
 1. **Upstream Emissions**: Embodied carbon in hardware and carbon impact of software development
 2. **Direct Emissions**: Running costs from electricity powering servers, networks, and devices
 3. **Indirect Emissions**: Running costs attributed to external hardware and service solutions
 4. **Downstream Emissions**: Carbon emissions associated with the use of products and services by end users
+
+The **tcs.json* emissions file is an array of emissions reports. Each TCS report (by reporting period, or organisation entity), can be added to the array of reports.
 
 ## Schema Structure
 
@@ -50,8 +60,8 @@ Basic details about the reporting organisation, for example:
 "organisation": {
   "name": "Example Corp",
   "description": "Description of the organisation",
-  "company_registration_id": "12345678",
-  "company_registration_country": "England",
+  "open_corporates_id": "12345678",
+  "registered_country": "England",
 }
 ```
 
@@ -59,25 +69,25 @@ Basic details about the reporting organisation, for example:
 |-------|------|----------|-------------|
 | name | string | Yes | Name of the reporting organisation |
 | description | string | No | Description of the reporting organisation |
-| company_registration_id | string | No | Company registration number of the reporting organisation |
-| company_registration_country | string | No | Country of registration of the reporting organisation |
+| open_corporates_id | string | No | [Open corporates](https://opencorporates.com/) ID of the reporting organisation |
+| registered_country | string | No | Country of registration of the reporting organisation |
 
 
 ### Verification and Auditing (required)
 
-The schema includes fields for verification status and auditor information. The `verification` field indicates the level of assurance for the reported emissions data:
+The schema includes fields for verification status and auditor information. The {% include inlineCode.html code="verification" %} field indicates the level of assurance for the reported emissions data:
 
 ```json
 "verification": "independently verified",
-"auditor_link": "https://example.com/auditor-statement-2023.pdf"
+"auditor_link": "https://example-auditor.com/"
 ```
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | verification | enum | Yes | Verification status - must be either "self reported" or "independently verified" |
-| auditor_link | string (URI) | Conditional | Link to auditor's verification statement - required if verification is "independently verified" |
+| auditor_link | string (URI) | Conditional | Link to auditor's website - required if verification is "independently verified" |
 
-**Conditional Requirement**: When `verification` is set to `"independently verified"`, the `auditor_link` field becomes required. This ensures that claims of independent verification are supported by accessible documentation.
+**Conditional Requirement**: When {% include inlineCode.html code="verification" %} is set to {% include inlineCode.html code="'independently verified" %}, the {% include inlineCode.html code="auditor_link" %} field becomes required. This ensures that claims of independent verification are supported by accessible documentation.
 
 ```json
 // Example with self-reported data
@@ -85,7 +95,7 @@ The schema includes fields for verification status and auditor information. The 
 
 // Example with independently verified data
 "verification": "independently verified",
-"auditor_link": "https://example.com/auditor-verification.pdf"
+"auditor_link": "https://example-auditor.com/"
 ```
 
 ### Reporting Period (required)
@@ -93,16 +103,16 @@ The schema includes fields for verification status and auditor information. The 
 The timeframe covered by the emissions report:
 
 ```json
-"reportingPeriod": {
-  "fromDate": "2023-01-01",
-  "toDate": "2023-12-31"
+"reporting_period": {
+  "from_date": "2023-01-01",
+  "to_date": "2023-12-31"
 }
 ```
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| fromDate | string (date) | Yes | Start date in ISO8601 format (YYYY-MM-DD) |
-| toDate | string (date) | Yes | End date in ISO8601 format (YYYY-MM-DD) |
+| from_date | string (date) | Yes | Start date in ISO8601 format (YYYY-MM-DD) |
+| to_date | string (date) | Yes | End date in ISO8601 format (YYYY-MM-DD) |
 
 ### Disclosures
 
@@ -112,7 +122,7 @@ The disclosures property contains an array of objects that document and link to 
 "disclosures": [
   {
     "url": "https://example.com/sustainability",
-    "doc_type": "Sustainability Report",
+    "doc_type": "Report",
     "description": "Annual sustainability report"
   },
   {
@@ -125,7 +135,7 @@ The disclosures property contains an array of objects that document and link to 
 
 | Field | Type | Required | Description |
 | url | string (URI format) | Yes | URL pointing to the disclosure document |
-| doc_type | enum | Yes | Type of disclosure - must be one of: "Web Page", "Report", "Methodology", or "Other" |
+| doc_type | enum | Yes | Type of disclosure - must be one of: "report", "methodology", or "other" |
 | description | string | No | Brief description of what the disclosure contains |
 
 ### Emissions Categories
@@ -139,10 +149,21 @@ Each emissions category uses a common structure and is **always reported in kgCO
 }
 ```
 
+For GHG Scope 2 emissions (direct operational emission, category O), a further optional field is available for indicating the use of location or market based emissions calculation.
+
+```json
+{
+	"emissions": 1000,
+  "notes": "Notes on the carbon calculation",
+	"method": "location-based"
+}
+```
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | emissions | number | Yes | Carbon emissions **in kgCO2e** |
 | notes | string | No | Notes on methodology or calculation |
+| method | enum | No | The emissions calculation method, must be one of: "location-based", "market-based", "mixed-methods" or "other" (applicable only to direct operational emissions, category O) |
 
 
 {% include linkedHeading.html heading="1. Upstream Emissions" level=3 %}
@@ -172,9 +193,9 @@ Emissions from electricity powering the organisation's technology:
 
 ```json
 "direct_emissions": {
-  "onsite_employee_hardware": { "emissions": 5000, "notes": "..." },
-  "networking": { "emissions": 1000, "notes": "..." },
-  "servers": { "emissions": 1000, "notes": "..." },
+  "onsite_employee_hardware": { "emissions": 5000, "notes": "...", "method": "location-based" },
+  "networking": { "emissions": 1000, "notes": "...", "method": "location-based" },
+  "servers": { "emissions": 1000, "notes": "...", "method": "mixed-methods" },
   "generators": { "emissions": 0, "notes": "..." }
 }
 ```
@@ -185,6 +206,9 @@ Emissions from electricity powering the organisation's technology:
 | networking | Emissions from operating on-site networking infrastructure |
 | servers | Energy consumed by on-premise servers |
 | generators | Emissions from on-site power generation |
+
+
+Note that the GHG Scope 2 {% include inlineCode.html code="onsite_employee_hardware" %}, {% include inlineCode.html code="networking" %} and {% include inlineCode.html code="servers" %} have an additional, optional field for recording the calculation method; {% include inlineCode.html code="method" %}.
 
 {% include linkedHeading.html heading="3. Indirect Emissions" level=3 %}
 
@@ -228,13 +252,13 @@ The Technology Carbon Standard schema requires certain fields while making other
 
 ### Required Fields
 
-- `organisation` (with required sub-field `name`)
-- `reportingPeriod` (with required sub-fields `fromDate` and `toDate`)
-- `verification`
+- {% include inlineCode.html code="organisation" %} (with required sub-field {% include inlineCode.html code="name" %})
+- {% include inlineCode.html code="reporting_period" %} (with required sub-fields {% include inlineCode.html code="from_date" %} and {% include inlineCode.html code="to_date" %})
+- {% include inlineCode.html code="verification" %}
 
 ### Conditionally Required Fields
 
-- `auditor_link`: Required if `verification` is set to `"independently verified"`
+- {% include inlineCode.html code="auditor_link" %}: Required if {% include inlineCode.html code="verification" %} is set to {% include inlineCode.html code="'independently verified'" %}
 
 ### Optional Emissions Categories
 
@@ -249,102 +273,96 @@ Emissions categories are optional, providing flexibility for organisations to re
 Below is an example of a complete Technology Carbon Standard report:
 
 ```json
-{
-	"organisation": {
-		"name": "Scott Logic"
-	},
-	"reportingPeriod": {
-		"fromDate": "2023-01-01",
-		"toDate": "2023-12-31"
-	},
-	"verification": "self reported",
-	"disclosures": [
-		{
-			"url": "https://www.scottlogic.com/who-we-are/sustainability",
-			"doc_type": "Web Page",
-			"description": "Scott Logic Sustainability web page"
+[
+	{
+		"organisation": {
+			"name": "Scott Logic"
 		},
-		{
-			"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
-			"doc_type": "Report",
-			"description": "Scott Logic 2023 Sustainability Report"
-		}
-	],
-	"upstream_emissions": {
-		"software": {
-			"emissions": 0,
-			"notes": "Not currently meaningfully calculable or estimatable"
+		"reporting_period": {
+			"from_date": "2023-01-01",
+			"to_date": "2023-12-31"
 		},
-		"employee_hardware": {
-			"emissions": 55000,
-			"notes": "Embodied carbon of purchased laptops and monitors, using production and transportation figures from manufacturers' product lifecycle reports"
+		"verification": "self reported",
+		"disclosures": [
+			{
+				"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+				"doc_type": "Report",
+				"description": "Scott Logic 2023 Sustainability Report"
+			}
+		],
+		"upstream_emissions": {
+			"software": {
+				"emissions": 0,
+				"notes": "Not currently meaningfully calculable or estimatable"
+			},
+			"employee_hardware": {
+				"emissions": 55000,
+				"notes": "Embodied carbon of purchased laptops and monitors, using production and transportation figures from manufacturers' product lifecycle reports"
+			},
+			"network_hardware": {
+				"emissions": 1000,
+				"notes": "Loose estimate, based on minimal hardware purchase"
+			},
+			"server_hardware": {
+				"emissions": 0,
+				"notes": "No servers or storage hardware purchased"
+			}
 		},
-		"network_hardware": {
-			"emissions": 1000,
-			"notes": "Loose estimate, based on minimal hardware purchase"
+		"direct_emissions": {
+			"onsite_employee_hardware": {
+				"emissions": 5000,
+				"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
+			},
+			"networking": {
+				"emissions": 1000,
+				"notes": "Loose estimate, based on known minimal networking infrastructure"
+			},
+			"servers": {
+				"emissions": 1000,
+				"notes": "Loose estimate, based on known minimal infrastructure"
+			},
+			"generators": {
+				"emissions": 0,
+				"notes": "No generators"
+			}
 		},
-		"server_hardware": {
-			"emissions": 0,
-			"notes": "No servers or storage hardware purchased"
-		}
-	},
-	"direct_emissions": {
-		"onsite_employee_hardware": {
-			"emissions": 5000,
-			"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures",
-			"market_based": false
+		"indirect_emissions": {
+			"offsite_employee_hardware": {
+				"emissions": 3000,
+				"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
+			},
+			"cloud_services": {
+				"emissions": 5000,
+				"notes": "Full cloud estate measured using Cloud Carbon Footprinting tool"
+			},
+			"saas": {
+				"emissions": 84000,
+				"notes": "Spend-based estimate calculated using Plan A platform"
+			},
+			"managed_services": {
+				"emissions": 1000,
+				"notes": "Loose estimate, based on known minimal managed services"
+			}
 		},
-		"networking": {
-			"emissions": 1000,
-			"notes": "Loose estimate, based on known minimal networking infrastructure",
-			"market_based": false
-		},
-		"servers": {
-			"emissions": 1000,
-			"notes": "Loose estimate, based on known minimal infrastructure",
-			"market_based": false
-		},
-		"generators": {
-			"emissions": 0,
-			"notes": "No generators"
-		}
-	},
-	"indirect_emissions": {
-		"offsite_employee_hardware": {
-			"emissions": 3000,
-			"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
-		},
-		"cloud_services": {
-			"emissions": 5000,
-			"notes": "Full cloud estate measured using Cloud Carbon Footprinting tool"
-		},
-		"saas": {
-			"emissions": 84000,
-			"notes": "Spend-based estimate calculated using Plan A platform"
-		},
-		"managed_services": {
-			"emissions": 1000,
-			"notes": "Loose estimate, based on known minimal managed services"
-		}
-	},
-	"downstream_emissions": {
-		"end_user_devices": {
-			"emissions": 1000,
-			"notes": "Calculated based on www website traffic figures"
-		},
-		"network_data_transfer": {
-			"emissions": 1000,
-			"notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
+		"downstream_emissions": {
+			"end_user_devices": {
+				"emissions": 1000,
+				"notes": "Calculated based on www website traffic figures"
+			},
+			"network_data_transfer": {
+				"emissions": 1000,
+				"notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
+			}
 		}
 	}
-}
+]
 ```
 
 {% include linkedHeading.html heading="Implementation Guide" level=2 %}
 
 ### 1. Gather Emissions Data
 
-Use the [Technology Carbon Standard](/) to identify the categories of technology emissions and the recommendations for gaterhing and calculating these emissions.
+Use the [Technology Carbon Standard](/) to identify the categories of technology emissions and the recommendations for gathering and calculating these emissions.
 
 #### Upstream Emissions
 {% include categoryLabel.html label="CatU" %}
@@ -375,18 +393,18 @@ Use the [Technology Carbon Standard](/) to identify the categories of technology
 {% include categoryItem.html item="CatDNetworkDataTransfer" %}
 
 
-### 2. Create a tcs-emissions.json File
+### 2. Create a tcs.json File
 
-Create a **tcs-emissions.json** (**TBC**) file that follows the [Technology Carbon Standard Schema](/schemas/techcarbonstandard_schema/latest.json) and populate the emissions data.
+Create a **tcs.json** (**TBC**) file that follows the [Technology Carbon Standard Schema](/schemas/techcarbonstandard_schema/latest.json) and populate the emissions data.
 
-You can validate your tcs-emissions.json file against the schema using tools like:
+You can validate your tcs.json file against the schema using tools like:
 
 - [JSON Schema Validator](https://www.jsonschemavalidator.net/)
-- Command-line tools such as `ajv-cli`
+- Command-line tools such as {% include inlineCode.html code="ajv-cli" %}
 
-### 3. Publish the tcs-emissions.json File
+### 3. Publish the tcs.json File
 
-Publish your **tcs-emissions.json** file at the root of your organisation's web domain e.g., **https://example.com/tcs-emissions.json** and ensure it is publically accessible.
+Publish your **tcs.json** file at the root of your organisation's web domain e.g., **https://example.com/tcs.json** and ensure it is publically accessible.
 
 
 {% include linkedHeading.html heading="Resources" level=2 %}
