@@ -3,20 +3,3 @@
   name: Green Web Foundation
   link: /case-studies/green-web-foundation
   description: This project collaboration between [Green Web Foundation](https://www.thegreenwebfoundation.org/){:target="_blank"} and [Scott Logic](https://www.scottlogic.com/){:target="_blank"} ran in mid 2024. It trialled using an early version of the TCS framework to estimate the carbon emissions arising from Green Web Foundation's digital estate, using publicly available data. This write-up provides full documentation of the decisions, methodology and learning points so others can learn from what we experienced.
-  nav:
-  - name: Overview
-    link: /case-studies/green-web-foundation/overview
-  - name: Insights
-    link: /case-studies/green-web-foundation/insights
-  - name: Assumptions
-    link: /case-studies/green-web-foundation/assumptions
-  - name: Upstream Emissions
-    link: /case-studies/green-web-foundation/upstream
-  - name: Operational Emissions
-    link: /case-studies/green-web-foundation/operational
-  - name: Downstream Emissions
-    link: /case-studies/green-web-foundation/downstream
-  - name: Reducing impact
-    link: /case-studies/green-web-foundation/reducing-impact
-  - name: Appendix
-    link: /case-studies/green-web-foundation/appendix

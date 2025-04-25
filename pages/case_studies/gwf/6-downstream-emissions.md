@@ -1,8 +1,7 @@
 ---
-layout: caseStudies
+layout: sideNavigation
 title: Green Web Foundation
 permalink: /case-studies/green-web-foundation/downstream
-caseStudy: gwf
 ---
 
 {: #top}
