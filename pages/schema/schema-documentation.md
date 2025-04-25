@@ -91,7 +91,7 @@ Basic details about the reporting organisation, for example:
 "organisation": {
   "name": "Example Corp",
   "description": "Description of the organisation",
-  "open_corporates_id": "12345678",
+  "open_corporates_id": "gb/12345678",
   "registered_country": "England",
 }
 ```
@@ -100,7 +100,7 @@ Basic details about the reporting organisation, for example:
 |-------|------|----------|-------------|
 | name | string | Yes | Name of the reporting organisation |
 | description | string | No | Description of the reporting organisation |
-| open_corporates_id | string | No | [Open corporates](https://opencorporates.com/) ID of the reporting organisation |
+| open_corporates_id | string | No | [Open corporates](https://opencorporates.com/) {% include inlineCode.html code="JURISDICATION_CODE/COMPANY_REGISTRATION" %} of the reporting organisation |
 | registered_country | string | No | Country of registration of the reporting organisation |
 
 
@@ -307,7 +307,8 @@ Below is an example of a complete Technology Carbon Standard report:
 [
 	{
 		"organisation": {
-			"name": "Scott Logic"
+			"name": "Scott Logic",
+			"open_corporates_id": "gb/12345678",
 		},
 		"reporting_period": {
 			"from_date": "2023-01-01",
@@ -441,7 +442,7 @@ Publish your **tcs.json** file at the root of your organisation's web domain e.g
 {% include linkedHeading.html heading="Resources" level=2 %}
 
 - [Complete JSON Schema](/schemas/techcarbonstandard_schema/latest.json)
-- [GitHub Repository](https://github.com/ScottLogic/Technology-Carbon-Standard/schemas/techcarbonstandard_schema)
+- [GitHub Repository](https://github.com/ScottLogic/Technology-Carbon-Standard)
 
 ## Contributing
 
