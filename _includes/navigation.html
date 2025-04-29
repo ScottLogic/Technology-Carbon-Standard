@@ -1,27 +1,27 @@
 {% assign currentNavigation = site.data.navigation | reverse | find_exp: "item", "page.url contains item.link" %}
-<div class="container max-w-screen-xl mx-auto w-full flex px-2 pt-4 pb-4 sm:pb-0 items-center space-x-4 justify-start">
+<div class="container max-w-screen-xl mx-auto w-full flex px-2 pt-4 pb-4 md:pb-0 items-center space-x-4 justify-start">
 
-  <button id="menu-button" type="button" class="sm:hidden" aria-expanded="false" aria-label="open menu">
-    <svg id="menu-icon" aria-hidden="true" class="size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#menu"></use></svg>
-    <svg id="close-icon" aria-hidden="true" class="hidden size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#close"></use></svg>
+  <button id="menu-button" type="button" class="md:hidden" aria-expanded="false" aria-label="open menu">
+    <svg id="menu-icon" aria-hidden="true" class="size-6 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#menu"></use></svg>
+    <svg id="close-icon" aria-hidden="true" class="hidden size-6 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#close"></use></svg>
   </button>
 
   <!-- LOGO -->
   <a class="flex items-center space-x-4 no-underline" aria-label="Tech Carbon Standard home page" href="/">
-    <svg aria-hidden="true" class="size-12 sm:mb-4 fill-cambridge-300 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#tcs-logo"></use></svg>
-    <span class="sm:hidden text-lg text-cambridge-50 dark:text-cambridge-300 hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">Technology Carbon Standard</span>
+    <svg aria-hidden="true" class="size-10 md:size-12 md:mb-4 fill-cambridge-300 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#tcs-logo"></use></svg>
+    <span class="md:hidden text-base md:text-lg text-cambridge-50 dark:text-cambridge-300 hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">Technology Carbon Standard</span>
   </a>
 
-  <div class="hidden flex-grow sm:flex flex-col">
+  <div class="hidden flex-grow md:flex flex-col">
     <div class="flex space-x-6">
       {% for item in site.data.navigation %}
-        <div class="group/nav relative">      
+        <div class="group/nav relative">
           <a href="{{ item.link }}" class="h-12 no-underline pb-[18px] border-b-4 {% if item.name == currentNavigation.name %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300 border-gunmetal-800 dark:border-gunmetal-900{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
             {{ item.name }}
           </a>
           {% if item.sublinks %}
             <div class="min-w-full absolute top-[43px] invisible opacity-0 group-focus-within/nav:visible group-hover/nav:visible group-focus-within/nav:opacity-100 group-hover/nav:opacity-100 bg-gunmetal-700 dark:bg-gunmetal-800 transition-opacity">
-              <div class="flex flex-col px-2 py-2 items-start justify-start">                
+              <div class="flex flex-col px-2 py-2 items-start justify-start">
                   {% for subItem in item.sublinks %}
                   <a href="{{ subItem.link }}" class="no-underline w-full p-2 {% if page.url contains subItem.link %} text-gunmetal-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-gunmetal-100 dark:text-gunmetal-300{% endif %} hover:text-gunmetal-300 focus:outline-none focus-visible:ring focus:ring-blue">
                     {{ subItem.name }}
@@ -36,20 +36,20 @@
   </div>
 
   <a class="my-auto" aria-label="GitHub" href="https://github.com/ScottLogic/Technology-Carbon-Standard">
-    <svg aria-hidden="true" class="size-8"><use href="/assets/images/icons.svg#github"></use></svg>
+    <svg aria-hidden="true" class="size-6 md:size-8"><use href="/assets/images/icons.svg#github"></use></svg>
   </a>
 </div>
 
 <!-- MOBILE MENU -->
-<div id="mobile-menu" class="hidden sm:hidden">
+<div id="mobile-menu" class="hidden md:hidden">
   <div class="space-y-1 px-2 py-2">
     {% for item in site.data.navigation %}
-      
+
       {% if item.sublinks %}
         <div class="grid grid-cols-[auto_50px] items-center ">
           <a href="{{ item.link }}" class="h-8 block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
             {{ item.name }}
-          </a> 
+          </a>
            <button class="expand-button justify-self-center" type="button" aria-expanded="false" aria-label="expand section">
             <svg aria-hidden="true" class="expand-icon size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#expand"></use></svg>
             <svg aria-hidden="true" class="collapse-icon hidden size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#collapse"></use></svg>
@@ -65,7 +65,7 @@
         {% else %}
         <a href="{{ item.link }}" class="h-8 block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
           {{ item.name }}
-        </a> 
+        </a>
       {% endif %}
     {% endfor %}
   </div>
