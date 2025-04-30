@@ -1,8 +1,7 @@
 ---
-layout: caseStudies
+layout: default
 title: Green Web Foundation
 permalink: /case-studies/green-web-foundation
-caseStudy: gwf
 ---
 
 # Green Web Foundation

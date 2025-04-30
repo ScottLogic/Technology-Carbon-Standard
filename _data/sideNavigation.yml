@@ -1,7 +1,8 @@
+# Tech Categories
 - baseUrl: /technology-categories
   name: Technology Categories
   link: /technology-categories
-  categories: 
+  categories:
     # - name: Estate
     #   link: /technology-categories/estate
     - name: Cloud Services
@@ -28,10 +29,12 @@
       link: /technology-categories/data
     - name: Networks
       link: /technology-categories/networks
+
+# Impact Categories
 - baseUrl: /impact-categories
   name: Impact Categories
   link: /impact-categories
-  categories: 
+  categories:
     - name: Upstream Emissions
       link: /impact-categories/upstream
     - name: Operational Emissions
@@ -41,7 +44,7 @@
 - baseUrl: /roles
   name: Roles
   link: /roles
-  categories: 
+  categories:
     - name: Architecture
       link: /roles/architecture
       categories:
@@ -49,3 +52,57 @@
           link: /roles/architecture/strategy
         - name: NFRs
           link: /roles/architecture/nfrs
+
+# Case Studies
+- baseUrl: /case-studies/green-web-foundation
+  name: Green Web Foundation
+  link: /case-studies/green-web-foundation
+  categories:
+    - name: Overview
+      link: /case-studies/green-web-foundation/overview
+    - name: Insights
+      link: /case-studies/green-web-foundation/insights
+    - name: Assumptions
+      link: /case-studies/green-web-foundation/assumptions
+    - name: Upstream Emissions
+      link: /case-studies/green-web-foundation/upstream
+    - name: Operational Emissions
+      link: /case-studies/green-web-foundation/operational
+    - name: Downstream Emissions
+      link: /case-studies/green-web-foundation/downstream
+    - name: Reducing impact
+      link: /case-studies/green-web-foundation/reducing-impact
+    - name: Appendix
+      link: /case-studies/green-web-foundation/appendix
+
+# Schema
+- baseUrl: /schema/techcarbonstandard
+  name: TCS Schema
+  link: /schema/techcarbonstandard
+  categories:
+    - name: Purpose
+      link: /schema/techcarbonstandard#purpose
+    - name: Schema Version
+      link: /schema/techcarbonstandard#schema-version
+    - name: Overview
+      link: /schema/techcarbonstandard#overview
+    - name: Schema Structure
+      link: /schema/techcarbonstandard#schema-structure
+    - name: Organisation Information
+      link: /schema/techcarbonstandard#organisation-information-required
+    - name: Verification and Auditing
+      link: /schema/techcarbonstandard#verification-and-auditing-required
+    - name: Reporting Period
+      link: /schema/techcarbonstandard#reporting-period-required
+    - name: Disclosures
+      link: /schema/techcarbonstandard#disclosures
+    - name: Emissions Categories
+      link: /schema/techcarbonstandard#emissions-categories
+    - name: Required and Optional Fields
+      link: /schema/techcarbonstandard#required-and-optional-fields
+    - name: Example Implementation
+      link: /schema/techcarbonstandard#example-implementation
+    - name: Implementation Guide
+      link: /schema/techcarbonstandard#implementation-guide
+    - name: Resources
+      link: /schema/techcarbonstandard#resources

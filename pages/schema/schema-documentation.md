@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sideNavigation
 title: TCS Schema
 permalink: /schema/techcarbonstandard
 ---
@@ -8,7 +8,8 @@ permalink: /schema/techcarbonstandard
 
 The Technology Carbon Standard is a structured framework for measuring and managing the carbon emissions of an organisation's technology estate. This schema provides organisations with a consistent way to report on their technology-related carbon emissions across their complete ICT landscape.
 
-## Purpose
+
+{% include linkedHeading.html heading="Purpose" level=2 %}
 
 The TCS Schema serves a critical purpose in the sustainability landscape:
 
@@ -20,7 +21,8 @@ The TCS Schema serves a critical purpose in the sustainability landscape:
 
 By implementing the Technology Carbon Standard, your organisation contributes to a more transparent technology sector where carbon emissions can be systematically tracked, compared, and ultimately reduced.
 
-## Schema Version
+
+{% include linkedHeading.html heading="Schema Version" level=2 %}
 
 Current version: **0.0.1**
 
@@ -31,7 +33,8 @@ The Technology Carbon Standard schema follows semantic versioning (MAJOR.MINOR.P
 
 Organisations implementing the standard should reference the specific version they are using in their implementation while developers and tools can use the "latest" URL to stay current with updates.
 
-## Overview
+
+{% include linkedHeading.html heading="Overview" level=2 %}
 
 The Technology Carbon Standard emissions file consists of:
 
@@ -48,9 +51,10 @@ The categories of emissions into four main categories:
 3. **Indirect Emissions**: Running costs attributed to external hardware and service solutions
 4. **Downstream Emissions**: Carbon emissions associated with the use of products and services by end users
 
-The **tcs.json* emissions file is an array of emissions reports. Each TCS report (by reporting period, or organisation entity), can be added to the array of reports.
+The *tcs.json* emissions file is an array of emissions reports. Each TCS report (by reporting period, or organisation entity), can be added to the array of reports.
 
-## Schema Structure
+
+{% include linkedHeading.html heading="Schema Structure" level=2 %}
 
 The schema requires each TCS emission report object be listed in an array.
 
@@ -83,7 +87,7 @@ The schema requires each TCS emission report object be listed in an array.
 ]
 ```
 
-### Organisation Information (required)
+{% include linkedHeading.html heading="Organisation Information (required)" level=3 %}
 
 Basic details about the reporting organisation, for example:
 
@@ -104,7 +108,7 @@ Basic details about the reporting organisation, for example:
 | registered_country | string | No | Country of registration of the reporting organisation |
 
 
-### Verification and Auditing (required)
+{% include linkedHeading.html heading="Verification and Auditing (required)" level=3 %}
 
 The schema includes fields for verification status and auditor information. The {% include inlineCode.html code="verification" %} field indicates the level of assurance for the reported emissions data:
 
@@ -129,7 +133,7 @@ The schema includes fields for verification status and auditor information. The 
 "auditor_link": "https://example-auditor.com/"
 ```
 
-### Reporting Period (required)
+{% include linkedHeading.html heading="Reporting Period (required)" level=3 %}
 
 The timeframe covered by the emissions report:
 
@@ -145,7 +149,8 @@ The timeframe covered by the emissions report:
 | from_date | string (date) | Yes | Start date in ISO8601 format (YYYY-MM-DD) |
 | to_date | string (date) | Yes | End date in ISO8601 format (YYYY-MM-DD) |
 
-### Disclosures
+
+{% include linkedHeading.html heading="Disclosures" level=3 %}
 
 The disclosures property contains an array of objects that document and link to relevant sustainability and emissions calculation methodology information. For example:
 
@@ -169,7 +174,8 @@ The disclosures property contains an array of objects that document and link to 
 | doc_type | enum | Yes | Type of disclosure - must be one of: "report", "methodology", or "other" |
 | description | string | No | Brief description of what the disclosure contains |
 
-### Emissions Categories
+
+{% include linkedHeading.html heading="Emissions Categories" level=3 %}
 
 Each emissions category uses a common structure and is **always reported in kgCO2e**:
 
@@ -197,7 +203,7 @@ For GHG Scope 2 emissions (direct operational emission, category O), a further o
 | method | enum | No | The emissions calculation method, must be one of: "location-based", "market-based", "mixed-methods" or "other" (applicable only to direct operational emissions, category O) |
 
 
-{% include linkedHeading.html heading="1. Upstream Emissions" level=3 %}
+### 1. Upstream Emissions
 
 Emissions related to embodied carbon in hardware and carbon impact of software development:
 
@@ -218,7 +224,7 @@ Emissions related to embodied carbon in hardware and carbon impact of software d
 | server_hardware | Embodied carbon from servers procured in the reporting period |
 
 
-{% include linkedHeading.html heading="2. Direct Emissions" level=3 %}
+### 2. Direct Emissions
 
 Emissions from electricity powering the organisation's technology:
 
@@ -241,7 +247,8 @@ Emissions from electricity powering the organisation's technology:
 
 Note that the GHG Scope 2 {% include inlineCode.html code="onsite_employee_hardware" %}, {% include inlineCode.html code="networking" %} and {% include inlineCode.html code="servers" %} have an additional, optional field for recording the calculation method; {% include inlineCode.html code="method" %}.
 
-{% include linkedHeading.html heading="3. Indirect Emissions" level=3 %}
+
+### 3. Indirect Emissions
 
 Emissions related to off-site end-user equipment and services:
 
@@ -261,7 +268,8 @@ Emissions related to off-site end-user equipment and services:
 | saas | Emissions from Software-as-a-Service applications |
 | managed_services | Emissions from managed IT services |
 
-{% include linkedHeading.html heading="4. Downstream Emissions" level=3 %}
+
+### 4. Downstream Emissions
 
 Emissions associated with customer use of products and services provided by the reporting organisation:
 
@@ -278,8 +286,10 @@ Emissions associated with customer use of products and services provided by the 
 | network_data_transfer | Emissions from data transmission infrastructure used by customers |
 
 
-## Required and Optional Fields
+{% include linkedHeading.html heading="Required and Optional Fields" level=2 %}
+
 The Technology Carbon Standard schema requires certain fields while making others optional:
+
 
 ### Required Fields
 
@@ -287,9 +297,11 @@ The Technology Carbon Standard schema requires certain fields while making other
 - {% include inlineCode.html code="reporting_period" %} (with required sub-fields {% include inlineCode.html code="from_date" %} and {% include inlineCode.html code="to_date" %})
 - {% include inlineCode.html code="verification" %}
 
+
 ### Conditionally Required Fields
 
 - {% include inlineCode.html code="auditor_link" %}: Required if {% include inlineCode.html code="verification" %} is set to {% include inlineCode.html code="'independently verified'" %}
+
 
 ### Optional Emissions Categories
 
@@ -441,8 +453,8 @@ Publish your **tcs.json** file at the root of your organisation's web domain e.g
 
 {% include linkedHeading.html heading="Resources" level=2 %}
 
-- [Complete JSON Schema](/schemas/techcarbonstandard_schema/latest.json)
-- [GitHub Repository](https://github.com/ScottLogic/Technology-Carbon-Standard)
+- [Latest JSON Schema](/schemas/techcarbonstandard_schema/latest.json)
+- [GitHub Repository](https://github.com/ScottLogic/Technology-Carbon-Standard/)
 
 ## Contributing
 

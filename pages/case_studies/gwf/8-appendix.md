@@ -1,8 +1,7 @@
 ---
-layout: caseStudies
+layout: sideNavigation
 title: Green Web Foundation
 permalink: /case-studies/green-web-foundation/appendix
-caseStudy: gwf
 ---
 
 # Appendix
