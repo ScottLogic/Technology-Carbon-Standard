@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techcarbonstandard.org/schemas/tech_carbon_standard/latest.json",
+  "title": "Latest Technology Carbon Standard Schema",
+  "description": "Redirect to the latest version of the Technology Carbon Standard schema",
+  "$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v1.0.0.json"
+}

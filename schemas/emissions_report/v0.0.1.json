@@ -1,11 +1,9 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema#",
-  "$id": "https://techcarbonstandard.org/schemas/techcarbonstandard_schema/latest.json",
-  "version": "0.0.1",
-  "title": "Technology Carbon Standard",
-  "description": "The Technology Carbon Standard is a standard for measuring and managing the carbon emissions of technology products and services.",
-  "type": "array",
-
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json",
+  "title": "Technology Carbon Standard Emissions Report",
+  "description": "An Emissions Report schema for the Technology Carbon Standard.",
+  "type": "object",
   "$defs": {
     "emissions_def": {
       "type": "object",
@@ -37,39 +35,14 @@
         },
         "method": {
           "enum": ["location-based", "market-based", "mixed-methods", "other"],
-          "description": "Provide the method used for calculating the emissions. Must be one of: 'location-based', 'market-based', 'mixed-method', or 'other."
+          "description": "Provide the method used for calculating the emissions. Must be one of: 'location-based', 'market-based', 'mixed-methods', or 'other."
         }
       },
       "required": ["emissions"],
       "additionalProperties": false
     }
   },
-
   "properties": {
-    "organisation": {
-      "type": "object",
-      "description": "Details of the reporting organsation's carbon emissions data.",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Name of the reporting organisation"
-        },
-        "description": {
-          "type": "string",
-          "description": "Description of the reporting organisation"
-        },
-        "open_corporates_id": {
-          "type": "string",
-          "description": "Open corporates ID of the reporting organisation"
-        },
-        "registered_country": {
-          "type": "string",
-          "description": "Country of registration of the reporting organisation"
-        }
-      },
-      "required": ["name"],
-      "additionalProperties": false
-    },
     "reporting_period": {
       "type": "object",
       "description": "The reporting period for the carbon emissions data.",
@@ -211,7 +184,6 @@
     }
   },
   "required": [
-    "organisation",
     "reporting_period",
     "verification"
   ],
