@@ -4,40 +4,27 @@
   "title": "Technology Carbon Standard Root Schema",
   "description": "Root schema that routes validation to the appropriate version of the Technology Carbon Standard",
   "type": "object",
-
   "properties": {
-    "standard_version": {
+    "schema_version": {
       "type": "string",
       "description": "Version of the Technology Carbon Standard being used",
-      "enum": ["latest", "1.0.0"]
+      "enum": ["1.0.0"]
     },
     "organisations": {
       "type": "array",
       "description": "List each reporting organisation and its carbon emissions data."
     }
   },
-
-  "required": ["standard_version", "organisations"],
-
+  "required": ["schema_version", "organisations"],
   "allOf": [
     {
       "if": {
         "properties": {
-          "standard_version": { "const": "latest" }
+          "schema_version": { "const": "1.0.0" }
         }
       },
       "then": {
-        "$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/latest.json"
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "standard_version": { "const": "1.0.0" }
-        }
-      },
-      "then": {
-        "$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v1.0.0.json"
+        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisations/v1.0.0.json"
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-	"standard_version": "1.0.0",
+	"schema_version": "1.0.0",
 	"organisations": [
 		{
 			"organisation_name": "Scott Logic",
@@ -7,7 +7,7 @@
 			"emissions_reports": [
 				{
 					"schema_version": "0.0.1",
-					"report_data": {
+					"report": {
 						"reporting_period": {
 							"from_date": "2023-01-01",
 							"to_date": "2023-12-31"
@@ -20,68 +20,73 @@
 								"description": "Scott Logic 2023 Sustainability Report"
 							}
 						],
-						"upstream_emissions": {
-							"software": {
-								"emissions": 0,
-								"notes": "Not currently meaningfully calculable or estimatable"
-							},
-							"employee_hardware": {
-								"emissions": 55000,
-								"notes": "Embodied carbon of purchased laptops and monitors, using production and transportation figures from manufacturers' product lifecycle reports"
-							},
-							"network_hardware": {
-								"emissions": 1000,
-								"notes": "Loose estimate, based on minimal hardware purchase"
-							},
-							"server_hardware": {
-								"emissions": 0,
-								"notes": "No servers or storage hardware purchased"
-							}
-						},
-						"direct_emissions": {
-							"onsite_employee_hardware": {
-								"emissions": 5000,
-								"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
-							},
-							"networking": {
-								"emissions": 1000,
-								"notes": "Loose estimate, based on known minimal networking infrastructure"
-							},
-							"servers": {
-								"emissions": 1000,
-								"notes": "Loose estimate, based on known minimal infrastructure"
-							},
-							"generators": {
-								"emissions": 0,
-								"notes": "No generators"
-							}
-						},
-						"indirect_emissions": {
-							"offsite_employee_hardware": {
-								"emissions": 3000,
-								"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
-							},
-							"cloud_services": {
-								"emissions": 5000,
-								"notes": "Full cloud estate measured using Cloud Carbon Footprinting tool"
-							},
-							"saas": {
-								"emissions": 84000,
-								"notes": "Spend-based estimate calculated using Plan A platform"
-							},
-							"managed_services": {
-								"emissions": 1000,
-								"notes": "Loose estimate, based on known minimal managed services"
-							}
-						},
-						"downstream_emissions": {
-							"end_user_devices": {
-								"emissions": 1000,
-								"notes": "Calculated based on www website traffic figures"
-							},
-							"network_data_transfer": {
-								"emissions": 1000,
-								"notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
+						"tech_carbon_standard": {
+							"schema_version": "0.0.1",
+							"tcs_categories": {
+								"upstream_emissions": {
+									"software": {
+										"emissions": 0,
+										"notes": "Not currently meaningfully calculable or estimatable"
+									},
+									"employee_hardware": {
+										"emissions": 55000,
+										"notes": "Embodied carbon of purchased laptops and monitors, using production and transportation figures from manufacturers' product lifecycle reports"
+									},
+									"network_hardware": {
+										"emissions": 1000,
+										"notes": "Loose estimate, based on minimal hardware purchase"
+									},
+									"server_hardware": {
+										"emissions": 0,
+										"notes": "No servers or storage hardware purchased"
+									}
+								},
+								"direct_emissions": {
+									"onsite_employee_hardware": {
+										"emissions": 5000,
+										"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
+									},
+									"networking": {
+										"emissions": 1000,
+										"notes": "Loose estimate, based on known minimal networking infrastructure"
+									},
+									"servers": {
+										"emissions": 1000,
+										"notes": "Loose estimate, based on known minimal infrastructure"
+									},
+									"generators": {
+										"emissions": 0,
+										"notes": "No generators"
+									}
+								},
+								"indirect_emissions": {
+									"offsite_employee_hardware": {
+										"emissions": 3000,
+										"notes": "Calculated using UK grid carbon intensity 2023; exact laptop and monitor counts; and, average laptop and monitor power consumption figures"
+									},
+									"cloud_services": {
+										"emissions": 5000,
+										"notes": "Full cloud estate measured using Cloud Carbon Footprinting tool"
+									},
+									"saas": {
+										"emissions": 84000,
+										"notes": "Spend-based estimate calculated using Plan A platform"
+									},
+									"managed_services": {
+										"emissions": 1000,
+										"notes": "Loose estimate, based on known minimal managed services"
+									}
+								},
+								"downstream_emissions": {
+									"end_user_devices": {
+										"emissions": 1000,
+										"notes": "Calculated based on www website traffic figures"
+									},
+									"network_data_transfer": {
+										"emissions": 1000,
+										"notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
+									}
+								}
 							}
 						}
 					}
