@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://techcarbonstandard.org/schemas/reporting_organisations/v1.0.0.json",
-  "title": "Technology Carbon Standard",
+  "title": "Technology Carbon Standard Reporting Organisation",
   "description": "The Technology Carbon Standard is a standard for measuring and managing the carbon emissions of technology products and services.",
   "type": "object",
 
@@ -9,7 +9,7 @@
     "schema_version": {
       "type": "string",
       "enum": ["1.0.0"],
-      "description": "Version of the Technology Carbon Standard"
+      "description": "Version of the Reporting Organisation Schema"
     },
     "organisations": {
       "type": "array",
