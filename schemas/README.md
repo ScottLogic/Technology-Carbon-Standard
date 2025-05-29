@@ -6,35 +6,34 @@ This repository contains JSON Schema definitions for the Technology Carbon Stand
 
 ```
 schemas/
-├── index.json                  # Root schema router
-├── reporting_organisations/    # Lists the reporting organisations
-│   ├──v1.0.0.json              # Reporting organisations version 1.0.0
+├── index.json                  # Schema router
+├── reporting_organisation/     # The root schema for the reporting organisation
+│   ├──v0.1.0.json              # Reporting organisations version 0.1.0
 │   ├──v0.0.1.json              # The original TCS schema - version 0.0.1
 ├── emissions_report/           # Emissions report schemas
 │   ├── v0.0.1.json             # Emissions report version 0.0.1
 ├── tech_carbon_standard/       # TCS schemas
-│   ├── v1.0.0.json             # TCS version 1.0.0
+│   ├── v0.0.1.json             # TCS version 0.0.1
 ├── tests/                      # Unit tests for schemas
 │   ├── reporting_organisations # Tests for the reporting organisations schema
 |   ├── utils                   # Utility functions for the tests
 ├── examples/                   # Example documents
-│   ├── tcs.json                # Example TCS document
 │   ├── reporting_organisations # Example reporting organisations documents
 ```
 
 ## Schema Overview
 
-The Technology Carbon Standard uses a modular schema structure with two main components:
+The Technology Carbon Standard uses a modular schema structure with three main components:
 
-1. **Reporting Organisations Schema**: The root schema that defines the overall structure for technology carbon emissions reporting.
+1. **Reporting Organisation Schema**: The root schema that defines the overall structure for technology carbon emissions reporting.
 2. **Emissions Report Schema**: A sub-schema that defines the detailed structure for individual emissions reports.
 3. **Tech Carbon Standard Schema**: The TCS schema that defines carbon emissions reporting per TCS the categories.
 
 Each component can be versioned independently, allowing for flexibility in schema evolution.
 
-### Root Schema (index.json)
+### Schema Router (index.json)
 
-The root schema (`index.json`) acts as a router that directs validation to the appropriate version of the Reporting Organisations schema based on the `schema_version` property in the document.
+The schema (`index.json`) simply acts as a router that directs to the appropriate version of the Reporting Organisation schema based on the `schema_version` property in the document.
 
 ### Reporting Organisations Schema
 
@@ -42,7 +41,7 @@ This schema defines the overall structure for technology carbon reporting, inclu
 
 - Schema version information
 - Organisation details
-- The organisations collection of emissions reports
+- The organisation's collection of emissions reports
 
 ### Emissions Report Schema
 
@@ -59,48 +58,33 @@ This schema aligns specifically to the Technology Carbon Standard categories and
 
 - Emissions data organised by category (upstream, direct, indirect, downstream)
 
-<!-- ## Using "latest" vs. Specific Versions
-
-The schema system supports both specific version references and a "latest" mechanism:
-
-- Use `"standard_version": "1.0.0"` to validate against a specific version
-- Use `"standard_version": "latest"` to validate against the current latest version
-
-The same applies to emissions report schemas:
-
-- Use `"schema_version": "0.0.1"` for a specific version
-- Use `"schema_version": "latest"` for the current latest version -->
-
-> **Note**: For production use, it's recommended to use specific versions to ensure stability and reproducibility.
 
 ## Examples
 
 The `examples/` directory contains example documents that demonstrate how to structure valid TCS documents:
 
-- `tcs.json`: A complete TCS document with organisation and emissions data
-- `reporting_organisations/v0.0.1.json`: An example document for the v0.0.1 reporting organisations schema
-- `reporting_organisations/v1.0.0.json`: An example document for the v1.0.0 reporting organisations schema
+- `reporting_organisation/v0.0.1.json`: An example document for the v0.0.1 reporting organisation schema
+- `reporting_organisation/v0.1.0.json`: An example document for the v0.1.0 reporting organisation schema
 
 Example of a minimal valid document:
 
 ```json
 {
-  "schema_version": "1.0.0",
-  "organisations": [
+  "schema_version": "0.1.0",
+  "organisation": {
+    "organisation_name": "Example Corp"
+  },
+  "emissions_reports": [
     {
-      "organisation_name": "Example Corp",
-      "emissions_reports": [
-        {
-          "schema_version": "0.0.1",
-          "report_data": {
-            "reporting_period": {
-              "from_date": "2023-01-01",
-              "to_date": "2023-12-31"
-            },
-            "verification": "self reported"
-          }
-        }
-      ]
+      "schema_version": "0.0.1",
+      "reporting_period": {
+        "from_date": "2023-01-01",
+        "to_date": "2023-12-31"
+      },
+      "verification": "self reported",
+      "tech_carbon_standard": {
+        "schema_version": "0.0.1"
+      }
     }
   ]
 }
@@ -166,26 +150,23 @@ const PATHS = {
 
 ### Adding New Versions
 
-To add a new version of the Reporting Organisations schema:
+To add a new version of the Reporting Organisation schema:
 
-1. Create a new file in `reporting_organisations/` (e.g., `v1.1.0.json`)
-<!-- 2. Update `reporting_organisations/latest.json` to reference the new version -->
-3. Update `index.json` to include the new version in the `enum` list and conditional logic
-4. Update tests to reflect changes made to the schema
+1. Create a new file in `reporting_organisation/` (e.g., `v0.2.0.json`)
+2. Update `index.json` to include the new version in the `enum` list and conditional logic
+3. Update tests to reflect changes made to the schema
 
 To add a new version of the Emissions Report schema:
 
 1. Create a new file in `emissions_report/` (e.g., `v0.0.2.json`)
-<!-- 2. Update `emissions_report/latest.json` to reference the new version -->
-3. Update all Tech Carbon Standard schemas that reference emissions reports to include the new version
-4. Update tests to reflect changes made to the schema
+2. Update all Tech Carbon Standard schemas that reference emissions reports to include the new version
+3. Update tests to reflect changes made to the schema
 
 To add a new version of the Tech Carbon Standard schema:
 
 1. Create a new file in `tech_carbon_standard/` (e.g., `v1.1.0.json`)
-<!-- 2. Update `tech_carbon_standard/latest.json` to reference the new version -->
-3. Update `index.json` to include the new version in the `enum` list and conditional logic
-4. Update tests to reflect changes made to the schema
+2. Update `index.json` to include the new version in the `enum` list and conditional logic
+3. Update tests to reflect changes made to the schema
 
 ## Schema URI Format
 

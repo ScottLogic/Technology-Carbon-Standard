@@ -6,7 +6,7 @@ import "../utils/jest_utils";
 import reportingOrganisationsV010Schema from "../../reporting_organisation/v0.1.0.json";
 import emissionsReportV001Schema from "../../emissions_report/v0.0.1.json";
 import techCarbonStandardV001Schema from "../../tech_carbon_standard/v0.0.1.json";
-import reportingOrganisationsV010Example from "../../examples/reporting_organisation/v0.1.0.json";
+import reportingOrganisationsV010Example from "../../examples/reporting_organisation/minimal_v0.1.0.json";
 
 let testDocument: any;
 let validate: ValidateFunction<any>;
