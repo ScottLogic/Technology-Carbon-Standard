@@ -106,6 +106,7 @@
         }
       },
       "then": {
+        "type": "object",
         "required": ["auditor_link"]
       }
     }
