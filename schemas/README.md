@@ -14,10 +14,12 @@ schemas/
 │   ├── v0.0.1.json             # Emissions report version 0.0.1
 ├── tech_carbon_standard/       # TCS schemas
 │   ├── v1.0.0.json             # TCS version 1.0.0
-├── validators/                 # Validation utilities
-│   ├── validate.js             # AJV-based validator
+├── tests/                      # Unit tests for schemas
+│   ├── reporting_organisations # Tests for the reporting organisations schema
+|   ├── utils                   # Utility functions for the tests
 ├── examples/                   # Example documents
 │   ├── tcs.json                # Example TCS document
+│   ├── reporting_organisations # Example reporting organisations documents
 ```
 
 ## Schema Overview
@@ -76,6 +78,8 @@ The same applies to emissions report schemas:
 The `examples/` directory contains example documents that demonstrate how to structure valid TCS documents:
 
 - `tcs.json`: A complete TCS document with organisation and emissions data
+- `reporting_organisations/v0.0.1.json`: An example document for the v0.0.1 reporting organisations schema
+- `reporting_organisations/v1.0.0.json`: An example document for the v1.0.0 reporting organisations schema
 
 Example of a minimal valid document:
 
@@ -101,6 +105,26 @@ Example of a minimal valid document:
   ]
 }
 ```
+
+## Testing
+
+The schema includes a set of unit tests which use the Jest testing framework.
+
+To run the tests:
+
+1. Ensure Node.js is installed (version 17+ is required)
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the tests:
+   ```
+   npm test
+   ```
+
+The tests are located in `schemas/tests` and load example data from the `schemas/examples` directory.
+
+Any new tests with the extension `.spec.ts` will be picked up by the `npm test` command.
 
 ## Validation
 
@@ -147,18 +171,21 @@ To add a new version of the Reporting Organisations schema:
 1. Create a new file in `reporting_organisations/` (e.g., `v1.1.0.json`)
 <!-- 2. Update `reporting_organisations/latest.json` to reference the new version -->
 3. Update `index.json` to include the new version in the `enum` list and conditional logic
+4. Update tests to reflect changes made to the schema
 
 To add a new version of the Emissions Report schema:
 
 1. Create a new file in `emissions_report/` (e.g., `v0.0.2.json`)
 <!-- 2. Update `emissions_report/latest.json` to reference the new version -->
 3. Update all Tech Carbon Standard schemas that reference emissions reports to include the new version
+4. Update tests to reflect changes made to the schema
 
 To add a new version of the Tech Carbon Standard schema:
 
 1. Create a new file in `tech_carbon_standard/` (e.g., `v1.1.0.json`)
 <!-- 2. Update `tech_carbon_standard/latest.json` to reference the new version -->
 3. Update `index.json` to include the new version in the `enum` list and conditional logic
+4. Update tests to reflect changes made to the schema
 
 ## Schema URI Format
 
@@ -181,5 +208,4 @@ When modifying the schema:
 1. Maintain backward compatibility when possible
 2. Update all related schema files to maintain consistency
 3. Update examples to demonstrate new features
-4. Run validation to ensure all changes work together correctly
-
+4. Update and run tests to ensure all changes work together correctly
