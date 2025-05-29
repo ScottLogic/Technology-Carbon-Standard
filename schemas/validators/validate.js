@@ -6,11 +6,11 @@ const path = require('path');
 // Define exact file paths based on the new directory structure
 const PATHS = {
   rootSchema: path.resolve(__dirname, '../index.json'),
-  reportingOrganisationsV100Schema: path.resolve(__dirname, '../reporting_organisations/v1.0.0.json'),
-  reportingOrganisationsV001Schema: path.resolve(__dirname, '../reporting_organisations/v0.0.1.json'),
+  reportingOrganisationsV010Schema: path.resolve(__dirname, '../reporting_organisation/v0.1.0.json'),
+  reportingOrganisationsV001Schema: path.resolve(__dirname, '../reporting_organisation/v0.0.1.json'),
   emissionsV001Schema: path.resolve(__dirname, '../emissions_report/v0.0.1.json'),
   techCarbonStandardV001Schema: path.resolve(__dirname, '../tech_carbon_standard/v0.0.1.json'),
-  tcsDocument: path.resolve(__dirname, '../examples/tcs.json')
+  tcsDocument: path.resolve(__dirname, '../examples/reporting_organisation/v0.1.0.json')
 };
 
 // For debugging - make sure we can find all files
@@ -38,22 +38,25 @@ async function validateTcsDocument() {
 
     // Load all schemas as strings first
     const rootSchemaStr = fs.readFileSync(PATHS.rootSchema, 'utf8');
-    const reportingOrganisationsV100SchemaStr = fs.readFileSync(PATHS.reportingOrganisationsV100Schema, 'utf8');
+    const reportingOrganisationsV001SchemaStr = fs.readFileSync(PATHS.reportingOrganisationsV001Schema, 'utf8');
+    const reportingOrganisationsV010SchemaStr = fs.readFileSync(PATHS.reportingOrganisationsV010Schema, 'utf8');
     const emissionsV001SchemaStr = fs.readFileSync(PATHS.emissionsV001Schema, 'utf8');
     const techCarbonStandardV001SchemaStr = fs.readFileSync(PATHS.techCarbonStandardV001Schema, 'utf8');
 
     // Parse all schemas
     const rootSchema = JSON.parse(rootSchemaStr);
-    const reportingOrganisationsV100Schema = JSON.parse(reportingOrganisationsV100SchemaStr);
+    const reportingOrganisationsV001Schema = JSON.parse(reportingOrganisationsV001SchemaStr);
+    const reportingOrganisationsV010Schema = JSON.parse(reportingOrganisationsV010SchemaStr);
     const emissionsV001Schema = JSON.parse(emissionsV001SchemaStr);
     const techCarbonStandardV001Schema = JSON.parse(techCarbonStandardV001SchemaStr);
 
     console.log('All schemas parsed successfully');
 
     // Using the standardized URI-based schema IDs
-    const techCarbonStandardV001SchemaId = 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v1.0.0.json';
+    const reportingOrganisationsV001SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisation/v0.0.1.json';
+    const reportingOrganisationsV010SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.0.json';
+    const techCarbonStandardV001SchemaId = 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json';
     const emissionsV001SchemaId = 'https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json';
-    const reportingOrganisationsV100SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisations/v1.0.0.json';
     const rootSchemaId = 'https://techcarbonstandard.org/schemas/index.json';
 
     console.log('Registering schemas with AJV:');
@@ -65,8 +68,11 @@ async function validateTcsDocument() {
     ajv.addSchema(emissionsV001Schema, emissionsV001SchemaId);
     console.log(` - Added emissions v0.0.1 schema with ID: ${emissionsV001SchemaId}`);
 
-    ajv.addSchema(reportingOrganisationsV100Schema, reportingOrganisationsV100SchemaId);
-    console.log(` - Added TCS v1.0.0 schema with ID: ${reportingOrganisationsV100SchemaId}`);
+    ajv.addSchema(reportingOrganisationsV010Schema, reportingOrganisationsV010SchemaId);
+    console.log(` - Added TCS v0.1.0 schema with ID: ${reportingOrganisationsV010SchemaId}`);
+
+    ajv.addSchema(reportingOrganisationsV001Schema, reportingOrganisationsV001SchemaId);
+    console.log(` - Added TCS v0.0.1 schema with ID: ${reportingOrganisationsV001SchemaId}`);
 
     ajv.addSchema(rootSchema, rootSchemaId);
     console.log(` - Added root schema with ID: ${rootSchemaId}`);
@@ -83,10 +89,10 @@ async function validateTcsDocument() {
       return;
     }
 
-    if (!Array.isArray(tcsDocument.organisations)) {
-      console.error('Document missing organisations array or not an array');
-      return;
-    }
+    // if (!Array.isArray(tcsDocument.organisations)) {
+    //   console.error('Document missing organisations array or not an array');
+    //   return;
+    // }
 
     console.log('Basic document structure looks good');
 

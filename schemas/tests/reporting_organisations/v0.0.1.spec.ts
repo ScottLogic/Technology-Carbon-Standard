@@ -3,8 +3,8 @@ import addFormats from "ajv-formats";
 import {ValidateFunction} from "ajv/dist/jtd";
 import {error_details} from "../utils/ajv_utils";
 import "../utils/jest_utils";
-import reportingOrganisationsV001Schema from "../../reporting_organisations/v0.0.1.json";
-import reportingOrganisationsV001Example from "../../examples/reporting_organisations/v0.0.1.json";
+import reportingOrganisationsV001Schema from "../../reporting_organisation/v0.0.1.json";
+import reportingOrganisationsV001Example from "../../examples/reporting_organisation/v0.0.1.json";
 
 let testDocument: any;
 let validate: ValidateFunction<any>;

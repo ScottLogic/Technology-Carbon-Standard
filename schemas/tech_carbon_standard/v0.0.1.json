@@ -43,6 +43,11 @@
     }
   },
   "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the Tech Carbon Standard schema used for this report.",
+      "enum": ["0.0.1"]
+    },
     "upstream_emissions": {
       "type": "object",
       "description": "Upstream emissions relating to the embodied carbon of hardware and the development of software.",
@@ -132,5 +137,8 @@
       "additionalProperties": false
     }
   },
+  "required": [
+    "schema_version"
+  ],
   "additionalProperties": false
 }

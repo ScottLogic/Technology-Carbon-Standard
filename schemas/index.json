@@ -7,26 +7,32 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "description": "Version of the Technology Carbon Standard being used",
-      "enum": ["1.0.0"]
-    },
-    "organisations": {
-      "type": "array",
-      "description": "List each reporting organisation and its carbon emissions data."
+      "description": "Version of the root Technology Carbon Standard report schema being used",
+      "enum": ["0.1.0", "0.0.1"]
     }
   },
-  "required": ["schema_version", "organisations"],
+  "required": ["schema_version"],
   "allOf": [
     {
       "if": {
         "properties": {
-          "schema_version": { "const": "1.0.0" }
+          "schema_version": { "const": "0.1.0" }
         }
       },
       "then": {
-        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisations/v1.0.0.json"
+        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.0.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": { "const": "0.0.1" }
+        }
+      },
+      "then": {
+        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisation/v0.0.1.json"
       }
     }
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

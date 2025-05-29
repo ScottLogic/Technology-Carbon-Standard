@@ -5,6 +5,15 @@
   "description": "An Emissions Report schema for the Technology Carbon Standard.",
   "type": "object",
   "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the emissions report schema used for this report.",
+      "enum": ["0.0.1"]
+    },
+    "reporting_unit": {
+      "type": "string",
+      "description": "Identify the reporting unit associated with this emissions report. This could be a sub-organisation group, region or reporting entity."
+    },
     "reporting_period": {
       "type": "object",
       "description": "The reporting period for the carbon emissions data.",
@@ -64,17 +73,12 @@
           "type": "string",
           "description": "Version of the Tech Carbon Standard schema used for this report.",
           "enum": ["0.0.1"]
-        },
-        "tcs_categories": {
-          "type": "object",
-          "description": "The Technology Carbon Standard reporting categories."
         }
       },
       "required": [
-        "schema_version",
-        "tcs_categories"
+        "schema_version"
       ],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "allOf": [
         {
           "if": {
@@ -83,17 +87,14 @@
             }
           },
           "then": {
-            "properties": {
-              "tcs_categories": {
-                "$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json"
-              }
-            }
+            "$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json"
           }
         }
       ]
     }
   },
   "required": [
+    "schema_version",
     "reporting_period",
     "verification",
     "tech_carbon_standard"
