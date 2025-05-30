@@ -76,33 +76,17 @@
       link: /case-studies/green-web-foundation/appendix
 
 # Schema
-- baseUrl: /schema/techcarbonstandard
-  name: TCS Schema
-  link: /schema/techcarbonstandard
+- baseUrl: /schemas
+  name: TCS Schemas
+  link: /schemas/implementation-guide
   categories:
-    - name: Purpose
-      link: /schema/techcarbonstandard#purpose
-    - name: Schema Version
-      link: /schema/techcarbonstandard#schema-version
-    - name: Overview
-      link: /schema/techcarbonstandard#overview
-    - name: Schema Structure
-      link: /schema/techcarbonstandard#schema-structure
-    - name: Organisation Information
-      link: /schema/techcarbonstandard#organisation-information-required
-    - name: Verification and Auditing
-      link: /schema/techcarbonstandard#verification-and-auditing-required
-    - name: Reporting Period
-      link: /schema/techcarbonstandard#reporting-period-required
-    - name: Disclosures
-      link: /schema/techcarbonstandard#disclosures
-    - name: Emissions Categories
-      link: /schema/techcarbonstandard#emissions-categories
-    - name: Required and Optional Fields
-      link: /schema/techcarbonstandard#required-and-optional-fields
-    - name: Example Implementation
-      link: /schema/techcarbonstandard#example-implementation
     - name: Implementation Guide
-      link: /schema/techcarbonstandard#implementation-guide
-    - name: Resources
-      link: /schema/techcarbonstandard#resources
+      link: /schemas/implementation-guide
+    - name: Router Schema
+      link: /schemas/router
+    - name: Reporting Organisation Schema
+      link: /schemas/reporting-organisation/v0-1-0
+    - name: Emissions Report Schema
+      link: /schemas/emissions-report/v0-0-1
+    - name: Tech Carbon Standard Schema
+      link: /schemas/tech-carbon-standard/v0-0-1
