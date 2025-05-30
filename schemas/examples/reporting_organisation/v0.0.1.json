@@ -1,7 +1,10 @@
 [
 	{
 		"organisation": {
-			"name": "Scott Logic"
+			"name": "Scott Logic",
+			"description": "At Scott Logic, we have deep expertise in the complexities of regulated industries, and in meeting the needs of both demanding expert users and customers expecting frictionless user journeys. We have two decades' experience developing technology solutions that meet those challenges across a range of industries.",
+			"open_corporates_id": "05377430",
+			"registered_country": "gb"
 		},
 		"reporting_period": {
 			"from_date": "2023-01-01",
@@ -11,7 +14,7 @@
 		"disclosures": [
 			{
 				"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
-				"doc_type": "Report",
+				"doc_type": "report",
 				"description": "Scott Logic 2023 Sustainability Report"
 			}
 		],

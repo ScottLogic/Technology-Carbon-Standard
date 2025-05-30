@@ -1,11 +1,9 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema#",
-  "$id": "https://techcarbonstandard.org/schemas/techcarbonstandard_schema/latest.json",
-  "version": "0.0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json",
   "title": "Technology Carbon Standard",
   "description": "The Technology Carbon Standard is a standard for measuring and managing the carbon emissions of technology products and services.",
-  "type": "array",
-
+  "type": "object",
   "$defs": {
     "emissions_def": {
       "type": "object",
@@ -37,89 +35,18 @@
         },
         "method": {
           "enum": ["location-based", "market-based", "mixed-methods", "other"],
-          "description": "Provide the method used for calculating the emissions. Must be one of: 'location-based', 'market-based', 'mixed-method', or 'other."
+          "description": "Provide the method used for calculating the emissions. Must be one of: 'location-based', 'market-based', 'mixed-methods', or 'other."
         }
       },
       "required": ["emissions"],
       "additionalProperties": false
     }
   },
-
   "properties": {
-    "organisation": {
-      "type": "object",
-      "description": "Details of the reporting organsation's carbon emissions data.",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Name of the reporting organisation"
-        },
-        "description": {
-          "type": "string",
-          "description": "Description of the reporting organisation"
-        },
-        "open_corporates_id": {
-          "type": "string",
-          "description": "Open corporates ID of the reporting organisation"
-        },
-        "registered_country": {
-          "type": "string",
-          "description": "Country of registration of the reporting organisation"
-        }
-      },
-      "required": ["name"],
-      "additionalProperties": false
-    },
-    "reporting_period": {
-      "type": "object",
-      "description": "The reporting period for the carbon emissions data.",
-      "properties": {
-        "from_date": {
-          "type": "string",
-          "format": "date",
-          "description": "Reporting start date in ISO8601 format (YYYY-MM-DD)"
-        },
-        "to_date": {
-          "type": "string",
-          "format": "date",
-          "description": "Reporting end date in ISO8601 format (YYYY-MM-DD)"
-        }
-      },
-      "required": ["from_date", "to_date"],
-      "additionalProperties": false
-    },
-    "verification": {
+    "schema_version": {
       "type": "string",
-      "enum": ["self reported", "independently verified"],
-      "description": "Verification status of the reported carbon emissions data"
-    },
-    "auditor_link": {
-      "type": "string",
-      "format": "uri",
-      "description": "Link to the independent auditor's website"
-    },
-    "disclosures": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string",
-            "format": "uri",
-            "description": "URL to the disclosure"
-          },
-          "doc_type": {
-            "enum": ["report", "methodology", "other"],
-            "description": "Type of disclosure - must be one of: 'report', 'methodology', or 'other'"
-          },
-          "description": {
-            "type": "string",
-            "description": "Brief description of what the disclosure contains"
-          }
-        },
-        "required": ["url", "doc_type"],
-        "additionalProperties": false
-      }
+      "description": "Version of the Tech Carbon Standard schema used for this report.",
+      "enum": ["0.0.1"]
     },
     "upstream_emissions": {
       "type": "object",
@@ -211,21 +138,7 @@
     }
   },
   "required": [
-    "organisation",
-    "reporting_period",
-    "verification"
-  ],
-  "allOf": [
-    {
-      "if": {
-        "properties": {
-          "verification": { "enum": ["independently verified"] }
-        }
-      },
-      "then": {
-        "required": ["auditor_link"]
-      }
-    }
+    "schema_version"
   ],
   "additionalProperties": false
 }

@@ -22,8 +22,8 @@
     link: /resources/glossary
   # - name: References
   #   link: /resources/references
-- name: Schema
-  link: /schema/techcarbonstandard
+- name: Schemas
+  link: /schemas/implementation-guide
 - name: Carbon Estimator
   link: /estimator
 
