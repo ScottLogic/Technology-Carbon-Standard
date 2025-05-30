@@ -4,9 +4,9 @@ title: Implementation Guide
 permalink: /schemas/implementation-guide
 ---
 
-# Technology Carbon Standard Implementation Guide
+# Technology Carbon Standard Schema Implementation Guide
 
-This guide provides step-by-step instructions for implementing the Technology Carbon Standard using the modular schema architecture, from understanding the schema structure to publishing your tcs.json file.
+This guide provides step-by-step instructions for implementing the Technology Carbon Standard schema using the modular schema architecture, from understanding the schema structure to publishing your tcs.json file.
 
 ## Purpose
 
