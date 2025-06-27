@@ -28,4 +28,13 @@ These emissions are associated with the infrastructure enabling data transmissio
 
 All four categories of network listed in [the information on networks](/technology-categories/networks) should be considered. Tools such as [co2.js](https://www.thegreenwebfoundation.org/co2-js/) and [Green Coding's Green Metrics Tool](https://www.green-coding.io/projects/green-metrics-tool/) can be used to gain insight and attributional metrics on the carbon emissions of data transfer.
 
+{% include linkedHeading.html heading="Downstream Infrastructure" level=2 %}
+
+These emissions encompass the physical infrastructure and systems that end-users deploy or operate as a direct result of using an organisation's products or services. This category captures emissions from infrastructure that exists downstream of the primary service delivery but is essential for the product or service to function effectively.
+
+Examples of downstream infrastructure include Internet of Things (IoT) devices deployed by customers, locally hosted servers or edge computing devices required for service functionality, dedicated storage systems, networking equipment, and specialised hardware installations. For instance, a cloud-based IoT platform may require customers to install and operate local gateways, sensors, or actuators. Similarly, enterprise software solutions might necessitate on-premises database servers, backup systems, or integration appliances at customer sites.
+
+The emissions from downstream infrastructure should account for both the operational energy consumption and, where consequentially relevant, the embodied carbon of hardware that customers must acquire specifically to utilise the organisation's offerings. Unlike general-purpose end-user devices, downstream infrastructure often represents dedicated systems with longer operational lifecycles and higher power requirements.
+
+Organisations should consider the cumulative impact across their customer base, particularly where their service architecture inherently requires distributed infrastructure deployment. The geographic distribution of this infrastructure is important for accurate carbon intensity calculations, as different regions have varying grid carbon intensities. Product design decisions that influence the hardware requirements, operational efficiency, or deployment patterns of downstream infrastructure can significantly impact the overall carbon footprint of the service ecosystem.
 
