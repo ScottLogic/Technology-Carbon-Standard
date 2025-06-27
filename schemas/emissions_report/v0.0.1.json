@@ -72,7 +72,7 @@
         "schema_version": {
           "type": "string",
           "description": "Version of the Tech Carbon Standard schema used for this report.",
-          "enum": ["0.0.1"]
+          "enum": ["0.0.2", "0.0.1"]
         }
       },
       "required": [
@@ -81,14 +81,12 @@
       "additionalProperties": true,
       "allOf": [
         {
-          "if": {
-            "properties": {
-              "schema_version": { "const": "0.0.1" }
-            }
-          },
-          "then": {
-            "$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json"
-          }
+          "if": {"properties": {"schema_version": { "const": "0.0.2" }}},
+          "then": {"$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json"}
+        },
+        {
+          "if": {"properties": {"schema_version": { "const": "0.0.1" }}},
+          "then": {"$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json"}
         }
       ]
     }

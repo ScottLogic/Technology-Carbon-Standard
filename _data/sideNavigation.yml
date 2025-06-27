@@ -89,4 +89,4 @@
     - name: Emissions Report Schema
       link: /schemas/emissions-report/v0-0-1
     - name: Tech Carbon Standard Schema
-      link: /schemas/tech-carbon-standard/v0-0-1
+      link: /schemas/tech-carbon-standard/v0-0-2
