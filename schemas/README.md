@@ -84,7 +84,7 @@ Example of a minimal valid document:
       },
       "verification": "self reported",
       "tech_carbon_standard": {
-        "schema_version": "0.0.1"
+        "schema_version": "0.0.2"
       }
     }
   ]

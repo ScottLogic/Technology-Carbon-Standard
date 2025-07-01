@@ -19,9 +19,9 @@ beforeAll(() => {
         allErrors: true,
         verbose: true
     })
-        .addSchema(emissionsReportV001Schema)
-        .addSchema(techCarbonStandardV001Schema)
-        .addSchema(techCarbonStandardV002Schema);
+        .addSchema(emissionsReportV001Schema, 'https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json')
+        .addSchema(techCarbonStandardV001Schema, 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json')
+        .addSchema(techCarbonStandardV002Schema, 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json');
 
     // Add format validators
     addFormats(ajv);
