@@ -7,7 +7,10 @@ import reportingOrganisationsV010Schema from "../../reporting_organisation/v0.1.
 import emissionsReportV001Schema from "../../emissions_report/v0.0.1.json";
 import techCarbonStandardV001Schema from "../../tech_carbon_standard/v0.0.1.json";
 import techCarbonStandardV002Schema from "../../tech_carbon_standard/v0.0.2.json";
-import reportingOrganisationsV010Example from "../../examples/reporting_organisation/minimal_v0.1.0.json";
+import reportingOrganisationsV010Example from "../../examples/reporting_organisation/v0.1.0.json";
+import emissionsReportV001Example from "../../examples/emissions_report/v0.0.1.json";
+import techCarbonStandardV001Example from "../../examples/tech_carbon_standard/v0.0.1.json";
+import techCarbonStandardV002Example from "../../examples/tech_carbon_standard/v0.0.2.json";
 
 let testDocument: any;
 let validate: ValidateFunction<any>;
@@ -34,6 +37,22 @@ beforeEach(() => {
 
 describe('Reporting Organisations v0.1.0 documents', () => {
     it(`should be valid if all required fields are present`, () => {
+        const valid = validate(testDocument);
+        expect(valid).toBeTruthyWithMessage(error_details(validate));
+    });
+
+    it(`should be valid for a mix of tech_carbon_standard v0.0.1 and v0.0.2  documents`, () => {
+        const emissionsReportWithTCSv001 = structuredClone(emissionsReportV001Example);
+        emissionsReportWithTCSv001.tech_carbon_standard = structuredClone(techCarbonStandardV001Example);
+
+        const emissionsReportWithTCSv002 = structuredClone(emissionsReportV001Example);
+        emissionsReportWithTCSv002.tech_carbon_standard = structuredClone(techCarbonStandardV002Example);
+
+        testDocument["emissions_reports"] = [
+            emissionsReportWithTCSv001,
+            emissionsReportWithTCSv002
+        ];
+
         const valid = validate(testDocument);
         expect(valid).toBeTruthyWithMessage(error_details(validate));
     });
