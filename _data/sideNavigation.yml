@@ -85,8 +85,8 @@
     - name: Router Schema
       link: /schemas/router
     - name: Reporting Organisation Schema
-      link: /schemas/reporting-organisation/v0-1-0
+      link: /schemas/reporting-organisation/v0-1-1
     - name: Emissions Report Schema
-      link: /schemas/emissions-report/v0-0-1
+      link: /schemas/emissions-report/v0-0-2
     - name: Tech Carbon Standard Schema
       link: /schemas/tech-carbon-standard/v0-0-2
