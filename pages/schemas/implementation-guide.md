@@ -307,9 +307,9 @@ Here's a complete example TCS document using the modular schema:
 {
   "schema_version": "0.1.0",
   "organisation": {
-    "organisation_name": "Scott Logic",
+    "organisation_name": "Example Corp",
     "description": "Software consultancy and product development company",
-    "open_corporates_url": "https://opencorporates.com/companies/gb/05377430",
+    "open_corporates_url": "https://opencorporates.com/companies/gb/12345678",
     "registered_country": "England"
   },
   "emissions_reports": [
@@ -323,9 +323,9 @@ Here's a complete example TCS document using the modular schema:
       "verification": "self reported",
       "disclosures": [
         {
-          "url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+          "url": "https://example.com/reports/EnvironmentalImpactReport2023.pdf",
           "doc_type": "report",
-          "description": "Scott Logic 2023 Sustainability Report"
+          "description": "Example Corp 2023 Sustainability Report"
         }
       ],
       "tech_carbon_standard": {
