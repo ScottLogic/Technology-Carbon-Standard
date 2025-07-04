@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json",
+  "$id": "https://techcarbonstandard.org/schemas/emissions_report/v0.0.2.json",
   "title": "Technology Carbon Standard Emissions Report",
   "description": "An Emissions Report schema for the Technology Carbon Standard.",
   "type": "object",
@@ -8,7 +8,7 @@
     "schema_version": {
       "type": "string",
       "description": "Version of the emissions report schema used for this report.",
-      "enum": ["0.0.1"]
+      "enum": ["0.0.2"]
     },
     "reporting_unit": {
       "type": "string",
@@ -72,7 +72,7 @@
         "schema_version": {
           "type": "string",
           "description": "Version of the Tech Carbon Standard schema used for this report.",
-          "enum": ["0.0.1"]
+          "enum": ["0.0.2", "0.0.1"]
         }
       },
       "required": [
@@ -80,6 +80,10 @@
       ],
       "additionalProperties": true,
       "allOf": [
+        {
+          "if": {"properties": {"schema_version": { "const": "0.0.2" }}},
+          "then": {"$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json"}
+        },
         {
           "if": {"properties": {"schema_version": { "const": "0.0.1" }}},
           "then": {"$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json"}
