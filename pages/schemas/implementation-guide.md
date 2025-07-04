@@ -1,5 +1,5 @@
 ---
-layout: sideNavigation
+layout: schemaNavigation
 title: Implementation Guide
 permalink: /schemas/implementation-guide
 ---
@@ -48,14 +48,14 @@ The Technology Carbon Standard uses a modular schema design with four interconne
 ### 1. [Router Schema](/schemas/router) ([`index.json`](/schemas/index.json))
 - **Purpose**: Entry point that directs validation to the correct reporting organisation schema version
 - **Function**: Routes documents based on the root-level `schema_version` field
-- **Current Support**: Versions 0.1.0 and 0.0.1
+- **Current Support**: Versions: 0.1.1, 0.1.0 and 0.0.1
 
-### 2. [Reporting Organisation Schema](/schemas/reporting-organisation/v0-1-0) ([`reporting_organisation/v0.1.0.json`](/schemas/reporting_organisation/v0.1.0.json))
+### 2. [Reporting Organisation Schema](/schemas/reporting-organisation/v0-1-1) ([`reporting_organisation/v0.1.1.json`](/schemas/reporting_organisation/v0.1.1.json))
 - **Purpose**: Defines the root document structure for TCS reporting
 - **Contains**: Organisation details and collection of emissions reports
 - **Flexibility**: Each emissions report can use different schema versions
 
-### 3. [Emissions Report Schema](/schemas/emissions-report/v0-0-1) ([`emissions_report/v0.0.1.json`](/schemas/emissions_report/v0.0.1.json))
+### 3. [Emissions Report Schema](/schemas/emissions-report/v0-0-2) ([`emissions_report/v0.0.2.json`](/schemas/emissions_report/v0.0.2.json))
 - **Purpose**: Defines structure for individual emissions reports
 - **Contains**: Reporting periods, verification, disclosures, and references to TCS emissions data
 - **Features**: Conditional validation (auditor_link required for independent verification)
@@ -71,7 +71,7 @@ Your published `tcs.json` file follows this hierarchical structure:
 
 ```json
 {
-  "schema_version": "0.1.0",                    // Router Schema
+  "schema_version": "0.1.1",                    // Router Schema
   "organisation": {                             // Reporting Organisation Schema
     "organisation_name": "Your Company",
     "description": "...",
@@ -80,12 +80,12 @@ Your published `tcs.json` file follows this hierarchical structure:
   },
   "emissions_reports": [                        // Array of Emissions Reports
     {
-      "schema_version": "0.0.1",               // Emissions Report Schema
+      "schema_version": "0.0.2",               // Emissions Report Schema
       "reporting_period": { "from_date": "...", "to_date": "..." },
       "verification": "self reported",
       "disclosures": [...],
       "tech_carbon_standard": {                // Tech Carbon Standard Schema
-        "schema_version": "0.0.1",
+        "schema_version": "0.0.2",
         "upstream_emissions": {...},
         "direct_emissions": {...},
         "indirect_emissions": {...},
@@ -208,8 +208,8 @@ Use the [Tech Carbon Standard](/) to gather data for each applicable category:
 
 #### Choose Schema Versions
 For new implementations, use the latest available versions:
-- **Root Schema**: `"schema_version": "0.1.0"`
-- **Emissions Report**: `"schema_version": "0.0.1"`
+- **Root Schema**: `"schema_version": "0.1.1"`
+- **Emissions Report**: `"schema_version": "0.0.2"`
 - **Tech Carbon Standard**: `"schema_version": "0.0.2"`
 
 #### Build the Document Structure
@@ -217,7 +217,7 @@ For new implementations, use the latest available versions:
 **Start with the Root Level**:
 ```json
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.1.1",
   "organisation": {
     "organisation_name": "Your Organisation Name",
     "description": "Brief description of your organisation",
@@ -234,7 +234,7 @@ For new implementations, use the latest available versions:
 ```json
 "emissions_reports": [
   {
-    "schema_version": "0.0.1",
+    "schema_version": "0.0.2",
     "reporting_unit": "Global Operations",
     "reporting_period": {
       "from_date": "2023-01-01",
@@ -305,7 +305,7 @@ Here's a complete example TCS document using the modular schema:
 
 ```json
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.1.1",
   "organisation": {
     "organisation_name": "Scott Logic",
     "description": "Software consultancy and product development company",
@@ -314,7 +314,7 @@ Here's a complete example TCS document using the modular schema:
   },
   "emissions_reports": [
     {
-      "schema_version": "0.0.1",
+      "schema_version": "0.0.2",
       "reporting_unit": "Global Operations",
       "reporting_period": {
         "from_date": "2023-01-01",
@@ -413,13 +413,13 @@ For organisations with multiple divisions or geographic regions:
 
 ```json
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.1.1",
   "organisation": {
     "organisation_name": "Global Tech Corp"
   },
   "emissions_reports": [
     {
-      "schema_version": "0.0.1",
+      "schema_version": "0.0.2",
       "reporting_unit": "North America Operations",
       "reporting_period": {
         "from_date": "2023-01-01",
@@ -433,7 +433,7 @@ For organisations with multiple divisions or geographic regions:
       }
     },
     {
-      "schema_version": "0.0.1",
+      "schema_version": "0.0.2",
       "reporting_unit": "EMEA Operations",
       "reporting_period": {
         "from_date": "2023-01-01",
@@ -459,7 +459,7 @@ For organisations with multiple divisions or geographic regions:
   },
   "emissions_reports": [
     {
-      "schema_version": "0.0.1",
+      "schema_version": "0.0.2",
       "reporting_period": {
         "from_date": "2023-01-01",
         "to_date": "2023-12-31"
@@ -480,43 +480,6 @@ For organisations with multiple divisions or geographic regions:
       "tech_carbon_standard": {
         "schema_version": "0.0.1"
         // 2022 data
-      }
-    }
-  ]
-}
-```
-
-### Schema Version Migration
-
-When new schema versions become available, you can migrate gradually:
-
-```json
-{
-  "schema_version": "0.1.0",
-  "organisation": {
-    "organisation_name": "Your Company"
-  },
-  "emissions_reports": [
-    {
-      "schema_version": "0.0.2",  // Newer version
-      "reporting_period": {
-        "from_date": "2024-01-01",
-        "to_date": "2024-12-31"
-      },
-      "tech_carbon_standard": {
-        "schema_version": "0.0.2"  // Newer TCS schema
-        // 2024 data using new schema features
-      }
-    },
-    {
-      "schema_version": "0.0.1",  // Legacy version
-      "reporting_period": {
-        "from_date": "2023-01-01",
-        "to_date": "2023-12-31"
-      },
-      "tech_carbon_standard": {
-        "schema_version": "0.0.2"  // Original TCS schema
-        // 2023 historical data
       }
     }
   ]
@@ -560,10 +523,7 @@ Solution: Add auditor_link or change verification method
 
 ## Related Documentation
 
-- [Router Schema](/schemas/router/) - Schema routing and version management
-- [Reporting Organisation Schema v0.1.0](/schemas/reporting-organisation/v0-1-0) - Root document structure
-- [Emissions Report Schema v0.0.1](/schemas/emissions-report/v0-0-1) - Individual report structure
-- [Tech Carbon Standard Schema v0.0.2](/schemas/tech-carbon-standard/v0-0-2) - Emissions data structure
+{% include schemaDocumentationLinks.html %}
 
 ## Support and Contributing
 

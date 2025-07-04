@@ -1,0 +1,56 @@
+# Schemas
+baseUrl: /schemas
+name: TCS Schemas
+link: /schemas/implementation-guide
+sections:
+  # GUIDES
+  - heading: Guides
+    items:
+      - name: Implementation Guide
+        documentation_link: /schemas/implementation-guide
+        latest: true
+
+    # ROUTER
+  - heading: TCS Router Schema
+    items:
+    - name: TCS Router Schema
+      schema_link: https://techcarbonstandard.org/schemas/index.json
+      documentation_link: /schemas/router/
+      latest: true
+
+    # REPORTING ORGANISATION SCHEMAS
+  - heading: Reporting organisation Schemas
+    items:
+    - name: Reporting Organisation Schema v0.1.1
+      schema_link: https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.1.json
+      documentation_link: /schemas/reporting-organisation/v0-1-1
+      latest: true
+    - name: Reporting Organisation Schema v0.1.0
+      schema_link: https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.0.json
+      documentation_link: /schemas/reporting-organisation/v0-1-0
+      latest: false
+
+    # EMISSIONS REPORT SCHEMAS
+  - heading: Emissions Report Schemas
+    items:
+    - name: Emissions Report Schema v0.0.2
+      schema_link: https://techcarbonstandard.org/schemas/emissions_report/v0.0.2.json
+      documentation_link: /schemas/emissions-report/v0-0-2
+      latest: true
+    - name: Emissions Report Schema v0.0.1
+      schema_link: https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json
+      documentation_link: /schemas/emissions-report/v0-0-1
+      latest: false
+
+    # TECH CARBON STANDARD SCHEMAS
+  - heading: Tech Carbon Standard Schemas
+    items:
+    - name: Tech Carbon Standard Schema v0.0.2
+      schema_link: https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json
+      documentation_link: /schemas/tech-carbon-standard/v0-0-2
+      latest: true
+
+    - name: Tech Carbon Standard Schema v0.0.1
+      schema_link: https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json
+      documentation_link: /schemas/tech-carbon-standard/v0-0-1
+      latest: false

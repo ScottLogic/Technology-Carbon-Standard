@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="hidden md:flex md:flex-row gap-6 max-w-none">
+  <aside class="min-h-[calc(100vh-214px)] md:w-1/5 md:flex-shrink-0 md:flex-grow-0 border-b md:border-r md:border-b-0 border-gunmetal-200 dark:border-gunmetal-800 -mt-24 -mb-4 pb-2 pt-0">
+      <div class="sticky top-24 z-0 scroll-m-24">
+        {% assign schemas = site.data.schemas %}
+        <div class="flex flex-col">
+          {% for section in schemas.sections %}
+            <h4>{{ section.heading }}</h4>
+            {% for item in section.items %}
+              {% if item.documentation_link %}
+                <a href="{{ item.documentation_link }}" class="block no-underline font-light leading-tight px-4 py-1 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == item.documentation_link %}text-cambridge-600 dark:text-cambridge-100 bg-gunmetal-100/50{% endif %}">
+                  {{ item.name }}
+                </a>
+                {% endif %}
+              {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+  </aside>
+  <article class="md:w-4/5 md:flex-shrink-0 md:flex-grow-0">
+    {{ content }}
+  </article>
+</div>
+
+<div class="md:hidden">
+    {{ content }}
+</div>
+

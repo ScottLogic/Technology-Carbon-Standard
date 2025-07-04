@@ -1,0 +1,14 @@
+<div class="">
+  {% assign schemas = site.data.schemas %}
+
+  {% for section in schemas.sections %}
+    <h3>{{ section.heading }}</h3>
+    {% for item in section.items %}
+      {% if item.documentation_link %}
+        <a href="{{ item.documentation_link }}" class="block px-4 py-1">
+          {{ item.name }}
+        </a>
+        {% endif %}
+      {% endfor %}
+  {% endfor %}
+</div>
