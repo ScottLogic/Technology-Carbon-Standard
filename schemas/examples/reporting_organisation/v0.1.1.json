@@ -1,8 +1,8 @@
 {
 	"schema_version": "0.1.1",
 	"organisation": {
-		"organisation_name": "Scott Logic",
-		"open_corporates_url": "https://opencorporates.com/companies/gb/05377430"
+		"organisation_name": "Example Corp",
+		"open_corporates_url": "https://opencorporates.com/companies/gb/12345678"
 	},
 	"emissions_reports": [
 		{
@@ -14,9 +14,9 @@
 			"verification": "self reported",
 			"disclosures": [
 				{
-					"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+					"url": "https://example.com/reports/EnvironmentalImpactReport2023.pdf",
 					"doc_type": "report",
-					"description": "Scott Logic 2023 Sustainability Report"
+					"description": "Example Corp 2023 Sustainability Report"
 				}
 			],
 			"tech_carbon_standard": {

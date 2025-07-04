@@ -1,9 +1,9 @@
 [
 	{
 		"organisation": {
-			"name": "Scott Logic",
-			"description": "At Scott Logic, we have deep expertise in the complexities of regulated industries, and in meeting the needs of both demanding expert users and customers expecting frictionless user journeys. We have two decades' experience developing technology solutions that meet those challenges across a range of industries.",
-			"open_corporates_id": "05377430",
+			"name": "Example Corp",
+			"description": "Example Corp is a technology company specializing in sustainability reporting and carbon management solutions. We provide comprehensive tools and expertise to help organizations track, measure, and report their environmental impact across various industries.",
+			"open_corporates_id": "12345678",
 			"registered_country": "gb"
 		},
 		"reporting_period": {
@@ -13,9 +13,9 @@
 		"verification": "self reported",
 		"disclosures": [
 			{
-				"url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+				"url": "https://example.com/reports/EnvironmentalImpactReport2023.pdf",
 				"doc_type": "report",
-				"description": "Scott Logic 2023 Sustainability Report"
+				"description": "Example Corp 2023 Sustainability Report"
 			}
 		],
 		"upstream_emissions": {
