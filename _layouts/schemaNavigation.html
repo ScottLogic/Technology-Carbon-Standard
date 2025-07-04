@@ -12,7 +12,7 @@ layout: default
             {% for item in section.items %}
               {% if item.documentation_link %}
                 <a href="{{ item.documentation_link }}" class="block no-underline font-light leading-tight px-4 py-1 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == item.documentation_link %}text-cambridge-600 dark:text-cambridge-100 bg-gunmetal-100/50{% endif %}">
-                  {{ item.name }}
+                  {{ item.name }} {% if item.latest %} <span class="italic">(latest)</span> {% endif %}
                 </a>
                 {% endif %}
               {% endfor %}

@@ -6,7 +6,7 @@
     {% for item in section.items %}
       {% if item.documentation_link %}
         <a href="{{ item.documentation_link }}" class="block px-4 py-1">
-          {{ item.name }}
+          {{ item.name }} {% if item.latest %} <span class="italic">(latest)</span> {% endif %}
         </a>
         {% endif %}
       {% endfor %}
