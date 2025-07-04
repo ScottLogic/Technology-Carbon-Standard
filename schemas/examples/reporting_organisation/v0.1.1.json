@@ -1,12 +1,12 @@
 {
-	"schema_version": "0.1.0",
+	"schema_version": "0.1.1",
 	"organisation": {
 		"organisation_name": "Scott Logic",
 		"open_corporates_url": "https://opencorporates.com/companies/gb/05377430"
 	},
 	"emissions_reports": [
 		{
-			"schema_version": "0.0.1",
+			"schema_version": "0.0.2",
 			"reporting_period": {
 				"from_date": "2023-01-01",
 				"to_date": "2023-12-31"
@@ -20,7 +20,7 @@
 				}
 			],
 			"tech_carbon_standard": {
-				"schema_version": "0.0.1",
+				"schema_version": "0.0.2",
 				"upstream_emissions": {
 					"software": {
 						"emissions": 0,
@@ -83,6 +83,10 @@
 					"network_data_transfer": {
 						"emissions": 1000,
 						"notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
+					},
+					"downstream_infrastructure": {
+						"emissions": 2000,
+						"notes": "Customer devices used to run our services"
 					}
 				}
 			}
