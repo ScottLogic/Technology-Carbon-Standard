@@ -14,6 +14,7 @@ schemas/
 │   ├── v0.0.1.json             # Emissions report version 0.0.1
 ├── tech_carbon_standard/       # TCS schemas
 │   ├── v0.0.1.json             # TCS version 0.0.1
+│   ├── v0.0.2.json             # TCS version 0.0.2
 ├── tests/                      # Unit tests for schemas
 │   ├── reporting_organisations # Tests for the reporting organisations schema
 |   ├── utils                   # Utility functions for the tests
@@ -83,7 +84,7 @@ Example of a minimal valid document:
       },
       "verification": "self reported",
       "tech_carbon_standard": {
-        "schema_version": "0.0.1"
+        "schema_version": "0.0.2"
       }
     }
   ]

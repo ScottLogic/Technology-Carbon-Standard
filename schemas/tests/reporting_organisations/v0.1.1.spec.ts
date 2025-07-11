@@ -3,12 +3,15 @@ import addFormats from "ajv-formats";
 import {ValidateFunction} from "ajv/dist/jtd";
 import {error_details} from "../utils/ajv_utils";
 import "../utils/jest_utils";
-import reportingOrganisationsV010Schema from "../../reporting_organisation/v0.1.0.json";
+import reportingOrganisationsV011Schema from "../../reporting_organisation/v0.1.1.json";
 import emissionsReportV001Schema from "../../emissions_report/v0.0.1.json";
+import emissionsReportV002Schema from "../../emissions_report/v0.0.2.json";
 import techCarbonStandardV001Schema from "../../tech_carbon_standard/v0.0.1.json";
-import reportingOrganisationsV010Example from "../../examples/reporting_organisation/v0.1.0.json";
+import techCarbonStandardV002Schema from "../../tech_carbon_standard/v0.0.2.json";
+import reportingOrganisationsV011Example from "../../examples/reporting_organisation/v0.1.1.json";
 import emissionsReportV001Example from "../../examples/emissions_report/v0.0.1.json";
 import techCarbonStandardV001Example from "../../examples/tech_carbon_standard/v0.0.1.json";
+import techCarbonStandardV002Example from "../../examples/tech_carbon_standard/v0.0.2.json";
 
 let testDocument: any;
 let validate: ValidateFunction<any>;
@@ -21,29 +24,36 @@ beforeAll(() => {
         verbose: true
     })
         .addSchema(emissionsReportV001Schema, 'https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json')
+        .addSchema(emissionsReportV002Schema, 'https://techcarbonstandard.org/schemas/emissions_report/v0.0.2.json')
         .addSchema(techCarbonStandardV001Schema, 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json')
+        .addSchema(techCarbonStandardV002Schema, 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json');
 
     // Add format validators
     addFormats(ajv);
 });
 
 beforeEach(() => {
-  validate = ajv.compile<any>(reportingOrganisationsV010Schema);
-  testDocument = structuredClone(reportingOrganisationsV010Example);
+  validate = ajv.compile<any>(reportingOrganisationsV011Schema);
+  testDocument = structuredClone(reportingOrganisationsV011Example);
 });
 
-describe('Reporting Organisations v0.1.0 documents', () => {
+describe('Reporting Organisations v0.1.1 documents', () => {
     it(`should be valid if all required fields are present`, () => {
         const valid = validate(testDocument);
         expect(valid).toBeTruthyWithMessage(error_details(validate));
     });
 
-    it(`should be valid for tech_carbon_standard v0.0.1 documents`, () => {
+    it(`should be valid for a mix of tech_carbon_standard v0.0.1 and v0.0.2 documents`, () => {
         const emissionsReportWithTCSv001 = structuredClone(emissionsReportV001Example);
         emissionsReportWithTCSv001.tech_carbon_standard = structuredClone(techCarbonStandardV001Example);
 
+        const emissionsReportWithTCSv002 = structuredClone(emissionsReportV001Example);
+        emissionsReportWithTCSv002.schema_version = "0.0.2";
+        emissionsReportWithTCSv002.tech_carbon_standard = structuredClone(techCarbonStandardV002Example);
+
         testDocument["emissions_reports"] = [
             emissionsReportWithTCSv001,
+            emissionsReportWithTCSv002
         ];
 
         const valid = validate(testDocument);

@@ -193,5 +193,5 @@ CatDInfrastructure:
   icon: hub
   selected: false
   description:
-  link: /impact-categories/downstream#infrastructure
+  link: /impact-categories/downstream#downstream-infrastructure
   noLink: false
