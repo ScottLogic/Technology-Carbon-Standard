@@ -3,7 +3,6 @@ import addFormats from "ajv-formats";
 import {ValidateFunction} from "ajv/dist/jtd";
 import {error_details} from "../utils/ajv_utils";
 import "../utils/jest_utils";
-// import reportingOrganisationsV010Schema from "../../reporting_organisation/v0.1.0.json";
 import reportingOrganisationsV011Schema from "../../reporting_organisation/v0.1.1.json";
 import emissionsReportV001Schema from "../../emissions_report/v0.0.1.json";
 import emissionsReportV002Schema from "../../emissions_report/v0.0.2.json";
