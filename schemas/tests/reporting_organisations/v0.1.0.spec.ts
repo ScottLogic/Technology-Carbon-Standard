@@ -6,7 +6,6 @@ import "../utils/jest_utils";
 import reportingOrganisationsV010Schema from "../../reporting_organisation/v0.1.0.json";
 import emissionsReportV001Schema from "../../emissions_report/v0.0.1.json";
 import techCarbonStandardV001Schema from "../../tech_carbon_standard/v0.0.1.json";
-import techCarbonStandardV002Schema from "../../tech_carbon_standard/v0.0.2.json";
 import reportingOrganisationsV010Example from "../../examples/reporting_organisation/v0.1.0.json";
 import emissionsReportV001Example from "../../examples/emissions_report/v0.0.1.json";
 import techCarbonStandardV001Example from "../../examples/tech_carbon_standard/v0.0.1.json";
@@ -39,7 +38,7 @@ describe('Reporting Organisations v0.1.0 documents', () => {
         expect(valid).toBeTruthyWithMessage(error_details(validate));
     });
 
-    it(`should be valid for a mix of tech_carbon_standard v0.0.1 and v0.0.2  documents`, () => {
+    it(`should be valid for tech_carbon_standard v0.0.1 documents`, () => {
         const emissionsReportWithTCSv001 = structuredClone(emissionsReportV001Example);
         emissionsReportWithTCSv001.tech_carbon_standard = structuredClone(techCarbonStandardV001Example);
 
