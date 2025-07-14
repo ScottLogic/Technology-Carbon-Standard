@@ -28,4 +28,10 @@ These emissions are associated with the infrastructure enabling data transmissio
 
 All four categories of network listed in [the information on networks](/technology-categories/networks) should be considered. Tools such as [co2.js](https://www.thegreenwebfoundation.org/co2-js/) and [Green Coding's Green Metrics Tool](https://www.green-coding.io/projects/green-metrics-tool/) can be used to gain insight and attributional metrics on the carbon emissions of data transfer.
 
+{% include linkedHeading.html heading="Downstream Infrastructure" level=2 %}
 
+These emissions come from physical infrastructure and systems that your customers deploy or operate to use your products or services. This includes IoT devices, locally hosted servers, edge computing devices, dedicated storage systems, networking equipment, and specialised hardware that customers must install for your service to function. For example, if your cloud-based IoT platform requires customers to install local gateways and sensors, or your enterprise software needs on-premises servers at customer sites.
+
+The emissions from this customer infrastructure should account for operational energy consumption and, where relevant, the embodied carbon of hardware that customers acquire specifically to use your offerings. Unlike general-purpose devices, this infrastructure often has longer lifecycles and higher power requirements.
+
+Consider the cumulative impact across your entire customer base, especially where your service requires distributed infrastructure deployment. The geographic spread of customer infrastructure affects carbon intensity calculations, as different regions have varying grid emissions. Your product design decisions around hardware requirements, efficiency, and deployment patterns directly influence the overall carbon footprint of your service ecosystem.

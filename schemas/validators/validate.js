@@ -10,6 +10,7 @@ const PATHS = {
   reportingOrganisationsV001Schema: path.resolve(__dirname, '../reporting_organisation/v0.0.1.json'),
   emissionsV001Schema: path.resolve(__dirname, '../emissions_report/v0.0.1.json'),
   techCarbonStandardV001Schema: path.resolve(__dirname, '../tech_carbon_standard/v0.0.1.json'),
+  techCarbonStandardV002Schema: path.resolve(__dirname, '../tech_carbon_standard/v0.0.2.json'),
   tcsDocument: path.resolve(__dirname, '../examples/reporting_organisation/v0.1.0.json')
 };
 
@@ -42,6 +43,7 @@ async function validateTcsDocument() {
     const reportingOrganisationsV010SchemaStr = fs.readFileSync(PATHS.reportingOrganisationsV010Schema, 'utf8');
     const emissionsV001SchemaStr = fs.readFileSync(PATHS.emissionsV001Schema, 'utf8');
     const techCarbonStandardV001SchemaStr = fs.readFileSync(PATHS.techCarbonStandardV001Schema, 'utf8');
+    const techCarbonStandardV002SchemaStr = fs.readFileSync(PATHS.techCarbonStandardV002Schema, 'utf8');
 
     // Parse all schemas
     const rootSchema = JSON.parse(rootSchemaStr);
@@ -49,6 +51,7 @@ async function validateTcsDocument() {
     const reportingOrganisationsV010Schema = JSON.parse(reportingOrganisationsV010SchemaStr);
     const emissionsV001Schema = JSON.parse(emissionsV001SchemaStr);
     const techCarbonStandardV001Schema = JSON.parse(techCarbonStandardV001SchemaStr);
+    const techCarbonStandardV002Schema = JSON.parse(techCarbonStandardV002SchemaStr);
 
     console.log('All schemas parsed successfully');
 
@@ -56,6 +59,7 @@ async function validateTcsDocument() {
     const reportingOrganisationsV001SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisation/v0.0.1.json';
     const reportingOrganisationsV010SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.0.json';
     const techCarbonStandardV001SchemaId = 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json';
+    const techCarbonStandardV002SchemaId = 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json';
     const emissionsV001SchemaId = 'https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json';
     const rootSchemaId = 'https://techcarbonstandard.org/schemas/index.json';
 
@@ -64,6 +68,9 @@ async function validateTcsDocument() {
     // Register all schemas with their standardized IDs
     ajv.addSchema(techCarbonStandardV001Schema, techCarbonStandardV001SchemaId);
     console.log(` - Added tcs v0.0.1 schema with ID: ${techCarbonStandardV001SchemaId}`);
+
+    ajv.addSchema(techCarbonStandardV002Schema, techCarbonStandardV002SchemaId);
+    console.log(` - Added tcs v0.0.2 schema with ID: ${techCarbonStandardV002SchemaId}`);
 
     ajv.addSchema(emissionsV001Schema, emissionsV001SchemaId);
     console.log(` - Added emissions v0.0.1 schema with ID: ${emissionsV001SchemaId}`);

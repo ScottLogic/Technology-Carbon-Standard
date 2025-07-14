@@ -20,7 +20,7 @@ The Router Schema provides:
 ## Schema Information
 
 - **Schema ID**: [`https://techcarbonstandard.org/schemas/index.json`](/schemas/index.json)
-- **Current Supported Versions**: `0.1.0`, `0.0.1`
+- **Current Supported Versions**: `0.1.1`, `0.1.0`, `0.0.1`
 - **Schema Type**: Router/Dispatcher
 
 ## Schema Structure
@@ -38,11 +38,21 @@ The Router Schema is intentionally minimal, containing only the routing logic:
     "schema_version": {
       "type": "string",
       "description": "Version of the root Technology Carbon Standard report schema being used",
-      "enum": ["0.1.0", "0.0.1"]
+      "enum": ["0.1.1", "0.1.0", "0.0.1"]
     }
   },
   "required": ["schema_version"],
   "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": { "const": "0.1.1" }
+        }
+      },
+      "then": {
+        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.1.json"
+      }
+    },
     {
       "if": {
         "properties": {
@@ -72,6 +82,7 @@ The Router Schema is intentionally minimal, containing only the routing logic:
 
 1. **Document Validation**: When a TCS document is validated against the router schema, it first checks the `schema_version` field
 2. **Version Routing**: Based on the version value, it routes to the appropriate Reporting Organisation schema:
+ - `"0.1.1"` → Routes to [`reporting_organisation/v0.1.1.json`](/schemas/reporting_organisation/v0.1.1.json)
    - `"0.1.0"` → Routes to [`reporting_organisation/v0.1.0.json`](/schemas/reporting_organisation/v0.1.0.json)
    - `"0.0.1"` → Routes to [`reporting_organisation/v0.0.1.json`](/schemas/reporting_organisation/v0.0.1.json)
 3. **Validation Delegation**: The actual validation is performed by the target schema
@@ -80,7 +91,7 @@ The Router Schema is intentionally minimal, containing only the routing logic:
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| schema_version | string (enum) | Yes | Must be one of the supported versions: "0.1.0" or "0.0.1" |
+| schema_version | string (enum) | Yes | Must be one of the supported versions: "0.1.1", "0.1.0" or "0.0.1" |
 
 ## Usage Example
 
@@ -88,7 +99,7 @@ Any valid TCS document must start with a schema version declaration:
 
 ```json
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.1.1",
   "organisation": {
     "organisation_name": "Example Corp"
   },
@@ -130,10 +141,7 @@ Example of adding version `0.2.0`:
 
 ## Related Documentation
 
-- [Reporting Organisation Schema v0.1.0](/schemas/reporting-organisation/v0-1-0)
-- [Emissions Report Schema v0.0.1](/schemas/emissions-report/v0-0-1)
-- [Tech Carbon Standard Schema v0.0.1](/schemas/tech-carbon-standard/v0-0-1)
-- [Implementation Guide](/schemas/implementation-guide)
+{% include schemaDocumentationLinks.md %}
 
 ## Resources
 

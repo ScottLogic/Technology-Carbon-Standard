@@ -29,19 +29,19 @@ The Technology Carbon Standard uses a modular schema design with four interconne
 ```
 ┌─────────────────┐    ┌──────────────────────────┐
 │   Router Schema │───▶│ Reporting Organisation   │
-│   (index.json)  │    │ Schema (v0.1.0)          │
+│   (index.json)  │    │ Schema                   │
 └─────────────────┘    └────────────┬─────────────┘
                                     │
                                     ▼
                        ┌──────────────────────────┐
                        │ Emissions Report Schema  │
-                       │ (v0.0.1)                 │
+                       │                          │
                        └────────────┬─────────────┘
                                     │
                                     ▼
                        ┌──────────────────────────┐
                        │ Tech Carbon Standard     │
-                       │ Schema (v0.0.1)          │
+                       │ Schema                   │
                        └──────────────────────────┘
 ```
 
@@ -60,7 +60,7 @@ The Technology Carbon Standard uses a modular schema design with four interconne
 - **Contains**: Reporting periods, verification, disclosures, and references to TCS emissions data
 - **Features**: Conditional validation (auditor_link required for independent verification)
 
-### 4. [Tech Carbon Standard Schema](/schemas/tech-carbon-standard/v0-0-1) ([`tech_carbon_standard/v0.0.1.json`](/schemas/tech_carbon_standard/v0.0.1.json))
+### 4. [Tech Carbon Standard Schema](/schemas/tech-carbon-standard/v0-0-2) ([`tech_carbon_standard/v0.0.2.json`](/schemas/tech_carbon_standard/v0.0.2.json))
 - **Purpose**: Defines the actual emissions data structure and categories
 - **Contains**: Four emissions categories with detailed sub-categories
 - **Standards**: All emissions in kgCO2e, optional Scope 2 methodology specification
@@ -196,6 +196,10 @@ Use the [Tech Carbon Standard](/) to gather data for each applicable category:
   "network_data_transfer": {
     "emissions": 2000,
     "notes": "Data transfer infrastructure for service delivery"
+  },
+  "downstream_infrastructure": {
+    "emissions": 2000,
+    "notes": "Customer devices used to run our services"
   }
 }
 ```
@@ -206,7 +210,7 @@ Use the [Tech Carbon Standard](/) to gather data for each applicable category:
 For new implementations, use the latest available versions:
 - **Root Schema**: `"schema_version": "0.1.0"`
 - **Emissions Report**: `"schema_version": "0.0.1"`
-- **Tech Carbon Standard**: `"schema_version": "0.0.1"`
+- **Tech Carbon Standard**: `"schema_version": "0.0.2"`
 
 #### Build the Document Structure
 
@@ -245,7 +249,7 @@ For new implementations, use the latest available versions:
       }
     ],
     "tech_carbon_standard": {
-      "schema_version": "0.0.1",
+      "schema_version": "0.0.2",
       // Your emissions data here
     }
   }
@@ -255,7 +259,7 @@ For new implementations, use the latest available versions:
 **Include Your Emissions Data**:
 ```json
 "tech_carbon_standard": {
-  "schema_version": "0.0.1",
+  "schema_version": "0.0.2",
   "upstream_emissions": {
     // Include categories with data
   },
@@ -303,9 +307,9 @@ Here's a complete example TCS document using the modular schema:
 {
   "schema_version": "0.1.0",
   "organisation": {
-    "organisation_name": "Scott Logic",
+    "organisation_name": "Example Corp",
     "description": "Software consultancy and product development company",
-    "open_corporates_url": "https://opencorporates.com/companies/gb/05377430",
+    "open_corporates_url": "https://opencorporates.com/companies/gb/12345678",
     "registered_country": "England"
   },
   "emissions_reports": [
@@ -319,13 +323,13 @@ Here's a complete example TCS document using the modular schema:
       "verification": "self reported",
       "disclosures": [
         {
-          "url": "https://scottlogic.cdn.prismic.io/scottlogic/ZrSd7UaF0TcGIxye_EnvironmentalImpactReport2023.pdf",
+          "url": "https://example.com/reports/EnvironmentalImpactReport2023.pdf",
           "doc_type": "report",
-          "description": "Scott Logic 2023 Sustainability Report"
+          "description": "Example Corp 2023 Sustainability Report"
         }
       ],
       "tech_carbon_standard": {
-        "schema_version": "0.0.1",
+        "schema_version": "0.0.2",
         "upstream_emissions": {
           "software": {
             "emissions": 0,
@@ -389,6 +393,10 @@ Here's a complete example TCS document using the modular schema:
           "network_data_transfer": {
             "emissions": 1000,
             "notes": "Calculated based on emissions estimate associated with www website and its traffic figures"
+          },
+          "downstream_infrastructure": {
+            "emissions": 2000,
+            "notes": "Customer devices used to run our services"
           }
         }
       }
@@ -420,7 +428,7 @@ For organisations with multiple divisions or geographic regions:
       "verification": "independently verified",
       "auditor_link": "https://example-auditor.com/",
       "tech_carbon_standard": {
-        "schema_version": "0.0.1"
+        "schema_version": "0.0.2"
         // North America emissions data
       }
     },
@@ -433,7 +441,7 @@ For organisations with multiple divisions or geographic regions:
       },
       "verification": "self reported",
       "tech_carbon_standard": {
-        "schema_version": "0.0.1"
+        "schema_version": "0.0.2"
         // EMEA emissions data
       }
     }
@@ -458,7 +466,7 @@ For organisations with multiple divisions or geographic regions:
       },
       "verification": "self reported",
       "tech_carbon_standard": {
-        "schema_version": "0.0.1"
+        "schema_version": "0.0.2"
         // 2023 data
       }
     },
@@ -507,7 +515,7 @@ When new schema versions become available, you can migrate gradually:
         "to_date": "2023-12-31"
       },
       "tech_carbon_standard": {
-        "schema_version": "0.0.1"  // Original TCS schema
+        "schema_version": "0.0.2"  // Original TCS schema
         // 2023 historical data
       }
     }
@@ -555,7 +563,7 @@ Solution: Add auditor_link or change verification method
 - [Router Schema](/schemas/router/) - Schema routing and version management
 - [Reporting Organisation Schema v0.1.0](/schemas/reporting-organisation/v0-1-0) - Root document structure
 - [Emissions Report Schema v0.0.1](/schemas/emissions-report/v0-0-1) - Individual report structure
-- [Tech Carbon Standard Schema v0.0.1](/schemas/tech-carbon-standard/v0-0-1) - Emissions data structure
+- [Tech Carbon Standard Schema v0.0.2](/schemas/tech-carbon-standard/v0-0-2) - Emissions data structure
 
 ## Support and Contributing
 

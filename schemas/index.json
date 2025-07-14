@@ -8,11 +8,21 @@
     "schema_version": {
       "type": "string",
       "description": "Version of the root Technology Carbon Standard report schema being used",
-      "enum": ["0.1.0", "0.0.1"]
+      "enum": ["0.1.1", "0.1.0", "0.0.1"]
     }
   },
   "required": ["schema_version"],
   "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": { "const": "0.1.1" }
+        }
+      },
+      "then": {
+        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.1.json"
+      }
+    },
     {
       "if": {
         "properties": {
