@@ -1,5 +1,5 @@
 ---
-layout: sideNavigation
+layout: schemaNavigation
 title: Router Schema
 permalink: /schemas/router/
 ---
@@ -141,7 +141,7 @@ Example of adding version `0.2.0`:
 
 ## Related Documentation
 
-{% include schemaDocumentationLinks.md %}
+{% include schemaDocumentationLinks.html %}
 
 ## Resources
 
