@@ -1,11 +1,15 @@
 ---
 ---
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Project Specific CSS */
+@import "gwf.css";
 
 @layer base {
+
   html {
     font-size: 16px;
     scrollbar-gutter: stable;
@@ -21,6 +25,17 @@
 
   input {
     @apply accent-gunmetal-800 dark:accent-cambridge-300;
+  }
+
+  /* Inline code styling - override typography plugin defaults */
+  .prose code:not(pre code) {
+    @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-1.5 py-0.5 rounded font-mono text-sm font-medium !important;
+  }
+
+  /* Remove default backticks from typography plugin */
+  .prose code:not(pre code)::before,
+  .prose code:not(pre code)::after {
+    content: none !important;
   }
 
   /* CATEGORY U */
@@ -68,4 +83,5 @@
   .cat-d-body {
     @apply bg-cambridge-200 dark:bg-cambridge-700 text-charcoal dark:text-white;
   }
+
 }

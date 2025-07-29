@@ -31,7 +31,7 @@ CatONetworkDevices:
   description: Principles around maximum utilisation.
   link: '#NetworkDevices'
 
-CatOEmployeeDevices:
+CatOOnsiteEmployeeDevices:
   selected: true
   description: Apply Power Management configuration.
   link: '#EmployeeDevices'
@@ -40,6 +40,11 @@ CatGGenerators:
   selected: false
   description:
   noLink: true
+
+CatCOffsiteEmployeeDevices:
+  selected: true
+  description: Apply Power Management configuration.
+  link: '#EmployeeDevices'
 
 CatCCloud:
   selected: true

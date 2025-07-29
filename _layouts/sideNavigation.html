@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="hidden md:flex md:flex-row gap-6">
+  <aside class="min-h-[calc(100vh-214px)] md:w-1/5 border-b md:border-r md:border-b-0 border-gunmetal-200 dark:border-gunmetal-800 -mt-24 -mb-4 pr-2 pb-2 pt-0">
+      <div class="sticky top-24 z-0 scroll-m-24">
+        {% assign sideNavItem = site.data.sideNavigation | where_exp: "item", "page.url contains item.baseUrl" %}
+        {% include sideNavigationLevel.html categories=sideNavItem %}
+      </div>
+  </aside>
+  <article class="md:w-4/5">
+    {{ content }}
+  </article>
+</div>
+
+<div class="md:hidden">
+    {{ content }}
+</div>

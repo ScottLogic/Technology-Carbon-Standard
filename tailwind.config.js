@@ -10,12 +10,16 @@ module.exports = {
     './_glossary/*.md',
     './_resources/*.md',
     './pages/*.md',
+    './pages/**/*.md',
+    './pages/case_studies/gwf/*.md',
     './*.md',
     './*.html',
+    './**/resources.md'
   ],
   theme: {
     fontFamily: {
-      'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"']
+      'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"'],
+      'mono': ['Menlo', 'Consolas', '"Courier New"', 'Courier', '"Liberation Mono"', 'monospace'],
     },
     extend:{
       colors: {

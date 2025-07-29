@@ -31,7 +31,7 @@ CatUSoftware:
   icon: web
   selected: false
   description:
-  link: /categories/upstream#software
+  link: /impact-categories/upstream#software
   noLink: false
 
 CatUEmployeeHardware:
@@ -41,7 +41,7 @@ CatUEmployeeHardware:
   icon: devices
   selected: false
   description:
-  link: /categories/upstream#employee-hardware
+  link: /impact-categories/upstream#employee-hardware
   noLink: false
 
 CatUNetworkHardware:
@@ -51,7 +51,7 @@ CatUNetworkHardware:
   icon: router
   selected: false
   description:
-  link: /categories/upstream#networking-hardware
+  link: /impact-categories/upstream#networking-hardware
   noLink: false
 
 CatUServerHardware:
@@ -61,7 +61,7 @@ CatUServerHardware:
   icon: storage
   selected: false
   description:
-  link: /categories/upstream#data-centre-and-server-hardware
+  link: /impact-categories/upstream#data-centre-and-server-hardware
   noLink: false
 
 OperationalEmissions:
@@ -77,7 +77,7 @@ CatOServers:
   icon: storage
   selected: false
   description:
-  link: /categories/operational#servers-and-storage
+  link: /impact-categories/operational#servers-and-storage
   noLink: false
 
 CatONetworkDevices:
@@ -87,17 +87,27 @@ CatONetworkDevices:
   icon: router
   selected: false
   description:
-  link: /categories/operational#networking-devices
+  link: /impact-categories/operational#networking-devices
   noLink: false
 
+# LEGACY ITEM
+# Maintaining legacy items for (typically) case studies where the TCS has moved on, but the item is still referenced.
 CatOEmployeeDevices:
   id: CatOEmployeeDevices
   category: cat-o
   title: Employee Devices
   icon: devices
   selected: false
+  noLink: true
+
+CatOOnsiteEmployeeDevices:
+  id: CatOOnsiteEmployeeDevices
+  category: cat-o
+  title: Onsite Employee Devices
+  icon: devices
+  selected: false
   description:
-  link: /categories/operational#employee-devices
+  link: /impact-categories/operational#onsite-employee-devices
   noLink: false
 
 CatGGenerators:
@@ -107,7 +117,7 @@ CatGGenerators:
   icon: bolt
   selected: false
   description:
-  link: /categories/operational#generators
+  link: /impact-categories/operational#generators
   noLink: false
 
 CatC:
@@ -120,7 +130,7 @@ CatCCloud:
   icon: cloud
   selected: false
   description:
-  link: /categories/operational#cloud-services
+  link: /impact-categories/operational#cloud-services
   noLink: false
 
 CatCSaas:
@@ -130,7 +140,7 @@ CatCSaas:
   icon: web
   selected: false
   description:
-  link: /categories/operational#saas
+  link: /impact-categories/operational#saas
   noLink: false
 
 CatCManaged:
@@ -140,7 +150,17 @@ CatCManaged:
   icon: storage
   selected: false
   description:
-  link: /categories/operational#managed-services
+  link: /impact-categories/operational#managed-services
+  noLink: false
+
+CatCOffsiteEmployeeDevices:
+  id: CatCOffsiteEmployeeDevices
+  category: cat-c
+  title: Offsite Employee Devices
+  icon: devices
+  selected: false
+  description:
+  link: /impact-categories/operational#offsite-employee-devices
   noLink: false
 
 CatD:
@@ -153,7 +173,7 @@ CatDEndUserDevices:
   icon: devices
   selected: false
   description:
-  link: /categories/downstream#end-user-devices
+  link: /impact-categories/downstream#end-user-devices
   noLink: false
 
 CatDNetworkDataTransfer:
@@ -163,7 +183,7 @@ CatDNetworkDataTransfer:
   icon: cell-tower
   selected: false
   description:
-  link: /categories/downstream#network-data-transfer
+  link: /impact-categories/downstream#network-data-transfer
   noLink: false
 
 CatDInfrastructure:
@@ -173,5 +193,5 @@ CatDInfrastructure:
   icon: hub
   selected: false
   description:
-  link: /categories/downstream#infrastructure
+  link: /impact-categories/downstream#downstream-infrastructure
   noLink: false

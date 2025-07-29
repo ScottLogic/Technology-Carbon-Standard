@@ -45,7 +45,7 @@
     <div class="flex">
       <div class="grow flex flex-col justify-center h-[4rem] px-2 py-2 cat-u">
         <div class="relative">
-          <h3 class="pl-2 mb-0 text-xl font-medium text-white"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/upstream">Upstream Emissions</a></h3>
+          <h3 class="pl-2 mb-0 text-xl font-medium text-white"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/impact-categories/upstream">Upstream Emissions</a></h3>
           <div class="absolute right-0 top-8">
             {% include categoryLabel.html label="CatU" %}
           </div>
@@ -99,7 +99,7 @@
   <div class="flex flex-col lg:w-2/4">
     <div class="flex">
       <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 cat-o">
-        <h3 class="lg:pl-[3rem] mb-0 text-xl font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/operational">Operational Emissions</a></h3>
+        <h3 class="lg:pl-[3rem] mb-0 text-xl font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/impact-categories/operational">Operational Emissions</a></h3>
       </div>
       <!-- ARROW RIGHT: hidden on smaller screens -->
       <div class="hidden lg:block w-0 h-0 z-10 cat-o-arrow-right"></div>
@@ -118,11 +118,11 @@
           <p class="mb-2">{{ variant.CatO.description }}</p>
 
           {% include categoryItem.html
-            item="CatOEmployeeDevices"
-            selected=variant.CatOEmployeeDevices.selected
-            description=variant.CatOEmployeeDevices.description
-            noLink=variant.CatOEmployeeDevices.noLink
-            link=variant.CatOEmployeeDevices.link
+            item="CatOOnsiteEmployeeDevices"
+            selected=variant.CatOOnsiteEmployeeDevices.selected
+            description=variant.CatOOnsiteEmployeeDevices.description
+            noLink=variant.CatOOnsiteEmployeeDevices.noLink
+            link=variant.CatOOnsiteEmployeeDevices.link
           %}
 
           {% include categoryItem.html
@@ -164,6 +164,14 @@
             {% include categoryLabel.html label="CatC" %}
           </div>
           <p class="mb-2">{{ variant.CatC.description }}</p>
+          
+          {% include categoryItem.html
+            item="CatCOffsiteEmployeeDevices"
+            selected=variant.CatCOffsiteEmployeeDevices.selected
+            description=variant.CatCOffsiteEmployeeDevices.description
+            noLink=variant.CatCOffsiteEmployeeDevices.noLink
+            link=variant.CatCOffsiteEmployeeDevices.link
+          %}
 
           {% include categoryItem.html
             item="CatCCloud"
@@ -201,7 +209,7 @@
     <div class="flex">
       <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 cat-d">
         <div class="relative">
-          <h3 class="lg:pl-[3rem] mb-0 text-xl font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/categories/downstream">Downstream Emissions</a></h3>
+          <h3 class="lg:pl-[3rem] mb-0 text-xl font-medium"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/impact-categories/downstream">Downstream Emissions</a></h3>
           <div class="absolute right-0 top-8">
             {% include categoryLabel.html label="CatD" %}
           </div>
@@ -225,6 +233,13 @@
         description=variant.CatDNetworkDataTransfer.description
         noLink=variant.CatDNetworkDataTransfer.noLink
         link=variant.CatDNetworkDataTransfer.link
+      %}
+      {% include categoryItem.html
+        item="CatDInfrastructure"
+        selected=variant.CatDInfrastructure.selected
+        description=variant.CatDInfrastructure.description
+        noLink=variant.CatDInfrastructure.noLink
+        link=variant.CatDInfrastructure.link
       %}
 
     </div>

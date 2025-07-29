@@ -1,0 +1,16 @@
+<div class="flex flex-col">
+  {% for item in include.categories %}
+    {% if item.link %}
+    <a href="{{ item.link }}" class="no-underline font-light leading-tight px-4 py-1 hover:bg-gunmetal-100 dark:hover:bg-gunmetal-900 {% if page.url == item.link %}text-cambridge-600 dark:text-cambridge-100 font-semibold{% endif %}">
+      {{ item.name }}
+    </a>
+    {% else %}
+      <span class="font-light leading-tight px-4 py-1">{{item.name}}</span>
+    {% endif %}
+    {% if item.categories %}
+      <div class="ml-4">
+          {% include sideNavigationLevel.html categories=item.categories %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

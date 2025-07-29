@@ -36,6 +36,7 @@ collections:
 
 plugins:
   - jekyll-node-module
+  - jekyll-redirect-from
 
 node_modules:
   modules_dir: node_modules

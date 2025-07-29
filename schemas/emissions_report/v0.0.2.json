@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techcarbonstandard.org/schemas/emissions_report/v0.0.2.json",
+  "title": "Technology Carbon Standard Emissions Report",
+  "description": "An Emissions Report schema for the Technology Carbon Standard.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the emissions report schema used for this report.",
+      "enum": ["0.0.2"]
+    },
+    "reporting_unit": {
+      "type": "string",
+      "description": "Identify the reporting unit associated with this emissions report. This could be a sub-organisation group, region or reporting entity."
+    },
+    "reporting_period": {
+      "type": "object",
+      "description": "The reporting period for the carbon emissions data.",
+      "properties": {
+        "from_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Reporting start date in ISO8601 format (YYYY-MM-DD)"
+        },
+        "to_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Reporting end date in ISO8601 format (YYYY-MM-DD)"
+        }
+      },
+      "required": ["from_date", "to_date"],
+      "additionalProperties": false
+    },
+    "verification": {
+      "type": "string",
+      "enum": ["self reported", "independently verified"],
+      "description": "Verification status of the reported carbon emissions data"
+    },
+    "auditor_link": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to the independent auditor's website"
+    },
+    "disclosures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the disclosure"
+          },
+          "doc_type": {
+            "enum": ["report", "methodology", "other"],
+            "description": "Type of disclosure - must be one of: 'report', 'methodology', or 'other'"
+          },
+          "description": {
+            "type": "string",
+            "description": "Brief description of what the disclosure contains"
+          }
+        },
+        "required": ["url", "doc_type"],
+        "additionalProperties": false
+      }
+    },
+    "tech_carbon_standard": {
+      "type": "object",
+      "description": "The Technology Carbon Standard version and categories for this report.",
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "description": "Version of the Tech Carbon Standard schema used for this report.",
+          "enum": ["0.0.2", "0.0.1"]
+        }
+      },
+      "required": [
+        "schema_version"
+      ],
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {"properties": {"schema_version": { "const": "0.0.2" }}},
+          "then": {"$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json"}
+        },
+        {
+          "if": {"properties": {"schema_version": { "const": "0.0.1" }}},
+          "then": {"$ref": "https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json"}
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "reporting_period",
+    "verification",
+    "tech_carbon_standard"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verification": { "enum": ["independently verified"] }
+        }
+      },
+      "then": {
+        "type": "object",
+        "required": ["auditor_link"]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

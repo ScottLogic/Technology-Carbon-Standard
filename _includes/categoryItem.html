@@ -28,8 +28,14 @@
   {% assign link = site.data.carbonStandard[item].link %}
 {% endif %}
 
+{% if include.noLink %}
+  {% assign noLink = include.noLink %}
+{% else %}
+  {% assign noLink = site.data.carbonStandard[item].noLink %}
+{% endif %}
+
 <div class="my-2">
-  {% if include.noLink == true %}
+  {% if noLink == true %}
     <div id="{{ id }}" class="flex gap-2 {% if description %}items-start{% else %}items-center{% endif %}{% if include.selected %} bg-white/80{% endif %}">
   {% else %}
     <a id="{{ id }}" href="{{ link }}" aria-label="{{ title }}" class="flex gap-2 no-underline text-inherit hover:bg-white/30 {% if description %}items-start{% else %}items-center{% endif %}{% if include.selected %} bg-white/80{% endif %}">
@@ -43,7 +49,7 @@
       <div class="font-light text-sm">{{ description }}</div>
     </div>
 
-  {% if include.noLink == true %}
+  {% if noLink == true %}
     </div>
   {% else %}
     </a>
