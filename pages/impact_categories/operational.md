@@ -75,7 +75,10 @@ The emissions associated with cloud platform services like compute, storage, and
 [Read more about cloud services.](/technology-categories/cloud)
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
-Software-as-a-Service (SaaS) applications.
+
+The emissions associated with Software-as-a-Service (SaaS) applications. These are fully-managed services which are hosted by a third-parties and may be located on-premises or in the cloud. There are a lot of factors which determine the emissions due to these services and typically organisations do not have a lot of visibility.
+
+[Read more about Software-as-a-Service.](/technology-categories/saas)
 
 {% include linkedHeading.html heading="Managed Services" level=3 %}
 Managed Security Operations, IT support and data backup services.
