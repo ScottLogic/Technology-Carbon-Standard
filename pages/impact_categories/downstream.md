@@ -20,7 +20,7 @@ The [embodied carbon of end-user devices](/technology-categories/lifecycle/embod
 
 {% include linkedHeading.html heading="Network Data Transfer" level=2 %}
 
-These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services. Data that is consumed over the Internet is hard to measure as the specifications of the equipment used over the public internet are not available. Even if that data was available, the system has no control over what route the data takes. Therefore it is appropriate to use a proxy such as:
+These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services. This includes LLMs used as SaaS, via an API provider or an AI-powered tool. Data that is consumed over the Internet is hard to measure as the specifications of the equipment used over the public internet are not available. Even if that data was available, the system has no control over what route the data takes. Therefore it is appropriate to use a proxy such as:
 - number of calls 
 - payload size
 - the distance transmitted

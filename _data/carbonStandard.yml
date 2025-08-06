@@ -34,6 +34,17 @@ CatUSoftware:
   link: /impact-categories/upstream#software
   noLink: false
 
+CatUAI:
+  id: CatUAI
+  category: cat-u
+  title: Proprietary and Open-Source AI
+  #  needs new icon
+  icon: web  
+  selected: false
+  description:
+  link: /impact-categories/upstream#ai
+  noLink: false
+
 CatUEmployeeHardware:
   id: CatUEmployeeHardware
   category: cat-u

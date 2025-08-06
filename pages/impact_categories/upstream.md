@@ -22,6 +22,11 @@ Emissions associated with developing and delivering off-the-shelf and open-sourc
 - Packaging and digital distribution of software over the internet.
 - Product support services for troubleshooting and guiding customers.
 
+{% include linkedHeading.html heading="AI" level=2 %}
+
+- Energy consumed during developing foundation models that are hosted by the organisation.
+- Manufacturing IT equipment and building and maintaining AI data centres
+
 {% include linkedHeading.html heading="Hardware" level=2 %}
 
 Embodied carbon emissions associated with hardware devices owned by an organisation, including emissions from the manufacture, transportation, installation, maintenance, and end-of-life of a device.
