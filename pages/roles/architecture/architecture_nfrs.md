@@ -30,7 +30,6 @@ The architect is at the center of vendor selection and so can promote green requ
 
 - **Prefer a higher user base:** Adding NFR around user base size means you'll be getting something well tested and more likely to be supported but can also influence carbon emissions. If you pay an organisation to create bespoke software for you or train a bespoke model for you the incurred emissions will only benefit your user base. On the other hand adopting open source software used by 100 companies and their users means there's a small attribution to you and there's less duplicated work. The same applies for internal build vs buy although in this case there's *Category O* emissions and other non tech ones like buildings in [GHGP Scope 3](/resources/glossary#greenhouse-gas-ghg-protocols).
 
-
 ### Hardware Manufacture, Transport and Installation
 {% include categoryItem.html item="CatUEmployeeHardware" id="EmployeeHardware" noLink=true %}
 {% include categoryItem.html item="CatUNetworkHardware" id="NetworkHardware" noLink=true %}
@@ -43,6 +42,10 @@ NFRs for hardware embodied carbon should fall out of the strategy and based on t
 
 A software implementation NFR may also reduce embodied carbon:
 - **New service should add no embodied emissions:** requiring a new service to use no additional embodied carbon means it must run on existing hardware making use of spare capacity.
+
+### Content
+{% include categoryItem.html item="CatUFoundationModels" id="FoundationModels" noLink=true %}
+{% include categoryItem.html item="CatUContentAndData" id="ContentAndData" noLink=true %}
 
 ## Operational Emissions
 
@@ -131,7 +134,7 @@ Consider NFRs like:
 
 End user devices like customer laptops, these are out of our control but there are NFRs that can be set around the apps running on them. For battery powered devices, low energy usage has the added benefit of aiding battery life. 
 
-{% include categoryItem.html item="CatDEndUserDevices" id="EndUserDevices" noLink=true %}
+{% include categoryItem.html item="CatDCustomerDevices" id="CustomerDevices" noLink=true %}
 NFRs for devices are one of the easier things to set and test because you can obtain real representative hardware to do measurements. Possible NFRs are:
 - **Single page view uses < X kWh:** Promote pages that don't use unnecessary energy.
 - **No energy usage when user not on page:** Ensure that no energy is used when the user is not on a webpage. Note: modern browsers will help enforce this anyway.

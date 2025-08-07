@@ -90,6 +90,23 @@
         noLink=variant.CatUServerHardware.noLink
         link=variant.CatUServerHardware.link
       %}
+
+      <h4 class="mt-4 mb-2 text-lg font-medium">Content</h4>
+      {% include categoryItem.html
+        item="CatUFoundationModels"
+        selected=variant.CatUFoundationModels.selected
+        description=variant.CatUFoundationModels.description
+        noLink=variant.CatUFoundationModels.noLink
+        link=variant.CatUFoundationModels.link
+      %}
+
+      {% include categoryItem.html
+        item="CatUContentAndData"
+        selected=variant.CatUContentAndData.selected
+        description=variant.CatUContentAndData.description
+        noLink=variant.CatUContentAndData.noLink
+        link=variant.CatUContentAndData.link
+      %}
     </div>
     <!-- ARROW DOWN: visible on smaller screens -->
     <div class="w-full lg:hidden h-0 cat-u-arrow-down"></div>
@@ -219,13 +236,13 @@
     <div class="h-full lg:-ml-[2rem] px-4 pt-4 pb-2 cat-d-body">
       <p>{{ variant.CatD.description }}</p>
 
-      <h4 class="mt-4 mb-2 text-lg font-medium">End Use (B2B, B2C)</h4>
+      <h4 class="mt-4 mb-2 text-lg font-medium">Customer (B2B, B2C)</h4>
       {% include categoryItem.html
-        item="CatDEndUserDevices"
-        selected=variant.CatDEndUserDevices.selected
-        description=variant.CatDEndUserDevices.description
-        noLink=variant.CatDEndUserDevices.noLink
-        link=variant.CatDEndUserDevices.link
+        item="CatDCustomerDevices"
+        selected=variant.CatDCustomerDevices.selected
+        description=variant.CatDCustomerDevices.description
+        noLink=variant.CatDCustomerDevices.noLink
+        link=variant.CatDCustomerDevices.link
       %}
       {% include categoryItem.html
         item="CatDNetworkDataTransfer"

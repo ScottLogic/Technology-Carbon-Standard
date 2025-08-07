@@ -57,7 +57,7 @@ Lastly, the remaining 2% comes from data transfer across the internet arising fr
 | [SaaS](/case-studies/green-web-foundation/operational#saas-services) | 0 | 0% | No data |
 | [Managed Services](/case-studies/green-web-foundation/operational#managed-services) | 0 | 0% | High level estimate - medium confidence |
 | Downstream Emissions | 127 | 26% | |
-| [End-User Devices](/case-studies/green-web-foundation/downstream#end-user-devices) | 117 | 24% | High level estimate - low confidence |
+| [Customer Devices](/case-studies/green-web-foundation/downstream#customer-devices) | 117 | 24% | High level estimate - low confidence |
 | [Network Data Transfer](/case-studies/green-web-foundation/downstream#network-data-transfer) | 10 | 2% | High level estimate - medium confidence |
 | Total | 496 kgCO<sub>2</sub>e/year | 100% |
 

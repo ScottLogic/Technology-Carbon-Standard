@@ -16,11 +16,11 @@ Read the TCS overview of [downstream emissions](/categories/downstream) for a pr
 
 The approach used and why for each sub-category in downstream emissions:
 
-- [End-User Devices](#end-user-devices)
+- [Customer Devices](#customer-devices)
 - [Network Data Transfer](#network-data-transfer)
 
-## End-User Devices
-{% include categoryItem.html item="CatDEndUserDevices" %}
+## Customer Devices
+{% include categoryItem.html item="CatDCustomerDevices" %}
 
 ### Estimated emissions
 
@@ -63,7 +63,7 @@ To support our high level estimates, we use the emissions values provided by Cab
 
 The [dataset browser](https://datasets.thegreenwebfoundation.org/) emissions are manually calculated using [Sustainable Web Design Methodology version 3](https://sustainablewebdesign.org/estimating-digital-emissions-version-3/), which uses the main metric of page load size. 
 
-Only the end-user devices boundary is included. This means 52% of the 0.81kWh/GB SWD metric = 0.4212kWh/GB. 
+Only the customer devices boundary is included. This means 52% of the 0.81kWh/GB SWD metric = 0.4212kWh/GB. 
 
 The page load transfers were measured using Google Chrome developer tools. For **uncached visits we had a pagesize value of 0.134MB** (= 0.000134GB), and for **cached/returning visits of 0.119MB** (= 0.000119GB).
 

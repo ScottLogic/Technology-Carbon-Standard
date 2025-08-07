@@ -39,6 +39,11 @@ Any hardware you buy in or acquire; from data centre servers to employee laptops
 - Recycling: Check the criteria under which your current disposal partners were selected and if recycling and low energy usage were not considerations make sure they are next time the contracts come around.
 - Procurement: Do the procurement teams understand the emissions with each item they supply? If not kick-off an initiative to look at this and ensure equipment is bought with a known embodied carbon and ideally a target to keep it under. Consider refreshed hardware; reused, refurbished or remanufactured.
 
+### Content
+{% include categoryItem.html item="CatUFoundationModels" id="FoundationModels" noLink=true %}
+{% include categoryItem.html item="CatUContentAndData" id="ContentAndData" noLink=true %}
+<!-- TODO -->
+
 ## Operational Emissions
 
 Whether you are running in the cloud or on-prem, architects can promote architectural patterns and ways of using resources to minimise day to day energy usage. This might include requiring the use of efficient APIs such as gRPC, sharing resources as much as possible, carbon aware computing and having data dormancy strategies so that data is not held and stored longer than needed. These may also have benefits on resilience, cost and compliance and the architect should take a holistic view.
@@ -102,6 +107,6 @@ As well as vendor selection and good software design patterns there may be optio
 
 {% include categoryLabel.html label="CatD" %}
 
-{% include categoryItem.html item="CatDEndUserDevices" id="EndUserDevices" noLink=true %}
+{% include categoryItem.html item="CatDCustomerDevices" id="CustomerDevices" noLink=true %}
 
 {% include categoryItem.html item="CatDNetworkDataTransfer" id="NetworkTransfer" noLink=true %}
