@@ -38,8 +38,7 @@ CatUAIContent:
   id: CatUContent
   category: cat-u
   title: Foundation models
-  #  needs new icon
-  icon:   
+  icon: ai
   selected: false
   description:
   link: /impact-categories/upstream#foundation-models
@@ -49,8 +48,7 @@ CatUAIContent:
   id: CatUContent
   category: cat-u
   title: Content and Data
-  #  needs new icon
-  icon:   
+  icon: content
   selected: false
   description:
   link: /impact-categories/upstream#content-and-data
