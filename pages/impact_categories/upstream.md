@@ -57,7 +57,19 @@ Servers, storage systems, and data centre infrastructure installed on-premise.
 
 {% include linkedHeading.html heading="Content" level=2 %}
 
-<!-- TODO -->
 {% include linkedHeading.html heading="Foundation Models" level=3 %} 
-<!-- TODO -->
+
+AI workloads rely on specialised hardware and AI accelerators to perform complex computations at high speed. 
+When assessing the upstream emissions of foundation models, it's essential to account for the embodied carbon of the IT infrastructure involved in their development and deployment. This includes the carbon footprint associated with manufacturing specialised hardware and constructing and operating AI data centres. Key components include, but are not limited to:
+- High-Performance Computing systems (HPC) such as H100
+- Graphics Processing Units (GPUs) 
+- Central Processing Units (CPUs) 
+- Tensor Processing Units (TPUs) 
+- Memory (RAM) 
+- Storage  
+- Networking equipment
+- Advanced cooling and power supply 
+- Distributed computing 
+
 {% include linkedHeading.html heading="Content and Data" level=3 %} 
+
