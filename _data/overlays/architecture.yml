@@ -61,10 +61,10 @@ CatCManaged:
   description: IaaS vendor strategy.
   link: '#Managed'
 
-CatDEndUserDevices:
+CatDCustomerDevices:
   selected: true
   description: Promote patterns to minimise energy. Consider framework choices.
-  link: '#EndUserDevices'
+  link: '#CustomerDevices'
 
 CatDNetworkDataTransfer:
   selected: true

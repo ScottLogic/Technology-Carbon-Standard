@@ -16,6 +16,16 @@ CatUNetworkHardware:
   description:
   noLink: true
 
+CatUFoundationModels:
+  selected: false
+  description:
+  noLink: true
+
+CatUContentAndData:
+  selected: false
+  description:
+  noLink: true
+
 CatUServerHardware:
   selected: true
   description: Drives for data at rest
@@ -56,10 +66,10 @@ CatCManaged:
   description:
   noLink: true
 
-CatDEndUserDevices:
+CatDCustomerDevices:
   selected: true
-  description: Data on end user devices
-  link: '#EndUserDevices'
+  description: Data on customer devices
+  link: '#CustomerDevices'
 
 CatDNetworkDataTransfer:
   selected: true

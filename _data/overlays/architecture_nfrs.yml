@@ -61,10 +61,10 @@ CatCManaged:
   description: PUE &lt; 1.3, Server lifetime &gt;=5 years.
   link: '#Managed'
 
-CatDEndUserDevices:
+CatDCustomerDevices:
   selected: true
   description: Single page view should be &lt;x kWh energy. No energy use when user on another page/tab
-  link: '#EndUserDevices'
+  link: '#CustomerDevices'
 
 CatDNetworkDataTransfer:
   selected: true

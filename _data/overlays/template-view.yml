@@ -32,6 +32,18 @@ CatUServerHardware:
   link:
   noLink: false
 
+CatUFoundationModels:
+  selected: false
+  description:
+  link:
+  noLink: false
+
+CatUContentAndData:
+  selected: false
+  description:
+  link:
+  noLink: false
+
 CatOServers:
   selected: false
   description:
@@ -74,7 +86,7 @@ CatCManaged:
   link:
   noLink: false
 
-CatDEndUserDevices:
+CatDCustomerDevices:
   selected: false
   description:
   link:

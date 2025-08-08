@@ -313,8 +313,8 @@ There's broadly 3 types of end user device:
 The following sections go through each of these. A judgement should be taken as to whether the downstream emissions are worth calculating in any depth. For example, if customer numbers are in the hundreds or less it is likely these emissions will just be noise vs other tech emissions. On the other hand, a video streaming or gaming app with hundreds of thousands of users using the app each day for hours a time shouldn't be ignored. Start with rough approximations based on the information in <a href="/impact-categories/downstream">Downstream</a> and the following sub-sections before deciding whether to go any further. 
 
 
-{% include linkedHeading.html heading="Consumer devices" level=3 %}
-The picture below illustrates the process of working out your total emissions from consumer devices: 
+{% include linkedHeading.html heading="Customer devices" level=3 %}
+The picture below illustrates the process of working out your total emissions from customer devices: 
 <img style="max-width: 650px; background-color: white; padding: 8px; border-radius:10px" class="none" alt="" src="/assets/images/estate/devices_process.png" />
 
 As described in <a href="/information/lifecycle/user">Hardware Emissions</a> it should be possible to obtain estimates of average energy usage per unit time for an app or site on various device types. e.g. via Firefox profiling for a website/app on 2 or 3 common laptops. This will then need scaling across the user base. 
@@ -359,7 +359,7 @@ For networking energy, metrics for server-side API calls would be one way to und
 A more basic option would be to analyse the typical network activity per minute of app interaction and just add this on to the device energy usage as an extra factor before scaling by time and the user count. 
 
 {% include linkedHeading.html heading="IoT" level=3 %}
-An example of this would be a smart camera or a sensor. The key differences to the consumer devices discussed above are:
+An example of this would be a smart camera or a sensor. The key differences to the customer devices discussed above are:
 
  * the devices being used are known - unlike the hundreds of potential laptop models
  * usage patterns will be different but known, e.g. on all the time or in low power mode with a regular awake and check cycle
