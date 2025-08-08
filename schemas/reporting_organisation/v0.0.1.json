@@ -202,7 +202,7 @@
           },
           "network_data_transfer": {
             "$ref": "#/$defs/emissions_def",
-            "description": "These emissions are associated with the infrastructure enabling data transmission, enabling consumers to access the products and services."
+            "description": "These emissions are associated with the infrastructure enabling data transmission, enabling customers to access the products and services."
           }
         },
         "required": [],
