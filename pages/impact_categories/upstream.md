@@ -62,7 +62,7 @@ Embodied carbon emissions associated with producing, distributing and storing di
 {% include linkedHeading.html heading="Foundation Models" level=3 %} 
 
 AI workloads rely on specialised hardware and AI accelerators to perform complex computations at high speed. 
-When assessing the upstream emissions of foundation models, it's essential to account for the embodied carbon of the IT infrastructure involved in their development and deployment. This includes the carbon footprint associated with manufacturing specialised hardware and constructing and operating AI data centres. Key components include, but are not limited to:
+When assessing the upstream emissions of foundation models, it's essential to account for the embodied carbon of the IT infrastructure involved in their training, deployment and with inference. This includes the carbon footprint associated with manufacturing specialised hardware and constructing and operating AI data centres. Key components include, but are not limited to:
 - High-Performance Computing systems (HPC)
 - Graphics Processing Units (GPUs) 
 - Central Processing Units (CPUs) 
