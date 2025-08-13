@@ -78,14 +78,14 @@ When assessing the upstream emissions of foundation models, it's essential to ac
 When considering the upstream emissions of content and data, whether text, image, audio or video, used as a commodity by the organisation, evaluate emissions that relate to: 
 
 - Content production
-    - Energy used to produce content, including pre-production (such as research and planning), filming, recording, editing and any travel involved
+    - Energy used to produce content, including pre-production (such as research and planning), filming, recording, editing and any travel involved.
 - Processing
-    - Data processing and AI/ML workflows, if content is algorithmically recommended, auto-captioned or translated for example
+    - Data processing and AI/ML workflows, if content is algorithmically recommended, auto-captioned or translated for example.
 - Storage
-    - Energy consumption and hardware required for storing content and data
+    - Energy consumption and hardware required for storing content and data.
 - Distribution
-    - Digital distribution of content over the internet     
-    - Network infrastructure such as content delivery networks (CDNs)
+    - Digital distribution of content over the internet.     
+    - Network infrastructure such as content delivery networks (CDNs).
 - Archiving
     - Energy used to migrate, compress, and maintain historical content and datasets.
 
