@@ -31,7 +31,7 @@ The energy consumed by on-premise servers and data centres. This includes those 
 
 #### LLM training and fine-tuning 
 
-When assessing operational emissions from training or fine-tuning foundation models for specific tasks or domains, organisations must account for the significant computing resources required throughout the process and therefore intensive power usage. 
+When assessing operational emissions from training or fine-tuning foundation models for specific tasks or domains, organisations must account for the significant computing resources required throughout the process resulting in intensive power usage. 
 
 These operations typically demand intensive use of specialised hardware including Graphics Processing Units (GPUs) and Central Processing Units (CPUs), along with associated infrastructure such as high-performance storage systems, large amounts of RAM and cooling equipment. 
 
