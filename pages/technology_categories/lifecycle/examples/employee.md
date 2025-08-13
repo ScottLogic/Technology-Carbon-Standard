@@ -107,7 +107,7 @@ As discussed in the [life cycle emissions data](/technology-categories/lifecycle
 ## References
 
 [^dimpact]: [Dimpact; Methodology Statement](https://dimpact.org/publications)
-[^scope3]: [Scope3; Customer Devices](https://methodology.scope3.com/customer_devices)
+[^scope3]: [Scope3; Customer Devices](https://methodology.scope3.com/consumer_devices)
 [^fershad]: [Fershad Irani; Thinking about a way to estimate website energy use](https://fershad.com/writing/thinking-about-a-way-to-estimate-website-energy-use/)
 [^urban]: Urban, Bryan & Roth, Kurt & Singh, Mahendra & Howes, Duncan. (2019). [Residential Consumer Electronics Energy Consumption in the United States in 2017](https://www.researchgate.net/publication/335911295_Residential_Consumer_Electronics_Energy_Consumption_in_the_United_States_in_2017). 10.2760/667696.
 [^hpz24s]: [HP; Z24s Product Specifications](https://support.hp.com/us-en/product/product-specs/hp-z24s-23.8-inch-ips-uhd-display/7155481)
