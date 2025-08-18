@@ -29,15 +29,19 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 The energy consumed by on-premise servers and data centres. This includes those dedicated to AI operations and associated cooling systems, and other infrastructure necessary for maintaining AI workloads.
 
-#### LLM training and fine-tuning 
+#### Machine Learning training and fine-tuning 
 
-When assessing operational emissions from training or fine-tuning foundation models for specific tasks or domains, organisations must account for the significant computing resources required throughout the process resulting in intensive power usage. 
+- Foundation models
+
+This section focuses on organisations that develop and train foundation models, or fine-tune third-party models. In these scenarios, organisations must account for the significant computing resources required throughout the process. 
 
 These operations typically demand intensive use of specialised hardware including Graphics Processing Units (GPUs) and Central Processing Units (CPUs), along with associated infrastructure such as high-performance storage systems, large amounts of RAM and cooling equipment. 
 
-Assessing the efficiency of hardware and algorithms can help reduce unnecessary energy consumption and techniques like model distillation, quantisation, energy-aware pruning and low-precision arithmetic operations can help reduce the energy requirements of models. 
+Assessing the efficiency of hardware and algorithms can help reduce unnecessary energy consumption. Techniques such as model distillation, quantisation, energy-aware pruning and low-precision arithmetic operations can further lower the computational and energy requirements of models.
 
-#### LLM self-hosting 
+It should be acknowledged however, that not all model development requires vast amounts of computing power: while Large Language Models are resource-intensive and versatile, smaller models (SLMs) trained on more modest datasets are designed to be more compact and efficient, requiring less computational power and memory.
+
+**Self-hosting**
 
 When self-hosting a foundation model, it is essential to account for the energy consumption of inference operations, including any open-source interfaces and the specialised hardware required to support these services. 
 
@@ -60,6 +64,8 @@ Within the operational network, consider the running cost of the connected devic
 Research[^1] has shown that not all networking equipment will use power in line with the data it is transmitted over it. These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load[^2]. For accurate numbers, power monitors on the power socket are an excellent way of gathering data. As the power usage of networking equipment has very little variance while it is running, attributing the power consumption to specific applications or processes is less important.
 
 Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](/impact-categories/downstream) category. 
+
+With the increasing adoption of AI-powered applications by organisations, efficient networking systems are essential to handle high volumes of data transfers, reduce latency and meet the high bandwith demands of AI workloads. One example is NVIDIA's H100 tensor core GPU, a product specifically designed for accelerated computing that includes a dedicated transformer engine to speed up the training of trillion-parameter language models.
 
 {% include linkedHeading.html heading="Onsite Employee Devices" level=4 %}
 
