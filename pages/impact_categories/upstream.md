@@ -54,3 +54,40 @@ Ideally, data sheets from the manufacturer should be used to gather this data.
 Servers, storage systems, and data centre infrastructure installed on-premise.
 
 [Click here to see a worked example of estimating embodied emissions for a server.](/technology-categories/lifecycle/example/server#embodied-carbon-emissions)
+
+{% include linkedHeading.html heading="Content" level=2 %}
+
+Embodied carbon emissions associated with producing, distributing and storing digital content.
+
+{% include linkedHeading.html heading="Foundation Models" level=3 %} 
+
+AI workloads rely on specialised hardware and AI accelerators to perform complex computations at high speed. 
+When assessing the upstream emissions of foundation models, it's essential to account for the embodied carbon of the IT infrastructure involved in their training, deployment and with inference. This includes the carbon footprint associated with manufacturing specialised hardware and constructing and operating AI data centres. Key components include, but are not limited to:
+- High-Performance Computing systems (HPC)
+- Graphics Processing Units (GPUs) 
+- Central Processing Units (CPUs) 
+- Tensor Processing Units (TPUs) 
+- Memory (RAM) 
+- Storage  
+- Networking equipment
+- Advanced cooling and power supply 
+- Distributed computing 
+
+{% include linkedHeading.html heading="Content and Data" level=3 %} 
+
+When considering the upstream emissions of content and data, whether text, image, audio or video used as a commodity by the organisation, evaluate emissions that relate to: 
+
+- Content production
+    * Energy used to produce content, including pre-production (such as research and planning), filming, recording, editing and any travel involved.
+- Processing
+    * Data processing and AI/ML workflows, if content is algorithmically recommended, auto-captioned or translated for example.
+- Storage
+    * Energy consumption and hardware required for storing content and data.
+- Distribution
+    * Digital distribution of content over the internet.     
+    * Network infrastructure such as content delivery networks (CDNs).
+- Archiving
+    * Energy used to migrate, compress, and maintain historical content and datasets.
+
+
+

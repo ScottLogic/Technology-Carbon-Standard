@@ -22,7 +22,7 @@
 title: Technology Carbon Standard
 
 CatU:
-  description: Upstream emissions relating to the embodied carbon of hardware and the development of software.
+  description: Upstream emissions relating to the embodied carbon of hardware, the development of software, and content.
 
 CatUSoftware:
   id: CatUSoftware
@@ -62,6 +62,26 @@ CatUServerHardware:
   selected: false
   description:
   link: /impact-categories/upstream#data-centre-and-server-hardware
+  noLink: false
+
+CatUFoundationModels:
+  id: CatUFoundationModels
+  category: cat-u
+  title: Foundation models
+  icon: ai
+  selected: false
+  description:
+  link: /impact-categories/upstream#foundation-models
+  noLink: false
+
+CatUContentAndData:
+  id: CatUContentAndData
+  category: cat-u
+  title: Content and Data
+  icon: content
+  selected: false
+  description:
+  link: /impact-categories/upstream#content-and-data
   noLink: false
 
 OperationalEmissions:
@@ -166,14 +186,14 @@ CatCOffsiteEmployeeDevices:
 CatD:
   description: Carbon associated with the use of products and services produced by the business.
 
-CatDEndUserDevices:
-  id: CatDEndUserDevices
+CatDCustomerDevices:
+  id: CatDCustomerDevices
   category: cat-d
-  title: End-User Devices
+  title: Customer Devices
   icon: devices
   selected: false
   description:
-  link: /impact-categories/downstream#end-user-devices
+  link: /impact-categories/downstream#customer-devices
   noLink: false
 
 CatDNetworkDataTransfer:
