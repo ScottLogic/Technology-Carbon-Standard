@@ -43,7 +43,7 @@ It should be acknowledged however, that not all model development requires vast 
 
 **Self-hosting**
 
-When self-hosting a foundation model, it is essential to account for the energy consumption of inference operations, including any open-source interfaces and the specialised hardware required to support these services. 
+When self-hosting a foundation model, organisations must account for the energy consumption of inference operations, including any open-source interfaces and the specialised hardware required to support these services. This includes not only the direct energy use of GPUs/CPUs during inference but also the overhead of maintaining on-premises or private cloud infrastructure, such as cooling, power distribution, and data storage.
 
 [Click here to see a worked example of estimating usage emissions for a server.](/technology-categories/lifecycle/example/server#usage-carbon-emissions)
 
@@ -97,9 +97,9 @@ If your organisation is developing an AI product — whether you're building a l
 [Read more about cloud services.](/technology-categories/cloud)
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
-The emissions associated with Software-as-a-Service (SaaS) applications, delivered primarily through cloud computing to accommodate for the rapid increases in usage, represent a growing share of digital carbon footprints. A portion of these emissions, linked to the use of such services, should be recognised and attributed to the organisations that rely on them, even if they are also reported by the service providers themselves.
+The emissions associated with Software-as-a-Service (SaaS) applications, delivered primarily through cloud computing to accommodate for the rapid increases in usage, represent a growing share of digital carbon footprints. While service providers may report these emissions, a portion should also be attributed to the organisations using these services, in line with shared responsibility models like those outlined in the GHG Protocol.
 
-This challenge becomes even more pressing with the rise of AI-powered applications. Organisations increasingly interact with large language models (LLMs) directly through their chatbot platforms such as Claude, Le Chat Mistral or ChatGPT, via API providers like Anthropic, OpenAI or Google, or through AI-powered tools such as Copilot and intelligent search engines. As companies embed these AI-driven SaaS solutions into their workflow, the share of emissions attributable to their usage must be identified and included in organisational carbon accounting.
+This challenge becomes even more pressing with the rise of AI-powered applications. Organisations increasingly interact with large language models (LLMs) directly through their chatbot platforms (e.g., Claude, Le Chat, ChatGPT), API providers (e.g., Anthropic, OpenAI, Google), and AI-driven tools (e.g., Copilot, AI-enhanced search engines). As companies embed these AI-driven SaaS solutions into their workflows, the share of emissions attributable to their usage must be identified and included in organisational carbon accounting.
 
 {% include linkedHeading.html heading="Managed Services" level=3 %}
 Managed Security Operations, IT support and data backup services.
