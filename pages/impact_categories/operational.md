@@ -92,7 +92,7 @@ Category C (Cloud) emissions can be related to GHG Protocol Scope 3.
 
 The emissions associated with cloud platform services like compute, storage and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
 
-If your organisation is developing an AI product — whether you're building a large language model from the ground up or leveraging an existing foundation model — it's highly likely that it will be hosted on a Cloud platform, whether using Model as a Service (Maas) or self-managed Cloud infrastructure for custom deployments. This is due to the substantial computational resources required to run AI systems efficiently. Common examples of AI-focused cloud platforms include Azure AI Foundry, Google Cloud Vertex AI, AWS SageMaker and Amazon Bedrock.
+If your organisation is developing an AI product — whether you're building a large language model from the ground up or leveraging an existing foundation model — it's highly likely that it will be hosted on a <a href="/resources/#ai-cloud-providers">Cloud platform</a>, whether using Model as a Service (Maas) or self-managed Cloud infrastructure for custom deployments. This is due to the substantial computational resources required to run AI systems efficiently.
 
 [Read more about cloud services.](/technology-categories/cloud)
 
