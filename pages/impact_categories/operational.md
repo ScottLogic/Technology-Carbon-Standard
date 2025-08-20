@@ -29,17 +29,20 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 The energy consumed by on-premise servers and data centres. This includes those dedicated to AI operations and associated cooling systems, and other infrastructure necessary for maintaining AI workloads.
 
-#### LLM training and fine-tuning 
+{% include linkedHeading.html heading="Machine Learning training and fine-tuning" level=5 %}
 
-When assessing operational emissions from training or fine-tuning foundation models for specific tasks or domains, organisations must account for the significant computing resources required throughout the process resulting in intensive power usage. 
+{% include linkedHeading.html heading="Foundation Models" level=6 %}
+
+This section focuses on organisations that develop and train foundation models, or fine-tune third-party models. In these scenarios, organisations must account for the significant computing resources required throughout the process. 
 
 These operations typically demand intensive use of specialised hardware including Graphics Processing Units (GPUs) and Central Processing Units (CPUs), along with associated infrastructure such as high-performance storage systems, large amounts of RAM and cooling equipment. 
 
-Assessing the efficiency of hardware and algorithms can help reduce unnecessary energy consumption and techniques like model distillation, quantisation, energy-aware pruning and low-precision arithmetic operations can help reduce the energy requirements of models. 
+Assessing the efficiency of hardware and algorithms can help reduce unnecessary energy consumption. Techniques such as model distillation, quantisation, energy-aware pruning and low-precision arithmetic operations can further lower the computational and energy requirements of models.
 
-#### LLM self-hosting 
+It should be acknowledged however, that not all model development requires vast amounts of computing power: while Large Language Models are resource-intensive and versatile, smaller models (SLMs) trained on more modest datasets are designed to be more compact and efficient, requiring less computational power and memory.
 
-When self-hosting a foundation model, it is essential to account for the energy consumption of inference operations, including any open-source interfaces and the specialised hardware required to support these services. 
+{% include linkedHeading.html heading="Self-hosting" level=5 %}
+When self-hosting a foundation model, organisations must account for the energy consumption of inference operations, including any open-source interfaces and the specialised hardware required to support these services. This includes not only the direct energy use of GPUs/CPUs during inference but also the overhead of maintaining on-premises or private cloud infrastructure, such as cooling, power distribution, and data storage.
 
 [Click here to see a worked example of estimating usage emissions for a server.](/technology-categories/lifecycle/example/server#usage-carbon-emissions)
 
@@ -60,6 +63,8 @@ Within the operational network, consider the running cost of the connected devic
 Research[^1] has shown that not all networking equipment will use power in line with the data it is transmitted over it. These devices will have a baseline load (i.e. the energy they consume for simply being switched on, regardless of the processing they do), a maximum load and a typical load. Most wired networking equipment, such as routers and switches, will consume at least 60% of their maximum power as a baseline going up to 90% of their maximum power under a heavy load[^2]. For accurate numbers, power monitors on the power socket are an excellent way of gathering data. As the power usage of networking equipment has very little variance while it is running, attributing the power consumption to specific applications or processes is less important.
 
 Data consumed from a supplier's API, that is external to your organisation, is accounted for in the indirect category. Public wired and wireless internet usage does not need to be measured in the Direct Emission category. Data sent from the service to end users is accounted for in [the downstream emissions](/impact-categories/downstream) category. 
+
+With the increasing adoption of AI-powered applications by organisations, efficient networking systems are essential to handle high volumes of data transfers, reduce latency and meet the high bandwith demands of AI workloads. One example is NVIDIA's H100 tensor core GPU, a product specifically designed for accelerated computing that includes a dedicated transformer engine to speed up the training of trillion-parameter language models.
 
 {% include linkedHeading.html heading="Onsite Employee Devices" level=4 %}
 
@@ -86,14 +91,14 @@ Category C (Cloud) emissions can be related to GHG Protocol Scope 3.
 
 The emissions associated with cloud platform services like compute, storage and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
 
-If your organisation is developing an AI product — whether you're building a large language model from the ground up or leveraging an existing foundation model — it's highly likely that it will be hosted on a Cloud platform, whether using Model as a Service (Maas) or self-managed Cloud infrastructure for custom deployments. This is due to the substantial computational resources required to run AI systems efficiently. Common examples of AI-focused cloud platforms include Azure AI Foundry, Google Cloud Vertex AI, AWS SageMaker and Amazon Bedrock.
+If your organisation is developing an AI product — whether you're building a large language model from the ground up or leveraging an existing foundation model — it's highly likely that it will be hosted on a <a href="/resources/#ai-cloud-providers">Cloud platform</a>, whether using Model as a Service (Maas) or self-managed Cloud infrastructure for custom deployments. This is due to the substantial computational resources required to run AI systems efficiently.
 
 [Read more about cloud services.](/technology-categories/cloud)
 
 {% include linkedHeading.html heading="SaaS" level=3 %}
-Software-as-a-Service (SaaS) applications.
+The emissions associated with Software-as-a-Service (SaaS) applications, delivered primarily through cloud computing to accommodate for the rapid increases in usage, represent a growing share of digital carbon footprints. While service providers may report these emissions, a portion should also be attributed to the organisations using these services, in line with shared responsibility models like those outlined in the GHG Protocol.
 
-The emissions generated by an LLM accessed via an API provider, such as Claude, Le Chat Mistral or ChatGPT, or via AI-powered tools such as Copilot and AI-powered search engines. With companies increasingly embedding AI-powered SaaS applications into their workflow, the proportion of such emissions attributable to an organisation need to be accounted for. 
+This challenge becomes even more pressing with the rise of AI-powered applications. Organisations increasingly interact with large language models (LLMs) directly through their chatbot platforms (e.g., Claude, Le Chat, ChatGPT), API providers (e.g., Anthropic, OpenAI, Google), and AI-driven tools (e.g., Copilot, AI-enhanced search engines). As companies embed these AI-driven SaaS solutions into their workflows, the share of emissions attributable to their usage must be identified and included in organisational carbon accounting.
 
 {% include linkedHeading.html heading="Managed Services" level=3 %}
 Managed Security Operations, IT support and data backup services.
