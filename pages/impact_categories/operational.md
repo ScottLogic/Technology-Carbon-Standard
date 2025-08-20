@@ -29,9 +29,9 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 The energy consumed by on-premise servers and data centres. This includes those dedicated to AI operations and associated cooling systems, and other infrastructure necessary for maintaining AI workloads.
 
-#### Machine Learning training and fine-tuning 
+{% include linkedHeading.html heading="Machine Learning training and fine-tuning" level=5 %}
 
-- Foundation models
+{% include linkedHeading.html heading="Foundation Models" level=6 %}
 
 This section focuses on organisations that develop and train foundation models, or fine-tune third-party models. In these scenarios, organisations must account for the significant computing resources required throughout the process. 
 
@@ -41,8 +41,7 @@ Assessing the efficiency of hardware and algorithms can help reduce unnecessary 
 
 It should be acknowledged however, that not all model development requires vast amounts of computing power: while Large Language Models are resource-intensive and versatile, smaller models (SLMs) trained on more modest datasets are designed to be more compact and efficient, requiring less computational power and memory.
 
-**Self-hosting**
-
+{% include linkedHeading.html heading="Self-hosting" level=5 %}
 When self-hosting a foundation model, organisations must account for the energy consumption of inference operations, including any open-source interfaces and the specialised hardware required to support these services. This includes not only the direct energy use of GPUs/CPUs during inference but also the overhead of maintaining on-premises or private cloud infrastructure, such as cooling, power distribution, and data storage.
 
 [Click here to see a worked example of estimating usage emissions for a server.](/technology-categories/lifecycle/example/server#usage-carbon-emissions)

@@ -3,7 +3,7 @@ title: AI Cloud Providers
 linktext: AI Cloud Providers
 ---
 
-This list of AI Cloud platforms references the major AI providers at the time of writing and providesorganisations with information released by these platforms on their carbon emissions where available.
+This list of AI Cloud platforms references the major AI providers at the time of writing and provides organisations with information released by these platforms on their carbon emissions where available.
 
 
 | AI Cloud Provider         | Platform Overview                                                                                     | Carbon emissions report                                                                                     |
