@@ -18,6 +18,12 @@ This considers the emissions generated from the electricity consumption of devic
 
 The [embodied carbon of customer devices](/technology-categories/lifecycle/embodied) is not required for attributional accounting of indirect scope 3 emissions. However, there is a consequential effect that organisations should consider when releasing digital products and services. If the software requires significantly powerful hardware or requires the latest operating systems, for example, this could force customers to replace their hardware and devices to be able to use the product. This carries a downstream consequence of increasing the embodied emissions of customer devices, as well as increasing waste. [Read more about hardware lifecycle emissions](/technology-categories/lifecycle).
 
+When content and data are consumed by customers, it is essential to account for emissions generated across all interactions, including:
+- Streaming, playback or download 
+- Content creation such as live streaming and uploads 
+- Embedding and sharing on third-party platforms
+- AI-enabled features such as auto-captions and recommendations
+
 Special consideration also needs to be given to AI applications. As the size of LLMs continues to increase so do the hardware requirements needed to run them effectively. If your customers need to upgrade their devices to run your AI applications this will contribute to e-waste as mentioned above and could also lead to increased energy consumption. 
 
 It is also important to consider the number of end users that will be consuming your AI. A [study released by Mistral AI in July 2025](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai) into the energy usage of their Large 2 model stated that to generate 1 page of text or 400 tokens produces 1.14 gCO₂e. This is roughly equivalent to a user in the U.S. streaming online video for 10 seconds. While this per-request impact may appear minimal, the cumulative emissions scale rapidly when multiplied across thousands of users performing inferences multiple times per day. 
