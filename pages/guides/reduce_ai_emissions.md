@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: guidesNavigation
 title: How to reduce AI related emissions
-permalink: /resources/reduce-ai-emissions
+permalink: /guides/reduce-ai-emissions
 published: true
 ---
 
@@ -19,7 +19,7 @@ It has been shown that deployment infrastructure can have more of an effect on e
 {% include linkedHeading.html heading="Education around AI usage and prompt engineering" level=3 %}
 While the emissions generated from a single AI query (inference) may seem negligible, they become significant when scaled across millions of users and interactions. This makes it essential for end users to craft prompts that elicit the desired response in as few attempts as possible—a practice known as prompt engineering[^6]. 
 Research shows that both the length of the prompt and, more critically, the length of the response can substantially impact the energy consumption of AI models. This is due to the number of tokens processed during inference. A helpful illustration of this can be found on page 17 of the UNESCO report [Smarter, smaller, stronger](https://unesdoc.unesco.org/ark:/48223/pf0000394521). 
-Therefore users should endeavor to construct concise prompts and request concise answers. Simple techniques, such as asking the model to “only provide the minimal answer” have been shown to reduce response length by 60% and energy usage by 28%[^7]. 
+Therefore users should endeavour to construct concise prompts and request concise answers. Simple techniques, such as asking the model to “only provide the minimal answer” have been shown to reduce response length by 60% and energy usage by 28%[^7]. 
 At the platform level, another method to improve energy efficiency is batch inference, where multiple requests are grouped and processed simultaneously[^8]. Studies have shown that increasing the batch size reduces the overall energy requirements of inference, with each individual query consuming less energy compared to running them separately[^9].
 
 {% include linkedHeading.html heading="Model size" level=3 %}

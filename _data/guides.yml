@@ -1,0 +1,10 @@
+# Guides
+baseUrl: /guides
+name: TCS Guides
+link: /guides/reduce-ai-emissions
+sections:
+    # GUIDES
+  - heading: Guides
+    items:
+      - name: How to reduce AI related emissions
+        documentation_link: /guides/reduce-ai-emissions
