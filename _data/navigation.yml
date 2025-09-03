@@ -20,6 +20,8 @@
   #   link: /resources/links
   - name: Glossary
     link: /resources/glossary
+  - name: Guides
+    link: /guides/reduce-ai-emissions
   # - name: References
   #   link: /resources/references
 - name: Schemas
