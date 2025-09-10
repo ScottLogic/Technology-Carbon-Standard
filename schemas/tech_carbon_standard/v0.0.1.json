@@ -50,7 +50,7 @@
     },
     "upstream_emissions": {
       "type": "object",
-      "description": "Upstream emissions relating to the embodied carbon of hardware, the development of software, and content.",
+      "description": "Upstream environmental impacts relating to the embodied carbon and water of hardware, the development of software, and content.",
       "properties": {
         "software": {
           "$ref": "#/$defs/emissions_def",
@@ -98,7 +98,7 @@
     },
     "indirect_emissions": {
       "type": "object",
-      "description": "Indirect running carbon costs that are attributed to external hardware and service solutions.",
+      "description": "Indirect running costs that are attributed to external hardware and service solutions.",
       "properties": {
         "offsite_employee_hardware": {
           "$ref": "#/$defs/emissions_def",

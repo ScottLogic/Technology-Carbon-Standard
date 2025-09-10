@@ -7,15 +7,17 @@ redirect_from:
 ---
 
 # Operational Emissions
-Operational emissions encompass the greenhouse gases emitted from an organisation's own technology infrastructure and operations. These are categorised into three groups - On-Prem, Cloud, and Generator emissions (O, C, and G) - based on the level of ownership and control an organisation has over the assets.
+Operational emissions encompass the greenhouse gases emitted from an organisation's own technology infrastructure and operations as well as the water consumption involved in the latter. The grenhouse gases emissions are categorised into three groups - On-Prem, Cloud, and Generator emissions (O, C, and G) - based on the level of ownership and control an organisation has over the assets.
 
-Understanding operational emissions allows organisations to quantify, monitor, and benchmark the climate impacts of their technology infrastructure and business operations. It enables setting emission reduction targets and strategies and facilitates compliance with current and emerging climate disclosure legislations. 
+Understanding operational emissions and water consumption allows organisations to quantify, monitor, and benchmark the climate impacts of their technology infrastructure and business operations. It enables setting emission reduction targets and strategies and facilitates compliance with current and emerging climate disclosure legislations. 
 
 Emissions are further classified into direct and indirect sources:
 
 {% include linkedHeading.html heading="Direct Emissions" level=2 %}
 
 Direct emissions are a result of the organisation's direct consumption of grid-supplied electricity (Category O) or combustion of fossil fuels like diesel or natural gas for owned power generators (Category G). The organisation can directly measure and account for emissions from owned assets.
+
+Moreover, grid-supplied electricity consumption is closely linked to water usage, as different energy sources vary significantly in their water requirements.
 
 {% include linkedHeading.html heading="On-premise" level=3 %}
 
@@ -29,6 +31,8 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 The energy consumed by on-premise servers and data centres. This includes those dedicated to AI operations and associated cooling systems, and other infrastructure necessary for maintaining AI workloads.
 
+Servers and data centres consume vast amounts of water, primarily to cool their processor chips and to avoid overheating (onsite water). But the true water cost of data centres also includes the water used to generate the electricity that powers them (offsite water). To fully evaluate their water impact, both sources must be considered.
+
 {% include linkedHeading.html heading="Machine Learning training and fine-tuning" level=5 %}
 
 {% include linkedHeading.html heading="Foundation Models" level=6 %}
@@ -37,7 +41,7 @@ This section focuses on organisations that develop and train foundation models, 
 
 These operations typically demand intensive use of specialised hardware including Graphics Processing Units (GPUs) and Central Processing Units (CPUs), along with associated infrastructure such as high-performance storage systems, large amounts of RAM and cooling equipment. 
 
-Assessing the efficiency of hardware and algorithms can help reduce unnecessary energy consumption. Techniques such as model distillation, quantisation, energy-aware pruning and low-precision arithmetic operations can further lower the computational and energy requirements of models.
+Assessing the efficiency of hardware and algorithms can help reduce unnecessary energy and water consumption. Techniques such as model distillation, quantisation, energy-aware pruning and low-precision arithmetic operations can further lower the computational and energy requirements of models.
 
 It should be acknowledged however, that not all model development requires vast amounts of computing power: while Large Language Models are resource-intensive and versatile, smaller models (SLMs) trained on more modest datasets are designed to be more compact and efficient, requiring less computational power and memory.
 
@@ -85,6 +89,8 @@ Special consideration also needs to be given to the increased use of LLMs. As th
 
 Any fossil fuel-powered generators, solar PV, wind turbines, or other systems installed on-site to supply electricity to technology equipment.
 
+Any generators that use water to generate electicity such as hydroelectric power generators must also be accounted for.
+
 Category G (Generators) can be related to GHG Protocol Scope 1.
 
 {% include linkedHeading.html heading="Indirect Emissions" level=2 %}
@@ -97,6 +103,8 @@ Category C (Cloud) emissions can be related to GHG Protocol Scope 3.
 {% include linkedHeading.html heading="Cloud Services" level=3 %}
 
 The emissions associated with cloud platform services like compute, storage and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
+
+The water used to cool down servers but also indirectly to generate the electricity to power centres.
 
 If your organisation is developing an AI product — whether you're building a large language model from the ground up or leveraging an existing foundation model — it's highly likely that it will be hosted on a [Cloud platform](/resources#ai-cloud-providers), whether using Model as a Service (Maas) or self-managed Cloud infrastructure for custom deployments. This is due to the substantial computational resources required to run AI systems efficiently.
 

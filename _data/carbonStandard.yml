@@ -22,7 +22,7 @@
 title: Technology Carbon Standard
 
 CatU:
-  description: Upstream emissions relating to the embodied carbon of hardware, the development of software, and content.
+  description: Upstream environmental impacts relating to the embodied carbon and water of hardware, the development of software, and content.
 
 CatUSoftware:
   id: CatUSoftware
@@ -85,7 +85,7 @@ CatUContentAndData:
   noLink: false
 
 OperationalEmissions:
-  description: Operational emissions are associated to the running of business IT functions and systems. Each operational function may have a hybrid of IT infrastructure across direct and/or indirect emissions.
+  description: Operational environmental impacts are emissions and embodied water associated to the running of business IT functions and systems. Each operational function may have a hybrid of IT infrastructure across direct and/or indirect emissions.
 
 CatO:
   description: Direct running costs that are attributed to the electricity powering servers, networks and devices.
@@ -141,7 +141,7 @@ CatGGenerators:
   noLink: false
 
 CatC:
-  description: Indirect running carbon costs that are attributed to external hardware and service solutions.
+  description: Indirect running costs that are attributed to external hardware and service solutions.
 
 CatCCloud:
   id: CatCCloud
@@ -184,7 +184,7 @@ CatCOffsiteEmployeeDevices:
   noLink: false
 
 CatD:
-  description: Carbon associated with the use of products and services produced by the business.
+  description: Carbon and water associated with the use of products and services produced by the business.
 
 CatDCustomerDevices:
   id: CatDCustomerDevices
