@@ -10,7 +10,7 @@ redirect_from:
 
 Upstream emissions (Category U) refer to the [embodied carbon](/resources/glossary#embodied-carbon) emissions of hardware purchased by an organisation and the carbon emissions of the development and distribution of installed software used by the organisation.
 
-Evaluating both carbon emissions and water consumption to understand upstream emissions allows organisations to comprehensively assess the environmental impact of their assets and supply chains. It enables the development of strategies to reduce the carbon and water footprint of materials and processes, promoting sustainable procurement practices and circular economy principles.
+Evaluating both carbon emissions and water consumption to understand upstream emissions allows organisations to comprehensively assess the environmental impact of their assets and supply chains. It enables the development of strategies to reduce the carbon and water footprints of materials and processes, promoting sustainable procurement practices and circular economy principles.
 
 Upstream emissions are related to GHG Protocol Scope 3.
 
