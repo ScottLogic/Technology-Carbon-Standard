@@ -31,7 +31,7 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2.
 
 The energy consumed by on-premise servers and data centres. This includes those dedicated to AI operations and associated cooling systems, and other infrastructure necessary for maintaining AI workloads.
 
-Servers and data centres consume vast amounts of water, primarily to cool their processor chips and to avoid overheating (onsite water). But the true water cost of data centres also includes the water used to generate the electricity that powers them (offsite water). To fully evaluate their water impact, both sources must be considered.
+Servers and data centres consume vast amounts of water, primarily to cool their processor chips and to avoid overheating (onsite water). But the true water cost of data centres also includes the water consumed to generate the electricity that powers them (offsite water). To fully evaluate their water impact, both sources must be considered.
 
 {% include linkedHeading.html heading="Machine Learning training and fine-tuning" level=5 %}
 
@@ -104,7 +104,7 @@ Category C (Cloud) emissions can be related to GHG Protocol Scope 3.
 
 The emissions associated with cloud platform services like compute, storage and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
 
-The water used to cool down servers but also indirectly to generate the electricity to power centres.
+The water consumed to cool down servers but also indirectly to generate the electricity to power centres.
 
 If your organisation is developing an AI product — whether you're building a large language model from the ground up or leveraging an existing foundation model — it's highly likely that it will be hosted on a [Cloud platform](/resources#ai-cloud-providers), whether using Model as a Service (Maas) or self-managed Cloud infrastructure for custom deployments. This is due to the substantial computational resources required to run AI systems efficiently.
 

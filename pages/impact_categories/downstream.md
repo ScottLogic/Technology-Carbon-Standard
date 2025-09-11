@@ -20,7 +20,7 @@ This considers the emissions generated from the electricity consumption of devic
 
 The [embodied carbon of customer devices](/technology-categories/lifecycle/embodied) is not required for attributional accounting of indirect scope 3 emissions. However, there is a consequential effect that organisations should consider when releasing digital products and services. If the software requires significantly powerful hardware or requires the latest operating systems, for example, this could force customers to replace their hardware and devices to be able to use the product. This carries a downstream consequence of increasing the embodied emissions of customer devices, as well as increasing waste. [Read more about hardware lifecycle emissions](/technology-categories/lifecycle).
 
-The embodied or virtual water tied to customer devices includes both the water used to generate the electricity they consume and the water embedded in their manufacturing. As software requires more computing power, it increases electricity consumption. In addition, when new software requires customers to upgrade or replace their devices, the water impact grows further.
+The embodied or virtual water tied to customer devices includes both the water consumed to generate the electricity they consume and the water embedded in their manufacturing. As software requires more computing power, it increases electricity consumption. In addition, when new software requires customers to upgrade or replace their devices, the water impact grows further.
 
 When content and data are consumed by customers, it is essential to account for both the carbon and water usages across all interactions, including:
 - Streaming, playback or download 
