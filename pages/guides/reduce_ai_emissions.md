@@ -11,7 +11,6 @@ As the use and complexity of AI continues to increase exponentially, so too does
 
 This guide offers practical, research-backed solutions that both creators and consumers of AI can implement to reduce emissions. Covering topics from data centre optimisation and hardware efficiency to prompt engineering and model compression, it offers practical guidance for those aiming to reduce the environmental footprint of AI technologies.
 
-
 {% include linkedHeading.html heading="Data centre location and timing shifts" level=3 %} The location of the data centre used for training and hosting your AI model can have a huge impact on the amount of carbon it generates. Choosing a data centre in a country with a carbon-efficient energy grid and a cool climate can significantly reduce energy consumption[^1].
 It is also important to consider the timing of your most energy intensive activities[^2]. Scheduling model training during periods when the energy grid is powered by renewable sources can further minimise environmental impact[^3].
 Useful tools for carbon intensity tracking are provided by [Electricity Maps](https://www.electricitymaps.com/) including their original [interactive map](https://app.electricitymaps.com/map/72h/hourly).
