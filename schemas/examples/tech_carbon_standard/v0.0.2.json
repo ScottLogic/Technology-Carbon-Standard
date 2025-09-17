@@ -55,7 +55,7 @@
         }
     },
     "downstream_emissions": {
-        "end_user_devices": {
+        "customer_devices": {
             "emissions": 1000,
             "notes": "Calculated based on www website traffic figures"
         },
