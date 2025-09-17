@@ -73,6 +73,8 @@ When assessing the upstream emissions of foundation models, it's essential to ac
 - Advanced cooling and power supply 
 - Distributed computing 
 
+In addition to the carbon footprint of AI data centres, it is essential to mention their extensive water footprint, therefore a careful examination of data centre [WUE_source](/resources/glossary#water-usage-effectiveness-source-wue-source) is indispensable.
+
 {% include linkedHeading.html heading="Content and Data" level=3 %} 
 
 When considering the upstream emissions of content and data, whether text, image, audio or video used as a commodity by the organisation, evaluate emissions that relate to: 
