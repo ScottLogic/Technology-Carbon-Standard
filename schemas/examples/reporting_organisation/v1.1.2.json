@@ -1,12 +1,12 @@
 {
-	"schema_version": "0.1.1",
+	"schema_version": "1.1.2",
 	"organisation": {
 		"organisation_name": "Example Corp",
 		"open_corporates_url": "https://opencorporates.com/companies/gb/12345678"
 	},
 	"emissions_reports": [
 		{
-			"schema_version": "0.0.2",
+			"schema_version": "0.1.2",
 			"reporting_period": {
 				"from_date": "2023-01-01",
 				"to_date": "2023-12-31"
@@ -20,7 +20,7 @@
 				}
 			],
 			"tech_carbon_standard": {
-				"schema_version": "0.0.2",
+				"schema_version": "0.1.0",
 				"upstream_emissions": {
 					"software": {
 						"emissions": 0,
@@ -35,6 +35,14 @@
 						"notes": "Loose estimate, based on minimal hardware purchase"
 					},
 					"server_hardware": {
+						"emissions": 0,
+						"notes": "No servers or storage hardware purchased"
+					},
+					"foundation_models": {
+						"emissions": 0,
+						"notes": "Not currently meaningfully calculable or estimatable"
+					},
+					"content_and_data": {
 						"emissions": 0,
 						"notes": "No servers or storage hardware purchased"
 					}

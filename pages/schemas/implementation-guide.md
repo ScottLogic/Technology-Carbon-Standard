@@ -189,7 +189,7 @@ Use the [Tech Carbon Standard](/) to gather data for each applicable category:
 #### Downstream Emissions (Customer Impact)
 ```json
 "downstream_emissions": {
-  "end_user_devices": {
+  "customer_devices": {
     "emissions": 5000,
     "notes": "Customer device usage for accessing our services"
   },
@@ -386,7 +386,7 @@ Here's a complete example TCS document using the modular schema:
           }
         },
         "downstream_emissions": {
-          "end_user_devices": {
+          "customer_devices": {
             "emissions": 1000,
             "notes": "Calculated based on www website traffic figures"
           },
