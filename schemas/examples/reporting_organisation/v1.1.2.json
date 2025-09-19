@@ -1,12 +1,12 @@
 {
-	"schema_version": "0.0.3",
+	"schema_version": "1.1.2",
 	"organisation": {
 		"organisation_name": "Example Corp",
 		"open_corporates_url": "https://opencorporates.com/companies/gb/12345678"
 	},
 	"emissions_reports": [
 		{
-			"schema_version": "0.0.3",
+			"schema_version": "0.1.2",
 			"reporting_period": {
 				"from_date": "2023-01-01",
 				"to_date": "2023-12-31"

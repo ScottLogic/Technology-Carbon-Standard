@@ -20,7 +20,7 @@ The Router Schema provides:
 ## Schema Information
 
 - **Schema ID**: [`https://techcarbonstandard.org/schemas/index.json`](/schemas/index.json)
-- **Current Supported Versions**: `0.1.1`, `0.1.0`, `0.0.1`, `0.0.3`
+- **Current Supported Versions**: `0.1.2`, `0.1.1`, `0.1.0`, `0.0.1`
 - **Schema Type**: Router/Dispatcher
 
 ## Schema Structure
@@ -38,7 +38,7 @@ The Router Schema is intentionally minimal, containing only the routing logic:
     "schema_version": {
       "type": "string",
       "description": "Version of the root Technology Carbon Standard report schema being used",
-      "enum": ["0.1.1", "0.1.0", "0.0.1", "0.0.3"]
+      "enum": ["0.1.2", "0.1.1", "0.1.0", "0.0.1"]
     }
   },
   "required": ["schema_version"],
@@ -46,11 +46,11 @@ The Router Schema is intentionally minimal, containing only the routing logic:
     {
       "if": {
         "properties": {
-          "schema_version": { "const": "0.0.3" }
+          "schema_version": { "const": "0.1.2" }
         }
       },
       "then": {
-        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisation/v0.0.3.json"
+        "$ref": "https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.2.json"
       }
     },
     {
@@ -92,7 +92,7 @@ The Router Schema is intentionally minimal, containing only the routing logic:
 
 1. **Document Validation**: When a TCS document is validated against the router schema, it first checks the `schema_version` field
 2. **Version Routing**: Based on the version value, it routes to the appropriate Reporting Organisation schema:
-   - `"0.0.3"` → Routes to [`reporting_organisation/v0.0.3.json`](/schemas/reporting_organisation/v0.0.3.json)
+   - `"0.0.3"` → Routes to [`reporting_organisation/v0.1.2.json`](/schemas/reporting_organisation/v0.1.2.json)
    - `"0.1.1"` → Routes to [`reporting_organisation/v0.1.1.json`](/schemas/reporting_organisation/v0.1.1.json)
    - `"0.1.0"` → Routes to [`reporting_organisation/v0.1.0.json`](/schemas/reporting_organisation/v0.1.0.json)
    - `"0.0.1"` → Routes to [`reporting_organisation/v0.0.1.json`](/schemas/reporting_organisation/v0.0.1.json)
@@ -102,7 +102,7 @@ The Router Schema is intentionally minimal, containing only the routing logic:
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| schema_version | string (enum) | Yes | Must be one of the supported versions: "0.1.1", "0.1.0", "0.0.1" or "0.0.3" |
+| schema_version | string (enum) | Yes | Must be one of the supported versions: "0.1.2", "0.1.1", "0.1.0" or "0.0.1" |
 
 ## Usage Example
 
