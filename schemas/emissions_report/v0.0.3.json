@@ -72,7 +72,7 @@
         "schema_version": {
           "type": "string",
           "description": "Version of the Tech Carbon Standard schema used for this report.",
-          "enum": ["0.0.2", "0.0.1", "0.1.0"]
+          "enum": ["0.1.0", "0.0.2", "0.0.1"]
         }
       },
       "required": [

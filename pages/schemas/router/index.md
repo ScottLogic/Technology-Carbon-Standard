@@ -92,7 +92,7 @@ The Router Schema is intentionally minimal, containing only the routing logic:
 
 1. **Document Validation**: When a TCS document is validated against the router schema, it first checks the `schema_version` field
 2. **Version Routing**: Based on the version value, it routes to the appropriate Reporting Organisation schema:
-   - `"0.0.3"` → Routes to [`reporting_organisation/v0.1.2.json`](/schemas/reporting_organisation/v0.1.2.json)
+   - `"0.1.2"` → Routes to [`reporting_organisation/v0.1.2.json`](/schemas/reporting_organisation/v0.1.2.json)
    - `"0.1.1"` → Routes to [`reporting_organisation/v0.1.1.json`](/schemas/reporting_organisation/v0.1.1.json)
    - `"0.1.0"` → Routes to [`reporting_organisation/v0.1.0.json`](/schemas/reporting_organisation/v0.1.0.json)
    - `"0.0.1"` → Routes to [`reporting_organisation/v0.0.1.json`](/schemas/reporting_organisation/v0.0.1.json)
