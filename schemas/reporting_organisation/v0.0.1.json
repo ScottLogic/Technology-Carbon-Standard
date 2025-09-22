@@ -196,7 +196,7 @@
         "type": "object",
         "description": "Carbon associated with the use of products and services produced by the organisation.",
         "properties": {
-          "customer_devices": {
+          "end_user_devices": {
             "$ref": "#/$defs/emissions_def",
             "description": "This considers the emissions generated from the electricity consumption of devices such as desktops, laptops, tablets, and mobile phones that utilise the products or services provided by an organisation."
           },
