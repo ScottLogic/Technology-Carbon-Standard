@@ -1,5 +1,5 @@
 {
-    "schema_version": "0.0.2",
+    "schema_version": "0.0.3",
     "reporting_period": {
         "from_date": "2023-01-01",
         "to_date": "2023-12-31"
@@ -13,7 +13,7 @@
         }
     ],
     "tech_carbon_standard": {
-        "schema_version": "0.0.2",
+        "schema_version": "0.1.0",
         "upstream_emissions": {
             "software": {
                 "emissions": 0,
