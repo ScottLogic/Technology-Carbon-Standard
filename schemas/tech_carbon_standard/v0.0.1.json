@@ -50,7 +50,7 @@
     },
     "upstream_emissions": {
       "type": "object",
-      "description": "Upstream emissions relating to the embodied carbon of hardware, the development of software, and content.",
+      "description": "Upstream emissions relating to the embodied carbon of hardware and the development of software.",
       "properties": {
         "software": {
           "$ref": "#/$defs/emissions_def",
@@ -130,7 +130,7 @@
         },
         "network_data_transfer": {
           "$ref": "#/$defs/emissions_def",
-          "description": "These emissions are associated with the infrastructure enabling data transmission, enabling customers to access the products and services."
+          "description": "These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services."
         }
       },
       "required": [],
