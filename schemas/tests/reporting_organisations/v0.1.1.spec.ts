@@ -43,7 +43,7 @@ describe('Reporting Organisations v0.1.1 documents', () => {
         expect(valid).toBeTruthyWithMessage(error_details(validate));
     });
 
-    it(`should be valid for a mix of tech_carbon_standard v0.0.1, v0.0.2 and v.0.1.0 documents`, () => {
+    it(`should be valid for a mix of tech_carbon_standard v0.0.1 and v0.0.2 documents`, () => {
         const emissionsReportWithTCSv001 = structuredClone(emissionsReportV001Example);
         emissionsReportWithTCSv001.tech_carbon_standard = structuredClone(techCarbonStandardV001Example);
 
