@@ -20,10 +20,14 @@ sections:
     # REPORTING ORGANISATION SCHEMAS
   - heading: Reporting organisation Schemas
     items:
+    - name: v0.1.2
+      schema_link: https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.2.json
+      documentation_link: /schemas/reporting-organisation/v0-1-2
+      latest: true
     - name: v0.1.1
       schema_link: https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.1.json
       documentation_link: /schemas/reporting-organisation/v0-1-1
-      latest: true
+      latest: false
     - name: v0.1.0
       schema_link: https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.0.json
       documentation_link: /schemas/reporting-organisation/v0-1-0
@@ -32,10 +36,14 @@ sections:
     # EMISSIONS REPORT SCHEMAS
   - heading: Emissions Report Schemas
     items:
+    - name: v0.0.3
+      schema_link: https://techcarbonstandard.org/schemas/emissions_report/v0.0.3.json
+      documentation_link: /schemas/emissions-report/v0-0-3
+      latest: true
     - name: v0.0.2
       schema_link: https://techcarbonstandard.org/schemas/emissions_report/v0.0.2.json
       documentation_link: /schemas/emissions-report/v0-0-2
-      latest: true
+      latest: false
     - name: v0.0.1
       schema_link: https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json
       documentation_link: /schemas/emissions-report/v0-0-1
@@ -44,10 +52,15 @@ sections:
     # TECH CARBON STANDARD SCHEMAS
   - heading: Tech Carbon Standard Schemas
     items:
+    - name: v0.1.0
+      schema_link: https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.1.0.json
+      documentation_link: /schemas/tech-carbon-standard/v0-1-0
+      latest: true
+
     - name: v0.0.2
       schema_link: https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json
       documentation_link: /schemas/tech-carbon-standard/v0-0-2
-      latest: true
+      latest: false
 
     - name: v0.0.1
       schema_link: https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json

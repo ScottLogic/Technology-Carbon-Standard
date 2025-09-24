@@ -48,19 +48,19 @@ The Technology Carbon Standard uses a modular schema design with four interconne
 ### 1. [Router Schema](/schemas/router) ([`index.json`](/schemas/index.json))
 - **Purpose**: Entry point that directs validation to the correct reporting organisation schema version
 - **Function**: Routes documents based on the root-level `schema_version` field
-- **Current Support**: Versions: 0.1.1, 0.1.0 and 0.0.1
+- **Current Support**: Versions: 0.1.2, 0.1.1, 0.1.0 and 0.0.1
 
-### 2. [Reporting Organisation Schema](/schemas/reporting-organisation/v0-1-1) ([`reporting_organisation/v0.1.1.json`](/schemas/reporting_organisation/v0.1.1.json))
+### 2. [Reporting Organisation Schema](/schemas/reporting-organisation/v0-1-2) ([`reporting_organisation/v0.1.2.json`](/schemas/reporting_organisation/v0.1.2.json))
 - **Purpose**: Defines the root document structure for TCS reporting
 - **Contains**: Organisation details and collection of emissions reports
 - **Flexibility**: Each emissions report can use different schema versions
 
-### 3. [Emissions Report Schema](/schemas/emissions-report/v0-0-2) ([`emissions_report/v0.0.2.json`](/schemas/emissions_report/v0.0.2.json))
+### 3. [Emissions Report Schema](/schemas/emissions-report/v0-0-3) ([`emissions_report/v0.0.3.json`](/schemas/emissions_report/v0.0.3.json))
 - **Purpose**: Defines structure for individual emissions reports
 - **Contains**: Reporting periods, verification, disclosures, and references to TCS emissions data
 - **Features**: Conditional validation (auditor_link required for independent verification)
 
-### 4. [Tech Carbon Standard Schema](/schemas/tech-carbon-standard/v0-0-2) ([`tech_carbon_standard/v0.0.2.json`](/schemas/tech_carbon_standard/v0.0.2.json))
+### 4. [Tech Carbon Standard Schema](/schemas/tech-carbon-standard/v0-1-0) ([`tech_carbon_standard/v0.1.0.json`](/schemas/tech_carbon_standard/v0.1.0.json))
 - **Purpose**: Defines the actual emissions data structure and categories
 - **Contains**: Four emissions categories with detailed sub-categories
 - **Standards**: All emissions in kgCO2e, optional Scope 2 methodology specification
@@ -71,7 +71,7 @@ Your published `tcs.json` file follows this hierarchical structure:
 
 ```json
 {
-  "schema_version": "0.1.1",                    // Router Schema
+  "schema_version": "0.1.2",                    // Router Schema
   "organisation": {                             // Reporting Organisation Schema
     "organisation_name": "Your Company",
     "description": "...",
@@ -80,12 +80,12 @@ Your published `tcs.json` file follows this hierarchical structure:
   },
   "emissions_reports": [                        // Array of Emissions Reports
     {
-      "schema_version": "0.0.2",               // Emissions Report Schema
+      "schema_version": "0.0.3",               // Emissions Report Schema
       "reporting_period": { "from_date": "...", "to_date": "..." },
       "verification": "self reported",
       "disclosures": [...],
       "tech_carbon_standard": {                // Tech Carbon Standard Schema
-        "schema_version": "0.0.2",
+        "schema_version": "0.1.0",
         "upstream_emissions": {...},
         "direct_emissions": {...},
         "indirect_emissions": {...},
@@ -135,6 +135,14 @@ Use the [Tech Carbon Standard](/) to gather data for each applicable category:
   "server_hardware": {
     "emissions": 15000,
     "notes": "On-premise servers and storage purchased"
+  },
+  "foundation_models": {
+    "emissions": 0, 
+    "notes": "Emissions related to the training and inference of foundation models that the organisation owns or fine-tunes."
+  },
+  "content_and_data": {
+    "emissions": 0,
+    "notes": "Emissions associated with content and data, whether text, image, audio or video used as a commodity by the organisation."
   }
 }
 ```
@@ -208,16 +216,16 @@ Use the [Tech Carbon Standard](/) to gather data for each applicable category:
 
 #### Choose Schema Versions
 For new implementations, use the latest available versions:
-- **Root Schema**: `"schema_version": "0.1.1"`
-- **Emissions Report**: `"schema_version": "0.0.2"`
-- **Tech Carbon Standard**: `"schema_version": "0.0.2"`
+- **Root Schema**: `"schema_version": "0.1.2"`
+- **Emissions Report**: `"schema_version": "0.0.3"`
+- **Tech Carbon Standard**: `"schema_version": "0.1.0"`
 
 #### Build the Document Structure
 
 **Start with the Root Level**:
 ```json
 {
-  "schema_version": "0.1.1",
+  "schema_version": "0.1.2",
   "organisation": {
     "organisation_name": "Your Organisation Name",
     "description": "Brief description of your organisation",
@@ -234,7 +242,7 @@ For new implementations, use the latest available versions:
 ```json
 "emissions_reports": [
   {
-    "schema_version": "0.0.2",
+    "schema_version": "0.0.3",
     "reporting_unit": "Global Operations",
     "reporting_period": {
       "from_date": "2023-01-01",
@@ -249,7 +257,7 @@ For new implementations, use the latest available versions:
       }
     ],
     "tech_carbon_standard": {
-      "schema_version": "0.0.2",
+      "schema_version": "0.1.0",
       // Your emissions data here
     }
   }
@@ -259,7 +267,7 @@ For new implementations, use the latest available versions:
 **Include Your Emissions Data**:
 ```json
 "tech_carbon_standard": {
-  "schema_version": "0.0.2",
+  "schema_version": "0.1.0",
   "upstream_emissions": {
     // Include categories with data
   },
@@ -305,7 +313,7 @@ Here's a complete example TCS document using the modular schema:
 
 ```json
 {
-  "schema_version": "0.1.1",
+  "schema_version": "0.1.2",
   "organisation": {
     "organisation_name": "Example Corp",
     "description": "Software consultancy and product development company",
@@ -314,7 +322,7 @@ Here's a complete example TCS document using the modular schema:
   },
   "emissions_reports": [
     {
-      "schema_version": "0.0.2",
+      "schema_version": "0.0.3",
       "reporting_unit": "Global Operations",
       "reporting_period": {
         "from_date": "2023-01-01",
@@ -329,7 +337,7 @@ Here's a complete example TCS document using the modular schema:
         }
       ],
       "tech_carbon_standard": {
-        "schema_version": "0.0.2",
+        "schema_version": "0.1.0",
         "upstream_emissions": {
           "software": {
             "emissions": 0,
@@ -346,6 +354,14 @@ Here's a complete example TCS document using the modular schema:
           "server_hardware": {
             "emissions": 0,
             "notes": "No servers or storage hardware purchased"
+          },
+          "foundation_models": {
+            "emissions": 0, 
+            "notes": "Emissions related to the training and inference of foundation models that the organisation owns or fine-tunes."
+          },
+          "content_and_data": {
+            "emissions": 0,
+            "notes": "Emissions associated with content and data, whether text, image, audio or video used as a commodity by the organisation."
           }
         },
         "direct_emissions": {
@@ -413,13 +429,13 @@ For organisations with multiple divisions or geographic regions:
 
 ```json
 {
-  "schema_version": "0.1.1",
+  "schema_version": "0.1.2",
   "organisation": {
     "organisation_name": "Global Tech Corp"
   },
   "emissions_reports": [
     {
-      "schema_version": "0.0.2",
+      "schema_version": "0.0.3",
       "reporting_unit": "North America Operations",
       "reporting_period": {
         "from_date": "2023-01-01",
@@ -428,12 +444,12 @@ For organisations with multiple divisions or geographic regions:
       "verification": "independently verified",
       "auditor_link": "https://example-auditor.com/",
       "tech_carbon_standard": {
-        "schema_version": "0.0.2"
+        "schema_version": "0.1.0"
         // North America emissions data
       }
     },
     {
-      "schema_version": "0.0.2",
+      "schema_version": "0.0.3",
       "reporting_unit": "EMEA Operations",
       "reporting_period": {
         "from_date": "2023-01-01",
@@ -441,7 +457,7 @@ For organisations with multiple divisions or geographic regions:
       },
       "verification": "self reported",
       "tech_carbon_standard": {
-        "schema_version": "0.0.2"
+        "schema_version": "0.1.0"
         // EMEA emissions data
       }
     }
@@ -453,11 +469,23 @@ For organisations with multiple divisions or geographic regions:
 
 ```json
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.1.2",
   "organisation": {
     "organisation_name": "Your Company"
   },
   "emissions_reports": [
+     {
+      "schema_version": "0.0.3",
+      "reporting_period": {
+        "from_date": "2024-01-01",
+        "to_date": "2024-12-31"
+      },
+      "verification": "self reported",
+      "tech_carbon_standard": {
+        "schema_version": "0.1.0"
+        // 2024 data
+      }
+    },
     {
       "schema_version": "0.0.2",
       "reporting_period": {
