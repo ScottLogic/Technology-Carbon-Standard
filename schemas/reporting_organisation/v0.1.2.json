@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.2.json",
+  "title": "Technology Carbon Standard Reporting Organisation",
+  "description": "The Technology Carbon Standard is a standard for measuring and managing the carbon emissions of technology products and services.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": ["0.1.2"],
+      "description": "Version of the Reporting Organisation Schema"
+    },
+    "organisation": {
+      "type": "object",
+      "description": "The reporting organisation and it's carbon emissions data.",
+      "properties": {
+        "organisation_name": {
+          "type": "string",
+          "description": "Name of the reporting organisation"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the reporting organisation"
+        },
+        "open_corporates_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Open Corporates URL for the reporting organisation"
+        },
+        "registered_country": {
+          "type": "string",
+          "description": "Country of registration of the reporting organisation"
+        }
+      },
+      "required": [
+        "organisation_name"
+      ],
+      "additionalProperties": false
+    },
+    "emissions_reports": {
+      "type": "array",
+      "description": "List of TCS emissions reports over time. Each report can use a different schema version.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "description": "Version of the emissions report schema used for this report.",
+            "enum": ["0.0.3", "0.0.2", "0.0.1"]
+          }
+        },
+        "required": [
+          "schema_version"
+        ],
+        "additionalProperties": true,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "schema_version": { "const": "0.0.3" }
+              }
+            },
+            "then": {
+              "$ref": "https://techcarbonstandard.org/schemas/emissions_report/v0.0.3.json"
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "schema_version": { "const": "0.0.2" }
+              }
+            },
+            "then": {
+              "$ref": "https://techcarbonstandard.org/schemas/emissions_report/v0.0.2.json"
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "schema_version": { "const": "0.0.1" }
+              }
+            },
+            "then": {
+              "$ref": "https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "organisation",
+    "emissions_reports"
+  ],
+  "additionalProperties": false
+}

@@ -6,11 +6,14 @@ const path = require('path');
 // Define exact file paths based on the new directory structure
 const PATHS = {
   rootSchema: path.resolve(__dirname, '../index.json'),
+  reportingOrganisationsV012Schema: path.resolve(__dirname, '../reporting_organisation/v0.1.2.json'),
   reportingOrganisationsV010Schema: path.resolve(__dirname, '../reporting_organisation/v0.1.0.json'),
   reportingOrganisationsV001Schema: path.resolve(__dirname, '../reporting_organisation/v0.0.1.json'),
   emissionsV001Schema: path.resolve(__dirname, '../emissions_report/v0.0.1.json'),
+  emissionsV003Schema: path.resolve(__dirname, '../emissions_report/v0.0.3.json'),
   techCarbonStandardV001Schema: path.resolve(__dirname, '../tech_carbon_standard/v0.0.1.json'),
   techCarbonStandardV002Schema: path.resolve(__dirname, '../tech_carbon_standard/v0.0.2.json'),
+  techCarbonStandardV010Schema: path.resolve(__dirname, '../tech_carbon_standard/v0.1.0.json'),
   tcsDocument: path.resolve(__dirname, '../examples/reporting_organisation/v0.1.0.json')
 };
 
@@ -41,26 +44,35 @@ async function validateTcsDocument() {
     const rootSchemaStr = fs.readFileSync(PATHS.rootSchema, 'utf8');
     const reportingOrganisationsV001SchemaStr = fs.readFileSync(PATHS.reportingOrganisationsV001Schema, 'utf8');
     const reportingOrganisationsV010SchemaStr = fs.readFileSync(PATHS.reportingOrganisationsV010Schema, 'utf8');
+    const reportingOrganisationsV012SchemaStr = fs.readFileSync(PATHS.reportingOrganisationsV012Schema, 'utf8');
     const emissionsV001SchemaStr = fs.readFileSync(PATHS.emissionsV001Schema, 'utf8');
+    const emissionsV003SchemaStr = fs.readFileSync(PATHS.emissionsV003Schema, 'utf8');
     const techCarbonStandardV001SchemaStr = fs.readFileSync(PATHS.techCarbonStandardV001Schema, 'utf8');
     const techCarbonStandardV002SchemaStr = fs.readFileSync(PATHS.techCarbonStandardV002Schema, 'utf8');
+    const techCarbonStandardV010SchemaStr = fs.readFileSync(PATHS.techCarbonStandardV010Schema, 'utf8');
 
     // Parse all schemas
     const rootSchema = JSON.parse(rootSchemaStr);
     const reportingOrganisationsV001Schema = JSON.parse(reportingOrganisationsV001SchemaStr);
     const reportingOrganisationsV010Schema = JSON.parse(reportingOrganisationsV010SchemaStr);
+    const reportingOrganisationsV012Schema = JSON.parse(reportingOrganisationsV012SchemaStr);
     const emissionsV001Schema = JSON.parse(emissionsV001SchemaStr);
+    const emissionsV003Schema = JSON.parse(emissionsV003SchemaStr);
     const techCarbonStandardV001Schema = JSON.parse(techCarbonStandardV001SchemaStr);
     const techCarbonStandardV002Schema = JSON.parse(techCarbonStandardV002SchemaStr);
+    const techCarbonStandardV010Schema = JSON.parse(techCarbonStandardV010SchemaStr);
 
     console.log('All schemas parsed successfully');
 
     // Using the standardized URI-based schema IDs
     const reportingOrganisationsV001SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisation/v0.0.1.json';
     const reportingOrganisationsV010SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.0.json';
+    const reportingOrganisationsV012SchemaId = 'https://techcarbonstandard.org/schemas/reporting_organisation/v0.1.2.json';
     const techCarbonStandardV001SchemaId = 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.1.json';
     const techCarbonStandardV002SchemaId = 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.0.2.json';
+    const techCarbonStandardV010SchemaId = 'https://techcarbonstandard.org/schemas/tech_carbon_standard/v0.1.0.json';
     const emissionsV001SchemaId = 'https://techcarbonstandard.org/schemas/emissions_report/v0.0.1.json';
+    const emissionsV003SchemaId = 'https://techcarbonstandard.org/schemas/emissions_report/v0.0.3.json';
     const rootSchemaId = 'https://techcarbonstandard.org/schemas/index.json';
 
     console.log('Registering schemas with AJV:');
@@ -72,8 +84,17 @@ async function validateTcsDocument() {
     ajv.addSchema(techCarbonStandardV002Schema, techCarbonStandardV002SchemaId);
     console.log(` - Added tcs v0.0.2 schema with ID: ${techCarbonStandardV002SchemaId}`);
 
+    ajv.addSchema(techCarbonStandardV010Schema, techCarbonStandardV010SchemaId);
+    console.log(` - Added tcs v0.1.0 schema with ID: ${techCarbonStandardV010SchemaId}`);
+
     ajv.addSchema(emissionsV001Schema, emissionsV001SchemaId);
     console.log(` - Added emissions v0.0.1 schema with ID: ${emissionsV001SchemaId}`);
+
+    ajv.addSchema(emissionsV003Schema, emissionsV003SchemaId);
+    console.log(` - Added emissions v0.0.3 schema with ID: ${emissionsV003SchemaId}`);
+
+    ajv.addSchema(reportingOrganisationsV012Schema, reportingOrganisationsV012SchemaId);
+    console.log(` - Added TCS v0.1.2 schema with ID: ${reportingOrganisationsV012SchemaId}`);
 
     ajv.addSchema(reportingOrganisationsV010Schema, reportingOrganisationsV010SchemaId);
     console.log(` - Added TCS v0.1.0 schema with ID: ${reportingOrganisationsV010SchemaId}`);

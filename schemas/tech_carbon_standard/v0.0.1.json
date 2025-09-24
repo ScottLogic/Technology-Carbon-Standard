@@ -50,7 +50,7 @@
     },
     "upstream_emissions": {
       "type": "object",
-      "description": "Upstream emissions relating to the embodied carbon of hardware, the development of software, and content.",
+      "description": "Upstream emissions relating to the embodied carbon of hardware and the development of software.",
       "properties": {
         "software": {
           "$ref": "#/$defs/emissions_def",
@@ -124,13 +124,13 @@
       "type": "object",
       "description": "Carbon associated with the use of products and services produced by the organisation.",
       "properties": {
-        "customer_devices": {
+        "end_user_devices": {
           "$ref": "#/$defs/emissions_def",
           "description": "This considers the emissions generated from the electricity consumption of devices such as desktops, laptops, tablets, and mobile phones that utilise the products or services provided by an organisation."
         },
         "network_data_transfer": {
           "$ref": "#/$defs/emissions_def",
-          "description": "These emissions are associated with the infrastructure enabling data transmission, enabling customers to access the products and services."
+          "description": "These emissions are associated with the infrastructure enabling data transmission, enabling end-users to access the products and services."
         }
       },
       "required": [],
