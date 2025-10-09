@@ -18,4 +18,4 @@ For more information about Scott Logic and Sustainability, visit:
 - [Scott Logic Sustainable Software](https://www.scottlogic.com/what-we-do/sustainable-software)
 - [Scott Logic Sustainability Blog](https://blog.scottlogic.com/category/sustainability.html)
 
-
+For government guidance on sustainability in technology, see their [Environmentally sustainable services](https://www.gov.uk/service-manual/design/environmentally-sustainable-services) page.
