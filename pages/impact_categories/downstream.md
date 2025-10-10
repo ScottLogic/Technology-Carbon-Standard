@@ -24,15 +24,15 @@ When content and data are consumed by customers, it is essential to account for 
 - Embedding and sharing on third-party platforms
 - AI-enabled features such as auto-captions and recommendations
 
-Special consideration also needs to be given to AI applications. As the size of LLMs continues to increase so do the hardware requirements needed to run them effectively. If your customers need to upgrade their devices to run your AI applications this will contribute to e-waste as mentioned above and could also lead to increased energy consumption. 
+Special consideration also needs to be given to AI-powered applications. As their size continues to increase so do the hardware requirements needed to run them effectively. If your customers need to upgrade their devices to run your AI applications this will contribute to e-waste as mentioned above and could also lead to increased energy consumption. 
 
-It is also important to consider the number of end users that will be consuming your AI. A [study released by Mistral AI in July 2025](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai) into the energy usage of their Large 2 model stated that to generate 1 page of text or 400 tokens produces 1.14 gCO₂e. This is roughly equivalent to a user in the U.S. streaming online video for 10 seconds. While this per-request impact may appear minimal, the cumulative emissions scale rapidly when multiplied across thousands of users performing inferences multiple times per day. 
+It is also important to consider the number of end users that will be consuming your AI. A [study released by Mistral AI in July 2025](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai) into the energy usage of their large language model, Mistral Large 2, stated that to generate 1 page of text or 400 tokens produces 1.14 gCO₂e. This is roughly equivalent to a user in the U.S. streaming online video for 10 seconds. While this per-request impact may appear minimal, the cumulative emissions scale rapidly when multiplied across thousands of users performing inferences multiple times per day. 
 
 It is therefore important to consider ways to reduce the number of inference attempts a user needs to obtain the desired information as well as reducing how long inference takes and the length of the answer returned.
 
 {% include linkedHeading.html heading="Network Data Transfer" level=2 %}
 
-These emissions are associated with the infrastructure enabling data transmission, enabling customers to access the products and services. This includes LLMs used as SaaS, via an API provider or an AI-powered tool. Data that is consumed over the Internet is hard to measure as the specifications of the equipment used over the public internet are not available. Even if that data was available, the system has no control over what route the data takes. Therefore it is appropriate to use a proxy such as:
+These emissions are associated with the infrastructure enabling data transmission, enabling customers to access the products and services. This includes AI-powered tools, such as  large language models used as SaaS or via an API provider. Data that is consumed over the internet is hard to measure as the specifications of the equipment used over the public internet are not available. Even if that data was available, the system has no control over what route the data takes. Therefore it is appropriate to use a proxy such as:
 - number of calls 
 - payload size
 - the distance transmitted
