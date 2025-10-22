@@ -7,7 +7,7 @@ published: true
 
 # How to reduce hardware related emissions
 
-Hardware—laptops, servers, networks, storage and edge / IoT devices—underpins every digital service and carries a sizeable climate impact. Its footprint spans [embodied emissions](/resources/glossary#embodied-carbon) (materials, manufacturing, logistics and end-of-life processing) and operational emissions (energy to run and cool equipment).
+Hardware (laptops, servers, networks, storage and edge / IoT devices) underpins every digital service and carries a sizeable climate impact. Its footprint spans [embodied emissions](/resources/glossary#embodied-carbon) (materials, manufacturing, logistics and end-of-life processing) and operational emissions (energy to run and cool equipment).
 
 Cutting this impact is one of the fastest ways to reduce your organisation's technology footprint. This guide, aligned with the Tech Carbon Standard, sets out practical actions across the hardware life cycle: procurement, deployment, operation, optimisation and end-of-life. It focuses on lowering both embodied and operational (usage) emissions through better inventory, utilisation, longevity, circular procurement and governance.
 
