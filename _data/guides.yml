@@ -8,3 +8,5 @@ sections:
     items:
       - name: How to reduce AI related emissions
         documentation_link: /guides/reduce-ai-emissions
+      - name: How to reduce hardware related emissions
+        documentation_link: /guides/reduce-hardware-emissions
