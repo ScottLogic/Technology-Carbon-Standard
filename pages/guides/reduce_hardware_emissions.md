@@ -9,9 +9,10 @@ published: true
 
 Hardware (laptops, servers, networks, storage and edge / IoT devices) underpins every digital service and carries a sizeable climate impact. Its footprint spans [embodied emissions](/resources/glossary#embodied-carbon) (materials, manufacturing, logistics and end-of-life processing) and operational emissions (energy to run and cool equipment).
 
-Cutting this impact is one of the fastest ways to reduce your organisation's technology footprint. This guide, aligned with the Tech Carbon Standard, sets out practical actions across the hardware life cycle: procurement, deployment, operation, optimisation and end-of-life. It focuses on lowering both embodied and operational (usage) emissions through better inventory, utilisation, longevity, circular procurement and governance.
+Cutting this impact is one of the fastest ways to reduce your organisation's technology footprint. This guide sets out practical actions across the hardware life cycle: procurement, deployment, operation, optimisation and end-of-life. It focuses on lowering both embodied and operational (usage) emissions through better inventory, utilisation, longevity, circular procurement and governance.
 
 {% include linkedHeading.html heading="Related hardware life cycle examples & case study" level=3 %}
+
 To see practical applications of these principles and real data breakdowns, explore:
 
 - **Employee Hardware Example:** Allocation of embodied and operational emissions – [/technology-categories/life cycle/example/employee](/technology-categories/life cycle/example/employee)
@@ -19,8 +20,6 @@ To see practical applications of these principles and real data breakdowns, expl
 - **Green Web Foundation Case Study:** Organisational emissions assessment – overview [/case-studies/green-web-foundation/overview](/case-studies/green-web-foundation/overview) and reduction strategies [/case-studies/green-web-foundation/reducing-impact](/case-studies/green-web-foundation/reducing-impact)
 
 {% include linkedHeading.html heading="1. Understand your hardware footprint" level=3 %}
-
-Before taking action, map the major life cycle stages and emission types:
 
 The first step is to understand what you have. Perform an IT asset inventory to map every major hardware category: employee devices, data-centre servers, and any off-site or leased hardware. For each, note the approximate age, model, and manufacturer.
 
@@ -68,7 +67,7 @@ The most sustainable device is the one you already own. Extending the lifespan o
 - Maintain firmware, drivers, and security posture to safely extend lifespan without risking vulnerabilities.
 - Use component upgrades (RAM, SSD) instead of full system replacement when performance bottlenecks are isolated.
 - Establish refurbishment pathways (internal cascade from high to lower intensity workloads) before external disposal.
-- **Right-size to role requirements**: Avoid over-specification of employee devices. Not every employee needs a high-performance laptop or dual 4K displays. Match performance to actual job requirements to extend hardware lifespan and reduce [embodied emissions](/resources/glossary#embodied-carbon).
+- Avoid over-specification of employee devices. Not every employee needs a high-performance laptop or dual 4K displays. Match performance to actual job requirements to extend hardware lifespan and reduce [embodied emissions](/resources/glossary#embodied-carbon).
 
 When replacement is unavoidable, ensure retired devices are resold, refurbished, or responsibly recycled through certified e-waste channels.
 
