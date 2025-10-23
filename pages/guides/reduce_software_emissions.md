@@ -98,14 +98,57 @@ Deployment practices have a direct impact on runtime emissions.
 
 {% include linkedHeading.html heading="Measure and report software impact" level=3 %}
 
-The [Software Carbon Intensity (SCI) specification](https://greensoftware.foundation/projects/software-carbon-intensity) offers a framework for measuring the carbon impact of software, considering both energy consumption and the carbon intensity of the electricity used.
+#### Measurement frameworks and specifications
 
-You can integrate SCI or similar metrics into your monitoring and reporting workflows to:
+- **[Software Carbon Intensity (SCI)](https://sci-guide.greensoftware.foundation)**: Offers a framework for measuring the carbon impact of software, considering both energy consumption and the carbon intensity of the electricity used.
+- **[Green Software Foundation Impact Framework](https://if.greensoftware.foundation/)**: An open-source framework for building carbon-aware applications with standardised measurement approaches.
+- **[Energy Star Portfolio Manager](https://www.energystar.gov/buildings/benchmark)**: For data centre and facility-level energy tracking.
 
-- Track energy per transaction or request.  
-- Identify high-emission components or workloads.  
-- Inform architectural and refactoring decisions.  
-- Provide transparent reporting for clients and stakeholders.
+#### Tools for energy and carbon measurement
+
+**Cloud-native tools:**
+- **[Azure Sustainability Calculator](https://azure.microsoft.com/en-us/blog/microsoft-sustainability-calculator-helps-enterprises-analyze-the-carbon-emissions-of-their-it-infrastructure/)**: Estimates carbon emissions for Azure workloads.
+- **[AWS Customer Carbon Footprint Tool](https://aws.amazon.com/aws-cost-management/aws-customer-carbon-footprint-tool/)**: Provides carbon footprint data for AWS services.
+- **[Google Cloud Carbon Footprint](https://cloud.google.com/carbon-footprint)**: Tracks and reports emissions from Google Cloud Platform usage.
+- **[Cloud Carbon Footprint (CCF)](https://www.cloudcarbonfootprint.org/)**: Open-source tool that estimates energy use and carbon emissions from major cloud providers.
+
+**Application-level monitoring:**
+- **[PowerAPI](https://powerapi.org/)**: Open-source library for real-time power consumption monitoring of software applications.
+- **[Scaphandre](https://github.com/hubblo-org/scaphandre)**: Rust-based energy consumption monitoring agent that can track individual processes.
+- **[Green Metrics Tool](https://www.green-coding.io/products/green-metrics-tool/)**: Measures energy consumption of applications, particularly useful for web applications and containers.
+- **[Carbonifer](https://carbonifer.io/)**: Python library for calculating the carbon footprint of machine learning models.
+- **[CodeCarbon](https://codecarbon.io/)**: Python package that tracks and estimates CO2 emissions from compute resources.
+
+**Infrastructure monitoring:**
+- **[Intel RAPL (Running Average Power Limit)](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html)**: Hardware counters for measuring CPU and memory power consumption.
+- **[NVIDIA-SMI](https://developer.nvidia.com/nvidia-system-management-interface)**: For GPU power monitoring and management.
+- **[Prometheus](https://prometheus.io/) + [Node Exporter](https://github.com/prometheus/node_exporter)**: For collecting and monitoring system-level energy metrics.
+- **[Graphite Carbon Metrics](https://grafana.com/grafana/dashboards/43-graphite-carbon-metrics/)**: Visualisation tools for carbon metrics dashboards.
+
+**CI/CD integration tools:**
+- **[Eco-CI](https://github.com/green-coding-solutions/eco-ci-energy-estimation)**: Energy estimation for CI/CD pipelines with support for GitHub Actions, GitLab CI, and others.
+- **[Green Software Foundation IF](https://if.greensoftware.foundation/)**: Impact Framework for integrating sustainability metrics into development workflows.
+
+See the [Green Software Directory on GitHub](https://github.com/github/GreenSoftwareDirectory) for more tools.
+
+#### Implementation approaches
+
+You can integrate measurement tools into your monitoring and reporting workflows to:
+
+- **Track energy per transaction or request** using application performance monitoring (APM) tools integrated with energy measurement libraries.
+- **Identify high-emission components or workloads** through detailed profiling and energy attribution across services.
+- **Inform architectural and refactoring decisions** with energy consumption data to guide optimisation priorities.
+- **Provide transparent reporting for clients and stakeholders** through automated dashboards and regular sustainability reports.
+- **Set and monitor emission reduction targets** with baseline measurements and progress tracking.
+- **Implement carbon budgets** for development teams, similar to performance budgets.
+
+#### Getting started with measurement
+
+1. **Start simple**: Begin with cloud provider carbon footprint tools if using public cloud services.
+2. **Add application-level monitoring**: Integrate tools like CodeCarbon or PowerAPI for deeper insights.
+3. **Establish baselines**: Measure current emissions before implementing optimisations.
+4. **Automate reporting**: Build dashboards and alerts to track progress over time.
+5. **Validate measurements**: Cross-reference multiple tools to ensure accuracy and consistency.
 
 {% include linkedHeading.html heading="Quick wins" level=2 %}
 

@@ -10,3 +10,5 @@ sections:
         documentation_link: /guides/reduce-ai-emissions
       - name: How to reduce Testing related emissions
         documentation_link: /guides/reduce-testing-emissions
+      - name: How to reduce Software related emissions
+        documentation_link: /guides/reduce-software-emissions
