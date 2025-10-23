@@ -94,7 +94,7 @@ Key levers:
 
 - Increase average utilisation through workload consolidation, orchestration, and capacity planning (avoid stranded hardware).[^8]
 - Apply power management (CPU frequency scaling, sleep states, device power profiles) while respecting latency SLAs.[^9]
-- Use container density and efficient virtualization (lightweight hypervisors) to reduce idle overhead.[^10]
+- Use container density and efficient virtualisation (lightweight hypervisors) to reduce idle overhead.[^10]
 - Monitor component-level power with [RAPL](/resources/glossary#rapl) (x86), IPMI, or vendor telemetry to identify hotspots for optimisation.[^11]
 - Regularly retire persistently under-utilised assets (e.g. <10–15% CPU utilisation over 30 days) after confirming no hidden reliability role.
 - Enable power-saving defaults on all employee devices, such as dimmed screens, auto-sleep, and reduced background sync frequency.
