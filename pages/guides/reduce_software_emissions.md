@@ -98,13 +98,13 @@ Deployment practices have a direct impact on runtime emissions.
 
 {% include linkedHeading.html heading="Measure and report software impact" level=3 %}
 
-#### Measurement frameworks and specifications
+{% include linkedHeading.html heading="Measurement frameworks and specifications" level=4 %}
 
 - **[Software Carbon Intensity (SCI)](https://sci-guide.greensoftware.foundation)**: Offers a framework for measuring the carbon impact of software, considering both energy consumption and the carbon intensity of the electricity used.
 - **[Green Software Foundation Impact Framework](https://if.greensoftware.foundation/)**: An open-source framework for building carbon-aware applications with standardised measurement approaches.
 - **[Energy Star Portfolio Manager](https://www.energystar.gov/buildings/benchmark)**: For data centre and facility-level energy tracking.
 
-#### Tools for energy and carbon measurement
+{% include linkedHeading.html heading="Tools for energy and carbon measurement" level=4 %}
 
 **Cloud-native tools:**
 - **[Azure Sustainability Calculator](https://azure.microsoft.com/en-us/blog/microsoft-sustainability-calculator-helps-enterprises-analyze-the-carbon-emissions-of-their-it-infrastructure/)**: Estimates carbon emissions for Azure workloads.
@@ -131,7 +131,7 @@ Deployment practices have a direct impact on runtime emissions.
 
 See the [Green Software Directory on GitHub](https://github.com/github/GreenSoftwareDirectory) for more tools.
 
-#### Implementation approaches
+{% include linkedHeading.html heading="Implementation approaches" level=4 %}
 
 You can integrate measurement tools into your monitoring and reporting workflows to:
 
@@ -142,7 +142,7 @@ You can integrate measurement tools into your monitoring and reporting workflows
 - **Set and monitor emission reduction targets** with baseline measurements and progress tracking.
 - **Implement carbon budgets** for development teams, similar to performance budgets.
 
-#### Getting started with measurement
+{% include linkedHeading.html heading="Getting started with measurement" level=4 %}
 
 1. **Start simple**: Begin with cloud provider carbon footprint tools if using public cloud services.
 2. **Add application-level monitoring**: Integrate tools like CodeCarbon or PowerAPI for deeper insights.
