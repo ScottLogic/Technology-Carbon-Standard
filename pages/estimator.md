@@ -19,5 +19,5 @@ If you experience any issues using the calculator, you can [report them on GitHu
 
 ## Calculate your technology's potential carbon impact
 
-<tech-carbon-estimator class="not-prose" extra-height="112"></tech-carbon-estimator>
+<tech-carbon-estimator class="not-prose" extra-height="112" assets-base-path="/assets/tech-carbon-estimator"></tech-carbon-estimator>
 <noscript>Javascript appears to be disabled - unfortunately the estimator requires it to be enabled to function.</noscript>
